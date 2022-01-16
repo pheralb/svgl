@@ -1,16 +1,35 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@font-face {
+  font-family: "Eina-Regular";
+  src: url("/fonts/eina-01-regular.woff") format('woff');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@font-face {
+  font-family: "Eina-Bold";
+  src: url("/fonts/eina-01-bold.woff2") format('woff2');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
 }
 
-* {
-  box-sizing: border-box;
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #16161a; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(133, 133, 133); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #48b7b0; 
 }

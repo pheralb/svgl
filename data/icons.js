@@ -1,0 +1,118 @@
+import * as SVG from "components/svg";
+
+const Icons = [
+    {
+      id: 1,
+      href: "/library/discord.svg",
+      title: "Discord",
+      url: "https://discord.com/",
+      icon: SVG.Discord,
+    },
+    {
+      id: 2,
+      href: "/library/github.svg",
+      title: "Github",
+      url: "https://github.com/",
+      icon: SVG.Github,
+    },
+    {
+      id: 3,
+      href: "/library/preact.svg",
+      title: "Preact",
+      url: "https://preactjs.com/",
+      icon: SVG.Preact, 
+    },
+    {
+      id: 4,
+      href: "/library/react.svg",
+      title: "React",
+      url: "https://reactjs.org/",
+      icon: SVG.ReactIcon,
+    },
+    {
+      id: 5,
+      href: "/library/vercel.svg",
+      title: "Vercel",
+      url: "https://vercel.com/",
+      icon: SVG.Vercel,
+    },
+    {
+      id: 6,
+      href: "/library/svelte.svg",
+      title: "Svelte",
+      url: "https://svelte.dev/",
+      icon: SVG.Svelte,
+    },
+    {
+      id: 7,
+      href: "/library/vue.svg",
+      title: "Vue",
+      url: "https://vuejs.org/",
+      icon: SVG.Vue,
+    },
+    {
+      id: 8,
+      href: "/library/nuxt.svg",
+      title: "Nuxt",
+      url: "https://nuxtjs.org/",
+      icon: SVG.Nuxt,
+    },
+    {
+      id: 9,
+      href: "/library/nextjs.svg",
+      title: "Nextjs",
+      url: "https://nextjs.org/",
+      icon: SVG.Next,
+    },
+    {
+      id: 10,
+      href: "/library/vscode.svg",
+      title: "VSCode",
+      url: "https://code.visualstudio.com/",
+      icon: SVG.VSCode,
+    },  
+    {
+      id: 11,
+      href: "/library/jwt.svg",
+      title: "JWT",
+      url: "https://jwt.io/",
+      icon: SVG.JWT,
+    },
+    {
+      id: 12,
+      href: "/library/strapi.svg",
+      title: "Strapi",
+      url: "https://strapi.io/",
+      icon: SVG.Strapi,
+    },
+    {
+      id: 13,
+      href: "/library/figma.svg",
+      title: "Figma",
+      url: "https://www.figma.com/",
+      icon: SVG.Figma,
+    },
+    {
+      id: 14,
+      href: "/library/spotify.svg",
+      title: "Spotify",
+      url: "https://www.spotify.com/",
+      icon: SVG.Spotify,
+    },
+    {
+      id: 15,
+      href: "/library/postman.svg",
+      title: "Postman",
+      url: "https://www.getpostman.com/",
+      icon: SVG.Postman,
+    },
+    {
+      id: 16,
+      href: "/library/algolia.svg",
+      title: "Algolia",
+      url: "https://www.algolia.com/",
+      icon: SVG.Algolia,
+    },
+  ];
+  
+  export default Icons;
