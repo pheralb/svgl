@@ -3,13 +3,13 @@ import db from "data/icons";
 export default function handler(req, res) {
   const { id, q } = req.query;
 
-  // we have an id available
+  // 🔎 Search by id (ex: ?id=1) ->
   if (id) {
     const item = db.find((item) => item.id === +id);
     return res.status(200).json(item);
   }
 
-  // we have a keyword to search for
+  // 🔎 Search by query (ex: ?q=d) ->
   if (q) {
     const results = db.filter((product) => {
       const { title } = product;
@@ -18,6 +18,6 @@ export default function handler(req, res) {
     return res.status(200).json(results);
   }
 
-  // we don't have anything
-  res.status(400).json();
+  // ✖ Error ->
+  res.status(400).json({ info: 'Error: api query not found.' });
 }
