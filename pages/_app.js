@@ -7,6 +7,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 // 📦 Components ->
 import Header from "components/header";
 import Footer from "components/footer";
+import Sidebar from "components/sidebar";
 
 // 💙 Global CSS ->
 import "styles/globals.css";
@@ -30,14 +31,19 @@ function MyApp({ Component, pageProps }) {
           property="og:description"
           content="SVGs for everyone, totally free"
         />
-        <meta property="og:image" content="images/banner.png" />
+        <meta
+          property="og:image"
+          content="https://iconr.vercel.app/images/banner.png"
+        />
         <meta name="keywords" content="svg,vector,logo,logos,download" />
         <meta content="#16161a" name="theme-color" />
-        <link rel="icon" href="images/logo.png" />
+        <link rel="icon" href="/images/logo.png" />
       </Head>
       <ChakraProvider theme={theme}>
         <Header />
-        <Component {...pageProps} />
+        <Sidebar>
+          <Component {...pageProps} />
+        </Sidebar>
         <Footer />
       </ChakraProvider>
     </>

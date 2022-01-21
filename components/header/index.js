@@ -15,7 +15,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import Dark from "components/header/dark";
-import { IoApps, IoLogoGithub } from "react-icons/io5";
+import { IoApps, IoLogoGithub, IoLogoTwitter } from "react-icons/io5";
 import Link from "next/link";
 import Hover from "animations/hover";
 
@@ -34,14 +34,14 @@ const Header = () => {
         top="0"
         zIndex="1000"
       >
-        <Container maxW="container.xl" pb="4">
+        <Container maxW="container.xxl" pb="4">
           <Flex alignItems="center" justifyContent="space-between" mx="auto">
-            <Link href="/" passHref>
-              <Hover>
+            <Hover>
+              <Link href="/" passHref>
                 <Flex cursor="pointer">
                   <chakra.a title="iconr" display="flex" alignItems="center">
                     <Image
-                      src="images/logo.png"
+                      src="/images/logo.png"
                       boxSize="25px"
                       alt="iconr logo"
                     />
@@ -56,8 +56,8 @@ const Header = () => {
                     iconr
                   </chakra.h1>
                 </Flex>
-              </Hover>
-            </Link>
+              </Link>
+            </Hover>
             <HStack display="flex" alignItems="center">
               <HStack
                 spacing={2}
@@ -69,6 +69,15 @@ const Header = () => {
                   passHref
                 >
                   <Button variant="ghost">Library</Button>
+                </Link>
+                <Link href="https://twitter.com/iconrhq" passHref>
+                  <IconButton
+                    aria-label="Twitter profile"
+                    bg="transparent"
+                    border="0"
+                    variant="outline"
+                    icon={<IoLogoTwitter size="25" />}
+                  />
                 </Link>
                 <Link href="https://github.com/pheralb/iconr" passHref>
                   <IconButton
