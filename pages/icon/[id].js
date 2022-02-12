@@ -2,19 +2,14 @@ import Head from "next/head";
 import {
   chakra,
   Box,
-  useColorModeValue,
   Flex,
   Badge,
-  Input,
-  VisuallyHidden,
   SimpleGrid,
   Button,
-  InputGroup,
-  InputRightElement,
   Image,
   Container,
   Center,
-  Stack,
+  HStack,
 } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import useSWR from "swr";
@@ -61,7 +56,7 @@ export default function Icon() {
                 <Image
                   src={data.href}
                   alt={data.title}
-                  w={{ base: "30%", md: "20%", lg: "50%" }}
+                  w={{ base: "30%", md: "20%", lg: "30%" }}
                   fit="cover"
                   loading="lazy"
                 />
@@ -71,8 +66,8 @@ export default function Icon() {
               direction="column"
               alignItems="start"
               justifyContent="center"
-              px={{ base: 4, lg: 20 }}
-              py={{ base: "3", md: "0", lg: "24" }}
+              px={{ base: 4, lg: 4 }}
+              py={{ base: "3", md: "0", lg: "10" }}
             >
               <chakra.h1
                 mb={6}
@@ -102,34 +97,36 @@ export default function Icon() {
                   </Badge>
                 </Link>
               </Hover>
-              <Stack direction="row" spacing={0} mt="2">
-                <Hover>
-                  <Link href={data.href} passHref>
-                    <Button
-                      leftIcon={<IoCloudDownloadOutline />}
-                      colorScheme="black"
-                      variant="outline"
-                      bg="transparent"
-                      fontWeight="light"
-                      mr="2"
-                    >
-                      Download .svg
-                    </Button>
-                  </Link>
-                </Hover>
-                <Link href={data.url} passHref>
-                  <Button
-                    colorScheme="teal"
-                    variant="outline"
-                    fontWeight="light"
-                    borderWidth="1px"
-                  >
-                    {data.title} website
-                  </Button>
-                </Link>
-              </Stack>
             </Flex>
           </SimpleGrid>
+          <Center>
+            <HStack spacing={0} mt="2">
+              <Hover>
+                <Link href={data.href} passHref>
+                  <Button
+                    leftIcon={<IoCloudDownloadOutline />}
+                    colorScheme="black"
+                    variant="outline"
+                    bg="transparent"
+                    fontWeight="light"
+                    mr="2"
+                  >
+                    Download .svg
+                  </Button>
+                </Link>
+              </Hover>
+              <Link href={data.url} passHref>
+                <Button
+                  colorScheme="teal"
+                  variant="outline"
+                  fontWeight="light"
+                  borderWidth="1px"
+                >
+                  {data.title} website
+                </Button>
+              </Link>
+            </HStack>
+          </Center>
           <Link href="/" passHref>
             <Button
               leftIcon={<IoArrowBackOutline />}
