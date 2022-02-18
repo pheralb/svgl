@@ -1,10 +1,6 @@
-<p align="center" style="margin-top:5px">
-  <a href="https://strapi.io/#gh-light-mode-only">
-    <img src="https://iconr.vercel.app/images/logo.png" width="85px" alt="iconr logo" />
-  </a>
+<p align="center" style="margin-top:3px">
+    <img src="https://github.com/pheralb/iconr/blob/main/public/images/logo.png?raw=true" width="85px" alt="iconr logo" />
 </p>
-<h2 align="center">Iconr - Beautiful SVG vector icons</h2>
-<br />
 
 ## 🚀 Getting started:
 
