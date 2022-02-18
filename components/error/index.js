@@ -1,20 +1,6 @@
 import React from "react";
-import {
-  Box,
-  Flex,
-  SimpleGrid,
-  Button,
-  Container,
-  Center,
-  Text,
-  Icon,
-} from "@chakra-ui/react";
-import {
-  IoAlertOutline,
-  IoArrowBackOutline,
-  IoHome,
-  IoShapesOutline,
-} from "react-icons/io5";
+import { Box, Flex, Button, Container, Text, Icon } from "@chakra-ui/react";
+import { IoHome, IoShapesOutline } from "react-icons/io5";
 import Link from "next/link";
 import Show from "animations/show";
 

@@ -18,7 +18,14 @@ import { Algolia } from "components/svg";
 const AutocompleteItem = ({ id, title, href, url }) => {
   return (
     <>
-      <Box w="100%" id={id} borderWidth="1px" roundedTop={3} mt="3">
+      <Box
+        w="100%"
+        id={id}
+        borderWidth="1px"
+        borderRadius="10px"
+        roundedTop={3}
+        mt="3"
+      >
         <Box py={12} px={6}>
           <Center>
             <Image src={href} alt={title} boxSize="60px" mb="3" />

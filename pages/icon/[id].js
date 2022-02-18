@@ -15,6 +15,7 @@ import { useRouter } from "next/router";
 import useSWR from "swr";
 import Error from "components/error";
 import { IoArrowBackOutline, IoCloudDownloadOutline } from "react-icons/io5";
+import { BiLinkExternal } from "react-icons/bi";
 import Link from "next/link";
 import Show from "animations/show";
 import Loader from "animations/loader";
@@ -46,7 +47,7 @@ export default function Icon() {
       </Head>
       <Show delay="0">
         <Container
-          maxW={{ base: "100%", md: "100%", lg: "75%" }}
+          maxW="100%"
           borderWidth="1px"
           borderRadius="30px"
         >
@@ -70,63 +71,43 @@ export default function Icon() {
               py={{ base: "3", md: "0", lg: "10" }}
             >
               <chakra.h1
-                mb={6}
+                mb={3}
                 fontSize={{ base: "4xl", md: "4xl", lg: "5xl" }}
                 fontWeight="semibold"
                 lineHeight="shorter"
               >
                 {data.title}
               </chakra.h1>
-              <Hover>
-                <Link href={`/category/${data.category}`} passHref>
-                  <Badge
-                    borderWidth="1px"
-                    _hover={{ borderColor: "#51d1c8" }}
-                    textTransform="lowercase"
-                    fontSize="md"
-                    color="gray.500"
-                    bg="transparent"
-                    px={3}
-                    py={1}
-                    mb={3}
-                    rounded="full"
-                    fontWeight="light"
-                    cursor="pointer"
-                  >
-                    {data.category}
-                  </Badge>
-                </Link>
-              </Hover>
-            </Flex>
-          </SimpleGrid>
-          <Center>
-            <HStack spacing={0} mt="2">
-              <Hover>
-                <Link href={data.href} passHref>
+              <Flex direction={{ base: "column", md: "row" }} mt="2">
+                <Hover>
+                  <Link href={data.href} passHref>
+                    <Button
+                      leftIcon={<IoCloudDownloadOutline />}
+                      colorScheme="black"
+                      variant="outline"
+                      bg="transparent"
+                      fontWeight="light"
+                      mr="2"
+                    >
+                      Download .svg
+                    </Button>
+                  </Link>
+                </Hover>
+                <Link href={data.url} passHref>
                   <Button
-                    leftIcon={<IoCloudDownloadOutline />}
-                    colorScheme="black"
+                    colorScheme="teal"
                     variant="outline"
-                    bg="transparent"
                     fontWeight="light"
-                    mr="2"
+                    borderWidth="1px"
+                    rightIcon={<BiLinkExternal />}
                   >
-                    Download .svg
+                    {data.title} website
                   </Button>
                 </Link>
-              </Hover>
-              <Link href={data.url} passHref>
-                <Button
-                  colorScheme="teal"
-                  variant="outline"
-                  fontWeight="light"
-                  borderWidth="1px"
-                >
-                  {data.title} website
-                </Button>
-              </Link>
-            </HStack>
-          </Center>
+              </Flex>
+            </Flex>
+          </SimpleGrid>
+
           <Link href="/" passHref>
             <Button
               leftIcon={<IoArrowBackOutline />}

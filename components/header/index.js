@@ -15,26 +15,42 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import Dark from "components/header/dark";
-import { IoApps, IoLogoGithub, IoLogoTwitter } from "react-icons/io5";
+import {
+  IoApps,
+  IoBookOutline,
+  IoCloseSharp,
+  IoLogoGithub,
+  IoLogoTwitter,
+} from "react-icons/io5";
 import Link from "next/link";
 import Hover from "animations/hover";
+import Show from "animations/show";
+import { BiLinkExternal } from "react-icons/bi";
 
 const Header = () => {
   const mobileNav = useDisclosure();
   const bg = useColorModeValue("#fffffe", "#16161a");
+  const border = useColorModeValue("0", "1px");
+  const borderRadius = useColorModeValue("10px", "0");
+
   return (
     <>
-      <chakra.header
+      <Box
         w="full"
-        px={{ base: 2, md: 6 }}
         bg={bg}
-        py={6}
-        pb="0"
+        mt="5"
+        mb="5"
+        px={{ base: 3, md: 5 }}
+        py="3"
+        pb="3"
+        borderRadius={borderRadius}
+        borderBottomWidth={border}
+        shadow="sm"
         pos="sticky"
-        top="0"
+        top="2"
         zIndex="1000"
       >
-        <Container maxW="container.xxl" pb="4">
+        <Show>
           <Flex alignItems="center" justifyContent="space-between" mx="auto">
             <Hover>
               <Link href="/" passHref>
@@ -48,7 +64,7 @@ const Header = () => {
                     <VisuallyHidden>iconr</VisuallyHidden>
                   </chakra.a>
                   <chakra.h1
-                    fontSize="3xl"
+                    fontSize="2xl"
                     fontWeight="bold"
                     fontFamily="Eina-Bold"
                     ml="3"
@@ -68,7 +84,13 @@ const Header = () => {
                   href="https://github.com/pheralb/iconr/tree/main/public/library"
                   passHref
                 >
-                  <Button variant="ghost">Library</Button>
+                  <Button
+                    variant="ghost"
+                    rightIcon={<BiLinkExternal />}
+                    fontWeight="light"
+                  >
+                    Library
+                  </Button>
                 </Link>
                 <Link href="https://twitter.com/iconrhq" passHref>
                   <IconButton
@@ -101,45 +123,61 @@ const Header = () => {
                 />
                 <VStack
                   pos="absolute"
-                  borderBottomWidth="1px"
+                  borderWidth="2px"
                   bg={bg}
                   top={0}
                   left={0}
                   right={0}
                   display={mobileNav.isOpen ? "flex" : "none"}
                   flexDirection="column"
+                  pt="4"
                   pb={4}
-                  m={2}
                   spacing={3}
                   rounded="sm"
                   shadow="sm"
                 >
-                  <CloseButton
-                    aria-label="Close menu"
+                  <Button
+                    bg="transparent"
+                    border="0"
+                    variant="outline"
+                    leftIcon={<IoCloseSharp size="25" />}
+                    fontWeight="light"
                     onClick={mobileNav.onClose}
-                  />
+                  >
+                    Close
+                  </Button>
                   <Link
                     href="https://github.com/pheralb/iconr/tree/main/public/library"
                     passHref
                   >
-                    <Button variant="ghost">Library</Button>
-                  </Link>
-                  <Link href="https://github.com/pheralb/iconr" passHref>
-                    <IconButton
-                      aria-label="Github Repository"
+                    <Button
                       bg="transparent"
                       border="0"
                       variant="outline"
-                      icon={<IoLogoGithub size="25" />}
-                    />
+                      leftIcon={<IoBookOutline size="25" />}
+                      fontWeight="light"
+                    >
+                      Library
+                    </Button>
+                  </Link>
+                  <Link href="https://github.com/pheralb/iconr" passHref>
+                    <Button
+                      bg="transparent"
+                      border="0"
+                      variant="outline"
+                      leftIcon={<IoLogoGithub size="25" />}
+                      fontWeight="light"
+                    >
+                      Github
+                    </Button>
                   </Link>
                   <Dark />
                 </VStack>
               </Box>
             </HStack>
           </Flex>
-        </Container>
-      </chakra.header>
+        </Show>
+      </Box>
     </>
   );
 };

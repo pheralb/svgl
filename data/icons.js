@@ -251,6 +251,27 @@ const Icons = [
     category: "Text Editor",
     url: "https://atom.io/",
   },
+  {
+    id: 37,
+    href: "/library/youtube.svg",
+    title: "YouTube",
+    category: "Video Platform",
+    url: "https://www.youtube.com/",
+  },
+  {
+    id: 38,
+    href: "/library/astro.svg",
+    title: "Astro",
+    category: "Framework",
+    url: "https://astro.build/",
+  },
+  {
+    id: 39,
+    href: "/library/google.svg",
+    title: "Google",
+    category: "Search",
+    url: "https://www.google.com/",
+  },
 ];
 
 export default Icons;

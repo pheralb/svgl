@@ -2,12 +2,11 @@
 import Head from "next/head";
 
 // 🌿 Chakra UI ->
-import { ChakraProvider } from "@chakra-ui/react";
+import { ChakraProvider, Container } from "@chakra-ui/react";
 
 // 📦 Components ->
 import Header from "components/header";
 import Footer from "components/footer";
-import Sidebar from "components/sidebar";
 
 // 💙 Global CSS ->
 import "styles/globals.css";
@@ -29,7 +28,7 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:url" content="https://iconr.vercel.app/" />
         <meta
           property="og:description"
-          content="SVGs for everyone, totally free"
+          content="Beautiful SVG vector icons. Free and open source."
         />
         <meta
           property="og:image"
@@ -40,11 +39,11 @@ function MyApp({ Component, pageProps }) {
         <link rel="icon" href="/images/logo.png" />
       </Head>
       <ChakraProvider theme={theme}>
-        <Header />
-        <Sidebar>
+        <Container maxW={{ base: "100%", md: "85%" }}>
+          <Header />
           <Component {...pageProps} />
-        </Sidebar>
-        <Footer />
+          <Footer />
+        </Container>
       </ChakraProvider>
     </>
   );
