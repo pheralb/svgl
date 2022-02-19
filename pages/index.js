@@ -11,7 +11,7 @@ export default function Index() {
           <Box textAlign="center">
             <Show delay="0">
               <chakra.h1
-                fontSize={{ base: "30px", sm: "35px", md: "6xl" }}
+                fontSize={{ base: "25px", sm: "35px", md: "6xl" }}
                 letterSpacing="tight"
                 lineHeight="short"
                 fontWeight="extrabold"
