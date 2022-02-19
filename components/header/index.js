@@ -55,21 +55,20 @@ const Header = () => {
             <Hover>
               <Link href="/" passHref>
                 <Flex cursor="pointer">
-                  <chakra.a title="iconr" display="flex" alignItems="center">
+                  <chakra.a title="SVGParty" display="flex" alignItems="center">
                     <Image
                       src="/images/logo.png"
                       boxSize="25px"
-                      alt="iconr logo"
+                      alt="SVGParty logo"
                     />
-                    <VisuallyHidden>iconr</VisuallyHidden>
+                    <VisuallyHidden>SVGParty</VisuallyHidden>
                   </chakra.a>
                   <chakra.h1
-                    fontSize="2xl"
+                    fontSize="1xl"
                     fontWeight="bold"
-                    fontFamily="Eina-Bold"
                     ml="3"
                   >
-                    iconr
+                    SVGParty
                   </chakra.h1>
                 </Flex>
               </Link>
@@ -81,7 +80,7 @@ const Header = () => {
                 display={{ base: "none", md: "inline-flex" }}
               >
                 <Link
-                  href="https://github.com/pheralb/iconr/tree/main/public/library"
+                  href="https://github.com/pheralb/SVGParty/tree/main/public/library"
                   passHref
                 >
                   <Button
@@ -92,7 +91,7 @@ const Header = () => {
                     Library
                   </Button>
                 </Link>
-                <Link href="https://twitter.com/iconrhq" passHref>
+                <Link href="https://twitter.com/SVGPartyhq" passHref>
                   <IconButton
                     aria-label="Twitter profile"
                     bg="transparent"
@@ -101,7 +100,7 @@ const Header = () => {
                     icon={<IoLogoTwitter size="25" />}
                   />
                 </Link>
-                <Link href="https://github.com/pheralb/iconr" passHref>
+                <Link href="https://github.com/pheralb/SVGParty" passHref>
                   <IconButton
                     aria-label="Github Repository"
                     bg="transparent"
@@ -147,7 +146,7 @@ const Header = () => {
                     Close
                   </Button>
                   <Link
-                    href="https://github.com/pheralb/iconr/tree/main/public/library"
+                    href="https://github.com/pheralb/SVGParty/tree/main/public/library"
                     passHref
                   >
                     <Button
@@ -160,7 +159,7 @@ const Header = () => {
                       Library
                     </Button>
                   </Link>
-                  <Link href="https://github.com/pheralb/iconr" passHref>
+                  <Link href="https://github.com/pheralb/SVGParty" passHref>
                     <Button
                       bg="transparent"
                       border="0"

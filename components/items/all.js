@@ -3,7 +3,6 @@ import useSWR from "swr";
 import Grid from "components/grid";
 import Card from "components/card";
 import Loader from "animations/loader";
-import { Text } from "@chakra-ui/react";
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
@@ -16,13 +15,12 @@ const All = () => {
       <Grid>
         {data.map((link) => (
           <>
-            <div key={link.id}>
-              <Card
-                title={link.title}
-                url={`/icon/${link.id}`}
-                href={link.href}
-              />
-            </div>
+            <Card
+              key={link.id}
+              title={link.title}
+              url={`/svg/${link.id}`}
+              href={link.href}
+            />
           </>
         ))}
       </Grid>

@@ -1,9 +1,7 @@
 <p align="center" style="margin-top:5px">
-  <a href="https://strapi.io/#gh-light-mode-only">
-    <img src="https://iconr.vercel.app/images/logo.png" width="85px" alt="iconr logo" />
-  </a>
+    <img src="https://raw.githubusercontent.com/pheralb/svgparty/main/public/images/logo.png" width="85px" alt="svgparty logo" />
 </p>
-<h2 align="center">Iconr - Beautiful SVG vector icons</h2>
+<h2 align="center">SVGParty - Beautiful SVG vector logos</h2>
 <br />
 
 ## 🚀 Getting started:
@@ -24,4 +22,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## 📦 Deployed on Vercel:
 
-[https://iconr.vercel.app/](https://iconr.vercel.app/)
+[https://svgparty.vercel.app/](https://svgparty.vercel.app/)

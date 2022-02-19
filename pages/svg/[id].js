@@ -43,7 +43,7 @@ export default function Icon() {
   return (
     <>
       <Head>
-        <title>{data.title} - iconr</title>
+        <title>{data.title} - SVGParty</title>
       </Head>
       <Show delay="0">
         <Container

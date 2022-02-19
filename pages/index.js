@@ -1,4 +1,4 @@
-import { chakra, Box, Container } from "@chakra-ui/react";
+import { chakra, Box, Container, Text } from "@chakra-ui/react";
 import Search from "components/search";
 import Items from "components/items/all";
 import Show from "animations/show";
@@ -17,13 +17,13 @@ export default function Index() {
                 fontWeight="extrabold"
                 mb={{ base: 4, md: 8 }}
               >
-                Beautiful SVG vector icons
+                Beautiful SVG vector logos
               </chakra.h1>
             </Show>
             <Search />
-            <Box mt={{ base: 4, md: 8 }}>
-              <Items />
-            </Box>
+          </Box>
+          <Box mt={{ base: 4, md: 8 }}>
+            <Items />
           </Box>
         </Box>
       </Box>

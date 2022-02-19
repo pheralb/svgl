@@ -18,21 +18,21 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>iconr - Beautiful SVG vector icons</title>
+        <title>SVGParty - Beautiful SVG vector logos</title>
         <meta name="description" content="SVGs for everyone, totally free" />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="iconr - Beautiful SVG vector icons"
+          content="SVGParty - Beautiful SVG logos"
         />
-        <meta property="og:url" content="https://iconr.vercel.app/" />
+        <meta property="og:url" content="https://svgparty.vercel.app/" />
         <meta
           property="og:description"
-          content="Beautiful SVG vector icons. Free and open source."
+          content="Beautiful SVG logos. Free and open source."
         />
         <meta
           property="og:image"
-          content="https://iconr.vercel.app/images/banner.png"
+          content="https://svgparty.vercel.app/images/banner.png"
         />
         <meta name="keywords" content="svg,vector,logo,logos,download" />
         <meta content="#16161a" name="theme-color" />

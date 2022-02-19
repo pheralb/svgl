@@ -1,7 +1,7 @@
 {
-  "name": "iconr",
-  "version": "1.0.5",
-  "description": "Beautiful SVG vector icons",
+  "name": "svgparty",
+  "version": "1.0.6",
+  "description": "Beautiful SVG vector logos",
   "author": "pheralb",
   "license": "MIT",
   "scripts": {
