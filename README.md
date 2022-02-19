@@ -1,9 +1,3 @@
-<p align="center" style="margin-top:5px">
-    <img src="https://raw.githubusercontent.com/pheralb/svgparty/main/public/images/logo.png" width="85px" alt="svgparty logo" />
-</p>
-<h2 align="center">SVGParty - Beautiful SVG vector logos</h2>
-<br />
-
 ## 🚀 Getting started:
 
 You need:
