@@ -15,6 +15,8 @@
     "@chakra-ui/react": "^1.8.6",
     "@emotion/react": "^11.8.1",
     "@emotion/styled": "^11.8.1",
+    "canvas-confetti": "^1.5.1",
+    "downloadjs": "^1.4.7",
     "framer-motion": "^6.2.8",
     "next": "12.1.0",
     "react": "17.0.2",

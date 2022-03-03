@@ -23,15 +23,17 @@ function MyApp({ Component, pageProps, router }) {
     <>
       <Head>
         <title>SVGL - Beautiful SVG vector logos</title>
-        <meta name="description" content="SVGs for everyone, totally free" />
-        <meta property="og:type" content="website" />
         <meta property="og:title" content="SVGL - Beautiful SVG logos" />
+        <meta property="og:type" content="website" />
         <meta property="og:url" content="https://svgl.vercel.app/" />
-        <meta
-          property="og:description"
-          content="Beautiful SVG logos. Free and open source."
-        />
-        <meta property="og:image" content="/images/logo.png" />
+        <meta property="og:description" content="Beautiful SVG logos. Free and open source."/>
+        <meta property="og:image" content="/images/banner.png" />
+        <meta property="twitter:title" content="SVGL - Beautiful SVG logos" />
+        <meta property="twitter:url" content="https://svgl.vercel.app/" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:creator" content="@pheralb" />
+        <meta property="twitter:description" content="Beautiful SVG logos. Free and open source." />
+        <meta property="twitter:image:src" content="/images/banner.png" />
         <meta name="keywords" content="svg,vector,logo,logos,download" />
         <meta content="#16161a" name="theme-color" />
         <link rel="icon" href="/icons/icon.ico" />

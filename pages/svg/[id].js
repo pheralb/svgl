@@ -17,7 +17,8 @@ import { BiLinkExternal } from "react-icons/bi";
 import Link from "next/link";
 import Show from "animations/show";
 import Loader from "animations/loader";
-import Hover from "animations/hover";
+import confetti from "canvas-confetti";
+import download from "downloadjs";
 
 const fetcher = async (url) => {
   const res = await fetch(url);
@@ -37,6 +38,11 @@ export default function Icon() {
 
   if (error) return <Error />;
   if (!data) return <Loader />;
+
+  const downloadSvg = (name, url) => {
+    confetti();
+    download(url, `${name}.svg`, "image/svg+xml");
+  };
 
   return (
     <>
@@ -73,16 +79,15 @@ export default function Icon() {
                 {data.title}
               </chakra.h1>
               <Flex direction={{ base: "column", md: "row" }} mt="2">
-                <Link href={data.href} passHref>
-                  <Button
-                    leftIcon={<IoCloudDownloadOutline />}
-                    variant="primary"
-                    fontWeight="light"
-                    mr="2"
-                  >
-                    Download .svg
-                  </Button>
-                </Link>
+                <Button
+                  leftIcon={<IoCloudDownloadOutline />}
+                  variant="primary"
+                  fontWeight="light"
+                  mr="2"
+                  onClick={() => downloadSvg(data.title, data.href)}
+                >
+                  Download .svg
+                </Button>
                 <Link href={data.url} passHref>
                   <Button
                     fontWeight="light"
