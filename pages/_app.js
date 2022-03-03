@@ -5,6 +5,7 @@ import Head from "next/head";
 import { ChakraProvider, Container } from "@chakra-ui/react";
 
 // 📦 Components ->
+import Layout from "components/layout";
 import Header from "components/header";
 import Footer from "components/footer";
 
@@ -14,36 +15,35 @@ import "styles/globals.css";
 // 🎨 Theme ->
 import theme from "styles/theme";
 
-function MyApp({ Component, pageProps }) {
+// 🐢 Animations ->
+import Transitions from "animations/transitions";
+
+function MyApp({ Component, pageProps, router }) {
   return (
     <>
       <Head>
-        <title>SVGParty - Beautiful SVG vector logos</title>
+        <title>SVGL - Beautiful SVG vector logos</title>
         <meta name="description" content="SVGs for everyone, totally free" />
         <meta property="og:type" content="website" />
-        <meta
-          property="og:title"
-          content="SVGParty - Beautiful SVG logos"
-        />
-        <meta property="og:url" content="https://svgparty.vercel.app/" />
+        <meta property="og:title" content="SVGL - Beautiful SVG logos" />
+        <meta property="og:url" content="https://svgl.vercel.app/" />
         <meta
           property="og:description"
           content="Beautiful SVG logos. Free and open source."
         />
-        <meta
-          property="og:image"
-          content="https://svgparty.vercel.app/images/banner.png"
-        />
+        <meta property="og:image" content="/images/logo.png" />
         <meta name="keywords" content="svg,vector,logo,logos,download" />
         <meta content="#16161a" name="theme-color" />
-        <link rel="icon" href="/images/logo.png" />
+        <link rel="icon" href="/icons/icon.ico" />
       </Head>
       <ChakraProvider theme={theme}>
-        <Container maxW={{ base: "100%", md: "85%" }}>
-          <Header />
-          <Component {...pageProps} />
-          <Footer />
-        </Container>
+        <Header />
+        <Layout>
+          <Transitions key={router.route}>
+            <Component {...pageProps} />
+          </Transitions>
+        </Layout>
+        <Footer />
       </ChakraProvider>
     </>
   );

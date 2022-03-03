@@ -1,14 +1,6 @@
 @font-face {
-  font-family: "Inter-Regular";
-  src: url("/fonts/Inter-Regular.woff2") format('woff2');
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Eina-Bold";
-  src: url("/fonts/eina-01-bold.woff2") format('woff2');
+  font-family: "Poppins-Regular";
+  src: url("/fonts/Poppins-Regular.woff2") format('woff2');
   font-style: normal;
   font-weight: 400;
   font-display: swap;

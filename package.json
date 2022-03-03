@@ -1,6 +1,6 @@
 {
-  "name": "svgparty",
-  "version": "1.0.6",
+  "name": "svgl",
+  "version": "1.0.7",
   "description": "Beautiful SVG vector logos",
   "author": "pheralb",
   "license": "MIT",
@@ -11,19 +11,19 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@algolia/autocomplete-core": "^1.5.2",
-    "@chakra-ui/react": "^1.8.3",
-    "@emotion/react": "^11.7.1",
-    "@emotion/styled": "^11.6.0",
-    "framer-motion": "^6.2.6",
+    "@algolia/autocomplete-core": "^1.5.3",
+    "@chakra-ui/react": "^1.8.6",
+    "@emotion/react": "^11.8.1",
+    "@emotion/styled": "^11.8.1",
+    "framer-motion": "^6.2.8",
     "next": "12.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-icons": "^4.3.1",
-    "swr": "^1.2.1"
+    "swr": "^1.2.2"
   },
   "devDependencies": {
-    "eslint": "8.9.0",
+    "eslint": "8.10.0",
     "eslint-config-next": "12.1.0"
   }
 }

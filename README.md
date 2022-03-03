@@ -16,4 +16,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## 📦 Deployed on Vercel:
 
-[https://svgparty.vercel.app/](https://svgparty.vercel.app/)
+[https://svgl.vercel.app/](https://svgl.vercel.app/)

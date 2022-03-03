@@ -2,15 +2,16 @@ import { useMemo, useRef, useState } from "react";
 import { createAutocomplete } from "@algolia/autocomplete-core";
 import Link from "next/link";
 import {
-  chakra,
   Box,
   Input,
   InputLeftElement,
   InputGroup,
-  Image,
-  Center,
   Button,
   Flex,
+  HStack,
+  Text,
+  Image,
+  Icon,
 } from "@chakra-ui/react";
 import { IoCloudDownloadOutline, IoLink, IoSearch } from "react-icons/io5";
 import { Algolia } from "components/svg";
@@ -18,47 +19,24 @@ import { Algolia } from "components/svg";
 const AutocompleteItem = ({ id, title, href, url }) => {
   return (
     <>
-      <Box
-        w="100%"
-        id={id}
-        borderWidth="1px"
-        borderRadius="10px"
-        roundedTop={3}
-        mt="3"
-      >
-        <Box py={12} px={6}>
-          <Center>
-            <Image src={href} alt={title} boxSize="60px" mb="3" />
-          </Center>
-          <chakra.h2 fontSize={{ base: "2xl", md: "2xl" }} fontWeight="bold">
-            {title}
-          </chakra.h2>
-          <Box mt="3">
-            <Link href={href} passHref>
-              <Button
-                leftIcon={<IoCloudDownloadOutline />}
-                colorScheme="black"
-                variant="outline"
-                bg="transparent"
-                fontWeight="light"
-                mr="2"
-              >
-                Download .svg
-              </Button>
-            </Link>
-            <Link href={url} passHref>
-              <Button
-                rightIcon={<IoLink />}
-                colorScheme="teal"
-                variant="outline"
-                border="0"
-              >
-                {title} website
-              </Button>
-            </Link>
-          </Box>
+      <Link href={`/svg/${id}`} passHref>
+        <Box
+          id={id}
+          w="100%"
+          borderWidth="1px"
+          borderRadius="6px"
+          mt="3"
+          cursor="pointer"
+        >
+          <HStack py={6} px={6} spacing={2}>
+            <Image src={href} alt={title} boxSize="20px" mr="2" />
+            <Text fontSize="18px" fontWeight="light">
+              {title}
+            </Text>
+            <Icon as={IoLink} />
+          </HStack>
         </Box>
-      </Box>
+      </Link>
     </>
   );
 };
@@ -71,7 +49,7 @@ export default function Search(props) {
   const autocomplete = useMemo(
     () =>
       createAutocomplete({
-        placeholder: "Search icons...",
+        placeholder: "Search svgs...",
         onStateChange: ({ state }) => setAutocompleteState(state),
         getSources: () => [
           {

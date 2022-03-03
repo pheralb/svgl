@@ -1,27 +1,25 @@
-import { chakra, Box, Container, Text } from "@chakra-ui/react";
+import { chakra, Box, Container, Text, Flex, Icon } from "@chakra-ui/react";
 import Search from "components/search";
 import Items from "components/items/all";
 import Show from "animations/show";
+import { rocket } from "components/svg";
 
 export default function Index() {
   return (
     <>
-      <Box mt="10">
+      <Box mt="6">
         <Box w="full" border="solid 1px transparent">
-          <Box textAlign="center">
-            <Show delay="0">
-              <chakra.h1
-                fontSize={{ base: "25px", sm: "35px", md: "6xl" }}
-                letterSpacing="tight"
-                lineHeight="short"
-                fontWeight="extrabold"
-                mb={{ base: 4, md: 8 }}
-              >
-                Beautiful SVG vector logos
-              </chakra.h1>
-            </Show>
-            <Search />
-          </Box>
+          <chakra.h1
+            fontSize={{ base: "25px", sm: "35px", md: "6xl" }}
+            textAlign="center"
+            letterSpacing="tight"
+            lineHeight="short"
+            fontWeight="extrabold"
+            mb="3"
+          >
+            Beautiful SVG vector logos
+          </chakra.h1>
+          <Search />
           <Box mt={{ base: 4, md: 8 }}>
             <Items />
           </Box>

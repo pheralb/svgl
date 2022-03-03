@@ -3,13 +3,11 @@ import {
   chakra,
   Box,
   Flex,
-  Badge,
   SimpleGrid,
   Button,
   Image,
   Container,
   Center,
-  HStack,
 } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import useSWR from "swr";
@@ -43,14 +41,10 @@ export default function Icon() {
   return (
     <>
       <Head>
-        <title>{data.title} - SVGParty</title>
+        <title>{data.title} - SVGL</title>
       </Head>
       <Show delay="0">
-        <Container
-          maxW="100%"
-          borderWidth="1px"
-          borderRadius="30px"
-        >
+        <Container maxW="100%" borderWidth="1px" borderRadius="30px">
           <SimpleGrid columns={{ base: 1, md: 1, lg: 2 }} spacing={0}>
             <Box py={{ base: "10", md: "24" }}>
               <Center>
@@ -79,24 +73,18 @@ export default function Icon() {
                 {data.title}
               </chakra.h1>
               <Flex direction={{ base: "column", md: "row" }} mt="2">
-                <Hover>
-                  <Link href={data.href} passHref>
-                    <Button
-                      leftIcon={<IoCloudDownloadOutline />}
-                      colorScheme="black"
-                      variant="outline"
-                      bg="transparent"
-                      fontWeight="light"
-                      mr="2"
-                    >
-                      Download .svg
-                    </Button>
-                  </Link>
-                </Hover>
+                <Link href={data.href} passHref>
+                  <Button
+                    leftIcon={<IoCloudDownloadOutline />}
+                    variant="primary"
+                    fontWeight="light"
+                    mr="2"
+                  >
+                    Download .svg
+                  </Button>
+                </Link>
                 <Link href={data.url} passHref>
                   <Button
-                    colorScheme="teal"
-                    variant="outline"
                     fontWeight="light"
                     borderWidth="1px"
                     rightIcon={<BiLinkExternal />}
@@ -111,9 +99,8 @@ export default function Icon() {
           <Link href="/" passHref>
             <Button
               leftIcon={<IoArrowBackOutline />}
-              colorScheme="twitter"
               variant="outline"
-              fontWeight="bold"
+              fontWeight="light"
               w="100%"
               border="0"
               mt="4"
