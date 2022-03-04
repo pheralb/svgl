@@ -41,7 +41,7 @@ export default function Icon() {
 
   const downloadSvg = (name, url) => {
     confetti();
-    download(url, `${name}.svg`, "image/svg+xml");
+    download(url);
   };
 
   return (
@@ -100,7 +100,6 @@ export default function Icon() {
               </Flex>
             </Flex>
           </SimpleGrid>
-
           <Link href="/" passHref>
             <Button
               leftIcon={<IoArrowBackOutline />}

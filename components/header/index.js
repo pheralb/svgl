@@ -20,7 +20,7 @@ import {
 } from "react-icons/io5";
 import { BiLinkExternal } from "react-icons/bi";
 import Link from "next/link";
-import Hover from "animations/hover";
+import Hover from "animations/tap";
 import Show from "animations/show";
 import { svgl } from "components/svg";
 import HEADER_LINKS from "./links";
