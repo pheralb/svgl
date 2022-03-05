@@ -30,10 +30,9 @@ function MyApp({ Component, pageProps, router }) {
         <meta property="og:image" content="/images/banner.png" />
         <meta property="twitter:title" content="SVGL - Beautiful SVG logos" />
         <meta property="twitter:url" content="https://svgl.vercel.app/" />
-        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:card" content="summary" />
         <meta property="twitter:creator" content="@pheralb" />
         <meta property="twitter:description" content="Beautiful SVG logos. Free and open source." />
-        <meta property="twitter:image:src" content="/images/banner.png" />
         <meta name="keywords" content="svg,vector,logo,logos,download" />
         <meta content="#16161a" name="theme-color" />
         <link rel="icon" href="/icons/icon.ico" />

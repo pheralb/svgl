@@ -272,6 +272,13 @@ const Icons = [
     category: "Search",
     url: "https://www.google.com/",
   },
+  {
+    id: 40,
+    href: "/library/framer.svg",
+    title: "Framer",
+    category: "Design",
+    url: "https://framer.com/",
+  }
 ];
 
 export default Icons;

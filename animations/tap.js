@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Tap = ({ children }) => {
   return (
-    <motion.div whileTap={{ scale: 0.99 }}>
+    <motion.div whileTap={{ scale: 0.98 }}>
       {children}
     </motion.div>
   );

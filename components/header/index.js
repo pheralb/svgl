@@ -24,6 +24,8 @@ import Hover from "animations/tap";
 import Show from "animations/show";
 import { svgl } from "components/svg";
 import HEADER_LINKS from "./links";
+import Search from "components/search";
+import ModalSearch from "components/search/modal";
 
 const Header = () => {
   const mobileNav = useDisclosure();
@@ -78,7 +80,8 @@ const Header = () => {
             ))}
           </HStack>
           <HStack display="flex" alignItems="center">
-            <HStack spacing={3} display={{ base: "none", md: "inline-flex" }}>
+            <HStack spacing={4} display={{ base: "none", md: "inline-flex" }}>
+              <ModalSearch />
               <Link href="https://github.com/pheralb/svgl" passHref>
                 <IconButton
                   aria-label="Github Repository"
@@ -129,6 +132,7 @@ const Header = () => {
                   passHref
                 >
                   <Button
+                    as="a"
                     bg="transparent"
                     border="0"
                     variant="outline"
@@ -140,6 +144,7 @@ const Header = () => {
                 </Link>
                 <Link href="https://github.com/pheralb/svgl" passHref>
                   <Button
+                    as="a"
                     bg="transparent"
                     border="0"
                     variant="outline"

@@ -13,12 +13,12 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #16161a; 
+  background: #696969; 
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(133, 133, 133); 
+  background: rgb(0, 0, 0); 
 }
 
 /* Handle on hover */

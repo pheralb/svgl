@@ -40,7 +40,13 @@ export default function Icon() {
   if (!data) return <Loader />;
 
   const downloadSvg = (name, url) => {
-    confetti();
+    confetti({
+      particleCount: 200,
+      startVelocity: 30,
+      spread: 300,
+      gravity: 1.2,
+      origin: { y: 0 },
+    });
     download(url);
   };
 
@@ -78,8 +84,10 @@ export default function Icon() {
               >
                 {data.title}
               </chakra.h1>
-              <Flex direction={{ base: "column", md: "row" }} mt="2">
+              <Flex direction={{ base: "column", md: "row" }} w="100%" mt="2">
                 <Button
+                  w={{ base: "100%", md: "auto" }}
+                  mb={{ base: "2", md: "0" }}
                   leftIcon={<IoCloudDownloadOutline />}
                   variant="primary"
                   fontWeight="light"
@@ -90,6 +98,7 @@ export default function Icon() {
                 </Button>
                 <Link href={data.url} passHref>
                   <Button
+                    w={{ base: "100%", md: "auto" }}
                     fontWeight="light"
                     borderWidth="1px"
                     rightIcon={<BiLinkExternal />}
