@@ -10,12 +10,14 @@ import {
   useDisclosure,
   IconButton,
   Button,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import Search from "components/search";
 import { IoSearch } from "react-icons/io5";
 
 const ModalSearch = (props) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const bg = useColorModeValue("light.100", "dark.800");
   return (
     <>
       <IconButton
@@ -27,7 +29,7 @@ const ModalSearch = (props) => {
       />
       <Modal isOpen={isOpen} onClose={onClose} motionPreset='slideInBottom'>
         <ModalOverlay />
-        <ModalContent>
+        <ModalContent bg={bg}>
           <ModalHeader fontWeight="light">Search</ModalHeader>
           <ModalCloseButton />
           <ModalBody pb="5">
