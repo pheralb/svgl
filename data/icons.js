@@ -278,7 +278,28 @@ const Icons = [
     title: "Framer",
     category: "Design",
     url: "https://framer.com/",
-  }
+  },
+  {
+    id: 41,
+    href: "/library/netflix.svg",
+    title: "Netflix",
+    category: "Video Platform",
+    url: "https://www.netflix.com/",
+  },
+  {
+    id: 42,
+    href: "/library/firefox.svg",
+    title: "Firefox",
+    category: "Browser",
+    url: "https://www.mozilla.org/en-US/firefox/",
+  },
+  {
+    id: 43,
+    href: "/library/linkedin.svg",
+    title: "LinkedIn",
+    category: "Social",
+    url: "https://www.linkedin.com/",
+  },
 ];
 
 export default Icons;

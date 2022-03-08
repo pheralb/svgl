@@ -39,7 +39,7 @@ export default function Icon() {
   if (error) return <Error />;
   if (!data) return <Loader />;
 
-  const downloadSvg = (name, url) => {
+  const downloadSvg = (url) => {
     confetti({
       particleCount: 200,
       startVelocity: 30,
@@ -92,7 +92,7 @@ export default function Icon() {
                   variant="primary"
                   fontWeight="light"
                   mr="2"
-                  onClick={() => downloadSvg(data.title, data.href)}
+                  onClick={() => downloadSvg(data.href)}
                 >
                   Download .svg
                 </Button>

@@ -16,16 +16,12 @@ import {
   IoBookOutline,
   IoCloseSharp,
   IoLogoGithub,
-  IoLogoTwitter,
 } from "react-icons/io5";
 import { BiLinkExternal } from "react-icons/bi";
 import Link from "next/link";
-import Hover from "animations/tap";
-import Show from "animations/show";
-import { svgl } from "components/svg";
 import HEADER_LINKS from "./links";
-import Search from "components/search";
 import ModalSearch from "components/search/modal";
+import Logo from "./logo";
 
 const Header = () => {
   const mobileNav = useDisclosure();
@@ -35,8 +31,8 @@ const Header = () => {
       <Box
         w="full"
         bg={bg}
-        px={{ base: 3, md: 16 }}
-        pl={{ base: 3, md: 16 }}
+        px={{ base: 6, md: 16 }}
+        pl={{ base: 6, md: 16 }}
         py="5"
         pos="sticky"
         top="0"
@@ -44,19 +40,7 @@ const Header = () => {
       >
         <Flex alignItems="center" justifyContent="space-between" mx="auto">
           <HStack spacing="1" alignItems="center">
-            <Hover>
-              <Link href="/" passHref>
-                <IconButton
-                  as={svgl}
-                  cursor="pointer"
-                  name="logo"
-                  boxSize="40px"
-                  mr="2"
-                  borderRadius="full"
-                  bg="transparent"
-                />
-              </Link>
-            </Hover>
+            <Logo />
             {HEADER_LINKS.map((link) => (
               <Link key={link.id} href={link.href} passHref>
                 <Button

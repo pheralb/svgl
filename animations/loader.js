@@ -5,7 +5,7 @@ const LoadingDot = {
   display: "block",
   width: "1rem",
   height: "1rem",
-  backgroundColor: "#50cdc5",
+  backgroundColor: "#6748E6",
   borderRadius: "50%",
 };
 
