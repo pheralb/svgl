@@ -32,7 +32,7 @@ const theme = extendTheme(
       },
     },
     fonts: {
-      body: "Poppins-Regular, sans-serif",
+      body: "Inter-Medium, sans-serif",
       heading: "Poppins-Regular, sans-serif",
     },
     styles: {
@@ -40,7 +40,7 @@ const theme = extendTheme(
         "html, body": {
           height: "100%",
           maxHeight: "100vh",
-          backgroundColor: mode("light.100", "lightDark.900")(props),
+          backgroundColor: mode("gray.100", "lightDark.900")(props),
         },
       }),
       borderColor: "red",

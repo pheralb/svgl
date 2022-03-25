@@ -300,6 +300,20 @@ const Icons = [
     category: "Social",
     url: "https://www.linkedin.com/",
   },
+  {
+    id: 44,
+    href:"/library/telegram.svg",
+    title: "Telegram",
+    category: "Social",
+    url: "https://web.telegram.org/",
+  },
+  {
+    id: 45,
+    href: "/library/whatsapp.svg",
+    title: "WhatsApp",
+    category: "Social",
+    url: "https://web.whatsapp.com/",
+  }
 ];
 
 export default Icons;

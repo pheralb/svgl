@@ -1,27 +1,8 @@
 @font-face {
-  font-family: "Poppins-Regular";
-  src: url("/fonts/Poppins-Regular.woff2") format('woff2');
+  font-family: "Inter-Medium";
+  src: url("/fonts/Inter-Medium.woff2") format('woff2');
   font-style: normal;
   font-weight: 400;
   font-display: swap;
 }
 
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #696969; 
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: rgb(0, 0, 0); 
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #333333; 
-}

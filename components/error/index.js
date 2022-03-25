@@ -20,10 +20,9 @@ const Error = () => {
             <Link href="/" passHref>
               <Button
                 leftIcon={<IoHome />}
-                colorScheme="twitter"
+                borderWidth="1px"
                 variant="outline"
-                fontWeight="bold"
-                border="0"
+                fontWeight="light"
                 mb="4"
               >
                 Go home

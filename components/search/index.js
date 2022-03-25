@@ -13,33 +13,31 @@ import {
   Icon,
 } from "@chakra-ui/react";
 import { IoSearch } from "react-icons/io5";
-import { BiLinkExternal } from "react-icons/bi";
+import { FiExternalLink } from "react-icons/fi";
 import { Algolia } from "components/svg";
-import Tap from "animations/tap";
 
 const AutocompleteItem = ({ id, title, href, url }) => {
   return (
     <>
-      <Tap>
-        <Link href={`/svg/${id}`} passHref>
-          <Box
-            id={id}
-            w="100%"
-            borderWidth="1px"
-            borderRadius="6px"
-            mt="3"
-            cursor="pointer"
-          >
-            <HStack py={6} px={6} spacing={2}>
-              <Image src={href} alt={title} boxSize="20px" mr="2" />
-              <Text fontSize="18px" fontWeight="light">
-                {title}
-              </Text>
-              <Icon as={BiLinkExternal} />
-            </HStack>
-          </Box>
-        </Link>
-      </Tap>
+      <Link href={`/svg/${id}`} passHref>
+        <Box
+          id={id}
+          w="100%"
+          borderWidth="1px"
+          borderRadius="6px"
+          mt="3"
+          cursor="pointer"
+          _hover={{ shadow: "sm" }}
+        >
+          <HStack py={6} px={6} spacing={2}>
+            <Image src={href} alt={title} boxSize="20px" mr="2" />
+            <Text fontSize="18px" fontWeight="light">
+              {title}
+            </Text>
+            <Icon as={FiExternalLink} />
+          </HStack>
+        </Box>
+      </Link>
     </>
   );
 };
@@ -96,6 +94,7 @@ export default function Search(props) {
             placeholder="Search icons..."
             _focus={{ shadow: "md" }}
             ref={inputRef}
+            autoFocus
             {...inputProps}
           />
         </InputGroup>

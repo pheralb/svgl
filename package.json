@@ -1,6 +1,6 @@
 {
   "name": "svgl",
-  "version": "1.0.7",
+  "version": "1.2.0",
   "description": "Beautiful SVG vector logos",
   "author": "pheralb",
   "license": "MIT",
@@ -21,6 +21,7 @@
     "next": "12.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-hot-toast": "^2.2.0",
     "react-icons": "^4.3.1",
     "swr": "^1.2.2"
   },

@@ -6,7 +6,6 @@ import {
   SimpleGrid,
   Button,
   Image,
-  Container,
   Center,
 } from "@chakra-ui/react";
 import { useRouter } from "next/router";
@@ -56,73 +55,68 @@ export default function Icon() {
         <title>{data.title} - SVGL</title>
       </Head>
       <Show delay="0">
-        <Container maxW="100%" borderWidth="1px" borderRadius="30px">
-          <SimpleGrid columns={{ base: 1, md: 1, lg: 2 }} spacing={0}>
-            <Box py={{ base: "10", md: "24" }}>
-              <Center>
-                <Image
-                  src={data.href}
-                  alt={data.title}
-                  w={{ base: "30%", md: "20%", lg: "30%" }}
-                  fit="cover"
-                  loading="lazy"
-                />
-              </Center>
-            </Box>
-            <Flex
-              direction="column"
-              alignItems="start"
-              justifyContent="center"
-              px={{ base: 4, lg: 4 }}
-              py={{ base: "3", md: "0", lg: "10" }}
+        <Link href="/" passHref>
+          <Button
+            leftIcon={<IoArrowBackOutline />}
+            fontWeight="light"
+            variant="ghost"
+            mb="4"
+          >
+            Continue discovering
+          </Button>
+        </Link>
+        <SimpleGrid columns={{ base: 1, md: 1, lg: 2 }} spacing={0}>
+          <Box py={{ base: "10", md: "24" }}>
+            <Center>
+              <Image
+                src={data.href}
+                alt={data.title}
+                w={{ base: "30%", md: "20%", lg: "30%" }}
+                fit="cover"
+                loading="lazy"
+              />
+            </Center>
+          </Box>
+          <Flex
+            direction="column"
+            alignItems="start"
+            justifyContent="center"
+            px={{ base: 4, lg: 4 }}
+            py={{ base: "3", md: "0", lg: "10" }}
+          >
+            <chakra.h1
+              mb={3}
+              fontSize={{ base: "4xl", md: "4xl", lg: "5xl" }}
+              fontWeight="semibold"
+              lineHeight="shorter"
             >
-              <chakra.h1
-                mb={3}
-                fontSize={{ base: "4xl", md: "4xl", lg: "5xl" }}
-                fontWeight="semibold"
-                lineHeight="shorter"
+              {data.title}
+            </chakra.h1>
+            <Flex direction={{ base: "column", md: "row" }} w="100%" mt="2">
+              <Button
+                w={{ base: "100%", md: "auto" }}
+                mb={{ base: "2", md: "0" }}
+                leftIcon={<IoCloudDownloadOutline />}
+                variant="primary"
+                fontWeight="light"
+                mr="2"
+                onClick={() => downloadSvg(data.href)}
               >
-                {data.title}
-              </chakra.h1>
-              <Flex direction={{ base: "column", md: "row" }} w="100%" mt="2">
+                Download .svg
+              </Button>
+              <Link href={data.url} passHref>
                 <Button
                   w={{ base: "100%", md: "auto" }}
-                  mb={{ base: "2", md: "0" }}
-                  leftIcon={<IoCloudDownloadOutline />}
-                  variant="primary"
                   fontWeight="light"
-                  mr="2"
-                  onClick={() => downloadSvg(data.href)}
+                  borderWidth="1px"
+                  rightIcon={<BiLinkExternal />}
                 >
-                  Download .svg
+                  {data.title} website
                 </Button>
-                <Link href={data.url} passHref>
-                  <Button
-                    w={{ base: "100%", md: "auto" }}
-                    fontWeight="light"
-                    borderWidth="1px"
-                    rightIcon={<BiLinkExternal />}
-                  >
-                    {data.title} website
-                  </Button>
-                </Link>
-              </Flex>
+              </Link>
             </Flex>
-          </SimpleGrid>
-          <Link href="/" passHref>
-            <Button
-              leftIcon={<IoArrowBackOutline />}
-              variant="outline"
-              fontWeight="light"
-              w="100%"
-              border="0"
-              mt="4"
-              mb="4"
-            >
-              Continue discovering
-            </Button>
-          </Link>
-        </Container>
+          </Flex>
+        </SimpleGrid>
       </Show>
     </>
   );
