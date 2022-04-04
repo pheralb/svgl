@@ -7,6 +7,7 @@ import {
   Button,
   Image,
   Center,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import useSWR from "swr";
@@ -34,6 +35,7 @@ export default function Icon() {
     () => query.id && `/api/search?id=${query.id}`,
     fetcher
   );
+  const bgImage = useColorModeValue("transparent", "#E9E9E9");
 
   if (error) return <Error />;
   if (!data) return <Loader />;
@@ -74,6 +76,9 @@ export default function Icon() {
                 w={{ base: "30%", md: "20%", lg: "30%" }}
                 fit="cover"
                 loading="lazy"
+                bg={bgImage}
+                borderRadius="15px"
+                p="1"
               />
             </Center>
           </Box>

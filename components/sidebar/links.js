@@ -1,4 +1,4 @@
-import { IoHomeOutline, IoLogoGithub } from 'react-icons/io5';
+import { IoAppsOutline, IoLogoGithub } from 'react-icons/io5';
 import { FiTwitter } from 'react-icons/fi';
 
 const SidebarLinks = [
@@ -7,7 +7,7 @@ const SidebarLinks = [
     href: "/",
     external: false,
     title: "Browse",
-    icon: IoHomeOutline,
+    icon: IoAppsOutline,
   },
   {
     id: 2,

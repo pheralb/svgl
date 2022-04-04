@@ -16,16 +16,17 @@ import toast from "react-hot-toast";
 import Tap from "animations/tap";
 
 const Index = ({ title, url, href }) => {
-  const bgColor = useColorModeValue("#F2F2F2", "#1D1D1D");
-  const color = useColorModeValue("black", "white");
+  const toastBg = useColorModeValue("#F2F2F2", "#1D1D1D");
+  const toastColor = useColorModeValue("black", "white");
+  const bgImage = useColorModeValue("transparent", "#E9E9E9");
 
   const downloadSvg = (url) => {
     toast(`Downloading ${title}...`, {
       icon: "🥳",
       style: {
         borderRadius: "10px",
-        background: bgColor,
-        color: color,
+        background: toastBg,
+        color: toastColor,
       },
     });
     download(url);
@@ -42,7 +43,7 @@ const Index = ({ title, url, href }) => {
       }}
     >
       <Center>
-        <Image src={href} alt={title} boxSize="40px" />
+        <Image src={href} alt={title} boxSize="45px" bg={bgImage} borderRadius="15px" p="1" />
       </Center>
       <Text mt="2" fontWeight="light" textAlign="center">
         {title}

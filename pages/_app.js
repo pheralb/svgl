@@ -2,7 +2,10 @@
 import Head from "next/head";
 
 // 🌿 Chakra UI ->
-import { ChakraProvider, Container } from "@chakra-ui/react";
+import { ChakraProvider, Container, useColorModeValue } from "@chakra-ui/react";
+
+// ➡️ Nextjs Progressbar ->
+import NextNProgress from "nextjs-progressbar";
 
 // 📦 Components ->
 import Sidebar from "components/sidebar";
@@ -20,11 +23,11 @@ import Transitions from "animations/transitions";
 import { Toaster } from "react-hot-toast";
 
 function MyApp({ Component, pageProps, router }) {
+  const progress = useColorModeValue("#7B7B7B", "#D4D4D4");
   return (
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-
         <title>SVGL - Beautiful SVG vector logos</title>
         <meta property="og:title" content="SVGL - Beautiful SVG vector logos" />
         <meta
@@ -37,7 +40,6 @@ function MyApp({ Component, pageProps, router }) {
           property="og:image"
           content="https://svgl.vercel.app/images/banner.png"
         />
-
         <meta name="twitter:site" content="@pheralb_" />
         <meta
           property="twitter:title"
@@ -60,6 +62,7 @@ function MyApp({ Component, pageProps, router }) {
       </Head>
       <ChakraProvider theme={theme}>
         <Sidebar>
+          <NextNProgress color={progress}/>
           <Layout>
             <Transitions key={router.route}>
               <Component {...pageProps} />

@@ -24,7 +24,7 @@ import ModalSearch from "components/search/modal";
 
 export default function Index({ children }) {
   const sidebar = useDisclosure();
-  const border = useColorModeValue("dark.200", "dark.800");
+  const border = useColorModeValue("gray.200", "dark.800");
   const bg = useColorModeValue("gray.100", "lightDark.900");
 
   const SidebarContent = (props) => (
@@ -40,7 +40,6 @@ export default function Index({ children }) {
       overflowY="auto"
       borderColor={border}
       borderRightWidth="1px"
-      shadow="sm"
       w="56"
       {...props}
     >

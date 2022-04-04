@@ -11,14 +11,15 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@algolia/autocomplete-core": "^1.5.3",
-    "@chakra-ui/react": "^1.8.6",
-    "@emotion/react": "^11.8.1",
+    "@algolia/autocomplete-core": "^1.5.6",
+    "@chakra-ui/react": "^1.8.7",
+    "@emotion/react": "^11.8.2",
     "@emotion/styled": "^11.8.1",
     "canvas-confetti": "^1.5.1",
     "downloadjs": "^1.4.7",
     "framer-motion": "^6.2.8",
     "next": "12.1.0",
+    "nextjs-progressbar": "^0.0.14",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-hot-toast": "^2.2.0",
