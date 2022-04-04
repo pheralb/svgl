@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://svgl.vercel.app/">
-    <img src="https://github.com/pheralb/svgl/blob/main/public/images/banner.png?raw=true" width="500px" alt="svgl logo" />
+    <img src="https://raw.githubusercontent.com/pheralb/svgl/main/public/images/post.png" width="800px" alt="svgl preview" />
   </a>
 </p>
 
