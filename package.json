@@ -19,6 +19,7 @@
     "downloadjs": "^1.4.7",
     "framer-motion": "^6.2.8",
     "next": "12.1.0",
+    "next-pwa": "^5.5.0",
     "nextjs-progressbar": "^0.0.14",
     "react": "17.0.2",
     "react-dom": "17.0.2",

@@ -1,10 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const Transitions = ({ key, children }) => {
+const Transitions = ({ children }) => {
   return (
     <motion.div
-      key={key}
       initial="initial"
       animate="animate"
       variants={{

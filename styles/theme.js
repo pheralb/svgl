@@ -40,7 +40,7 @@ const theme = extendTheme(
         "html, body": {
           height: "100%",
           maxHeight: "100vh",
-          backgroundColor: mode("gray.100", "lightDark.900")(props),
+          backgroundColor: mode("light.100", "lightDark.900")(props),
         },
       }),
       borderColor: "red",

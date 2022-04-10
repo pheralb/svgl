@@ -40,6 +40,7 @@ export default function Index({ children }) {
       overflowY="auto"
       borderColor={border}
       borderRightWidth="1px"
+      shadow="sm"
       w="56"
       {...props}
     >

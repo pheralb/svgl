@@ -1241,19 +1241,34 @@ export const google = (props) => {
 
 export const svgl = (props) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" {...props}>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={35}>
+      <path
+        fill="#3856cf"
+        d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"
+        className="fill-000000"
+        {...props}
+      ></path>
       <circle
-        cx="256"
-        cy="256"
-        r="208"
-        fill="none"
-        stroke="currentColor"
-        strokeMiterlimit="10"
-        strokeWidth="32"
+        cx="7.5"
+        cy="10.5"
+        r="1.5"
+        fill="#3856cf"
+        className="fill-000000"
       ></circle>
-      <circle cx="288" cy="200" r="24" fill="currentColor"></circle>
-      <circle cx="296" cy="128" r="24" fill="currentColor"></circle>
-      <circle cx="360" cy="168" r="24" fill="currentColor"></circle>
+      <circle
+        cx="10.5"
+        cy="7.5"
+        r="1.5"
+        fill="#3856cf"
+        className="fill-000000"
+      ></circle>
+      <circle
+        cx="11.5"
+        cy="11.5"
+        r="1.5"
+        fill="#3856cf"
+        className="fill-000000"
+      ></circle>
     </svg>
   );
 };

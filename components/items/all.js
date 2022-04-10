@@ -15,12 +15,13 @@ const All = () => {
       <Grid>
         {data.map((link) => (
           <>
-            <Card
-              key={link.id}
-              title={link.title}
-              url={`/svg/${link.id}`}
-              href={link.href}
-            />
+            <div key={link}>
+              <Card
+                title={link.title}
+                url={`/svg/${link.id}`}
+                href={link.href}
+              />
+            </div>
           </>
         ))}
       </Grid>
