@@ -1,18 +1,23 @@
 import React from "react";
-import { Center, useColorModeValue, VStack } from "@chakra-ui/react";
-import Link from "next/link";
+import {
+  Icon,
+  Link,
+  Center,
+  useColorModeValue,
+  HStack,
+} from "@chakra-ui/react";
+import { IoRocketOutline } from "react-icons/io5";
 
 const Index = () => {
   const color = useColorModeValue("gray.400", "gray.600");
   return (
     <>
-      <Center color={color}>
-        <VStack>
-          <Link href="https://github.com/pheralb" passHref>
-            Built by Pablo Hdez
-          </Link>
-        </VStack>
-      </Center>
+      <HStack color={color} ml="6" spacing="3">
+        <Icon boxSize="6" as={IoRocketOutline} />
+        <Link href="https://github.com/pheralb" isExternal="true">
+          Built by Pablo
+        </Link>
+      </HStack>
     </>
   );
 };

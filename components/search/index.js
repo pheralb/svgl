@@ -1,6 +1,5 @@
 import { useMemo, useRef, useState } from "react";
 import { createAutocomplete } from "@algolia/autocomplete-core";
-import Link from "next/link";
 import {
   Box,
   Input,
@@ -11,33 +10,42 @@ import {
   Text,
   Image,
   Icon,
+  Link,
 } from "@chakra-ui/react";
 import { IoSearch } from "react-icons/io5";
 import { FiExternalLink } from "react-icons/fi";
 import { Algolia } from "components/svg";
+import NextLink from "next/link";
 
 const AutocompleteItem = ({ id, title, href, url }) => {
   return (
     <>
-      <Link href={`/svg/${id}`} passHref>
-        <Box
-          id={id}
-          w="100%"
-          borderWidth="1px"
-          borderRadius="6px"
-          mt="3"
-          cursor="pointer"
-          _hover={{ shadow: "sm" }}
+      <NextLink href={`/svg/${id}`} passHref>
+        <Link
+          href={`/svg/${id}`}
+          style={{ textDecoration: "none" }}
+          _focus={{ outline: "0" }}
         >
-          <HStack py={6} px={6} spacing={2}>
-            <Image src={href} alt={title} boxSize="20px" mr="2" />
-            <Text fontSize="18px" fontWeight="light">
-              {title}
-            </Text>
-            <Icon as={FiExternalLink} />
-          </HStack>
-        </Box>
-      </Link>
+          <Box
+            id={id}
+            w="100%"
+            borderWidth="1px"
+            borderRadius="6px"
+            mt="3"
+            cursor="pointer"
+            _hover={{ shadow: "md" }}
+            transition="all 0.2s"
+          >
+            <HStack py={6} px={6} spacing={2}>
+              <Image src={href} alt={title} boxSize="20px" mr="2" />
+              <Text fontSize="18px" fontWeight="light">
+                {title}
+              </Text>
+              <Icon as={FiExternalLink} />
+            </HStack>
+          </Box>
+        </Link>
+      </NextLink>
     </>
   );
 };

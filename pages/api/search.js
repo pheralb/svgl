@@ -1,4 +1,4 @@
-import db from "data/icons";
+import db from "data/svgs";
 
 export default function handler(req, res) {
   const { id, q, c } = req.query;

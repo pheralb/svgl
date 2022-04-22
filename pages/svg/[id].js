@@ -7,6 +7,7 @@ import {
   Button,
   Image,
   Center,
+  Link,
   useColorModeValue,
 } from "@chakra-ui/react";
 import { useRouter } from "next/router";
@@ -14,11 +15,11 @@ import useSWR from "swr";
 import Error from "components/error";
 import { IoArrowBackOutline, IoCloudDownloadOutline } from "react-icons/io5";
 import { BiLinkExternal } from "react-icons/bi";
-import Link from "next/link";
 import Show from "animations/show";
 import Loader from "animations/loader";
 import confetti from "canvas-confetti";
 import download from "downloadjs";
+import NextLink from 'next/link';
 
 const fetcher = async (url) => {
   const res = await fetch(url);
@@ -36,6 +37,7 @@ export default function Icon() {
     fetcher
   );
   const bgImage = useColorModeValue("transparent", "#E9E9E9");
+  const borderRds = useColorModeValue("0", "15px");
 
   if (error) return <Error />;
   if (!data) return <Loader />;
@@ -57,7 +59,7 @@ export default function Icon() {
         <title>{data.title} - SVGL</title>
       </Head>
       <Show delay="0">
-        <Link href="/" passHref>
+        <NextLink href="/" passHref>
           <Button
             leftIcon={<IoArrowBackOutline />}
             fontWeight="light"
@@ -66,7 +68,7 @@ export default function Icon() {
           >
             Continue discovering
           </Button>
-        </Link>
+        </NextLink>
         <SimpleGrid columns={{ base: 1, md: 1, lg: 2 }} spacing={0}>
           <Box py={{ base: "10", md: "24" }}>
             <Center>
@@ -77,7 +79,7 @@ export default function Icon() {
                 fit="cover"
                 loading="lazy"
                 bg={bgImage}
-                borderRadius="15px"
+                borderRadius={borderRds}
                 p="1"
               />
             </Center>
@@ -109,7 +111,11 @@ export default function Icon() {
               >
                 Download .svg
               </Button>
-              <Link href={data.url} passHref>
+              <Link
+                href={data.url}
+                style={{ textDecoration: "none" }}
+                isExternal
+              >
                 <Button
                   w={{ base: "100%", md: "auto" }}
                   fontWeight="light"

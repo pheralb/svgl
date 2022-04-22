@@ -1,4 +1,4 @@
-import db from "data/icons";
+import db from "data/svgs";
 
 // 📦 Show all content ->
 export default function handler(req, res) {

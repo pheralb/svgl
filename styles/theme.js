@@ -33,7 +33,7 @@ const theme = extendTheme(
     },
     fonts: {
       body: "Inter-Medium, sans-serif",
-      heading: "Poppins-Regular, sans-serif",
+      heading: "Inter-Medium, sans-serif",
     },
     styles: {
       global: (props) => ({

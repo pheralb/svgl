@@ -11,6 +11,7 @@ import {
   IconButton,
   useColorModeValue,
   useDisclosure,
+  Link,
 } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { IoApps } from "react-icons/io5";
@@ -50,9 +51,15 @@ export default function Index({ children }) {
       <Flex direction="column" as="nav" aria-label="Main Navigation">
         {SidebarLinks.map((link) => (
           <NextLink key={link.id} href={link.href} passHref>
-            <Item icon={link.icon} external={link.external}>
-              {link.title}
-            </Item>
+            <Link
+              href={link.href}
+              isExternal={link.external}
+              style={{ textDecoration: "none" }}
+            >
+              <Item icon={link.icon} href={link.href} external={link.external}>
+                {link.title}
+              </Item>
+            </Link>
           </NextLink>
         ))}
         <ModalSearch />

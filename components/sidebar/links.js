@@ -1,5 +1,5 @@
-import { IoAppsOutline, IoLogoGithub } from 'react-icons/io5';
-import { FiTwitter } from 'react-icons/fi';
+import { IoAppsOutline, IoLogoGithub, IoBookOutline } from "react-icons/io5";
+import { FiTwitter } from "react-icons/fi";
 
 const SidebarLinks = [
   {
@@ -22,7 +22,7 @@ const SidebarLinks = [
     external: true,
     title: "Twitter",
     icon: FiTwitter,
-  }
+  },
 ];
 
 export default SidebarLinks;

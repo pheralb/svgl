@@ -6,3 +6,6 @@
   font-display: swap;
 }
 
+a:focus {
+  outline: none;
+}

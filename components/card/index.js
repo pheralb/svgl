@@ -19,6 +19,7 @@ const Index = ({ title, url, href }) => {
   const toastBg = useColorModeValue("#F2F2F2", "#1D1D1D");
   const toastColor = useColorModeValue("black", "white");
   const bgImage = useColorModeValue("transparent", "#E9E9E9");
+  const borderRds = useColorModeValue("0", "15px");
 
   const downloadSvg = (url) => {
     toast(`Downloading ${title}...`, {
@@ -41,9 +42,17 @@ const Index = ({ title, url, href }) => {
       _hover={{
         shadow: "md",
       }}
+      transition="all 0.2s"
     >
       <Center>
-        <Image src={href} alt={title} boxSize="45px" bg={bgImage} borderRadius="15px" p="1" />
+        <Image
+          src={href}
+          alt={title}
+          boxSize="45px"
+          bg={bgImage}
+          borderRadius={borderRds}
+          p="1"
+        />
       </Center>
       <Text mt="2" fontWeight="light" textAlign="center">
         {title}

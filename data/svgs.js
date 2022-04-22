@@ -1,4 +1,4 @@
-const Icons = [
+const SVGSLogos = [
   {
     id: 1,
     href: "/library/discord.svg",
@@ -313,7 +313,35 @@ const Icons = [
     title: "WhatsApp",
     category: "Social",
     url: "https://web.whatsapp.com/",
+  },
+  {
+    id: 46,
+    href: "/library/headlessui.svg",
+    title: "Headless UI",
+    category: "Design",
+    url: "https://headlessui.dev/",
+  },
+  {
+    id: 47,
+    href: "/library/kotlin.svg",
+    title: "Kotlin",
+    category: "Java",
+    url: "https://kotlinlang.org/",
+  },
+  {
+    id: 48,
+    href: "/library/tiktok.svg",
+    title: "TikTok",
+    category: "Video Platform",
+    url: "https://tiktok.com/",
+  },
+  {
+    id: 49,
+    href: "/library/storybook.svg",
+    title: "Storybook",
+    category: "UI component explorer",
+    url: "https://storybook.js.org/",
   }
 ];
 
-export default Icons;
+export default SVGSLogos;
