@@ -1,4 +1,4 @@
-const SVGSLogos = [
+const logos = [
   {
     id: 1,
     href: "/library/discord.svg",
@@ -344,4 +344,4 @@ const SVGSLogos = [
   }
 ];
 
-export default SVGSLogos;
+export default logos;
