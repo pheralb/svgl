@@ -1,11 +1,16 @@
-@font-face {
-  font-family: "Inter-Medium";
-  src: url("/fonts/Inter-Medium.woff2") format('woff2');
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a:focus {
-  outline: none;
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
 }
