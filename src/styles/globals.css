@@ -1,0 +1,16 @@
+/* Fonts -> */
+@font-face {
+  font-family: "Inter-Regular";
+  src: url("/fonts/Inter-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter-Semibold";
+  src: url("/fonts/Inter-Semibold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}

@@ -1,7 +1,16 @@
 {
-  "name": "svgl-new",
-  "version": "0.1.0",
+  "name": "svgl",
+  "version": "2.0.0",
+  "description": "A beautiful library with SVG logos.",
   "private": true,
+  "author": "pheralb",
+  "license": "MIT",
+  "keywords": [
+    "svgs",
+    "logos",
+    "images",
+    "library"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,9 +18,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chakra-ui/react": "2.1.2",
+    "@emotion/react": "11.9.0",
+    "@emotion/styled": "11.8.1",
+    "framer-motion": "6.3.9",
     "next": "12.1.6",
+    "phosphor-react": "1.4.1",
     "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react-dom": "18.1.0",
+    "react-icons": "^4.4.0",
+    "swr": "1.3.0"
   },
   "devDependencies": {
     "@types/node": "17.0.38",
@@ -19,6 +35,7 @@
     "@types/react-dom": "18.0.5",
     "eslint": "8.16.0",
     "eslint-config-next": "12.1.6",
+    "standard": "^17.0.0",
     "typescript": "4.7.2"
   }
 }
