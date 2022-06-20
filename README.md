@@ -11,7 +11,8 @@
 - 💙 [Typescript](https://www.typescriptlang.org/) - A superset of JavaScript.
 - 💅 [Chakra UI](https://chakra-ui.com/) - Create accessible React apps with speed.
 - 💥 [Framer Motion](https://www.framer.com/motion/) - Production-ready motion library.
-- ⬇️ [next-pwa](https://github.com/shadowwalker/next-pwa) - Zero config PWA plugin for Next.js, with workbox.
+- 💖 [Phosphor-Icons](https://phosphoricons.com/) - A flexible icon family for everyone.
+- ⬇️ [Next-PWA](https://github.com/shadowwalker/next-pwa) - Zero config PWA plugin for Next.js, with workbox.
 
 ## 🚀 Getting started:
 
