@@ -6,7 +6,11 @@ import { CustomLinkProps } from "@/interfaces/components";
 const CustomLink = ({ href, children, external }: CustomLinkProps) => {
   return (
     <NextLink href={href} passHref>
-      <Link isExternal={external} _hover={{ textDecoration: "none" }}>
+      <Link
+        isExternal={external}
+        _hover={{ textDecoration: "none" }}
+        _focus={{ border: "none" }}
+      >
         {children}
       </Link>
     </NextLink>

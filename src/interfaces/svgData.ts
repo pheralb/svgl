@@ -3,5 +3,6 @@ export interface SvgData {
   href: string;
   title: string;
   category: string;
+  categories?: string[];
   url: string;
 }

@@ -19,3 +19,10 @@ export interface SVGCardProps {
   svg: string;
   url: string;
 }
+
+export interface SidebarContentProps {
+  display?: object;
+  w?: string;
+  borderRight?: string;
+  children?: React.ReactNode;
+}

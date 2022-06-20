@@ -1,15 +1,9 @@
-import { LayoutProps } from "@/interfaces/components";
 import React from "react";
-import Header from "@/layout/header";
-import { Box } from "@chakra-ui/react";
+import { LayoutProps } from "@/interfaces/components";
+import Sidebar from "@/layout/sidebar";
 
 const Index = ({ children }: LayoutProps) => {
-  return (
-    <>
-      <Header />
-      {children}
-    </>
-  );
+  return <Sidebar>{children}</Sidebar>;
 };
 
 export default Index;
