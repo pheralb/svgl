@@ -1,32 +1,32 @@
 {
-    "theme_color": "#36558F",
-    "background_color": "#36558F",
-    "display": "minimal-ui",
-    "scope": "/",
-    "start_url": "/",
-    "name": "SVGL",
-    "short_name": "SVGL",
-    "description": "Beautiful SVG vector logos",
-    "icons": [
-        {
-            "src": "/icons/icon-192x192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-        },
-        {
-            "src": "/icons/icon-256x256.png",
-            "sizes": "256x256",
-            "type": "image/png"
-        },
-        {
-            "src": "/icons/icon-384x384.png",
-            "sizes": "384x384",
-            "type": "image/png"
-        },
-        {
-            "src": "/icons/icon-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png"
-        }
-    ]
+  "theme_color": "#4343E5",
+  "background_color": "#050505",
+  "display": "minimal-ui",
+  "scope": "/",
+  "start_url": "/",
+  "name": "SVGL",
+  "short_name": "SVGL",
+  "description": "Beautiful SVG vector logos",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }
