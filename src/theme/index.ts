@@ -21,8 +21,8 @@ const theme = extendTheme(
         dark: "#000000",
       },
       brand: {
-        purple: "#4343E5"
-      }
+        purple: "#4343E5",
+      },
     },
     fonts: {
       body: "Inter-Regular, sans-serif",
@@ -33,7 +33,11 @@ const theme = extendTheme(
         "html, body": {
           height: "100%",
           maxHeight: "100vh",
-          backgroundColor: mode("bg.light", "bg.dark")(props),
+          bgGradient: mode(
+            "radial(circle at 1px 1px, #C5C5C5 1px, bg.light 0)",
+            "radial(circle at 1px 1px, #212121 1px, bg.dark 0)"
+          )(props),
+          backgroundSize: "40px 40px",
           fontSize: "14px",
         },
       }),
