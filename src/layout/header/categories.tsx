@@ -2,7 +2,7 @@ import React from "react";
 import useSWR from "swr";
 import { getCategorySvgs } from "@/services";
 import CustomLink from "@/common/link";
-import { Text } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
 
 const Categories = () => {
   const { data, error } = useSWR(getCategorySvgs);
@@ -11,13 +11,13 @@ const Categories = () => {
   if (!data) return <div>loading...</div>;
 
   return (
-    <div>
+    <>
       {data.map((category: string) => (
-        <CustomLink key={category} href={`/category/${category}`}>
-          <Text mb="2">{category}</Text>
-        </CustomLink>
+        <Box key={category} p="4" borderRadius="5px" borderWidth="1px">
+          <CustomLink href={`/category/${category}`}>{category}</CustomLink>
+        </Box>
       ))}
-    </div>
+    </>
   );
 };
 

@@ -13,18 +13,11 @@ const Home: NextPage = () => {
   if (!data) return <div>loading...</div>;
 
   return (
-    <Container maxW="85%">
-      <Grid>
-        {data.map((svg: SvgData) => (
-          <SVGCard
-            key={svg.id}
-            title={svg.title}
-            url={svg.href}
-            svg={svg.href}
-          />
-        ))}
-      </Grid>
-    </Container>
+    <Grid>
+      {data.map((svg: SvgData) => (
+        <SVGCard key={svg.id} title={svg.title} url={svg.href} svg={svg.href} />
+      ))}
+    </Grid>
   );
 };
 

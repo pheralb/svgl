@@ -1,9 +1,15 @@
 import React from "react";
 import { LayoutProps } from "@/interfaces/components";
-import Sidebar from "@/layout/sidebar";
+import { Container } from "@chakra-ui/react";
+import Header from "./header";
 
 const Index = ({ children }: LayoutProps) => {
-  return <Sidebar>{children}</Sidebar>;
+  return (
+    <>
+      <Header />
+      <Container maxW="70%">{children}</Container>
+    </>
+  );
 };
 
 export default Index;
