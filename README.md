@@ -9,6 +9,7 @@
 - ⚡️ [Nextjs](https://nextjs.org/) - The React Framework for Production.
 - ⚒️ [React 18](https://reactjs.org/) - A JavaScript library for building user interfaces.
 - 💙 [Typescript](https://www.typescriptlang.org/) - A superset of JavaScript.
+- ✅ [Vitest](https://vitest.dev/) - A blazing fast unit test framework.
 - 💅 [Chakra UI](https://chakra-ui.com/) - Create accessible React apps with speed.
 - 💥 [Framer Motion](https://www.framer.com/motion/) - Production-ready motion library.
 - 💖 [Phosphor-Icons](https://phosphoricons.com/) - A flexible icon family for everyone.
@@ -41,9 +42,25 @@ yarn install
 npm run dev
 # or
 yarn dev
-```
+``` 
+
+4. Test & Build:
+
+```bash
+npm run ready
+# or
+yarn ready
+``` 
 
 🥳 Open [localhost:3000](localhost:3000) with your browser to see the result.
+
+## 🚂 Endpoints:
+
+```bash
+- /api/all: returns all the logos in the /data/ folder.
+- /api/search?id=2: returns the logo with id 2.
+- /api/search?name=logo: returns the logo with name logo.
+```
 
 ## ⚒️ Shortcuts:
 
