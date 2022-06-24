@@ -4,7 +4,7 @@ import { SimpleGrid } from "@chakra-ui/react";
 
 const Grid = (props: LayoutProps) => {
   return (
-    <SimpleGrid minChildWidth="200px" spacing="30px" >
+    <SimpleGrid minChildWidth="160px" spacing="30px" >
       {props.children}
     </SimpleGrid>
   );
