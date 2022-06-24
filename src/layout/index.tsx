@@ -7,7 +7,7 @@ const Index = ({ children }: LayoutProps) => {
   return (
     <>
       <Header />
-      <Container maxW="70%">{children}</Container>
+      <Container maxW="70%" mt="5">{children}</Container>
     </>
   );
 };

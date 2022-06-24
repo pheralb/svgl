@@ -14,7 +14,7 @@ const theme = extendTheme(
     colors: {
       bg: {
         light: "#F2F2F2",
-        dark: "#050505",
+        dark: "#1F2023",
       },
       full: {
         light: "#ffffff",
@@ -33,11 +33,7 @@ const theme = extendTheme(
         "html, body": {
           height: "100%",
           maxHeight: "100vh",
-          bgGradient: mode(
-            "radial(circle at 1px 1px, #C5C5C5 1px, bg.light 0)",
-            "radial(circle at 1px 1px, #212121 1px, bg.dark 0)"
-          )(props),
-          backgroundSize: "40px 40px",
+          bg: mode("bg.light", "bg.dark")(props),
           fontSize: "14px",
         },
       }),

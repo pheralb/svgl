@@ -18,6 +18,9 @@ import { motion } from "framer-motion";
 import { SWRConfig } from "swr";
 import { fetcher } from "@/services/fetcher";
 
+// React Hot Toast ->
+import { Toaster } from "react-hot-toast";
+
 function MyApp({ Component, pageProps, router }: AppProps) {
   return (
     <>
@@ -25,7 +28,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
         color="#4343E5"
         startPosition={0.3}
         stopDelayMs={200}
-        height={3}
+        height={2}
         showOnShallow={true}
       />
       <ChakraProvider theme={theme}>
@@ -49,6 +52,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
           </Layout>
         </SWRConfig>
       </ChakraProvider>
+      <Toaster position="bottom-center" reverseOrder={false} />
     </>
   );
 }

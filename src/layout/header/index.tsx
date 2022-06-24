@@ -7,8 +7,11 @@ import {
   Button,
   Container,
   Heading,
+  Center,
+  Icon,
+  Input,
 } from "@chakra-ui/react";
-import { Sticker } from "phosphor-react";
+import { ArrowSquareOut, Sticker } from "phosphor-react";
 import Theme from "./theme";
 import Tap from "@/animations/tap";
 import Mobile from "./mobile";
@@ -51,7 +54,12 @@ const Header = () => {
                     href={link.slug}
                     external={link.external}
                   >
-                    <Button variant="ghost">{link.title}</Button>
+                    <Button variant="ghost" fontFamily="Inter-Semibold">
+                      {link.title}
+                      {link.external ? (
+                        <Icon as={ArrowSquareOut} ml="2" />
+                      ) : null}
+                    </Button>
                   </CustomLink>
                 ))}
                 <Theme />
@@ -63,7 +71,14 @@ const Header = () => {
           </Flex>
         </Container>
       </Box>
-      <HStack p="4" spacing={4} overflowY="hidden" bg={bg} borderBottomWidth="1px">
+      <HStack
+        justifyContent="center"
+        p="4"
+        spacing={4}
+        overflowY="hidden"
+        bg={bg}
+        borderBottomWidth="1px"
+      >
         <Categories />
       </HStack>
     </>

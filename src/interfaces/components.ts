@@ -15,9 +15,11 @@ export interface CustomIconBtnProps {
 }
 
 export interface SVGCardProps {
-  title: string;
+  id: number;
   svg: string;
-  url: string;
+  title: string;
+  href?: string;
+  url?: string;
 }
 
 export interface SidebarContentProps {
@@ -25,4 +27,13 @@ export interface SidebarContentProps {
   w?: string;
   borderRight?: string;
   children?: React.ReactNode;
+}
+
+export interface LoadingProps {
+  text: string;
+}
+
+export interface ErrorProps {
+  title: string;
+  description: string;
 }
