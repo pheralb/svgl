@@ -54,7 +54,7 @@ const Header = () => {
                     href={link.slug}
                     external={link.external}
                   >
-                    <Button variant="ghost" fontFamily="Inter-Semibold">
+                    <Button variant="ghost" fontFamily="Inter-SemiBold">
                       {link.title}
                       {link.external ? (
                         <Icon as={ArrowSquareOut} ml="2" />
