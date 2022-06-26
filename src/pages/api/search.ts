@@ -1,4 +1,4 @@
-import db from "data/svgs";
+import db from "data/svgs.json";
 import { NextApiRequest, NextApiResponse } from "next";
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
@@ -14,7 +14,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
   if (q) {
     const results = db.filter((product) => {
       const { title } = product;
-      return title;
+      return title.toLowerCase().includes(q.toString());
     });
     return res.status(200).json(results);
   }
@@ -23,11 +23,11 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
   if (c) {
     const results = db.filter((product) => {
       const { category } = product;
-      return category;
+      return category.toLowerCase().includes(q.toString());
     });
     return res.status(200).json(results);
   }
 
   // ✖ Error ->
-  res.status(400).json({ info: "Error: api query not found." });
+  res.status(400).json({ info: "[/api/search] Error: api query not found." });
 }

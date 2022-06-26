@@ -1,4 +1,4 @@
-import db from "data/svgs";
+import db from "data/svgs.json";
 import type { NextApiRequest, NextApiResponse } from "next";
 import { SvgData } from "@/interfaces/svgData";
 

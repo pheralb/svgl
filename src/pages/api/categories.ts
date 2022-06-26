@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import db from "data/svgs";
+import db from "data/svgs.json";
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
   // Get unique categories:
