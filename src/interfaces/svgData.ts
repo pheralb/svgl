@@ -1,6 +1,6 @@
 export interface SvgData {
   id: number;
-  href: string;
+  slug: string;
   title: string;
   category: string;
   categories?: string[];

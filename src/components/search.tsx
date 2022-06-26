@@ -44,7 +44,7 @@ const Search = () => {
                 borderWidth="1px"
                 borderRadius="5px"
               >
-                <Image width="20px" mr="2" src={item.href} alt={item.title} />
+                <Image width="20px" mr="2" src={item.slug} alt={item.title} />
                 <Text>{item.title}</Text>
               </Flex>
             </CustomLink>

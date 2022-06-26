@@ -49,7 +49,7 @@ const SVGInfo = (props: SVGCardProps) => {
       borderRadius="10px"
     >
       <Image
-        src={props.href}
+        src={props.slug}
         alt={props.title}
         fit="cover"
         loading="lazy"
@@ -63,7 +63,7 @@ const SVGInfo = (props: SVGCardProps) => {
           variant="ghost"
           borderWidth="1px"
           leftIcon={<Copy />}
-          onClick={() => copyToClipboard(props.href)}
+          onClick={() => copyToClipboard(props.slug)}
         >
           Copy to clipboard
         </Button>
@@ -72,7 +72,7 @@ const SVGInfo = (props: SVGCardProps) => {
           leftIcon={<DownloadSimple />}
           variant="primary"
           mr="2"
-          onClick={() => downloadSvg(props.href)}
+          onClick={() => downloadSvg(props.slug)}
         >
           Download .svg
         </Button>

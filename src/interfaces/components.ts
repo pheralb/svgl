@@ -18,7 +18,7 @@ export interface SVGCardProps {
   id: number;
   svg: string;
   title: string;
-  href?: string;
+  slug?: string;
   url?: string;
 }
 

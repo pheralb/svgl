@@ -19,7 +19,7 @@ const Home: NextPage = () => {
   return (
     <Grid>
       {data.map((svg: SvgData) => (
-        <SVGCard key={svg.id} id={svg.id} svg={svg.href} title={svg.title} />
+        <SVGCard key={svg.id} id={svg.id} svg={svg.slug} title={svg.title} />
       ))}
     </Grid>
   );
