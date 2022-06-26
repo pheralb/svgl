@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://svgl.vercel.app/">
-    <img src="https://i.postimg.cc/1tzrP2rg/banner-corner.png" width="700px" alt="SVGL Banner" />
+  <a href="https://svgl.vercel.app/" target="_blank">
+    <img src="https://i.postimg.cc/1tzrP2rg/banner-corner.png" width="800px" alt="SVGL Banner" />
   </a>
 </p>
 
@@ -12,7 +12,7 @@
 - ✅ [Vitest](https://vitest.dev/) - A blazing fast unit test framework.
 - 💅 [Chakra UI](https://chakra-ui.com/) - Create accessible React apps with speed.
 - 💥 [Framer Motion](https://www.framer.com/motion/) - Production-ready motion library.
-- 💖 [Phosphor-Icons](https://phosphoricons.com/) - A flexible icon family for everyone.
+- 💖 [Phosphor Icons](https://phosphoricons.com/) - A flexible icon family for everyone.
 - ⬇️ [Next-PWA](https://github.com/shadowwalker/next-pwa) - Zero config PWA plugin for Next.js, with workbox.
 
 ## 🚀 Getting started:
