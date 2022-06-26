@@ -42,7 +42,7 @@ yarn install
 npm run dev
 # or
 yarn dev
-``` 
+```
 
 4. Test & Build:
 
@@ -50,16 +50,52 @@ yarn dev
 npm run ready
 # or
 yarn ready
-``` 
+```
 
-🥳 Open [localhost:3000](localhost:3000) with your browser to see the result.
+Open [localhost:3000](localhost:3000) with your browser to see the result.
 
-## 🚂 Endpoints:
+## 🤔 Can I add my logo?
+
+Yes! Here is a guide for you 🥳:
+
+1. [Fork the repository](https://github.com/pheralb/svgl/fork).
+
+2. Clone the forked repository:
 
 ```bash
-- /api/all: returns all the logos in the /data/ folder.
+git@github.com:YOUR_USERNAME/svgl.git
+```
+
+3. Add the **.svg** logo here: [`/public/library`](https://github.com/pheralb/svgl/tree/main/public/library).
+
+4. Add your logo information here following the structure: [`/data/svgs.json`](https://github.com/pheralb/svgl/tree/main/public/library).
+
+```json
+{
+  "id": your_logo_id,
+  "slug": "/library/your_logo.svg",
+  "title": "Logo Title",
+  "category": "Logo Category",
+  "url": "Your Website / app url"
+}
+```
+
+5. Create a commit and push:
+
+```bash
+git add .
+git commit -m "🥰 Added my logo"
+git push origin main
+```
+
+6. Create a pull request with your changes and 🥳 ready.
+
+## 🚂 Api endpoints:
+
+```bash
+- /api/all: returns all the logos.
 - /api/search?id=2: returns the logo with id 2.
-- /api/search?name=logo: returns the logo with name logo.
+- /api/search?q=logo: returns the logo with query.
 ```
 
 ## ⚒️ Shortcuts:
