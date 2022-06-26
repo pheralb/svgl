@@ -7,20 +7,23 @@ import {
   Button,
   Container,
   Heading,
-  Center,
   Icon,
-  Input,
+  useDisclosure,
+  Collapse,
 } from "@chakra-ui/react";
-import { ArrowSquareOut, Sticker } from "phosphor-react";
+import { ArrowSquareOut, MagnifyingGlass, Sticker, X } from "phosphor-react";
 import Theme from "./theme";
 import Tap from "@/animations/tap";
 import Mobile from "./mobile";
 import { Links } from "./links";
 import CustomLink from "@/common/link";
 import Categories from "./categories";
+import Search from "@/components/search";
+import CustomIconBtn from "@/common/iconBtn";
 
 const Header = () => {
   const bg = useColorModeValue("bg.light", "bg.dark");
+  const { isOpen, onToggle } = useDisclosure();
   return (
     <>
       <Box
@@ -30,6 +33,7 @@ const Header = () => {
         borderBottomWidth="1px"
         w="full"
         py={6}
+        zIndex={1}
         shadow="sm"
       >
         <Container maxW={{ base: "full", md: "70%" }}>
@@ -54,7 +58,7 @@ const Header = () => {
                     href={link.slug}
                     external={link.external}
                   >
-                    <Button variant="ghost" fontFamily="Inter-SemiBold">
+                    <Button variant="ghost" fontFamily="Inter-Semibold">
                       {link.title}
                       {link.external ? (
                         <Icon as={ArrowSquareOut} ml="2" />
@@ -62,6 +66,11 @@ const Header = () => {
                     </Button>
                   </CustomLink>
                 ))}
+                <CustomIconBtn
+                  title="Toggle Search bar"
+                  icon={isOpen ? <X size={22} /> : <MagnifyingGlass size={22} />}
+                  onClick={onToggle}
+                />
                 <Theme />
               </HStack>
               <Box display={{ base: "inline-flex", md: "none" }}>
@@ -69,6 +78,11 @@ const Header = () => {
               </Box>
             </HStack>
           </Flex>
+          <Collapse in={isOpen} animateOpacity>
+            <Box mt="3">
+              <Search />
+            </Box>
+          </Collapse>
         </Container>
       </Box>
       <HStack
