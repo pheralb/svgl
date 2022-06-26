@@ -1,0 +1,345 @@
+[
+  {
+    "id": 1,
+    "slug": "/library/discord.svg",
+    "title": "Discord",
+    "category": "Software",
+    "url": "https://discord.com/"
+  },
+  {
+    "id": 2,
+    "slug": "/library/github.svg",
+    "title": "Github",
+    "category": "Software",
+    "url": "https://github.com/"
+  },
+  {
+    "id": 3,
+    "slug": "/library/preact.svg",
+    "title": "Preact",
+    "category": "Library",
+    "url": "https://preactjs.com/"
+  },
+  {
+    "id": 4,
+    "slug": "/library/react.svg",
+    "title": "React",
+    "category": "Library",
+    "url": "https://reactjs.org/"
+  },
+  {
+    "id": 5,
+    "slug": "/library/vercel.svg",
+    "title": "Vercel",
+    "category": "Hosting",
+    "url": "https://vercel.com/"
+  },
+  {
+    "id": 6,
+    "slug": "/library/svelte.svg",
+    "title": "Svelte",
+    "category": "Library",
+    "url": "https://svelte.dev/"
+  },
+  {
+    "id": 7,
+    "slug": "/library/vue.svg",
+    "title": "Vue",
+    "category": "Framework",
+    "url": "https://vuejs.org/"
+  },
+  {
+    "id": 8,
+    "slug": "/library/nuxt.svg",
+    "title": "Nuxt",
+    "category": "Framework",
+    "url": "https://nuxtjs.org/"
+  },
+  {
+    "id": 9,
+    "slug": "/library/nextjs.svg",
+    "title": "Nextjs",
+    "category": "Framework",
+    "url": "https://nextjs.org/"
+  },
+  {
+    "id": 10,
+    "slug": "/library/vscode.svg",
+    "title": "VSCode",
+    "category": "Software",
+    "url": "https://code.visualstudio.com/"
+  },
+  {
+    "id": 11,
+    "slug": "/library/jwt.svg",
+    "title": "JWT",
+    "category": "Library",
+    "url": "https://jwt.io/"
+  },
+  {
+    "id": 12,
+    "slug": "/library/strapi.svg",
+    "title": "Strapi",
+    "category": "CMS",
+    "url": "https://strapi.io/"
+  },
+  {
+    "id": 13,
+    "slug": "/library/figma.svg",
+    "title": "Figma",
+    "category": "Software",
+    "url": "https://www.figma.com/"
+  },
+  {
+    "id": 14,
+    "slug": "/library/spotify.svg",
+    "title": "Spotify",
+    "category": "Software",
+    "url": "https://www.spotify.com/"
+  },
+  {
+    "id": 15,
+    "slug": "/library/postman.svg",
+    "title": "Postman",
+    "category": "Software",
+    "url": "https://www.getpostman.com/"
+  },
+  {
+    "id": 16,
+    "slug": "/library/algolia.svg",
+    "title": "Algolia",
+    "category": "Library",
+    "url": "https://www.algolia.com/"
+  },
+  {
+    "id": 17,
+    "slug": "/library/bootstrap.svg",
+    "title": "Bootstrap",
+    "category": "Framework",
+    "url": "https://getbootstrap.com/"
+  },
+  {
+    "id": 18,
+    "slug": "/library/firebase.svg",
+    "title": "Firebase",
+    "category": "Hosting",
+    "url": "https://firebase.google.com/"
+  },
+  {
+    "id": 19,
+    "slug": "/library/supabase.svg",
+    "title": "Supabase",
+    "category": "Database",
+    "url": "https://supabase.com/"
+  },
+  {
+    "id": 20,
+    "slug": "/library/vitejs.svg",
+    "title": "Vite.js",
+    "category": "Compiler",
+    "url": "https://vitejs.dev"
+  },
+  {
+    "id": 21,
+    "slug": "/library/facebook.svg",
+    "title": "Facebook",
+    "category": "Social",
+    "url": "https://www.facebook.com/"
+  },
+  {
+    "id": 22,
+    "slug": "/library/twitter.svg",
+    "title": "Twitter",
+    "category": "Social",
+    "url": "https://twitter.com/"
+  },
+  {
+    "id": 23,
+    "slug": "/library/nodejs.svg",
+    "title": "Node.js",
+    "category": "Library",
+    "url": "https://nodejs.org/"
+  },
+  {
+    "id": 24,
+    "slug": "/library/esbuild.svg",
+    "title": "Esbuild",
+    "category": "Compiler",
+    "url": "https://esbuild.github.io/"
+  },
+  {
+    "id": 25,
+    "slug": "/library/deno.svg",
+    "title": "Deno",
+    "category": "Library",
+    "url": "https://deno.land/"
+  },
+  {
+    "id": 26,
+    "slug": "/library/gatsby.svg",
+    "title": "Gatsby",
+    "category": "Framework",
+    "url": "https://www.gatsbyjs.org/"
+  },
+  {
+    "id": 27,
+    "slug": "/library/npm.svg",
+    "title": "NPM",
+    "category": "Software",
+    "url": "https://www.npmjs.com/"
+  },
+  {
+    "id": 28,
+    "slug": "/library/homebrew.svg",
+    "title": "Homebrew",
+    "category": "Software",
+    "url": "https://brew.sh/"
+  },
+  {
+    "id": 29,
+    "slug": "/library/sublimetext.svg",
+    "title": "Sublime Text",
+    "category": "Software",
+    "url": "https://www.sublimetext.com/"
+  },
+  {
+    "id": 30,
+    "slug": "/library/turborepo.svg",
+    "title": "TurboRepo",
+    "category": "Library",
+    "url": "https://turborepo.org/"
+  },
+  {
+    "id": 31,
+    "slug": "/library/tailwindcss.svg",
+    "title": "Tailwind CSS",
+    "category": "Framework",
+    "url": "https://tailwindcss.com/"
+  },
+  {
+    "id": 32,
+    "slug": "/library/styledcomponents.svg",
+    "title": "Styled Components",
+    "category": "Library",
+    "url": "https://styled-components.com/"
+  },
+  {
+    "id": 33,
+    "slug": "/library/angular.svg",
+    "title": "Angular",
+    "category": "Framework",
+    "url": "https://angular.io/"
+  },
+  {
+    "id": 34,
+    "slug": "/library/blitzjs.svg",
+    "title": "Blitz",
+    "category": "Framework",
+    "url": "https://blitzjs.com/"
+  },
+  {
+    "id": 35,
+    "slug": "/library/lit.svg",
+    "title": "Lit",
+    "category": "Library",
+    "url": "https://lit.dev/"
+  },
+  {
+    "id": 36,
+    "slug": "/library/atom.svg",
+    "title": "Atom",
+    "category": "Software",
+    "url": "https://atom.io/"
+  },
+  {
+    "id": 37,
+    "slug": "/library/youtube.svg",
+    "title": "YouTube",
+    "category": "Social",
+    "url": "https://www.youtube.com/"
+  },
+  {
+    "id": 38,
+    "slug": "/library/astro.svg",
+    "title": "Astro",
+    "category": "Framework",
+    "url": "https://astro.build/"
+  },
+  {
+    "id": 39,
+    "slug": "/library/google.svg",
+    "title": "Google",
+    "category": "Social",
+    "url": "https://www.google.com/"
+  },
+  {
+    "id": 40,
+    "slug": "/library/framer.svg",
+    "title": "Framer",
+    "category": "Software",
+    "url": "https://framer.com/"
+  },
+  {
+    "id": 41,
+    "slug": "/library/netflix.svg",
+    "title": "Netflix",
+    "category": "Entertainment",
+    "url": "https://www.netflix.com/"
+  },
+  {
+    "id": 42,
+    "slug": "/library/firefox.svg",
+    "title": "Firefox",
+    "category": "Software",
+    "url": "https://www.mozilla.org/en-US/firefox/"
+  },
+  {
+    "id": 43,
+    "slug": "/library/linkedin.svg",
+    "title": "LinkedIn",
+    "category": "Social",
+    "url": "https://www.linkedin.com/"
+  },
+  {
+    "id": 44,
+    "slug": "/library/telegram.svg",
+    "title": "Telegram",
+    "category": "Social",
+    "url": "https://web.telegram.org/"
+  },
+  {
+    "id": 45,
+    "slug": "/library/whatsapp.svg",
+    "title": "WhatsApp",
+    "category": "Social",
+    "url": "https://web.whatsapp.com/"
+  },
+  {
+    "id": 46,
+    "slug": "/library/headlessui.svg",
+    "title": "Headless UI",
+    "category": "Library",
+    "url": "https://headlessui.dev/"
+  },
+  {
+    "id": 47,
+    "slug": "/library/kotlin.svg",
+    "title": "Kotlin",
+    "category": "Language",
+    "url": "https://kotlinlang.org/"
+  },
+  {
+    "id": 48,
+    "slug": "/library/tiktok.svg",
+    "title": "TikTok",
+    "category": "Social",
+    "url": "https://tiktok.com/"
+  },
+  {
+    "id": 49,
+    "slug": "/library/storybook.svg",
+    "title": "Storybook",
+    "category": "Software",
+    "url": "https://storybook.js.org/"
+  }
+]
