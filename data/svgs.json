@@ -351,8 +351,8 @@
   },
   {
     "id": 51,
-    "slug": "library/hostinguer.svg",
-    "title": "Hostinguer",
+    "slug": "library/hostinger.svg",
+    "title": "Hostinger",
     "category": "Hosting",
     "url": "https://www.hostinguer.com/"
   },
@@ -377,5 +377,4 @@
     "category": "Entertainment",
     "url": "https://www.primevideo.com"
   }
-
 ]
