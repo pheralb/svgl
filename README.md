@@ -72,7 +72,7 @@ git@github.com:YOUR_USERNAME/svgl.git
 
 ```json
 {
-  "id": your_logo_id,
+  "id": 1,
   "slug": "/library/your_logo.svg",
   "title": "Logo Title",
   "category": "Logo Category",
