@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Flex, Input, Text, Image } from "@chakra-ui/react";
+import { Input, Text, Image, HStack, Box, Center } from "@chakra-ui/react";
 import useSWR from "swr";
 import useDebounce from "@/hooks/useDebounce";
 import { SVGCardProps } from "@/interfaces/components";
@@ -8,6 +8,7 @@ import Error from "@/components/error";
 import { getSvgByQuery } from "@/services";
 import CustomIconBtn from "@/common/iconBtn";
 import { Trash } from "phosphor-react";
+import Tap from "@/animations/tap";
 
 const Search = () => {
   const [search, setSearch] = useState("");
@@ -33,28 +34,39 @@ const Search = () => {
         onChange={(e) => setSearch(e.target.value)}
       />
       {data && data.length > 0 && (
-        <Flex direction="column" mt={2} p="2" overflowY="hidden">
-          {data.map((item: SVGCardProps) => (
-            <CustomLink key={item.title} href={`/svg/${item.id}`}>
-              <Flex
-                direction="row"
-                mb="2"
-                shadow="sm"
-                p="3"
-                borderWidth="1px"
-                borderRadius="5px"
-              >
-                <Image width="20px" mr="2" src={item.slug} alt={item.title} />
-                <Text>{item.title}</Text>
-              </Flex>
-            </CustomLink>
-          ))}
+        <>
+          <HStack spacing={4} mt={4} overflowY="hidden">
+            {data.map((item: SVGCardProps) => (
+              <Tap key={item.title}>
+                <CustomLink href={`/svg/${item.id}`}>
+                  <Box
+                    mb="2"
+                    p="3"
+                    shadow="sm"
+                    borderWidth="1px"
+                    borderRadius="5px"
+                    width="100%"
+                  >
+                    <Center>
+                      <Image
+                        width="25px"
+                        mb="2"
+                        src={item.slug}
+                        alt={item.title}
+                      />
+                    </Center>
+                    <Text>{item.title}</Text>
+                  </Box>
+                </CustomLink>
+              </Tap>
+            ))}
+          </HStack>
           <CustomIconBtn
             title="clear"
             icon={<Trash size={16} />}
             onClick={handleClear}
           />
-        </Flex>
+        </>
       )}
     </>
   );

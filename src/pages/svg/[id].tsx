@@ -1,7 +1,6 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 import useSWR from "swr";
-import { Box, SimpleGrid } from "@chakra-ui/react";
 
 import Show from "@/animations/show";
 import { getSvgById } from "@/services";
