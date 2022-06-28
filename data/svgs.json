@@ -330,10 +330,10 @@
   },
   {
     "id": 48,
-    "slug": "/library/tiktok.svg",
-    "title": "TikTok",
-    "category": "Social",
-    "url": "https://tiktok.com/"
+    "slug": "/library/vitest.svg",
+    "title": "Vitest",
+    "category": "Framework",
+    "url": "https://vitest.dev/"
   },
   {
     "id": 49,
