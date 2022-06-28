@@ -14,7 +14,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
   if (q) {
     const results = db.filter((product) => {
       const { title } = product;
-      return title.toLowerCase().includes(q.toString());
+      return title.toLowerCase().includes(q.toString().toLowerCase());
     });
     return res.status(200).json(results);
   }
@@ -23,7 +23,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
   if (c) {
     const results = db.filter((product) => {
       const { category } = product;
-      return category.toLowerCase().includes(q.toString());
+      return category.toLowerCase().includes(c.toString().toLowerCase());
     });
     return res.status(200).json(results);
   }

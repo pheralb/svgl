@@ -6,5 +6,7 @@ export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<SvgData[]>
 ) {
-  res.status(200).json(db);
+  // Begin with the last id in the db:
+  const svgs = db.sort((a, b) => b.id - a.id);
+  return res.status(200).json(svgs);
 }
