@@ -20,10 +20,13 @@ import { fetcher } from "@/services/fetcher";
 
 // React Hot Toast ->
 import { Toaster } from "react-hot-toast";
+import { DefaultSeo } from "next-seo";
+import nextSeoConfig from "next-seo.config";
 
 function MyApp({ Component, pageProps, router }: AppProps) {
   return (
     <>
+      <DefaultSeo {...nextSeoConfig} />
       <NextNProgress
         color="#4343E5"
         startPosition={0.3}
