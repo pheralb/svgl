@@ -30,13 +30,14 @@ const Mobile = () => {
         right={0}
         display={mobileNav.isOpen ? "flex" : "none"}
         flexDirection="column"
-        p={2}
+        p={4}
         pb={4}
-        m={2}
         bg={bg}
         spacing={3}
         rounded="sm"
         shadow="sm"
+        borderWidth="1px"
+        zIndex={2}
       >
         <CloseButton aria-label="Close menu" onClick={mobileNav.onClose} />
         {Links.map((link) => (

@@ -25,9 +25,7 @@ export default function Category() {
       </Head>
       <Show>
         <Center>
-          <Heading mt="4" mb="5">
-            {router.query.category}
-          </Heading>
+          <Heading mb="5">{router.query.category}</Heading>
         </Center>
       </Show>
 

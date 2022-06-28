@@ -27,6 +27,7 @@ const Header = () => {
   return (
     <>
       <Box
+        as="header"
         position="sticky"
         top="0"
         bg={bg}
@@ -68,7 +69,9 @@ const Header = () => {
                 ))}
                 <CustomIconBtn
                   title="Toggle Search bar"
-                  icon={isOpen ? <X size={22} /> : <MagnifyingGlass size={22} />}
+                  icon={
+                    isOpen ? <X size={22} /> : <MagnifyingGlass size={22} />
+                  }
                   onClick={onToggle}
                 />
                 <Theme />
@@ -83,18 +86,24 @@ const Header = () => {
               <Search />
             </Box>
           </Collapse>
+          <Box mt="2" display={{ base: "block", md: "none" }}>
+            <Search />
+          </Box>
         </Container>
       </Box>
-      <HStack
-        justifyContent="center"
-        p="4"
-        spacing={4}
-        overflowY="hidden"
-        bg={bg}
-        borderBottomWidth="1px"
-      >
-        <Categories />
-      </HStack>
+      <Box p="4" overflowX="hidden" overflowY="auto">
+        <HStack
+          justifyContent={{ base: "none", md: "center" }}
+          spacing={4}
+          overflowX="auto"
+          overflowY="hidden"
+          bg={bg}
+          pb="4"
+          borderBottomWidth="1px"
+        >
+          <Categories />
+        </HStack>
+      </Box>
     </>
   );
 };

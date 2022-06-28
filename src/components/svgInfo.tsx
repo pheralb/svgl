@@ -58,28 +58,30 @@ const SVGInfo = (props: SVGCardProps) => {
       <Heading mt={6} mb={6} fontSize="4xl">
         {props.title}
       </Heading>
-      <HStack spacing={4}>
+      <Flex direction={{ base: "column", md: "row" }}>
         <Button
           variant="ghost"
           borderWidth="1px"
           leftIcon={<Copy />}
           onClick={() => copyToClipboard(props.slug)}
+          mb={{ base: "2", md: "0" }}
+          mr={{ base: "0", md: "3" }}
         >
           Copy to clipboard
         </Button>
         <Button
-          mb={{ base: "2", md: "0" }}
           leftIcon={<DownloadSimple />}
           variant="primary"
-          mr="2"
           onClick={() => downloadSvg(props.slug)}
+          mb={{ base: "2", md: "0" }}
+          mr={{ base: "0", md: "3" }}
         >
           Download .svg
         </Button>
         <Link href={props.url} isExternal={true}>
-          {props.title} website <Icon as={ArrowSquareOut} ml="1" />
+          {props.title} website <Icon as={ArrowSquareOut} mt="2" />
         </Link>
-      </HStack>
+      </Flex>
     </Flex>
   );
 };
