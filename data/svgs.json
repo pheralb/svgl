@@ -341,5 +341,40 @@
     "title": "Storybook",
     "category": "Software",
     "url": "https://storybook.js.org/"
+  },
+  {
+    "id": 50,
+    "slug": "library/netlify.svg",
+    "title": "Netlify",
+    "category": "Hosting",
+    "url": "https://www.netlify.com/"
+  },
+  {
+    "id": 51,
+    "slug": "library/hostinger.svg",
+    "title": "Hostinger",
+    "category": "Hosting",
+    "url": "https://www.hostinguer.com/"
+  },
+  {
+    "id": 52,
+    "slug": "library/mongodb.svg",
+    "title": "MongoDB",
+    "category": "Database",
+    "url": "https://www.mongodb.com/"
+  },
+  {
+    "id": 53,
+    "slug": "library/babel.svg",
+    "title": "Babel",
+    "category": "Compiler",
+    "url": "https://babeljs.io"
+  },
+  {
+    "id": 54,
+    "slug": "library/prime-video.svg",
+    "title": "Prime Video",
+    "category": "Entertainment",
+    "url": "https://www.primevideo.com"
   }
 ]
