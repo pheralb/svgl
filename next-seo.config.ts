@@ -1,7 +1,7 @@
 export default {
   title: "A beautiful library with SVG logos",
-  titleTemplate: "%s - svgl",
-  description: "A beautiful library with SVG logos. Free and open source.",
+  titleTemplate: "%s - Svgl",
+  description: "Svgl is a library of free and open source SVG logos.",
   defaultTitle: "svgl",
   additionalLinkTags: [
     {
@@ -36,7 +36,7 @@ export default {
     },
   ],
   openGraph: {
-    site_name: "svgl - A beautiful library with SVG logos",
+    site_name: "Svgl",
     url: "https://svgl.vercel.app/",
     type: "website",
     locale: "en_IE",
@@ -45,8 +45,7 @@ export default {
         url: "/images/banner.png",
         width: 1920,
         height: 1080,
-        alt: "svgl - A beautiful library with SVG logos",
-        type: "image/jpeg",
+        type: "image/png",
       }
     ],
   },
