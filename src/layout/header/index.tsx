@@ -20,10 +20,15 @@ import CustomLink from "@/common/link";
 import Categories from "./categories";
 import Search from "@/components/search";
 import CustomIconBtn from "@/common/iconBtn";
+import { useHotkeys } from "react-hotkeys-hook";
 
 const Header = () => {
   const bg = useColorModeValue("bg.light", "bg.dark");
   const { isOpen, onToggle } = useDisclosure();
+  useHotkeys("ctrl+k", (e) => {
+    e.preventDefault();
+    onToggle();
+  });
   return (
     <>
       <Box
