@@ -7,10 +7,8 @@ import { Moon, Sun } from "phosphor-react";
 const Theme = () => {
   const { toggleColorMode } = useColorMode();
   const key = useColorModeValue("light", "dark");
-  const icon = useColorModeValue(
-    <Moon size={22} />,
-    <Sun size={22} />
-  );
+  const icon = useColorModeValue(<Moon size={22} />, <Sun size={22} />);
+
   return (
     <AnimatePresence exitBeforeEnter initial={false}>
       <motion.div
