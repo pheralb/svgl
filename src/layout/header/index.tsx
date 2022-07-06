@@ -10,6 +10,7 @@ import {
   Icon,
   useDisclosure,
   Collapse,
+  Text,
 } from "@chakra-ui/react";
 import { ArrowSquareOut, MagnifyingGlass, Sticker, X } from "phosphor-react";
 import Theme from "./theme";
@@ -52,26 +53,31 @@ const Header = () => {
                 </HStack>
               </Tap>
             </CustomLink>
-            <HStack display="flex" alignItems="center" spacing={1}>
-              <HStack
-                spacing={1}
-                mr={1}
-                display={{ base: "none", md: "inline-flex" }}
-              >
+            <HStack display="flex" alignItems="center" spacing={2}>
+              <Box display={{ base: "none", md: "inline-flex" }}>
                 {Links.map((link) => (
                   <CustomLink
                     key={link.title}
                     href={link.slug}
                     external={link.external}
+                    font="Inter-Semibold"
+                    mr="4"
+                    ml="3"
                   >
-                    <Button variant="ghost" fontFamily="Inter-Semibold">
+                    <Tap>
                       {link.title}
                       {link.external ? (
                         <Icon as={ArrowSquareOut} ml="2" />
                       ) : null}
-                    </Button>
+                    </Tap>
                   </CustomLink>
                 ))}
+              </Box>
+              <HStack
+                spacing={1}
+                mr={1}
+                display={{ base: "none", md: "inline-flex" }}
+              >
                 <CustomIconBtn
                   title="Toggle Search bar"
                   icon={

@@ -6,11 +6,16 @@ export interface CustomLinkProps {
   href: string;
   children: React.ReactNode;
   external?: boolean;
+  font?: string;
+  mr?: string;
+  ml?: string;
 }
 
 export interface CustomIconBtnProps {
   title: string;
   icon: React.ReactElement;
+  mr?: string;
+  ml?: string;
   onClick?: () => void;
 }
 

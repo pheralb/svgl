@@ -9,20 +9,22 @@ import {
 } from "@chakra-ui/react";
 import { List } from "phosphor-react";
 import { Links } from "./links";
+import Theme from "./theme";
 
 const Mobile = () => {
   const bg = useColorModeValue("bg.light", "bg.dark");
   const mobileNav = useDisclosure();
   return (
     <>
+      <Theme />
       <IconButton
         display={{ base: "flex", md: "none" }}
         aria-label="Open menu navbar"
         variant="ghost"
         icon={<List size={22} />}
         onClick={mobileNav.onOpen}
+        ml="2"
       />
-
       <VStack
         pos="absolute"
         top={0}
@@ -33,7 +35,7 @@ const Mobile = () => {
         p={4}
         pb={4}
         bg={bg}
-        spacing={3}
+        spacing={5}
         rounded="sm"
         shadow="sm"
         borderWidth="1px"
@@ -46,7 +48,7 @@ const Mobile = () => {
             href={link.slug}
             external={link.external}
           >
-            <Button variant="ghost">{link.title}</Button>
+            {link.title}
           </CustomLink>
         ))}
       </VStack>

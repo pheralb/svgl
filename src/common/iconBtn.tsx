@@ -9,6 +9,8 @@ const CustomIconBtn = (props: CustomIconBtnProps) => {
       aria-label={props.title}
       icon={props.icon}
       onClick={props.onClick}
+      mr={props.mr}
+      ml={props.ml}
     />
   );
 };
