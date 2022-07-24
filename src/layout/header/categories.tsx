@@ -4,6 +4,7 @@ import { getCategorySvgs } from "@/services";
 import CustomLink from "@/common/link";
 import { Box } from "@chakra-ui/react";
 import { RaceBy } from "@uiball/loaders";
+import Tap from "@/animations/tap";
 
 const Categories = () => {
   const { data, error } = useSWR(getCategorySvgs);
@@ -15,9 +16,13 @@ const Categories = () => {
   return (
     <>
       {data.map((category: string) => (
-        <Box key={category} p="4" borderRadius="5px" borderWidth="1px">
-          <CustomLink href={`/category/${category}`}>{category}</CustomLink>
-        </Box>
+        <Tap key={category}>
+          <CustomLink href={`/category/${category}`}>
+            <Box p="4" borderRadius="5px" borderWidth="1px">
+              {category}
+            </Box>
+          </CustomLink>
+        </Tap>
       ))}
     </>
   );
