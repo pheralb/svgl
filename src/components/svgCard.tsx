@@ -17,10 +17,11 @@ const SVGCard = (props: SVGCardProps) => {
           borderWidth="1px"
           mb="2"
           _hover={{
-            shadow: "md",
+            /* shadow: "md", */
+            border:"1px solid rgb(0,0,0, .1)",
+            transform: "scale(0.98)",
           }}
-          transition="all 0.2s"
-        >
+          transition="all 0.2s" >
           <Center>
             <Image boxSize="50px" src={props.svg} alt={props.title} />
           </Center>
