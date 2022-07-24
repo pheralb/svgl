@@ -33,6 +33,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
         stopDelayMs={200}
         height={2}
         showOnShallow={true}
+        options={{ showSpinner: false }}
       />
       <ChakraProvider theme={theme}>
         <SWRConfig value={{ fetcher }}>
