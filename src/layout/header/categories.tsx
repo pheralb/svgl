@@ -15,9 +15,20 @@ const Categories = () => {
   return (
     <>
       {data.map((category: string) => (
-        <Box key={category} p="4" borderRadius="5px" borderWidth="1px">
-          <CustomLink href={`/category/${category}`}>{category}</CustomLink>
-        </Box>
+        <CustomLink 
+          key={category}
+          href={`/category/${category}`}>
+          <Box
+            p={4}
+            borderRadius="4px"
+            borderWidth="1px"
+            _hover={{
+              border:"1px solid rgb(0,0,0, .1)",
+              transform: "scale(0.98)",
+            }}>
+          {category}
+          </Box>
+        </CustomLink>
       ))}
     </>
   );
