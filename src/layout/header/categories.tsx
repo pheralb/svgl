@@ -4,6 +4,7 @@ import { getCategorySvgs } from "@/services";
 import CustomLink from "@/common/link";
 import { Box, useColorModeValue } from "@chakra-ui/react";
 import { RaceBy } from "@uiball/loaders";
+import Tap from "@/animations/tap";
 
 const Categories = () => {
   const { data, error } = useSWR(getCategorySvgs);
@@ -15,8 +16,8 @@ const Categories = () => {
   return (
     <>
       {data.map((category: string) => (
+      <Tap key={category}>
         <CustomLink 
-          key={category}
           href={`/category/${category}`}>
           <Box
             p={4}
@@ -26,9 +27,10 @@ const Categories = () => {
               border:`1px solid ${color}`,
               transform: "scale(0.98)",
             }}>
-          {category}
+            {category}
           </Box>
         </CustomLink>
+      </Tap>
       ))}
     </>
   );

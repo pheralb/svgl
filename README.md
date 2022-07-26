@@ -68,7 +68,7 @@ git@github.com:YOUR_USERNAME/svgl.git
 
 3. Add the **.svg** logo here: [`/public/library`](https://github.com/pheralb/svgl/tree/main/public/library).
 
-4. Add your logo information here following the structure: [`/data/svgs.json`](https://github.com/pheralb/svgl/tree/main/public/library).
+4. Add your logo information here following the structure: [`/data/svgs.json`](https://github.com/pheralb/svgl/blob/main/data/svgs.json).
 
 ```json
 {
