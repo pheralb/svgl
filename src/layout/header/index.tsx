@@ -104,7 +104,8 @@ const Header = () => {
       </Box>
       <Box p="4" overflowX="hidden" overflowY="auto">
         <HStack
-          justifyContent={{ base: "none", md: "center" }}
+          justifyContent={{ base: "none", lg: "center" }}
+          flexWrap={{ base: "initial", lg: "wrap" }}
           spacing={4}
           overflowX="auto"
           overflowY="hidden"
