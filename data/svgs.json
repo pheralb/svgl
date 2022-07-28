@@ -397,5 +397,12 @@
     "title": "LearnThis",
     "category": "Education",
     "url": "https://learnthisacademy.com"
+  },
+  {
+    "id": 58,
+    "slug": "/library/speackme.svg",
+    "title": "Speack.me",
+    "category": "Social",
+    "url": "https://speack.me"
   }
 ]
