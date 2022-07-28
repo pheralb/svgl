@@ -390,5 +390,12 @@
     "title": "Fly",
     "category": "Hosting",
     "url": "https://fly.io"
+  },
+  {
+    "id": 57,
+    "slug": "/library/learnthis.svg",
+    "title": "LearnThis",
+    "category": "Education",
+    "url": "https://learnthisacademy.com"
   }
 ]
