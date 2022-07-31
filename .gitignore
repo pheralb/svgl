@@ -43,3 +43,6 @@ yarn-error.log*
 
 # SWC files ->
 .swc
+
+# PNPM files ->
+pnpm-lock.yaml
