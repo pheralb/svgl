@@ -10,6 +10,7 @@ import {
 } from "@chakra-ui/react";
 import Tap from "@/animations/tap";
 import CustomLink from "@/common/link";
+import { Smiley } from "phosphor-react";
 
 const SVGCard = (props: SVGCardProps) => {
   const bg = useColorModeValue("bg.light", "bg.dark");
@@ -27,11 +28,11 @@ const SVGCard = (props: SVGCardProps) => {
             mb="2"
             _hover={{
               border:`1px solid ${color}`,
-              transform: "scale(0.98)",
+              transform: "scale(1.04)",
             }}
             transition="all 0.2s" >
             <Center>
-              <Image boxSize="50px" src={props.svg} alt={props.title} />
+              <Image boxSize="45px" src={props.svg} alt={props.title} />
             </Center>
             <Text mt="2" fontWeight="light" textAlign="center">
               {props.title}
