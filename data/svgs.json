@@ -404,5 +404,75 @@
     "title": "Speack.me",
     "category": "Social",
     "url": "https://speack.me"
+  },
+  {
+		"id": 59,
+		"slug": "/library/chakra-ui.svg",
+		"title": "Chakra UI",
+		"category": "Library",
+		"url": "https://chakra-ui.com"
+	},
+  {
+    "id": 60,
+    "slug": "/library/expressjs.svg",
+    "title": "Express.js",
+    "category": "Framework",
+    "url": "https://expressjs.com"
+  },
+  {
+    "id": 61,
+    "slug": "/library/fastify.svg",
+    "title": "Fastify",
+    "category": "Framework",
+    "url": "https://www.fastify.io"
+  },
+  {
+    "id": 62,
+    "slug": "/library/javascript.svg",
+    "title": "JavaScript",
+    "category": "Language",
+    "url": "https://developer.mozilla.org/docs/Web/JavaScript"
+  },
+  {
+    "id": 63,
+    "slug": "/library/jquery.svg",
+    "title": "jQuery",
+    "category": "Language",
+    "url": "https://jquery.com"
+  },
+  {
+    "id": 64,
+    "slug": "/library/rapidapi.svg",
+    "title": "Rapid API",
+    "category": "Software",
+    "url": "https://rapidapi.com"
+  },
+  {
+    "id": 65,
+    "slug": "/library/typescript.svg",
+    "title": "TypeScript",
+    "category": "Language",
+    "url": "https://www.typescriptlang.org"
+  },
+  {
+    "id": 66,
+    "slug": "/library/bun.svg",
+    "title": "Bun",
+    "category": "Library",
+    "url": "https://bun.sh"
+  },
+  {
+    "id": 67,
+    "slug": "/library/twilio.svg",
+    "title": "Twilio",
+    "category": "Software",
+    "url": "https://twilio.com"
+  },
+  {
+    "id": 68,
+    "slug": "/library/arc.svg",
+    "title": "Arc",
+    "category": "Software",
+    "url": "https://arc.dev"
   }
 ]
