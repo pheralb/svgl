@@ -28,13 +28,13 @@ const SVGCard = (props: SVGCardProps) => {
             mb="2"
             _hover={{
               border:`1px solid ${color}`,
-              transform: "scale(1.04)",
+              transform: "scale(1.03)",
             }}
             transition="all 0.2s" >
             <Center>
-              <Image boxSize="45px" src={props.svg} alt={props.title} />
+              <Image height="40px" src={props.svg} alt={props.title} />
             </Center>
-            <Text mt="2" fontWeight="light" textAlign="center">
+            <Text mt="3" fontWeight="light" textAlign="center">
               {props.title}
             </Text>
           </Box>
