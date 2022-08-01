@@ -488,5 +488,12 @@
     "title": "Authy",
     "category": "Software",
     "url": "https://authy.com/"
+  },
+  {
+    "id": 71,
+    "slug": "/library/notion.svg",
+    "title": "Notion",
+    "category": "Software",
+    "url": "https://notion.so/"
   }
 ]
