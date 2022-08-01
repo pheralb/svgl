@@ -351,10 +351,10 @@
   },
   {
     "id": 51,
-    "slug": "/library/hostinger.svg",
-    "title": "Hostinger",
-    "category": "Hosting",
-    "url": "https://www.hostinger.com/"
+    "slug": "/library/solidjs.svg",
+    "title": "Solidjs",
+    "category": "Framework",
+    "url": "https://www.solidjs.com/"
   },
   {
     "id": 52,
@@ -372,10 +372,10 @@
   },
   {
     "id": 54,
-    "slug": "/library/prime-video.svg",
-    "title": "Prime Video",
-    "category": "Entertainment",
-    "url": "https://www.primevideo.com"
+    "slug": "/library/moon.svg",
+    "title": "Moon",
+    "category": "Framework",
+    "url": "https://moonjs.org/"
   },
   {
     "id": 55,
@@ -406,12 +406,12 @@
     "url": "https://speack.me"
   },
   {
-		"id": 59,
-		"slug": "/library/chakra-ui.svg",
-		"title": "Chakra UI",
-		"category": "Library",
-		"url": "https://chakra-ui.com"
-	},
+    "id": 59,
+    "slug": "/library/chakra-ui.svg",
+    "title": "Chakra UI",
+    "category": "Library",
+    "url": "https://chakra-ui.com"
+  },
   {
     "id": 60,
     "slug": "/library/expressjs.svg",
@@ -474,5 +474,19 @@
     "title": "Arc",
     "category": "Software",
     "url": "https://arc.dev"
+  },
+  {
+    "id": 69,
+    "slug": "/library/qwik.svg",
+    "title": "Qwik",
+    "category": "Framework",
+    "url": "https://qwik.builder.io/"
+  },
+  {
+    "id": 70,
+    "slug": "/library/authy.svg",
+    "title": "Authy",
+    "category": "Software",
+    "url": "https://authy.com/"
   }
 ]
