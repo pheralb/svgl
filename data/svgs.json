@@ -495,5 +495,26 @@
     "title": "Notion",
     "category": "Software",
     "url": "https://notion.so/"
+  },
+  {
+    "id": 72,
+    "slug": "/library/nestjs.svg",
+    "title": "NestJS",
+    "category": "Framework",
+    "url": "https://nestjs.com/"
+  },
+  {
+    "id": 73,
+    "slug": "/library/copilot.svg",
+    "title": "Github Copilot",
+    "category": "Software",
+    "url": "https://github.com/features/copilot"
+  },
+  {
+    "id": 74,
+    "slug": "/library/railway.svg",
+    "title": "Railway",
+    "category": "Software",
+    "url": "https://railway.app/"
   }
 ]
