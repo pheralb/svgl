@@ -523,5 +523,26 @@
     "title": "Docusaurus",
     "category": "Software",
     "url": "https://docusaurus.io/"
+  },
+  {
+    "id": 76,
+    "slug": "/library/twitch.svg",
+    "title": "Twitch",
+    "category": "Entertainment",
+    "url": "https://twitch.tv"
+  },
+  {
+    "id": 77,
+    "slug": "/library/godaddy.svg",
+    "title": "GoDaddy",
+    "category": "Hosting",
+    "url": "https://www.godaddy.com/"
+  },
+  {
+    "id": 78,
+    "slug": "/library/udemy.svg",
+    "title": "Udemy",
+    "category": "Education",
+    "url": "https://www.udemy.com/"
   }
 ]
