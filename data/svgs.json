@@ -495,5 +495,26 @@
     "title": "Notion",
     "category": "Software",
     "url": "https://notion.so/"
+  },
+  {
+    "id": 72,
+    "slug": "/library/twitch.svg",
+    "title": "Twitch",
+    "category": "Entertainment",
+    "url": "https://twitch.tv"
+  },
+  {
+    "id": 73,
+    "slug": "/library/godaddy.svg",
+    "title": "GoDaddy",
+    "category": "Hosting",
+    "url": "https://www.godaddy.com/"
+  },
+  {
+    "id": 74,
+    "slug": "/library/udemy.svg",
+    "title": "Udemy",
+    "category": "Education",
+    "url": "https://www.udemy.com/"
   }
 ]
