@@ -516,5 +516,12 @@
     "title": "Railway",
     "category": "Software",
     "url": "https://railway.app/"
+  },
+  {
+    "id": 75,
+    "slug": "/library/docusaurus.svg",
+    "title": "Docusaurus",
+    "category": "Software",
+    "url": "https://docusaurus.io/"
   }
 ]
