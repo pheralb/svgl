@@ -497,21 +497,48 @@
     "url": "https://notion.so/"
   },
   {
-    "id": 72,
+    "slug": "/library/nestjs.svg",
+    "title": "NestJS",
+    "category": "Framework",
+    "url": "https://nestjs.com/"
+  },
+  {
+    "id": 73,
+    "slug": "/library/copilot.svg",
+    "title": "Github Copilot",
+    "category": "Software",
+    "url": "https://github.com/features/copilot"
+  },
+  {
+    "id": 74,
+    "slug": "/library/railway.svg",
+    "title": "Railway",
+    "category": "Software",
+    "url": "https://railway.app/"
+  },
+  {
+    "id": 75,
+    "slug": "/library/docusaurus.svg",
+    "title": "Docusaurus",
+    "category": "Software",
+    "url": "https://docusaurus.io/"
+  },
+  {
+    "id": 76,
     "slug": "/library/twitch.svg",
     "title": "Twitch",
     "category": "Entertainment",
     "url": "https://twitch.tv"
   },
   {
-    "id": 73,
+    "id": 77,
     "slug": "/library/godaddy.svg",
     "title": "GoDaddy",
     "category": "Hosting",
     "url": "https://www.godaddy.com/"
   },
   {
-    "id": 74,
+    "id": 78,
     "slug": "/library/udemy.svg",
     "title": "Udemy",
     "category": "Education",
