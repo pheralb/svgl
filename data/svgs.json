@@ -544,5 +544,33 @@
     "title": "Udemy",
     "category": "Education",
     "url": "https://www.udemy.com/"
+  },
+  {
+    "id": 79,
+    "slug": "/library/graphql.svg",
+    "title": "GraphQL",
+    "category": "Language",
+    "url": "https://graphql.org/"
+  },
+  {
+    "id": 80,
+    "slug": "/library/gitlab.svg",
+    "title": "GitLab",
+    "category": "Software",
+    "url": "https://gitlab.com/"
+  },
+  {
+    "id": 81,
+    "slug": "/library/prisma.svg",
+    "title": "Prisma",
+    "category": "Software",
+    "url": "https://prisma.io/"
+  },
+  {
+    "id": 82,
+    "slug": "/library/golang.svg",
+    "title": "Go",
+    "category": "Language",
+    "url": "https://go.dev/"
   }
 ]
