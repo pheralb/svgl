@@ -572,5 +572,75 @@
     "title": "Go",
     "category": "Language",
     "url": "https://go.dev/"
+  },
+  {
+    "id": 83,
+    "slug": "/library/platzi.svg",
+    "title": "Platzi",
+    "category": "Education",
+    "url": "https://platzi.com/"
+  },
+  {
+    "id": 84,
+    "slug": "/library/coursera.svg",
+    "title": "Coursera",
+    "category": "Education",
+    "url": "https://www.coursera.org/"
+  },
+  {
+    "id": 85,
+    "slug": "/library/udacity.svg",
+    "title": "Udacity",
+    "category": "Education",
+    "url": "https://www.udacity.com/"
+  },
+  {
+    "id": 86,
+    "slug": "/library/kubernetes.svg",
+    "title": "Kubernetes",
+    "category": "Software",
+    "url": "https://kubernetes.io/"
+  },
+  {
+    "id": 87,
+    "slug": "/library/docker.svg",
+    "title": "Docker",
+    "category": "Software",
+    "url": "https://www.docker.com/"
+  },
+  {
+    "id": 88,
+    "slug": "/library/aws.svg",
+    "title": "Amazon Web Services",
+    "category": "Software",
+    "url": "https://aws.amazon.com/"
+  },
+  {
+    "id": 89,
+    "slug": "/library/azure.svg",
+    "title": "Microsoft Azure",
+    "category": "Software",
+    "url": "https://azure.microsoft.com/"
+  },
+  {
+    "id": 90,
+    "slug": "/library/heroku.svg",
+    "title": "Heroku",
+    "category": "Software",
+    "url": "https://www.heroku.com/"
+  },
+  {
+    "id": 91,
+    "slug": "/library/disneyplus.svg",
+    "title": "Disney+",
+    "category": "Entertainment",
+    "url": "https://www.disneyplus.com/"
+  },
+  {
+    "id": 92,
+    "slug": "/library/primevideo.svg",
+    "title": "Amazon Prime Video",
+    "category": "Entertainment",
+    "url": "https://www.primevideo.com/"
   }
 ]
