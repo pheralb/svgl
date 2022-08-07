@@ -631,16 +631,23 @@
   },
   {
     "id": 91,
-    "slug": "/library/disneyplus.svg",
-    "title": "Disney+",
-    "category": "Entertainment",
-    "url": "https://www.disneyplus.com/"
+    "slug": "/library/jetbrains.svg",
+    "title": "JetBrains",
+    "category": "Software",
+    "url": "https://www.jetbrains.com/"
   },
   {
     "id": 92,
-    "slug": "/library/primevideo.svg",
-    "title": "Amazon Prime Video",
-    "category": "Entertainment",
-    "url": "https://www.primevideo.com/"
+    "slug": "/library/rider.svg",
+    "title": "JetBrains Rider",
+    "category": "Software",
+    "url": "https://www.jetbrains.com/rider/"
+  },
+  {
+    "id": 93,
+    "slug": "/library/planetscale.svg",
+    "title": "PlanetScale",
+    "category": "Database",
+    "url": "https://planetscale.com/"
   }
 ]
