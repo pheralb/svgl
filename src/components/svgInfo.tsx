@@ -27,14 +27,33 @@ const downloadSvg = (url?: string) => {
   download(url || "");
 };
 
+
+const MIMETYPE = 'text/plain';
+
+// Return content of svg as blob =>
+const getSvgContent = async (url: string | undefined, isSupported: boolean) => {
+  const response =  await fetch(url || "");
+  const content = await response.text(); 
+
+  // It was necessary to use blob because in chrome there were issues with the copy to clipboard
+  const blob = new Blob([content], { type: MIMETYPE });
+  return isSupported ? blob : content;
+}
+
 // Copy to clipboard =>
-const copyToClipboard = (url?: string) => {
-  fetch(url || "").then((response) => {
-    response.text().then((content) => {
-      navigator.clipboard.writeText(content);
-      toast("Copied to clipboard", ToastTheme);
-    });
-  });
+const copyToClipboard = async (url?: string) => {
+  const data = {
+    [MIMETYPE]: getSvgContent(url, true)
+  };
+  try {
+    const clipboardItem = new ClipboardItem(data);
+    await navigator.clipboard.write([clipboardItem]);
+  } catch (error) {
+    // This section works as a fallback on Firefox
+    const content = await getSvgContent(url, false) as string;
+    await navigator.clipboard.writeText(content);
+  }
+  toast("Copied to clipboard", ToastTheme);
 };
 
 const SVGInfo = (props: SVGCardProps) => {
