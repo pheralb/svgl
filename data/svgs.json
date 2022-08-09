@@ -649,5 +649,12 @@
     "title": "PlanetScale",
     "category": "Database",
     "url": "https://planetscale.com/"
+  },
+  {
+    "id": 94,
+    "slug": "/library/playwright.svg",
+    "title": "Playwright",
+    "category": "Framework",
+    "url": "https://playwright.dev/"
   }
 ]
