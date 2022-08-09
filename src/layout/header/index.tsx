@@ -93,7 +93,7 @@ const Header = () => {
             </HStack>
           </Flex>
           <Collapse in={isOpen} animateOpacity>
-            <Box mt="3">
+            <Box mt="3" display={{ base:"none", md:"block" }}>
               <Search />
             </Box>
           </Collapse>
