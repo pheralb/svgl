@@ -656,5 +656,257 @@
     "title": "Playwright",
     "category": "Framework",
     "url": "https://playwright.dev/"
+  },
+  {
+    "id": 95,
+    "slug": "/library/attlasian.svg",
+    "title": "Atlassian",
+    "category": "Software",
+    "url": "https://www.atlassian.com/"
+  },
+  {
+    "id": 96,
+    "slug": "/library/discourse.svg",
+    "title": "Discourse",
+    "category": "Software",
+    "url": "https://discourse.org/"
+  },
+  {
+    "id": 97,
+    "slug": "/library/ember.svg",
+    "title": "Ember",
+    "category": "Framework",
+    "url": "https://emberjs.com/"
+  },
+  {
+    "id": 98,
+    "slug": "/library/expo.svg",
+    "title": "Expo",
+    "category": "Software",
+    "url": "https://expo.dev/"
+  },
+  {
+    "id": 99,
+    "slug": "/library/flutter.svg",
+    "title": "Flutter",
+    "category": "Framework",
+    "url": "https://flutter.dev/"
+  },
+  {
+    "id": 100,
+    "slug": "/library/fresh.svg",
+    "title": "Fresh",
+    "category": "Framework",
+    "url": "https://fresh.deno.dev/"
+  },
+  {
+    "id": 101,
+    "slug": "/library/git.svg",
+    "title": "Git",
+    "category": "Software",
+    "url": "https://git-scm.com/"
+  },
+  {
+    "id": 102,
+    "slug": "/library/hostgator.svg",
+    "title": "Hostgator",
+    "category": "Hosting",
+    "url": "https://www.hostgator.com/"
+  },
+  {
+    "id": 103,
+    "slug": "/library/intellijidea.svg",
+    "title": "IntelliJ IDEA",
+    "category": "Software",
+    "url": "https://www.jetbrains.com/idea/"
+  },
+  {
+    "id": 104,
+    "slug": "/library/jasmine.svg",
+    "title": "Jasmine",
+    "category": "Framework",
+    "url": "https://jasmine.github.io/"
+  },
+  {
+    "id": 105,
+    "slug": "/library/java.svg",
+    "title": "Java",
+    "category": "Language",
+    "url": "https://www.java.com/"
+  },
+  {
+    "id": 106,
+    "slug": "/library/jest.svg",
+    "title": "Jest",
+    "category": "Framework",
+    "url": "https://jestjs.io/"
+  },
+  {
+    "id": 107,
+    "slug": "/library/jetbrainsSolid.svg",
+    "title": "JetBrains",
+    "category": "Software",
+    "url": "https://www.jetbrains.com/"
+  },
+  {
+    "id": 108,
+    "slug": "/library/krakenjs.svg",
+    "title": "KrakenJS",
+    "category": "Framework",
+    "url": "https://krakenjs.com/"
+  },
+  {
+    "id": 109,
+    "slug": "/library/laravel.svg",
+    "title": "Laravel",
+    "category": "Framework",
+    "url": "https://laravel.com/"
+  },
+  {
+    "id": 110,
+    "slug": "/library/mariadb.svg",
+    "title": "MariaDB",
+    "category": "Database",
+    "url": "https://mariadb.org/"
+  },
+  {
+    "id": 111,
+    "slug": "/library/materialui.svg",
+    "title": "Material UI",
+    "category": "Framework",
+    "url": "https://mui.com/"
+  },
+  {
+    "id": 112,
+    "slug": "/library/mysql.svg",
+    "title": "MySQL",
+    "category": "Database",
+    "url": "https://www.mysql.com/"
+  },
+  {
+    "id": 113,
+    "slug": "/library/parcel.svg",
+    "title": "Parcel",
+    "category": "Compiler",
+    "url": "https://parceljs.org/"
+  },
+  {
+    "id": 114,
+    "slug": "/library/pm2.svg",
+    "title": "PM2",
+    "category": "Framework",
+    "url": "https://pm2.io/"
+  },
+  {
+    "id": 115,
+    "slug": "/library/postgresql.svg",
+    "title": "PostgreSQL",
+    "category": "Database",
+    "url": "https://www.postgresql.org/"
+  },
+  {
+    "id": 116,
+    "slug": "/library/reactquery.svg",
+    "title": "React Query",
+    "category": "Framework",
+    "url": "https://tanstack.com/query/v4"
+  },
+  {
+    "id": 117,
+    "slug": "/library/redis.svg",
+    "title": "Redis",
+    "category": "Database",
+    "url": "https://redis.io/"
+  },
+  {
+    "id": 118,
+    "slug": "/library/redwoodjs.svg",
+    "title": "RedwoodJS",
+    "category": "Framework",
+    "url": "https://redwoodjs.com/"
+  },
+  {
+    "id": 119,
+    "slug": "/library/ruby.svg",
+    "title": "Ruby",
+    "category": "Language",
+    "url": "https://www.ruby-lang.org/"
+  },
+  {
+    "id": 120,
+    "slug": "/library/scala.svg",
+    "title": "Scala",
+    "category": "Language",
+    "url": "https://www.scala-lang.org/"
+  },
+  {
+    "id": 121,
+    "slug": "/library/sequelize.svg",
+    "title": "Sequelize",
+    "category": "Framework",
+    "url": "https://sequelize.org/"
+  },
+  {
+    "id": 122,
+    "slug": "/library/spinnaker.svg",
+    "title": "Spinnaker",
+    "category": "Software",
+    "url": "https://spinnaker.io/"
+  },
+  {
+    "id": 123,
+    "slug": "/library/sqlite.svg",
+    "title": "SQLite",
+    "category": "Database",
+    "url": "https://www.sqlite.org/"
+  },
+  {
+    "id": 124,
+    "slug": "/library/swagger.svg",
+    "title": "Swagger",
+    "category": "Software",
+    "url": "https://swagger.io/"
+  },
+  {
+    "id": 125,
+    "slug": "/library/swift.svg",
+    "title": "Swift",
+    "category": "Language",
+    "url": "https://swift.org/"
+  },
+  {
+    "id": 126,
+    "slug": "/library/testinglibrary.svg",
+    "title": "Testing Library",
+    "category": "Framework",
+    "url": "https://testing-library.com/"
+  },
+  {
+    "id": 127,
+    "slug": "/library/typeorm.svg",
+    "title": "TypeORM",
+    "category": "Database",
+    "url": "https://typeorm.io/"
+  },
+  {
+    "id": 128,
+    "slug": "/library/unity.svg",
+    "title": "Unity",
+    "category": "Software",
+    "url": "https://unity.com/"
+  },
+  {
+    "id": 129,
+    "slug": "/library/vim.svg",
+    "title": "Vim",
+    "category": "Software",
+    "url": "https://www.vim.org/"
+  },
+  {
+    "id": 130,
+    "slug": "/library/wmr.svg",
+    "title": "WMR",
+    "category": "Compiler",
+    "url": "https://wmr.dev/"
   }
 ]
