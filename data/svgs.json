@@ -908,5 +908,12 @@
     "title": "WMR",
     "category": "Compiler",
     "url": "https://wmr.dev/"
+  },
+  {
+    "id": 131,
+    "slug": "/library/openbootcamp.svg",
+    "title": "OpenBootcamp",
+    "category": "Education",
+    "url": "https://open-bootcamp.com/"
   }
 ]
