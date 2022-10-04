@@ -915,5 +915,12 @@
     "title": "OpenBootcamp",
     "category": "Education",
     "url": "https://open-bootcamp.com/"
+  },
+  {
+    "id": 132,
+    "slug": "/library/digitalocean.svg",
+    "title": "Digital Ocean",
+    "category": "Software",
+    "url": "https://www.digitalocean.com/"
   }
 ]
