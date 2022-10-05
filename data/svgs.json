@@ -922,5 +922,12 @@
     "title": "Digital Ocean",
     "category": "Software",
     "url": "https://www.digitalocean.com/"
+  },
+  {
+    "id": 133,
+    "slug": "/library/disneyplus.svg",
+    "title": "Disney+",
+    "category": "Entertainment",
+    "url": "https://www.disneyplus.com/"
   }
 ]
