@@ -14,7 +14,13 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
   if (q) {
     const results = db.filter((product) => {
       const { title } = product;
-      return title.toLowerCase().includes(q.toString().toLowerCase());
+      const words = q.match(/[^ ]+/g);
+
+      const titleMatch = words.every((word: string) => {
+        return title.toLowerCase().includes(word.toLowerCase());
+      });
+
+      return titleMatch;
     });
     return res.status(200).json(results);
   }
