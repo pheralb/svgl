@@ -929,5 +929,12 @@
     "title": "Disney+",
     "category": "Entertainment",
     "url": "https://www.disneyplus.com/"
+  },
+  {
+    "id": 134,
+    "slug": "/library/reactrouter.svg",
+    "title": "React Router",
+    "category": "Library",
+    "url": "https://reactrouter.com/en/main"
   }
 ]
