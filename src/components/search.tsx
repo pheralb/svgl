@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Input, Text, Image, HStack, Box, Center } from "@chakra-ui/react";
+import { Input, Text, Image, HStack, Box, Center, Spinner } from "@chakra-ui/react";
 import useDebounce from "@/hooks/useDebounce";
 import { SVGCardProps } from "@/interfaces/components";
 import CustomLink from "@/common/link";
@@ -10,6 +10,7 @@ import Tap from "@/animations/tap";
 
 const Search = () => {
   const [search, setSearch] = useState("");
+  const [empty, setEmpty] = useState(false);
   const [results, setResults] = useState<SVGCardProps[]>([]);
   const debouncedSearch = useDebounce(search, 500);
 
@@ -18,12 +19,18 @@ const Search = () => {
       fetch(getSvgByQuery + debouncedSearch).then((res) => {
         if (res.ok) {
           res.json().then((data) => {
+            setEmpty(data.length === 0);
             setResults(data);
           });
         }
       });
     }
   }, [debouncedSearch]);
+
+  const handleFilter = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setEmpty(false);
+    setSearch(e.target.value);
+  };
 
   const handleClear = () => {
     setSearch("");
@@ -38,11 +45,13 @@ const Search = () => {
         size="lg"
         placeholder="Search svgs..."
         value={search}
-        onChange={(e) => setSearch(e.target.value)}
+        onChange={handleFilter}
       />
+      {search && !empty && results.length === 0 && (<Box pt="4"><Spinner /></Box>)}
+      {search && empty && (<Box pt="3">No results found!</Box>)}
       {results && results.length > 0 && (
         <>
-          <HStack spacing={4} mt={4} overflowX="auto" overflowY="hidden">
+          <HStack spacing={4} mt={4} overflowX="auto" overflowY="hidden" alignItems="start">
             {results.map((item: SVGCardProps) => (
               <Tap key={item.title}>
                 <CustomLink href={`/svg/${item.id}`}>
