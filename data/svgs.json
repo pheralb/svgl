@@ -936,5 +936,12 @@
     "title": "React Router",
     "category": "Library",
     "url": "https://reactrouter.com/en/main"
+  },
+  {
+    "id": 135,
+    "slug": "/library/gdsc.svg",
+    "title": "Google Student Developer Club",
+    "category": "Google",
+    "url": "https://gdsc.community.dev/"
   }
 ]
