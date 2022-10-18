@@ -91,7 +91,7 @@ const Header = () => {
           </Flex>
           <Collapse in={isOpen} animateOpacity>
             <Box mt='3' display={{ base: 'none', md: 'block' }}>
-              <Search />
+              <Search availableFocus={isOpen} />
             </Box>
           </Collapse>
           <Box mt='2' display={{ base: 'block', md: 'none' }}>

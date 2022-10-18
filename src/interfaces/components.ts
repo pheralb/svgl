@@ -42,3 +42,7 @@ export interface ErrorProps {
   title: string;
   description: string;
 }
+
+export interface SearchProps {
+  availableFocus?: boolean;
+}
