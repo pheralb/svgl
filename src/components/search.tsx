@@ -1,18 +1,27 @@
-import { useEffect, useState } from "react";
-import { Input, Text, Image, HStack, Box, Center, Spinner } from "@chakra-ui/react";
+import { useEffect, useRef, useState } from "react";
+import {
+  Input,
+  Text,
+  Image,
+  HStack,
+  Box,
+  Center,
+  Spinner,
+} from "@chakra-ui/react";
 import useDebounce from "@/hooks/useDebounce";
-import { SVGCardProps } from "@/interfaces/components";
+import { SearchProps, SVGCardProps } from "@/interfaces/components";
 import CustomLink from "@/common/link";
 import { getSvgByQuery } from "@/services";
 import CustomIconBtn from "@/common/iconBtn";
 import { Trash } from "phosphor-react";
 import Tap from "@/animations/tap";
 
-const Search = () => {
+const Search = ({ availableFocus = false }: SearchProps) => {
   const [search, setSearch] = useState("");
   const [empty, setEmpty] = useState(false);
   const [results, setResults] = useState<SVGCardProps[]>([]);
   const debouncedSearch = useDebounce(search, 500);
+  const searchRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     if (debouncedSearch) {
@@ -26,6 +35,18 @@ const Search = () => {
       });
     }
   }, [debouncedSearch]);
+
+  useEffect(() => {
+    const isFocusAvailable = availableFocus && searchRef.current;
+
+    if (!isFocusAvailable) return;
+
+    const timeoutId = setTimeout(() => {
+      searchRef.current?.focus();
+    }, 100);
+
+    return () => clearTimeout(timeoutId);
+  }, [availableFocus]);
 
   const handleFilter = (e: React.ChangeEvent<HTMLInputElement>) => {
     setEmpty(false);
@@ -46,12 +67,23 @@ const Search = () => {
         placeholder="Search svgs..."
         value={search}
         onChange={handleFilter}
+        ref={searchRef}
       />
-      {search && !empty && results.length === 0 && (<Box pt="4"><Spinner /></Box>)}
-      {search && empty && (<Box pt="3">No results found!</Box>)}
+      {search && !empty && results.length === 0 && (
+        <Box pt="4">
+          <Spinner />
+        </Box>
+      )}
+      {search && empty && <Box pt="3">No results found!</Box>}
       {results && results.length > 0 && (
         <>
-          <HStack spacing={4} mt={4} overflowX="auto" overflowY="hidden" alignItems="start">
+          <HStack
+            spacing={4}
+            mt={4}
+            overflowX="auto"
+            overflowY="hidden"
+            alignItems="start"
+          >
             {results.map((item: SVGCardProps) => (
               <Tap key={item.title}>
                 <CustomLink href={`/svg/${item.id}`}>

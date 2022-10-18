@@ -1,73 +1,70 @@
-import React from "react";
 import {
   Box,
   Flex,
   useColorModeValue,
   HStack,
-  Button,
   Container,
   Heading,
   Icon,
   useDisclosure,
   Collapse,
-  Text,
-} from "@chakra-ui/react";
-import { ArrowSquareOut, MagnifyingGlass, Sticker, X } from "phosphor-react";
-import Theme from "./theme";
-import Tap from "@/animations/tap";
-import Mobile from "./mobile";
-import { Links } from "./links";
-import CustomLink from "@/common/link";
-import Categories from "./categories";
-import Search from "@/components/search";
-import CustomIconBtn from "@/common/iconBtn";
-import { useHotkeys } from "react-hotkeys-hook";
+} from '@chakra-ui/react'
+import { ArrowSquareOut, MagnifyingGlass, Sticker, X } from 'phosphor-react'
+import Theme from './theme'
+import Tap from '@/animations/tap'
+import Mobile from './mobile'
+import { Links } from './links'
+import CustomLink from '@/common/link'
+import Categories from './categories'
+import Search from '@/components/search'
+import CustomIconBtn from '@/common/iconBtn'
+import { useHotkeys } from 'react-hotkeys-hook'
 
 const Header = () => {
-  const bg = useColorModeValue("bg.light", "bg.dark");
-  const { isOpen, onToggle } = useDisclosure();
-  useHotkeys("ctrl+k", (e) => {
-    e.preventDefault();
-    onToggle();
-  });
+  const bg = useColorModeValue('bg.light', 'bg.dark')
+  const { isOpen, onToggle } = useDisclosure()
+  useHotkeys('ctrl+k', (e) => {
+    e.preventDefault()
+    onToggle()
+  })
   return (
     <>
       <Box
-        as="header"
-        position="sticky"
-        top="0"
+        as='header'
+        position='sticky'
+        top='0'
         bg={bg}
-        borderBottomWidth="1px"
-        w="full"
+        borderBottomWidth='1px'
+        w='full'
         py={6}
         zIndex={1}
-        shadow="sm"
+        shadow='sm'
       >
-        <Container maxW={{ base: "full", md: "70%" }}>
-          <Flex alignItems="center" justifyContent="space-between" mx="auto">
-            <CustomLink href="/">
+        <Container maxW={{ base: 'full', md: '70%' }}>
+          <Flex alignItems='center' justifyContent='space-between' mx='auto'>
+            <CustomLink href='/'>
               <Tap>
-                <HStack spacing={3} cursor="pointer">
-                  <Sticker size={32} color="#4343e5" weight="bold" />
-                  <Heading fontSize="19px">svgl</Heading>
+                <HStack spacing={3} cursor='pointer'>
+                  <Sticker size={32} color='#4343e5' weight='bold' />
+                  <Heading fontSize='19px'>svgl</Heading>
                 </HStack>
               </Tap>
             </CustomLink>
-            <HStack display="flex" alignItems="center" spacing={2}>
-              <Box display={{ base: "none", md: "inline-flex" }}>
+            <HStack display='flex' alignItems='center' spacing={2}>
+              <Box display={{ base: 'none', md: 'inline-flex' }}>
                 {Links.map((link) => (
                   <CustomLink
                     key={link.title}
                     href={link.slug}
                     external={link.external}
-                    font="Inter-Semibold"
-                    mr="4"
-                    ml="3"
+                    font='Inter-Semibold'
+                    mr='4'
+                    ml='3'
                   >
                     <Tap>
                       {link.title}
                       {link.external ? (
-                        <Icon as={ArrowSquareOut} ml="2" />
+                        <Icon as={ArrowSquareOut} ml='2' />
                       ) : null}
                     </Tap>
                   </CustomLink>
@@ -76,10 +73,10 @@ const Header = () => {
               <HStack
                 spacing={1}
                 mr={1}
-                display={{ base: "none", md: "inline-flex" }}
+                display={{ base: 'none', md: 'inline-flex' }}
               >
                 <CustomIconBtn
-                  title="Toggle Search bar"
+                  title='Toggle Search bar'
                   icon={
                     isOpen ? <X size={22} /> : <MagnifyingGlass size={22} />
                   }
@@ -87,37 +84,37 @@ const Header = () => {
                 />
                 <Theme />
               </HStack>
-              <Box display={{ base: "inline-flex", md: "none" }}>
+              <Box display={{ base: 'inline-flex', md: 'none' }}>
                 <Mobile />
               </Box>
             </HStack>
           </Flex>
           <Collapse in={isOpen} animateOpacity>
-            <Box mt="3" display={{ base:"none", md:"block" }}>
-              <Search />
+            <Box mt='3' display={{ base: 'none', md: 'block' }}>
+              <Search availableFocus={isOpen} />
             </Box>
           </Collapse>
-          <Box mt="2" display={{ base: "block", md: "none" }}>
+          <Box mt='2' display={{ base: 'block', md: 'none' }}>
             <Search />
           </Box>
         </Container>
       </Box>
-      <Box p="4" overflowX="hidden" overflowY="auto">
+      <Box p='4' overflowX='hidden' overflowY='auto'>
         <HStack
-          justifyContent={{ base: "none", lg: "center" }}
-          flexWrap={{ base: "initial", lg: "wrap" }}
+          justifyContent={{ base: 'none', lg: 'center' }}
+          flexWrap={{ base: 'initial', lg: 'wrap' }}
           spacing={4}
-          overflowX="auto"
-          overflowY="hidden"
+          overflowX='auto'
+          overflowY='hidden'
           bg={bg}
-          pb="4"
-          borderBottomWidth="1px"
+          pb='4'
+          borderBottomWidth='1px'
         >
           <Categories />
         </HStack>
       </Box>
     </>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
