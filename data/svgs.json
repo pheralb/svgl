@@ -950,5 +950,12 @@
     "title": "Brave Browser",
     "category": "Browser",
     "url": "https://brave.com/"
+  },
+  {
+    "id": 137,
+    "slug": "/library/eclipse.svg",
+    "title": "Eclipse IDE",
+    "category": "IDE",
+    "url": "https://www.eclipse.org/"
   }
 ]
