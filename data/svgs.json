@@ -943,5 +943,19 @@
     "title": "Google Student Developer Club",
     "category": "Google",
     "url": "https://gdsc.community.dev/"
+  },
+  {
+    "id": 136,
+    "slug": "/library/brave.svg",
+    "title": "Brave Browser",
+    "category": "Browser",
+    "url": "https://brave.com/"
+  },
+  {
+    "id": 137,
+    "slug": "/library/eclipse.svg",
+    "title": "Eclipse IDE",
+    "category": "IDE",
+    "url": "https://www.eclipse.org/"
   }
 ]
