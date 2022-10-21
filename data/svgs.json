@@ -957,5 +957,12 @@
     "title": "Eclipse IDE",
     "category": "IDE",
     "url": "https://www.eclipse.org/"
+  },
+  {
+    "id": 138,
+    "slug": "/library/netbeans.svg",
+    "title": "Netbeans IDE",
+    "category": "IDE",
+    "url": "https://netbeans.apache.org/"
   }
 ]
