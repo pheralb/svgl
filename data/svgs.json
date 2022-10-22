@@ -957,5 +957,19 @@
     "title": "Eclipse IDE",
     "category": "IDE",
     "url": "https://www.eclipse.org/"
+  },
+  {
+    "id": 138,
+    "slug": "/library/html5.svg",
+    "title": "HTML5",
+    "category": "Language",
+    "url": "https://es.wikipedia.org/wiki/HTML5"
+  },
+  {
+    "id": 139,
+    "slug": "/library/css.svg",
+    "title": "CSS",
+    "category": "Language",
+    "url": "https://es.wikipedia.org/wiki/CSS"
   }
 ]
