@@ -971,5 +971,19 @@
     "title": "CodeChef",
     "category": "Competitive Programming",
     "url": "https://codechef.com/"
+  },
+  {
+    "id": 140
+    "slug": "/library/html5.svg",
+    "title": "HTML5",
+    "category": "Language",
+    "url": "https://es.wikipedia.org/wiki/HTML5"
+  },
+  {
+    "id": 141,
+    "slug": "/library/css.svg",
+    "title": "CSS",
+    "category": "Language",
+    "url": "https://es.wikipedia.org/wiki/CSS"
   }
 ]
