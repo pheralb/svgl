@@ -12,6 +12,7 @@
     "library"
   ],
   "scripts": {
+    "phoenix": "rm -f package-lock.json && rm -rf ./node_modules && npm install --no-fund --no-audit --no-package-lock --legacy-peer-deps",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
