@@ -1,4 +1,4 @@
-import React from "react";
+import React, {CSSProperties} from "react";
 import { SVGCardProps } from "@/interfaces/components";
 import {
   Box,
@@ -13,13 +13,14 @@ import CustomLink from "@/common/link";
 import { Smiley } from "phosphor-react";
 
 const shortHiddenTextCss = (text: string) => {
-  if (text.length <= 15) return ;
-  return {
-    overflow: "hidden",
-    textOverflow: "ellipsis",
-    maxWidth: "100%",
-    whiteSpace: "nowrap",
-  }
+  const styleValue : CSSProperties = {
+    whiteSpace : "nowrap",
+    overflow : "hidden",
+    textOverflow : "ellipsis",
+    maxWidth : "100%"
+  };
+  if (text.length <= 15) return {};
+  return styleValue;
 }
 
 
