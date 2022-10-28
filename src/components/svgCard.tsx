@@ -12,6 +12,17 @@ import Tap from "@/animations/tap";
 import CustomLink from "@/common/link";
 import { Smiley } from "phosphor-react";
 
+const shortHiddenTextCss = (text: string) => {
+  if (text.length <= 15) return ;
+  return {
+    overflow: "hidden",
+    textOverflow: "ellipsis",
+    maxWidth: "100%",
+    whiteSpace: "nowrap",
+  }
+}
+
+
 const SVGCard = (props: SVGCardProps) => {
   const bg = useColorModeValue("bg.light", "bg.dark");
   const color = useColorModeValue("rgb(0,0,0, .1)", "rgb(255,255,255, .1)");
@@ -34,7 +45,7 @@ const SVGCard = (props: SVGCardProps) => {
             <Center>
               <Image height="40px" src={props.svg} alt={props.title} />
             </Center>
-            <Text mt="3" fontWeight="light" textAlign="center">
+            <Text title={props.title} style={shortHiddenTextCss(props.title)} mt="3" fontWeight="light" textAlign="center">
               {props.title}
             </Text>
           </Box>
