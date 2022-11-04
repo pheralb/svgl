@@ -971,5 +971,12 @@
     "title": "CSS",
     "category": "Language",
     "url": "https://es.wikipedia.org/wiki/CSS"
+  },
+  {
+    "id": 140,
+    "slug": "/library/midudev.svg",
+    "title": "midudev",
+    "category": "Education",
+    "url": "https://midu.dev"
   }
 ]
