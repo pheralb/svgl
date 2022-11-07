@@ -978,5 +978,26 @@
     "title": "midudev",
     "category": "Education",
     "url": "https://midu.dev"
+  },
+  {
+    "id": 141,
+    "slug": "/library/apple.svg",
+    "title": "Apple",
+    "category": "Software",
+    "url": "https://www.apple.com"
+  },
+  {
+    "id": 142,
+    "slug": "/library/android.svg",
+    "title": "Android",
+    "category": "Software",
+    "url": "https://www.android.com/"
+  },
+  {
+    "id": 143,
+    "slug": "/library/windows.svg",
+    "title": "Windows",
+    "category": "Software",
+    "url": "https://www.microsoft.com/windows"
   }
 ]
