@@ -999,5 +999,12 @@
     "title": "Windows",
     "category": "Software",
     "url": "https://www.microsoft.com/windows"
+  },
+  {
+    "id": 144,
+    "slug": "/library/python.svg",
+    "title": "Python",
+    "category": "Language",
+    "url": "https://www.python.org/"
   }
 ]
