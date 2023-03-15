@@ -1,1010 +1,1010 @@
 [
   {
     "id": 1,
-    "slug": "/library/discord.svg",
     "title": "Discord",
     "category": "Software",
+    "route": "/library/discord.svg",
     "url": "https://discord.com/"
   },
   {
     "id": 2,
-    "slug": "/library/github.svg",
     "title": "Github",
     "category": "Software",
+    "route": "/library/github.svg",
     "url": "https://github.com/"
   },
   {
     "id": 3,
-    "slug": "/library/preact.svg",
     "title": "Preact",
     "category": "Library",
+    "route": "/library/preact.svg",
     "url": "https://preactjs.com/"
   },
   {
     "id": 4,
-    "slug": "/library/react.svg",
     "title": "React",
     "category": "Library",
+    "route": "/library/react.svg",
     "url": "https://reactjs.org/"
   },
   {
     "id": 5,
-    "slug": "/library/vercel.svg",
     "title": "Vercel",
     "category": "Hosting",
+    "route": "/library/vercel.svg",
     "url": "https://vercel.com/"
   },
   {
     "id": 6,
-    "slug": "/library/svelte.svg",
     "title": "Svelte",
     "category": "Library",
+    "route": "/library/svelte.svg",
     "url": "https://svelte.dev/"
   },
   {
     "id": 7,
-    "slug": "/library/vue.svg",
     "title": "Vue",
     "category": "Framework",
+    "route": "/library/vue.svg",
     "url": "https://vuejs.org/"
   },
   {
     "id": 8,
-    "slug": "/library/nuxt.svg",
     "title": "Nuxt",
     "category": "Framework",
+    "route": "/library/nuxt.svg",
     "url": "https://nuxtjs.org/"
   },
   {
     "id": 9,
-    "slug": "/library/nextjs.svg",
     "title": "Nextjs",
     "category": "Framework",
+    "route": "/library/nextjs.svg",
     "url": "https://nextjs.org/"
   },
   {
     "id": 10,
-    "slug": "/library/vscode.svg",
     "title": "VSCode",
     "category": "Software",
+    "route": "/library/vscode.svg",
     "url": "https://code.visualstudio.com/"
   },
   {
     "id": 11,
-    "slug": "/library/jwt.svg",
     "title": "JWT",
     "category": "Library",
+    "route": "/library/jwt.svg",
     "url": "https://jwt.io/"
   },
   {
     "id": 12,
-    "slug": "/library/strapi.svg",
     "title": "Strapi",
     "category": "CMS",
+    "route": "/library/strapi.svg",
     "url": "https://strapi.io/"
   },
   {
     "id": 13,
-    "slug": "/library/figma.svg",
     "title": "Figma",
     "category": "Software",
+    "route": "/library/figma.svg",
     "url": "https://www.figma.com/"
   },
   {
     "id": 14,
-    "slug": "/library/spotify.svg",
     "title": "Spotify",
     "category": "Software",
+    "route": "/library/spotify.svg",
     "url": "https://www.spotify.com/"
   },
   {
     "id": 15,
-    "slug": "/library/postman.svg",
     "title": "Postman",
     "category": "Software",
+    "route": "/library/postman.svg",
     "url": "https://www.getpostman.com/"
   },
   {
     "id": 16,
-    "slug": "/library/algolia.svg",
     "title": "Algolia",
     "category": "Library",
+    "route": "/library/algolia.svg",
     "url": "https://www.algolia.com/"
   },
   {
     "id": 17,
-    "slug": "/library/bootstrap.svg",
     "title": "Bootstrap",
     "category": "Framework",
+    "route": "/library/bootstrap.svg",
     "url": "https://getbootstrap.com/"
   },
   {
     "id": 18,
-    "slug": "/library/firebase.svg",
     "title": "Firebase",
     "category": "Hosting",
+    "route": "/library/firebase.svg",
     "url": "https://firebase.google.com/"
   },
   {
     "id": 19,
-    "slug": "/library/supabase.svg",
     "title": "Supabase",
     "category": "Database",
+    "route": "/library/supabase.svg",
     "url": "https://supabase.com/"
   },
   {
     "id": 20,
-    "slug": "/library/vitejs.svg",
     "title": "Vite.js",
     "category": "Compiler",
+    "route": "/library/vitejs.svg",
     "url": "https://vitejs.dev"
   },
   {
     "id": 21,
-    "slug": "/library/facebook.svg",
     "title": "Facebook",
     "category": "Social",
+    "route": "/library/facebook.svg",
     "url": "https://www.facebook.com/"
   },
   {
     "id": 22,
-    "slug": "/library/twitter.svg",
     "title": "Twitter",
     "category": "Social",
+    "route": "/library/twitter.svg",
     "url": "https://twitter.com/"
   },
   {
     "id": 23,
-    "slug": "/library/nodejs.svg",
     "title": "Node.js",
     "category": "Library",
+    "route": "/library/nodejs.svg",
     "url": "https://nodejs.org/"
   },
   {
     "id": 24,
-    "slug": "/library/esbuild.svg",
     "title": "Esbuild",
     "category": "Compiler",
+    "route": "/library/esbuild.svg",
     "url": "https://esbuild.github.io/"
   },
   {
     "id": 25,
-    "slug": "/library/deno.svg",
     "title": "Deno",
     "category": "Library",
+    "route": "/library/deno.svg",
     "url": "https://deno.land/"
   },
   {
     "id": 26,
-    "slug": "/library/gatsby.svg",
     "title": "Gatsby",
     "category": "Framework",
+    "route": "/library/gatsby.svg",
     "url": "https://www.gatsbyjs.org/"
   },
   {
     "id": 27,
-    "slug": "/library/npm.svg",
     "title": "NPM",
     "category": "Software",
+    "route": "/library/npm.svg",
     "url": "https://www.npmjs.com/"
   },
   {
     "id": 28,
-    "slug": "/library/homebrew.svg",
     "title": "Homebrew",
     "category": "Software",
+    "route": "/library/homebrew.svg",
     "url": "https://brew.sh/"
   },
   {
     "id": 29,
-    "slug": "/library/sublimetext.svg",
     "title": "Sublime Text",
     "category": "Software",
+    "route": "/library/sublimetext.svg",
     "url": "https://www.sublimetext.com/"
   },
   {
     "id": 30,
-    "slug": "/library/turborepo.svg",
     "title": "TurboRepo",
     "category": "Library",
+    "route": "/library/turborepo.svg",
     "url": "https://turborepo.org/"
   },
   {
     "id": 31,
-    "slug": "/library/tailwindcss.svg",
     "title": "Tailwind CSS",
     "category": "Framework",
+    "route": "/library/tailwindcss.svg",
     "url": "https://tailwindcss.com/"
   },
   {
     "id": 32,
-    "slug": "/library/styledcomponents.svg",
     "title": "Styled Components",
     "category": "Library",
+    "route": "/library/styledcomponents.svg",
     "url": "https://styled-components.com/"
   },
   {
     "id": 33,
-    "slug": "/library/angular.svg",
     "title": "Angular",
     "category": "Framework",
+    "route": "/library/angular.svg",
     "url": "https://angular.io/"
   },
   {
     "id": 34,
-    "slug": "/library/blitzjs.svg",
     "title": "Blitz",
     "category": "Framework",
+    "route": "/library/blitzjs.svg",
     "url": "https://blitzjs.com/"
   },
   {
     "id": 35,
-    "slug": "/library/lit.svg",
     "title": "Lit",
     "category": "Library",
+    "route": "/library/lit.svg",
     "url": "https://lit.dev/"
   },
   {
     "id": 36,
-    "slug": "/library/atom.svg",
     "title": "Atom",
     "category": "Software",
+    "route": "/library/atom.svg",
     "url": "https://atom.io/"
   },
   {
     "id": 37,
-    "slug": "/library/youtube.svg",
     "title": "YouTube",
     "category": "Social",
+    "route": "/library/youtube.svg",
     "url": "https://www.youtube.com/"
   },
   {
     "id": 38,
-    "slug": "/library/astro.svg",
     "title": "Astro",
     "category": "Framework",
+    "route": "/library/astro.svg",
     "url": "https://astro.build/"
   },
   {
     "id": 39,
-    "slug": "/library/google.svg",
     "title": "Google",
     "category": "Social",
+    "route": "/library/google.svg",
     "url": "https://www.google.com/"
   },
   {
     "id": 40,
-    "slug": "/library/framer.svg",
     "title": "Framer",
     "category": "Software",
+    "route": "/library/framer.svg",
     "url": "https://framer.com/"
   },
   {
     "id": 41,
-    "slug": "/library/netflix.svg",
     "title": "Netflix",
     "category": "Entertainment",
+    "route": "/library/netflix.svg",
     "url": "https://www.netflix.com/"
   },
   {
     "id": 42,
-    "slug": "/library/firefox.svg",
     "title": "Firefox",
     "category": "Software",
+    "route": "/library/firefox.svg",
     "url": "https://www.mozilla.org/en-US/firefox/"
   },
   {
     "id": 43,
-    "slug": "/library/linkedin.svg",
     "title": "LinkedIn",
     "category": "Social",
+    "route": "/library/linkedin.svg",
     "url": "https://www.linkedin.com/"
   },
   {
     "id": 44,
-    "slug": "/library/telegram.svg",
     "title": "Telegram",
     "category": "Social",
+    "route": "/library/telegram.svg",
     "url": "https://web.telegram.org/"
   },
   {
     "id": 45,
-    "slug": "/library/whatsapp.svg",
     "title": "WhatsApp",
     "category": "Social",
+    "route": "/library/whatsapp.svg",
     "url": "https://web.whatsapp.com/"
   },
   {
     "id": 46,
-    "slug": "/library/headlessui.svg",
     "title": "Headless UI",
     "category": "Library",
+    "route": "/library/headlessui.svg",
     "url": "https://headlessui.dev/"
   },
   {
     "id": 47,
-    "slug": "/library/kotlin.svg",
     "title": "Kotlin",
     "category": "Language",
+    "route": "/library/kotlin.svg",
     "url": "https://kotlinlang.org/"
   },
   {
     "id": 48,
-    "slug": "/library/vitest.svg",
     "title": "Vitest",
     "category": "Framework",
+    "route": "/library/vitest.svg",
     "url": "https://vitest.dev/"
   },
   {
     "id": 49,
-    "slug": "/library/storybook.svg",
     "title": "Storybook",
     "category": "Software",
+    "route": "/library/storybook.svg",
     "url": "https://storybook.js.org/"
   },
   {
     "id": 50,
-    "slug": "/library/netlify.svg",
     "title": "Netlify",
     "category": "Hosting",
+    "route": "/library/netlify.svg",
     "url": "https://www.netlify.com/"
   },
   {
     "id": 51,
-    "slug": "/library/solidjs.svg",
     "title": "Solidjs",
     "category": "Framework",
+    "route": "/library/solidjs.svg",
     "url": "https://www.solidjs.com/"
   },
   {
     "id": 52,
-    "slug": "/library/mongodb.svg",
     "title": "MongoDB",
     "category": "Database",
+    "route": "/library/mongodb.svg",
     "url": "https://www.mongodb.com/"
   },
   {
     "id": 53,
-    "slug": "/library/babel.svg",
     "title": "Babel",
     "category": "Compiler",
+    "route": "/library/babel.svg",
     "url": "https://babeljs.io"
   },
   {
     "id": 54,
-    "slug": "/library/moon.svg",
     "title": "Moon",
     "category": "Framework",
+    "route": "/library/moon.svg",
     "url": "https://moonjs.org/"
   },
   {
     "id": 55,
-    "slug": "/library/payload.svg",
     "title": "Payload CMS",
     "category": "CMS",
+    "route": "/library/payload.svg",
     "url": "https://payloadcms.com"
   },
   {
     "id": 56,
-    "slug": "/library/fly.svg",
     "title": "Fly",
     "category": "Hosting",
+    "route": "/library/fly.svg",
     "url": "https://fly.io"
   },
   {
     "id": 57,
-    "slug": "/library/learnthis.svg",
     "title": "LearnThis",
     "category": "Education",
+    "route": "/library/learnthis.svg",
     "url": "https://learnthisacademy.com"
   },
   {
     "id": 58,
-    "slug": "/library/speackme.svg",
     "title": "Speack.me",
     "category": "Social",
+    "route": "/library/speackme.svg",
     "url": "https://speack.me"
   },
   {
     "id": 59,
-    "slug": "/library/chakra-ui.svg",
     "title": "Chakra UI",
     "category": "Library",
+    "route": "/library/chakra-ui.svg",
     "url": "https://chakra-ui.com"
   },
   {
     "id": 60,
-    "slug": "/library/expressjs.svg",
     "title": "Express.js",
     "category": "Framework",
+    "route": "/library/expressjs.svg",
     "url": "https://expressjs.com"
   },
   {
     "id": 61,
-    "slug": "/library/fastify.svg",
     "title": "Fastify",
     "category": "Framework",
+    "route": "/library/fastify.svg",
     "url": "https://www.fastify.io"
   },
   {
     "id": 62,
-    "slug": "/library/javascript.svg",
     "title": "JavaScript",
     "category": "Language",
+    "route": "/library/javascript.svg",
     "url": "https://developer.mozilla.org/docs/Web/JavaScript"
   },
   {
     "id": 63,
-    "slug": "/library/jquery.svg",
     "title": "jQuery",
     "category": "Language",
+    "route": "/library/jquery.svg",
     "url": "https://jquery.com"
   },
   {
     "id": 64,
-    "slug": "/library/rapidapi.svg",
     "title": "Rapid API",
     "category": "Software",
+    "route": "/library/rapidapi.svg",
     "url": "https://rapidapi.com"
   },
   {
     "id": 65,
-    "slug": "/library/typescript.svg",
     "title": "TypeScript",
     "category": "Language",
+    "route": "/library/typescript.svg",
     "url": "https://www.typescriptlang.org"
   },
   {
     "id": 66,
-    "slug": "/library/bun.svg",
     "title": "Bun",
     "category": "Library",
+    "route": "/library/bun.svg",
     "url": "https://bun.sh"
   },
   {
     "id": 67,
-    "slug": "/library/twilio.svg",
     "title": "Twilio",
     "category": "Software",
+    "route": "/library/twilio.svg",
     "url": "https://twilio.com"
   },
   {
     "id": 68,
-    "slug": "/library/arc.svg",
     "title": "Arc",
     "category": "Software",
+    "route": "/library/arc.svg",
     "url": "https://arc.dev"
   },
   {
     "id": 69,
-    "slug": "/library/qwik.svg",
     "title": "Qwik",
     "category": "Framework",
+    "route": "/library/qwik.svg",
     "url": "https://qwik.builder.io/"
   },
   {
     "id": 70,
-    "slug": "/library/authy.svg",
     "title": "Authy",
     "category": "Software",
+    "route": "/library/authy.svg",
     "url": "https://authy.com/"
   },
   {
     "id": 71,
-    "slug": "/library/notion.svg",
     "title": "Notion",
     "category": "Software",
+    "route": "/library/notion.svg",
     "url": "https://notion.so/"
   },
   {
     "id": 72,
-    "slug": "/library/nestjs.svg",
     "title": "NestJS",
     "category": "Framework",
+    "route": "/library/nestjs.svg",
     "url": "https://nestjs.com/"
   },
   {
     "id": 73,
-    "slug": "/library/copilot.svg",
     "title": "Github Copilot",
     "category": "Software",
+    "route": "/library/copilot.svg",
     "url": "https://github.com/features/copilot"
   },
   {
     "id": 74,
-    "slug": "/library/railway.svg",
     "title": "Railway",
     "category": "Software",
+    "route": "/library/railway.svg",
     "url": "https://railway.app/"
   },
   {
     "id": 75,
-    "slug": "/library/docusaurus.svg",
     "title": "Docusaurus",
     "category": "Software",
+    "route": "/library/docusaurus.svg",
     "url": "https://docusaurus.io/"
   },
   {
     "id": 76,
-    "slug": "/library/twitch.svg",
     "title": "Twitch",
     "category": "Entertainment",
+    "route": "/library/twitch.svg",
     "url": "https://twitch.tv"
   },
   {
     "id": 77,
-    "slug": "/library/godaddy.svg",
     "title": "GoDaddy",
     "category": "Hosting",
+    "route": "/library/godaddy.svg",
     "url": "https://www.godaddy.com/"
   },
   {
     "id": 78,
-    "slug": "/library/udemy.svg",
     "title": "Udemy",
     "category": "Education",
+    "route": "/library/udemy.svg",
     "url": "https://www.udemy.com/"
   },
   {
     "id": 79,
-    "slug": "/library/graphql.svg",
     "title": "GraphQL",
     "category": "Language",
+    "route": "/library/graphql.svg",
     "url": "https://graphql.org/"
   },
   {
     "id": 80,
-    "slug": "/library/gitlab.svg",
     "title": "GitLab",
     "category": "Software",
+    "route": "/library/gitlab.svg",
     "url": "https://gitlab.com/"
   },
   {
     "id": 81,
-    "slug": "/library/prisma.svg",
     "title": "Prisma",
     "category": "Software",
+    "route": "/library/prisma.svg",
     "url": "https://prisma.io/"
   },
   {
     "id": 82,
-    "slug": "/library/golang.svg",
     "title": "Go",
     "category": "Language",
+    "route": "/library/golang.svg",
     "url": "https://go.dev/"
   },
   {
     "id": 83,
-    "slug": "/library/platzi.svg",
     "title": "Platzi",
     "category": "Education",
+    "route": "/library/platzi.svg",
     "url": "https://platzi.com/"
   },
   {
     "id": 84,
-    "slug": "/library/coursera.svg",
     "title": "Coursera",
     "category": "Education",
+    "route": "/library/coursera.svg",
     "url": "https://www.coursera.org/"
   },
   {
     "id": 85,
-    "slug": "/library/udacity.svg",
     "title": "Udacity",
     "category": "Education",
+    "route": "/library/udacity.svg",
     "url": "https://www.udacity.com/"
   },
   {
     "id": 86,
-    "slug": "/library/kubernetes.svg",
     "title": "Kubernetes",
     "category": "Software",
+    "route": "/library/kubernetes.svg",
     "url": "https://kubernetes.io/"
   },
   {
     "id": 87,
-    "slug": "/library/docker.svg",
     "title": "Docker",
     "category": "Software",
+    "route": "/library/docker.svg",
     "url": "https://www.docker.com/"
   },
   {
     "id": 88,
-    "slug": "/library/aws.svg",
     "title": "Amazon Web Services",
     "category": "Software",
+    "route": "/library/aws.svg",
     "url": "https://aws.amazon.com/"
   },
   {
     "id": 89,
-    "slug": "/library/azure.svg",
     "title": "Microsoft Azure",
     "category": "Software",
+    "route": "/library/azure.svg",
     "url": "https://azure.microsoft.com/"
   },
   {
     "id": 90,
-    "slug": "/library/heroku.svg",
     "title": "Heroku",
     "category": "Software",
+    "route": "/library/heroku.svg",
     "url": "https://www.heroku.com/"
   },
   {
     "id": 91,
-    "slug": "/library/jetbrains.svg",
     "title": "JetBrains",
     "category": "Software",
+    "route": "/library/jetbrains.svg",
     "url": "https://www.jetbrains.com/"
   },
   {
     "id": 92,
-    "slug": "/library/rider.svg",
     "title": "JetBrains Rider",
     "category": "Software",
+    "route": "/library/rider.svg",
     "url": "https://www.jetbrains.com/rider/"
   },
   {
     "id": 93,
-    "slug": "/library/planetscale.svg",
     "title": "PlanetScale",
     "category": "Database",
+    "route": "/library/planetscale.svg",
     "url": "https://planetscale.com/"
   },
   {
     "id": 94,
-    "slug": "/library/playwright.svg",
     "title": "Playwright",
     "category": "Framework",
+    "route": "/library/playwright.svg",
     "url": "https://playwright.dev/"
   },
   {
     "id": 95,
-    "slug": "/library/atlassian.svg",
     "title": "Atlassian",
     "category": "Software",
+    "route": "/library/atlassian.svg",
     "url": "https://www.atlassian.com/"
   },
   {
     "id": 96,
-    "slug": "/library/discourse.svg",
     "title": "Discourse",
     "category": "Software",
+    "route": "/library/discourse.svg",
     "url": "https://discourse.org/"
   },
   {
     "id": 97,
-    "slug": "/library/ember.svg",
     "title": "Ember",
     "category": "Framework",
+    "route": "/library/ember.svg",
     "url": "https://emberjs.com/"
   },
   {
     "id": 98,
-    "slug": "/library/expo.svg",
     "title": "Expo",
     "category": "Software",
+    "route": "/library/expo.svg",
     "url": "https://expo.dev/"
   },
   {
     "id": 99,
-    "slug": "/library/flutter.svg",
     "title": "Flutter",
     "category": "Framework",
+    "route": "/library/flutter.svg",
     "url": "https://flutter.dev/"
   },
   {
     "id": 100,
-    "slug": "/library/fresh.svg",
     "title": "Fresh",
     "category": "Framework",
+    "route": "/library/fresh.svg",
     "url": "https://fresh.deno.dev/"
   },
   {
     "id": 101,
-    "slug": "/library/git.svg",
     "title": "Git",
     "category": "Software",
+    "route": "/library/git.svg",
     "url": "https://git-scm.com/"
   },
   {
     "id": 102,
-    "slug": "/library/hostgator.svg",
     "title": "Hostgator",
     "category": "Hosting",
+    "route": "/library/hostgator.svg",
     "url": "https://www.hostgator.com/"
   },
   {
     "id": 103,
-    "slug": "/library/intellijidea.svg",
     "title": "IntelliJ IDEA",
     "category": "Software",
+    "route": "/library/intellijidea.svg",
     "url": "https://www.jetbrains.com/idea/"
   },
   {
     "id": 104,
-    "slug": "/library/jasmine.svg",
     "title": "Jasmine",
     "category": "Framework",
+    "route": "/library/jasmine.svg",
     "url": "https://jasmine.github.io/"
   },
   {
     "id": 105,
-    "slug": "/library/java.svg",
     "title": "Java",
     "category": "Language",
+    "route": "/library/java.svg",
     "url": "https://www.java.com/"
   },
   {
     "id": 106,
-    "slug": "/library/jest.svg",
     "title": "Jest",
     "category": "Framework",
+    "route": "/library/jest.svg",
     "url": "https://jestjs.io/"
   },
   {
     "id": 107,
-    "slug": "/library/jetbrainsSolid.svg",
     "title": "JetBrains",
     "category": "Software",
+    "route": "/library/jetbrainsSolid.svg",
     "url": "https://www.jetbrains.com/"
   },
   {
     "id": 108,
-    "slug": "/library/krakenjs.svg",
     "title": "KrakenJS",
     "category": "Framework",
+    "route": "/library/krakenjs.svg",
     "url": "https://krakenjs.com/"
   },
   {
     "id": 109,
-    "slug": "/library/laravel.svg",
     "title": "Laravel",
     "category": "Framework",
+    "route": "/library/laravel.svg",
     "url": "https://laravel.com/"
   },
   {
     "id": 110,
-    "slug": "/library/mariadb.svg",
     "title": "MariaDB",
     "category": "Database",
+    "route": "/library/mariadb.svg",
     "url": "https://mariadb.org/"
   },
   {
     "id": 111,
-    "slug": "/library/materialui.svg",
     "title": "Material UI",
     "category": "Framework",
+    "route": "/library/materialui.svg",
     "url": "https://mui.com/"
   },
   {
     "id": 112,
-    "slug": "/library/mysql.svg",
     "title": "MySQL",
     "category": "Database",
+    "route": "/library/mysql.svg",
     "url": "https://www.mysql.com/"
   },
   {
     "id": 113,
-    "slug": "/library/parcel.svg",
     "title": "Parcel",
     "category": "Compiler",
+    "route": "/library/parcel.svg",
     "url": "https://parceljs.org/"
   },
   {
     "id": 114,
-    "slug": "/library/pm2.svg",
     "title": "PM2",
     "category": "Framework",
+    "route": "/library/pm2.svg",
     "url": "https://pm2.io/"
   },
   {
     "id": 115,
-    "slug": "/library/postgresql.svg",
     "title": "PostgreSQL",
     "category": "Database",
+    "route": "/library/postgresql.svg",
     "url": "https://www.postgresql.org/"
   },
   {
     "id": 116,
-    "slug": "/library/reactquery.svg",
     "title": "React Query",
     "category": "Framework",
+    "route": "/library/reactquery.svg",
     "url": "https://tanstack.com/query/v4"
   },
   {
     "id": 117,
-    "slug": "/library/redis.svg",
     "title": "Redis",
     "category": "Database",
+    "route": "/library/redis.svg",
     "url": "https://redis.io/"
   },
   {
     "id": 118,
-    "slug": "/library/redwoodjs.svg",
     "title": "RedwoodJS",
     "category": "Framework",
+    "route": "/library/redwoodjs.svg",
     "url": "https://redwoodjs.com/"
   },
   {
     "id": 119,
-    "slug": "/library/ruby.svg",
     "title": "Ruby",
     "category": "Language",
+    "route": "/library/ruby.svg",
     "url": "https://www.ruby-lang.org/"
   },
   {
     "id": 120,
-    "slug": "/library/scala.svg",
     "title": "Scala",
     "category": "Language",
+    "route": "/library/scala.svg",
     "url": "https://www.scala-lang.org/"
   },
   {
     "id": 121,
-    "slug": "/library/sequelize.svg",
     "title": "Sequelize",
     "category": "Framework",
+    "route": "/library/sequelize.svg",
     "url": "https://sequelize.org/"
   },
   {
     "id": 122,
-    "slug": "/library/spinnaker.svg",
     "title": "Spinnaker",
     "category": "Software",
+    "route": "/library/spinnaker.svg",
     "url": "https://spinnaker.io/"
   },
   {
     "id": 123,
-    "slug": "/library/sqlite.svg",
     "title": "SQLite",
     "category": "Database",
+    "route": "/library/sqlite.svg",
     "url": "https://www.sqlite.org/"
   },
   {
     "id": 124,
-    "slug": "/library/swagger.svg",
     "title": "Swagger",
     "category": "Software",
+    "route": "/library/swagger.svg",
     "url": "https://swagger.io/"
   },
   {
     "id": 125,
-    "slug": "/library/swift.svg",
     "title": "Swift",
     "category": "Language",
+    "route": "/library/swift.svg",
     "url": "https://swift.org/"
   },
   {
     "id": 126,
-    "slug": "/library/testinglibrary.svg",
     "title": "Testing Library",
     "category": "Framework",
+    "route": "/library/testinglibrary.svg",
     "url": "https://testing-library.com/"
   },
   {
     "id": 127,
-    "slug": "/library/typeorm.svg",
     "title": "TypeORM",
     "category": "Database",
+    "route": "/library/typeorm.svg",
     "url": "https://typeorm.io/"
   },
   {
     "id": 128,
-    "slug": "/library/unity.svg",
     "title": "Unity",
     "category": "Software",
+    "route": "/library/unity.svg",
     "url": "https://unity.com/"
   },
   {
     "id": 129,
-    "slug": "/library/vim.svg",
     "title": "Vim",
     "category": "Software",
+    "route": "/library/vim.svg",
     "url": "https://www.vim.org/"
   },
   {
     "id": 130,
-    "slug": "/library/wmr.svg",
     "title": "WMR",
     "category": "Compiler",
+    "route": "/library/wmr.svg",
     "url": "https://wmr.dev/"
   },
   {
     "id": 131,
-    "slug": "/library/openbootcamp.svg",
     "title": "OpenBootcamp",
     "category": "Education",
+    "route": "/library/openbootcamp.svg",
     "url": "https://open-bootcamp.com/"
   },
   {
     "id": 132,
-    "slug": "/library/digitalocean.svg",
     "title": "Digital Ocean",
     "category": "Software",
+    "route": "/library/digitalocean.svg",
     "url": "https://www.digitalocean.com/"
   },
   {
     "id": 133,
-    "slug": "/library/disneyplus.svg",
     "title": "Disney+",
     "category": "Entertainment",
+    "route": "/library/disneyplus.svg",
     "url": "https://www.disneyplus.com/"
   },
   {
     "id": 134,
-    "slug": "/library/reactrouter.svg",
     "title": "React Router",
     "category": "Library",
+    "route": "/library/reactrouter.svg",
     "url": "https://reactrouter.com/en/main"
   },
   {
     "id": 135,
-    "slug": "/library/gdsc.svg",
     "title": "Google Student Developer Club",
     "category": "Google",
+    "route": "/library/gdsc.svg",
     "url": "https://gdsc.community.dev/"
   },
   {
     "id": 136,
-    "slug": "/library/brave.svg",
     "title": "Brave Browser",
     "category": "Browser",
+    "route": "/library/brave.svg",
     "url": "https://brave.com/"
   },
   {
     "id": 137,
-    "slug": "/library/eclipse.svg",
     "title": "Eclipse IDE",
     "category": "IDE",
+    "route": "/library/eclipse.svg",
     "url": "https://www.eclipse.org/"
   },
   {
     "id": 138,
-    "slug": "/library/html5.svg",
     "title": "HTML5",
     "category": "Language",
+    "route": "/library/html5.svg",
     "url": "https://es.wikipedia.org/wiki/HTML5"
   },
   {
     "id": 139,
-    "slug": "/library/css.svg",
     "title": "CSS",
     "category": "Language",
+    "route": "/library/css.svg",
     "url": "https://es.wikipedia.org/wiki/CSS"
   },
   {
     "id": 140,
-    "slug": "/library/midudev.svg",
     "title": "midudev",
     "category": "Education",
+    "route": "/library/midudev.svg",
     "url": "https://midu.dev"
   },
   {
     "id": 141,
-    "slug": "/library/apple.svg",
     "title": "Apple",
     "category": "Software",
+    "route": "/library/apple.svg",
     "url": "https://www.apple.com"
   },
   {
     "id": 142,
-    "slug": "/library/android.svg",
     "title": "Android",
     "category": "Software",
+    "route": "/library/android.svg",
     "url": "https://www.android.com/"
   },
   {
     "id": 143,
-    "slug": "/library/windows.svg",
     "title": "Windows",
     "category": "Software",
+    "route": "/library/windows.svg",
     "url": "https://www.microsoft.com/windows"
   },
   {
     "id": 144,
-    "slug": "/library/python.svg",
     "title": "Python",
     "category": "Language",
+    "route": "/library/python.svg",
     "url": "https://www.python.org/"
   }
 ]
