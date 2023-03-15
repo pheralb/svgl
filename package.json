@@ -1,33 +1,51 @@
 {
-	"name": "svgl",
-	"version": "0.0.1",
-	"private": true,
-	"scripts": {
-		"dev": "vite dev",
-		"build": "vite build",
-		"preview": "vite preview",
-		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"test:unit": "vitest",
-		"lint": "prettier --plugin-search-dir . --check . && eslint .",
-		"format": "prettier --plugin-search-dir . --write ."
-	},
-	"devDependencies": {
-		"@sveltejs/adapter-auto": "^2.0.0",
-		"@sveltejs/kit": "^1.5.0",
-		"@typescript-eslint/eslint-plugin": "^5.45.0",
-		"@typescript-eslint/parser": "^5.45.0",
-		"eslint": "^8.28.0",
-		"eslint-config-prettier": "^8.5.0",
-		"eslint-plugin-svelte3": "^4.0.0",
-		"prettier": "^2.8.0",
-		"prettier-plugin-svelte": "^2.8.1",
-		"svelte": "^3.54.0",
-		"svelte-check": "^3.0.1",
-		"tslib": "^2.4.1",
-		"typescript": "^4.9.3",
-		"vite": "^4.0.0",
-		"vitest": "^0.25.3"
-	},
-	"type": "module"
+  "name": "svgl",
+  "author": "@pheralb_",
+  "version": "3.0.0",
+  "description": "A beautiful library with SVG logos.",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "keywords": [
+    "svgs",
+    "logos",
+    "images",
+    "library"
+  ],
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+    "test:unit": "vitest",
+    "lint": "prettier --plugin-search-dir . --check . && eslint .",
+    "format": "prettier --plugin-search-dir . --write ."
+  },
+  "dependencies": {
+    "downloadjs": "1.4.7",
+    "svelte-french-toast": "1.0.3"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-auto": "2.0.0",
+    "@sveltejs/kit": "1.11.0",
+    "@types/downloadjs": "1.4.3",
+    "@typescript-eslint/eslint-plugin": "5.55.0",
+    "@typescript-eslint/parser": "5.55.0",
+    "autoprefixer": "10.4.14",
+    "eslint": "8.36.0",
+    "eslint-config-prettier": "8.7.0",
+    "eslint-plugin-svelte3": "4.0.0",
+    "phosphor-svelte": "1.2.1",
+    "postcss": "8.4.21",
+    "prettier": "2.8.4",
+    "prettier-plugin-svelte": "2.9.0",
+    "svelte": "3.56.0",
+    "svelte-check": "3.1.4",
+    "tailwindcss": "3.2.7",
+    "tslib": "2.5.0",
+    "typescript": "4.9.5",
+    "vite": "4.1.4",
+    "vitest": "0.29.2"
+  }
 }
