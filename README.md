@@ -33,11 +33,12 @@
 
 ## 🛠️ Stack
 
-- [Sveltekit](https://kit.svelte.dev/) - Web development, streamlined.
-- [Typescript](https://www.typescriptlang.org/) - JavaScript with syntax for types.
-- [Tailwindcss](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom designs.
-- [Prettier](https://prettier.io/) + [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss) - An opinionated code formatter.
-- [phosphor-svelte](https://github.com/haruaki07/phosphor-svelte) - A clean and friendly icon family for Svelte.
+- [**Sveltekit**](https://kit.svelte.dev/) - Web development, streamlined.
+- [**Typescript**](https://www.typescriptlang.org/) - JavaScript with syntax for types.
+- [**Tailwindcss**](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom designs.
+- [**Prettier**](https://prettier.io/) + [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss) - An opinionated code formatter.
+- [**phosphor-svelte**](https://github.com/haruaki07/phosphor-svelte) - A clean and friendly icon family for Svelte.
+- [**Vitest**](https://vitest.dev/) - Blazing Fast Unit Test Framework.
 
 ## 🚀 Getting Started
 
