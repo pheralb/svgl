@@ -54,7 +54,9 @@
   let filteredSvgs: iSVG[] = [];
 
   if (search.length === 0) {
-    filteredSvgs = allSvgs;
+    filteredSvgs = allSvgs.sort((a: iSVG, b: iSVG) => {
+      return b.id - a.id;
+    });
   }
 
   const searchSvgs = () => {
@@ -71,17 +73,17 @@
     bind:value={search}
     on:input={searchSvgs}
     placeholder="Search..."
-    class="w-full p-3 rounded-md bg-neutral-700/10 border border-neutral-800 placeholder-neutral-500"
+    class="w-full rounded-md border border-neutral-800 bg-neutral-700/10 p-3 placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-neutral-700"
   />
-  <div class="grid grid-cols-6 gap-4 mt-4">
+  <div class="mt-4 grid grid-cols-6 gap-4">
     {#each filteredSvgs as svg}
       <div
-        class="p-4 flex flex-col items-center justify-center bg-neutral-700/10 border border-neutral-800 rounded-md"
+        class="flex flex-col items-center justify-center rounded-md border border-neutral-800 bg-neutral-700/10 p-4"
       >
-        <img src={svg.route} alt={svg.title} class="h-10 mb-4 mt-2" />
-        <div class="flex flex-col items-center justify-center mb-3">
-          <p class="font-medium truncate text-[15px]">{svg.title}</p>
-          <span class="text-neutral-500 lowercase text-sm">{svg.category}</span>
+        <img src={svg.route} alt={svg.title} class="mb-4 mt-2 h-10" />
+        <div class="mb-3 flex flex-col items-center justify-center">
+          <p class="truncate text-[15px] font-medium">{svg.title}</p>
+          <span class="text-sm lowercase text-neutral-500">{svg.category}</span>
         </div>
         <div class="flex items-center space-x-1">
           <button
@@ -89,7 +91,7 @@
             on:click={() => {
               copyToClipboard(svg.route);
             }}
-            class="flex items-center space-x-2 p-2 hover:bg-neutral-700/40 rounded-md duration-100 transition-all"
+            class="flex items-center space-x-2 rounded-md p-2 transition-all duration-100 hover:bg-neutral-700/40"
           >
             <Copy size={17} />
           </button>
@@ -98,7 +100,7 @@
             on:click={() => {
               downloadSvg(svg.route);
             }}
-            class="flex items-center space-x-2 p-2 hover:bg-neutral-700/40 rounded-md duration-100 transition-all"
+            class="flex items-center space-x-2 rounded-md p-2 transition-all duration-100 hover:bg-neutral-700/40"
           >
             <DownloadSimple size={17} />
           </button>
@@ -106,7 +108,7 @@
             href={svg.url}
             title="Website"
             target="_blank"
-            class="flex items-center space-x-2 p-2 hover:bg-neutral-700/40 rounded-md duration-100 transition-all"
+            class="flex items-center space-x-2 rounded-md p-2 transition-all duration-100 hover:bg-neutral-700/40"
           >
             <ArrowUpRight size={17} />
           </a>
