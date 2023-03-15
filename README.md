@@ -1,38 +1,89 @@
-# create-svelte
+<!-- <div align="center">
+<a href="https://svgl.vercel.app">
+<img src="public/images/screenshot.png">
+</a>
+<p></p>
+</div> -->
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+<div align="center">
+    <a href="https://svgl.vercel.app/" target="_blank">
+        Discover
+    </a>
+    <span>&nbsp;●&nbsp;</span>
+    <a href="#-getting-started">
+        Submit logo
+    </a>
+    <span>&nbsp;●&nbsp;</span>
+    <a href="#-team">
+        Stack
+    </a>
+</div>
 
-## Creating a project
+</p>
 
-If you're seeing this, you've probably already done this step. Congrats!
+<div align="center">
+
+[![GitHub actions](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fpheralb%2Fsvgl%2Fbadge%3Fref%3Dmain&style=flat)](https://actions-badge.atrox.dev/pheralb/svgl/goto?ref=main)
+![GitHub stars](https://img.shields.io/github/stars/pheralb/svgl)
+![GitHub issues](https://img.shields.io/github/issues/pheralb/svgl)
+![GitHub forks](https://img.shields.io/github/forks/pheralb/svgl)
+![GitHub license](https://img.shields.io/github/license/pheralb/svgl)
+
+</div>
+
+## 🛠️ Stack
+
+- [Sveltekit](https://kit.svelte.dev/) - Web development, streamlined.
+- [Typescript](https://www.typescriptlang.org/) - JavaScript with syntax for types.
+- [Tailwindcss](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom designs.
+- [Prettier](https://prettier.io/) + [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss) - An opinionated code formatter.
+- [phosphor-svelte](https://github.com/haruaki07/phosphor-svelte) - A clean and friendly icon family for Svelte.
+
+## 🚀 Getting Started
+
+You will need:
+
+- [Node.js 16+ (recommended 18 LTS)](https://nodejs.org/en/).
+- [Git](https://git-scm.com/).
+
+1. Clone or [fork](https://github.com/pheralb/svgl/fork) this repository:
 
 ```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
+git clone git@github.com:pheralb/svgl.git
 ```
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+2. Install dependencies with your favorite package manager:
 
 ```bash
-npm run dev
+# with npm:
+npm install
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+# or with pnpm:
+pnpm install
+
+# or with ultra:
+ultra install
+
+# or with yarn:
+yarn install
 ```
 
-## Building
+3. Go to the [**`static/library`**](https://github.com/pheralb/svgl/tree/v3/static/library) folder and add your `.svg` logo. Remember to optimize SVG for web use, you can use [SVGOMG](https://jakearchibald.github.io/svgomg/).
 
-To create a production version of your app:
+4. Go to the [**`src/data/svgs.json`**](https://github.com/pheralb/svgl/blob/v3/src/data/svgs.json) and add the information about your logo, following the structure:
 
-```bash
-npm run build
+```json
+{
+  "id": 1,
+  "title": "Title",
+  "category": "Category",
+  "route": "/library/your_logo.svg",
+  "url": "Website"
+},
 ```
 
-You can preview the production build with `npm run preview`.
+And create a pull request with your logo 🚀.
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+## 🔑 License:
+
+- [MIT](https://github.com/pheralb/svgl/blob/main/LICENSE).
