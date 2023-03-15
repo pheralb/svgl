@@ -1,10 +1,22 @@
-.DS_Store
+# Dependencies
 node_modules
-/build
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Folders
 /.svelte-kit
+/build
 /package
+
+# Logs
+.DS_Store
+
+# Environment variables
 .env
 .env.*
 !.env.example
+
+# Vite files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
