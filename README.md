@@ -59,13 +59,13 @@ git clone git@github.com:pheralb/svgl.git
 # with npm:
 npm install
 
-# or with pnpm:
+# with pnpm:
 pnpm install
 
-# or with ultra:
+# with ultra:
 ultra install
 
-# or with yarn:
+# with yarn:
 yarn install
 ```
 
