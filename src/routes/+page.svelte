@@ -11,10 +11,10 @@
   import SvgCard from '../components/svgCard.svelte';
 
   // Search:
-  let search = '';
+  let searchTerm = "";
   let filteredSvgs: iSVG[] = [];
 
-  if (search.length === 0) {
+  if (searchTerm.length === 0) {
     filteredSvgs = allSvgs.sort((a: iSVG, b: iSVG) => {
       return b.id - a.id;
     });
@@ -23,13 +23,13 @@
   const searchSvgs = () => {
     return (filteredSvgs = allSvgs.filter((svg: iSVG) => {
       let svgTitle = svg.title.toLowerCase();
-      return svgTitle.includes(search.toLowerCase());
+      return svgTitle.includes(searchTerm.toLowerCase());
     }));
   };
 </script>
 
 <Container>
-  <Search searchTerm={search} on:input={searchSvgs} />
+  <Search bind:searchTerm on:input={searchSvgs} />
   <div class="mt-4 grid grid-cols-6 gap-4">
     {#each filteredSvgs as svg}
       <SvgCard svgInfo={svg} />

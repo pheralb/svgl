@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   // Global styles:
   import '../app.css';
 
@@ -31,7 +31,7 @@
       <div class="mb-3 flex flex-col space-y-1 border-b border-neutral-700/40 pb-3">
         {#each categories as category}
           <a
-            href={`/category/${category.toLowerCase()}`}
+            href={`/directory/${category.toLowerCase()}`}
             class="flex w-full items-center rounded-md p-2 transition-all duration-100 hover:bg-neutral-700/40"
             >{category}</a
           >
