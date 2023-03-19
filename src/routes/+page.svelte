@@ -1,14 +1,14 @@
 <script lang="ts">
-  import type { iSVG } from '../types/svg';
+  import type { iSVG } from '@/types/svg';
 
   // Get all svgs:
-  import svgData from '../data/svgs.json';
-  const allSvgs = JSON.parse(JSON.stringify(svgData));
+  import { svgs } from '@/data/svgs';
+  const allSvgs = JSON.parse(JSON.stringify(svgs));
 
   // Components:
-  import Search from '../components/search.svelte';
-  import Container from '../components/container.svelte';
-  import SvgCard from '../components/svgCard.svelte';
+  import Search from '@/components/search.svelte';
+  import Container from '@/components/container.svelte';
+  import SvgCard from '@/components/svgCard.svelte';
 
   // Search:
   let searchTerm = "";
