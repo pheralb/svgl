@@ -3,6 +3,7 @@
   import type { iSVG } from '@/types/svg';
   export let data: PageData;
   let svgsByCategory = data.props?.svgs || [];
+  let category = data.props?.category || '';
 
   // Components:
   import Container from '@/components/container.svelte';
@@ -32,7 +33,7 @@
   <Search
     bind:searchTerm
     on:input={searchSvgs}
-    placeholder={`Search ${filteredSvgs.length} logos...`}
+    placeholder={`Search ${filteredSvgs.length} ${category} logos...`}
   />
   <Grid>
     {#each filteredSvgs as svg}

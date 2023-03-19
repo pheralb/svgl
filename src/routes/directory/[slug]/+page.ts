@@ -17,6 +17,7 @@ export const load = (async ({ params }) => {
 
   return {
     props: {
+      category: slug,
       svgs: svgsByCategory
     }
   };
