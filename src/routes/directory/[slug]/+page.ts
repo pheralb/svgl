@@ -1,13 +1,23 @@
 import { error } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
 
-export const load = (({ params }) => {
-  if (params.slug === 'hello-world') {
-    return {
-      title: 'Hello world!',
-      content: 'Welcome to our blog. Lorem ipsum dolor sit amet...'
-    };
+import { svgs } from '@/data/svgs';
+import type { iSVG } from '@/types/svg';
+
+export const load = (async ({ params }) => {
+  const { slug } = params;
+
+  // Check if slug is valid:
+  if (!slug) {
+    return error(404, 'Not found');
   }
 
-  throw error(404, 'Not found');
+  // Filter out the svg with the matching slug:
+  const svgsByCategory = svgs.filter((svg: iSVG) => svg.category.toLowerCase() === slug);
+
+  return {
+    props: {
+      svgs: svgsByCategory
+    }
+  };
 }) satisfies PageLoad;
