@@ -66,7 +66,7 @@ export const svgs: iSVG[] = [
   },
   {
     id: 10,
-    title: 'VSCode',
+    title: 'Visual Studio Code',
     category: 'Software',
     route: '/library/vscode.svg',
     url: 'https://code.visualstudio.com/'
@@ -402,10 +402,10 @@ export const svgs: iSVG[] = [
   },
   {
     id: 58,
-    title: 'Speack.me',
-    category: 'Social',
-    route: '/library/speackme.svg',
-    url: 'https://speack.me'
+    title: 'Visual Studio',
+    category: 'Software',
+    route: '/library/visual-studio.svg',
+    url: 'https://visualstudio.microsoft.com'
   },
   {
     id: 59,
@@ -1008,5 +1008,47 @@ export const svgs: iSVG[] = [
     category: 'Language',
     route: '/library/python.svg',
     url: 'https://www.python.org/'
+  },
+  {
+    id: 145,
+    title: 'Turbopack',
+    category: 'Software',
+    route: '/library/turbopack.svg',
+    url: 'https://turbo.build/'
+  },
+  {
+    id: 146,
+    title: 'Builder',
+    category: 'CMS',
+    route: '/library/builder.svg',
+    url: 'https://builder.io/'
+  },
+  {
+    id: 147,
+    title: 'Surrealdb',
+    category: 'Database',
+    route: '/library/surrealdb.svg',
+    url: 'https://surrealdb.com/'
+  },
+  {
+    id: 148,
+    title: 'Jetbrains Space',
+    category: 'Software',
+    route: '/library/jetbrains-space.svg',
+    url: 'https://www.jetbrains.com/space/'
+  },
+  {
+    id: 149,
+    title: 'Gin',
+    category: 'Framework',
+    route: '/library/gin.svg',
+    url: 'https://gin-gonic.com/'
+  },
+  {
+    id: 150,
+    title: 'Stimulus',
+    category: 'Framework',
+    route: '/library/stimulus.svg',
+    url: 'https://stimulus.hotwired.dev/'
   }
 ];
