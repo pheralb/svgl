@@ -29,6 +29,10 @@
   };
 </script>
 
+<svelte:head>
+  <title>A beautiful library with SVG logos - Svgl</title>
+</svelte:head>
+
 <Container>
   <Search
     bind:searchTerm

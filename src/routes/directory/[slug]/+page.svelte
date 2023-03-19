@@ -29,6 +29,10 @@
   };
 </script>
 
+<svelte:head>
+  <title>{category} logos - Svgl</title>
+</svelte:head>
+
 <Container>
   <Search
     bind:searchTerm
