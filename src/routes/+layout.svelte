@@ -75,7 +75,7 @@
         target="_blank"
         class="mt-5 flex items-center space-x-2 text-neutral-400 transition-all duration-100 hover:text-white"
       >
-        <Heart color="#991b1b" size={18} />
+        <Heart color="#991b1b" size={18} weight={'duotone'} />
         <div class="flex items-center space-x-1">
           <p class="text-muted text-sm">Created by pheralb</p>
           <ArrowUpRight size={12} />
