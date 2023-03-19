@@ -1,10 +1,13 @@
 <script lang="ts">
+  import type { LayoutServerData } from './$types';
+  export let data: LayoutServerData;
+
   // Global styles:
   import '../app.css';
 
   // Get categories:
-  import svgData from '../data/svgs.json';
-  const categories = svgData
+  import { svgs } from '@/data/svgs';
+  const categories = svgs
     .map((svg) => svg.category)
     .filter((category, index, array) => array.indexOf(category) === index);
 
@@ -14,6 +17,7 @@
 
   // Toaster:
   import { Toaster } from 'svelte-french-toast';
+  import Transition from '@/components/transition.svelte';
 </script>
 
 <main class="min-h-screen bg-dark font-sans text-mini text-white">
@@ -33,7 +37,7 @@
           <a
             href={`/directory/${category.toLowerCase()}`}
             class="flex w-full items-center rounded-md p-2 transition-all duration-100 hover:bg-neutral-700/40"
-            >{category}</a
+            data-sveltekit-preload-data>{category}</a
           >
         {/each}
       </div>
@@ -69,7 +73,9 @@
     </div>
   </nav>
   <div class="ml-60 py-6">
-    <slot />
+    <Transition pathname={data.pathname}>
+      <slot />
+    </Transition>
     <Toaster position="bottom-center" />
   </div>
 </main>
