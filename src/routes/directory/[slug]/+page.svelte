@@ -6,6 +6,7 @@
 
   // Components:
   import Container from '@/components/container.svelte';
+  import Grid from '@/components/grid.svelte';
   import Search from '@/components/search.svelte';
   import SvgCard from '@/components/svgCard.svelte';
 
@@ -17,7 +18,7 @@
     filteredSvgs = svgsByCategory.sort((a: iSVG, b: iSVG) => {
       return b.id - a.id;
     });
-}
+  }
 
   const searchSvgs = () => {
     return (filteredSvgs = svgsByCategory.filter((svg: iSVG) => {
@@ -28,10 +29,14 @@
 </script>
 
 <Container>
-  <Search bind:searchTerm on:input={searchSvgs} />
-  <div class="mt-4 grid grid-cols-6 gap-4">
+  <Search
+    bind:searchTerm
+    on:input={searchSvgs}
+    placeholder={`Search ${filteredSvgs.length} logos...`}
+  />
+  <Grid>
     {#each filteredSvgs as svg}
       <SvgCard svgInfo={svg} />
     {/each}
-  </div>
+  </Grid>
 </Container>

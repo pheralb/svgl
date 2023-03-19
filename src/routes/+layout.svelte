@@ -21,7 +21,9 @@
 </script>
 
 <main class="min-h-screen bg-dark font-sans text-mini text-white">
-  <nav class="fixed top-0 left-0 z-50 h-full w-60 overflow-y-auto overflow-x-hidden pb-10">
+  <nav
+    class="z-50 w-full overflow-y-auto overflow-x-hidden border-b border-neutral-800 md:pb-10 md:fixed md:top-0 md:left-0 md:h-full md:w-60 md:border-none"
+  >
     <div class="items-center px-6 py-6">
       <div class="mb-3 border-b border-neutral-700/40 pb-3">
         <a href="/">
@@ -32,16 +34,23 @@
         </a>
         <p class="mt-2 font-medium text-neutral-400">✨ Optimized SVGs logos</p>
       </div>
-      <div class="mb-3 flex flex-col space-y-1 border-b border-neutral-700/40 pb-3">
+      <div
+        class="flex items-center space-y-1 overflow-y-auto border-b border-neutral-700/40 pb-3 md:mb-3 md:flex-col md:overflow-y-visible"
+      >
         {#each categories as category}
           <a
             href={`/directory/${category.toLowerCase()}`}
-            class="flex w-full items-center rounded-md p-2 transition-all duration-100 hover:bg-neutral-700/40"
+            class={`flex w-full items-center rounded-md p-2 transition-all duration-100 hover:bg-neutral-700/40
+              ${
+                data.pathname === `/directory/${category.toLowerCase()}` ? 'bg-neutral-700/30' : ''
+              }`}
             data-sveltekit-preload-data>{category}</a
           >
         {/each}
       </div>
-      <div class="flex flex-col space-y-1 border-b border-neutral-700/40 pb-3">
+      <div
+        class="mt-3 flex flex-row items-center space-x-2 border-b border-neutral-700/40 pb-3 md:mt-0 md:flex-col md:space-y-1"
+      >
         <a
           href="https://github.com/pheralb/svgl#-getting-started"
           target="_blank"
@@ -72,7 +81,7 @@
       </a>
     </div>
   </nav>
-  <div class="ml-60 py-6">
+  <div class="py-2 md:ml-60 md:py-6">
     <Transition pathname={data.pathname}>
       <slot />
     </Transition>

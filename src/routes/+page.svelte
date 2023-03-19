@@ -9,9 +9,10 @@
   import Search from '@/components/search.svelte';
   import Container from '@/components/container.svelte';
   import SvgCard from '@/components/svgCard.svelte';
+  import Grid from '@/components/grid.svelte';
 
   // Search:
-  let searchTerm = "";
+  let searchTerm = '';
   let filteredSvgs: iSVG[] = [];
 
   if (searchTerm.length === 0) {
@@ -29,10 +30,14 @@
 </script>
 
 <Container>
-  <Search bind:searchTerm on:input={searchSvgs} />
-  <div class="mt-4 grid grid-cols-6 gap-4">
+  <Search
+    bind:searchTerm
+    on:input={searchSvgs}
+    placeholder={`Search ${filteredSvgs.length} logos...`}
+  />
+  <Grid>
     {#each filteredSvgs as svg}
       <SvgCard svgInfo={svg} />
     {/each}
-  </div>
+  </Grid>
 </Container>
