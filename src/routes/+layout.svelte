@@ -34,7 +34,7 @@
             <p class="text-neutral-500">v3.0.0</p>
           </div>
         </a>
-        <p class="mt-2 font-medium text-neutral-400">✨ Optimized SVGs logos</p>
+        <p class="mt-2 font-medium text-neutral-400">✨ Optimized SVGs for web</p>
       </div>
       <div
         class="flex items-center space-x-1 overflow-y-auto border-b border-neutral-700/40 pb-3 md:mb-3 md:flex-col md:space-x-0 md:space-y-1 md:overflow-y-visible"
