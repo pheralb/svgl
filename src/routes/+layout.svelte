@@ -29,7 +29,7 @@
     <div class="items-center px-6 py-6">
       <div class="mb-3 border-b border-neutral-700/40 pb-3">
         <a href="/">
-          <div class="flex items-center space-x-2">
+          <div class="flex items-center space-x-2 duration-150 hover:text-neutral-300">
             <h3 class="text-xl font-medium">svgl</h3>
             <p class="text-neutral-500">v3.0.0</p>
           </div>
