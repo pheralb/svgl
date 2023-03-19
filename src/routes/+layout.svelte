@@ -14,15 +14,17 @@
   // Icons:
   import Heart from 'phosphor-svelte/lib/Heart';
   import ArrowUpRight from 'phosphor-svelte/lib/ArrowUpRight';
+  import ArrowLeft from 'phosphor-svelte/lib/ArrowLeft';
 
   // Toaster:
   import { Toaster } from 'svelte-french-toast';
   import Transition from '@/components/transition.svelte';
+  import Container from '@/components/container.svelte';
 </script>
 
 <main class="min-h-screen bg-dark font-sans text-mini text-white">
   <nav
-    class="z-50 w-full overflow-y-auto overflow-x-hidden border-b border-neutral-800 md:pb-10 md:fixed md:top-0 md:left-0 md:h-full md:w-60 md:border-none"
+    class="z-50 w-full overflow-y-auto overflow-x-hidden border-b border-neutral-800 md:fixed md:top-0 md:left-0 md:h-full md:w-60 md:border-none md:pb-10"
   >
     <div class="items-center px-6 py-6">
       <div class="mb-3 border-b border-neutral-700/40 pb-3">
@@ -35,7 +37,7 @@
         <p class="mt-2 font-medium text-neutral-400">✨ Optimized SVGs logos</p>
       </div>
       <div
-        class="flex items-center space-y-1 overflow-y-auto border-b border-neutral-700/40 pb-3 md:mb-3 md:flex-col md:overflow-y-visible"
+        class="flex items-center space-x-1 overflow-y-auto border-b border-neutral-700/40 pb-3 md:mb-3 md:flex-col md:space-x-0 md:space-y-1 md:overflow-y-visible"
       >
         {#each categories as category}
           <a
@@ -49,7 +51,7 @@
         {/each}
       </div>
       <div
-        class="mt-3 flex flex-row items-center space-x-2 border-b border-neutral-700/40 pb-3 md:mt-0 md:flex-col md:space-y-1"
+        class="mt-3 flex flex-row items-center space-x-2 border-b border-neutral-700/40 pb-3 md:mt-0 md:flex-col md:space-x-0 md:space-y-1"
       >
         <a
           href="https://github.com/pheralb/svgl#-getting-started"
@@ -82,6 +84,18 @@
     </div>
   </nav>
   <div class="py-2 md:ml-60 md:py-6">
+    {#if data.pathname !== '/'}
+      <Container>
+        <a href="/">
+          <div
+            class="flex items-center space-x-2 text-neutral-400 transition-colors duration-100 hover:text-white"
+          >
+            <ArrowLeft size={20} />
+            <span>Back to home</span>
+          </div>
+        </a>
+      </Container>
+    {/if}
     <Transition pathname={data.pathname}>
       <slot />
     </Transition>
