@@ -41,7 +41,7 @@
 </script>
 
 <div
-  class="flex flex-col items-center justify-center rounded-md border border-neutral-800 bg-neutral-700/10 p-4"
+  class="flex flex-col items-center justify-center rounded-md border border-neutral-300 bg-neutral-100 p-4 dark:border-neutral-800 dark:bg-neutral-700/10"
 >
   <img src={svgInfo.route} alt={svgInfo.title} class="mb-4 mt-2 h-10" />
   <div class="mb-3 flex flex-col items-center justify-center">
@@ -57,7 +57,7 @@
       on:click={() => {
         copyToClipboard(svgInfo.route);
       }}
-      class="flex items-center space-x-2 rounded-md p-2 transition-all duration-100 hover:bg-neutral-700/40"
+      class="flex items-center space-x-2 rounded-md p-2 duration-100 hover:bg-neutral-300 dark:hover:bg-neutral-700/40"
     >
       <Copy size={17} />
     </button>
@@ -66,7 +66,7 @@
       on:click={() => {
         downloadSvg(svgInfo.route);
       }}
-      class="flex items-center space-x-2 rounded-md p-2 transition-all duration-100 hover:bg-neutral-700/40"
+      class="flex items-center space-x-2 rounded-md p-2 duration-100 hover:bg-neutral-300 dark:hover:bg-neutral-700/40"
     >
       <DownloadSimple size={17} />
     </button>
@@ -74,7 +74,7 @@
       href={svgInfo.url}
       title="Website"
       target="_blank"
-      class="flex items-center space-x-2 rounded-md p-2 transition-all duration-100 hover:bg-neutral-700/40"
+      class="flex items-center space-x-2 rounded-md p-2 duration-100 hover:bg-neutral-300 dark:hover:bg-neutral-700/40"
     >
       <ArrowUpRight size={17} />
     </a>

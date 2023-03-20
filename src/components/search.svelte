@@ -14,7 +14,7 @@
     type="text"
     {placeholder}
     autocomplete="off"
-    class="w-full rounded-md border border-neutral-800 bg-neutral-700/10 p-3 pl-10 placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-neutral-700"
+    class="w-full rounded-md border border-neutral-300 bg-neutral-200/50 p-3 pl-10 placeholder-neutral-500 focus:outline-none focus:ring-1 focus:ring-neutral-300 dark:border-neutral-800 dark:bg-neutral-700/10 dark:focus:ring-neutral-700"
     bind:value={searchTerm}
     on:input
   />
