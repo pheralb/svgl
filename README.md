@@ -1,108 +1,103 @@
-<p align="center">
-  <a href="https://svgl.vercel.app/" target="_blank">
-    <img src="https://i.postimg.cc/1tzrP2rg/banner-corner.png" width="800px" alt="SVGL Banner" />
-  </a>
+<div align="center">
+<a href="https://svgl.vercel.app">
+<img src="static/images/screenshot.png">
+</a>
+<p></p>
+</div>
+
+<div align="center">
+    <a href="https://svgl.vercel.app/" target="_blank">
+        Discover
+    </a>
+    <span>&nbsp;●&nbsp;</span>
+    <a href="#-getting-started">
+        Submit logo
+    </a>
+    <span>&nbsp;●&nbsp;</span>
+    <a href="#%EF%B8%8F-stack">
+        Stack
+    </a>
+    <span>&nbsp;●&nbsp;</span>
+    <a href="#%EF%B8%8F-contributing">
+        Contributing
+    </a>
+</div>
+
 </p>
 
-## 📦 Packages:
+<div align="center">
 
-- ⚡️ [Nextjs](https://nextjs.org/) - The React Framework for Production.
-- ⚒️ [React 18](https://reactjs.org/) - A JavaScript library for building user interfaces.
-- 💙 [Typescript](https://www.typescriptlang.org/) - A superset of JavaScript.
-- ✅ [Vitest](https://vitest.dev/) - A blazing fast unit test framework.
-- 💅 [Chakra UI](https://chakra-ui.com/) - Create accessible React apps with speed.
-- 💥 [Framer Motion](https://www.framer.com/motion/) - Production-ready motion library.
-- 💖 [Phosphor Icons](https://phosphoricons.com/) - A flexible icon family for everyone.
-- ⬇️ [Next-PWA](https://github.com/shadowwalker/next-pwa) - Zero config PWA plugin for Next.js, with workbox.
+[![GitHub actions](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fpheralb%2Fsvgl%2Fbadge%3Fref%3Dmain&style=flat)](https://actions-badge.atrox.dev/pheralb/svgl/goto?ref=main)
+![GitHub stars](https://img.shields.io/github/stars/pheralb/svgl)
+![GitHub issues](https://img.shields.io/github/issues/pheralb/svgl)
+![GitHub forks](https://img.shields.io/github/forks/pheralb/svgl)
+![GitHub license](https://img.shields.io/github/license/pheralb/svgl)
+![GitHub PRs](https://img.shields.io/github/issues-pr/pheralb/svgl)
 
-## 🚀 Getting started:
+</div>
 
-You need:
+## 🛠️ Stack
 
-- [Node.js 16+ (recommend: 16.15.1 LTS)](https://nodejs.org/en/)
-- [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+- [**Sveltekit**](https://kit.svelte.dev/) - Web development, streamlined.
+- [**Typescript**](https://www.typescriptlang.org/) - JavaScript with syntax for types.
+- [**Tailwindcss**](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom designs.
+- [**Prettier**](https://prettier.io/) + [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss) - An opinionated code formatter.
+- [**phosphor-svelte**](https://github.com/haruaki07/phosphor-svelte) - A clean and friendly icon family for Svelte.
+- [**Vitest**](https://vitest.dev/) - Blazing Fast Unit Test Framework.
 
-1. Clone the repository:
+## 🚀 Getting Started
+
+You will need:
+
+- [Node.js 16+ (recommended 18 LTS)](https://nodejs.org/en/).
+- [Git](https://git-scm.com/).
+
+1. Clone or [fork](https://github.com/pheralb/svgl/fork) this repository:
 
 ```bash
-git@github.com:pheralb/svgl.git
+git clone git@github.com:pheralb/svgl.git
 ```
 
-2. Install dependencies:
+2. Install dependencies with your favorite package manager:
 
 ```bash
+# with npm:
 npm install
-# or
+
+# with pnpm:
+pnpm install
+
+# with ultra:
+ultra install
+
+# with yarn:
 yarn install
 ```
 
-3. Run:
+3. Go to the [**`static/library`**](https://github.com/pheralb/svgl/blob/main/static/library) folder and add your `.svg` logo. Remember to optimize SVG for web use, you can use [SVGOMG](https://jakearchibald.github.io/svgomg/).
 
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-4. Test & Build:
-
-```bash
-npm run ready
-# or
-yarn ready
-```
-
-Open [localhost:3000](localhost:3000) with your browser to see the result.
-
-## 🤔 Can I add my logo?
-
-Yes! Here is a guide for you 🥳:
-
-1. [Fork the repository](https://github.com/pheralb/svgl/fork).
-
-2. Clone the forked repository:
-
-```bash
-git@github.com:YOUR_USERNAME/svgl.git
-```
-
-3. Add the **.svg** logo here: [`/public/library`](https://github.com/pheralb/svgl/tree/main/public/library).
-
-4. Add your logo information here following the structure: [`/data/svgs.json`](https://github.com/pheralb/svgl/blob/main/data/svgs.json).
+4. Go to the [**`src/data/svgs.ts`**](https://github.com/pheralb/svgl/blob/main/src/data/svgs.ts) and add the information about your logo, following the structure:
 
 ```json
 {
   "id": 1,
-  "slug": "/library/your_logo.svg",
-  "title": "Logo Title",
-  "category": "Logo Category",
-  "url": "Your Website / app url"
-}
+  "title": "Title",
+  "category": "Category",
+  "route": "/library/your_logo.svg",
+  "url": "Website"
+},
 ```
 
-5. Create a commit and push:
+And create a pull request with your logo 🚀.
 
-```bash
-git add .
-git commit -m "🥰 Added my logo"
-git push origin main
-```
+## ✌️ Contributing
 
-6. Create a pull request with your changes and 🥳 ready.
+<a href="https://github.com/pheralb/svgl/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=pheralb/svgl" />
+</a>
 
-## 🚂 Api endpoints:
+<p></p>
 
-```bash
-- /api/all: returns all the logos.
-- /api/search?id=2: returns the logo with id 2.
-- /api/search?q=logo: returns the logo with query.
-```
-
-## ⚒️ Shortcuts:
-
-- ⭐ SVG Library: [/public/library/](https://github.com/pheralb/svgl/tree/main/public/library).
-- ✍️ SVG JSON logos: [/data/](https://github.com/pheralb/svgl/tree/main/data).
-
-## 🔑 License:
+## 🔑 License
 
 - [MIT](https://github.com/pheralb/svgl/blob/main/LICENSE).
