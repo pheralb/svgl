@@ -1050,5 +1050,47 @@ export const svgs: iSVG[] = [
     category: 'Framework',
     route: '/library/stimulus.svg',
     url: 'https://stimulus.hotwired.dev/'
+  },
+  {
+    id: 151,
+    title: 'WindiCSS',
+    category: 'Framework',
+    route: '/library/windicss.svg',
+    url: 'https://windicss.org/'
+  },
+  {
+    id: 152,
+    title: 'Mastodon',
+    category: 'Social',
+    route: '/library/mastodon.svg',
+    url: 'https://joinmastodon.org/'
+  },
+  {
+    id: 153,
+    title: 'Upstash',
+    category: 'Database',
+    route: '/library/upstash.svg',
+    url: 'https://upstash.com/'
+  },
+  {
+    id: 154,
+    title: 'Storyblok',
+    category: 'CMS',
+    route: '/library/storyblok.svg',
+    url: 'https://www.storyblok.com/'
+  },
+  {
+    id: 155,
+    title: 'Cloudflare Workers',
+    category: 'Software',
+    route: '/library/cloudflare-workers.svg',
+    url: 'https://workers.cloudflare.com/'
+  },
+  {
+    id: 156,
+    title: 'Cloudflare',
+    category: 'Software',
+    route: '/library/cloudflare.svg',
+    url: 'https://www.cloudflare.com/'
   }
 ];
