@@ -14,8 +14,12 @@
         Submit logo
     </a>
     <span>&nbsp;●&nbsp;</span>
-    <a href="#-team">
+    <a href="#%EF%B8%8F-stack">
         Stack
+    </a>
+    <span>&nbsp;●&nbsp;</span>
+    <a href="#%EF%B8%8F-contributing">
+        Contributing
     </a>
 </div>
 
@@ -28,6 +32,7 @@
 ![GitHub issues](https://img.shields.io/github/issues/pheralb/svgl)
 ![GitHub forks](https://img.shields.io/github/forks/pheralb/svgl)
 ![GitHub license](https://img.shields.io/github/license/pheralb/svgl)
+![GitHub PRs](https://img.shields.io/github/pull-request/pheralb/svgl)
 
 </div>
 
