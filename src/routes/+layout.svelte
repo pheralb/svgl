@@ -33,7 +33,9 @@
       <div class="mb-3 border-b border-neutral-300 pb-3 dark:border-neutral-700/40">
         <div class="flex items-center justify-between">
           <a href="/">
-            <div class="flex items-center space-x-2 duration-150 hover:text-neutral-300">
+            <div
+              class="flex items-center space-x-2 duration-150 hover:text-neutral-500 dark:hover:text-neutral-300"
+            >
               <h3 class="text-xl font-medium">svgl</h3>
               <p class="text-neutral-500">v3.0.0</p>
             </div>
