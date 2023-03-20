@@ -66,7 +66,7 @@
         <a
           href="https://github.com/pheralb/svgl#-getting-started"
           target="_blank"
-          class="flex w-full items-center space-x-2 rounded-md p-2 duration-100 hover:bg-neutral-700/40"
+          class="flex w-full items-center space-x-2 rounded-md p-2 duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700/40"
         >
           <span>Submit logo</span>
           <ArrowUpRight size={16} />
@@ -74,7 +74,7 @@
         <a
           href="https://github.com/pheralb/svgl#-getting-started"
           target="_blank"
-          class="flex w-full items-center space-x-2 rounded-md p-2 duration-100 hover:bg-neutral-700/40"
+          class="flex w-full items-center space-x-2 rounded-md p-2 duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700/40"
         >
           <span>Repository</span>
           <ArrowUpRight size={16} />
@@ -83,7 +83,7 @@
       <a
         href="https://twitter.com/pheralb_"
         target="_blank"
-        class="mt-5 flex items-center space-x-2 duration-100 hover:text-white dark:text-neutral-400"
+        class="mt-5 flex items-center space-x-2 duration-100 hover:text-dark dark:text-neutral-400 dark:hover:text-white"
       >
         <Heart color="#991b1b" size={18} weight={'duotone'} />
         <div class="flex items-center space-x-1">
