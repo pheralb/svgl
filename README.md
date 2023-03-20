@@ -1,9 +1,9 @@
-<!-- <div align="center">
+<div align="center">
 <a href="https://svgl.vercel.app">
-<img src="public/images/screenshot.png">
+<img src="static/images/screenshot.png">
 </a>
 <p></p>
-</div> -->
+</div>
 
 <div align="center">
     <a href="https://svgl.vercel.app/" target="_blank">
@@ -69,7 +69,7 @@ ultra install
 yarn install
 ```
 
-3. Go to the [**`static/library`**](https://github.com/pheralb/svgl/tree/v3/static/library) folder and add your `.svg` logo. Remember to optimize SVG for web use, you can use [SVGOMG](https://jakearchibald.github.io/svgomg/).
+3. Go to the [**`static/library`**](https://github.com/pheralb/svgl/blob/main/static/library) folder and add your `.svg` logo. Remember to optimize SVG for web use, you can use [SVGOMG](https://jakearchibald.github.io/svgomg/).
 
 4. Go to the [**`src/data/svgs.ts`**](https://github.com/pheralb/svgl/blob/main/src/data/svgs.ts) and add the information about your logo, following the structure:
 
