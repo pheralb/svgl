@@ -32,7 +32,7 @@
 ![GitHub issues](https://img.shields.io/github/issues/pheralb/svgl)
 ![GitHub forks](https://img.shields.io/github/forks/pheralb/svgl)
 ![GitHub license](https://img.shields.io/github/license/pheralb/svgl)
-![GitHub PRs](https://img.shields.io/github/pull-request/pheralb/svgl)
+![GitHub PRs](https://img.shields.io/github/issues-pr/pheralb/svgl)
 
 </div>
 
