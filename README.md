@@ -27,7 +27,7 @@
 
 <div align="center">
 
-[![GitHub actions](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fpheralb%2Fsvgl%2Fbadge%3Fref%3Dmain&style=flat)](https://actions-badge.atrox.dev/pheralb/svgl/goto?ref=main)
+[![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fpheralb%2Fsvgl%2Fbadge%3Fref%3Dmain&style=flat)](https://actions-badge.atrox.dev/pheralb/svgl/goto?ref=main)
 ![GitHub stars](https://img.shields.io/github/stars/pheralb/svgl)
 ![GitHub issues](https://img.shields.io/github/issues/pheralb/svgl)
 ![GitHub forks](https://img.shields.io/github/forks/pheralb/svgl)
