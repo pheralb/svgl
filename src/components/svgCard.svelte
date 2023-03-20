@@ -46,7 +46,10 @@
   <img src={svgInfo.route} alt={svgInfo.title} class="mb-4 mt-2 h-10" />
   <div class="mb-3 flex flex-col items-center justify-center">
     <p class="truncate text-[15px] font-medium">{svgInfo.title}</p>
-    <span class="text-sm lowercase text-neutral-500">{svgInfo.category}</span>
+    <a
+      href={`/directory/${svgInfo.category.toLowerCase()}`}
+      class="text-sm lowercase text-neutral-500 hover:underline">{svgInfo.category}</a
+    >
   </div>
   <div class="flex items-center space-x-1">
     <button
