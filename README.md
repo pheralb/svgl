@@ -71,7 +71,7 @@ yarn install
 
 3. Go to the [**`static/library`**](https://github.com/pheralb/svgl/tree/v3/static/library) folder and add your `.svg` logo. Remember to optimize SVG for web use, you can use [SVGOMG](https://jakearchibald.github.io/svgomg/).
 
-4. Go to the [**`src/data/svgs.json`**](https://github.com/pheralb/svgl/blob/v3/src/data/svgs.json) and add the information about your logo, following the structure:
+4. Go to the [**`src/data/svgs.ts`**](https://github.com/pheralb/svgl/blob/main/src/data/svgs.ts) and add the information about your logo, following the structure:
 
 ```json
 {
@@ -85,6 +85,14 @@ yarn install
 
 And create a pull request with your logo 🚀.
 
-## 🔑 License:
+## ✌️ Contributing
+
+<a href="https://github.com/pheralb/svgl/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=pheralb/svgl" />
+</a>
+
+<p></p>
+
+## 🔑 License
 
 - [MIT](https://github.com/pheralb/svgl/blob/main/LICENSE).
