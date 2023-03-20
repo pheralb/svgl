@@ -9,3 +9,23 @@
   font-display: swap;
   font-style: normal;
 }
+
+body {
+  --sb-track-color: #171717;
+  --sb-thumb-color: #404040;
+  --sb-size: 10px;
+
+  scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+}
