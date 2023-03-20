@@ -72,7 +72,7 @@
           <ArrowUpRight size={16} />
         </a>
         <a
-          href="https://github.com/pheralb/svgl#-getting-started"
+          href="https://github.com/pheralb/svgl"
           target="_blank"
           class="flex w-full items-center space-x-2 rounded-md p-2 duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700/40"
         >
