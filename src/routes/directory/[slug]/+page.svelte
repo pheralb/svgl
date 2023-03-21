@@ -10,6 +10,7 @@
   import Grid from '@/components/grid.svelte';
   import Search from '@/components/search.svelte';
   import SvgCard from '@/components/svgCard.svelte';
+  import NotFound from '@/components/notFound.svelte';
 
   // Search:
   let searchTerm = '';
@@ -44,4 +45,7 @@
       <SvgCard svgInfo={svg} />
     {/each}
   </Grid>
+  {#if filteredSvgs.length === 0}
+    <NotFound notFoundTerm={searchTerm} />
+  {/if}
 </Container>
