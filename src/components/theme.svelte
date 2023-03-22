@@ -53,7 +53,11 @@
   </script>
 </svelte:head>
 
-<button on:click={toggle} class="focus:outline-none" class:hidden>
+<button
+  on:click={toggle}
+  class="duration-100 hover:-translate-y-0.5 focus:outline-none"
+  aria-label="Toggle dark mode"
+>
   <!-- moon icon -->
   {#if dark}
     <Sun size={18} />

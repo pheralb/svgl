@@ -57,7 +57,7 @@
       on:click={() => {
         copyToClipboard(svgInfo.route);
       }}
-      class="flex items-center space-x-2 rounded-md p-2 duration-100 hover:bg-neutral-300 dark:hover:bg-neutral-700/40"
+      class="flex items-center space-x-2 rounded-md p-2 duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700/40"
     >
       <Copy size={17} />
     </button>
@@ -66,7 +66,7 @@
       on:click={() => {
         downloadSvg(svgInfo.route);
       }}
-      class="flex items-center space-x-2 rounded-md p-2 duration-100 hover:bg-neutral-300 dark:hover:bg-neutral-700/40"
+      class="flex items-center space-x-2 rounded-md p-2 duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700/40"
     >
       <DownloadSimple size={17} />
     </button>
@@ -74,7 +74,7 @@
       href={svgInfo.url}
       title="Website"
       target="_blank"
-      class="flex items-center space-x-2 rounded-md p-2 duration-100 hover:bg-neutral-300 dark:hover:bg-neutral-700/40"
+      class="flex items-center space-x-2 rounded-md p-2 duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700/40"
     >
       <ArrowUpRight size={17} />
     </a>
