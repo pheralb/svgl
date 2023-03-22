@@ -941,8 +941,8 @@ export const svgs: iSVG[] = [
   },
   {
     id: 135,
-    title: 'Google Student Developer Club',
-    category: 'Google',
+    title: 'Developer Student Club',
+    category: 'Education',
     route: '/library/gdsc.svg',
     url: 'https://gdsc.community.dev/'
   },
@@ -956,7 +956,7 @@ export const svgs: iSVG[] = [
   {
     id: 137,
     title: 'Eclipse IDE',
-    category: 'IDE',
+    category: 'Software',
     route: '/library/eclipse.svg',
     url: 'https://www.eclipse.org/'
   },
