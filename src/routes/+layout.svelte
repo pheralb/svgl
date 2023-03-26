@@ -27,7 +27,7 @@
 
 <main class="min-h-screen bg-light font-sans text-mini dark:bg-dark dark:text-white">
   <nav
-    class="z-50 w-full overflow-y-auto overflow-x-hidden border-b border-neutral-800 md:fixed md:top-0 md:left-0 md:h-full md:w-60 md:border-none md:pb-10"
+    class="z-50 w-full overflow-y-auto overflow-x-hidden border-b border-neutral-300 dark:border-neutral-800 md:fixed md:top-0 md:left-0 md:h-full md:w-60 md:border-none md:pb-10"
   >
     <div class="px-6 py-6">
       <div class="mb-3 border-b border-neutral-300 pb-3 dark:border-neutral-700/40">
@@ -107,7 +107,7 @@
             class="flex items-center space-x-2 duration-100 hover:text-neutral-500 dark:text-neutral-400 dark:hover:text-white"
           >
             <ArrowLeft size={20} />
-            <span>Back to home</span>
+            <span>View all</span>
           </div>
         </a>
       </Container>
