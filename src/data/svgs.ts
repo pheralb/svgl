@@ -1092,5 +1092,68 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/cloudflare.svg',
     url: 'https://www.cloudflare.com/'
+  },
+  {
+    id: 157,
+    title: 'Bing',
+    category: 'Browser',
+    route: '/library/bing.svg',
+    url: 'https://www.bing.com/'
+  },
+  {
+    id: 158,
+    title: 'Cloudinary',
+    category: 'Software',
+    route: '/library/cloudinary.svg',
+    url: 'https://cloudinary.com/'
+  },
+  {
+    id: 159,
+    title: 'Dart',
+    category: 'Language',
+    route: '/library/dart.svg',
+    url: 'https://dart.dev/'
+  },
+  {
+    id: 160,
+    title: 'hCaptcha',
+    category: 'Software',
+    route: '/library/hcaptcha.svg',
+    url: 'https://www.hcaptcha.com/'
+  },
+  {
+    id: 161,
+    title: 'Loom',
+    category: 'Software',
+    route: '/library/loom.svg',
+    url: 'https://www.loom.com/'
+  },
+  {
+    id: 162,
+    title: 'Stackblitz',
+    category: 'Software',
+    route: '/library/stackblitz.svg',
+    url: 'https://stackblitz.com/'
+  },
+  {
+    id: 163,
+    title: 'Messenger',
+    category: 'Social',
+    route: '/library/messenger.svg',
+    url: 'https://www.messenger.com/'
+  },
+  {
+    id: 164,
+    title: 'NHost',
+    category: 'Hosting',
+    route: '/library/nhost.svg',
+    url: 'https://nhost.io/'
+  },
+  {
+    id: 165,
+    title: 'Medusa',
+    category: 'Software',
+    route: '/library/medusa.svg',
+    url: 'https://medusajs.com/'
   }
 ];
