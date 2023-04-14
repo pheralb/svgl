@@ -1163,6 +1163,7 @@ export const svgs: iSVG[] = [
     route: '/library/wordpress.svg',
     url: 'https://wordpress.org/'
   },
+  {
     id: 167,
     title: 'Microsoft',
     category: 'Software',
@@ -1175,5 +1176,5 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/elementor.svg',
     url: 'https://elementor.com/'
-  },
+  }
 ];
