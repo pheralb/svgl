@@ -1155,5 +1155,12 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/medusa.svg',
     url: 'https://medusajs.com/'
+  },
+  {
+    id: 166,
+    title: 'WordPress',
+    category: 'Software',
+    route: '/library/wordpress.svg',
+    url: 'https://wordpress.org/'
   }
 ];
