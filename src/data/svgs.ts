@@ -1162,5 +1162,12 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/wordpress.svg',
     url: 'https://wordpress.org/'
+  },
+  {
+    id: 167,
+    title: 'Microsoft',
+    category: 'Software',
+    route: '/library/microsoft.svg',
+    url: 'https://www.microsoft.com/'
   }
 ];
