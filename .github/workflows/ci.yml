@@ -24,3 +24,18 @@ jobs:
 
       - name: Run typecheck
         run: npm run check
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node.js 18.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Vitest
+        run: npm run test
