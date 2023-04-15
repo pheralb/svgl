@@ -1176,5 +1176,33 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/elementor.svg',
     url: 'https://elementor.com/'
-  }
+  },
+  {
+    id: 169,
+    title: 'Prime video',
+    category: 'Entertainment',
+    route: '/library/prime-video.svg',
+    url: 'https://primevideo.com/'
+  },
+  {
+    id: 170,
+    title: 'Chrome',
+    category: 'Browser',
+    route: '/library/chrome.svg',
+    url: 'https://chrome.com/'
+  },
+  {
+    id: 171,
+    title: 'RxJS',
+    category: 'Library',
+    route: '/library/rxjs.svg',
+    url: 'https://rxjs.dev/'
+  },
+  {
+    id: 172,
+    title: 'Electron',
+    category: 'Library',
+    route: '/library/electron.svg',
+    url: 'https://www.electronjs.org'
+  },
 ];
