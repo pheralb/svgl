@@ -1205,4 +1205,11 @@ export const svgs: iSVG[] = [
     route: '/library/electron.svg',
     url: 'https://www.electronjs.org'
   },
+  {
+    id: 173,
+    title: 'Redux',
+    category: 'Library',
+    route: '/library/redux.svg',
+    url: 'https://redux.js.org/'
+  }
 ];
