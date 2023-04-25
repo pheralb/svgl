@@ -291,7 +291,7 @@ export const svgs: iSVG[] = [
   {
     id: 42,
     title: 'Firefox',
-    category: 'Software',
+    category: 'Browser',
     route: '/library/firefox.svg',
     url: 'https://www.mozilla.org/en-US/firefox/'
   },
