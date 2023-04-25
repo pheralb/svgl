@@ -1211,5 +1211,12 @@ export const svgs: iSVG[] = [
     category: 'Library',
     route: '/library/redux.svg',
     url: 'https://redux.js.org/'
+  },
+  {
+    id: 174,
+    title: 'Php',
+    category: 'Language',
+    route: '/library/php.svg',
+    url: 'https://www.php.net/'
   }
 ];
