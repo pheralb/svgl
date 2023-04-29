@@ -1218,5 +1218,12 @@ export const svgs: iSVG[] = [
     category: 'Language',
     route: '/library/php.svg',
     url: 'https://www.php.net/'
+  },
+  {
+    id: 175,
+    title: 'Hugo',
+    category: 'Framework',
+    route:  '/library/hugo.svg',
+    url: 'https://gohugo.io/'
   }
 ];
