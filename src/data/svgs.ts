@@ -1225,5 +1225,12 @@ export const svgs: iSVG[] = [
     category: 'Framework',
     route:  '/library/hugo.svg',
     url: 'https://gohugo.io/'
+  },
+  {
+    id: 176,
+    title: 'Divi',
+    category: 'Software',
+    route:  '/library/divi.svg',
+    url: 'https://www.elegantthemes.com/gallery/divi/'
   }
 ];
