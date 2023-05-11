@@ -76,21 +76,24 @@
           class="flex w-full items-center space-x-2 rounded-md p-2 duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700/40"
         >
           <span>Submit logo</span>
-          <ArrowUpRight size={16} />
+          <div><ArrowUpRight size={16} /></div>
         </a>
         <a
           href="https://github.com/pheralb/svgl"
           target="_blank"
           class="flex w-full items-center space-x-2 rounded-md p-2 duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700/40"
         >
-          <span class="flex items-center justify-center">
-            Repository
+          <div class="flex items-center space-x-2">
+            <span class="flex items-center justify-center">Repository</span>
             {#if data.stars}
-              - Star <span class="mx-[2px]"><Star size={14} /></span>| {data.stars}
+              <div class="flex items-center space-x-1 text-neutral-400">
+                <div><Star size={14} weight="duotone" /></div>
+                <span>{data.stars}</span>
+              </div>
             {/if}
-            <ArrowUpRight size={16} />
-          </span></a
-        >
+            <div><ArrowUpRight size={16} /></div>
+          </div>
+        </a>
       </div>
       <a
         href="https://twitter.com/pheralb_"
