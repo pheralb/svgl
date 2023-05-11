@@ -15,6 +15,7 @@
   import Heart from 'phosphor-svelte/lib/Heart';
   import ArrowUpRight from 'phosphor-svelte/lib/ArrowUpRight';
   import ArrowLeft from 'phosphor-svelte/lib/ArrowLeft';
+  import Star from 'phosphor-svelte/lib/Star';
 
   // Toaster:
   import { Toaster } from 'svelte-french-toast';
@@ -27,7 +28,7 @@
 
 <main class="min-h-screen bg-light font-sans text-mini dark:bg-dark dark:text-white">
   <nav
-    class="z-50 w-full overflow-y-auto overflow-x-hidden border-b border-neutral-300 dark:border-neutral-800 md:fixed md:top-0 md:left-0 md:h-full md:w-60 md:border-none md:pb-10"
+    class="z-50 w-full overflow-y-auto overflow-x-hidden border-b border-neutral-300 dark:border-neutral-800 md:fixed md:left-0 md:top-0 md:h-full md:w-60 md:border-none md:pb-10"
   >
     <div class="px-6 py-6">
       <div class="mb-3 border-b border-neutral-300 pb-3 dark:border-neutral-700/40">
@@ -82,9 +83,14 @@
           target="_blank"
           class="flex w-full items-center space-x-2 rounded-md p-2 duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700/40"
         >
-          <span>Repository</span>
-          <ArrowUpRight size={16} />
-        </a>
+          <span class="flex items-center justify-center">
+            Repository
+            {#if data.stars}
+              - Star <span class="mx-[2px]"><Star size={14} /></span>| {data.stars}
+            {/if}
+            <ArrowUpRight size={16} />
+          </span></a
+        >
       </div>
       <a
         href="https://twitter.com/pheralb_"
