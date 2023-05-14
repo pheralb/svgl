@@ -473,7 +473,7 @@ export const svgs: iSVG[] = [
   {
     id: 68,
     title: 'Arc',
-    category: 'Software',
+    category: 'Social',
     route: '/library/arc.svg',
     url: 'https://arc.dev'
   },
@@ -906,10 +906,10 @@ export const svgs: iSVG[] = [
   },
   {
     id: 130,
-    title: 'WMR',
-    category: 'Compiler',
-    route: '/library/wmr.svg',
-    url: 'https://wmr.dev/'
+    title: 'Pocketbase',
+    category: 'Database',
+    route: '/library/pocket-base.svg',
+    url: 'https://pocketbase.io/'
   },
   {
     id: 131,
@@ -1223,14 +1223,35 @@ export const svgs: iSVG[] = [
     id: 175,
     title: 'Hugo',
     category: 'Framework',
-    route:  '/library/hugo.svg',
+    route: '/library/hugo.svg',
     url: 'https://gohugo.io/'
   },
   {
-    id:176,
-    title:'SASS',
-    category:'language',
-    route:'/library/sass.svg',
-    url:'https://sass-lang.com/'
+    id: 176,
+    title: 'Sass',
+    category: 'Language',
+    route: '/library/sass.svg',
+    url: 'https://sass-lang.com/'
+  },
+  {
+    id: 177,
+    title: 'Arc',
+    category: 'Browser',
+    route: '/library/arc_browser.svg',
+    url: 'https://arc.net/'
+  },
+  {
+    id: 178,
+    title: 'Pinia',
+    category: 'Library',
+    route: '/library/pinia.svg',
+    url: 'https://pinia.vuejs.org/'
+  },
+  {
+    id: 179,
+    title: 'Neon',
+    category: 'Database',
+    route: '/library/neon.svg',
+    url: 'https://neon.tech/'
   }
 ];
