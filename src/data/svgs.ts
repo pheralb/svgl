@@ -1225,5 +1225,12 @@ export const svgs: iSVG[] = [
     category: 'Framework',
     route:  '/library/hugo.svg',
     url: 'https://gohugo.io/'
+  },
+  {
+    id:176,
+    title:'SASS',
+    category:'language',
+    route:'/library/sass.svg',
+    url:'https://sass-lang.com/'
   }
 ];
