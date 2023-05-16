@@ -473,7 +473,7 @@ export const svgs: iSVG[] = [
   {
     id: 68,
     title: 'Arc',
-    category: 'Social',
+    category: 'Jobs',
     route: '/library/arc.svg',
     url: 'https://arc.dev'
   },
@@ -1253,5 +1253,12 @@ export const svgs: iSVG[] = [
     category: 'Database',
     route: '/library/neon.svg',
     url: 'https://neon.tech/'
+  },
+  {
+    id: 180,
+    title: 'Infojobs',
+    category: 'Jobs',
+    route: '/library/infojobs.svg',
+    url: 'https://www.infojobs.net/'
   }
 ];
