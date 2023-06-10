@@ -1260,5 +1260,19 @@ export const svgs: iSVG[] = [
     category: 'Jobs',
     route: '/library/infojobs-logo.svg',
     url: 'https://www.infojobs.net/'
+  },
+  {
+    id: 181,
+    title: 'Linear',
+    category: 'Software',
+    route: '/library/linear.svg',
+    url: 'https://linear.app/'
+  },
+  {
+    id: 182,
+    title: 'Tor',
+    category: 'Browser',
+    route: '/library/tor.svg',
+    url: 'https://www.torproject.org/'
   }
 ];
