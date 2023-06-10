@@ -1,7 +1,7 @@
 <script lang="ts">
   export let notFoundTerm: string;
 
-  import FileSearch from 'phosphor-svelte/lib/FileSearch';
+  import FileSearch from 'phosphor-svelte/lib/FileMagnifyingGlass';
   import ArrowUpRight from 'phosphor-svelte/lib/ArrowUpRight';
 </script>
 
@@ -10,7 +10,7 @@
 >
   <FileSearch size={40} />
   <p class="mt-1 text-xl font-medium">SVG not found</p>
-  <p class="text-lg ">"{notFoundTerm}"</p>
+  <p class="text-lg">"{notFoundTerm}"</p>
   <a
     href="https://github.com/pheralb/svgl/issues/new"
     target="_blank"
