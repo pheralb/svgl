@@ -1258,7 +1258,7 @@ export const svgs: iSVG[] = [
     id: 180,
     title: 'Infojobs',
     category: 'Jobs',
-    route: '/library/infojobs.svg',
+    route: '/library/infojobs-logo.svg',
     url: 'https://www.infojobs.net/'
   }
 ];
