@@ -16,9 +16,7 @@ export const load = (async ({ params }) => {
   const svgsByCategory = svgs.filter((svg: iSVG) => svg.category.toLowerCase() === slug);
 
   return {
-    props: {
-      category: slug,
-      svgs: svgsByCategory
-    }
+    category: slug as string,
+    svgs: svgsByCategory
   };
 }) satisfies PageLoad;

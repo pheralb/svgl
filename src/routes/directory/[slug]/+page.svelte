@@ -1,9 +1,10 @@
 <script lang="ts">
   import type { PageData } from './$types';
   import type { iSVG } from '@/types/svg';
+
   export let data: PageData;
-  let svgsByCategory = data.props?.svgs || [];
-  let category = data.props?.category || '';
+  let svgsByCategory = data.svgs || [];
+  let category = data.category || '';
 
   // Components:
   import Container from '@/components/container.svelte';
