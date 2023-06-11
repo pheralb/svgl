@@ -1288,5 +1288,19 @@ export const svgs: iSVG[] = [
     category: 'Social',
     route: '/library/skype.svg',
     url: 'https://www.skype.com/'
+  },
+  {
+    id: 185,
+    title: 'Tauri',
+    category: 'Library',
+    route: '/library/tauri.svg',
+    url: 'https://tauri.app/'
+  },
+  {
+    id: 186,
+    title: 'WebKit',
+    category: 'Software',
+    route: '/library/webkit.svg',
+    url: 'https://webkit.org/'
   }
 ];
