@@ -1274,5 +1274,19 @@ export const svgs: iSVG[] = [
     category: 'Browser',
     route: '/library/tor.svg',
     url: 'https://www.torproject.org/'
+  },
+  {
+    id: 183,
+    title: 'Codesandbox',
+    category: 'Software',
+    route: '/library/codesandbox-square.svg',
+    url: 'https://codesandbox.io/'
+  },
+  {
+    id: 184,
+    title: 'Skype',
+    category: 'Social',
+    route: '/library/skype.svg',
+    url: 'https://www.skype.com/'
   }
 ];
