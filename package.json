@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "downloadjs": "1.4.7",
-    "svelte-french-toast": "1.0.3"
+    "svelte-sonner": "0.0.13"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "2.1.0",
