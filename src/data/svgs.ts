@@ -1302,5 +1302,40 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/webkit.svg',
     url: 'https://webkit.org/'
+  },
+  {
+    id: 187,
+    title: 'Google Bard',
+    category: 'AI',
+    route: '/library/bard.svg',
+    url: 'https://bard.google.com/'
+  },
+  {
+    id: 188,
+    title: 'Obsidian',
+    category: 'Software',
+    route: '/library/obsidian.svg',
+    url: 'https://obsidian.md/'
+  },
+  {
+    id: 189,
+    title: 'Zod',
+    category: 'Library',
+    route: '/library/zod.svg',
+    url: 'https://zod.dev/'
+  },
+  {
+    id: 190,
+    title: 'OpenAI',
+    category: 'AI',
+    route: '/library/openai.svg',
+    url: 'https://openai.com/'
+  },
+  {
+    id: 191,
+    title: 'HuggingFace',
+    category: 'AI',
+    route: '/library/hf.svg',
+    url: 'https://huggingface.co/'
   }
 ];
