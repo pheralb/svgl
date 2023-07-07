@@ -18,7 +18,7 @@
   import Star from 'phosphor-svelte/lib/Star';
 
   // Toaster:
-  import { Toaster } from 'svelte-french-toast';
+  import { Toaster } from 'svelte-sonner';
 
   // Components for all pages:
   import Transition from '@/components/transition.svelte';
@@ -124,6 +124,12 @@
     <Transition pathname={data.pathname}>
       <slot />
     </Transition>
-    <Toaster position="bottom-center" />
+    <Toaster
+      position="bottom-right"
+      toastOptions={{
+        class:
+          'font-sans dark:bg-neutral-800 dark:text-white bg-neutral-200 text-neutral-800 border dark:border-neutral-900 border-neutral-300'
+      }}
+    />
   </div>
 </main>

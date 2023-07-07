@@ -1,6 +1,6 @@
 <script lang="ts">
   import download from 'downloadjs';
-  import toast from 'svelte-french-toast';
+  import { toast } from 'svelte-sonner';
   import type { iSVG } from '../types/svg';
   import { MIMETYPE, getSvgContent } from '../utils/getSvgContent';
 
@@ -15,10 +15,7 @@
   // Download SVG:
   const downloadSvg = (url?: string) => {
     download(url || '');
-    toast('Downloading', {
-      icon: '🎉',
-      style: 'border-radius: 200px; background: #333; color: #fff;'
-    });
+    toast.success('Downloading...');
   };
 
   // Copy SVG to clipboard:
@@ -33,9 +30,8 @@
       const content = (await getSvgContent(url, false)) as string;
       await navigator.clipboard.writeText(content);
     }
-    toast('Copied to clipboard', {
-      icon: '👏',
-      style: 'border-radius: 200px; background: #333; color: #fff;'
+    toast.message('Copied to clipboard!', {
+      description: `${svgInfo.title} - ${svgInfo.category}`
     });
   };
 </script>
