@@ -30,7 +30,7 @@
       const content = (await getSvgContent(url, false)) as string;
       await navigator.clipboard.writeText(content);
     }
-    toast.message('Copied to clipboard!', {
+    toast.success('Copied to clipboard!', {
       description: `${svgInfo.title} - ${svgInfo.category}`
     });
   };

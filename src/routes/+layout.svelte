@@ -38,7 +38,7 @@
               class="flex items-center space-x-2 duration-150 hover:text-neutral-500 dark:hover:text-neutral-300"
             >
               <h3 class="text-xl font-medium">svgl</h3>
-              <p class="text-neutral-500">v3.0.0</p>
+              <p class="text-neutral-500">v3.1.0</p>
             </div>
           </a>
           <Theme />
@@ -54,7 +54,8 @@
               ${data.pathname === `/` ? 'bg-neutral-200 dark:bg-neutral-700/30' : ''}`}
           data-sveltekit-preload-data>All</a
         >
-        {#each categories as category}
+        <!-- Order alfabetically: -->
+        {#each categories.sort() as category}
           <a
             href={`/directory/${category.toLowerCase()}`}
             class={`flex w-full items-center rounded-md p-2 transition-none duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700/40
@@ -86,8 +87,10 @@
           <div class="flex items-center space-x-2">
             <span class="flex items-center justify-center">Repository</span>
             {#if data.stars}
-              <div class="flex items-center space-x-1 text-neutral-400">
-                <div><Star size={14} weight="duotone" /></div>
+              <div class="flex items-center space-x-1 text-neutral-600 dark:text-neutral-400">
+                <div>
+                  <Star size={14} weight="duotone" class="text-yellow-700 dark:text-yellow-500" />
+                </div>
                 <span>{data.stars}</span>
               </div>
             {/if}

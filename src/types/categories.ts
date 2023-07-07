@@ -1,5 +1,6 @@
 export type tCategory =
   | 'All'
+  | 'AI'
   | 'Software'
   | 'Library'
   | 'Hosting'
