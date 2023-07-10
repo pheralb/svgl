@@ -1337,5 +1337,26 @@ export const svgs: iSVG[] = [
     category: 'AI',
     route: '/library/hf.svg',
     url: 'https://huggingface.co/'
+  },
+  {
+    id: 192,
+    title: 'Threads',
+    category: 'Social',
+    route: '/library/threads.svg',
+    url: 'https://threads.net/'
+  },
+  {
+    id: 193,
+    title: 'Instagram',
+    category: 'Social',
+    route: '/library/instagram.svg',
+    url: 'https://www.instagram.com/'
+  },
+  {
+    id: 194,
+    title: 'VueUse',
+    category: 'Library',
+    route: '/library/vueuse.svg',
+    url: 'https://vueuse.org/'
   }
 ];
