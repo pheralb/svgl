@@ -29,6 +29,11 @@
       return svgTitle.includes(searchTerm.toLowerCase());
     }));
   };
+
+  const clearSearch = () => {
+    searchTerm = '';
+    searchSvgs();
+  };
 </script>
 
 <svelte:head>
@@ -39,6 +44,7 @@
   <Search
     bind:searchTerm
     on:input={searchSvgs}
+    clearSearch={() => clearSearch()}
     placeholder={`Search ${filteredSvgs.length} ${category} logos...`}
   />
   <Grid>
