@@ -1358,5 +1358,12 @@ export const svgs: iSVG[] = [
     category: 'Library',
     route: '/library/vueuse.svg',
     url: 'https://vueuse.org/'
+  },
+  {
+    id: 194,
+    title: 'Microsoft SQL Server ',
+    category: 'Database',
+    route: '/library/sql-server.svg',
+    url: 'https://www.microsoft.com/en-us/sql-server/'
   }
 ];
