@@ -38,7 +38,7 @@
               class="flex items-center space-x-2 duration-150 hover:text-neutral-500 dark:hover:text-neutral-300"
             >
               <h3 class="text-xl font-medium">svgl</h3>
-              <p class="text-neutral-500">v3.1.0</p>
+              <p class="text-neutral-500">v3.2.0</p>
             </div>
           </a>
           <Theme />
