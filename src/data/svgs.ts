@@ -1361,41 +1361,48 @@ export const svgs: iSVG[] = [
   },
   {
     id: 195,
+    title: 'Microsoft SQL Server ',
+    category: 'Database',
+    route: '/library/sql-server.svg',
+    url: 'https://www.microsoft.com/en-us/sql-server/'
+  },
+  {
+    id: 196,
     title: 'Biomejs',
     category: 'Compiler',
     route: '/library/biomejs.svg',
     url: 'https://biomejs.dev/'
   },
   {
-    id: 196,
+    id: 197,
     title: 'Hono',
     category: 'Framework',
     route: '/library/hono.svg',
     url: 'https://hono.dev/'
   },
   {
-    id: 197,
+    id: 198,
     title: 'Million',
     category: 'Library',
     route: '/library/million.svg',
     url: 'https://million.dev/'
   },
   {
-    id: 198,
+    id: 199,
     title: 'PandaCSS',
     category: 'Library',
     route: '/library/pandacss.svg',
     url: 'https://panda-css.com/'
   },
   {
-    id: 199,
+    id: 200,
     title: 'Pulumi',
     category: 'Software',
     route: '/library/pulumi.svg',
     url: 'https://www.pulumi.com/'
   },
   {
-    id: 200,
+    id: 201,
     title: "FastAPI",
     category: 'Framework',
     route: '/library/fastapi.svg',
