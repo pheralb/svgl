@@ -6,8 +6,8 @@
 
   // Icons:
   import DownloadSimple from 'phosphor-svelte/lib/DownloadSimple';
-  import ArrowUpRight from 'phosphor-svelte/lib/ArrowUpRight';
   import Copy from 'phosphor-svelte/lib/Copy';
+  import Link from 'phosphor-svelte/lib/Link';
 
   // Props:
   export let svgInfo: iSVG;
@@ -72,7 +72,7 @@
       target="_blank"
       class="flex items-center space-x-2 rounded-md p-2 duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700/40"
     >
-      <ArrowUpRight size={17} />
+      <Link size={17} />
     </a>
   </div>
 </div>
