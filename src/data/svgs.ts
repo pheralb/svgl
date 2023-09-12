@@ -1358,5 +1358,47 @@ export const svgs: iSVG[] = [
     category: 'Library',
     route: '/library/vueuse.svg',
     url: 'https://vueuse.org/'
+  },
+  {
+    id: 195,
+    title: 'Biomejs',
+    category: 'Compiler',
+    route: '/library/biomejs.svg',
+    url: 'https://biomejs.dev/'
+  },
+  {
+    id: 196,
+    title: 'Hono',
+    category: 'Framework',
+    route: '/library/hono.svg',
+    url: 'https://hono.dev/'
+  },
+  {
+    id: 197,
+    title: 'Million',
+    category: 'Library',
+    route: '/library/million.svg',
+    url: 'https://million.dev/'
+  },
+  {
+    id: 198,
+    title: 'PandaCSS',
+    category: 'Library',
+    route: '/library/pandacss.svg',
+    url: 'https://panda-css.com/'
+  },
+  {
+    id: 199,
+    title: 'Pulumi',
+    category: 'Software',
+    route: '/library/pulumi.svg',
+    url: 'https://www.pulumi.com/'
+  },
+  {
+    id: 200,
+    title: "FastAPI",
+    category: 'Framework',
+    route: '/library/fastapi.svg',
+    url: 'https://fastapi.tiangolo.com/'
   }
 ];
