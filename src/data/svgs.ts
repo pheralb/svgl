@@ -1403,9 +1403,30 @@ export const svgs: iSVG[] = [
   },
   {
     id: 201,
-    title: "FastAPI",
+    title: 'FastAPI',
     category: 'Framework',
     route: '/library/fastapi.svg',
     url: 'https://fastapi.tiangolo.com/'
+  },
+  {
+    id: 202,
+    title: 'Codium',
+    category: 'AI',
+    route: '/library/codium.svg',
+    url: 'https://www.codium.ai/'
+  },
+  {
+    id: 203,
+    title: 'Crossplane',
+    category: 'Framework',
+    route: '/library/crossplane.svg',
+    url: 'https://crossplane.io/'
+  },
+  {
+    id: 204,
+    title: 'Typesense',
+    category: 'Software',
+    route: '/library/typesense.svg',
+    url: 'https://typesense.org/'
   }
 ];
