@@ -8,6 +8,7 @@ export type tCategory =
   | 'CMS'
   | 'Database'
   | 'Compiler'
+  | 'Crypto'
   | 'Social'
   | 'Entertainment'
   | 'Browser'
