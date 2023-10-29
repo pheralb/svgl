@@ -38,7 +38,7 @@
               class="flex items-center space-x-2 duration-150 hover:text-neutral-500 dark:hover:text-neutral-300"
             >
               <h3 class="text-xl font-medium">svgl</h3>
-              <p class="text-neutral-500">v3.2.0</p>
+              <p class="text-neutral-500">v3.2.1</p>
             </div>
           </a>
           <Theme />
@@ -130,8 +130,9 @@
     <Toaster
       position="bottom-right"
       toastOptions={{
-        class:
-          'font-sans dark:bg-neutral-800 dark:text-white bg-neutral-200 text-neutral-800 border dark:border-neutral-900 border-neutral-300'
+        style: `background-color: #171717;
+           color: #ffff; 
+           border-radius: 0.4rem; border: 1px solid #262626;`
       }}
     />
   </div>

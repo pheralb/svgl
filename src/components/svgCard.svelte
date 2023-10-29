@@ -8,6 +8,7 @@
   import DownloadSimple from 'phosphor-svelte/lib/DownloadSimple';
   import Copy from 'phosphor-svelte/lib/Copy';
   import Link from 'phosphor-svelte/lib/Link';
+  import Star from 'phosphor-svelte/lib/Star';
 
   // Props:
   export let svgInfo: iSVG;
@@ -31,6 +32,7 @@
       await navigator.clipboard.writeText(content);
     }
     toast.success('Copied to clipboard!', {
+      icon: Star,
       description: `${svgInfo.title} - ${svgInfo.category}`
     });
   };
