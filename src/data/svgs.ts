@@ -1428,5 +1428,75 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/typesense.svg',
     url: 'https://typesense.org/'
-  }
+  },
+  {
+    id: 205,
+    title: 'Bitcoin',
+    category: 'Crypto',
+    route: '/library/btc.svg',
+    url: 'https://bitcoin.org/'
+  },
+  {
+    id: 206,
+    title: 'Ethereum',
+    category: 'Crypto',
+    route: '/library/eth.svg',
+    url: 'https://ethereum.org/'
+  },
+  {
+    id: 207,
+    title: 'Solana',
+    category: 'Crypto',
+    route: '/library/sol.svg',
+    url: 'https://solana.com/'
+  },
+  {
+    id: 208,
+    title: 'Dogecoin',
+    category: 'Crypto',
+    route: '/library/doge.svg',
+    url: 'https://dogecoin.com/'
+  },
+  {
+    id: 209,
+    title: 'XRP',
+    category: 'Crypto',
+    route: '/library/xrp.svg',
+    url: 'https://xrpl.org/'
+  },
+  {
+    id: 210,
+    title: 'BNB',
+    category: 'Crypto',
+    route: '/library/bnb.svg',
+    url: 'https://www.bnbchain.org/'
+  },
+  {
+    id: 211,
+    title: 'Cardano',
+    category: 'Crypto',
+    route: '/library/ada.svg',
+    url: 'https://cardano.org/'
+  },
+  {
+    id: 212,
+    title: 'TRON',
+    category: 'Crypto',
+    route: '/library/trx.svg',
+    url: 'https://tron.network/'
+  },
+  {
+    id: 213,
+    title: 'Chainlink',
+    category: 'Crypto',
+    route: '/library/link.svg',
+    url: 'https://chain.link/'
+  },
+  {
+    id: 214,
+    title: 'Polygon',
+    category: 'Crypto',
+    route: '/library/matic.svg',
+    url: 'https://polygon.technology/'
+  },
 ];
