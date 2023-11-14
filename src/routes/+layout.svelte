@@ -16,6 +16,8 @@
   import ArrowUpRight from 'phosphor-svelte/lib/ArrowUpRight';
   import ArrowLeft from 'phosphor-svelte/lib/ArrowLeft';
   import Star from 'phosphor-svelte/lib/Star';
+  import GithubLogo from 'phosphor-svelte/lib/GithubLogo';
+  import Box from 'phosphor-svelte/lib/Cube';
 
   // Toaster:
   import { Toaster } from 'svelte-sonner';
@@ -50,18 +52,21 @@
       >
         <a
           href="/"
-          class={`flex w-full items-center rounded-md p-2 transition-none duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700/40
-              ${data.pathname === `/` ? 'bg-neutral-200 dark:bg-neutral-700/30' : ''}`}
+          class={`flex w-full items-center rounded-md p-2 transition-none duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700/40 text-neutral-600 hover:text-dark dark:hover:text-white dark:text-neutral-400 ${
+            data.pathname === `/`
+              ? 'bg-neutral-200 dark:bg-neutral-700/30 font-medium dark:text-white text-dark'
+              : ''
+          }`}
           data-sveltekit-preload-data>All</a
         >
         <!-- Order alfabetically: -->
         {#each categories.sort() as category}
           <a
             href={`/directory/${category.toLowerCase()}`}
-            class={`flex w-full items-center rounded-md p-2 transition-none duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700/40
+            class={`flex w-full items-center rounded-md p-2 transition-none duration-100 text-neutral-600 hover:text-dark dark:hover:text-white dark:text-neutral-400 hover:bg-neutral-200 dark:hover:bg-neutral-700/40
               ${
                 data.pathname === `/directory/${category.toLowerCase()}`
-                  ? 'bg-neutral-200 dark:bg-neutral-700/30'
+                  ? 'bg-neutral-200 dark:bg-neutral-700/30 font-medium dark:text-white text-dark'
                   : ''
               }`}
             data-sveltekit-preload-data>{category}</a
@@ -76,8 +81,9 @@
           target="_blank"
           class="flex w-full items-center space-x-2 rounded-md p-2 duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700/40"
         >
+          <div><Box size={18} /></div>
           <span>Submit logo</span>
-          <div><ArrowUpRight size={16} /></div>
+          <div><ArrowUpRight size={12} /></div>
         </a>
         <a
           href="https://github.com/pheralb/svgl"
@@ -85,6 +91,7 @@
           class="flex w-full items-center space-x-2 rounded-md p-2 duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700/40"
         >
           <div class="flex items-center space-x-2">
+            <div><GithubLogo size={18} /></div>
             <span class="flex items-center justify-center">Repository</span>
             {#if data.stars}
               <div class="flex items-center space-x-1 text-neutral-600 dark:text-neutral-400">
@@ -94,7 +101,7 @@
                 <span>{data.stars}</span>
               </div>
             {/if}
-            <div><ArrowUpRight size={16} /></div>
+            <div><ArrowUpRight size={12} /></div>
           </div>
         </a>
       </div>
