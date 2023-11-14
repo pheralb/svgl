@@ -1498,5 +1498,12 @@ export const svgs: iSVG[] = [
     category: 'Crypto',
     route: '/library/matic.svg',
     url: 'https://polygon.technology/'
+  },
+  {
+    id: 215,
+    title: 'X',
+    category: 'Social',
+    route: '/library/x.svg',
+    url: 'https://x.com'
   }
 ];

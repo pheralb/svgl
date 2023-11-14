@@ -9,15 +9,15 @@
     <a href="https://svgl.vercel.app/" target="_blank">
         Discover
     </a>
-    <span>&nbsp;●&nbsp;</span>
+    <span>&nbsp;⁘&nbsp;</span>
     <a href="#-getting-started">
         Submit logo
     </a>
-    <span>&nbsp;●&nbsp;</span>
+    <span>&nbsp;⁘&nbsp;</span>
     <a href="#%EF%B8%8F-stack">
         Stack
     </a>
-    <span>&nbsp;●&nbsp;</span>
+    <span>&nbsp;⁘&nbsp;</span>
     <a href="#%EF%B8%8F-contributing">
         Contributing
     </a>
@@ -27,12 +27,13 @@
 
 <div align="center">
 
+![Svelte Badge](https://img.shields.io/badge/Svelte-FF3E00?logo=svelte&logoColor=fff&style=flat)
 [![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fpheralb%2Fsvgl%2Fbadge%3Fref%3Dmain&style=flat)](https://actions-badge.atrox.dev/pheralb/svgl/goto?ref=main)
 ![GitHub stars](https://img.shields.io/github/stars/pheralb/svgl)
 ![GitHub issues](https://img.shields.io/github/issues/pheralb/svgl)
 ![GitHub forks](https://img.shields.io/github/forks/pheralb/svgl)
-![GitHub license](https://img.shields.io/github/license/pheralb/svgl)
 ![GitHub PRs](https://img.shields.io/github/issues-pr/pheralb/svgl)
+![Tailwind CSS Badge](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=fff&style=flat)
 
 </div>
 
@@ -43,6 +44,7 @@
 - [**Tailwindcss**](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom designs.
 - [**Prettier**](https://prettier.io/) + [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss) - An opinionated code formatter.
 - [**phosphor-svelte**](https://github.com/haruaki07/phosphor-svelte) - A clean and friendly icon family for Svelte.
+- [**svelte-sonner**](https://github.com/wobsoriano/svelte-sonner) - An opinionated toast component for Svelte.
 - [**Vitest**](https://vitest.dev/) - Blazing Fast Unit Test Framework.
 
 ## 🚀 Getting Started
