@@ -42,7 +42,7 @@
   on:blur={handleBlur}
   on:mouseenter={handleMouseEnter}
   on:mouseleave={handleMouseLeave}
-  class="relative flex items-center justify-center overflow-hidden rounded-md border border-neutral-200 dark:border-neutral-800 bg-neutral-100 dark:bg-neutral-800/20"
+  class="relative flex items-center justify-center overflow-hidden rounded-md border border-neutral-200 dark:border-neutral-800 bg-neutral-100 dark:bg-neutral-900"
 >
   <div
     class="pointer-events-none absolute -inset-px opacity-0 transition duration-300"
