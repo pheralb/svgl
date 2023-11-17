@@ -13,4 +13,5 @@ export type tCategory =
   | 'Entertainment'
   | 'Browser'
   | 'Language'
-  | 'Education';
+  | 'Education'
+  | 'Design';

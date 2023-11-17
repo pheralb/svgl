@@ -88,7 +88,7 @@ export const svgs: iSVG[] = [
   {
     id: 13,
     title: 'Figma',
-    category: 'Software',
+    category: 'Design',
     route: '/library/figma.svg',
     url: 'https://www.figma.com/'
   },
@@ -1504,6 +1504,62 @@ export const svgs: iSVG[] = [
     title: 'X',
     category: 'Social',
     route: '/library/x.svg',
+    url: 'https://x.com'
+  },
+  {
+    id: 216,
+    title: 'Adobe',
+    category: 'Design',
+    route: '/library/adobe.svg',
+    url: 'https://x.com'
+  },
+  {
+    id: 217,
+    title: 'After Effects',
+    category: 'Design',
+    route: '/library/after-effects.svg',
+    url: 'https://x.com'
+  },
+  {
+    id: 218,
+    title: 'Canva',
+    category: 'Design',
+    route: '/library/canva.svg',
+    url: 'https://x.com'
+  },
+  {
+    id: 219,
+    title: 'Illustrator',
+    category: 'Design',
+    route: '/library/illustrator.svg',
+    url: 'https://x.com'
+  },
+  {
+    id: 220,
+    title: 'InDesign',
+    category: 'Design',
+    route: '/library/indesign.svg',
+    url: 'https://x.com'
+  },
+  {
+    id: 221,
+    title: 'Lightroom',
+    category: 'Design',
+    route: '/library/lightroom.svg',
+    url: 'https://x.com'
+  },
+  {
+    id: 222,
+    title: 'Photoshop',
+    category: 'Design',
+    route: '/library/photoshop.svg',
+    url: 'https://x.com'
+  },
+  {
+    id: 223,
+    title: 'Premiere',
+    category: 'Design',
+    route: '/library/premiere.svg',
     url: 'https://x.com'
   }
 ];
