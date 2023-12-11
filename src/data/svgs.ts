@@ -1618,5 +1618,4 @@ export const svgs: iSVG[] = [
     route: '/library/randevum.svg',
     url: 'https://www.randevum.co'
   },
-  }
 ];
