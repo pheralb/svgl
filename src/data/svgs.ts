@@ -1673,5 +1673,75 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/documenso.svg',
     url: 'https://documenso.com'
-  }
+  },
+  {
+    id: 326851,
+    title: 'Bash',
+    category: 'Language',
+    route: '/library/bash.svg',
+    url: 'https://www.gnu.org/software/bash/'
+  },
+  {
+    id: 740938,
+    title: 'C',
+    category: 'Language',
+    route: '/library/c.svg',
+    url: 'https://en.wikipedia.org/wiki/C_(programming_language)'
+  },
+  {
+    id: 156807,
+    title: 'C++',
+    category: 'Language',
+    route: '/library/c++.svg',
+    url: 'https://en.wikipedia.org/wiki/C%2B%2B'
+  },
+  {
+    id: 854167,
+    title: 'Cobol',
+    category: 'Language',
+    route: '/library/cobol.svg',
+    url: 'https://en.wikipedia.org/wiki/COBOL'
+  },
+  {
+    id: 473965,
+    title: 'Fortran',
+    category: 'Language',
+    route: '/library/fortran.svg',
+    url: 'https://en.wikipedia.org/wiki/Fortran'
+  },
+  {
+    id: 429673,
+    title: 'Haskell',
+    category: 'Language',
+    route: '/library/haskell.svg',
+    url: 'https://www.haskell.org/'
+  },
+  {
+    id: 907583,
+    title: 'Mathlab',
+    category: 'Language',
+    route: '/library/mathlab.svg',
+    url: 'https://www.mathworks.com/products/matlab.html'
+  },
+  {
+    id: 754396,
+    title: 'R',
+    category: 'Language',
+    route: '/library/r.svg',
+    url: 'https://www.r-project.org/'
+  },
+  {
+    id: 783625,
+    title: 'Rust',
+    category: 'Language',
+    route: '/library/rust.svg',
+    url: 'https://www.rust-lang.org/'
+  },
+  {
+    id: 586019,
+    title: 'Zig',
+    category: 'Language',
+    route: '/library/zig.svg',
+    url: 'https://ziglang.org/'
+  },
 ];
