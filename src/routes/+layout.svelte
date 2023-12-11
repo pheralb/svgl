@@ -28,7 +28,7 @@
   import Theme from '@/components/theme.svelte';
 </script>
 
-<main class="min-h-screen bg-light font-sans text-mini dark:bg-dark dark:text-white">
+<main>
   <nav
     class="z-50 w-full overflow-y-auto overflow-x-hidden border-b border-neutral-300 dark:border-neutral-800 md:fixed md:left-0 md:top-0 md:h-full md:w-60 md:border-none md:pb-10"
   >
