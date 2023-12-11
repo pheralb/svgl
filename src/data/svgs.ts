@@ -1618,6 +1618,20 @@ export const svgs: iSVG[] = [
     route: '/library/randevum.svg',
     url: 'https://www.randevum.co'
   },
+  {
+    id: 68067,
+    title: 'Stately.ai',
+    category: 'Software',
+    route: '/library/stately.svg',
+    url: 'https://stately.ai/'
+  },
+  {
+    id: 68068,
+    title: 'XState',
+    category: 'Library',
+    route: '/library/xstate.svg',
+    url: 'https://github.com/statelyai/xstate'
+  },
  {
     id: 232,
     title: 'Hashnode',
