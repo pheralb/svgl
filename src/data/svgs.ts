@@ -1594,7 +1594,7 @@ export const svgs: iSVG[] = [
     id: 228,
     title: 'Randevum',
     category: 'Software',
-    route: '/library/radenvum.svg',
+    route: '/library/randevum.svg',
     url: 'https://www.randevum.co'
   }
 ];
