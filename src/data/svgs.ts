@@ -1589,5 +1589,12 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/godot_engine.svg',
     url: 'https://godotengine.org/'
+  },
+  {
+    id: 228,
+    title: 'Datadog',
+    category: 'Software',
+    route: '/library/datadog.svg',
+    url: 'https://www.datadoghq.com/'
   }
 ];
