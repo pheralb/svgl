@@ -1659,5 +1659,61 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/cal.svg',
     url: 'https://cal.com'
-  }  
+  },
+  {
+    id: 238,
+    title: 'Cursor AI',
+    category: 'Software',
+    route: '/library/cursor.svg',
+    url: 'https://cursor.sh/'
+  },
+  {
+    id: 239,
+    title: 'Calendly',
+    category: 'Software',
+    route: '/library/calendly.svg',
+    url: 'https://calendly.com/'
+  },
+  {
+    id: 240,
+    title: 'Mintlify',
+    category: 'Software',
+    route: '/library/mintlify.svg',
+    url: 'https://mintlify.com/'
+  },
+  {
+    id: 241,
+    title: 'Patreon',
+    category: 'Software',
+    route: '/library/patreon.svg',
+    url: 'https://www.patreon.com/'
+  },
+  {
+    id: 242,
+    title: 'Peerlist',
+    category: 'Social',
+    route: '/library/peerlist.svg',
+    url: 'https://www.peerlist.io/'
+  },
+  {
+    id: 243,
+    title: 'Product Hunt',
+    category: 'Software',
+    route: '/library/producthunt.svg',
+    url: 'https://www.producthunt.com/'
+  },
+  {
+    id: 244,
+    title: 'Remotion',
+    category: 'Framework',
+    route: '/library/remotion.svg',
+    url: 'https://www.remotion.dev/'
+  },
+  {
+    id: 245,
+    title: 'Warp',
+    category: 'Software',
+    route: '/library/warp.svg',
+    url: 'https://www.warp.dev/'
+  }
 ];
