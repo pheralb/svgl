@@ -1561,5 +1561,12 @@ export const svgs: iSVG[] = [
     category: 'Design',
     route: '/library/premiere.svg',
     url: 'https://x.com'
+  },
+  {
+    id: 224,
+    title: 'Hoppscotch',
+    category: 'Software',
+    route: '/library/hoppscotch.svg',
+    url: 'https://hoppscotch.com'
   }
 ];
