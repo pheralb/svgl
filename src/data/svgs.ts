@@ -1589,5 +1589,12 @@ export const svgs: iSVG[] = [
     category: 'Browser',
     route: '/library/opera.svg',
     url: 'https://www.opera.com'
+  },
+  {
+    id: 228,
+    title: 'Salesforce',
+    category: 'Software',
+    route: '/library/salesforce.svg',
+    url: 'https://www.salesforce.com'
   }
 ];
