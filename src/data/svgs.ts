@@ -1575,5 +1575,19 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/hoppscotch.svg',
     url: 'https://hoppscotch.com'
+  },
+  {
+    id: 226,
+    title: 'Unreal Engine',
+    category: 'Software',
+    route: '/library/unreal_engine.svg',
+    url: 'https://www.unrealengine.com/'
+  },
+  {
+    id: 227,
+    title: 'Godot Engine',
+    category: 'Software',
+    route: '/library/godot_engine.svg',
+    url: 'https://godotengine.org/'
   }
 ];
