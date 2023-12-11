@@ -1610,7 +1610,7 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/datadog.svg',
     url: 'https://www.datadoghq.com/'
-   },
+  },
   {
     id: 231,
     title: 'Randevum',
@@ -1618,4 +1618,102 @@ export const svgs: iSVG[] = [
     route: '/library/randevum.svg',
     url: 'https://www.randevum.co'
   },
+  {
+    id: 95775,
+    title: 'Affinity Designer',
+    category: 'Design',
+    route: '/library/affinity_designer.svg',
+    url: 'https://affinity.serif.com/en-us/designer/'
+  },
+  {
+    id: 44448,
+    title: 'Affinity Photo',
+    category: 'Software',
+    route: '/library/affinity_photo.svg',
+    url: 'https://affinity.serif.com/en-us/photo/'
+  },
+  {
+    id: 39170,
+    title: 'Affinity Publisher',
+    category: 'Software',
+    route: '/library/affinity_publisher.svg',
+    url: 'https://affinity.serif.com/en-us/publisher/'
+  },
+  {
+    id: 24525,
+    title: 'Roblox',
+    category: 'Software',
+    route: '/library/roblox.svg',
+    url: 'https://www.roblox.com/'
+  },
+  {
+    id: 68067,
+    title: 'Stately.ai',
+    category: 'Software',
+    route: '/library/stately.svg',
+    url: 'https://stately.ai/'
+  },
+  {
+    id: 68068,
+    title: 'XState',
+    category: 'Library',
+    route: '/library/xstate.svg',
+    url: 'https://github.com/statelyai/xstate'
+  },
+  {
+    id: 232,
+    title: 'Hashnode',
+    category: 'Social',
+    route: '/library/hashnode.svg',
+    url: 'https://hashnode.com'
+  },
+  {
+    id: 69114,
+    title: 'Rowy',
+    category: 'CMS',
+    route: '/library/rowy.svg',
+    url: 'https://www.rowy.io/'
+  },
+  {
+    id: 12251,
+    title: 'BuildShip',
+    category: 'AI',
+    route: '/library/buildship.svg',
+    url: 'https://buildship.com/'
+  },
+  {
+    id: 246480685059147554972,
+    title: 'Cal.com',
+    category: 'Software',
+    route: '/library/cal.svg',
+    url: 'https://cal.com'
+  },
+  {
+    id: 706747866206488963651,
+    title: 'SST',
+    category: 'Framework',
+    route: '/library/sst.svg',
+    url: 'https://sst.dev/'
+  },
+  {
+    id: 2342453,
+    title: 'Documenso',
+    category: 'Software',
+    route: '/library/documenso.svg',
+    url: 'https://documenso.com'
+  },
+  {
+    id: 233,
+    title: 'Instatus',
+    category: 'Software',
+    route: '/library/instatus.svg',
+    url: 'https://instatus.com'
+  },
+  {
+    id: 6676113873388621,
+    title: 'Front',
+    category: 'Software',
+    route: '/library/front.svg',
+    url: 'https://front.com'
+  }
 ];
