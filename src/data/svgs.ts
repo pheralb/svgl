@@ -1575,5 +1575,12 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/hoppscotch.svg',
     url: 'https://hoppscotch.com'
+  },
+  {
+    id: 226,
+    title: 'Dub',
+    category: 'Software',
+    route: '/library/dub.svg',
+    url: 'https://dub.co'
   }
 ];
