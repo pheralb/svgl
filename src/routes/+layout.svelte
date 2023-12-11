@@ -26,11 +26,15 @@
   import Transition from '@/components/transition.svelte';
   import Container from '@/components/container.svelte';
   import Theme from '@/components/theme.svelte';
+
+  // Layout:
+  import Navbar from '@/components/navbar.svelte';
 </script>
 
+<Navbar />
 <main>
-  <nav
-    class="z-50 w-full overflow-y-auto overflow-x-hidden border-b border-neutral-300 dark:border-neutral-800 md:fixed md:left-0 md:top-0 md:h-full md:w-60 md:border-none md:pb-10"
+  <aside
+    class="z-50 w-full overflow-y-auto overflow-x-hidden border-b border-neutral-300 dark:border-neutral-800 md:fixed md:left-0 md:h-full md:w-60 md:border-none md:pb-10"
   >
     <div class="px-6 py-6">
       <div class="mb-3 border-b border-neutral-300 pb-3 dark:border-neutral-700/40">
@@ -117,7 +121,7 @@
         </div>
       </a>
     </div>
-  </nav>
+  </aside>
   <div class="py-2 md:ml-60 md:py-6">
     {#if data.pathname !== '/'}
       <Container>
