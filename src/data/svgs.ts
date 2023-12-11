@@ -1746,7 +1746,7 @@ export const svgs: iSVG[] = [
   },
   {
     id: 907583,
-    title: 'Mathlab',
+    title: 'matlab',
     category: 'Language',
     route: '/library/matlab.svg',
     url: 'https://www.mathworks.com/products/matlab.html'
