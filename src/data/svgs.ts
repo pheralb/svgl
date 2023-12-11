@@ -1701,5 +1701,12 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/documenso.svg',
     url: 'https://documenso.com'
+  },
+  {
+    id: 6676113873388621,
+    title: 'Front',
+    category: 'Software',
+    route: '/library/front.svg',
+    url: 'https://front.com'
   }
 ];
