@@ -1589,5 +1589,12 @@ export const svgs: iSVG[] = [
     category: 'Browser',
     route: '/library/opera.svg',
     url: 'https://www.opera.com'
+  },
+  {
+    id: 228,
+    title: 'Randevum',
+    category: 'Software',
+    route: '/library/radenvum.svg',
+    url: 'https://www.randevum.co'
   }
 ];
