@@ -1715,5 +1715,12 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/front.svg',
     url: 'https://front.com'
+  },
+  {
+    id: 473836,
+    title: 'Monero',
+    category: 'Crypto',
+    route: '/library/monero.svg',
+    url: 'https://www.getmonero.org/'
   }
 ];
