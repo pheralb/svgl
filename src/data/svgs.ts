@@ -1701,5 +1701,12 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/documenso.svg',
     url: 'https://documenso.com'
-  }
+  },
+  {
+    id: 233,
+    title: 'Instatus',
+    category: 'Software',
+    route: '/library/instatus.svg',
+    url: 'https://instatus.com'
+  },
 ];
