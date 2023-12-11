@@ -85,7 +85,7 @@ yarn install
 
 ```json
 {
-  "id": 28NcjLCRGMGz,
+  "id": "28NcjLCRGMGz",
   "title": "Title",
   "category": "Category",
   "route": "/library/your_logo.svg",
