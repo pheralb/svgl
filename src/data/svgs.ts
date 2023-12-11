@@ -1619,42 +1619,42 @@ export const svgs: iSVG[] = [
     url: 'https://www.randevum.co'
   },
   {
-    id: 68067,
+    id: 232,
     title: 'Stately.ai',
     category: 'Software',
     route: '/library/stately.svg',
     url: 'https://stately.ai/'
   },
   {
-    id: 68068,
+    id: 233,
     title: 'XState',
     category: 'Library',
     route: '/library/xstate.svg',
     url: 'https://github.com/statelyai/xstate'
   },
  {
-    id: 232,
+    id: 234,
     title: 'Hashnode',
     category: 'Social',
     route: '/library/hashnode.svg',
     url: 'https://hashnode.com'
   },
   {
-    id: 69114,
+    id: 235,
     title: 'Rowy',
     category: 'CMS',
     route: '/library/rowy.svg',
     url: 'https://www.rowy.io/'
   },
   {
-    id: 12251,
+    id: 236,
     title: 'BuildShip',
     category: 'AI',
     route: '/library/buildship.svg',
     url: 'https://buildship.com/'
  },
    {
-    id: 246480685059147554972,
+    id: 237,
     title: 'Cal.com',
     category: 'Software',
     route: '/library/cal.svg',
