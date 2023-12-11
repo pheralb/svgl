@@ -1715,5 +1715,12 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/front.svg',
     url: 'https://front.com'
+  },
+  {
+    id: 775133760594,
+    title: 'Axiom',
+    category: 'Software',
+    route: '/library/axiom.svg',
+    url: 'https://axiom.co/'
   }
 ];
