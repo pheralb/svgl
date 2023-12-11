@@ -230,7 +230,7 @@ export const svgs: iSVG[] = [
     title: 'Angular',
     category: 'Framework',
     route: '/library/angular.svg',
-    url: 'https://angular.io/'
+    url: 'https://angular.dev/'
   },
   {
     id: 34,
@@ -1561,5 +1561,12 @@ export const svgs: iSVG[] = [
     category: 'Design',
     route: '/library/premiere.svg',
     url: 'https://x.com'
+  },
+  {
+    id: 224,
+    title: 'VK',
+    category: 'Social',
+    route: '/library/vk.svg',
+    url: 'https://vk.com'
   }
 ];
