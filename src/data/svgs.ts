@@ -1578,20 +1578,34 @@ export const svgs: iSVG[] = [
   },
   {
     id: 226,
+    title: 'Dub',
+    category: 'Software',
+    route: '/library/dub.svg',
+    url: 'https://dub.co'
+  },
+  {
+    id: 227,
+    title: 'Opera',
+    category: 'Browser',
+    route: '/library/opera.svg',
+    url: 'https://www.opera.com'
+  },
+  {
+    id: 228,
     title: 'Unreal Engine',
     category: 'Software',
     route: '/library/unreal_engine.svg',
     url: 'https://www.unrealengine.com/'
   },
   {
-    id: 227,
+    id: 229,
     title: 'Godot Engine',
     category: 'Software',
     route: '/library/godot_engine.svg',
     url: 'https://godotengine.org/'
   },
   {
-    id: 228,
+    id: 230,
     title: 'Datadog',
     category: 'Software',
     route: '/library/datadog.svg',
