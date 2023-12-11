@@ -1709,4 +1709,11 @@ export const svgs: iSVG[] = [
     route: '/library/instatus.svg',
     url: 'https://instatus.com'
   },
+  {
+    id: 6676113873388621,
+    title: 'Front',
+    category: 'Software',
+    route: '/library/front.svg',
+    url: 'https://front.com'
+  }
 ];
