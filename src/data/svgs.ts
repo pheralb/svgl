@@ -1618,4 +1618,11 @@ export const svgs: iSVG[] = [
     route: '/library/randevum.svg',
     url: 'https://www.randevum.co'
   },
+  {
+    "id": 232,
+    "title": "Beacon",
+    "category": "Software",
+    "route": "/library/Beacon-Logo.svg",
+    "url": "https://www.beacon.com"
+  },
 ];
