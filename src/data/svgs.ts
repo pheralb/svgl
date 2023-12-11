@@ -1638,5 +1638,12 @@ export const svgs: iSVG[] = [
     category: 'AI',
     route: '/library/buildship.svg',
     url: 'https://buildship.com/'
- }
+ },
+   {
+    id: 246480685059147554972,
+    title: 'Cal.com',
+    category: 'Software',
+    route: '/library/cal.svg',
+    url: 'https://cal.com'
+  }  
 ];
