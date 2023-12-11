@@ -1582,5 +1582,12 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/dub.svg',
     url: 'https://dub.co'
+  },
+  {
+    id: 227,
+    title: 'Opera',
+    category: 'Browser',
+    route: '/library/opera.svg',
+    url: 'https://www.opera.com'
   }
 ];
