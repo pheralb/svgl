@@ -24,8 +24,11 @@
     "format": "prettier --plugin-search-dir . --write ."
   },
   "dependencies": {
+    "clsx": "2.0.0",
     "downloadjs": "1.4.7",
-    "svelte-sonner": "0.3.0"
+    "lucide-svelte": "0.294.0",
+    "svelte-sonner": "0.3.0",
+    "tailwind-merge": "2.1.0"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "2.1.0",
