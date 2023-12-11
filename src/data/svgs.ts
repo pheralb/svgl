@@ -230,7 +230,7 @@ export const svgs: iSVG[] = [
     title: 'Angular',
     category: 'Framework',
     route: '/library/angular.svg',
-    url: 'https://angular.io/'
+    url: 'https://angular.dev/'
   },
   {
     id: 34,
