@@ -1666,5 +1666,12 @@ export const svgs: iSVG[] = [
     category: 'Framework',
     route: '/library/sst.svg',
     url: 'https://sst.dev/'
+  },
+  {
+    id: 2342453,
+    title: 'Documenso',
+    category: 'Software',
+    route: '/library/documenso.svg',
+    url: 'https://documenso.com'
   }
 ];
