@@ -1619,6 +1619,34 @@ export const svgs: iSVG[] = [
     url: 'https://www.randevum.co'
   },
   {
+    id: 95775,
+    title: 'Affinity Designer',
+    category: 'Design',
+    route: '/library/affinity_designer.svg',
+    url: 'https://affinity.serif.com/en-us/designer/'
+  },
+  {
+    id: 44448,
+    title: 'Affinity Photo',
+    category: 'Software',
+    route: '/library/affinity_photo.svg',
+    url: 'https://affinity.serif.com/en-us/photo/'
+  },
+  {
+    id: 39170,
+    title: 'Affinity Publisher',
+    category: 'Software',
+    route: '/library/affinity_publisher.svg',
+    url: 'https://affinity.serif.com/en-us/publisher/'
+  },
+  {
+    id: 24525,
+    title: 'Roblox',
+    category: 'Software',
+    route: '/library/roblox.svg',
+    url: 'https://www.roblox.com/'
+  },
+  {
     id: 68067,
     title: 'Stately.ai',
     category: 'Software',
