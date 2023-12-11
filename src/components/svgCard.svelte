@@ -62,7 +62,26 @@
       <button
         title="Copy to clipboard"
         on:click={() => {
-          copyToClipboard(svgInfo.route);
+          const svgHasTheme = typeof svgInfo.route !== 'string';
+
+          if (!svgHasTheme) {
+            copyToClipboard(
+              typeof svgInfo.route === 'string'
+                ? svgInfo.route
+                : "Something went wrong. Couldn't copy the SVG."
+            );
+            return;
+          }
+
+          const dark = document.documentElement.classList.contains('dark');
+
+          copyToClipboard(
+            typeof svgInfo.route !== 'string'
+              ? dark
+                ? svgInfo.route.dark
+                : svgInfo.route.light
+              : svgInfo.route
+          );
         }}
         class="flex items-center space-x-2 rounded-md p-2 duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700/40"
       >
