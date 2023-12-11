@@ -1610,5 +1610,13 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/datadog.svg',
     url: 'https://www.datadoghq.com/'
+   },
+  {
+    id: 231,
+    title: 'Randevum',
+    category: 'Software',
+    route: '/library/randevum.svg',
+    url: 'https://www.randevum.co'
+  },
   }
 ];
