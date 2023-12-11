@@ -1610,7 +1610,7 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/datadog.svg',
     url: 'https://www.datadoghq.com/'
-   },
+  },
   {
     id: 231,
     title: 'Randevum',
@@ -1618,18 +1618,25 @@ export const svgs: iSVG[] = [
     route: '/library/randevum.svg',
     url: 'https://www.randevum.co'
   },
- {
+  {
     id: 232,
     title: 'Hashnode',
     category: 'Social',
     route: '/library/hashnode.svg',
     url: 'https://hashnode.com'
   },
-   {
+  {
     id: 246480685059147554972,
     title: 'Cal.com',
     category: 'Software',
     route: '/library/cal.svg',
     url: 'https://cal.com'
-  }  
+  },
+  {
+    id: 234,
+    title: 'Documenso',
+    category: 'Software',
+    route: '/library/documenso.svg',
+    url: 'https://documenso.com'
+  }
 ];
