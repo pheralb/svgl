@@ -1624,5 +1624,12 @@ export const svgs: iSVG[] = [
     category: 'Social',
     route: '/library/hashnode.svg',
     url: 'https://hashnode.com'
-  }
+  },
+   {
+    id: 246480685059147554972,
+    title: 'Cal.com',
+    category: 'Software',
+    route: '/library/cal.svg',
+    url: 'https://cal.com'
+  }  
 ];
