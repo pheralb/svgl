@@ -80,9 +80,12 @@ yarn install
 
 4. Go to the [**`src/data/svgs.ts`**](https://github.com/pheralb/svgl/blob/main/src/data/svgs.ts) and add the information about your logo, following the structure:
 
+> [!IMPORTANT]
+> To avoid conflicts with other svgs IDs, generate a short ``uuid`` for the id: [Generate](https://generateuuid.online/short-uuid).
+
 ```json
 {
-  "id": 1,
+  "id": "28NcjLCRGMGz",
   "title": "Title",
   "category": "Category",
   "route": "/library/your_logo.svg",
