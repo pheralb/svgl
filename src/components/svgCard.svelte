@@ -41,7 +41,16 @@
 
 <CardSpotlight>
   <div class="flex flex-col items-center justify-center rounded-md p-4">
-    <img src={svgInfo.route} alt={svgInfo.title} class="mb-4 mt-2 h-10" />
+    <img
+      class="hidden dark:block mb-4 mt-2 h-10"
+      src={typeof svgInfo.route !== 'string' ? svgInfo.route.dark : svgInfo.route}
+      alt={svgInfo.title}
+    />
+    <img
+      class="block dark:hidden mb-4 mt-2 h-10"
+      src={typeof svgInfo.route !== 'string' ? svgInfo.route.light : svgInfo.route}
+      alt={svgInfo.title}
+    />
     <div class="mb-3 flex flex-col items-center justify-center">
       <p class="truncate text-[15px] font-medium">{svgInfo.title}</p>
       <a
@@ -62,7 +71,7 @@
       <button
         title="Download"
         on:click={() => {
-          downloadSvg(svgInfo.route);
+          downloadSvg(typeof svgInfo.route !== 'string' ? svgInfo.route.dark : svgInfo.route);
         }}
         class="flex items-center space-x-2 rounded-md p-2 duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700/40"
       >

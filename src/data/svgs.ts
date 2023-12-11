@@ -1720,7 +1720,10 @@ export const svgs: iSVG[] = [
     id: 775133760594,
     title: 'Axiom',
     category: 'Software',
-    route: '/library/axiom.svg',
+    route: {
+      dark: '/library/axiom-dark.svg',
+      light: '/library/axiom-light.svg'
+    },
     url: 'https://axiom.co/'
   }
 ];
