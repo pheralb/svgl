@@ -1632,7 +1632,7 @@ export const svgs: iSVG[] = [
     route: '/library/xstate.svg',
     url: 'https://github.com/statelyai/xstate'
   },
- {
+  {
     id: 232,
     title: 'Hashnode',
     category: 'Social',
@@ -1652,13 +1652,20 @@ export const svgs: iSVG[] = [
     category: 'AI',
     route: '/library/buildship.svg',
     url: 'https://buildship.com/'
- },
-   {
+  },
+  {
     id: 246480685059147554972,
     title: 'Cal.com',
     category: 'Software',
     route: '/library/cal.svg',
     url: 'https://cal.com'
+  },
+  {
+    id: 706747866206488963651,
+    title: 'SST',
+    category: 'Framework',
+    route: '/library/sst.svg',
+    url: 'https://sst.dev/'
   },
   {
     id: 2342453,
