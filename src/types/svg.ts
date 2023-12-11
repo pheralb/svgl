@@ -1,7 +1,7 @@
 import type { tCategory } from './categories';
 
 export interface iSVG {
-  id: number | string;
+  id: number;
   title: string;
   category: tCategory;
   route: string;
