@@ -1592,30 +1592,59 @@ export const svgs: iSVG[] = [
   },
   {
     id: 228,
+    title: 'Unreal Engine',
+    category: 'Software',
+    route: '/library/unreal_engine.svg',
+    url: 'https://www.unrealengine.com/'
+  },
+  {
+    id: 229,
+    title: 'Godot Engine',
+    category: 'Software',
+    route: '/library/godot_engine.svg',
+    url: 'https://godotengine.org/'
+  },
+  {
+    id: 230,
+    title: 'Datadog',
+    category: 'Software',
+    route: '/library/datadog.svg',
+    url: 'https://www.datadoghq.com/'
+   },
+  {
+    id: 231,
+    title: 'Randevum',
+    category: 'Software',
+    route: '/library/randevum.svg',
+    url: 'https://www.randevum.co'
+  },
+  {
+    id: 232,
     title: 'Chromium',
     category: 'Browser',
     route: '/library/chromium.svg',
     url: 'https://www.chromium.org'
   },
   {
-    id: 229,
+    id: 233,
     title: 'Edge',
     category: 'Browser',
     route: '/library/edge.svg',
     url: 'https://www.microsoft.com/en-us/edge'
   },
   {
-    id: 229,
+    id: 234,
     title: 'Safari',
     category: 'Browser',
     route: '/library/safari.svg',
     url: 'https://www.apple.com/safari'
   },
   {
-    id: 230,
+    id: 235,
     title: 'Vivaldi',
     category: 'Browser',
     route: '/library/vivaldi.svg',
     url: 'https://vivaldi.com'
   }
+
 ];
