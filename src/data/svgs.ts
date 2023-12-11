@@ -1592,9 +1592,30 @@ export const svgs: iSVG[] = [
   },
   {
     id: 228,
+    title: 'Unreal Engine',
+    category: 'Software',
+    route: '/library/unreal_engine.svg',
+    url: 'https://www.unrealengine.com/'
+  },
+  {
+    id: 229,
+    title: 'Godot Engine',
+    category: 'Software',
+    route: '/library/godot_engine.svg',
+    url: 'https://godotengine.org/'
+  },
+  {
+    id: 230,
+    title: 'Datadog',
+    category: 'Software',
+    route: '/library/datadog.svg',
+    url: 'https://www.datadoghq.com/'
+   },
+  {
+    id: 231,
     title: 'Randevum',
     category: 'Software',
     route: '/library/randevum.svg',
     url: 'https://www.randevum.co'
-  }
+  },
 ];
