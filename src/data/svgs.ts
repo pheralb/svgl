@@ -1748,7 +1748,7 @@ export const svgs: iSVG[] = [
     id: 907583,
     title: 'Mathlab',
     category: 'Language',
-    route: '/library/mathlab.svg',
+    route: '/library/matlab.svg',
     url: 'https://www.mathworks.com/products/matlab.html'
   },
   {
@@ -1771,5 +1771,5 @@ export const svgs: iSVG[] = [
     category: 'Language',
     route: '/library/zig.svg',
     url: 'https://ziglang.org/'
-  },
+  }
 ];
