@@ -1618,4 +1618,11 @@ export const svgs: iSVG[] = [
     route: '/library/randevum.svg',
     url: 'https://www.randevum.co'
   },
+ {
+    id: 232,
+    title: 'Hashnode',
+    category: 'Social',
+    route: '/library/hashnode.svg',
+    url: 'https://hashnode.com'
+  }
 ];
