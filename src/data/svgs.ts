@@ -1592,6 +1592,13 @@ export const svgs: iSVG[] = [
   },
   {
     id: 228,
+    title: 'Salesforce',
+    category: 'Software',
+    route: '/library/salesforce.svg',
+    url: 'https://www.salesforce.com'
+  },
+  {
+    id: 4929293,
     title: 'Unreal Engine',
     category: 'Software',
     route: '/library/unreal_engine.svg',
@@ -1610,7 +1617,7 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/datadog.svg',
     url: 'https://www.datadoghq.com/'
-   },
+  },
   {
     id: 231,
     title: 'Randevum',
@@ -1625,4 +1632,182 @@ export const svgs: iSVG[] = [
     "route": "/library/Beacon-Logo.svg",
     "url": "https://www.beacon.com"
   },
+  {
+    id: 95775,
+    title: 'Affinity Designer',
+    category: 'Design',
+    route: '/library/affinity_designer.svg',
+    url: 'https://affinity.serif.com/en-us/designer/'
+  },
+  {
+    id: 44448,
+    title: 'Affinity Photo',
+    category: 'Software',
+    route: '/library/affinity_photo.svg',
+    url: 'https://affinity.serif.com/en-us/photo/'
+  },
+  {
+    id: 39170,
+    title: 'Affinity Publisher',
+    category: 'Software',
+    route: '/library/affinity_publisher.svg',
+    url: 'https://affinity.serif.com/en-us/publisher/'
+  },
+  {
+    id: 24525,
+    title: 'Roblox',
+    category: 'Software',
+    route: '/library/roblox.svg',
+    url: 'https://www.roblox.com/'
+  },
+  {
+    id: 68067,
+    title: 'Stately.ai',
+    category: 'Software',
+    route: '/library/stately.svg',
+    url: 'https://stately.ai/'
+  },
+  {
+    id: 233,
+    title: 'XState',
+    category: 'Library',
+    route: '/library/xstate.svg',
+    url: 'https://github.com/statelyai/xstate'
+  },
+  {
+    id: 232,
+    title: 'Hashnode',
+    category: 'Social',
+    route: '/library/hashnode.svg',
+    url: 'https://hashnode.com'
+  },
+  {
+    id: 235,
+    title: 'Rowy',
+    category: 'CMS',
+    route: '/library/rowy.svg',
+    url: 'https://www.rowy.io/'
+  },
+  {
+    id: 236,
+    title: 'BuildShip',
+    category: 'AI',
+    route: '/library/buildship.svg',
+    url: 'https://buildship.com/'
+  },
+  {
+    id: 246480685059147554972,
+    title: 'Cal.com',
+    category: 'Software',
+    route: '/library/cal.svg',
+    url: 'https://cal.com'
+  },
+  {
+    id: 238,
+    title: 'Cursor AI',
+    category: 'Software',
+    route: '/library/cursor.svg',
+    url: 'https://cursor.sh/'
+  },
+  {
+    id: 239,
+    title: 'Calendly',
+    category: 'Software',
+    route: '/library/calendly.svg',
+    url: 'https://calendly.com/'
+  },
+  {
+    id: 240,
+    title: 'Mintlify',
+    category: 'Software',
+    route: '/library/mintlify.svg',
+    url: 'https://mintlify.com/'
+  },
+  {
+    id: 241,
+    title: 'Patreon',
+    category: 'Software',
+    route: '/library/patreon.svg',
+    url: 'https://www.patreon.com/'
+  },
+  {
+    id: 242,
+    title: 'Peerlist',
+    category: 'Social',
+    route: '/library/peerlist.svg',
+    url: 'https://www.peerlist.io/'
+  },
+  {
+    id: 243,
+    title: 'Product Hunt',
+    category: 'Software',
+    route: '/library/producthunt.svg',
+    url: 'https://www.producthunt.com/'
+  },
+  {
+    id: 244,
+    title: 'Remotion',
+    category: 'Framework',
+    route: '/library/remotion.svg',
+    url: 'https://www.remotion.dev/'
+  },
+  {
+    id: 245,
+    title: 'Warp',
+    category: 'Software',
+    route: '/library/warp.svg',
+    url: 'https://www.warp.dev/'
+  },
+  {
+    id: 706747866206488963651,
+    title: 'SST',
+    category: 'Framework',
+    route: '/library/sst.svg',
+    url: 'https://sst.dev/'
+  },
+  {
+    id: 2342453,
+    title: 'Documenso',
+    category: 'Software',
+    route: '/library/documenso.svg',
+    url: 'https://documenso.com'
+  },
+  {
+    id: 233,
+    title: 'Instatus',
+    category: 'Software',
+    route: '/library/instatus.svg',
+    url: 'https://instatus.com'
+  },
+  {
+    id: 6676113873388621,
+    title: 'Front',
+    category: 'Software',
+    route: '/library/front.svg',
+    url: 'https://front.com'
+  },
+  {
+    id: 775133760594,
+    title: 'Axiom',
+    category: 'Software',
+    route: {
+      dark: '/library/axiom-dark.svg',
+      light: '/library/axiom-light.svg'
+    },
+    url: 'https://axiom.co/'
+  },
+  {
+    id: 382900874177765,
+    title: 'ArtisanLabs',
+    category: 'Software',
+    route: '/library/ArtisanLabs.svg',
+    url: 'https://artisanlabs.io'
+  },
+  {
+    id: 14839,
+    title: 'Django',
+    category: 'Framework',
+    route: '/library/django.svg',
+    url: 'https://www.djangoproject.com/'
+  }
 ];
