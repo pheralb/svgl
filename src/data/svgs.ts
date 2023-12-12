@@ -1592,6 +1592,13 @@ export const svgs: iSVG[] = [
   },
   {
     id: 228,
+    title: 'Salesforce',
+    category: 'Software',
+    route: '/library/salesforce.svg',
+    url: 'https://www.salesforce.com'
+  },
+  {
+    id: 4929293,
     title: 'Unreal Engine',
     category: 'Software',
     route: '/library/unreal_engine.svg',
@@ -1617,6 +1624,13 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/randevum.svg',
     url: 'https://www.randevum.co'
+  },
+  {
+    id: 232,
+    title: 'Beacon',
+    category: 'Software',
+    route: '/library/Beacon-Logo.svg',
+    url: 'https://www.beacon.com'
   },
   {
     id: 95775,
@@ -1654,7 +1668,7 @@ export const svgs: iSVG[] = [
     url: 'https://stately.ai/'
   },
   {
-    id: 68068,
+    id: 233,
     title: 'XState',
     category: 'Library',
     route: '/library/xstate.svg',
@@ -1668,14 +1682,14 @@ export const svgs: iSVG[] = [
     url: 'https://hashnode.com'
   },
   {
-    id: 69114,
+    id: 235,
     title: 'Rowy',
     category: 'CMS',
     route: '/library/rowy.svg',
     url: 'https://www.rowy.io/'
   },
   {
-    id: 12251,
+    id: 236,
     title: 'BuildShip',
     category: 'AI',
     route: '/library/buildship.svg',
@@ -1687,6 +1701,62 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/cal.svg',
     url: 'https://cal.com'
+  },
+  {
+    id: 238,
+    title: 'Cursor AI',
+    category: 'Software',
+    route: '/library/cursor.svg',
+    url: 'https://cursor.sh/'
+  },
+  {
+    id: 239,
+    title: 'Calendly',
+    category: 'Software',
+    route: '/library/calendly.svg',
+    url: 'https://calendly.com/'
+  },
+  {
+    id: 240,
+    title: 'Mintlify',
+    category: 'Software',
+    route: '/library/mintlify.svg',
+    url: 'https://mintlify.com/'
+  },
+  {
+    id: 241,
+    title: 'Patreon',
+    category: 'Software',
+    route: '/library/patreon.svg',
+    url: 'https://www.patreon.com/'
+  },
+  {
+    id: 242,
+    title: 'Peerlist',
+    category: 'Social',
+    route: '/library/peerlist.svg',
+    url: 'https://www.peerlist.io/'
+  },
+  {
+    id: 243,
+    title: 'Product Hunt',
+    category: 'Software',
+    route: '/library/producthunt.svg',
+    url: 'https://www.producthunt.com/'
+  },
+  {
+    id: 244,
+    title: 'Remotion',
+    category: 'Framework',
+    route: '/library/remotion.svg',
+    url: 'https://www.remotion.dev/'
+  },
+  {
+    id: 245,
+    title: 'Warp',
+    category: 'Software',
+    route: '/library/warp.svg',
+    url: 'https://www.warp.dev/'
   },
   {
     id: 706747866206488963651,
@@ -1771,5 +1841,74 @@ export const svgs: iSVG[] = [
     category: 'Language',
     route: '/library/zig.svg',
     url: 'https://ziglang.org/'
+  },
+    {
+    id: 233,
+    title: 'Instatus',
+    category: 'Software',
+    route: '/library/instatus.svg',
+    url: 'https://instatus.com'
+  },
+  {
+    id: 6676113873388621,
+    title: 'Front',
+    category: 'Software',
+    route: '/library/front.svg',
+    url: 'https://front.com'
+  },
+  {
+    id: 473836,
+    title: 'Monero',
+    category: 'Crypto',
+    route: '/library/monero.svg',
+    url: 'https://www.getmonero.org/'
+  },
+  {
+    id: 775133760594,
+    title: 'Axiom',
+    category: 'Software',
+    route: {
+      dark: '/library/axiom-dark.svg',
+      light: '/library/axiom-light.svg'
+    },
+    url: 'https://axiom.co/'
+  },
+  {
+    id: 382900874177765,
+    title: 'ArtisanLabs',
+    category: 'Software',
+    route: '/library/ArtisanLabs.svg',
+    url: 'https://artisanlabs.io'
+  },
+  {
+    id: 14839,
+    title: 'Django',
+    category: 'Framework',
+    route: '/library/django.svg',
+    url: 'https://www.djangoproject.com/'
+  },
+  {
+    id: 246,
+    title: 'Zeabur',
+    category: 'Hosting',
+    route: {
+      light: '/library/zeabur-light.svg',
+      dark: '/library/zeabur-dark.svg'
+    },
+    url: 'https://zeabur.com/'
+  },
+  {
+    id: 247,
+    title: 'MetaMask',
+    category: 'Crypto',
+    route: '/library/metamask.svg',
+    url: 'https://metamask.io/'
+  },
+  {
+    id: 248,
+    title: 'shadcn/ui',
+    category: 'Library',
+    route: '/library/shadcn-ui.svg',
+    url: 'https://ui.shadcn.com/'
   }
 ];
