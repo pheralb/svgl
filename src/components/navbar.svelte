@@ -8,12 +8,12 @@
     {
       name: 'Twitter',
       url: 'https://twitter.com/pheralb_',
-      icon: GithubIcon
+      icon: TwitterIcon
     },
     {
       name: 'GitHub',
       url: 'https://github.com/pheralb/svgl',
-      icon: TwitterIcon
+      icon: GithubIcon
     }
   ];
 
