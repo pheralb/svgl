@@ -30,14 +30,14 @@ body::-webkit-scrollbar-thumb {
   background: var(--sb-thumb-color);
 }
 
-nav::-webkit-scrollbar {
+aside::-webkit-scrollbar {
   width: var(--sb-size);
 }
 
-nav::-webkit-scrollbar-track {
+aside::-webkit-scrollbar-track {
   background: var(--sb-track-color);
 }
 
-nav::-webkit-scrollbar-thumb {
+aside::-webkit-scrollbar-thumb {
   background: var(--sb-thumb-color);
 }
