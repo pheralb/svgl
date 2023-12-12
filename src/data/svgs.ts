@@ -2085,5 +2085,12 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/linux.svg',
     url: 'https://www.linux.org/'
+  },
+  {
+    id: 253,
+    title: 'Ubuntu',
+    category: 'Software',
+    route: '/library/ubuntu.svg',
+    url: 'https://ubuntu.com/'
   }
 ];
