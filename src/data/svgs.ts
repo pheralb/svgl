@@ -1592,6 +1592,13 @@ export const svgs: iSVG[] = [
   },
   {
     id: 228,
+    title: 'Salesforce',
+    category: 'Software',
+    route: '/library/salesforce.svg',
+    url: 'https://www.salesforce.com'
+  },
+  {
+    id: 4929293,
     title: 'Unreal Engine',
     category: 'Software',
     route: '/library/unreal_engine.svg',
