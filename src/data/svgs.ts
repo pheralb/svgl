@@ -2085,5 +2085,40 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/linux.svg',
     url: 'https://www.linux.org/'
+  },
+  {
+    id: 5876149632,
+    title: 'XD',
+    category: 'Design',
+    route: '/library/adobe-xd.svg',
+    url: 'https://helpx.adobe.com/xd/get-started.html'
+  },
+  {
+    id: 5882201288,
+    title: 'Axure',
+    category: 'Design',
+    route: '/library/axure.svg',
+    url: 'https://www.axure.com/'
+  },
+  {
+    id: 6841462408,
+    title: 'Penpot',
+    category: 'Design',
+    route: '/library/penpot.svg',
+    url: 'https://penpot.app/'
+  },
+  {
+    id: 6481118154,
+    title: 'Skecth',
+    category: 'Design',
+    route: '/library/sketch.svg',
+    url: 'https://www.sketch.com/'
+  },
+  {
+    id: 5822536555,
+    title: 'Gimp',
+    category: 'Design',
+    route: '/library/gimp.svg',
+    url: 'https://www.gimp.org/'
   }
 ];
