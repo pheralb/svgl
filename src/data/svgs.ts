@@ -1626,6 +1626,13 @@ export const svgs: iSVG[] = [
     url: 'https://www.randevum.co'
   },
   {
+    "id": 232,
+    "title": "Beacon",
+    "category": "Software",
+    "route": "/library/Beacon-Logo.svg",
+    "url": "https://www.beacon.com"
+  },
+  {
     id: 95775,
     title: 'Affinity Designer',
     category: 'Design',
