@@ -1805,7 +1805,7 @@ export const svgs: iSVG[] = [
     url: 'https://buildship.com/'
   },
   {
-    id: 246480685059147554972,
+    id: 2464806,
     title: 'Cal.com',
     category: 'Software',
     route: '/library/cal.svg',
@@ -1878,7 +1878,7 @@ export const svgs: iSVG[] = [
     url: 'https://www.warp.dev/'
   },
   {
-    id: 706747866206488963651,
+    id: 7067478662,
     title: 'SST',
     category: 'Framework',
     route: '/library/sst.svg',
