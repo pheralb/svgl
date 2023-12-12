@@ -1722,5 +1722,19 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/axiom.svg',
     url: 'https://axiom.co/'
+  },
+  {
+    id: 382900874177765,
+    title: 'ArtisanLabs',
+    category: 'Software',
+    route: '/library/ArtisanLabs.svg',
+    url: 'https://artisanlabs.io'
+  },
+  {
+    id: 14839,
+    title: 'Django',
+    category: 'Framework',
+    route: '/library/django.svg',
+    url: 'https://www.djangoproject.com/'
   }
 ];
