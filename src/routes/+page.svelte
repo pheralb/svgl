@@ -11,6 +11,7 @@
   import SvgCard from '@/components/svgCard.svelte';
   import Grid from '@/components/grid.svelte';
   import NotFound from '@/components/notFound.svelte';
+  import { cn } from '@/utils/cn';
 
   // Search:
   let searchTerm = '';
@@ -39,13 +40,14 @@
   <title>A beautiful library with SVG logos - Svgl</title>
 </svelte:head>
 
+<Search
+  bind:searchTerm
+  on:input={searchSvgs}
+  clearSearch={() => clearSearch()}
+  placeholder={`Search ${filteredSvgs.length} logos...`}
+/>
+
 <Container>
-  <Search
-    bind:searchTerm
-    on:input={searchSvgs}
-    clearSearch={() => clearSearch()}
-    placeholder={`Search ${filteredSvgs.length} logos...`}
-  />
   <Grid>
     {#each filteredSvgs as svg}
       <SvgCard svgInfo={svg} />

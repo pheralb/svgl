@@ -13,7 +13,6 @@
 
   // Icons:
   import Heart from 'phosphor-svelte/lib/Heart';
-  import ArrowLeft from 'phosphor-svelte/lib/ArrowLeft';
   import { ArrowUpRight } from 'lucide-svelte';
 
   // Toaster:
@@ -21,7 +20,6 @@
 
   // Components for all pages:
   import Transition from '@/components/transition.svelte';
-  import Container from '@/components/container.svelte';
 
   // Layout:
   import Navbar from '@/components/navbar.svelte';
@@ -79,19 +77,7 @@
       </a>
     </div>
   </aside>
-  <div class="py-2 md:ml-56 md:py-2">
-    {#if data.pathname !== '/' && data.pathname !== 'directory'}
-      <Container>
-        <a href="/">
-          <div
-            class="flex items-center space-x-2 duration-100 hover:text-neutral-500 dark:text-neutral-400 dark:hover:text-white"
-          >
-            <ArrowLeft size={20} />
-            <span>View all</span>
-          </div>
-        </a>
-      </Container>
-    {/if}
+  <div class="md:ml-56 pb-6">
     <Transition pathname={data.pathname}>
       <slot />
     </Transition>
