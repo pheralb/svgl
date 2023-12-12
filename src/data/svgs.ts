@@ -2061,5 +2061,15 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/pinterest.svg',
     url: 'https://pinterest.com/'
+  },
+  {
+    id: 250,
+    title: 'Reflex',
+    category: 'Software',
+    route: {
+      light: '/library/reflex-dark.svg',
+      dark: '/library/reflex-light.svg'
+    },
+    url: 'https://reflex.dev/'
   }
 ];
