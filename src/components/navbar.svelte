@@ -46,8 +46,8 @@
       <a href="/">
         <div class="flex items-center space-x-2 hover:opacity-80 transition-opacity">
           <svelte:component this={Logo} />
-          <span class="text-[19px] font-medium tracking-wide">svgl</span>
-          <p class="text-neutral-500">v4.0.0</p>
+          <span class="text-[19px] font-medium tracking-wide hidden md:block">svgl</span>
+          <p class="text-neutral-500 hidden md:block">v4.0.0</p>
         </div>
       </a>
     </div>
