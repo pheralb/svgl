@@ -2071,5 +2071,12 @@ export const svgs: iSVG[] = [
       dark: '/library/reflex-light.svg'
     },
     url: 'https://reflex.dev/'
+  },
+  {
+    id: 250,
+    title: 'Stripe',
+    category: 'Software',
+    route: '/library/stripe.svg',
+    url: 'https://stripe.com/'
   }
 ];
