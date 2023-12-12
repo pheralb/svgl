@@ -1626,11 +1626,11 @@ export const svgs: iSVG[] = [
     url: 'https://www.randevum.co'
   },
   {
-    "id": 232,
-    "title": "Beacon",
-    "category": "Software",
-    "route": "/library/Beacon-Logo.svg",
-    "url": "https://www.beacon.com"
+    id: 232,
+    title: 'Beacon',
+    category: 'Software',
+    route: '/library/Beacon-Logo.svg',
+    url: 'https://www.beacon.com'
   },
   {
     id: 95775,
@@ -1816,5 +1816,26 @@ export const svgs: iSVG[] = [
     category: 'Framework',
     route: '/library/django.svg',
     url: 'https://www.djangoproject.com/'
+  },
+  {
+    id: 246,
+    title: 'Zeabur',
+    category: 'Hosting',
+    route: '/library/zeabur.svg',
+    url: 'https://zeabur.com/'
+  },
+  {
+    id: 247,
+    title: 'MetaMask',
+    category: 'Crypto',
+    route: '/library/metamask.svg',
+    url: 'https://metamask.io/'
+  },
+  {
+    id: 248,
+    title: 'shadcn/ui',
+    category: 'Library',
+    route: '/library/shadcn-ui.svg',
+    url: 'https://ui.shadcn.com/'
   }
 ];
