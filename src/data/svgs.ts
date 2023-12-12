@@ -1661,7 +1661,7 @@ export const svgs: iSVG[] = [
     url: 'https://stately.ai/'
   },
   {
-    id: 68068,
+    id: 233,
     title: 'XState',
     category: 'Library',
     route: '/library/xstate.svg',
@@ -1675,14 +1675,14 @@ export const svgs: iSVG[] = [
     url: 'https://hashnode.com'
   },
   {
-    id: 69114,
+    id: 235,
     title: 'Rowy',
     category: 'CMS',
     route: '/library/rowy.svg',
     url: 'https://www.rowy.io/'
   },
   {
-    id: 12251,
+    id: 236,
     title: 'BuildShip',
     category: 'AI',
     route: '/library/buildship.svg',
@@ -1694,6 +1694,62 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/cal.svg',
     url: 'https://cal.com'
+  },
+  {
+    id: 238,
+    title: 'Cursor AI',
+    category: 'Software',
+    route: '/library/cursor.svg',
+    url: 'https://cursor.sh/'
+  },
+  {
+    id: 239,
+    title: 'Calendly',
+    category: 'Software',
+    route: '/library/calendly.svg',
+    url: 'https://calendly.com/'
+  },
+  {
+    id: 240,
+    title: 'Mintlify',
+    category: 'Software',
+    route: '/library/mintlify.svg',
+    url: 'https://mintlify.com/'
+  },
+  {
+    id: 241,
+    title: 'Patreon',
+    category: 'Software',
+    route: '/library/patreon.svg',
+    url: 'https://www.patreon.com/'
+  },
+  {
+    id: 242,
+    title: 'Peerlist',
+    category: 'Social',
+    route: '/library/peerlist.svg',
+    url: 'https://www.peerlist.io/'
+  },
+  {
+    id: 243,
+    title: 'Product Hunt',
+    category: 'Software',
+    route: '/library/producthunt.svg',
+    url: 'https://www.producthunt.com/'
+  },
+  {
+    id: 244,
+    title: 'Remotion',
+    category: 'Framework',
+    route: '/library/remotion.svg',
+    url: 'https://www.remotion.dev/'
+  },
+  {
+    id: 245,
+    title: 'Warp',
+    category: 'Software',
+    route: '/library/warp.svg',
+    url: 'https://www.warp.dev/'
   },
   {
     id: 706747866206488963651,
