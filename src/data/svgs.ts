@@ -1717,6 +1717,13 @@ export const svgs: iSVG[] = [
     url: 'https://front.com'
   },
   {
+    id: 382900874177765,
+    title: 'ArtisanLabs',
+    category: 'Software',
+    route: '/library/ArtisanLabs.svg',
+    url: 'https://artisanlabs.io'
+  },
+  {
     id: 14839,
     title: 'Django',
     category: 'Framework',
