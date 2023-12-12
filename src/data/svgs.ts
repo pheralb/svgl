@@ -1627,6 +1627,34 @@ export const svgs: iSVG[] = [
   },
   {
     id: 232,
+    title: 'Chromium',
+    category: 'Browser',
+    route: '/library/chromium.svg',
+    url: 'https://www.chromium.org'
+  },
+  {
+    id: 233,
+    title: 'Edge',
+    category: 'Browser',
+    route: '/library/edge.svg',
+    url: 'https://www.microsoft.com/en-us/edge'
+  },
+  {
+    id: 234,
+    title: 'Safari',
+    category: 'Browser',
+    route: '/library/safari.svg',
+    url: 'https://www.apple.com/safari'
+  },
+  {
+    id: 235,
+    title: 'Vivaldi',
+    category: 'Browser',
+    route: '/library/vivaldi.svg',
+    url: 'https://vivaldi.com'
+  },
+  {
+    id: 293291,
     title: 'Beacon',
     category: 'Software',
     route: '/library/Beacon-Logo.svg',
