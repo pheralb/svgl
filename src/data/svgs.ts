@@ -1812,6 +1812,13 @@ export const svgs: iSVG[] = [
     url: 'https://cal.com'
   },
   {
+    id: 3452,
+    title: 'Midday.ai',
+    category: 'Software',
+    route: '/library/midday.svg',
+    url: 'https://midday.ai'
+  },
+  {
     id: 238,
     title: 'Cursor AI',
     category: 'Software',
