@@ -93,6 +93,21 @@ yarn install
 },
 ```
 
+or to support a different logo for light and dark themes:
+
+```json
+{
+  "id": 45248,
+  "title": "Title",
+  "category": "Category",
+  "route": {
+    "light": "/library/your_logo_light.svg",
+    "dark": "/library/your_logo_dark.svg"
+  },
+  "url": "Website"
+},
+```
+
 And create a pull request with your logo 🚀.
 
 ## ✌️ Contributing
