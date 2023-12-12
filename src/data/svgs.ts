@@ -2054,5 +2054,12 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/putio.svg',
     url: 'https://put.io/'
+  },
+  {
+    id: 249,
+    title: 'Pinterest',
+    category: 'Software',
+    route: '/library/pinterest.svg',
+    url: 'https://pinterest.com/'
   }
 ];
