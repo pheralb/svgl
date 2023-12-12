@@ -41,7 +41,7 @@
 
 <CardSpotlight>
   <div class="flex flex-col items-center justify-center rounded-md p-4">
-    <img src={svgInfo.route} alt={svgInfo.title} class="mb-4 mt-2 h-10" />
+    <img src={svgInfo.route} alt={svgInfo.title} class="mb-4 mt-2 h-10" loading="lazy" />
     <div class="mb-3 flex flex-col items-center justify-center">
       <p class="truncate text-[15px] font-medium">{svgInfo.title}</p>
       <a

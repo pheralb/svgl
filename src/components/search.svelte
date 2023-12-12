@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { SearchIcon } from 'lucide-svelte';
   export let searchTerm: string;
   export let placeholder: string = 'Search...';
   export let clearSearch: () => void;
@@ -9,7 +10,7 @@
 <div class="relative w-full">
   <div class="absolute inset-y-0 left-0 flex items-center pl-3 text-neutral-500">
     <div class="pointer-events-none">
-      <MagnifyingGlass size={18} weight={searchTerm ? 'duotone' : 'regular'} />
+      <SearchIcon size={18} strokeWidth={searchTerm ? 2.5 : 1.5} />
     </div>
   </div>
   <input
