@@ -1821,7 +1821,10 @@ export const svgs: iSVG[] = [
     id: 246,
     title: 'Zeabur',
     category: 'Hosting',
-    route: '/library/zeabur.svg',
+    route: {
+      light: '/library/zeabur-light.svg',
+      dark: '/library/zeabur-dark.svg'
+    },
     url: 'https://zeabur.com/'
   },
   {
