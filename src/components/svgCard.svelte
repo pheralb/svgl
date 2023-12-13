@@ -12,6 +12,7 @@
 
   // Main Card:
   import CardSpotlight from './cardSpotlight.svelte';
+  import { CopyIcon, DownloadIcon, LinkIcon } from 'lucide-svelte';
 
   // Props:
   export let svgInfo: iSVG;
@@ -39,6 +40,10 @@
       description: `${svgInfo.title} - ${svgInfo.category}`
     });
   };
+
+  // Icon Stroke & Size:
+  let iconStroke = 1.8;
+  let iconSize = 16;
 </script>
 
 <CardSpotlight>
@@ -91,7 +96,7 @@
         }}
         class="flex items-center space-x-2 rounded-md p-2 duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700/40"
       >
-        <Copy size={17} />
+        <CopyIcon size={iconSize} strokeWidth={iconStroke} />
       </button>
       <button
         title="Download"
@@ -119,7 +124,7 @@
         }}
         class="flex items-center space-x-2 rounded-md p-2 duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700/40"
       >
-        <DownloadSimple size={17} />
+        <DownloadIcon size={iconSize} strokeWidth={iconStroke} />
       </button>
       <a
         href={svgInfo.url}
@@ -127,7 +132,7 @@
         target="_blank"
         class="flex items-center space-x-2 rounded-md p-2 duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700/40"
       >
-        <Link size={17} />
+        <LinkIcon size={iconSize} strokeWidth={iconStroke} />
       </a>
     </div>
   </div>
