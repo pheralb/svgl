@@ -6,13 +6,13 @@
   :root {
     --sb-track-color: rgb(229 229 229 / 0.5);
     --sb-thumb-color: #d4d4d4;
-    --sb-size: 8px;
+    --sb-size: 10px;
   }
 
   .dark {
     --sb-track-color: #171717;
     --sb-thumb-color: #404040;
-    --sb-size: 8px;
+    --sb-size: 10px;
   }
 }
 

@@ -5,14 +5,10 @@
   import { MIMETYPE, getSvgContent } from '../utils/getSvgContent';
 
   // Icons:
-  import DownloadSimple from 'phosphor-svelte/lib/DownloadSimple';
-  import Copy from 'phosphor-svelte/lib/Copy';
-  import Link from 'phosphor-svelte/lib/Link';
-  import Star from 'phosphor-svelte/lib/Star';
+  import { CopyIcon, DownloadIcon, LinkIcon } from 'lucide-svelte';
 
   // Main Card:
   import CardSpotlight from './cardSpotlight.svelte';
-  import { CopyIcon, DownloadIcon, LinkIcon } from 'lucide-svelte';
 
   // Props:
   export let svgInfo: iSVG;
@@ -36,7 +32,6 @@
       await navigator.clipboard.writeText(content);
     }
     toast.success('Copied to clipboard!', {
-      icon: Star,
       description: `${svgInfo.title} - ${svgInfo.category}`
     });
   };
