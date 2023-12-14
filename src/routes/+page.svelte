@@ -2,8 +2,8 @@
   import type { iSVG } from '@/types/svg';
 
   // Get all svgs:
-  import { svgs } from '@/data/svgs';
-  const allSvgs = JSON.parse(JSON.stringify(svgs));
+  import { svgsData } from '@/data';
+  const allSvgs = JSON.parse(JSON.stringify(svgsData));
 
   // Components:
   import Search from '@/components/search.svelte';
@@ -22,7 +22,7 @@
 
   if (searchTerm.length === 0) {
     filteredSvgs = allSvgs.sort((a: iSVG, b: iSVG) => {
-      return b.id - a.id;
+      return b.id! - a.id!;
     });
   }
 
@@ -60,7 +60,7 @@
   // Sort by latest:
   const sortByLatest = () => {
     filteredSvgs = filteredSvgs.sort((a: iSVG, b: iSVG) => {
-      return b.id - a.id;
+      return b.id! - a.id!;
     });
   };
 </script>
