@@ -19,7 +19,7 @@
 
   if (searchTerm.length === 0) {
     filteredSvgs = svgsByCategory.sort((a: iSVG, b: iSVG) => {
-      return b.id - a.id;
+      return a.title.localeCompare(b.title);
     });
   }
 
