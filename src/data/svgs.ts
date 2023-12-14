@@ -1803,5 +1803,47 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/linux.svg',
     url: 'https://www.linux.org/'
+  },
+  {
+    title: 'XD',
+    category: 'Design',
+    route: '/library/adobe-xd.svg',
+    url: 'https://helpx.adobe.com/xd/get-started.html'
+  },
+  {
+    title: 'Axure',
+    category: 'Design',
+    route: '/library/axure.svg',
+    url: 'https://www.axure.com/'
+  },
+  {
+    title: 'Penpot',
+    category: 'Design',
+    route: '/library/penpot.svg',
+    url: 'https://penpot.app/'
+  },
+  {
+    title: 'Sketch',
+    category: 'Design',
+    route: '/library/sketch.svg',
+    url: 'https://www.sketch.com/'
+  },
+  {
+    title: 'Gimp',
+    category: 'Design',
+    route: '/library/gimp.svg',
+    url: 'https://www.gimp.org/'
+  },
+  {
+    title: 'Ubuntu',
+    category: 'Software',
+    route: '/library/ubuntu.svg',
+    url: 'https://ubuntu.com/'
+  },
+  {
+    title: 'Meta',
+    category: 'Social',
+    route: '/library/meta.svg',
+    url: 'https://meta.com/'
   }
 ];
