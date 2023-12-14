@@ -1,4 +1,4 @@
-name: 🛠️ Check
+name: 🔎 Check
 
 on:
   push:
@@ -11,33 +11,33 @@ on:
       - next
 
 jobs:
-  svelte-check:
+  svelte-build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
 
-      - name: Setup Node.js 18.x
-        uses: actions/setup-node@v3
+      - name: Setup pnpm 8
+        uses: pnpm/action-setup@v2
         with:
-          node-version: 18.x
+          version: 8
 
       - name: Install dependencies
-        run: npm install
+        run: pnpm install
 
-      - name: Run typecheck
-        run: npm run check
+      - name: Build App
+        run: pnpm build
   test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
 
-      - name: Setup Node.js 18.x
-        uses: actions/setup-node@v3
+      - name: Setup pnpm 8
+        uses: pnpm/action-setup@v2
         with:
-          node-version: 18.x
+          version: 8
 
       - name: Install dependencies
-        run: npm install
+        run: pnpm install
 
       - name: Run Vitest
-        run: npm run test
+        run: pnpm test
