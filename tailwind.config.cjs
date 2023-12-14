@@ -16,5 +16,13 @@ module.exports = {
       }
     }
   },
-  plugins: []
+  plugins: [
+    ({ addUtilities }) => {
+      addUtilities({
+        '.text-balance': {
+          'text-wrap': 'balance'
+        }
+      });
+    }
+  ]
 };

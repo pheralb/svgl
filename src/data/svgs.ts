@@ -2120,5 +2120,12 @@ export const svgs: iSVG[] = [
     category: 'Design',
     route: '/library/gimp.svg',
     url: 'https://www.gimp.org/'
+  },
+  {
+    id: 253,
+    title: 'Ubuntu',
+    category: 'Software',
+    route: '/library/ubuntu.svg',
+    url: 'https://ubuntu.com/'
   }
 ];
