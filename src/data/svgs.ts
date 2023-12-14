@@ -2109,7 +2109,7 @@ export const svgs: iSVG[] = [
   },
   {
     id: 6481118154,
-    title: 'Skecth',
+    title: 'Sketch',
     category: 'Design',
     route: '/library/sketch.svg',
     url: 'https://www.sketch.com/'
