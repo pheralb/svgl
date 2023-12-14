@@ -12,6 +12,8 @@
   import SvgCard from '@/components/svgCard.svelte';
   import Grid from '@/components/grid.svelte';
   import NotFound from '@/components/notFound.svelte';
+
+  // Icons:
   import { ArrowDownUpIcon, ArrowUpDownIcon } from 'lucide-svelte';
 
   let sorted: boolean = false;
@@ -61,7 +63,7 @@
 
   // Sort by latest:
   const sortByLatest = () => {
-    filteredSvgs = allSvgs.sort((a: iSVG, b: iSVG) => {
+    filteredSvgs = filteredSvgs.sort((a: iSVG, b: iSVG) => {
       return b.id! - a.id!;
     });
   };

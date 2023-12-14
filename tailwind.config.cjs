@@ -16,5 +16,14 @@ module.exports = {
       }
     }
   },
-  plugins: [require('@tailwindcss/typography')]
+  plugins: [
+    require('@tailwindcss/typography'),
+    ({ addUtilities }) => {
+      addUtilities({
+        '.text-balance': {
+          'text-wrap': 'balance'
+        }
+      });
+    }
+  ]
 };
