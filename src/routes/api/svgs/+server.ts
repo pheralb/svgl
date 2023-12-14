@@ -1,23 +1,16 @@
 import type { RequestEvent } from './$types';
-import type { iSVG } from '@/types/svg';
 
 import { error, json } from '@sveltejs/kit';
 
 // Data:
-import { svgs } from '@/data/svgs';
+import { fullRouteSvgsData } from '@/data';
 
 export const GET = ({ url }: RequestEvent) => {
   const getParams = url.searchParams.get('limit');
 
-  // Modify svg route to add 'svgl.vercel.app' to the beginning:
-  const fullSVGRoute: iSVG[] = svgs.map((svg) => ({
-    ...svg,
-    route: `https://svgl.vercel.app${svg.route}`
-  }));
-
   // Status 200 | If no limit is provided, return all svgs:
   if (!getParams) {
-    return json(fullSVGRoute, { status: 200 });
+    return json(fullRouteSvgsData, { status: 200 });
   }
 
   const limit = Number(getParams);
@@ -37,12 +30,12 @@ export const GET = ({ url }: RequestEvent) => {
   }
 
   // Error 400 | If limit is greater than the number of svgs:
-  if (limit > fullSVGRoute.length) {
+  if (limit > fullRouteSvgsData.length) {
     throw error(400, {
       message: 'Limit is greater than the number of svgs.'
     });
   }
 
   // Status 200 | If limit is a number:
-  return json(fullSVGRoute.slice(0, limit), { status: 200 });
+  return json(fullRouteSvgsData.slice(0, limit), { status: 200 });
 };
