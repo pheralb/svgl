@@ -1845,5 +1845,11 @@ export const svgs: iSVG[] = [
     category: 'Social',
     route: '/library/meta.svg',
     url: 'https://meta.com/'
-  }
+  },
+  {
+    title: 'MonkeyType',
+    category: 'Typing',
+    route: '/library/monkeytype.svg',
+    url: 'https://monkeytype.com/'
+  },
 ];
