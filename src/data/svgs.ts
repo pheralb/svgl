@@ -1845,5 +1845,17 @@ export const svgs: iSVG[] = [
     category: 'Social',
     route: '/library/meta.svg',
     url: 'https://meta.com/'
+  },
+  {
+    title: 'Cypress',
+    category: 'Framework',
+    route: '/library/cypress.svg',
+    url: 'https://www.cypress.io/'
+  },
+  {
+    title: 'Reddit',
+    category: 'Social',
+    route: '/library/reddit.svg',
+    url: 'https://www.reddit.com/'
   }
 ];
