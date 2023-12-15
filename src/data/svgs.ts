@@ -1845,5 +1845,41 @@ export const svgs: iSVG[] = [
     category: 'Social',
     route: '/library/meta.svg',
     url: 'https://meta.com/'
+  },
+  {
+    title: 'JetBrains WebStorm',
+    category: 'Software',
+    route: '/library/webstorm.svg',
+    url: 'https://www.jetbrains.com/webstorm/'
+  },
+  {
+    title: 'JetBrains PyCharm',
+    category: 'Software',
+    route: '/library/pycharm.svg',
+    url: 'https://www.jetbrains.com/pycharm/'
+  },
+  {
+    title: 'JetBrains Fleet',
+    category: 'Software',
+    route: '/library/fleet.svg',
+    url: 'https://www.jetbrains.com/fleet/'
+  },
+  {
+    title: 'JetBrains RubyMine',
+    category: 'Software',
+    route: '/library/rubymine.svg',
+    url: 'https://www.jetbrains.com/ruby/'
+  },
+  {
+    title: 'JetBrains PhpStorm',
+    category: 'Software',
+    route: '/library/phpstorm.svg',
+    url: 'https://www.jetbrains.com/phpstorm/'
+  },
+  {
+    title: 'JetBrains PyCharm',
+    category: 'Software',
+    route: '/library/pycharm.svg',
+    url: 'https://www.jetbrains.com/pycharm/'
   }
 ];
