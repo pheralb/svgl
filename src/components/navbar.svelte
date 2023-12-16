@@ -74,7 +74,7 @@
                 this={link.icon}
                 size={16}
                 strokeWidth={1.5}
-                class="ml-1 transition-transform duration-300 group-hover:-translate-y-[1px]"
+                class="ml-1 transition-transform duration-300 group-hover:translate-x-[1px]"
               />
             {/if}
           </a>

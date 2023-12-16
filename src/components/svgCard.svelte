@@ -61,7 +61,7 @@
       <p class="truncate text-[15px] font-medium text-balance text-center">{svgInfo.title}</p>
       <a
         href={`/directory/${svgInfo.category.toLowerCase()}`}
-        class="text-sm lowercase text-neutral-500 hover:underline">{svgInfo.category}</a
+        class="text-sm lowercase text-neutral-500 hover:underline font-mono">{svgInfo.category}</a
       >
     </div>
     <div class="flex items-center space-x-1">

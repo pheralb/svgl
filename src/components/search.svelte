@@ -7,7 +7,7 @@
 </script>
 
 <div class="sticky top-[63px] z-50">
-  <div class="relative w-full text-lg">
+  <div class="relative w-full text-[16px]">
     <div class="absolute inset-y-0 left-0 flex items-center pl-3 text-neutral-500">
       <div class="pointer-events-none">
         <SearchIcon size={20} strokeWidth={searchTerm ? 2.5 : 1.5} />

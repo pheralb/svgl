@@ -22,10 +22,10 @@
       </h1>
       <span class="relative inline-block overflow-hidden rounded-full p-[1px] shadow-sm">
         <span
-          class="absolute inset-[-1000%] animate-[spin_4s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#121212_0%,#121212_50%,#737373_100%)]"
+          class="absolute inset-[-1000%] animate-[spin_4s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#f4f4f5_0%,#f4f4f5_50%,#737373_100%)] dark:bg-[conic-gradient(from_90deg_at_50%_50%,#121212_0%,#121212_50%,#737373_100%)]"
         />
         <div
-          class="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-neutral-900 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl border border-neutral-800"
+          class="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-neutral-100 dark:bg-neutral-900 px-3 py-1 text-sm font-medium dark:text-white backdrop-blur-3xl border border-neutral-100 dark:border-neutral-800"
         >
           beta
         </div>
