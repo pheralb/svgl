@@ -1553,12 +1553,6 @@ export const svgs: iSVG[] = [
     url: 'https://www.rowy.io/'
   },
   {
-    title: 'BuildShip',
-    category: 'AI',
-    route: '/library/buildship.svg',
-    url: 'https://buildship.com/'
-  },
-  {
     title: 'Cal.com',
     category: 'Software',
     route: '/library/cal.svg',
