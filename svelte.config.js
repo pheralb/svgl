@@ -1,5 +1,5 @@
 import adapter from '@sveltejs/adapter-auto';
-import { vitePreprocess } from '@sveltejs/kit/vite';
+import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 // Extensions:
 import { mdsvex, escapeSvelte } from 'mdsvex';
