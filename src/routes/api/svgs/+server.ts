@@ -1,12 +1,33 @@
 import type { RequestEvent } from './$types';
+import type { iSVG } from '@/types/svg';
 
 import { error, json } from '@sveltejs/kit';
 
 // Data:
-import { fullRouteSvgsData } from '@/data';
+import { svgsData } from '@/data';
 
 export const GET = ({ url }: RequestEvent) => {
   const getParams = url.searchParams.get('limit');
+  const fullUrl = url.origin ?? 'svgl.vercel.app';
+
+  // Add full route to svgs:
+  const fullRouteSvgsData: iSVG[] = svgsData.map((svg) => {
+    if (typeof svg.route === 'object' && svg.route !== null) {
+      return {
+        ...svg,
+        route: {
+          light: `${fullUrl}${svg.route.light}`,
+          dark: `${fullUrl}${svg.route.dark}`
+        }
+      };
+    } else if (typeof svg.route === 'string') {
+      return {
+        ...svg,
+        route: `${fullUrl}${svg.route}`
+      };
+    }
+    return svg;
+  });
 
   // Status 200 | If no limit is provided, return all svgs:
   if (!getParams) {
