@@ -1553,12 +1553,6 @@ export const svgs: iSVG[] = [
     url: 'https://www.rowy.io/'
   },
   {
-    title: 'BuildShip',
-    category: 'AI',
-    route: '/library/buildship.svg',
-    url: 'https://buildship.com/'
-  },
-  {
     title: 'Cal.com',
     category: 'Software',
     route: '/library/cal.svg',
@@ -1734,12 +1728,6 @@ export const svgs: iSVG[] = [
       light: '/library/axiom-light.svg'
     },
     url: 'https://axiom.co/'
-  },
-  {
-    title: 'ArtisanLabs',
-    category: 'Software',
-    route: '/library/ArtisanLabs.svg',
-    url: 'https://artisanlabs.io'
   },
   {
     title: 'Django',
