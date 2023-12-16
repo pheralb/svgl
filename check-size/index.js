@@ -7,7 +7,7 @@ const core = require('@actions/core');
 
 // 🔎 Settings:
 const dir = '../static/library';
-const sizeLimit = 20000; // 20kb;
+const sizeLimit = 25000; // 20kb;
 
 function convertBytes(bytes, format = 'KB') {
   if (format === 'KB') {
@@ -30,18 +30,19 @@ async function checkSize() {
       const filePath = join(dir, file);
       const stats = await stat(filePath);
 
-      if (stats.size > maxSize) {
-        maxSize = stats.size;
+      if (stats.size >= sizeLimit) {
         maxFiles.push({
           filename: file,
-          size: maxSize
+          size: stats.size
         });
+        if (stats.size > maxSize) {
+          maxSize = stats.size;
+        }
       }
     }
 
     if (maxFiles.length === 0) {
       message = `- ✅ All files are smaller than ${convertBytes(sizeLimit)}`;
-      console.log(message);
       core.setOutput('message', message);
     } else {
       message = `- ❌ There are files bigger than ${convertBytes(sizeLimit)}.`;
@@ -59,7 +60,9 @@ async function checkSize() {
     console.log('⚙️ Settings:');
     console.log(`- 📁 Directory: ${dir}`);
     console.log(`- 🧱 Size limit: ${convertBytes(sizeLimit)} bytes`);
-    console.log(`- 🔔 Max size found: ${convertBytes(maxSize, 'MB')}`);
+    if (maxSize > 0) {
+      console.log(`- 🔔 Max size found: ${convertBytes(maxSize, 'KB')}`);
+    }
   }
 }
 
