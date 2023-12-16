@@ -326,12 +326,6 @@ export const svgs: iSVG[] = [
     url: 'https://www.mongodb.com/'
   },
   {
-    title: 'Babel',
-    category: 'Compiler',
-    route: '/library/babel.svg',
-    url: 'https://babeljs.io'
-  },
-  {
     title: 'Moon',
     category: 'Framework',
     route: '/library/moon.svg',
@@ -944,12 +938,6 @@ export const svgs: iSVG[] = [
     url: 'https://www.jetbrains.com/space/'
   },
   {
-    title: 'Gin',
-    category: 'Framework',
-    route: '/library/gin.svg',
-    url: 'https://gin-gonic.com/'
-  },
-  {
     title: 'Stimulus',
     category: 'Framework',
     route: '/library/stimulus.svg',
@@ -1326,12 +1314,6 @@ export const svgs: iSVG[] = [
     category: 'Crypto',
     route: '/library/bnb.svg',
     url: 'https://www.bnbchain.org/'
-  },
-  {
-    title: 'Cardano',
-    category: 'Crypto',
-    route: '/library/ada.svg',
-    url: 'https://cardano.org/'
   },
   {
     title: 'TRON',
