@@ -1730,12 +1730,6 @@ export const svgs: iSVG[] = [
     url: 'https://axiom.co/'
   },
   {
-    title: 'ArtisanLabs',
-    category: 'Software',
-    route: '/library/ArtisanLabs.svg',
-    url: 'https://artisanlabs.io'
-  },
-  {
     title: 'Django',
     category: 'Framework',
     route: '/library/django.svg',
