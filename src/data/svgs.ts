@@ -1893,5 +1893,29 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/pycharm.svg',
     url: 'https://www.jetbrains.com/pycharm/'
-  }
+  },
+  {
+    title: 'Shopify',
+    category: 'CMS',
+    route: '/library/shopify.svg',
+    url: 'https://www.shopify.com'
+  },
+  {
+    title: 'Salesforce',
+    category: 'CMS',
+    route: '/library/salesforce.svg',
+    url: 'https://www.salesforce.com'
+  },
+  {
+    title: 'WebFlow',
+    category: 'CMS',
+    route: '/library/webflow.svg',
+    url: 'https://www.webflow.com'
+  },
+  {
+    title: 'bigcommerce',
+    category: 'CMS',
+    route: '/library/bigcommerce.svg',
+    url: 'https://www.bigcommerce.co.uk'
+  },
 ];
