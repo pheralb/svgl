@@ -54,28 +54,30 @@
         {#each categories.sort() as category}
           <a
             href={`/directory/${category.toLowerCase()}`}
-            class={`flex w-full items-center rounded-md p-2 transition-none duration-100 text-neutral-600 hover:text-dark dark:hover:text-white dark:text-neutral-400 hover:bg-neutral-200 dark:hover:bg-neutral-700/40
-              ${
-                data.pathname === `/directory/${category.toLowerCase()}`
-                  ? 'bg-neutral-200 dark:bg-neutral-700/30 font-medium dark:text-white text-dark'
-                  : ''
-              }`}
-            data-sveltekit-preload-data>{category}</a
+            class={cn(
+              'flex w-full items-center justify-between rounded-md p-2 transition-none duration-100 text-neutral-600 hover:text-dark dark:hover:text-white dark:text-neutral-400 hover:bg-neutral-200 dark:hover:bg-neutral-700/40',
+              data.pathname === `/directory/${category.toLowerCase()}`
+                ? 'bg-neutral-200 dark:bg-neutral-700/30 font-medium dark:text-white text-dark'
+                : ''
+            )}
           >
+            <span>{category}</span>
+          </a>
         {/each}
       </div>
-      <div>
-        
-      </div>
+      <div></div>
       <a
         href="https://twitter.com/pheralb_"
         target="_blank"
-        class="mt-5 md:flex hidden items-center space-x-2 duration-100 hover:text-dark dark:text-neutral-400 dark:hover:text-white"
+        class="group mt-5 md:flex hidden items-center space-x-2 duration-100 hover:text-dark dark:text-neutral-400 dark:hover:text-white"
       >
         <Heart color="#991b1b" size={18} weight={'duotone'} />
         <div class="flex items-center space-x-1">
           <p class="text-muted text-sm">Created by pheralb</p>
-          <ArrowUpRight size={14} />
+          <ArrowUpRight
+            size={14}
+            class="transition-transform duration-300 group-hover:-translate-y-[1px]"
+          />
         </div>
       </a>
     </div>

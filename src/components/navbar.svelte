@@ -17,12 +17,18 @@
     }
   ];
 
-  const links = [
+  const externalLinks = [
     {
       name: 'API',
       url: '/api',
       icon: CloudyIcon,
       external: false
+    },
+    {
+      name: 'Terminal',
+      url: 'https://github.com/sujjeee/svgls',
+      icon: ArrowUpRight,
+      external: true
     },
     {
       name: 'Submit logo',
@@ -53,18 +59,23 @@
     </div>
     <div class="flex items-center space-x-7">
       <div class="flex items-center space-x-4 divide-x divide-neutral-300 dark:divide-neutral-700">
-        {#each links as link}
+        {#each externalLinks as link}
           <a
             href={link.url}
-            target={link.external ? '_blank' : '_self'}
-            class="flex items-center hover:opacity-80 transition-opacity text-[15px] pl-3"
+            target={link.external ? '_blank' : ''}
+            class="flex items-center hover:opacity-80 transition-opacity text-[15px] pl-3 group"
           >
             {#if !link.external}
               <svelte:component this={link.icon} size={16} strokeWidth={1.5} class="mr-2" />
             {/if}
             <span>{link.name}</span>
             {#if link.external}
-              <svelte:component this={link.icon} size={16} strokeWidth={1.5} class="ml-1" />
+              <svelte:component
+                this={link.icon}
+                size={16}
+                strokeWidth={1.5}
+                class="ml-1 transition-transform duration-300 group-hover:-translate-y-[1px]"
+              />
             {/if}
           </a>
         {/each}
