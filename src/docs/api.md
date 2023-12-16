@@ -4,6 +4,7 @@ description: The API reference is a detailed documentation of all the endpoints 
 ---
 
 <script>
+  import { PUBLIC_SVGL_API_LIMIT } from '$env/static/public'
   import Endpoint from '../components/endpoints.svelte';
 </script>
 
@@ -13,7 +14,7 @@ SVGL API is a RESTFul API that allows you to get all the information of the SVGs
 
 ## Limitations
 
-The API is currently open to everyone and does not require any authentication. However, there is a limit of **50** requests per day per IP address. If you exceed this limit, you will receive a _429_ error.
+The API is currently open to everyone and does not require any authentication. However, there is a limit of **{PUBLIC_SVGL_API_LIMIT}** requests per day. If you exceed this limit, you will receive a _429_ error.
 
 ## Base URL
 
