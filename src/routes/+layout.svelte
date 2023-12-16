@@ -32,7 +32,7 @@
     class={cn(
       'z-50 w-full overflow-y-auto overflow-x-hidden',
       'dark:border-neutral-800 md:fixed md:left-0 md:h-full md:w-56 md:pb-10',
-      'bg-neutral-100 dark:bg-neutral-900',
+      'bg-white dark:bg-neutral-900',
       'backdrop-blur-md opacity-95',
       'border-r border-neutral-200 dark:border-neutral-800'
     )}

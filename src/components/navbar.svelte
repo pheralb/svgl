@@ -41,7 +41,7 @@
 
 <nav
   class={cn(
-    'dark:bg-neutral-900 bg-neutral-100',
+    'dark:bg-neutral-900 bg-white',
     'w-full px-5 py-4 border-b border-neutral-200 dark:border-neutral-800',
     'sticky top-0 z-50',
     'backdrop-blur-md opacity-95'

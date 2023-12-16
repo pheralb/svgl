@@ -17,7 +17,7 @@
       type="text"
       {placeholder}
       autocomplete="off"
-      class="w-full border-b border-neutral-300 bg-neutral-100 p-3 pl-11 placeholder-neutral-500 focus:outline-none focus:ring-1 focus:ring-neutral-300 dark:border-neutral-800 dark:bg-neutral-900 dark:focus:ring-neutral-700"
+      class="w-full border-b border-neutral-300 bg-white p-3 pl-11 placeholder-neutral-500 focus:outline-none focus:ring-1 focus:ring-neutral-300 dark:border-neutral-800 dark:bg-neutral-900 dark:focus:ring-neutral-700"
       bind:value={searchTerm}
       on:input
     />
