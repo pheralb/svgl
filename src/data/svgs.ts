@@ -1811,12 +1811,6 @@ export const svgs: iSVG[] = [
     url: 'https://ubuntu.com/'
   },
   {
-    title: 'Meta',
-    category: 'Social',
-    route: '/library/meta.svg',
-    url: 'https://meta.com/'
-  },
-  {
     title: 'Cypress',
     category: 'Framework',
     route: '/library/cypress.svg',
