@@ -17,21 +17,21 @@ export const GET = ({ url }: RequestEvent) => {
 
   // Error 400 | if limit is not a number:
   if (isNaN(limit)) {
-    throw error(400, {
+    error(400, {
       message: 'Limit must be a number.'
     });
   }
 
   // Error 400 | If limit is not positive:
   if (limit < 1) {
-    throw error(400, {
+    error(400, {
       message: 'Limit must be a positive number.'
     });
   }
 
   // Error 400 | If limit is greater than the number of svgs:
   if (limit > fullRouteSvgsData.length) {
-    throw error(400, {
+    error(400, {
       message: 'Limit is greater than the number of svgs.'
     });
   }

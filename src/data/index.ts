@@ -1,5 +1,6 @@
 import type { iSVG } from '@/types/svg';
 import { svgs } from './svgs';
+import { getBaseUrl } from '@/utils/getBaseUrl';
 
 // Add id on top of each svg:
 export const svgsData = svgs.map((svg: iSVG, index: number) => {
@@ -8,7 +9,7 @@ export const svgsData = svgs.map((svg: iSVG, index: number) => {
 
 // Add full route of each svg, checking if theme support is added:
 export const fullRouteSvgsData: iSVG[] = svgsData.map((svg) => {
-  const url = 'https://svgl.vercel.app';
+  const url = getBaseUrl();
   if (typeof svg.route === 'object' && svg.route !== null) {
     return {
       ...svg,
