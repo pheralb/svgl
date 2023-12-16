@@ -1352,6 +1352,12 @@ export const svgs: iSVG[] = [
     url: 'https://polygon.technology/'
   },
   {
+    title: 'Algorand',
+    category: 'Crypto',
+    route: '/library/algorand.svg',
+    url: 'https://algorand.org/'
+  },
+  {
     title: 'X',
     category: 'Social',
     route: {
