@@ -6,18 +6,22 @@
 </div>
 
 <div align="center">
-    <a href="https://svgl.vercel.app/" target="_blank">
+    <a href="https://svgl.app" target="_blank">
         Discover
     </a>
-    <span>&nbsp;⁘&nbsp;</span>
+    <span>&nbsp;✦&nbsp;</span>
+    <a href="https://github.com/sujjeee/svgls" target="_blank">
+        Terminal
+    </a>
+    <span>&nbsp;✦&nbsp;</span>
     <a href="#-getting-started">
         Submit logo
     </a>
-    <span>&nbsp;⁘&nbsp;</span>
+    <span>&nbsp;✦&nbsp;</span>
     <a href="#%EF%B8%8F-stack">
         Stack
     </a>
-    <span>&nbsp;⁘&nbsp;</span>
+    <span>&nbsp;✦&nbsp;</span>
     <a href="#%EF%B8%8F-contributing">
         Contributing
     </a>
@@ -43,7 +47,7 @@
 - [**Typescript**](https://www.typescriptlang.org/) - JavaScript with syntax for types.
 - [**Tailwindcss**](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom designs.
 - [**Prettier**](https://prettier.io/) + [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss) - An opinionated code formatter.
-- [**phosphor-svelte**](https://github.com/haruaki07/phosphor-svelte) - A clean and friendly icon family for Svelte.
+- [**Lucide Icons**](https://lucide.dev/) + [**phosphor-svelte**](https://github.com/haruaki07/phosphor-svelte) - A clean and friendly icons libraries.
 - [**svelte-sonner**](https://github.com/wobsoriano/svelte-sonner) - An opinionated toast component for Svelte.
 - [**Vitest**](https://vitest.dev/) - Blazing Fast Unit Test Framework.
 
@@ -60,26 +64,20 @@ You will need:
 git clone git@github.com:pheralb/svgl.git
 ```
 
-2. Install dependencies with your favorite package manager:
+2. Install dependencies:
 
 ```bash
-# with npm:
-npm install
-
-# with pnpm:
+# with pnpm (recommended):
 pnpm install
 
-# with ultra:
-ultra install
-
-# with yarn:
-yarn install
+# with npm:
+npm install
 ```
 
-3. Go to the [**`static/library`**](https://github.com/pheralb/svgl/blob/main/static/library) folder and add your `.svg` logo. Remember to optimize SVG for web use, you can use [SVGOMG](https://jakearchibald.github.io/svgomg/).
+3. Go to the [**`static/library`**](https://github.com/pheralb/svgl/blob/main/static/library) folder and add your `.svg` logo.
 
 > [!WARNING]
-> The size limit for each .svg is **20kb**.
+> Remember to optimize SVG for web, you can use [SVGOMG](https://jakearchibald.github.io/svgomg/). The size limit for each .svg is **20kb**.
 
 4. Go to the [**`src/data/svgs.ts`**](https://github.com/pheralb/svgl/blob/main/src/data/svgs.ts) and add the information about your logo, following the structure:
 
@@ -105,6 +103,9 @@ or to support a different logo for light and dark themes:
   "url": "Website"
 },
 ```
+
+> [!NOTE]
+> The list of categories is here: [`src/types/categories.ts`](https://github.com/pheralb/svgl/blob/main/src/types/categories.ts). If you want to add a new category, you can do it.
 
 And create a pull request with your logo 🚀.
 
