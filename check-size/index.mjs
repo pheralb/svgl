@@ -41,15 +41,9 @@ export async function checkSize() {
   } catch (err) {
     console.error(`- ❌ ${err.message}`);
   } finally {
-    // Print the results
     console.log(`- 📁 Directory: ${dir}`);
     console.log(`- 📏 Size limit: ${convertBytes(sizeLimit)} bytes`);
     console.log(`- 📏 Max size found: ${convertBytes(maxSize, 'MB')}`);
-    if (maxFiles.length > 0) {
-      maxFiles.forEach((file) => {
-        console.log(`- 📄 File: ${file} - 📦 Size: ${convertBytes(maxSize, 'KB')}`);
-      });
-    }
   }
 }
 
