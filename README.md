@@ -78,6 +78,9 @@ yarn install
 
 3. Go to the [**`static/library`**](https://github.com/pheralb/svgl/blob/main/static/library) folder and add your `.svg` logo. Remember to optimize SVG for web use, you can use [SVGOMG](https://jakearchibald.github.io/svgomg/).
 
+> [!WARNING]
+> The size limit for each .svg is **20kb**.
+
 4. Go to the [**`src/data/svgs.ts`**](https://github.com/pheralb/svgl/blob/main/src/data/svgs.ts) and add the information about your logo, following the structure:
 
 ```json
