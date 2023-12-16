@@ -1893,5 +1893,11 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/pycharm.svg',
     url: 'https://www.jetbrains.com/pycharm/'
-  }
+  },
+  {
+    title: 'MonkeyType',
+    category: 'Typing',
+    route: '/library/monkeytype.svg',
+    url: 'https://monkeytype.com/'
+  },
 ];
