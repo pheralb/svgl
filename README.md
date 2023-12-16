@@ -77,7 +77,7 @@ npm install
 3. Go to the [**`static/library`**](https://github.com/pheralb/svgl/blob/main/static/library) folder and add your `.svg` logo.
 
 > [!WARNING]
-> Remember to optimize SVG for web, you can use [SVGOMG](https://jakearchibald.github.io/svgomg/). The size limit for each .svg is **20kb**.
+> Remember to optimize SVG for web, you can use [SVGOMG](https://jakearchibald.github.io/svgomg/). The size limit for each .svg is **25kb**.
 
 4. Go to the [**`src/data/svgs.ts`**](https://github.com/pheralb/svgl/blob/main/src/data/svgs.ts) and add the information about your logo, following the structure:
 
