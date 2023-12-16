@@ -105,7 +105,7 @@ or to support a different logo for light and dark themes:
 ```
 
 > [!NOTE]
-> The list of categories is here: [`src/types/categories.ts`](https://github.com/pheralb/svgl/blob/main/src/types/categories.ts). If you want to add a new category, you can do it.
+> The list of categories is here: [`src/types/categories.ts`](https://github.com/pheralb/svgl/blob/main/src/types/categories.ts). You can add a new category if you need it.
 
 And create a pull request with your logo 🚀.
 
