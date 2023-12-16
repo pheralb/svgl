@@ -7,6 +7,7 @@ yarn.lock
 /.svelte-kit
 /build
 /package
+.idea/
 
 # Logs
 .DS_Store
