@@ -1893,5 +1893,11 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/pycharm.svg',
     url: 'https://www.jetbrains.com/pycharm/'
+  },
+    {
+    title: 'Synth DIY Wiki',
+    category: 'Wiki',
+    route: '/library/Synth_DIY_Wiki.svg',
+    url: 'https://sdiy.info/'
   }
 ];
