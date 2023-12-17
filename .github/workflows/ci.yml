@@ -1,41 +1,45 @@
-name: 🛠️ Check
+name: 🔎 Check
 
 on:
   push:
     branches:
       - main
+      - next
   pull_request:
     branches:
       - main
+      - next
 
 jobs:
-  svelte-check:
+  vitest:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
 
-      - name: Setup Node.js 18.x
-        uses: actions/setup-node@v3
+      - name: Setup pnpm 8
+        uses: pnpm/action-setup@v2
         with:
-          node-version: 18.x
+          version: 8
 
       - name: Install dependencies
-        run: npm install
-
-      - name: Run typecheck
-        run: npm run check
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: Setup Node.js 18.x
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18.x
-
-      - name: Install dependencies
-        run: npm install
+        run: pnpm install
 
       - name: Run Vitest
-        run: npm run test
+        run: pnpm test
+  svgs-size:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup pnpm 8
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+
+      - name: Install dependencies
+        run: pnpm install
+        working-directory: ./check-size
+
+      - name: Check svgs size
+        run: pnpm start
+        working-directory: ./check-size

@@ -6,13 +6,13 @@
   :root {
     --sb-track-color: rgb(229 229 229 / 0.5);
     --sb-thumb-color: #d4d4d4;
-    --sb-size: 8px;
+    --sb-size: 10px;
   }
 
   .dark {
     --sb-track-color: #171717;
     --sb-thumb-color: #404040;
-    --sb-size: 8px;
+    --sb-size: 10px;
   }
 }
 
@@ -34,6 +34,18 @@
     background: var(--sb-thumb-color);
   }
 
+  aside::-webkit-scrollbar {
+    width: var(--sb-size);
+  }
+
+  aside::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+  }
+
+  aside::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+  }
+
   nav::-webkit-scrollbar {
     width: var(--sb-size);
   }
@@ -48,9 +60,15 @@
 }
 
 @font-face {
-  font-family: 'General-Sans';
-  src: url('/fonts/GeneralSans-Variable.woff2') format('woff2');
-  font-weight: 200 700;
+  font-family: 'InterVariable';
+  src: url('/fonts/InterVariable.woff2') format('woff2');
+  font-weight: 100 900;
   font-display: swap;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'GeistMono';
+  src: url('/fonts/GeistMonoVariableVF.woff2') format('woff2');
+  font-display: swap;
 }

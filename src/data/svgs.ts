@@ -326,12 +326,6 @@ export const svgs: iSVG[] = [
     url: 'https://www.mongodb.com/'
   },
   {
-    title: 'Babel',
-    category: 'Compiler',
-    route: '/library/babel.svg',
-    url: 'https://babeljs.io'
-  },
-  {
     title: 'Moon',
     category: 'Framework',
     route: '/library/moon.svg',
@@ -800,12 +794,6 @@ export const svgs: iSVG[] = [
     url: 'https://swift.org/'
   },
   {
-    title: 'Testing Library',
-    category: 'Framework',
-    route: '/library/testinglibrary.svg',
-    url: 'https://testing-library.com/'
-  },
-  {
     title: 'TypeORM',
     category: 'Database',
     route: '/library/typeorm.svg',
@@ -858,7 +846,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Developer Student Club',
-    category: 'Education',
+    category: 'Community',
     route: '/library/gdsc.svg',
     url: 'https://gdsc.community.dev/'
   },
@@ -888,7 +876,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'midudev',
-    category: 'Education',
+    category: 'Community',
     route: '/library/midudev.svg',
     url: 'https://midu.dev'
   },
@@ -942,12 +930,6 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/jetbrains-space.svg',
     url: 'https://www.jetbrains.com/space/'
-  },
-  {
-    title: 'Gin',
-    category: 'Framework',
-    route: '/library/gin.svg',
-    url: 'https://gin-gonic.com/'
   },
   {
     title: 'Stimulus',
@@ -1328,12 +1310,6 @@ export const svgs: iSVG[] = [
     url: 'https://www.bnbchain.org/'
   },
   {
-    title: 'Cardano',
-    category: 'Crypto',
-    route: '/library/ada.svg',
-    url: 'https://cardano.org/'
-  },
-  {
     title: 'TRON',
     category: 'Crypto',
     route: '/library/trx.svg',
@@ -1561,7 +1537,10 @@ export const svgs: iSVG[] = [
   {
     title: 'Cal.com',
     category: 'Software',
-    route: '/library/cal.svg',
+    route: {
+      light: '/library/cal.svg',
+      dark: '/library/cal_dark.svg'
+    },
     url: 'https://cal.com'
   },
   {
@@ -1590,7 +1569,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Patreon',
-    category: 'Software',
+    category: 'Social',
     route: {
       light: '/library/patreon.svg',
       dark: '/library/patreon_dark.svg'
@@ -1773,7 +1752,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Pinterest',
-    category: 'Software',
+    category: 'Social',
     route: '/library/pinterest.svg',
     url: 'https://pinterest.com/'
   },
@@ -1813,13 +1792,19 @@ export const svgs: iSVG[] = [
   {
     title: 'Penpot',
     category: 'Design',
-    route: '/library/penpot.svg',
+    route: {
+      light: '/library/penpot.svg',
+      dark: '/library/penpot_dark.svg'
+    },
     url: 'https://penpot.app/'
   },
   {
     title: 'Sketch',
     category: 'Design',
-    route: '/library/sketch.svg',
+    route: {
+      light: '/library/sketch_light.svg',
+      dark: '/library/sketch.svg'
+    },
     url: 'https://www.sketch.com/'
   },
   {
@@ -1833,12 +1818,6 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/ubuntu.svg',
     url: 'https://ubuntu.com/'
-  },
-  {
-    title: 'Meta',
-    category: 'Social',
-    route: '/library/meta.svg',
-    url: 'https://meta.com/'
   },
   {
     title: 'Cypress',
