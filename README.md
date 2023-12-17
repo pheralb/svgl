@@ -105,6 +105,22 @@ or to support a different logo for light and dark themes:
 
 And create a pull request with your logo 🚀.
 
+## 🖥️ Terminal
+SVG files can also be accessed directly from the terminal using `svgls` CLI.
+ 
+#### Quick start
+If you are using yarn or npm, run this command:
+ ```base
+npx svgls add 
+```
+Or if you are using pnpm, run this command:
+ ```base
+pnpm dlx svgls add 
+```
+
+For more details on installing and using svgls CLI, check out the GitHub repository:
+https://github.com/sujjeee/svgls
+
 ## ✌️ Contributing
 
 <a href="https://github.com/pheralb/svgl/graphs/contributors">
