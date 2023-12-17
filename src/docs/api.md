@@ -20,25 +20,162 @@ The API is currently open to everyone and does not require any authentication. H
 The base URL for the API is:
 
 ```bash
-https://svgl.vercel.app/api/svgs
+https://svgl.app/api/svgs
+# or
+https://svgl.app/api/categories
+```
+
+## Typescript usage
+
+- For SVGs:
+
+```ts
+export interface svg {
+  id: number;
+  title: string;
+  category: string;
+  route:
+    | string
+    | {
+        dark: string;
+        light: string;
+      };
+  url: string;
+}
+```
+
+- For categories:
+
+```ts
+export interface category {
+  category: string;
+  total: number;
+}
 ```
 
 ## Endpoints
 
-<div class="flex flex-col space-y-2">
 <Endpoint title="Get all SVGs" method="GET" description="Returns all the SVGs in the repository.">
 
+```bash
+/api/svgs
 ```
-https://svgl.vercel.app/api/svgs
+
+<p></p>
+
+```json
+// Returns:
+[
+  {
+    "id": 0,
+    "title": "Discord",
+    "category": "Software",
+    "route": "https://svgl.app/library/discord.svg",
+    "url": "https://discord.com/"
+  },
+  ...
+]
 ```
 
 </Endpoint>
 
-<Endpoint title="Get a limited number of SVGs" method="GET" description="Returns a limited number of SVGs in the repository.">
+<Endpoint title="Get a limited number of SVGs" method="GET" description="Returns a limited number of SVGs in the repository. Start from the first SVG.">
 
+```bash
+/api/svgs?limit=10
 ```
-https://svgl.vercel.app/api/svgs?limit=10
+
+<p></p>
+
+```json
+// Returns:
+[
+  {
+    "id": 0,
+    "title": "Discord",
+    "category": "Software",
+    "route": "https://svgl.app/library/discord.svg",
+    "url": "https://discord.com/"
+  },
+  ...
+]
 ```
 
 </Endpoint>
-</div>
+
+<Endpoint title="Filter SVGs by category" method="GET" description="Returns all the SVGs in the repository that match the category.">
+
+```bash
+/api/svgs?category=software
+```
+
+<p></p>
+
+```json
+// Returns:
+[
+  {
+    "id": 0,
+    "title": "Discord",
+    "category": "Software",
+    "route": "https://svgl.app/library/discord.svg",
+    "url": "https://discord.com/"
+  },
+  ...
+]
+```
+
+The list of categories is available [here](https://github.com/pheralb/svgl/blob/main/src/types/categories.ts) (except for the _all_ category).
+
+</Endpoint>
+
+<Endpoint title="Get only categories" method="GET" description="Returns only categories with the number of SVGs in each category.">
+
+```bash
+/api/categories
+```
+
+<p></p>
+
+```json
+// Returns:
+[
+  {
+    "category": "Software",
+    "total": 97
+  },
+  {
+    "category": "Library",
+    "total": 25
+  },
+  ...
+]
+```
+
+</Endpoint>
+
+<Endpoint title="Search SVGs by name" method="GET" description="Returns all the SVGs in the repository that match the name.">
+
+```bash
+/api/svgs?search=axiom
+```
+
+<p></p>
+
+```json
+// Returns:
+[
+  {
+    "id": 267,
+    "title": "Axiom",
+    "category": "Software",
+    "route": {
+      "light": "https://svgl.app/library/axiom-light.svg",
+      "dark": "https://svgl.app/library/axiom-dark.svg"
+    },
+    "url": "https://axiom.co/"
+  }
+]
+```
+
+</Endpoint>
