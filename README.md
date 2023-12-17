@@ -18,8 +18,8 @@
         Submit logo
     </a>
     <span>&nbsp;✦&nbsp;</span>
-    <a href="#%EF%B8%8F-stack">
-        Stack
+    <a href="#-projects">
+        Projects
     </a>
     <span>&nbsp;✦&nbsp;</span>
     <a href="#%EF%B8%8F-contributing">
@@ -52,6 +52,7 @@
 - [**Prettier**](https://prettier.io/) + [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss) - An opinionated code formatter.
 - [**Lucide Icons**](https://lucide.dev/) + [**phosphor-svelte**](https://github.com/haruaki07/phosphor-svelte) - A clean and friendly icons libraries.
 - [**svelte-sonner**](https://github.com/wobsoriano/svelte-sonner) - An opinionated toast component for Svelte.
+- [**@upstash/redis** + **@upstash/ratelimit**](https://upstash.com/) - Serverless Redis for developers.
 - [**Vitest**](https://vitest.dev/) - Blazing Fast Unit Test Framework.
 
 ## 🚀 Getting Started
@@ -113,6 +114,14 @@ or to support a different logo for light and dark themes:
 > The list of categories is here: [`src/types/categories.ts`](https://github.com/pheralb/svgl/blob/main/src/types/categories.ts). You can add a new category if you need it.
 
 And create a pull request with your logo 🚀.
+
+## 📦 Projects
+
+A list of projects that use svgl:
+
+| Project                                   | Description                                        | Author                                  |
+| ----------------------------------------- | -------------------------------------------------- | --------------------------------------- |
+| [svgls](https://github.com/sujjeee/svgls) | A CLI for easily adding SVG icons to your project. | [sujjeee](https://twitter.com/sujjeeee) |
 
 ## ✌️ Contributing
 
