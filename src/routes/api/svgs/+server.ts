@@ -7,8 +7,12 @@ import { error, json } from '@sveltejs/kit';
 import { svgsData } from '@/data';
 
 export const GET = ({ url }: RequestEvent) => {
-  const getParams = url.searchParams.get('limit');
   const fullUrl = url.origin ?? 'svgl.vercel.app';
+
+  // Params:
+  const getLimitParams = url.searchParams.get('limit');
+  const getCategoryParams = url.searchParams.get('category');
+  const getSearchParams = url.searchParams.get('search');
 
   // Add full route to svgs:
   const fullRouteSvgsData: iSVG[] = svgsData.map((svg) => {
@@ -30,11 +34,50 @@ export const GET = ({ url }: RequestEvent) => {
   });
 
   // Status 200 | If no limit is provided, return all svgs:
-  if (!getParams) {
+  if (!getLimitParams && !getCategoryParams && !getSearchParams) {
     return json(fullRouteSvgsData, { status: 200 });
   }
 
-  const limit = Number(getParams);
+  const limit = Number(getLimitParams);
+  const category = getCategoryParams;
+
+  if (category) {
+    const categorySvgs = fullRouteSvgsData.filter((svg) => {
+      return svg.category === category.charAt(0).toUpperCase() + category.slice(1);
+    });
+
+    // Error 400 | If category does not exist:
+    if (categorySvgs.length === 0) {
+      error(400, {
+        message: 'Category does not exist.'
+      });
+    }
+
+    if (!getLimitParams) {
+      return json(categorySvgs, { status: 200 });
+    }
+
+    return json(categorySvgs.slice(0, limit), { status: 200 });
+  }
+
+  if (getSearchParams) {
+    const searchSvgs = fullRouteSvgsData.filter((svg) => {
+      return svg.title.toLowerCase().includes(getSearchParams.toLowerCase());
+    });
+
+    // Error 400 | If search does not exist:
+    if (searchSvgs.length === 0) {
+      error(400, {
+        message: 'Search does not exist.'
+      });
+    }
+
+    if (!getLimitParams) {
+      return json(searchSvgs, { status: 200 });
+    }
+
+    return json(searchSvgs.slice(0, limit), { status: 200 });
+  }
 
   // Error 400 | if limit is not a number:
   if (isNaN(limit)) {
