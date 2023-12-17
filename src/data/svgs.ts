@@ -794,12 +794,6 @@ export const svgs: iSVG[] = [
     url: 'https://swift.org/'
   },
   {
-    title: 'Testing Library',
-    category: 'Framework',
-    route: '/library/testinglibrary.svg',
-    url: 'https://testing-library.com/'
-  },
-  {
     title: 'TypeORM',
     category: 'Database',
     route: '/library/typeorm.svg',
