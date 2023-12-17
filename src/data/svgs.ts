@@ -1888,4 +1888,10 @@ export const svgs: iSVG[] = [
     route: '/library/monkeytype.svg',
     url: 'https://monkeytype.com/'
   },
+  {
+    title: 'Raycast',
+    category: 'Software',
+    route: '/library/raycast.svg',
+    url: 'https://raycast.com/'
+  }
 ];
