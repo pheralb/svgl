@@ -27,8 +27,10 @@
   "dependencies": {
     "@upstash/ratelimit": "1.0.0",
     "@upstash/redis": "1.25.2",
+    "bits-ui": "0.11.8",
     "clsx": "2.0.0",
     "downloadjs": "1.4.7",
+    "jszip": "3.10.1",
     "lucide-svelte": "0.298.0",
     "shiki": "0.14.7",
     "svelte-sonner": "0.3.6",
