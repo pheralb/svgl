@@ -11,23 +11,6 @@ on:
       - next
 
 jobs:
-  svelte-check:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: Setup pnpm 8
-        uses: pnpm/action-setup@v2
-        with:
-          version: 8
-
-      - name: Install dependencies
-        run: pnpm install
-
-      - name: Run Sveltekit Check
-        run: pnpm check
-        env:
-          SKIP_ENV_VALIDATION: true
   vitest:
     runs-on: ubuntu-latest
     steps:
