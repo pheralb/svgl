@@ -1531,7 +1531,10 @@ export const svgs: iSVG[] = [
   {
     title: 'Cal.com',
     category: 'Software',
-    route: '/library/cal.svg',
+    route: {
+      light: '/library/cal.svg',
+      dark: '/library/cal_dark.svg'
+    },
     url: 'https://cal.com'
   },
   {
@@ -1783,13 +1786,19 @@ export const svgs: iSVG[] = [
   {
     title: 'Penpot',
     category: 'Design',
-    route: '/library/penpot.svg',
+    route: {
+      light: '/library/penpot.svg',
+      dark: '/library/penpot_dark.svg'
+    },
     url: 'https://penpot.app/'
   },
   {
     title: 'Sketch',
     category: 'Design',
-    route: '/library/sketch.svg',
+    route: {
+      light: '/library/sketch_light.svg',
+      dark: '/library/sketch.svg'
+    },
     url: 'https://www.sketch.com/'
   },
   {
