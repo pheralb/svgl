@@ -26,7 +26,7 @@
   import { cn } from '@/utils/cn';
 </script>
 
-<Navbar />
+<Navbar currentPath={data.pathname} />
 <main>
   <aside
     class={cn(

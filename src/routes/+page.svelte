@@ -84,7 +84,7 @@
   <div class="flex items-center justify-end mb-4">
     <button
       class={cn(
-        'flex items-center justify-center space-x-1 rounded-md px-3 py-1.5 text-sm font-medium',
+        'flex items-center justify-center space-x-1 rounded-md px-3 py-1.5 text-sm font-medium hover:opacity-80 transition-opacity',
         filteredSvgs.length === 0 && 'hidden'
       )}
       on:click={() => sort()}

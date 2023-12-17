@@ -1,4 +1,6 @@
-<script>
+<script lang="ts">
+  export let currentPath: string;
+
   import { cn } from '@/utils/cn';
   import Logo from './logo.svelte';
   import { ArrowUpRight, CloudyIcon, GithubIcon, TwitterIcon } from 'lucide-svelte';
@@ -37,6 +39,8 @@
       external: true
     }
   ];
+
+  console.log(currentPath);
 </script>
 
 <nav
@@ -53,7 +57,7 @@
         <div class="flex items-center space-x-2 hover:opacity-80 transition-opacity">
           <svelte:component this={Logo} />
           <span class="text-[19px] font-medium tracking-wide hidden md:block">svgl</span>
-          <p class="text-neutral-500 hidden md:block">v4.0.0</p>
+          <p class="text-neutral-500 hidden md:block font-mono">v4</p>
         </div>
       </a>
     </div>
@@ -63,7 +67,11 @@
           <a
             href={link.url}
             target={link.external ? '_blank' : ''}
-            class="flex items-center hover:opacity-80 transition-opacity text-[15px] pl-3 group"
+            class={cn(
+              'flex items-center hover:opacity-80 transition-opacity text-[15px] pl-3 group',
+              currentPath === link.url &&
+                'underline underline-offset-8 decoration-dotted decoration-neutral-500'
+            )}
           >
             {#if !link.external}
               <svelte:component this={link.icon} size={16} strokeWidth={1.5} class="mr-2" />
