@@ -23,7 +23,6 @@
   let filteredSvgs: iSVG[] = [];
 
   // Order by last added:
-
   if (searchTerm.length === 0) {
     filteredSvgs = allSvgs.sort((a: iSVG, b: iSVG) => {
       return b.id! - a.id!;
