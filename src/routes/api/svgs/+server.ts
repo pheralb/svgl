@@ -2,12 +2,27 @@ import type { RequestEvent } from './$types';
 import type { iSVG } from '@/types/svg';
 
 import { error, json } from '@sveltejs/kit';
+import { ratelimit } from '@/server/redis';
 
 // Data:
 import { svgsData } from '@/data';
 
-export const GET = ({ url }: RequestEvent) => {
+export const GET = async ({ url, request }: RequestEvent) => {
   const fullUrl = url.origin ?? 'svgl.vercel.app';
+  const ip = request.headers.get('x-forwarded-for') ?? '';
+  const { success, reset } = await ratelimit.limit(ip);
+
+  // Error 429 | If rate limit is exceeded:
+  if (!success) {
+    const now = Date.now();
+    const retryAfter = Math.floor((reset - now) / 1000);
+    return new Response('Too Many Requests', {
+      status: 429,
+      headers: {
+        'Retry-After': retryAfter.toString()
+      }
+    });
+  }
 
   // Params:
   const getLimitParams = url.searchParams.get('limit');
