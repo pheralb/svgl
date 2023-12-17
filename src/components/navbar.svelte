@@ -71,13 +71,20 @@
             )}
           >
             {#if !link.external}
-              <svelte:component this={link.icon} size={16} strokeWidth={1.5} class="mr-2" />
+              <svelte:component
+                this={link.icon}
+                size={16}
+                strokeWidth={1.5}
+                class="mr-2"
+                name={link.name}
+              />
             {/if}
             <span class={cn('hidden md:block', !link.external && 'block')}>{link.name}</span>
             {#if link.external}
               <svelte:component
                 this={link.icon}
                 size={16}
+                name="External link"
                 strokeWidth={1.5}
                 class="ml-1 transition-transform duration-300 group-hover:translate-x-[1px] hidden md:block"
               />
@@ -90,6 +97,7 @@
           href="https://twitter.com/pheralb_"
           target="_blank"
           class="flex items-center space-x-1 hover:opacity-80 transition-opacity"
+          title="Twitter"
         >
           <XIcon iconSize={16} />
         </a>
@@ -98,8 +106,9 @@
             href={social.url}
             target="_blank"
             class="flex items-center space-x-1 hover:opacity-80 transition-opacity"
+            title={social.name}
           >
-            <svelte:component this={social.icon} size={20} strokeWidth={1.5} />
+            <svelte:component this={social.icon} size={20} strokeWidth={1.5} name={social.name} />
           </a>
         {/each}
         <Theme />

@@ -6,6 +6,7 @@
   xmlns="http://www.w3.org/2000/svg"
   width={iconSize || 16}
   height={iconSize || 16}
+  name="Twitter"
   fill="none"
   viewBox="0 0 1200 1227"
   ><path
