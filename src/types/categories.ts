@@ -15,4 +15,5 @@ export type tCategory =
   | 'Language'
   | 'Education'
   | 'Design'
-  | 'Typing';
+  | 'Typing'
+  | 'Marketplace';
