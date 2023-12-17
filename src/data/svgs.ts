@@ -1328,6 +1328,12 @@ export const svgs: iSVG[] = [
     url: 'https://polygon.technology/'
   },
   {
+    title: 'Algorand',
+    category: 'Crypto',
+    route: '/library/algorand.svg',
+    url: 'https://algorand.org/'
+  },
+  {
     title: 'X',
     category: 'Social',
     route: {
@@ -1856,12 +1862,6 @@ export const svgs: iSVG[] = [
     url: 'https://www.jetbrains.com/phpstorm/'
   },
   {
-    title: 'JetBrains PyCharm',
-    category: 'Software',
-    route: '/library/pycharm.svg',
-    url: 'https://www.jetbrains.com/pycharm/'
-  },
-  {
     title: 'MonkeyType',
     category: 'Typing',
     route: '/library/monkeytype.svg',
@@ -1872,5 +1872,11 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/raycast.svg',
     url: 'https://raycast.com/'
-  }
+  },
+  {
+    title: 'Procure',
+    category: 'Marketplace',
+    route: '/library/procure.svg',
+    url: 'https://procure.biz/'
+  },
 ];
