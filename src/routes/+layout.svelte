@@ -37,9 +37,9 @@
       'border-r border-neutral-200 dark:border-neutral-800'
     )}
   >
-    <div class="px-6 py-6">
-      <div
-        class="flex items-center space-x-1 overflow-y-auto border-b border-neutral-300 pb-3 dark:border-neutral-700/40 md:mb-3 md:flex-col md:space-x-0 md:space-y-1 md:overflow-y-visible"
+    <div class="md:px-6 md:py-6">
+      <nav
+        class="flex items-center space-x-1 overflow-y-auto border-b border-neutral-300 dark:border-neutral-700/40 md:mb-3 md:flex-col md:space-x-0 md:space-y-1 md:overflow-y-visible px-5 md:px-0 pb-2 pt-3 md:pt-0"
       >
         <a
           href="/"
@@ -64,7 +64,7 @@
             <span>{category}</span>
           </a>
         {/each}
-      </div>
+      </nav>
       <div></div>
       <a
         href="https://twitter.com/pheralb_"
@@ -82,7 +82,7 @@
       </a>
     </div>
   </aside>
-  <div class="md:ml-56 pb-6">
+  <div class="ml-0 md:ml-56 pb-6">
     <Transition pathname={data.pathname}>
       <slot />
     </Transition>

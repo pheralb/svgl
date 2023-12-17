@@ -58,7 +58,9 @@
       loading="lazy"
     />
     <div class="mb-3 flex flex-col items-center justify-center">
-      <p class="truncate text-[15px] font-medium text-balance text-center">{svgInfo.title}</p>
+      <p class="truncate text-[15px] font-medium text-balance text-center select-all">
+        {svgInfo.title}
+      </p>
       <a
         href={`/directory/${svgInfo.category.toLowerCase()}`}
         class="text-sm lowercase text-neutral-500 hover:underline font-mono">{svgInfo.category}</a

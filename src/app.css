@@ -45,6 +45,18 @@
   aside::-webkit-scrollbar-thumb {
     background: var(--sb-thumb-color);
   }
+
+  nav::-webkit-scrollbar {
+    width: var(--sb-size);
+  }
+
+  nav::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+  }
+
+  nav::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+  }
 }
 
 @font-face {

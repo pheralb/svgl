@@ -61,14 +61,16 @@
         </div>
       </a>
     </div>
-    <div class="flex items-center space-x-7">
-      <div class="flex items-center space-x-4 divide-x divide-neutral-300 dark:divide-neutral-700">
+    <div class="flex items-center space-x-0 md:space-x-7">
+      <div
+        class="flex items-center md:space-x-4 divide-x divide-neutral-300 dark:divide-neutral-700"
+      >
         {#each externalLinks as link}
           <a
             href={link.url}
             target={link.external ? '_blank' : ''}
             class={cn(
-              'flex items-center hover:opacity-80 transition-opacity text-[15px] pl-3 group',
+              'flex items-center hover:opacity-80 transition-opacity text-[15px] pl-2 md:pl-3 group',
               currentPath === link.url &&
                 'underline underline-offset-8 decoration-dotted decoration-neutral-500'
             )}
@@ -76,13 +78,13 @@
             {#if !link.external}
               <svelte:component this={link.icon} size={16} strokeWidth={1.5} class="mr-2" />
             {/if}
-            <span>{link.name}</span>
+            <span class={cn('hidden md:block', !link.external && 'block')}>{link.name}</span>
             {#if link.external}
               <svelte:component
                 this={link.icon}
                 size={16}
                 strokeWidth={1.5}
-                class="ml-1 transition-transform duration-300 group-hover:translate-x-[1px]"
+                class="ml-1 transition-transform duration-300 group-hover:translate-x-[1px] hidden md:block"
               />
             {/if}
           </a>
