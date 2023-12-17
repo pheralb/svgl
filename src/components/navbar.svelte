@@ -57,7 +57,7 @@
         <div class="flex items-center space-x-2 hover:opacity-80 transition-opacity">
           <svelte:component this={Logo} />
           <span class="text-[19px] font-medium tracking-wide hidden md:block">svgl</span>
-          <p class="text-neutral-500 hidden md:block font-mono">v4</p>
+          <p class="text-neutral-500 hidden md:block font-mono">v4.0</p>
         </div>
       </a>
     </div>
