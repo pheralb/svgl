@@ -25,7 +25,7 @@
     },
     {
       name: 'Terminal',
-      url: 'https://github.com/sujjeee/svgls',
+      url: 'https://github.com/pheralb/svgl?tab=readme-ov-file#-terminal',
       icon: ArrowUpRight,
       external: true
     },
