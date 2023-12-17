@@ -1877,12 +1877,6 @@ export const svgs: iSVG[] = [
     url: 'https://www.jetbrains.com/phpstorm/'
   },
   {
-    title: 'JetBrains PyCharm',
-    category: 'Software',
-    route: '/library/pycharm.svg',
-    url: 'https://www.jetbrains.com/pycharm/'
-  },
-  {
     title: 'MonkeyType',
     category: 'Typing',
     route: '/library/monkeytype.svg',
