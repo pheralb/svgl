@@ -89,9 +89,11 @@
     <Toaster
       position="bottom-right"
       toastOptions={{
-        style: `background-color: #171717;
+        class: 'font-sans',
+        descriptionClass: 'font-mono',
+        style: `background-color: #262626;
            color: #ffff; 
-           border-radius: 0.4rem; border: 1px solid #262626;`
+           border-radius: 0.4rem; border: 1px solid #121212;`
       }}
     />
   </div>

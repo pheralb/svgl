@@ -3,15 +3,12 @@
 
   import { cn } from '@/utils/cn';
   import Logo from './logo.svelte';
-  import { ArrowUpRight, CloudyIcon, GithubIcon, TwitterIcon } from 'lucide-svelte';
   import Theme from './theme.svelte';
 
+  import { ArrowUpRight, CloudyIcon, GithubIcon, TwitterIcon } from 'lucide-svelte';
+  import XIcon from './xIcon.svelte';
+
   const socials = [
-    {
-      name: 'Twitter',
-      url: 'https://twitter.com/pheralb_',
-      icon: TwitterIcon
-    },
     {
       name: 'GitHub',
       url: 'https://github.com/pheralb/svgl',
@@ -39,8 +36,6 @@
       external: true
     }
   ];
-
-  console.log(currentPath);
 </script>
 
 <nav
@@ -90,7 +85,14 @@
           </a>
         {/each}
       </div>
-      <div class="flex items-center space-x-3">
+      <div class="flex items-center space-x-4">
+        <a
+          href="https://twitter.com/pheralb_"
+          target="_blank"
+          class="flex items-center space-x-1 hover:opacity-80 transition-opacity"
+        >
+          <XIcon iconSize={16} />
+        </a>
         {#each socials as social}
           <a
             href={social.url}
