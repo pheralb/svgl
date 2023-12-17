@@ -1,6 +1,6 @@
 <div align="center">
-<a href="https://svgl.vercel.app">
-<img src="static/images/screenshot.png">
+<a href="https://svgl.app">
+<img src="static/images/readme.png">
 </a>
 <p></p>
 </div>
