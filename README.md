@@ -62,20 +62,20 @@ You will need:
 - [Node.js 16+ (recommended 18 LTS)](https://nodejs.org/en/).
 - [Git](https://git-scm.com/).
 
-1. Clone or [fork](https://github.com/pheralb/svgl/fork) this repository:
+1. [Fork](https://github.com/pheralb/svgl/fork) this repository and clone it locally:
 
 ```bash
-git clone git@github.com:pheralb/svgl.git
+git clone git@github.com:your_username/svgl.git
 ```
 
 2. Install dependencies:
 
 ```bash
-# with pnpm (recommended):
-pnpm install
+# Install pnpm globally if you don't have it:
+npm install -g pnpm
 
-# with npm:
-npm install
+# and install dependencies:
+pnpm install
 ```
 
 3. Go to the [**`static/library`**](https://github.com/pheralb/svgl/blob/main/static/library) folder and add your `.svg` logo.
@@ -114,6 +114,16 @@ or to support a different logo for light and dark themes:
 > The list of categories is here: [`src/types/categories.ts`](https://github.com/pheralb/svgl/blob/main/src/types/categories.ts). You can add a new category if you need it.
 
 And create a pull request with your logo 🚀.
+
+5. (Optional) If you want to run the API locally, you will need to create a `.env` file in the root of the project with the following variables:
+
+- [Create a Upstash account](https://console.upstash.com/).
+
+```bash
+SVGL_API_REQUESTS = 1
+UPSTASH_REDIS_URL = ""
+UPSTASH_REDIS_TOKEN = ""
+```
 
 ## 💻 Terminal
 
