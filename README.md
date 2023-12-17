@@ -10,16 +10,16 @@
         Discover
     </a>
     <span>&nbsp;✦&nbsp;</span>
-    <a href="https://github.com/sujjeee/svgls" target="_blank">
-        Terminal
-    </a>
-    <span>&nbsp;✦&nbsp;</span>
     <a href="#-getting-started">
         Submit logo
     </a>
     <span>&nbsp;✦&nbsp;</span>
-    <a href="#-projects">
-        Projects
+    <a href="#-terminal">
+        Terminal
+    </a>
+    <span>&nbsp;✦&nbsp;</span>
+    <a href="https://twitter.com/pheralb_">
+        Contact
     </a>
     <span>&nbsp;✦&nbsp;</span>
     <a href="#%EF%B8%8F-contributing">
@@ -115,13 +115,21 @@ or to support a different logo for light and dark themes:
 
 And create a pull request with your logo 🚀.
 
-## 📦 Projects
+## 💻 Terminal
 
-A list of projects that use svgl:
+SVG files can also be accessed directly from the terminal using [`svgls`](https://www.npmjs.com/package/svgls) CLI.
 
-| Project                                   | Description                                        | Author                                  |
-| ----------------------------------------- | -------------------------------------------------- | --------------------------------------- |
-| [svgls](https://github.com/sujjeee/svgls) | A CLI for easily adding SVG icons to your project. | [sujjeee](https://twitter.com/sujjeeee) |
+#### Quick start
+
+If you are using yarn or npm, run this command:
+
+```bash
+npx svgls add
+# or
+pnpm dlx svgls add
+```
+
+For more details, check out the [GitHub repository](https://github.com/sujjeee/svgls) created by [sujjeee](https://twitter.com/sujjeeee).
 
 ## ✌️ Contributing
 
