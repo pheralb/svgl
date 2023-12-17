@@ -852,7 +852,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Developer Student Club',
-    category: 'Education',
+    category: 'Community',
     route: '/library/gdsc.svg',
     url: 'https://gdsc.community.dev/'
   },
@@ -882,7 +882,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'midudev',
-    category: 'Education',
+    category: 'Community',
     route: '/library/midudev.svg',
     url: 'https://midu.dev'
   },
