@@ -1887,5 +1887,11 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/raycast.svg',
     url: 'https://raycast.com/'
-  }
+  },
+  {
+    title: 'Procure',
+    category: 'Marketplace',
+    route: '/library/procure.svg',
+    url: 'https://procure.biz/'
+  },
 ];
