@@ -48,6 +48,7 @@
 - [**mdsvex**](https://mdsvex.com/) - Markdown for Svelte apps.
 - [**Shiki**](https://github.com/shikijs/shiki) - A beautiful Syntax Highlighter.
 - [**Tailwindcss**](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom designs.
+- [**bits-ui**](https://www.bits-ui.com) - A collection of headless components for Svelte.
 - [**clsx**](https://github.com/lukeed/clsx) + [**tailwind-merge**](https://github.com/dcastil/tailwind-merge) inspired by [shadcn/ui](https://ui.shadcn.com) - A tiny utility for constructing `className` strings conditionally.
 - [**Prettier**](https://prettier.io/) + [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss) - An opinionated code formatter.
 - [**Lucide Icons**](https://lucide.dev/) + [**phosphor-svelte**](https://github.com/haruaki07/phosphor-svelte) - A clean and friendly icons libraries.
