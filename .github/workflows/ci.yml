@@ -11,7 +11,7 @@ on:
       - next
 
 jobs:
-  svelte-build:
+  svelte-check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -24,8 +24,8 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Build App
-        run: pnpm build
+      - name: Run Sveltekit Check
+        run: pnpm check
         env:
           SKIP_ENV_VALIDATION: true
   vitest:
