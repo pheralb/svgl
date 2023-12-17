@@ -25,6 +25,8 @@
     "format": "prettier --plugin-search-dir . --write ."
   },
   "dependencies": {
+    "@upstash/ratelimit": "1.0.0",
+    "@upstash/redis": "1.25.2",
     "clsx": "2.0.0",
     "downloadjs": "1.4.7",
     "lucide-svelte": "0.298.0",
