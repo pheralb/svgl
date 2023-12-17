@@ -1566,7 +1566,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Patreon',
-    category: 'Software',
+    category: 'Social',
     route: {
       light: '/library/patreon.svg',
       dark: '/library/patreon_dark.svg'
@@ -1749,7 +1749,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Pinterest',
-    category: 'Software',
+    category: 'Social',
     route: '/library/pinterest.svg',
     url: 'https://pinterest.com/'
   },
