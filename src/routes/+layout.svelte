@@ -20,6 +20,7 @@
 
   // Components for all pages:
   import Transition from '@/components/transition.svelte';
+  import Warning from '@/components/warning.svelte';
 
   // Layout:
   import Navbar from '@/components/navbar.svelte';
@@ -65,7 +66,6 @@
           </a>
         {/each}
       </nav>
-      <div></div>
       <a
         href="https://twitter.com/pheralb_"
         target="_blank"
@@ -83,6 +83,7 @@
     </div>
   </aside>
   <div class="ml-0 md:ml-56 pb-6">
+    <Warning />
     <Transition pathname={data.pathname}>
       <slot />
     </Transition>
