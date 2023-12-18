@@ -1879,4 +1879,10 @@ export const svgs: iSVG[] = [
     route: '/library/procure.svg',
     url: 'https://procure.biz/'
   },
+  {
+    title: 'SWC',
+    category: 'Compiler',
+    route: '/library/swc.svg',
+    url: 'https://swc.rs/'
+  }
 ];
