@@ -95,10 +95,14 @@
       <p class="truncate text-[15px] font-medium text-balance text-center select-all">
         {svgInfo.title}
       </p>
-      <a
-        href={`/directory/${svgInfo.category.toLowerCase()}`}
-        class="text-sm lowercase text-neutral-500 hover:underline font-mono">{svgInfo.category}</a
-      >
+
+      {#each svgInfo.category as category}
+        <a
+          href={`/directory/${category.toLowerCase()}`}
+          class="text-sm lowercase text-neutral-500 hover:underline font-mono"
+          >{category.toLowerCase()}</a
+        >
+      {/each}
     </div>
     <!-- Actions -->
     <div class="flex items-center space-x-1">
