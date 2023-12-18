@@ -7,9 +7,22 @@
 
   // Get categories:
   import { svgs } from '@/data/svgs';
+
+  // Obten todas las categorías de svgs y que no se repitan
   const categories = svgs
     .map((svg) => svg.category)
-    .filter((category, index, array) => array.indexOf(category) === index);
+    .filter((category, index, self) => self.indexOf(category) === index);
+
+  // console.log(categories);
+
+  // Categorías que no se repitan
+  const categories_1 = categories.reduce((acc, svg) => {
+    return [...acc, ...svg];
+  }, []);
+
+  // Remove duplicates if needed
+  const uniqueCategories = [...new Set(categories_1.sort())];
+  // console.log(uniqueCategories.map((category) => category.toLowerCase()));
 
   // Icons:
   import Heart from 'phosphor-svelte/lib/Heart';
@@ -52,7 +65,7 @@
           data-sveltekit-preload-data>All</a
         >
         <!-- Order alfabetically: -->
-        {#each categories.sort() as category}
+        {#each uniqueCategories.sort() as category}
           <a
             href={`/directory/${category.toLowerCase()}`}
             class={cn(
