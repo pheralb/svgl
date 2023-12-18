@@ -58,6 +58,9 @@
 
 ## 🚀 Getting Started
 
+> [!IMPORTANT]
+> Before submitting the SVG, **make sure that you have permission** or that the license of the SVG allows you to add it to svgl. If you are not sure, please contact the company or author.
+
 You will need:
 
 - [Node.js 16+ (recommended 18 LTS)](https://nodejs.org/en/).
