@@ -1885,4 +1885,10 @@ export const svgs: iSVG[] = [
     route: '/library/julia.svg',
     url: 'https://julialang.org/'
   },
+  {
+    title: 'SWC',
+    category: 'Compiler',
+    route: '/library/swc.svg',
+    url: 'https://swc.rs/'
+  }
 ];
