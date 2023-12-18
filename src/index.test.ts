@@ -3,7 +3,7 @@ import { svgs } from './data/svgs';
 
 describe('Get svgs by category', () => {
   it('should have a category named "Social"', () => {
-    expect(svgs.find((svg) => svg.category === 'Social')).toBeDefined();
+    expect(svgs.find((svg) => svg.category.includes('Social'))).toBeDefined();
   });
 });
 
