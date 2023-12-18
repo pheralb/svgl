@@ -1879,4 +1879,10 @@ export const svgs: iSVG[] = [
     route: '/library/procure.svg',
     url: 'https://procure.biz/'
   },
+  {
+    title: 'Julia',
+    category: 'Language',
+    route: '/library/julia.svg',
+    url: 'https://julialang.org/'
+  },
 ];
