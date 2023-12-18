@@ -12,8 +12,7 @@
   >
     <AlertTriangleIcon size={18} strokeWidth={2} class="mr-2 text-yellow-500" />
     <p>
-      Use each svg responsibly. The svgs provides the link to the product or company that owns it,
-      <strong>please contact them</strong> if you are going to use their logo. If you are the owner
+      Each svg provides the link to the product or company that owns it, <strong>please contact them</strong> if you are going to use their logo. If you are the owner
       of an svg and do not want it to appear here, please
       <a
         target="_blank"
