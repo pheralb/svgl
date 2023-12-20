@@ -1890,5 +1890,17 @@ export const svgs: iSVG[] = [
     category: 'Compiler',
     route: '/library/swc.svg',
     url: 'https://swc.rs/'
+  },
+  {
+    title: 'PlayStation',
+    category: 'Software',
+    route: '/library/playstation.svg',
+    url: 'https://www.playstation.com/'
+  },
+  {
+    title: 'Xbox',
+    category: 'Software',
+    route: '/library/xbox.svg',
+    url: 'https://www.xbox.com/'
   }
 ];
