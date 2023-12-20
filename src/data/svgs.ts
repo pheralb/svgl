@@ -1902,5 +1902,29 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/xbox.svg',
     url: 'https://www.xbox.com/'
+  },
+  {
+    title: 'Cody',
+    category: 'AI',
+    route: '/library/cody.svg',
+    url: 'https://about.sourcegraph.com/'
+  },
+  {
+    title: 'Sourcegraph',
+    category: 'AI',
+    route: '/library/sourcegraph.svg',
+    url: 'https://about.sourcegraph.com/'
+  },
+  {
+    title: 'Claude AI',
+    category: 'AI',
+    route: '/library/claude-ai.svg',
+    url: 'https://claude.ai/'
+  },
+  {
+    title: 'Perplexity AI',
+    category: 'AI',
+    route: '/library/perplexity.svg',
+    url: 'https://perplexity.ai/'
   }
 ];
