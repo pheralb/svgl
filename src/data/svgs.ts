@@ -431,6 +431,15 @@ export const svgs: iSVG[] = [
     url: 'https://arc.dev'
   },
   {
+    title: 'Arc',
+    category: 'Fintech',
+    route: {
+      light: '/library/arc_fintech_light.svg',
+      dark: '/library/arc_fintech_dark.svg'
+    },
+    url: 'https://arc.tech'
+  },
+  {
     title: 'Qwik',
     category: 'Framework',
     route: '/library/qwik.svg',
