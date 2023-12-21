@@ -1938,7 +1938,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Spring',
-    category: 'Framework',
+    category: ['Framework'],
     route: '/library/spring.svg',
     url: 'https://spring.io/'
   }
