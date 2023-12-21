@@ -431,6 +431,15 @@ export const svgs: iSVG[] = [
     url: 'https://arc.dev'
   },
   {
+    title: 'Arc',
+    category: 'Fintech',
+    route: {
+      light: '/library/arc_fintech_light.svg',
+      dark: '/library/arc_fintech_dark.svg'
+    },
+    url: 'https://arc.tech'
+  },
+  {
     title: 'Qwik',
     category: ['Framework'],
     route: '/library/qwik.svg',
@@ -1890,5 +1899,41 @@ export const svgs: iSVG[] = [
     category: ['Compiler'],
     route: '/library/swc.svg',
     url: 'https://swc.rs/'
+  },
+  {
+    title: 'PlayStation',
+    category: 'Software',
+    route: '/library/playstation.svg',
+    url: 'https://www.playstation.com/'
+  },
+  {
+    title: 'Xbox',
+    category: 'Software',
+    route: '/library/xbox.svg',
+    url: 'https://www.xbox.com/'
+  },
+  {
+    title: 'Cody',
+    category: 'AI',
+    route: '/library/cody.svg',
+    url: 'https://about.sourcegraph.com/'
+  },
+  {
+    title: 'Sourcegraph',
+    category: 'AI',
+    route: '/library/sourcegraph.svg',
+    url: 'https://about.sourcegraph.com/'
+  },
+  {
+    title: 'Claude AI',
+    category: 'AI',
+    route: '/library/claude-ai.svg',
+    url: 'https://claude.ai/'
+  },
+  {
+    title: 'Perplexity AI',
+    category: 'AI',
+    route: '/library/perplexity.svg',
+    url: 'https://perplexity.ai/'
   }
 ];
