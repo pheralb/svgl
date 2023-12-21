@@ -1343,6 +1343,12 @@ export const svgs: iSVG[] = [
     url: 'https://algorand.org/'
   },
   {
+    title: 'Tether',
+    category: 'Crypto',
+    route: '/library/tether.svg',
+    url: 'https://tether.to/'
+  },
+  {
     title: 'X',
     category: 'Social',
     route: {
