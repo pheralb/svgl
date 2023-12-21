@@ -432,7 +432,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Arc',
-    category: 'Fintech',
+    category: ['Fintech'],
     route: {
       light: '/library/arc_fintech_light.svg',
       dark: '/library/arc_fintech_dark.svg'
@@ -1902,37 +1902,37 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'PlayStation',
-    category: 'Software',
+    category: ['Software'],
     route: '/library/playstation.svg',
     url: 'https://www.playstation.com/'
   },
   {
     title: 'Xbox',
-    category: 'Software',
+    category: ['Software'],
     route: '/library/xbox.svg',
     url: 'https://www.xbox.com/'
   },
   {
     title: 'Cody',
-    category: 'AI',
+    category: ['AI'],
     route: '/library/cody.svg',
     url: 'https://about.sourcegraph.com/'
   },
   {
     title: 'Sourcegraph',
-    category: 'AI',
+    category: ['AI'],
     route: '/library/sourcegraph.svg',
     url: 'https://about.sourcegraph.com/'
   },
   {
     title: 'Claude AI',
-    category: 'AI',
+    category: ['AI'],
     route: '/library/claude-ai.svg',
     url: 'https://claude.ai/'
   },
   {
     title: 'Perplexity AI',
-    category: 'AI',
+    category: ['AI'],
     route: '/library/perplexity.svg',
     url: 'https://perplexity.ai/'
   }
