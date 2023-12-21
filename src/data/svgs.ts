@@ -27,7 +27,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Vercel',
-    category: ['Hosting', 'Library'],
+    category: ['Hosting'],
     route: {
       light: '/library/vercel.svg',
       dark: '/library/vercel_dark.svg'
