@@ -1941,5 +1941,14 @@ export const svgs: iSVG[] = [
     category: 'Framework',
     route: '/library/spring.svg',
     url: 'https://spring.io/'
-  }
+  },
+  {
+    title: 'Pronouns.Page',
+    category: 'Social',
+    route: {
+      light: '/library/pronounspage_light.svg',
+      dark: '/library/pronounspage_dark.svg',
+    },
+    url: 'https://pronouns.page',
+  },
 ];
