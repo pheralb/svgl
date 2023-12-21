@@ -3,7 +3,7 @@ import type { iSVG } from '../types/svg';
 export const svgs: iSVG[] = [
   {
     title: 'Discord',
-    category: ['Software', 'Browser'],
+    category: ['Software'],
     route: '/library/discord.svg',
     url: 'https://discord.com/'
   },
