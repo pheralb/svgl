@@ -10,7 +10,7 @@
   import { flyAndScale } from '@/utils/flyAndScale';
 
   // Icons:
-  import { CopyIcon, DownloadIcon, LinkIcon, PackageIcon, PaintBucket } from 'lucide-svelte';
+  import { CopyIcon, DownloadIcon, LinkIcon, LogIn, PackageIcon, PaintBucket } from 'lucide-svelte';
 
   // Main Card:
   import CardSpotlight from './cardSpotlight.svelte';
@@ -95,10 +95,17 @@
       <p class="truncate text-[15px] font-medium text-balance text-center select-all">
         {svgInfo.title}
       </p>
-      <a
-        href={`/directory/${svgInfo.category.toLowerCase()}`}
-        class="text-sm lowercase text-neutral-500 hover:underline font-mono">{svgInfo.category}</a
-      >
+      <div class="text-center text-sm lowercase text-neutral-500 font-mono truncate w-[190px]">
+        {#each svgInfo.category as category}
+          <a
+            href={`/directory/${category.toLowerCase()}`}
+            class="text-sm lowercase text-neutral-500 hover:underline font-mono"
+          >
+            {category.toLowerCase()}
+          </a>
+          {svgInfo.category[svgInfo.category.length - 1] == category ? '' : '- '}
+        {/each}
+      </div>
     </div>
     <!-- Actions -->
     <div class="flex items-center space-x-1">
