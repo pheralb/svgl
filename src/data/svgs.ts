@@ -1935,5 +1935,11 @@ export const svgs: iSVG[] = [
     category: 'AI',
     route: '/library/perplexity.svg',
     url: 'https://perplexity.ai/'
+  },
+  {
+    title: 'Spring',
+    category: 'Framework',
+    route: '/library/spring.svg',
+    url: 'https://spring.io/'
   }
 ];
