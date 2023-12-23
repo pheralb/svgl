@@ -47,6 +47,12 @@ export const svgs: iSVG[] = [
     url: 'https://vuejs.org/'
   },
   {
+    title: "Vuetify",
+    category: "Library",
+    route: "/library/vuetify.svg",
+    url: "https://vuetifyjs.com/"
+  },
+  {
     title: 'Nuxt',
     category: 'Framework',
     route: '/library/nuxt.svg',
