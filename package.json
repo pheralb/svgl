@@ -22,9 +22,13 @@
     "check:size": "cd ./check-size && npm run start",
     "test": "vitest run",
     "lint": "prettier --plugin-search-dir . --check . && eslint .",
-    "format": "prettier --plugin-search-dir . --write ."
+    "format": "prettier --plugin-search-dir . --write .",
+    "dev:figma": "concurrently -n plugin,svelte 'npm run build:plugin -- --watch --define:SITE_URL=\\\"http://localhost:5173?figma=1\\\"' 'npm run dev'",
+    "build:plugin": "esbuild src/figma/code.ts --bundle --target=es6 --loader:.svg=text --outfile=src/figma/dist/code.js",
+    "build:figma": "concurrently -n plugin,svelte 'npm run build:plugin -- --define:SITE_URL=\\\"$npm_package_config_siteURL\\\"' 'npm run build'"
   },
   "dependencies": {
+    "@figma/plugin-typings": "^1.82.0",
     "@upstash/ratelimit": "1.0.0",
     "@upstash/redis": "1.25.2",
     "bits-ui": "0.11.8",
@@ -45,6 +49,8 @@
     "@typescript-eslint/eslint-plugin": "6.14.0",
     "@typescript-eslint/parser": "6.14.0",
     "autoprefixer": "10.4.16",
+    "concurrently": "^8.2.2",
+    "esbuild": "^0.19.10",
     "eslint": "8.56.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-svelte": "2.35.1",
@@ -61,5 +67,8 @@
     "typescript": "5.3.3",
     "vite": "5.0.10",
     "vitest": "1.0.4"
+  },
+  "config": {
+    "siteURL": "https://svgl.vercel.app?figma=1"
   }
 }
