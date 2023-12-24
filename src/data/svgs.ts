@@ -47,6 +47,12 @@ export const svgs: iSVG[] = [
     url: 'https://vuejs.org/'
   },
   {
+    title: "Vuetify",
+    category: "Library",
+    route: "/library/vuetify.svg",
+    url: "https://vuetifyjs.com/"
+  },
+  {
     title: 'Nuxt',
     category: 'Framework',
     route: '/library/nuxt.svg',
@@ -326,12 +332,6 @@ export const svgs: iSVG[] = [
     url: 'https://www.mongodb.com/'
   },
   {
-    title: 'Babel',
-    category: 'Compiler',
-    route: '/library/babel.svg',
-    url: 'https://babeljs.io'
-  },
-  {
     title: 'Moon',
     category: 'Framework',
     route: '/library/moon.svg',
@@ -435,6 +435,15 @@ export const svgs: iSVG[] = [
       dark: '/library/arc_dark.svg'
     },
     url: 'https://arc.dev'
+  },
+  {
+    title: 'Arc',
+    category: 'Fintech',
+    route: {
+      light: '/library/arc_fintech_light.svg',
+      dark: '/library/arc_fintech_dark.svg'
+    },
+    url: 'https://arc.tech'
   },
   {
     title: 'Qwik',
@@ -800,12 +809,6 @@ export const svgs: iSVG[] = [
     url: 'https://swift.org/'
   },
   {
-    title: 'Testing Library',
-    category: 'Framework',
-    route: '/library/testinglibrary.svg',
-    url: 'https://testing-library.com/'
-  },
-  {
     title: 'TypeORM',
     category: 'Database',
     route: '/library/typeorm.svg',
@@ -858,7 +861,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Developer Student Club',
-    category: 'Education',
+    category: 'Community',
     route: '/library/gdsc.svg',
     url: 'https://gdsc.community.dev/'
   },
@@ -888,7 +891,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'midudev',
-    category: 'Education',
+    category: 'Community',
     route: '/library/midudev.svg',
     url: 'https://midu.dev'
   },
@@ -942,12 +945,6 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/jetbrains-space.svg',
     url: 'https://www.jetbrains.com/space/'
-  },
-  {
-    title: 'Gin',
-    category: 'Framework',
-    route: '/library/gin.svg',
-    url: 'https://gin-gonic.com/'
   },
   {
     title: 'Stimulus',
@@ -1328,12 +1325,6 @@ export const svgs: iSVG[] = [
     url: 'https://www.bnbchain.org/'
   },
   {
-    title: 'Cardano',
-    category: 'Crypto',
-    route: '/library/ada.svg',
-    url: 'https://cardano.org/'
-  },
-  {
     title: 'TRON',
     category: 'Crypto',
     route: '/library/trx.svg',
@@ -1350,6 +1341,18 @@ export const svgs: iSVG[] = [
     category: 'Crypto',
     route: '/library/matic.svg',
     url: 'https://polygon.technology/'
+  },
+  {
+    title: 'Algorand',
+    category: 'Crypto',
+    route: '/library/algorand.svg',
+    url: 'https://algorand.org/'
+  },
+  {
+    title: 'Tether',
+    category: 'Crypto',
+    route: '/library/tether.svg',
+    url: 'https://tether.to/'
   },
   {
     title: 'X',
@@ -1553,15 +1556,12 @@ export const svgs: iSVG[] = [
     url: 'https://www.rowy.io/'
   },
   {
-    title: 'BuildShip',
-    category: 'AI',
-    route: '/library/buildship.svg',
-    url: 'https://buildship.com/'
-  },
-  {
     title: 'Cal.com',
     category: 'Software',
-    route: '/library/cal.svg',
+    route: {
+      light: '/library/cal.svg',
+      dark: '/library/cal_dark.svg'
+    },
     url: 'https://cal.com'
   },
   {
@@ -1590,7 +1590,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Patreon',
-    category: 'Software',
+    category: 'Social',
     route: {
       light: '/library/patreon.svg',
       dark: '/library/patreon_dark.svg'
@@ -1736,12 +1736,6 @@ export const svgs: iSVG[] = [
     url: 'https://axiom.co/'
   },
   {
-    title: 'ArtisanLabs',
-    category: 'Software',
-    route: '/library/ArtisanLabs.svg',
-    url: 'https://artisanlabs.io'
-  },
-  {
     title: 'Django',
     category: 'Framework',
     route: '/library/django.svg',
@@ -1779,7 +1773,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Pinterest',
-    category: 'Software',
+    category: 'Social',
     route: '/library/pinterest.svg',
     url: 'https://pinterest.com/'
   },
@@ -1819,13 +1813,19 @@ export const svgs: iSVG[] = [
   {
     title: 'Penpot',
     category: 'Design',
-    route: '/library/penpot.svg',
+    route: {
+      light: '/library/penpot.svg',
+      dark: '/library/penpot_dark.svg'
+    },
     url: 'https://penpot.app/'
   },
   {
     title: 'Sketch',
     category: 'Design',
-    route: '/library/sketch.svg',
+    route: {
+      light: '/library/sketch_light.svg',
+      dark: '/library/sketch.svg'
+    },
     url: 'https://www.sketch.com/'
   },
   {
@@ -1839,12 +1839,6 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/ubuntu.svg',
     url: 'https://ubuntu.com/'
-  },
-  {
-    title: 'Meta',
-    category: 'Social',
-    route: '/library/meta.svg',
-    url: 'https://meta.com/'
   },
   {
     title: 'Cypress',
@@ -1889,7 +1883,13 @@ export const svgs: iSVG[] = [
     url: 'https://www.jetbrains.com/phpstorm/'
   },
   {
-    title: 'JetBrains PyCharm',
+    title: 'MonkeyType',
+    category: 'Typing',
+    route: '/library/monkeytype.svg',
+    url: 'https://monkeytype.com/'
+  },
+  {
+    title: 'Raycast',
     category: 'Software',
     route: '/library/pycharm.svg',
     url: 'https://www.jetbrains.com/pycharm/'
@@ -1977,5 +1977,77 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/trustpilot.svg',
     url: 'https://www.trustpilot.com'
+  },
+  {
+    title: 'Raycast',
+    category: 'Software',
+    route: '/library/raycast.svg',
+    url: 'https://raycast.com/'
+  },
+  {
+    title: 'Procure',
+    category: 'Marketplace',
+    route: '/library/procure.svg',
+    url: 'https://procure.biz/'
+  },
+  {
+    title: 'Julia',
+    category: 'Language',
+    route: '/library/julia.svg',
+    url: 'https://julialang.org/'
+  },
+  {
+    title: 'SWC',
+    category: 'Compiler',
+    route: '/library/swc.svg',
+    url: 'https://swc.rs/'
+  },
+  {
+    title: 'PlayStation',
+    category: 'Software',
+    route: '/library/playstation.svg',
+    url: 'https://www.playstation.com/'
+  },
+  {
+    title: 'Xbox',
+    category: 'Software',
+    route: '/library/xbox.svg',
+    url: 'https://www.xbox.com/'
+  },
+  {
+    title: 'Cody',
+    category: 'AI',
+    route: '/library/cody.svg',
+    url: 'https://about.sourcegraph.com/'
+  },
+  {
+    title: 'Sourcegraph',
+    category: 'AI',
+    route: '/library/sourcegraph.svg',
+    url: 'https://about.sourcegraph.com/'
+  },
+  {
+    title: 'Claude AI',
+    category: 'AI',
+    route: '/library/claude-ai.svg',
+    url: 'https://claude.ai/'
+  },
+  {
+    title: 'Perplexity AI',
+    category: 'AI',
+    route: '/library/perplexity.svg',
+    url: 'https://perplexity.ai/'
+  },
+  {
+    title: 'Spring',
+    category: 'Framework',
+    route: '/library/spring.svg',
+    url: 'https://spring.io/'
+  },
+  {
+    "title": "Directus",
+    "category": "CMS",
+    "route": "/library/directus.svg",
+    "url": "https://directus.io/"
   },
 ];

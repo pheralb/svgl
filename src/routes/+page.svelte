@@ -1,5 +1,6 @@
 <script lang="ts">
   import type { iSVG } from '@/types/svg';
+  import { cn } from '@/utils/cn';
 
   // Get all svgs:
   import { svgsData } from '@/data';
@@ -13,19 +14,22 @@
   import NotFound from '@/components/notFound.svelte';
 
   // Icons:
-  import ArrowsClockWise from 'phosphor-svelte/lib/ArrowsClockwise';
-  import ArrowSquareOut from 'phosphor-svelte/lib/ArrowSquareOut';
+  import { ArrowDownUpIcon, ArrowUpDownIcon } from 'lucide-svelte';
+
+  let sorted: boolean = false;
 
   // Search:
   let searchTerm = '';
   let filteredSvgs: iSVG[] = [];
 
+  // Order by last added:
   if (searchTerm.length === 0) {
     filteredSvgs = allSvgs.sort((a: iSVG, b: iSVG) => {
       return b.id! - a.id!;
     });
   }
 
+  // Search svgs:
   const searchSvgs = () => {
     return (filteredSvgs = allSvgs.filter((svg: iSVG) => {
       let svgTitle = svg.title.toLowerCase();
@@ -33,14 +37,13 @@
     }));
   };
 
+  // Clear search:
   const clearSearch = () => {
     searchTerm = '';
     searchSvgs();
   };
 
   // Sort:
-  let sorted: boolean = false;
-
   const sort = () => {
     if (sorted) {
       sortByLatest();
@@ -52,7 +55,7 @@
 
   // Sort alphabetically:
   const sortAlphabetically = () => {
-    filteredSvgs = filteredSvgs.sort((a: iSVG, b: iSVG) => {
+    filteredSvgs = allSvgs.sort((a: iSVG, b: iSVG) => {
       return a.title.localeCompare(b.title);
     });
   };
@@ -69,29 +72,29 @@
   <title>A beautiful library with SVG logos - Svgl</title>
 </svelte:head>
 
+<Search
+  bind:searchTerm
+  on:input={searchSvgs}
+  clearSearch={() => clearSearch()}
+  placeholder={`Search ${filteredSvgs.length} logos...`}
+/>
+
 <Container>
-  <Search
-    bind:searchTerm
-    on:input={searchSvgs}
-    clearSearch={() => clearSearch()}
-    placeholder={`Search ${filteredSvgs.length} logos...`}
-  />
-  <div class={`flex items-center justify-between my-4 ${filteredSvgs.length === 0 && 'hidden'}`}>
+  <div class="flex items-center justify-end mb-4">
     <button
-      class="flex items-center justify-center space-x-2 rounded-md py-1.5 text-sm font-medium text-neutral-500 dark:text-neutral-400 hover:text-dark dark:hover:text-white duration-100 transition-colors"
+      class={cn(
+        'flex items-center justify-center space-x-1 rounded-md px-3 py-1.5 text-sm font-medium hover:opacity-80 transition-opacity',
+        filteredSvgs.length === 0 && 'hidden'
+      )}
       on:click={() => sort()}
     >
-      <ArrowsClockWise size={14} />
+      {#if sorted}
+        <ArrowDownUpIcon size={16} strokeWidth={2} class="mr-1" />
+      {:else}
+        <ArrowUpDownIcon size={16} strokeWidth={2} class="mr-1" />
+      {/if}
       <span>{sorted ? 'Sort by latest' : 'Sort alphabetically'}</span>
     </button>
-    <a
-      class="flex items-center justify-center space-x-2 rounded-md py-1.5 text-sm font-medium text-neutral-500 dark:text-neutral-400 hover:text-dark dark:hover:text-white duration-100 transition-colors"
-      href="https://github.com/pheralb/svgl?tab=readme-ov-file#-getting-started"
-      target="_blank"
-    >
-      <span>Submit SVG</span>
-      <ArrowSquareOut size={14} />
-    </a>
   </div>
   <Grid>
     {#each filteredSvgs as svg}

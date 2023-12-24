@@ -9,7 +9,8 @@ module.exports = {
         light: '#f5f5f5'
       },
       fontFamily: {
-        sans: ['General-Sans', 'sans-serif']
+        sans: ['InterVariable', 'sans-serif'],
+        mono: ['GeistMono', 'monospace']
       },
       fontSize: {
         mini: '14px'
@@ -17,6 +18,7 @@ module.exports = {
     }
   },
   plugins: [
+    require('@tailwindcss/typography'),
     ({ addUtilities }) => {
       addUtilities({
         '.text-balance': {

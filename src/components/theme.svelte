@@ -35,12 +35,10 @@
   }
 
   // Icons:
-  import Moon from 'phosphor-svelte/lib/Moon';
-  import Sun from 'phosphor-svelte/lib/Sun';
+  import { MoonIcon, SunIcon } from 'lucide-svelte';
 </script>
 
 <svelte:head>
-  <!-- set dark mode class based on user preference / device settings (in head to avoid FOUC) -->
   <script>
     if (
       localStorage.theme === 'dark' ||
@@ -53,15 +51,11 @@
   </script>
 </svelte:head>
 
-<button
-  on:click={toggle}
-  class="duration-100 hover:-translate-y-0.5 focus:outline-none"
-  aria-label="Toggle dark mode"
->
+<button on:click={toggle} aria-label="Toggle dark mode" class="hover:opacity-80">
   <!-- moon icon -->
   {#if dark}
-    <Sun size={18} />
+    <SunIcon size={20} strokeWidth={1.5} />
   {:else}
-    <Moon size={18} />
+    <MoonIcon size={20} strokeWidth={1.5} />
   {/if}
 </button>
