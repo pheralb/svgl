@@ -1,4 +1,4 @@
-import type { iSVG } from '../types/svg';
+import type { iSVG } from '../types/svg'
 
 export const svgs: iSVG[] = [
   {
@@ -2050,4 +2050,22 @@ export const svgs: iSVG[] = [
     "route": "/library/directus.svg",
     "url": "https://directus.io/"
   },
-];
+  {
+    title: 'Pnpm',
+    category: 'Software',
+    route: {
+      light: '/library/pnpm.svg',
+      dark: '/library/pnpm_dark.svg'
+    },
+    url: 'https://pnpm.io/'
+  },
+  {
+    title: 'Pnpm No Text',
+    category: 'Software',
+    route: {
+      light: '/library/pnpm_no_text.svg',
+      dark: '/library/pnpm_no_text_dark.svg'
+    },
+    url: 'https://pnpm.io/'
+  }
+]
