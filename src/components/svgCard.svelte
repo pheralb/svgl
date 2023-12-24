@@ -134,6 +134,7 @@
       {#if typeof svgInfo.route !== 'string'}
         <DropdownMenu.Root>
           <DropdownMenu.Trigger
+            title="Download SVG"
             class="flex items-center space-x-2 rounded-md p-2 duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700/40"
           >
             <DownloadIcon size={iconSize} strokeWidth={iconStroke} />
@@ -144,7 +145,8 @@
             sideOffset={3}
           >
             <DropdownMenu.Item
-              class="flex h-10 select-none items-center rounded-md py-3 pl-3 pr-1.5 text-sm font-medium hover:bg-neutral-100 dark:hover:bg-neutral-700/40"
+              title="Download Light & Dark variants"
+              class="flex h-10 select-none items-center rounded-md py-3 pl-3 pr-1.5 text-sm font-medium cursor-pointer hover:bg-neutral-100 dark:hover:bg-neutral-700/40"
               on:click={() => {
                 downloadAllVariants(svgInfo);
               }}
@@ -153,7 +155,8 @@
               <p>Light & Dark variants</p>
             </DropdownMenu.Item>
             <DropdownMenu.Item
-              class="flex h-10 select-none items-center rounded-md py-3 pl-3 pr-1.5 text-sm font-medium hover:bg-neutral-100 dark:hover:bg-neutral-700/40"
+              title="Download only {document.documentElement.classList.contains('dark') ? 'dark' : 'light'} variant"
+              class="flex h-10 select-none items-center rounded-md py-3 pl-3 pr-1.5 text-sm font-medium cursor-pointer hover:bg-neutral-100 dark:hover:bg-neutral-700/40"
               on:click={() => {
                 const svgHasTheme = typeof svgInfo.route !== 'string';
 
