@@ -1953,5 +1953,11 @@ export const svgs: iSVG[] = [
     category: 'Framework',
     route: '/library/spring.svg',
     url: 'https://spring.io/'
-  }
+  },
+  {
+    "title": "Directus",
+    "category": "CMS",
+    "route": "/library/directus.svg",
+    "url": "https://directus.io/"
+  },
 ];
