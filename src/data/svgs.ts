@@ -1891,6 +1891,96 @@ export const svgs: iSVG[] = [
   {
     title: 'Raycast',
     category: 'Software',
+    route: '/library/pycharm.svg',
+    url: 'https://www.jetbrains.com/pycharm/'
+  },
+  {
+    title: 'Shopify',
+    category: 'CMS',
+    route: '/library/shopify.svg',
+    url: 'https://www.shopify.com'
+  },
+  {
+    title: 'WebFlow',
+    category: 'CMS',
+    route: '/library/webflow.svg',
+    url: 'https://www.webflow.com'
+  },
+  {
+    title: 'bigcommerce',
+    category: 'CMS',
+    route: '/library/bigcommerce.svg',
+    url: 'https://www.bigcommerce.co.uk'
+  },
+  {
+    title: 'sanity',
+    category: 'CMS',
+    route: '/library/sanity.svg',
+    url: 'https://www.sanity.io'
+  },
+  {
+    title: 'sky',
+    category: 'Entertainment',
+    route: '/library/sky.svg',
+    url: 'https://www.sky.com'
+  },
+  {
+    title: 'airbnb',
+    category: 'Software',
+    route: '/library/airbnb.svg',
+    url: 'https://www.airbnb.com'
+  },
+  {
+    title: 'uber',
+    category: 'Software',
+    route: '/library/uber.svg',
+    url: 'https://www.uber.com'
+  },
+  {
+    title: 'gmail',
+    category: 'Software',
+    route: '/library/gmail.svg',
+    url: 'https://www.gmail.com'
+  },
+  {
+    title: 'outlook',
+    category: 'Software',
+    route: '/library/outlook.svg',
+    url: 'https://www.outlook.com'
+  },
+  {
+    title: 'slack',
+    category: 'Software',
+    route: '/library/slack.svg',
+    url: 'https://www.slack.com'
+  },
+  {
+    title: 'snapchat',
+    category: 'Software',
+    route: '/library/snapchat.svg',
+    url: 'https://www.snapchat.com'
+  },
+  {
+    title: 'ebay',
+    category: 'Software',
+    route: '/library/ebay.svg',
+    url: 'https://www.ebay.com'
+  },
+  {
+    title: 'ibm',
+    category: 'Software',
+    route: '/library/ibm.svg',
+    url: 'https://www.ibm.com'
+  },
+  {
+    title: 'trustpilot',
+    category: 'Software',
+    route: '/library/trustpilot.svg',
+    url: 'https://www.trustpilot.com'
+  },
+  {
+    title: 'Raycast',
+    category: 'Software',
     route: '/library/raycast.svg',
     url: 'https://raycast.com/'
   },
