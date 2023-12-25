@@ -2067,5 +2067,11 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/google-idx.svg',
     url: 'https://idx.dev/'
+  },
+  {
+    title: 'Bluesky',
+    category: 'Social',
+    route: '/library/bluesky.svg',
+    url: 'https://blueskyweb.xyz/'
   }
 ];
