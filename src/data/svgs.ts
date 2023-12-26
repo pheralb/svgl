@@ -47,10 +47,10 @@ export const svgs: iSVG[] = [
     url: 'https://vuejs.org/'
   },
   {
-    title: "Vuetify",
-    category: "Library",
-    route: "/library/vuetify.svg",
-    url: "https://vuetifyjs.com/"
+    title: 'Vuetify',
+    category: 'Library',
+    route: '/library/vuetify.svg',
+    url: 'https://vuetifyjs.com/'
   },
   {
     title: 'Nuxt',
@@ -2045,9 +2045,33 @@ export const svgs: iSVG[] = [
     url: 'https://spring.io/'
   },
   {
-    "title": "Directus",
-    "category": "CMS",
-    "route": "/library/directus.svg",
-    "url": "https://directus.io/"
+    title: 'Directus',
+    category: 'CMS',
+    route: '/library/directus.svg',
+    url: 'https://directus.io/'
   },
+  {
+    title: 'Emacs',
+    category: 'Software',
+    route: '/library/emacs.svg',
+    url: 'https://www.gnu.org/software/emacs/'
+  },
+  {
+    title: 'Svgl',
+    category: 'Library',
+    route: '/library/svgl.svg',
+    url: 'https://svgl.app'
+  },
+  {
+    title: 'Google Idx',
+    category: 'Software',
+    route: '/library/google-idx.svg',
+    url: 'https://idx.dev/'
+  },
+  {
+    title: 'Bluesky',
+    category: 'Social',
+    route: '/library/bluesky.svg',
+    url: 'https://blueskyweb.xyz/'
+  }
 ];
