@@ -20,6 +20,7 @@
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "check:size": "cd ./check-size && npm run start",
+    "fix:viewbox": "cd ./fix-viewbox && npm run start",
     "test": "vitest run",
     "lint": "prettier --plugin-search-dir . --check . && eslint .",
     "format": "prettier --plugin-search-dir . --write ."
