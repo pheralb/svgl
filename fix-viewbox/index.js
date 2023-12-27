@@ -24,14 +24,14 @@ async function fixViewbox() {
           .toString()
           .replace('<svg', `<svg viewBox="0 0 ${width} ${height}"`);
         await writeFile(filePath, newFileContent);
-        message = `🔔 File ${file} has been fixed.\n`;
+        message = `🔔 File ${file} has been fixed.`;
         console.log(message);
       } else {
-        message = `✅ File ${file} has already a viewBox.\n`;
+        message = `✅ File ${file} has already a viewBox.`;
         console.log(message);
       }
     } else {
-      message = `❌ File ${file} is not a ${fileType} file.\n`;
+      message = `❌ File ${file} is not a ${fileType} file.`;
       console.log(message);
     }
   }
