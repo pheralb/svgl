@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="b">
+      <stop offset="0" stop-color="#fff" stop-opacity=".618"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="a">
+      <stop offset="0" stop-color="#393756"/>
+      <stop offset=".2475" stop-color="#393756"/>
+      <stop offset=".2584" stop-color="#306985"/>
+      <stop offset=".5859" stop-color="#306985"/>
+      <stop offset=".5993" stop-color="#3d84a8"/>
+      <stop offset="1" stop-color="#3d84a8"/>
+    </linearGradient>
+    <linearGradient xlink:href="#c" id="f" x1="871.6517" x2="260.3639" y1="-241.2697" y2="-808.6147" gradientUnits="userSpaceOnUse"/>
+    <linearGradient id="c">
+      <stop offset="0" stop-color="#208dc5"/>
+      <stop offset=".0442" stop-color="#208dc5"/>
+      <stop offset="1" stop-color="#16c58d"/>
+    </linearGradient>
+    <linearGradient xlink:href="#d" id="g" x1="578.1192" x2="624.0668" y1="-523.3238" y2="-157.7552" gradientUnits="userSpaceOnUse"/>
+    <linearGradient id="d">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity=".851"/>
+    </linearGradient>
+    <linearGradient xlink:href="#e" id="k" x1="44.8321" x2="970.7216" y1="562.5881" y2="558.7756" gradientTransform="translate(0 .9727)" gradientUnits="userSpaceOnUse"/>
+    <linearGradient id="e">
+      <stop offset="0" stop-color="#208dc5"/>
+      <stop offset=".3065" stop-color="#208dc5"/>
+      <stop offset=".3175" stop-color="#1baaa8"/>
+      <stop offset=".6499" stop-color="#1ba9a9"/>
+      <stop offset=".6632" stop-color="#16c58d"/>
+      <stop offset="1" stop-color="#16c58d"/>
+    </linearGradient>
+    <filter id="h" width="1.0848" height="1.0939" x="-.0424" y="-.0424" color-interpolation-filters="sRGB">
+      <feFlood flood-color="#306985" flood-opacity=".3843" result="flood"/>
+      <feComposite in="flood" in2="SourceGraphic" operator="in" result="composite1"/>
+      <feGaussianBlur in="composite1" result="blur" stdDeviation="10"/>
+      <feOffset dy="6" result="offset"/>
+      <feComposite in="SourceGraphic" in2="offset" result="fbSourceGraphic"/>
+      <feColorMatrix in="fbSourceGraphic" result="fbSourceGraphicAlpha" values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"/>
+      <feFlood flood-color="#306985" flood-opacity=".3843" result="flood"/>
+      <feComposite in="flood" in2="fbSourceGraphic" operator="out" result="composite1"/>
+      <feGaussianBlur in="composite1" result="blur" stdDeviation="3.2"/>
+      <feOffset dy=".8021" result="offset"/>
+      <feComposite in="offset" in2="fbSourceGraphic" operator="atop" result="composite2"/>
+    </filter>
+    <filter id="i" width=".969" height=".9291" x=".0208" y=".0397" color-interpolation-filters="sRGB">
+      <feFlood flood-color="#306985" flood-opacity=".3843" result="flood"/>
+      <feComposite in="flood" in2="SourceGraphic" operator="out" result="composite1"/>
+      <feGaussianBlur in="composite1" result="blur" stdDeviation="6.4"/>
+      <feOffset dy="7.2192" result="offset"/>
+      <feComposite in="offset" in2="SourceGraphic" operator="atop" result="composite2"/>
+    </filter>
+    <clipPath id="j" clipPathUnits="userSpaceOnUse">
+      <circle cx="512" cy="540.3622" r="425.3753" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="20.678"/>
+    </clipPath>
+  </defs>
+  <g transform="matrix(1.13 0 0 1.13 -73.5012 1085.7948)">
+    <circle cx="518.127" cy="-507.7678" r="373.4785" fill="url(#f)" transform="matrix(1.1913 0 0 1.1913 -99.0929 97.1117)"/>
+    <circle cx="518.127" cy="-507.7678" r="373.4785" fill="url(#g)" filter="url(#h)" transform="translate(-52.8495 51.7929) scale(1.102)"/>
+    <g filter="url(#i)" transform="matrix(-1 0 0 1 1030.493 -1048.984)">
+      <path fill="url(#k)" d="M684.5716 59.2729h279.6218v962.1785H684.5716Zm-314.2222 0h262.8775v718.1239H370.3494Zm-320.2571 0h268.9123V613.342H50.0923Z" clip-path="url(#j)" transform="matrix(.878 0 0 .878 62.8312 65.9254)"/>
+    </g>
+  </g>
+</svg>
