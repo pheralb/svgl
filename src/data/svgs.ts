@@ -71,6 +71,12 @@ export const svgs: iSVG[] = [
     url: 'https://code.visualstudio.com/'
   },
   {
+    title: 'Ton',
+    category: 'Crypto',
+    route: '/library/ton.svg',
+    url: 'https://ton.org/',
+  },
+  {
     title: 'JWT',
     category: 'Library',
     route: '/library/jwt.svg',
