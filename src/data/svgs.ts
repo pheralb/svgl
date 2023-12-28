@@ -74,7 +74,7 @@ export const svgs: iSVG[] = [
     title: 'Ton',
     category: 'Crypto',
     route: '/library/ton.svg',
-    url: 'https://ton.org/',
+    url: 'https://ton.org/'
   },
   {
     title: 'JWT',
@@ -110,7 +110,7 @@ export const svgs: iSVG[] = [
     title: 'OpenSea',
     category: 'Crypto',
     route: '/library/opensea.svg',
-    url: 'https://opensea.io/',
+    url: 'https://opensea.io/'
   },
   {
     title: 'Algolia',
@@ -2085,5 +2085,14 @@ export const svgs: iSVG[] = [
     category: 'Social',
     route: '/library/bluesky.svg',
     url: 'https://blueskyweb.xyz/'
+  },
+  {
+    title: 'Remix',
+    category: 'Framework',
+    route: {
+      light: '/library/remix_light.svg',
+      dark: '/library/remix_dark.svg'
+    },
+    url: 'https://remix.run/'
   }
 ];
