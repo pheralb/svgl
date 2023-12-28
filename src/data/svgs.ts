@@ -1901,7 +1901,7 @@ export const svgs: iSVG[] = [
     url: 'https://monkeytype.com/'
   },
   {
-    title: 'Raycast',
+    title: 'PyCharm',
     category: 'Software',
     route: '/library/pycharm.svg',
     url: 'https://www.jetbrains.com/pycharm/'
