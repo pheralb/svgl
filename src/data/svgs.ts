@@ -2085,5 +2085,41 @@ export const svgs: iSVG[] = [
     category: 'Social',
     route: '/library/bluesky.svg',
     url: 'https://blueskyweb.xyz/'
+  },
+  {
+    title: 'Zoom',
+    category: 'Software',
+    route: '/library/zoom.svg',
+    url: 'https://zoom.us/'
+  },
+  {
+    title: 'Steam',
+    category: 'Software',
+    route: '/library/steam.svg',
+    url: 'https://store.steampowered.com/'
+  },
+  {
+    title: 'Epic Games',
+    category: 'Software',
+    route: '/library/epicgames.svg',
+    url: 'https://store.epicgames.com/en-US/'
+  },
+  {
+    title: 'PayPal',
+    category: 'Software',
+    route: '/library/paypal.svg',
+    url: 'https://www.paypal.com/'
+  },
+  {
+    title: 'Polypane',
+    category: 'Software',
+    route: '/library/polypane.svg',
+    url: 'https://polypane.app/'
+  },
+  {
+    title: '1Password',
+    category: 'Software',
+    route: '/library/1password.svg',
+    url: 'https://1password.com/'
   }
 ];
