@@ -71,6 +71,12 @@ export const svgs: iSVG[] = [
     url: 'https://code.visualstudio.com/'
   },
   {
+    title: 'Ton',
+    category: 'Crypto',
+    route: '/library/ton.svg',
+    url: 'https://ton.org/',
+  },
+  {
     title: 'JWT',
     category: 'Library',
     route: '/library/jwt.svg',
@@ -99,6 +105,12 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/postman.svg',
     url: 'https://www.getpostman.com/'
+  },
+  {
+    title: 'OpenSea',
+    category: 'Crypto',
+    route: '/library/opensea.svg',
+    url: 'https://opensea.io/',
   },
   {
     title: 'Algolia',
@@ -1889,7 +1901,7 @@ export const svgs: iSVG[] = [
     url: 'https://monkeytype.com/'
   },
   {
-    title: 'Raycast',
+    title: 'PyCharm',
     category: 'Software',
     route: '/library/pycharm.svg',
     url: 'https://www.jetbrains.com/pycharm/'
