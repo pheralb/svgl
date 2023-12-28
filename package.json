@@ -70,6 +70,6 @@
     "vitest": "1.0.4"
   },
   "config": {
-    "siteURL": "https://svgl-figma.vercel.app?figma=1"
+    "siteURL": "https://svgl.app?figma=1"
   }
 }
