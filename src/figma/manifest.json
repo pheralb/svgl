@@ -1,0 +1,13 @@
+{
+  "name": "SVGL",
+  "id": "1320306989350693206",
+  "api": "1.0.0",
+  "main": "dist/code.js",
+  "enableProposedApi": false,
+  "editorType": ["figma", "figjam"],
+  "permissions": ["currentuser"],
+  "networkAccess": {
+    "allowedDomains": ["*"],
+    "reasoning": "Internet access for local development."
+  }
+}
