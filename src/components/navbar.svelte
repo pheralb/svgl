@@ -24,8 +24,8 @@
       external: false
     },
     {
-      name: 'Terminal',
-      url: 'https://github.com/pheralb/svgl?tab=readme-ov-file#-terminal',
+      name: 'Extensions',
+      url: 'https://github.com/pheralb/svgl?tab=readme-ov-file#-extensions',
       icon: ArrowUpRight,
       external: true
     },
