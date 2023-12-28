@@ -107,6 +107,12 @@ export const svgs: iSVG[] = [
     url: 'https://www.getpostman.com/'
   },
   {
+    title: 'OpenSea',
+    category: 'Crypto',
+    route: '/library/opensea.svg',
+    url: 'https://opensea.io/',
+  },
+  {
     title: 'Algolia',
     category: 'Library',
     route: '/library/algolia.svg',
