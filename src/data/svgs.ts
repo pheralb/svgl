@@ -2094,5 +2094,32 @@ export const svgs: iSVG[] = [
       dark: '/library/remix_dark.svg'
     },
     url: 'https://remix.run/'
+  },
+  {
+    title: 'Steam',
+    category: 'Software',
+    route: '/library/steam.svg',
+    url: 'https://store.steampowered.com/'
+  },
+  {
+    title: 'Tabby',
+    category: 'Software',
+    route: '/library/tabby.svg',
+    url: 'https://tabby.sh/'
+  },
+  {
+    title: '1Password',
+    category: 'Software',
+    route: {
+      light: '/library/1password-light.svg',
+      dark: '/library/1password-dark.svg'
+    },
+    url: 'https://1password.com'
+  },
+  {
+    title: 'Alacritty',
+    category: 'Software',
+    route: '/library/alacritty.svg',
+    url: 'https://alacritty.org'
   }
 ];
