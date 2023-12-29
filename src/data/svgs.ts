@@ -83,6 +83,12 @@ export const svgs: iSVG[] = [
     url: 'https://runwayml.com/'
   },
   {
+    title: 'Sentry',
+    category: 'Software',
+    route: '/library/sentry.svg',
+    url: 'https://sentry.io/'
+  },
+  {
     title: 'JWT',
     category: 'Library',
     route: '/library/jwt.svg',
