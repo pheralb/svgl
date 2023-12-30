@@ -113,6 +113,15 @@ export const svgs: iSVG[] = [
     url: 'https://www.spotify.com/'
   },
   {
+    title: 'WorkOS',
+    category: 'Software',
+    route: {
+      light: '/library/workos-light.svg',
+      dark: '/library/workos.svg'
+    },
+    url: 'https://workos.com/'
+  },
+  {
     title: 'Postman',
     category: 'Software',
     route: '/library/postman.svg',
@@ -1113,6 +1122,12 @@ export const svgs: iSVG[] = [
     category: 'Library',
     route: '/library/redux.svg',
     url: 'https://redux.js.org/'
+  },
+  {
+    title: 'Trust Wallet',
+    category: 'Crypto',
+    route: '/library/trust.svg',
+    url: 'https://trustwallet.com/'
   },
   {
     title: 'Php',
