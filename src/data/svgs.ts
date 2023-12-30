@@ -113,6 +113,15 @@ export const svgs: iSVG[] = [
     url: 'https://www.spotify.com/'
   },
   {
+    title: 'WorkOS',
+    category: 'Software',
+    route: {
+      light: '/library/workos-light.svg',
+      dark: '/library/workos.svg'
+    },
+    url: 'https://workos.com/'
+  },
+  {
     title: 'Postman',
     category: 'Software',
     route: '/library/postman.svg',
