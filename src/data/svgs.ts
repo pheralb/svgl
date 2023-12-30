@@ -1124,6 +1124,12 @@ export const svgs: iSVG[] = [
     url: 'https://redux.js.org/'
   },
   {
+    title: 'Trust Wallet',
+    category: 'Crypto',
+    route: '/library/trust.svg',
+    url: 'https://trustwallet.com/'
+  },
+  {
     title: 'Php',
     category: 'Language',
     route: {
