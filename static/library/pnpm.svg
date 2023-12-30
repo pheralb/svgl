@@ -1,0 +1,33 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="180"
+    height="180"
+    viewBox="66.092 33.5 184.5 184.5"
+    ><defs
+        ><path id="apnpm" d="M67.59 35h180v180h-180V35Z"></path><path
+            id="bpnpm"
+            d="M237.6 95h-50V45h50v50Z"></path><path
+            id="cpnpm"
+            d="M182.59 95h-50V45h50v50Z"></path><path
+            id="dpnpm"
+            d="M127.59 95h-50V45h50v50Z"></path><path
+            id="epnpm"
+            d="M237.6 150h-50v-50h50v50Z"></path><path
+            id="fpnpm"
+            d="M182.59 150h-50v-50h50v50Z"></path><path
+            id="gpnpm"
+            d="M182.59 205h-50v-50h50v50Z"></path><path
+            id="hpnpm"
+            d="M237.6 205h-50v-50h50v50Z"></path><path
+            id="ipnpm"
+            d="M127.59 205h-50v-50h50v50Z"></path></defs
+    ><use xlink:href="#apnpm" fill="#fff"></use><use
+        xlink:href="#bpnpm"
+        fill="#f9ad00"></use><use xlink:href="#cpnpm" fill="#f9ad00"></use><use
+        xlink:href="#dpnpm"
+        fill="#f9ad00"></use><use xlink:href="#epnpm" fill="#f9ad00"></use><use
+        xlink:href="#fpnpm"
+        fill="#4e4e4e"></use><use xlink:href="#gpnpm" fill="#4e4e4e"></use><use
+        xlink:href="#hpnpm"
+        fill="#4e4e4e"></use><use xlink:href="#ipnpm" fill="#4e4e4e"></use></svg
+>

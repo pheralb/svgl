@@ -2133,5 +2133,17 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/alacritty.svg',
     url: 'https://alacritty.org'
+  },
+  {
+    title: 'Qt',
+    category: 'Software',
+    route: '/library/qt.svg',
+    url: 'https://www.qt.io/'
+  },
+  {
+    title: 'PNPM',
+    category: 'Software',
+    route: '/library/pnpm.svg',
+    url: 'https://pnpm.io/'
   }
 ];
