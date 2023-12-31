@@ -1,4 +1,4 @@
-import type { iSVG } from '../types/svg'
+import type { iSVG } from '../types/svg';
 
 export const svgs: iSVG[] = [
   {
