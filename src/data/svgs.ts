@@ -116,8 +116,8 @@ export const svgs: iSVG[] = [
     title: 'WorkOS',
     category: 'Software',
     route: {
-      light: '/library/workos-light.svg',
-      dark: '/library/workos.svg'
+      light: '/library/workos.svg',
+      dark: '/library/workos-light.svg'
     },
     url: 'https://workos.com/'
   },
