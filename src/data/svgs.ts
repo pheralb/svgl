@@ -47,10 +47,10 @@ export const svgs: iSVG[] = [
     url: 'https://vuejs.org/'
   },
   {
-    title: "Vuetify",
-    category: "Library",
-    route: "/library/vuetify.svg",
-    url: "https://vuetifyjs.com/"
+    title: 'Vuetify',
+    category: 'Library',
+    route: '/library/vuetify.svg',
+    url: 'https://vuetifyjs.com/'
   },
   {
     title: 'Nuxt',
@@ -69,6 +69,24 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/vscode.svg',
     url: 'https://code.visualstudio.com/'
+  },
+  {
+    title: 'Ton',
+    category: 'Crypto',
+    route: '/library/ton.svg',
+    url: 'https://ton.org/'
+  },
+  {
+    title: 'Runway',
+    category: 'AI',
+    route: '/library/runway.svg',
+    url: 'https://runwayml.com/'
+  },
+  {
+    title: 'Sentry',
+    category: 'Software',
+    route: '/library/sentry.svg',
+    url: 'https://sentry.io/'
   },
   {
     title: 'JWT',
@@ -95,10 +113,25 @@ export const svgs: iSVG[] = [
     url: 'https://www.spotify.com/'
   },
   {
+    title: 'WorkOS',
+    category: 'Software',
+    route: {
+      light: '/library/workos.svg',
+      dark: '/library/workos-light.svg'
+    },
+    url: 'https://workos.com/'
+  },
+  {
     title: 'Postman',
     category: 'Software',
     route: '/library/postman.svg',
     url: 'https://www.getpostman.com/'
+  },
+  {
+    title: 'OpenSea',
+    category: 'Crypto',
+    route: '/library/opensea.svg',
+    url: 'https://opensea.io/'
   },
   {
     title: 'Algolia',
@@ -1091,6 +1124,12 @@ export const svgs: iSVG[] = [
     url: 'https://redux.js.org/'
   },
   {
+    title: 'Trust Wallet',
+    category: 'Crypto',
+    route: '/library/trust.svg',
+    url: 'https://trustwallet.com/'
+  },
+  {
     title: 'Php',
     category: 'Language',
     route: {
@@ -1889,7 +1928,7 @@ export const svgs: iSVG[] = [
     url: 'https://monkeytype.com/'
   },
   {
-    title: 'Raycast',
+    title: 'PyCharm',
     category: 'Software',
     route: '/library/pycharm.svg',
     url: 'https://www.jetbrains.com/pycharm/'
@@ -2045,10 +2084,10 @@ export const svgs: iSVG[] = [
     url: 'https://spring.io/'
   },
   {
-    "title": "Directus",
-    "category": "CMS",
-    "route": "/library/directus.svg",
-    "url": "https://directus.io/"
+    title: 'Directus',
+    category: 'CMS',
+    route: '/library/directus.svg',
+    url: 'https://directus.io/'
   },
   {
     title: 'Pnpm',
@@ -2067,5 +2106,77 @@ export const svgs: iSVG[] = [
       dark: '/library/pnpm_no_text_dark.svg'
     },
     url: 'https://pnpm.io/'
+  },
+  {
+    title: 'Emacs',
+    category: 'Software',
+    route: '/library/emacs.svg',
+    url: 'https://www.gnu.org/software/emacs/'
+  },
+  {
+    title: 'Svgl',
+    category: 'Library',
+    route: '/library/svgl.svg',
+    url: 'https://svgl.app'
+  },
+  {
+    title: 'Google Idx',
+    category: 'Software',
+    route: '/library/google-idx.svg',
+    url: 'https://idx.dev/'
+  },
+  {
+    title: 'Bluesky',
+    category: 'Social',
+    route: '/library/bluesky.svg',
+    url: 'https://blueskyweb.xyz/'
+  },
+  {
+    title: 'Remix',
+    category: 'Framework',
+    route: {
+      light: '/library/remix_light.svg',
+      dark: '/library/remix_dark.svg'
+    },
+    url: 'https://remix.run/'
+  },
+  {
+    title: 'Steam',
+    category: 'Software',
+    route: '/library/steam.svg',
+    url: 'https://store.steampowered.com/'
+  },
+  {
+    title: 'Tabby',
+    category: 'Software',
+    route: '/library/tabby.svg',
+    url: 'https://tabby.sh/'
+  },
+  {
+    title: '1Password',
+    category: 'Software',
+    route: {
+      light: '/library/1password-light.svg',
+      dark: '/library/1password-dark.svg'
+    },
+    url: 'https://1password.com'
+  },
+  {
+    title: 'Alacritty',
+    category: 'Software',
+    route: '/library/alacritty.svg',
+    url: 'https://alacritty.org'
+  },
+  {
+    title: 'Qt',
+    category: 'Software',
+    route: '/library/qt.svg',
+    url: 'https://www.qt.io/'
+  },
+  {
+    title: 'PNPM',
+    category: 'Software',
+    route: '/library/pnpm.svg',
+    url: 'https://pnpm.io/'
   }
-]
+];

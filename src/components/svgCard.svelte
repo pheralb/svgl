@@ -10,14 +10,26 @@
   import { flyAndScale } from '@/utils/flyAndScale';
 
   // Icons:
-  import { CopyIcon, DownloadIcon, LinkIcon, PackageIcon, PaintBucket } from 'lucide-svelte';
+  import { CopyIcon, DownloadIcon, LinkIcon, PackageIcon, PaintBucket, ChevronsRight } from 'lucide-svelte';
 
   // Main Card:
   import CardSpotlight from './cardSpotlight.svelte';
   import { DropdownMenu } from 'bits-ui';
 
+  // Figma
+  import { onMount } from "svelte";
+  import { copyToClipboard as figmaCopyToClipboard } from '@/figma/copy-to-clipboard';
+  import { insertSVG as figmaInsertSVG } from '@/figma/insert-svg';
+
+
   // Props:
   export let svgInfo: iSVG;
+  
+  let isInFigma = false
+  onMount(() => {
+    const searchParams = new URLSearchParams(window.location.search);
+    isInFigma = searchParams.get('figma') === '1';
+  });
 
   // Download SVG:
   const downloadSvg = (url?: string) => {
@@ -56,17 +68,29 @@
     const data = {
       [MIMETYPE]: getSvgContent(url, true)
     };
-    try {
-      const clipboardItem = new ClipboardItem(data);
-      await navigator.clipboard.write([clipboardItem]);
-    } catch (error) {
+
+    if(isInFigma) {
       const content = (await getSvgContent(url, false)) as string;
-      await navigator.clipboard.writeText(content);
+      figmaCopyToClipboard(content);
+    } else {
+      try {
+        const clipboardItem = new ClipboardItem(data);
+        await navigator.clipboard.write([clipboardItem]);
+      } catch (error) {
+        const content = (await getSvgContent(url, false)) as string;
+        await navigator.clipboard.writeText(content);
+      }
     }
+
     toast.success('Copied to clipboard!', {
       description: `${svgInfo.title} - ${svgInfo.category}`
     });
   };
+
+  const insertSVG = async (url?: string) => {
+    const content = (await getSvgContent(url, false)) as string;
+    figmaInsertSVG(content);
+  }
 
   // Icon Stroke & Size:
   let iconStroke = 1.8;
@@ -102,6 +126,38 @@
     </div>
     <!-- Actions -->
     <div class="flex items-center space-x-1">
+      {#if isInFigma}
+        <button
+          title="Insert to figma"
+          on:click={() => {
+            const svgHasTheme = typeof svgInfo.route !== 'string';
+
+            if (!svgHasTheme) {
+              insertSVG(
+                typeof svgInfo.route === 'string'
+                  ? svgInfo.route
+                  : "Something went wrong. Couldn't copy the SVG."
+              );
+              return;
+            }
+
+            const dark = document.documentElement.classList.contains('dark');
+
+            insertSVG(
+              typeof svgInfo.route !== 'string'
+                ? dark
+                  ? svgInfo.route.dark
+                  : svgInfo.route.light
+                : svgInfo.route
+            );
+          }}
+          class="flex items-center space-x-2 rounded-md p-2 duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700/40"
+        >
+          <ChevronsRight size={iconSize} strokeWidth={iconStroke} />
+        </button>
+      {/if}
+
+
       <button
         title="Copy to clipboard"
         on:click={() => {
@@ -134,6 +190,7 @@
       {#if typeof svgInfo.route !== 'string'}
         <DropdownMenu.Root>
           <DropdownMenu.Trigger
+            title="Download SVG"
             class="flex items-center space-x-2 rounded-md p-2 duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700/40"
           >
             <DownloadIcon size={iconSize} strokeWidth={iconStroke} />
@@ -144,7 +201,8 @@
             sideOffset={3}
           >
             <DropdownMenu.Item
-              class="flex h-10 select-none items-center rounded-md py-3 pl-3 pr-1.5 text-sm font-medium hover:bg-neutral-100 dark:hover:bg-neutral-700/40"
+              title="Download Light & Dark variants"
+              class="flex h-10 select-none items-center rounded-md py-3 pl-3 pr-1.5 text-sm font-medium cursor-pointer hover:bg-neutral-100 dark:hover:bg-neutral-700/40"
               on:click={() => {
                 downloadAllVariants(svgInfo);
               }}
@@ -153,7 +211,8 @@
               <p>Light & Dark variants</p>
             </DropdownMenu.Item>
             <DropdownMenu.Item
-              class="flex h-10 select-none items-center rounded-md py-3 pl-3 pr-1.5 text-sm font-medium hover:bg-neutral-100 dark:hover:bg-neutral-700/40"
+              title="Download only {document.documentElement.classList.contains('dark') ? 'dark' : 'light'} variant"
+              class="flex h-10 select-none items-center rounded-md py-3 pl-3 pr-1.5 text-sm font-medium cursor-pointer hover:bg-neutral-100 dark:hover:bg-neutral-700/40"
               on:click={() => {
                 const svgHasTheme = typeof svgInfo.route !== 'string';
 

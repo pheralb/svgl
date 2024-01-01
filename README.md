@@ -14,12 +14,12 @@
         Submit logo
     </a>
     <span>&nbsp;✦&nbsp;</span>
-    <a href="#-terminal">
-        Terminal
+    <a href="#-extensions">
+        Extensions
     </a>
     <span>&nbsp;✦&nbsp;</span>
-    <a href="https://twitter.com/pheralb_">
-        Contact
+    <a href="https://svgl.app/api">
+        API
     </a>
     <span>&nbsp;✦&nbsp;</span>
     <a href="#%EF%B8%8F-contributing">
@@ -87,6 +87,7 @@ pnpm install
 > [!WARNING]
 >
 > - Remember to optimize SVG for web, you can use [SVGOMG](https://jakearchibald.github.io/svgomg/).
+> - When you optimize the SVG, make sure that the `viewBox` is not removed.
 > - The size limit for each .svg is **25kb**.
 
 4. Go to the [**`src/data/svgs.ts`**](https://github.com/pheralb/svgl/blob/main/src/data/svgs.ts) and add the information about your logo, following the structure:
@@ -119,9 +120,10 @@ or to support a different logo for light and dark themes:
 
 And create a pull request with your logo 🚀.
 
-5. (Optional) If you want to run the API locally, you will need to create a `.env` file in the root of the project with the following variables:
+5. (Optional) If you want to run the [API](https://svgl.app/api) locally, you will need to create a `.env` file in the root of the project with the following variables:
 
 - [Create a Upstash account](https://console.upstash.com/).
+- [Create a Upstash Redis Database](https://upstash.com/docs/redis/overall/getstarted).
 
 ```bash
 SVGL_API_REQUESTS = 1
@@ -129,21 +131,14 @@ UPSTASH_REDIS_URL = ""
 UPSTASH_REDIS_TOKEN = ""
 ```
 
-## 💻 Terminal
+## 📦 Extensions
 
-SVG files can also be accessed directly from the terminal using [`svgls`](https://www.npmjs.com/package/svgls) CLI.
+A list of extensions that use the [svgl API](https://svgl.app/api), created by the community:
 
-#### Quick start
-
-If you are using yarn or npm, run this command:
-
-```bash
-npx svgls add
-# or
-pnpm dlx svgls add
-```
-
-For more details, check out the [GitHub repository](https://github.com/sujjeee/svgls) created by [sujjeee](https://twitter.com/sujjeeee).
+| Extension      | Description                                        | Created by                                | Link                                                                            |
+| -------------- | -------------------------------------------------- | ----------------------------------------- | ------------------------------------------------------------------------------- |
+| svgls          | A CLI for easily adding SVG icons to your project. | [sujjeee](https://twitter.com/sujjeeee)   | [Repository](https://github.com/sujjeee/svgls)                                  |
+| SVGL for Figma | Add svgs from svgl to your Figma project.          | [quilljou](https://twitter.com/quillzhou) | [Figma Plugin](https://www.figma.com/community/plugin/1320306989350693206/svgl) |
 
 ## ✌️ Contributing
 
