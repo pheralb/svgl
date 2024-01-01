@@ -2172,11 +2172,5 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/qt.svg',
     url: 'https://www.qt.io/'
-  },
-  {
-    title: 'PNPM',
-    category: 'Software',
-    route: '/library/pnpm.svg',
-    url: 'https://pnpm.io/'
   }
 ];
