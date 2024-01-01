@@ -2172,5 +2172,11 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/qt.svg',
     url: 'https://www.qt.io/'
+  },
+  {
+    title: 'Bitwarden',
+    category: 'Software',
+    route: '/library/bitwarden.svg',
+    url: 'https://bitwarden.com/'
   }
 ];
