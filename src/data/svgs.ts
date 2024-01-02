@@ -29,7 +29,7 @@ export const svgs: iSVG[] = [
     title: 'Vercel',
     category: 'Hosting',
     route: {
-      light: '/library/vercel.svg',
+      light: '/library/vercel_light.svg',
       dark: '/library/vercel_dark.svg'
     },
     url: 'https://vercel.com/'
@@ -116,8 +116,8 @@ export const svgs: iSVG[] = [
     title: 'WorkOS',
     category: 'Software',
     route: {
-      light: '/library/workos.svg',
-      dark: '/library/workos-light.svg'
+      light: '/library/workos_light.svg',
+      dark: '/library/workos_dark.svg'
     },
     url: 'https://workos.com/'
   },
@@ -191,7 +191,7 @@ export const svgs: iSVG[] = [
     title: 'Deno',
     category: 'Library',
     route: {
-      light: '/library/deno.svg',
+      light: '/library/deno_light.svg',
       dark: '/library/deno_dark.svg'
     },
     url: 'https://deno.land/'
@@ -235,7 +235,7 @@ export const svgs: iSVG[] = [
   {
     title: 'Styled Components',
     category: 'Library',
-    route: '/library/styledcomponents.svg',
+    route: '/library/styled_components.svg',
     url: 'https://styled-components.com/'
   },
   {
@@ -272,7 +272,7 @@ export const svgs: iSVG[] = [
     title: 'Astro',
     category: 'Framework',
     route: {
-      light: '/library/astro.svg',
+      light: '/library/astro_light.svg',
       dark: '/library/astro_dark.svg'
     },
     url: 'https://astro.build/'
@@ -287,7 +287,7 @@ export const svgs: iSVG[] = [
     title: 'Framer',
     category: 'Software',
     route: {
-      light: '/library/framer.svg',
+      light: '/library/framer_light.svg',
       dark: '/library/framer_dark.svg'
     },
     url: 'https://framer.com/'
@@ -374,7 +374,7 @@ export const svgs: iSVG[] = [
     title: 'Payload CMS',
     category: 'CMS',
     route: {
-      light: '/library/payload.svg',
+      light: '/library/payload_light.svg',
       dark: '/library/payload_dark.svg'
     },
     url: 'https://payloadcms.com'
@@ -394,20 +394,20 @@ export const svgs: iSVG[] = [
   {
     title: 'Visual Studio',
     category: 'Software',
-    route: '/library/visual-studio.svg',
+    route: '/library/visual_studio.svg',
     url: 'https://visualstudio.microsoft.com'
   },
   {
     title: 'Chakra UI',
     category: 'Library',
-    route: '/library/chakra-ui.svg',
+    route: '/library/chakra_ui.svg',
     url: 'https://chakra-ui.com'
   },
   {
     title: 'Express.js',
     category: 'Framework',
     route: {
-      light: '/library/expressjs.svg',
+      light: '/library/expressjs_light.svg',
       dark: '/library/expressjs_dark.svg'
     },
     url: 'https://expressjs.com'
@@ -416,7 +416,7 @@ export const svgs: iSVG[] = [
     title: 'Fastify',
     category: 'Framework',
     route: {
-      light: '/library/fastify.svg',
+      light: '/library/fastify_light.svg',
       dark: '/library/fastify_dark.svg'
     },
     url: 'https://www.fastify.io'
@@ -431,7 +431,7 @@ export const svgs: iSVG[] = [
     title: 'jQuery',
     category: 'Language',
     route: {
-      light: '/library/jquery.svg',
+      light: '/library/jquery_light.svg',
       dark: '/library/jquery_dark.svg'
     },
     url: 'https://jquery.com'
@@ -464,7 +464,7 @@ export const svgs: iSVG[] = [
     title: 'Arc',
     category: 'Social',
     route: {
-      light: '/library/arc.svg',
+      light: '/library/arc_light.svg',
       dark: '/library/arc_dark.svg'
     },
     url: 'https://arc.dev'
@@ -506,7 +506,7 @@ export const svgs: iSVG[] = [
     title: 'Github Copilot',
     category: 'Software',
     route: {
-      light: '/library/copilot.svg',
+      light: '/library/copilot_light.svg',
       dark: '/library/copilot_dark.svg'
     },
     url: 'https://github.com/features/copilot'
@@ -515,7 +515,7 @@ export const svgs: iSVG[] = [
     title: 'Railway',
     category: 'Software',
     route: {
-      light: '/library/railway.svg',
+      light: '/library/railway_light.svg',
       dark: '/library/railway_dark.svg'
     },
     url: 'https://railway.app/'
@@ -536,7 +536,7 @@ export const svgs: iSVG[] = [
     title: 'GoDaddy',
     category: 'Hosting',
     route: {
-      light: '/library/godaddy.svg',
+      light: '/library/godaddy_light.svg',
       dark: '/library/godaddy_dark.svg'
     },
     url: 'https://www.godaddy.com/'
@@ -545,7 +545,7 @@ export const svgs: iSVG[] = [
     title: 'Udemy',
     category: 'Education',
     route: {
-      light: '/library/udemy.svg',
+      light: '/library/udemy_light.svg',
       dark: '/library/udemy_dark.svg'
     },
     url: 'https://www.udemy.com/'
@@ -566,7 +566,7 @@ export const svgs: iSVG[] = [
     title: 'Prisma',
     category: 'Software',
     route: {
-      light: '/library/prisma.svg',
+      light: '/library/prisma_light.svg',
       dark: '/library/prisma_dark.svg'
     },
     url: 'https://prisma.io/'
@@ -575,7 +575,7 @@ export const svgs: iSVG[] = [
     title: 'Go',
     category: 'Language',
     route: {
-      light: '/library/golang.svg',
+      light: '/library/golang_light.svg',
       dark: '/library/golang_dark.svg'
     },
     url: 'https://go.dev/'
@@ -728,7 +728,7 @@ export const svgs: iSVG[] = [
     url: 'https://jestjs.io/'
   },
   {
-    title: 'JetBrains',
+    title: 'JetBrains Solid',
     category: 'Software',
     route: '/library/jetbrainsSolid.svg',
     url: 'https://www.jetbrains.com/'
@@ -851,7 +851,7 @@ export const svgs: iSVG[] = [
     title: 'Unity',
     category: 'Software',
     route: {
-      light: '/library/unity.svg',
+      light: '/library/unity_light.svg',
       dark: '/library/unity_dark.svg'
     },
     url: 'https://unity.com/'
@@ -865,7 +865,7 @@ export const svgs: iSVG[] = [
   {
     title: 'Pocketbase',
     category: 'Database',
-    route: '/library/pocket-base.svg',
+    route: '/library/pocket_base.svg',
     url: 'https://pocketbase.io/'
   },
   {
@@ -932,7 +932,7 @@ export const svgs: iSVG[] = [
     title: 'Apple',
     category: 'Software',
     route: {
-      light: '/library/apple.svg',
+      light: '/library/apple_light.svg',
       dark: '/library/apple_dark.svg'
     },
     url: 'https://www.apple.com'
@@ -976,7 +976,7 @@ export const svgs: iSVG[] = [
   {
     title: 'Jetbrains Space',
     category: 'Software',
-    route: '/library/jetbrains-space.svg',
+    route: '/library/jetbrains_space.svg',
     url: 'https://www.jetbrains.com/space/'
   },
   {
@@ -1012,7 +1012,7 @@ export const svgs: iSVG[] = [
   {
     title: 'Cloudflare Workers',
     category: 'Software',
-    route: '/library/cloudflare-workers.svg',
+    route: '/library/cloudflare_workers.svg',
     url: 'https://workers.cloudflare.com/'
   },
   {
@@ -1096,7 +1096,7 @@ export const svgs: iSVG[] = [
   {
     title: 'Prime video',
     category: 'Entertainment',
-    route: '/library/prime-video.svg',
+    route: '/library/prime_video.svg',
     url: 'https://primevideo.com/'
   },
   {
@@ -1130,10 +1130,10 @@ export const svgs: iSVG[] = [
     url: 'https://trustwallet.com/'
   },
   {
-    title: 'Php',
+    title: 'PHP',
     category: 'Language',
     route: {
-      light: '/library/php.svg',
+      light: '/library/php_light.svg',
       dark: '/library/php_dark.svg'
     },
     url: 'https://www.php.net/'
@@ -1171,7 +1171,7 @@ export const svgs: iSVG[] = [
   {
     title: 'Infojobs',
     category: 'Social',
-    route: '/library/infojobs-logo.svg',
+    route: '/library/infojobs.svg',
     url: 'https://www.infojobs.net/'
   },
   {
@@ -1189,7 +1189,7 @@ export const svgs: iSVG[] = [
   {
     title: 'Codesandbox',
     category: 'Software',
-    route: '/library/codesandbox-square.svg',
+    route: '/library/codesandbox.svg',
     url: 'https://codesandbox.io/'
   },
   {
@@ -1232,7 +1232,7 @@ export const svgs: iSVG[] = [
     title: 'OpenAI',
     category: 'AI',
     route: {
-      light: '/library/openai.svg',
+      light: '/library/openai_light.svg',
       dark: '/library/openai_dark.svg'
     },
     url: 'https://openai.com/'
@@ -1240,14 +1240,14 @@ export const svgs: iSVG[] = [
   {
     title: 'HuggingFace',
     category: 'AI',
-    route: '/library/hf.svg',
+    route: '/library/huggingface.svg',
     url: 'https://huggingface.co/'
   },
   {
     title: 'Threads',
     category: 'Social',
     route: {
-      light: '/library/threads.svg',
+      light: '/library/threads_light.svg',
       dark: '/library/threads_dark.svg'
     },
     url: 'https://threads.net/'
@@ -1256,7 +1256,7 @@ export const svgs: iSVG[] = [
     title: 'Instagram',
     category: 'Social',
     route: {
-      light: '/library/instagram.svg',
+      light: '/library/instagram_light.svg',
       dark: '/library/instagram_dark.svg'
     },
     url: 'https://www.instagram.com/'
@@ -1352,9 +1352,9 @@ export const svgs: iSVG[] = [
     url: 'https://dogecoin.com/'
   },
   {
-    title: 'XRP',
+    title: 'XRP Ledger',
     category: 'Crypto',
-    route: '/library/xrp.svg',
+    route: '/library/xrpl.svg',
     url: 'https://xrpl.org/'
   },
   {
@@ -1366,19 +1366,19 @@ export const svgs: iSVG[] = [
   {
     title: 'TRON',
     category: 'Crypto',
-    route: '/library/trx.svg',
+    route: '/library/tron.svg',
     url: 'https://tron.network/'
   },
   {
     title: 'Chainlink',
     category: 'Crypto',
-    route: '/library/link.svg',
+    route: '/library/chainlink.svg',
     url: 'https://chain.link/'
   },
   {
     title: 'Polygon',
     category: 'Crypto',
-    route: '/library/matic.svg',
+    route: '/library/polygon.svg',
     url: 'https://polygon.technology/'
   },
   {
@@ -1397,7 +1397,7 @@ export const svgs: iSVG[] = [
     title: 'X',
     category: 'Social',
     route: {
-      light: '/library/x.svg',
+      light: '/library/x_light.svg',
       dark: '/library/x_dark.svg'
     },
     url: 'https://x.com'
@@ -1406,49 +1406,49 @@ export const svgs: iSVG[] = [
     title: 'Adobe',
     category: 'Design',
     route: '/library/adobe.svg',
-    url: 'https://x.com'
+    url: 'https://www.adobe.com'
   },
   {
     title: 'After Effects',
     category: 'Design',
     route: '/library/after-effects.svg',
-    url: 'https://x.com'
+    url: 'https://www.adobe.com/products/aftereffects.html'
   },
   {
     title: 'Canva',
     category: 'Design',
     route: '/library/canva.svg',
-    url: 'https://x.com'
+    url: 'https://www.canva.com/'
   },
   {
     title: 'Illustrator',
     category: 'Design',
     route: '/library/illustrator.svg',
-    url: 'https://x.com'
+    url: 'https://www.adobe.com/products/illustrator.html'
   },
   {
     title: 'InDesign',
     category: 'Design',
     route: '/library/indesign.svg',
-    url: 'https://x.com'
+    url: 'https://www.adobe.com/products/indesign.html'
   },
   {
     title: 'Lightroom',
     category: 'Design',
     route: '/library/lightroom.svg',
-    url: 'https://x.com'
+    url: 'https://lightroom.adobe.com/'
   },
   {
     title: 'Photoshop',
     category: 'Design',
     route: '/library/photoshop.svg',
-    url: 'https://x.com'
+    url: 'https://www.adobe.com/products/photoshop.html'
   },
   {
     title: 'Premiere',
     category: 'Design',
     route: '/library/premiere.svg',
-    url: 'https://x.com'
+    url: 'https://www.adobe.com/products/premiere.html'
   },
   {
     title: 'VK',
@@ -1484,8 +1484,8 @@ export const svgs: iSVG[] = [
     title: 'Unreal Engine',
     category: 'Software',
     route: {
-      light: '/library/unreal_engine.svg',
-      dark: '/library/unreal_engine_dark.svg'
+      light: '/library/unreal_engine_light.svg',
+      dark: '/library/unreal-engine_dark.svg'
     },
     url: 'https://www.unrealengine.com/'
   },
@@ -1534,7 +1534,7 @@ export const svgs: iSVG[] = [
   {
     title: 'Beacon',
     category: 'Software',
-    route: '/library/Beacon-Logo.svg',
+    route: '/library/beacon.svg',
     url: 'https://www.beacon.com'
   },
   {
@@ -1559,8 +1559,8 @@ export const svgs: iSVG[] = [
     title: 'Roblox',
     category: 'Software',
     route: {
-      dark: '/library/roblox.svg',
-      light: '/library/roblox_light.svg'
+      dark: '/library/roblox_light.svg',
+      light: '/library/roblox_dark.svg'
     },
     url: 'https://www.roblox.com/'
   },
@@ -1568,7 +1568,7 @@ export const svgs: iSVG[] = [
     title: 'Stately.ai',
     category: 'Software',
     route: {
-      light: '/library/stately.svg',
+      light: '/library/stately_light.svg',
       dark: '/library/stately_dark.svg'
     },
     url: 'https://stately.ai/'
@@ -1577,7 +1577,7 @@ export const svgs: iSVG[] = [
     title: 'XState',
     category: 'Library',
     route: {
-      light: '/library/xstate.svg',
+      light: '/library/xstate_light.svg',
       dark: '/library/xstate_dark.svg'
     },
     url: 'https://github.com/statelyai/xstate'
@@ -1598,7 +1598,7 @@ export const svgs: iSVG[] = [
     title: 'Cal.com',
     category: 'Software',
     route: {
-      light: '/library/cal.svg',
+      light: '/library/cal_light.svg',
       dark: '/library/cal_dark.svg'
     },
     url: 'https://cal.com'
@@ -1631,7 +1631,7 @@ export const svgs: iSVG[] = [
     title: 'Patreon',
     category: 'Social',
     route: {
-      light: '/library/patreon.svg',
+      light: '/library/patreon_light.svg',
       dark: '/library/patreon_dark.svg'
     },
     url: 'https://www.patreon.com/'
@@ -1670,7 +1670,7 @@ export const svgs: iSVG[] = [
     title: 'Documenso',
     category: 'Software',
     route: {
-      light: '/library/documenso.svg',
+      light: '/library/documenso_light.svg',
       dark: '/library/documenso_dark.svg'
     },
     url: 'https://documenso.com'
@@ -1679,7 +1679,7 @@ export const svgs: iSVG[] = [
     title: 'Bash',
     category: 'Language',
     route: {
-      light: '/library/bash.svg',
+      light: '/library/bash_light.svg',
       dark: '/library/bash_dark.svg'
     },
     url: 'https://www.gnu.org/software/bash/'
@@ -1724,7 +1724,7 @@ export const svgs: iSVG[] = [
     title: 'R',
     category: 'Language',
     route: {
-      light: '/library/r.svg',
+      light: '/library/r_light.svg',
       dark: '/library/r_dark.svg'
     },
     url: 'https://www.r-project.org/'
@@ -1733,7 +1733,7 @@ export const svgs: iSVG[] = [
     title: 'Rust',
     category: 'Language',
     route: {
-      light: '/library/rust.svg',
+      light: '/library/rust_light.svg',
       dark: '/library/rust_dark.svg'
     },
     url: 'https://www.rust-lang.org/'
@@ -1748,7 +1748,7 @@ export const svgs: iSVG[] = [
     title: 'Instatus',
     category: 'Software',
     route: {
-      light: '/library/instatus.svg',
+      light: '/library/instatus_light.svg',
       dark: '/library/instatus_dark.svg'
     },
     url: 'https://instatus.com'
@@ -1769,8 +1769,8 @@ export const svgs: iSVG[] = [
     title: 'Axiom',
     category: 'Software',
     route: {
-      dark: '/library/axiom-dark.svg',
-      light: '/library/axiom-light.svg'
+      light: '/library/axiom_light.svg',
+      dark: '/library/axiom_dark.svg'
     },
     url: 'https://axiom.co/'
   },
@@ -1784,8 +1784,8 @@ export const svgs: iSVG[] = [
     title: 'Zeabur',
     category: 'Hosting',
     route: {
-      light: '/library/zeabur-light.svg',
-      dark: '/library/zeabur-dark.svg'
+      light: '/library/zeabur_light.svg',
+      dark: '/library/zeabur_dark.svg'
     },
     url: 'https://zeabur.com/'
   },
@@ -1799,8 +1799,8 @@ export const svgs: iSVG[] = [
     title: 'shadcn/ui',
     category: 'Library',
     route: {
-      light: '/library/shadcn-ui.svg',
-      dark: '/library/shadcn-ui_dark.svg'
+      light: '/library/shadcn_ui_light.svg',
+      dark: '/library/shadcn_ui_dark.svg'
     },
     url: 'https://ui.shadcn.com/'
   },
@@ -1820,8 +1820,8 @@ export const svgs: iSVG[] = [
     title: 'Reflex',
     category: 'Software',
     route: {
-      light: '/library/reflex-dark.svg',
-      dark: '/library/reflex-light.svg'
+      light: '/library/reflex_light.svg',
+      dark: '/library/reflex_dark.svg'
     },
     url: 'https://reflex.dev/'
   },
@@ -1840,7 +1840,7 @@ export const svgs: iSVG[] = [
   {
     title: 'XD',
     category: 'Design',
-    route: '/library/adobe-xd.svg',
+    route: '/library/adobe_xd.svg',
     url: 'https://helpx.adobe.com/xd/get-started.html'
   },
   {
@@ -1853,7 +1853,7 @@ export const svgs: iSVG[] = [
     title: 'Penpot',
     category: 'Design',
     route: {
-      light: '/library/penpot.svg',
+      light: '/library/penpot_light.svg',
       dark: '/library/penpot_dark.svg'
     },
     url: 'https://penpot.app/'
@@ -1863,7 +1863,7 @@ export const svgs: iSVG[] = [
     category: 'Design',
     route: {
       light: '/library/sketch_light.svg',
-      dark: '/library/sketch.svg'
+      dark: '/library/sketch_dark.svg'
     },
     url: 'https://www.sketch.com/'
   },
@@ -2068,7 +2068,7 @@ export const svgs: iSVG[] = [
   {
     title: 'Claude AI',
     category: 'AI',
-    route: '/library/claude-ai.svg',
+    route: '/library/claude_ai.svg',
     url: 'https://claude.ai/'
   },
   {
@@ -2093,7 +2093,7 @@ export const svgs: iSVG[] = [
     title: 'Pnpm',
     category: 'Software',
     route: {
-      light: '/library/pnpm.svg',
+      light: '/library/pnpm_light.svg',
       dark: '/library/pnpm_dark.svg'
     },
     url: 'https://pnpm.io/'
@@ -2102,7 +2102,7 @@ export const svgs: iSVG[] = [
     title: 'Pnpm No Text',
     category: 'Software',
     route: {
-      light: '/library/pnpm_no_text.svg',
+      light: '/library/pnpm_no_text_light.svg',
       dark: '/library/pnpm_no_text_dark.svg'
     },
     url: 'https://pnpm.io/'
@@ -2122,7 +2122,7 @@ export const svgs: iSVG[] = [
   {
     title: 'Google Idx',
     category: 'Software',
-    route: '/library/google-idx.svg',
+    route: '/library/google_idx.svg',
     url: 'https://idx.dev/'
   },
   {
@@ -2156,8 +2156,8 @@ export const svgs: iSVG[] = [
     title: '1Password',
     category: 'Software',
     route: {
-      light: '/library/1password-light.svg',
-      dark: '/library/1password-dark.svg'
+      light: '/library/1password_light.svg',
+      dark: '/library/1password_dark.svg'
     },
     url: 'https://1password.com'
   },
