@@ -1238,12 +1238,6 @@ export const svgs: iSVG[] = [
     url: 'https://openai.com/'
   },
   {
-    title: 'HuggingFace',
-    category: 'AI',
-    route: '/library/hf.svg',
-    url: 'https://huggingface.co/'
-  },
-  {
     title: 'Threads',
     category: 'Social',
     route: {
@@ -1608,12 +1602,6 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/midday.svg',
     url: 'https://midday.ai'
-  },
-  {
-    title: 'Cursor AI',
-    category: 'Software',
-    route: '/library/cursor.svg',
-    url: 'https://cursor.sh/'
   },
   {
     title: 'Calendly',
