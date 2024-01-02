@@ -77,6 +77,12 @@ export const svgs: iSVG[] = [
     url: 'https://ton.org/'
   },
   {
+    title: 'Meta',
+    category: 'Software',
+    route: '/library/meta.svg',
+    url: 'https://www.meta.com/'
+  },
+  {
     title: 'Runway',
     category: 'AI',
     route: '/library/runway.svg',
