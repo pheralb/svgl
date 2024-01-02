@@ -16,7 +16,7 @@
     "dev": "vite dev",
     "host": "vite dev --host",
     "build": "pnpm run prebuild && vite build",
-    "prebuild": "cd ./check-size && npm run start",
+    "prebuild": "cd ./check-size && pnpm install && pnpm run start",
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
