@@ -10,22 +10,28 @@
   import { flyAndScale } from '@/utils/flyAndScale';
 
   // Icons:
-  import { CopyIcon, DownloadIcon, LinkIcon, PackageIcon, PaintBucket, ChevronsRight } from 'lucide-svelte';
+  import {
+    CopyIcon,
+    DownloadIcon,
+    LinkIcon,
+    PackageIcon,
+    PaintBucket,
+    ChevronsRight
+  } from 'lucide-svelte';
 
   // Main Card:
   import CardSpotlight from './cardSpotlight.svelte';
   import { DropdownMenu } from 'bits-ui';
 
   // Figma
-  import { onMount } from "svelte";
+  import { onMount } from 'svelte';
   import { copyToClipboard as figmaCopyToClipboard } from '@/figma/copy-to-clipboard';
   import { insertSVG as figmaInsertSVG } from '@/figma/insert-svg';
 
-
   // Props:
   export let svgInfo: iSVG;
-  
-  let isInFigma = false
+
+  let isInFigma = false;
   onMount(() => {
     const searchParams = new URLSearchParams(window.location.search);
     isInFigma = searchParams.get('figma') === '1';
@@ -69,7 +75,7 @@
       [MIMETYPE]: getSvgContent(url, true)
     };
 
-    if(isInFigma) {
+    if (isInFigma) {
       const content = (await getSvgContent(url, false)) as string;
       figmaCopyToClipboard(content);
     } else {
@@ -90,7 +96,7 @@
   const insertSVG = async (url?: string) => {
     const content = (await getSvgContent(url, false)) as string;
     figmaInsertSVG(content);
-  }
+  };
 
   // Icon Stroke & Size:
   let iconStroke = 1.8;
@@ -157,7 +163,6 @@
         </button>
       {/if}
 
-
       <button
         title="Copy to clipboard"
         on:click={() => {
@@ -211,7 +216,9 @@
               <p>Light & Dark variants</p>
             </DropdownMenu.Item>
             <DropdownMenu.Item
-              title="Download only {document.documentElement.classList.contains('dark') ? 'dark' : 'light'} variant"
+              title="Download only {document.documentElement.classList.contains('dark')
+                ? 'dark'
+                : 'light'} variant"
               class="flex h-10 select-none items-center rounded-md py-3 pl-3 pr-1.5 text-sm font-medium cursor-pointer hover:bg-neutral-100 dark:hover:bg-neutral-700/40"
               on:click={() => {
                 const svgHasTheme = typeof svgInfo.route !== 'string';

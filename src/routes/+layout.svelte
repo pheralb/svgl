@@ -40,7 +40,7 @@
   >
     <div class="md:px-6 md:py-6">
       <nav
-        class="flex items-center space-x-1 overflow-y-auto border-b border-neutral-300 dark:border-neutral-700/40 md:mb-3 md:flex-col md:space-x-0 md:space-y-1 md:overflow-y-visible px-5 md:px-0 pb-2 pt-3 md:pt-0"
+        class="flex items-center space-x-1 overflow-y-auto md:mb-3 md:flex-col md:space-x-0 md:space-y-1 md:overflow-y-visible px-5 md:px-0 pb-2 pt-3 md:pt-0"
       >
         <a
           href="/"
@@ -66,20 +66,6 @@
           </a>
         {/each}
       </nav>
-      <a
-        href="https://twitter.com/pheralb_"
-        target="_blank"
-        class="group mt-5 md:flex hidden items-center space-x-2 duration-100 hover:text-dark dark:text-neutral-400 dark:hover:text-white"
-      >
-        <Heart color="#991b1b" size={18} weight={'duotone'} />
-        <div class="flex items-center space-x-1">
-          <p class="text-muted text-sm">Created by pheralb</p>
-          <ArrowUpRight
-            size={14}
-            class="transition-transform duration-300 group-hover:-translate-y-[1px]"
-          />
-        </div>
-      </a>
     </div>
   </aside>
   <div class="ml-0 md:ml-56 pb-6">

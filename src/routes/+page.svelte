@@ -14,9 +14,11 @@
   import NotFound from '@/components/notFound.svelte';
 
   // Icons:
-  import { ArrowDownUpIcon, ArrowUpDownIcon } from 'lucide-svelte';
+  import { ArrowDown, ArrowDownUpIcon, ArrowUpDownIcon } from 'lucide-svelte';
 
   let sorted: boolean = false;
+  let isFirstLoad: boolean = true;
+  let showAll: boolean = false;
 
   // Search:
   let searchTerm = '';
@@ -29,12 +31,22 @@
     });
   }
 
+  const loadSvgs = () => {
+    if (isFirstLoad || showAll) {
+      filteredSvgs = allSvgs;
+      isFirstLoad = false;
+    } else {
+      filteredSvgs = allSvgs.slice(0, 30);
+    }
+  };
+
   // Search svgs:
   const searchSvgs = () => {
-    return (filteredSvgs = allSvgs.filter((svg: iSVG) => {
+    loadSvgs();
+    filteredSvgs = allSvgs.filter((svg: iSVG) => {
       let svgTitle = svg.title.toLowerCase();
       return svgTitle.includes(searchTerm.toLowerCase());
-    }));
+    });
   };
 
   // Clear search:
@@ -66,6 +78,8 @@
       return b.id! - a.id!;
     });
   };
+
+  loadSvgs();
 </script>
 
 <svelte:head>
@@ -97,10 +111,24 @@
     </button>
   </div>
   <Grid>
-    {#each filteredSvgs as svg}
+    {#each filteredSvgs.slice(0, showAll ? undefined : 30) as svg}
       <SvgCard svgInfo={svg} />
     {/each}
   </Grid>
+  {#if filteredSvgs.length > 30 && !showAll}
+    <div class="flex items-center justify-center mt-4">
+      <button
+        class="flex items-center space-x-2 rounded-md border border-neutral-300 p-2 duration-100 hover:bg-neutral-200 dark:border-neutral-700 dark:hover:bg-neutral-700/40"
+        on:click={() => (showAll = true)}
+      >
+        <ArrowDown size={16} strokeWidth={2} />
+        <span>Load All SVGs</span>
+        <span class="opacity-70">
+          ({filteredSvgs.length - 30} more)
+        </span>
+      </button>
+    </div>
+  {/if}
   {#if filteredSvgs.length === 0}
     <NotFound notFoundTerm={searchTerm} />
   {/if}
