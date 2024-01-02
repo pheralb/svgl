@@ -88,7 +88,7 @@ pnpm install
 >
 > - Remember to optimize SVG for web, you can use [SVGOMG](https://jakearchibald.github.io/svgomg/).
 > - When you optimize the SVG, make sure that the `viewBox` is not removed.
-> - The size limit for each .svg is **25kb**.
+> - The size limit for each .svg is **20kb**.
 
 4. Go to the [**`src/data/svgs.ts`**](https://github.com/pheralb/svgl/blob/main/src/data/svgs.ts) and add the information about your logo, following the structure:
 
