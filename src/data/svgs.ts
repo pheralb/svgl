@@ -2087,15 +2087,6 @@ export const svgs: iSVG[] = [
     url: 'https://pnpm.io/'
   },
   {
-    title: 'Pnpm No Text',
-    category: 'Software',
-    route: {
-      light: '/library/pnpm_no_text.svg',
-      dark: '/library/pnpm_no_text_dark.svg'
-    },
-    url: 'https://pnpm.io/'
-  },
-  {
     title: 'Emacs',
     category: 'Software',
     route: '/library/emacs.svg',
