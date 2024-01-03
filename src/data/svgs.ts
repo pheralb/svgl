@@ -1058,6 +1058,12 @@ export const svgs: iSVG[] = [
     url: 'https://www.loom.com/'
   },
   {
+    title: 'Hulu',
+    category: 'Entertainment',
+    route: '/library/hulu.svg',
+    url: 'https://www.hulu.com/'
+  },
+  {
     title: 'Stackblitz',
     category: 'Software',
     route: '/library/stackblitz.svg',
