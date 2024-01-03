@@ -1060,7 +1060,10 @@ export const svgs: iSVG[] = [
   {
     title: 'Hulu',
     category: 'Entertainment',
-    route: '/library/hulu.svg',
+    route: {
+      light: '/library/hulu.svg',
+      dark: '/library/hulu-dark.svg'
+    },
     url: 'https://www.hulu.com/'
   },
   {
