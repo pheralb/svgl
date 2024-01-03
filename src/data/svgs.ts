@@ -89,6 +89,12 @@ export const svgs: iSVG[] = [
     url: 'https://sentry.io/'
   },
   {
+    title: 'Yarn',
+    category: 'Software',
+    route: '/library/yarn.svg',
+    url: 'https://yarnpkg.com/'
+  },
+  {
     title: 'JWT',
     category: 'Library',
     route: '/library/jwt.svg',
