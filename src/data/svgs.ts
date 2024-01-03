@@ -89,6 +89,12 @@ export const svgs: iSVG[] = [
     url: 'https://sentry.io/'
   },
   {
+    title: 'Yarn',
+    category: 'Software',
+    route: '/library/yarn.svg',
+    url: 'https://yarnpkg.com/'
+  },
+  {
     title: 'JWT',
     category: 'Library',
     route: '/library/jwt.svg',
@@ -1050,6 +1056,15 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/loom.svg',
     url: 'https://www.loom.com/'
+  },
+  {
+    title: 'Hulu',
+    category: 'Entertainment',
+    route: {
+      light: '/library/hulu.svg',
+      dark: '/library/hulu-dark.svg'
+    },
+    url: 'https://www.hulu.com/'
   },
   {
     title: 'Stackblitz',
