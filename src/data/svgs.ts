@@ -128,6 +128,15 @@ export const svgs: iSVG[] = [
     url: 'https://workos.com/'
   },
   {
+    title: 'Whop',
+    category: 'Marketplace',
+    route: {
+      light: '/library/whop.svg',
+      dark: '/library/whop-light.svg'
+    },
+    url: 'https://whop.com/'
+  },
+  {
     title: 'Postman',
     category: 'Software',
     route: '/library/postman.svg',
