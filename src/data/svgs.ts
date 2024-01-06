@@ -2181,5 +2181,11 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/bitwarden.svg',
     url: 'https://bitwarden.com/'
+  },
+  {
+    title: 'Voicemod',
+    category: 'Entertainment',
+    route: '/library/voicemod.svg',
+    url: 'https://voicemod.net/'
   }
 ];
