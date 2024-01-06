@@ -2187,5 +2187,11 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/neovim.svg',
     url: 'https://neovim.io/'
-  }
+  },
+  {
+    title: 'Box Factura',
+    category: 'Software',
+    route: '/library/boxfactura-logo.svg',
+    url: 'https://www.boxfactura.com/'
+  },
 ];
