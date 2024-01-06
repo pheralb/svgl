@@ -2181,5 +2181,11 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/bitwarden.svg',
     url: 'https://bitwarden.com/'
+  },
+  {
+    title: 'Neovim',
+    category: 'Software',
+    route: '/library/neovim.svg',
+    url: 'https://neovim.io/'
   }
 ];
