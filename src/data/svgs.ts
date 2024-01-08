@@ -2185,7 +2185,10 @@ export const svgs: iSVG[] = [
   {
     title: 'Voicemod',
     category: 'Entertainment',
-    route: '/library/voicemod.svg',
+    route: {
+      light: '/library/voicemod_light.svg',
+      dark: '/library/voicemod_dark.svg'
+    },
     url: 'https://voicemod.net/'
   },
   {
