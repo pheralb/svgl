@@ -62,15 +62,10 @@
         </button>
       </div>
     {:else}
-      <div class="absolute inset-y-0 right-0 flex items-center pr-3 text-neutral-500">
-        <div class="flex h-full items-center pointer-events-none gap-x-1">
-          {#if shortcutText === 'command'}
-            <Command size={20} />
-            <span>K</span>
-          {:else if shortcutText === 'control'}
-            <span>Ctrl</span>
-            <span>K</span>
-          {/if}
+      <div class="absolute inset-y-0 right-0 flex items-center pr-4 text-neutral-500">
+        <div class="flex h-full items-center pointer-events-none gap-x-1 font-mono">
+          <Command size={16} />
+          <span>K</span>
         </div>
       </div>
     {/if}
