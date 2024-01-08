@@ -45,7 +45,7 @@
   class="relative flex items-center justify-center overflow-hidden rounded-md border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900"
 >
   <div
-    class="pointer-events-none absolute -inset-px opacity-0 transition duration-300"
+    class="pointer-events-none absolute transform-gpu -inset-px opacity-0 transition duration-300"
     style={`
 			opacity: ${opacity};
 			background: radial-gradient(600px circle at ${position.x}px ${position.y}px, rgba(97, 97, 97, 0.1), transparent 40%);
