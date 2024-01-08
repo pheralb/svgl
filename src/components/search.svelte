@@ -5,12 +5,14 @@
   export let clearSearch: () => void;
   import X from 'phosphor-svelte/lib/X';
 
-  let shortcutText = 'control';
+  let shortcutText: string = '';
   let inputElement;
 
   if (typeof window !== 'undefined') {
     if (navigator.platform.toUpperCase().indexOf('MAC') !== -1) {
       shortcutText = 'command';
+    } else {
+      shortcutText = 'control';
     }
   }
 
@@ -64,10 +66,11 @@
         <div class="flex h-full items-center pointer-events-none gap-x-1">
           {#if shortcutText === 'command'}
             <Command size={20} />
-          {:else}
+            <span>K</span>
+          {:else if shortcutText === 'control'}
             <span>Ctrl</span>
+            <span>K</span>
           {/if}
-          <span>K</span>
         </div>
       </div>
     {/if}
