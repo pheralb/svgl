@@ -1,9 +1,37 @@
 <script lang="ts">
-  import { SearchIcon } from 'lucide-svelte';
+  import { Command, SearchIcon } from 'lucide-svelte';
   export let searchTerm: string;
   export let placeholder: string = 'Search...';
   export let clearSearch: () => void;
   import X from 'phosphor-svelte/lib/X';
+
+  let shortcutText: string = '';
+  let inputElement;
+
+  if (typeof window !== 'undefined') {
+    if (navigator.platform.toUpperCase().indexOf('MAC') !== -1) {
+      shortcutText = 'command';
+    } else {
+      shortcutText = 'control';
+    }
+  }
+
+  function focusInput(node: HTMLElement) {
+    const handleKeydown = (event: KeyboardEvent) => {
+      if ((event.metaKey || event.ctrlKey) && event.key === 'k') {
+        event.preventDefault();
+        node.focus();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeydown);
+
+    return {
+      destroy() {
+        window.removeEventListener('keydown', handleKeydown);
+      }
+    };
+  }
 </script>
 
 <div class="sticky top-[63px] z-50">
@@ -17,9 +45,11 @@
       type="text"
       {placeholder}
       autocomplete="off"
-      class="w-full border-b border-neutral-300 bg-white p-3 pl-11 placeholder-neutral-500 focus:outline-none focus:ring-1 focus:ring-neutral-300 dark:border-neutral-800 dark:bg-neutral-900 dark:focus:ring-neutral-700"
+      class="w-full border-b border-neutral-300 bg-white p-3 px-11 placeholder-neutral-500 focus:outline-none focus:ring-1 focus:ring-neutral-300 dark:border-neutral-800 dark:bg-neutral-900 dark:focus:ring-neutral-700"
       bind:value={searchTerm}
       on:input
+      use:focusInput
+      bind:this={inputElement}
     />
     {#if searchTerm.length > 0}
       <div class="absolute inset-y-0 right-0 flex items-center pr-3">
@@ -30,6 +60,18 @@
         >
           <X size={18} />
         </button>
+      </div>
+    {:else}
+      <div class="absolute inset-y-0 right-0 flex items-center pr-3 text-neutral-500">
+        <div class="flex h-full items-center pointer-events-none gap-x-1">
+          {#if shortcutText === 'command'}
+            <Command size={20} />
+            <span>K</span>
+          {:else if shortcutText === 'control'}
+            <span>Ctrl</span>
+            <span>K</span>
+          {/if}
+        </div>
       </div>
     {/if}
   </div>
