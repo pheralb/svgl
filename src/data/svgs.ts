@@ -2193,5 +2193,11 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/neovim.svg',
     url: 'https://neovim.io/'
+  },
+  {
+    title: 'Pitch',
+    category: 'Design',
+    route: '/library/pitch.svg',
+    url: 'https://pitch.com'
   }
 ];
