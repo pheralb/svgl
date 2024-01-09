@@ -5,16 +5,7 @@
   export let clearSearch: () => void;
   import X from 'phosphor-svelte/lib/X';
 
-  let shortcutText: string = '';
   let inputElement;
-
-  if (typeof window !== 'undefined') {
-    if (navigator.platform.toUpperCase().indexOf('MAC') !== -1) {
-      shortcutText = 'command';
-    } else {
-      shortcutText = 'control';
-    }
-  }
 
   function focusInput(node: HTMLElement) {
     const handleKeydown = (event: KeyboardEvent) => {
