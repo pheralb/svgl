@@ -143,6 +143,12 @@ export const svgs: iSVG[] = [
     url: 'https://www.getpostman.com/'
   },
   {
+    title: 'Discord.js',
+    category: 'Library',
+    route: '/library/djs.svg',
+    url: 'https://discord.js.org/'
+  },
+  {
     title: 'OpenSea',
     category: 'Crypto',
     route: '/library/opensea.svg',
