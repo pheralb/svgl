@@ -1966,7 +1966,10 @@ export const svgs: iSVG[] = [
   {
     title: 'Shopify',
     category: 'CMS',
-    route: '/library/shopify.svg',
+    route: {
+      dark: '/library/shopify_dark.svg',
+      light: '/library/shopify_light.svg'
+    },
     url: 'https://www.shopify.com'
   },
   {
