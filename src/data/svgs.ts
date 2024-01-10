@@ -77,6 +77,12 @@ export const svgs: iSVG[] = [
     url: 'https://ton.org/'
   },
   {
+    title: 'Locofy',
+    category: 'AI',
+    route: '/library/locofy.svg',
+    url: 'https://www.locofy.ai/'
+  },
+  {
     title: 'Runway',
     category: 'AI',
     route: '/library/runway.svg',
@@ -141,6 +147,12 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/postman.svg',
     url: 'https://www.getpostman.com/'
+  },
+  {
+    title: 'Discord.js',
+    category: 'Library',
+    route: '/library/djs.svg',
+    url: 'https://discord.js.org/'
   },
   {
     title: 'OpenSea',
@@ -699,6 +711,12 @@ export const svgs: iSVG[] = [
     category: 'Framework',
     route: '/library/flutter.svg',
     url: 'https://flutter.dev/'
+  },
+  {
+    title: 'Auth0',
+    category: 'Library',
+    route: '/library/auth0.svg',
+    url: 'https://auth0.com/'
   },
   {
     title: 'Fresh',
