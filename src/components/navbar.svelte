@@ -5,7 +5,7 @@
   import Logo from './logo.svelte';
   import Theme from './theme.svelte';
 
-  import { ArrowUpRight, CloudyIcon, GithubIcon, TwitterIcon } from 'lucide-svelte';
+  import { ArrowUpRight, CloudyIcon, GithubIcon } from 'lucide-svelte';
   import XIcon from './xIcon.svelte';
 
   const socials = [
@@ -86,7 +86,7 @@
                 size={16}
                 name="External link"
                 strokeWidth={1.5}
-                class="ml-1 transition-transform duration-300 group-hover:translate-x-[1px] hidden md:block"
+                class="ml-1 transition-transform duration-300 group-hover:-translate-y-[1px] group-hover:translate-x-[1px] hidden md:block"
               />
             {/if}
           </a>
