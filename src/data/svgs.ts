@@ -707,6 +707,12 @@ export const svgs: iSVG[] = [
     url: 'https://flutter.dev/'
   },
   {
+    title: 'Auth0',
+    category: 'Library',
+    route: '/library/auth0.svg',
+    url: 'https://auth0.com/'
+  },
+  {
     title: 'Fresh',
     category: 'Framework',
     route: '/library/fresh.svg',
