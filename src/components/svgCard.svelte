@@ -16,7 +16,8 @@
     LinkIcon,
     PackageIcon,
     PaintBucket,
-    ChevronsRight
+    ChevronsRight,
+    CaseSensitive
   } from 'lucide-svelte';
 
   // Main Card:
@@ -36,6 +37,9 @@
     const searchParams = new URLSearchParams(window.location.search);
     isInFigma = searchParams.get('figma') === '1';
   });
+
+  // Wordmark SVG:
+  let wordmarkSvg = false;
 
   // Download SVG:
   const downloadSvg = (url?: string) => {
@@ -106,20 +110,37 @@
 <CardSpotlight>
   <div class="flex flex-col items-center justify-center rounded-md p-4">
     <!-- Image -->
-    <img
-      class="hidden dark:block mb-4 mt-2 h-10"
-      src={typeof svgInfo.route !== 'string' ? svgInfo.route.dark : svgInfo.route}
-      alt={svgInfo.title}
-      title={svgInfo.title}
-      loading="lazy"
-    />
-    <img
-      class="block dark:hidden mb-4 mt-2 h-10"
-      src={typeof svgInfo.route !== 'string' ? svgInfo.route.light : svgInfo.route}
-      alt={svgInfo.title}
-      title={svgInfo.title}
-      loading="lazy"
-    />
+    {#if wordmarkSvg == true}
+      <img
+        class="hidden dark:block mb-4 mt-2 h-10"
+        src={typeof svgInfo.wordmark !== 'string' ? svgInfo.wordmark?.dark || '' : svgInfo.wordmark || ''}
+        alt={svgInfo.title}
+        title={svgInfo.title}
+        loading="lazy"
+      />
+      <img
+        class="block dark:hidden mb-4 mt-2 h-10"
+        src={typeof svgInfo.wordmark !== 'string' ? svgInfo.wordmark?.light || '' : svgInfo.wordmark || ''}
+        alt={svgInfo.title}
+        title={svgInfo.title}
+        loading="lazy"
+      />
+    {:else}
+      <img
+        class="hidden dark:block mb-4 mt-2 h-10"
+        src={typeof svgInfo.route !== 'string' ? svgInfo.route.dark : svgInfo.route}
+        alt={svgInfo.title}
+        title={svgInfo.title}
+        loading="lazy"
+      />
+      <img
+        class="block dark:hidden mb-4 mt-2 h-10"
+        src={typeof svgInfo.route !== 'string' ? svgInfo.route.light : svgInfo.route}
+        alt={svgInfo.title}
+        title={svgInfo.title}
+        loading="lazy"
+      />
+    {/if}
     <!-- Title -->
     <div class="mb-3 flex flex-col items-center justify-center">
       <p class="truncate text-[15px] font-medium text-balance text-center select-all">
@@ -167,6 +188,7 @@
         title="Copy to clipboard"
         on:click={() => {
           const svgHasTheme = typeof svgInfo.route !== 'string';
+          const svgWordmarkHasTheme = typeof svgInfo.wordmark !== 'string';
 
           if (!svgHasTheme) {
             copyToClipboard(
@@ -268,6 +290,17 @@
       >
         <LinkIcon size={iconSize} strokeWidth={iconStroke} />
       </a>
+      {#if svgInfo.wordmark !== undefined}
+        <button
+          title="Wordmark SVG"
+          on:click={() => {
+            wordmarkSvg = !wordmarkSvg;
+          }}
+          class="flex items-center space-x-2 rounded-md p-2 duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700/40"
+        >
+          <CaseSensitive size={iconSize} strokeWidth={iconStroke} />
+        </button>
+      {/if}
     </div>
   </div>
 </CardSpotlight>

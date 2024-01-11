@@ -32,6 +32,10 @@ export const svgs: iSVG[] = [
       light: '/library/vercel.svg',
       dark: '/library/vercel_dark.svg'
     },
+    wordmark: {
+      light: '/library/vercel_wordmark.svg',
+      dark: '/library/vercel_wordmark_dark.svg'
+    },
     url: 'https://vercel.com/'
   },
   {

@@ -10,5 +10,11 @@ export interface iSVG {
         dark: string;
         light: string;
       };
+  wordmark?: 
+    | string // for backwards compat of when theme support was not added
+    | {
+        dark: string;
+        light: string;
+      };
   url: string;
 }
