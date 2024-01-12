@@ -263,6 +263,7 @@
         href={svgInfo.url}
         title="Website"
         target="_blank"
+        rel="noopener noreferrer"
         class="flex items-center space-x-2 rounded-md p-2 duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700/40"
       >
         <LinkIcon size={iconSize} strokeWidth={iconStroke} />
