@@ -83,12 +83,6 @@ export const svgs: iSVG[] = [
     url: 'https://runwayml.com/'
   },
   {
-    title: 'Sentry',
-    category: 'Software',
-    route: '/library/sentry.svg',
-    url: 'https://sentry.io/'
-  },
-  {
     title: 'Yarn',
     category: 'Software',
     route: '/library/yarn.svg',
@@ -504,12 +498,6 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/authy.svg',
     url: 'https://authy.com/'
-  },
-  {
-    title: 'Notion',
-    category: 'Software',
-    route: '/library/notion.svg',
-    url: 'https://notion.so/'
   },
   {
     title: 'NestJS',
@@ -953,12 +941,6 @@ export const svgs: iSVG[] = [
     url: 'https://www.apple.com'
   },
   {
-    title: 'Android',
-    category: 'Software',
-    route: '/library/android.svg',
-    url: 'https://www.android.com/'
-  },
-  {
     title: 'Windows',
     category: 'Software',
     route: '/library/windows.svg',
@@ -1292,12 +1274,6 @@ export const svgs: iSVG[] = [
     url: 'https://www.microsoft.com/en-us/sql-server/'
   },
   {
-    title: 'Biomejs',
-    category: 'Compiler',
-    route: '/library/biomejs.svg',
-    url: 'https://biomejs.dev/'
-  },
-  {
     title: 'Hono',
     category: 'Framework',
     route: '/library/hono.svg',
@@ -1620,12 +1596,6 @@ export const svgs: iSVG[] = [
       dark: '/library/cal_dark.svg'
     },
     url: 'https://cal.com'
-  },
-  {
-    title: 'Midday.ai',
-    category: 'Software',
-    route: '/library/midday.svg',
-    url: 'https://midday.ai'
   },
   {
     title: 'Calendly',
@@ -2202,5 +2172,59 @@ export const svgs: iSVG[] = [
     category: 'Design',
     route: '/library/pitch.svg',
     url: 'https://pitch.com'
+  },
+  {
+    title: 'Biomejs',
+    category: 'Compiler',
+    route: '/library/biomejs.svg',
+    url: 'https://biomejs.dev/'
+  },
+  {
+    title: 'Gradio',
+    category: 'Software',
+    route: '/library/gradio.svg',
+    url: 'https://www.gradio.app/'
+  },
+  {
+    title: 'Meta',
+    category: 'Social',
+    route: '/library/meta.svg',
+    url: 'https://about.meta.com/es/'
+  },
+  {
+    title: 'Stability AI',
+    category: 'AI',
+    route: '/library/stability-ai.svg',
+    url: 'https://stability.ai/'
+  },
+  {
+    title: 'Google PaLM',
+    category: 'AI',
+    route: '/library/google-palm.svg',
+    url: 'https://ai.google/discover/palm2/'
+  },
+  {
+    title: 'Android',
+    category: 'Software',
+    route: '/library/android-icon.svg',
+    url: 'https://www.android.com/'
+  },
+  {
+    title: 'Sentry',
+    category: 'Software',
+    route: '/library/sentry.svg',
+    url: 'https://sentry.io/'
+  },
+  {
+    title: 'Grafana',
+    category: 'Software',
+    route: '/library/grafana.svg',
+    url: 'https://grafana.com/'
+  },
+  {
+    title: 'Notion',
+    category: 'Software',
+    route: '/library/notion.svg',
+    url: 'https://notion.so/'
   }
 ];
