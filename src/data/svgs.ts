@@ -510,6 +510,15 @@ export const svgs: iSVG[] = [
     url: 'https://qwik.builder.io/'
   },
   {
+    title: 'Coinbase',
+    category: 'Crypto',
+    route: {
+      light: '/library/coinbase-light.svg',
+      dark: '/library/coinbase-dark.svg'
+    },
+    url: 'https://www.coinbase.com/'
+  },
+  {
     title: 'Authy',
     category: 'Software',
     route: '/library/authy.svg',
@@ -918,6 +927,12 @@ export const svgs: iSVG[] = [
     url: 'https://reactrouter.com/en/main'
   },
   {
+    title: 'AMP',
+    category: 'Library',
+    route: '/library/amp.svg',
+    url: 'https://amp.dev/'
+  },
+  {
     title: 'Developer Student Club',
     category: 'Community',
     route: '/library/gdsc.svg',
@@ -934,6 +949,15 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/eclipse.svg',
     url: 'https://www.eclipse.org/'
+  },
+  {
+    title: 'Three.js',
+    category: 'Library',
+    route: {
+      light: '/library/threejs-light.svg',
+      dark: '/library/threejs-dark.svg'
+    },
+    url: 'https://threejs.org/'
   },
   {
     title: 'HTML5',
@@ -1255,6 +1279,12 @@ export const svgs: iSVG[] = [
     category: 'Library',
     route: '/library/zod.svg',
     url: 'https://zod.dev/'
+  },
+  {
+    title: 'Dreamweaver',
+    category: 'Software',
+    route: '/library/dw.svg',
+    url: 'https://www.adobe.com/products/dreamweaver.html'
   },
   {
     title: 'OpenAI',
