@@ -938,9 +938,12 @@ export const svgs: iSVG[] = [
     url: 'https://www.eclipse.org/'
   },
   {
-    title: 'Threejs',
+    title: 'Three.js',
     category: 'Library',
-    route: '/library/threejs.svg',
+    route: {
+      light: '/library/threejs-light.svg',
+      dark: '/library/threejs-dark.svg'
+    },
     url: 'https://threejs.org/'
   },
   {
