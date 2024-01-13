@@ -914,6 +914,12 @@ export const svgs: iSVG[] = [
     url: 'https://reactrouter.com/en/main'
   },
   {
+    title: 'AMP',
+    category: 'Library',
+    route: '/library/amp.svg',
+    url: 'https://amp.dev/'
+  },
+  {
     title: 'Developer Student Club',
     category: 'Community',
     route: '/library/gdsc.svg',
