@@ -291,6 +291,7 @@ export const svgs: iSVG[] = [
     title: 'YouTube',
     category: 'Social',
     route: '/library/youtube.svg',
+    wordmark: '/library/youtube-wordmark.svg',
     url: 'https://www.youtube.com/'
   },
   {
@@ -306,6 +307,7 @@ export const svgs: iSVG[] = [
     title: 'Google',
     category: 'Social',
     route: '/library/google.svg',
+    wordmark: '/library/google-wordmark.svg',
     url: 'https://www.google.com/'
   },
   {
@@ -387,6 +389,7 @@ export const svgs: iSVG[] = [
     title: 'MongoDB',
     category: 'Database',
     route: '/library/mongodb.svg',
+    wordmark: '/library/mongodb-wordmark.svg',
     url: 'https://www.mongodb.com/'
   },
   {
@@ -1970,9 +1973,10 @@ export const svgs: iSVG[] = [
   {
     title: 'Shopify',
     category: 'CMS',
-    route: {
-      dark: '/library/shopify_dark.svg',
-      light: '/library/shopify_light.svg'
+    route: '/library/shopify.svg',
+    wordmark: {
+      dark: '/library/shopify-wordmark-dark.svg',
+      light: '/library/shopify-wordmark-light.svg'
     },
     url: 'https://www.shopify.com'
   },
@@ -2004,6 +2008,7 @@ export const svgs: iSVG[] = [
     title: 'airbnb',
     category: 'Software',
     route: '/library/airbnb.svg',
+    wordmark: '/library/airbnb-wordmark.svg',
     url: 'https://www.airbnb.com'
   },
   {
@@ -2028,6 +2033,7 @@ export const svgs: iSVG[] = [
     title: 'slack',
     category: 'Software',
     route: '/library/slack.svg',
+    wordmark: '/library/slack-wordmark.svg',
     url: 'https://www.slack.com'
   },
   {
