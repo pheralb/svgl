@@ -506,6 +506,15 @@ export const svgs: iSVG[] = [
     url: 'https://qwik.builder.io/'
   },
   {
+    title: 'Coinbase',
+    category: 'Crypto',
+    route: {
+      light: '/library/coinbase-light.svg',
+      dark: '/library/coinbase-dark.svg'
+    },
+    url: 'https://www.coinbase.com/'
+  },
+  {
     title: 'Authy',
     category: 'Software',
     route: '/library/authy.svg',
