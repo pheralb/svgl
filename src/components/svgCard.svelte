@@ -17,7 +17,7 @@
     PackageIcon,
     PaintBucket,
     ChevronsRight,
-    CaseSensitive
+    Baseline
   } from 'lucide-svelte';
 
   // Main Card:
@@ -64,6 +64,19 @@
     zip.file(`${svgInfo.title}.svg`, lightSvg);
     zip.file(`${svgInfo.title}.dark.svg`, darkSvg);
 
+    if (svgInfo.wordmark) {
+      if (typeof svgInfo.wordmark === 'string') {
+        downloadSvg(svgInfo.wordmark);
+        return;
+      }
+
+      const lightWordmarkSvg = await getSvgContent(svgInfo.wordmark.light, false);
+      const darkWordmarkSvg = await getSvgContent(svgInfo.wordmark.dark, false);
+
+      zip.file(`${svgInfo.title}.wordmark.svg`, lightWordmarkSvg);
+      zip.file(`${svgInfo.title}.wordmark.dark.svg`, darkWordmarkSvg);
+    }
+
     zip.generateAsync({ type: 'blob' }).then((content) => {
       download(content, `${svgInfo.title}.zip`, 'application/zip');
     });
@@ -82,14 +95,28 @@
     if (isInFigma) {
       const content = (await getSvgContent(url, false)) as string;
       figmaCopyToClipboard(content);
-    } else {
-      try {
-        const clipboardItem = new ClipboardItem(data);
-        await navigator.clipboard.write([clipboardItem]);
-      } catch (error) {
-        const content = (await getSvgContent(url, false)) as string;
-        await navigator.clipboard.writeText(content);
-      }
+    }
+
+    try {
+      const clipboardItem = new ClipboardItem(data);
+      await navigator.clipboard.write([clipboardItem]);
+    } catch (error) {
+      const content = (await getSvgContent(url, false)) as string;
+      await navigator.clipboard.writeText(content);
+    }
+
+    if (isInFigma) {
+      toast.success('Ready to paste in Figma!', {
+        description: `${svgInfo.title} - ${svgInfo.category}`
+      });
+      return;
+    }
+
+    if (wordmarkSvg) {
+      toast.success('Copied wordmark SVG to clipboard!', {
+        description: `${svgInfo.title} - ${svgInfo.category}`
+      });
+      return;
     }
 
     toast.success('Copied to clipboard!', {
@@ -113,14 +140,18 @@
     {#if wordmarkSvg == true}
       <img
         class="hidden dark:block mb-4 mt-2 h-10"
-        src={typeof svgInfo.wordmark !== 'string' ? svgInfo.wordmark?.dark || '' : svgInfo.wordmark || ''}
+        src={typeof svgInfo.wordmark !== 'string'
+          ? svgInfo.wordmark?.dark || ''
+          : svgInfo.wordmark || ''}
         alt={svgInfo.title}
         title={svgInfo.title}
         loading="lazy"
       />
       <img
         class="block dark:hidden mb-4 mt-2 h-10"
-        src={typeof svgInfo.wordmark !== 'string' ? svgInfo.wordmark?.light || '' : svgInfo.wordmark || ''}
+        src={typeof svgInfo.wordmark !== 'string'
+          ? svgInfo.wordmark?.light || ''
+          : svgInfo.wordmark || ''}
         alt={svgInfo.title}
         title={svgInfo.title}
         loading="lazy"
@@ -184,35 +215,65 @@
         </button>
       {/if}
 
-      <button
-        title="Copy to clipboard"
-        on:click={() => {
-          const svgHasTheme = typeof svgInfo.route !== 'string';
-          const svgWordmarkHasTheme = typeof svgInfo.wordmark !== 'string';
+      {#if wordmarkSvg}
+        <button
+          title="Copy wordmark SVG to clipboard"
+          on:click={() => {
+            const svgHasTheme = typeof svgInfo.wordmark !== 'string';
 
-          if (!svgHasTheme) {
+            if (!svgHasTheme) {
+              copyToClipboard(
+                typeof svgInfo.wordmark === 'string'
+                  ? svgInfo.wordmark
+                  : "Something went wrong. Couldn't copy the SVG."
+              );
+              return;
+            }
+
+            const dark = document.documentElement.classList.contains('dark');
+
             copyToClipboard(
-              typeof svgInfo.route === 'string'
-                ? svgInfo.route
-                : "Something went wrong. Couldn't copy the SVG."
+              typeof svgInfo.wordmark !== 'string'
+                ? dark
+                  ? svgInfo.wordmark?.dark
+                  : svgInfo.wordmark?.light
+                : svgInfo.wordmark
             );
-            return;
-          }
+          }}
+          class="flex items-center space-x-2 rounded-md p-2 duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700/40"
+        >
+          <CopyIcon size={iconSize} strokeWidth={iconStroke} />
+        </button>
+      {:else}
+        <button
+          title="Copy to clipboard"
+          on:click={() => {
+            const svgHasTheme = typeof svgInfo.route !== 'string';
 
-          const dark = document.documentElement.classList.contains('dark');
+            if (!svgHasTheme) {
+              copyToClipboard(
+                typeof svgInfo.route === 'string'
+                  ? svgInfo.route
+                  : "Something went wrong. Couldn't copy the SVG."
+              );
+              return;
+            }
 
-          copyToClipboard(
-            typeof svgInfo.route !== 'string'
-              ? dark
-                ? svgInfo.route.dark
-                : svgInfo.route.light
-              : svgInfo.route
-          );
-        }}
-        class="flex items-center space-x-2 rounded-md p-2 duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700/40"
-      >
-        <CopyIcon size={iconSize} strokeWidth={iconStroke} />
-      </button>
+            const dark = document.documentElement.classList.contains('dark');
+
+            copyToClipboard(
+              typeof svgInfo.route !== 'string'
+                ? dark
+                  ? svgInfo.route.dark
+                  : svgInfo.route.light
+                : svgInfo.route
+            );
+          }}
+          class="flex items-center space-x-2 rounded-md p-2 duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700/40"
+        >
+          <CopyIcon size={iconSize} strokeWidth={iconStroke} />
+        </button>
+      {/if}
 
       {#if typeof svgInfo.route !== 'string'}
         <DropdownMenu.Root>
@@ -235,7 +296,7 @@
               }}
             >
               <PackageIcon class="mr-2" size={18} />
-              <p>Light & Dark variants</p>
+              <p>Light & dark variants</p>
             </DropdownMenu.Item>
             <DropdownMenu.Item
               title="Download only {document.documentElement.classList.contains('dark')
@@ -292,13 +353,13 @@
       </a>
       {#if svgInfo.wordmark !== undefined}
         <button
-          title="Wordmark SVG"
+          title="Show wordmark SVG"
           on:click={() => {
             wordmarkSvg = !wordmarkSvg;
           }}
           class="flex items-center space-x-2 rounded-md p-2 duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700/40"
         >
-          <CaseSensitive size={iconSize} strokeWidth={iconStroke} />
+          <Baseline size={iconSize} strokeWidth={iconStroke} />
         </button>
       {/if}
     </div>
