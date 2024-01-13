@@ -2281,5 +2281,11 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/notion.svg',
     url: 'https://notion.so/'
+  },
+  {
+    title: 'Litecoin',
+    category: 'Crypto',
+    route: '/library/litecoin.svg',
+    url: 'https://litecoin.org/'
   }
 ];
