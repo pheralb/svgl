@@ -1253,6 +1253,12 @@ export const svgs: iSVG[] = [
     url: 'https://zod.dev/'
   },
   {
+    title: 'Dreamweaver',
+    category: 'Software',
+    route: '/library/dw.svg',
+    url: 'https://www.adobe.com/products/dreamweaver.html'
+  },
+  {
     title: 'OpenAI',
     category: 'AI',
     route: {
