@@ -1428,12 +1428,6 @@ export const svgs: iSVG[] = [
     url: 'https://www.bnbchain.org/'
   },
   {
-    title: 'TRON',
-    category: 'Crypto',
-    route: '/library/trx.svg',
-    url: 'https://tron.network/'
-  },
-  {
     title: 'Chainlink',
     category: 'Crypto',
     route: '/library/link.svg',
@@ -1564,6 +1558,12 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/datadog.svg',
     url: 'https://www.datadoghq.com/'
+  },
+  {
+    title: 'Tron',
+    category: 'Crypto',
+    route: '/library/tron.svg',
+    url: 'https://tron.network/'
   },
   {
     title: 'Randevum',
