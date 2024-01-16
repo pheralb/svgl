@@ -1113,6 +1113,12 @@ export const svgs: iSVG[] = [
     url: 'https://stackblitz.com/'
   },
   {
+    title: 'Binance',
+    category: 'Crypto',
+    route: '/library/binance.svg',
+    url: 'https://binance.com/'
+  },
+  {
     title: 'Messenger',
     category: 'Social',
     route: '/library/messenger.svg',
