@@ -2312,5 +2312,11 @@ export const svgs: iSVG[] = [
     category: 'Crypto',
     route: '/library/litecoin.svg',
     url: 'https://litecoin.org/'
+  },
+  {
+    title: 'Flask',
+    category: 'Framework',
+    route: '/library/flask.svg',
+    url: 'https://flask.palletsprojects.com'
   }
 ];
