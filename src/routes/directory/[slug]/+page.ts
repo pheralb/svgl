@@ -13,7 +13,13 @@ export const load = (async ({ params }) => {
   }
 
   // Filter out the svg with the matching slug:
-  const svgsByCategory = svgs.filter((svg: iSVG) => svg.category.toLowerCase() === slug);
+  const svgsByCategory = svgs.filter((svg: iSVG) => {
+    if (Array.isArray(svg.category)) {
+      return svg.category.some(categoryItem => categoryItem.toLowerCase() === slug);
+    } else {
+      return svg.category.toLowerCase() === slug;
+    }
+  });
 
   return {
     category: slug as string,
