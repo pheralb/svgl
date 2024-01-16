@@ -1371,6 +1371,15 @@ export const svgs: iSVG[] = [
     url: 'https://crossplane.io/'
   },
   {
+    title: 'Volta',
+    category: 'Software',
+    route: {
+      light: '/library/volta-dark.svg',
+      dark: '/library/volta-light.svg'
+    },
+    url: 'https://volta.net/'
+  },
+  {
     title: 'Typesense',
     category: 'Software',
     route: '/library/typesense.svg',
