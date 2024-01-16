@@ -1428,9 +1428,13 @@ export const svgs: iSVG[] = [
     url: 'https://www.bnbchain.org/'
   },
   {
-    title: 'Chainlink',
+    title: 'Link',
     category: 'Crypto',
     route: '/library/link.svg',
+    wordmark: {
+      light: '/library/link-wordmark-light.svg',
+      dark: '/library/link-wordmark-dark.svg'
+    },
     url: 'https://chain.link/'
   },
   {
