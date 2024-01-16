@@ -1113,6 +1113,12 @@ export const svgs: iSVG[] = [
     url: 'https://stackblitz.com/'
   },
   {
+    title: 'Binance',
+    category: 'Crypto',
+    route: '/library/binance.svg',
+    url: 'https://binance.com/'
+  },
+  {
     title: 'Messenger',
     category: 'Social',
     route: '/library/messenger.svg',
@@ -1371,6 +1377,15 @@ export const svgs: iSVG[] = [
     url: 'https://crossplane.io/'
   },
   {
+    title: 'Volta',
+    category: 'Software',
+    route: {
+      light: '/library/volta-dark.svg',
+      dark: '/library/volta-light.svg'
+    },
+    url: 'https://volta.net/'
+  },
+  {
     title: 'Typesense',
     category: 'Software',
     route: '/library/typesense.svg',
@@ -1413,15 +1428,13 @@ export const svgs: iSVG[] = [
     url: 'https://www.bnbchain.org/'
   },
   {
-    title: 'TRON',
-    category: 'Crypto',
-    route: '/library/trx.svg',
-    url: 'https://tron.network/'
-  },
-  {
-    title: 'Chainlink',
+    title: 'Link',
     category: 'Crypto',
     route: '/library/link.svg',
+    wordmark: {
+      light: '/library/link-wordmark-light.svg',
+      dark: '/library/link-wordmark-dark.svg'
+    },
     url: 'https://chain.link/'
   },
   {
@@ -1549,6 +1562,12 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/datadog.svg',
     url: 'https://www.datadoghq.com/'
+  },
+  {
+    title: 'Tron',
+    category: 'Crypto',
+    route: '/library/tron.svg',
+    url: 'https://tron.network/'
   },
   {
     title: 'Randevum',
