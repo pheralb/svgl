@@ -27,13 +27,15 @@
       name: 'Extensions',
       url: 'https://github.com/pheralb/svgl?tab=readme-ov-file#-extensions',
       icon: ArrowUpRight,
-      external: true
+      external: true,
+      label: "Go to the SVGL's extensions section"
     },
     {
       name: 'Submit logo',
       url: 'https://github.com/pheralb/svgl#-getting-started',
       icon: ArrowUpRight,
-      external: true
+      external: true,
+      label: "Go to the SVGL's getting started section"
     }
   ];
 </script>
@@ -48,7 +50,7 @@
 >
   <div class="flex items-center justify-between mx-auto">
     <div class="flex items-center space-x-2">
-      <a href="/">
+      <a href="/" aria-label="Back to the SVGL home page">
         <div class="flex items-center space-x-2 hover:opacity-80 transition-opacity">
           <svelte:component this={Logo} />
           <span class="text-[19px] font-medium tracking-wide hidden md:block">svgl</span>
@@ -64,6 +66,7 @@
           <a
             href={link.url}
             target={link.external ? '_blank' : ''}
+            aria-label={link.label ?? link.name}
             class={cn(
               'flex items-center hover:opacity-80 transition-opacity text-[15px] pl-2 md:pl-3 group',
               currentPath === link.url &&
