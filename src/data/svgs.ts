@@ -2316,7 +2316,10 @@ export const svgs: iSVG[] = [
   {
     title: 'Flask',
     category: 'Framework',
-    route: '/library/flask.svg',
-    url: 'https://flask.palletsprojects.com'
+    route: {
+      light: '/library/flask-light.svg',
+      dark: '/library/flask-dark.svg'
+    },
+    url: 'https://flask.palletsprojects.com/'
   }
 ];
