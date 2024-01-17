@@ -1,13 +1,13 @@
 <script lang="ts">
-  let div: HTMLDivElement;
+  let domElement: HTMLElement;
   let focused = false;
   let position = { x: 0, y: 0 };
   let opacity = 0;
 
   const handleMouseMove = (e: MouseEvent) => {
-    if (!div || focused) return;
+    if (!domElement || focused) return;
 
-    const rect = div.getBoundingClientRect();
+    const rect = domElement.getBoundingClientRect();
 
     position = {
       x: e.clientX - rect.left,
@@ -34,9 +34,8 @@
   };
 </script>
 
-<div
-  aria-hidden="true"
-  bind:this={div}
+<article
+  bind:this={domElement}
   on:mousemove={handleMouseMove}
   on:focus={handleFocus}
   on:blur={handleBlur}
@@ -52,4 +51,4 @@
 		`}
   />
   <slot />
-</div>
+</article>
