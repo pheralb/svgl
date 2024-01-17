@@ -190,21 +190,25 @@
       <p class="truncate text-[15px] font-medium text-balance text-center select-all">
         {svgInfo.title}
       </p>
-    </div>
-    <div class="mb-3 flex flex-col items-center justify-center h-10">
-      {#if Array.isArray(svgInfo.category)}
-        {#each svgInfo.category.sort() as c}
+      <div class="flex flex-wrap justify-center">
+        {#if Array.isArray(svgInfo.category)}
+          {#each svgInfo.category.sort() as c, index}
+            <a
+              href={`/directory/${c.toLowerCase()}`}
+              class="text-sm lowercase text-neutral-500 hover:underline font-mono">{c}</a
+            >
+            {#if index < svgInfo.category.length - 1}
+              <span class="text-neutral-500">.</span>
+            {/if}
+          {/each}
+        {:else}
           <a
-            href={`/directory/${c.toLowerCase()}`}
-            class="text-sm lowercase text-neutral-500 hover:underline font-mono">{c}</a
+            href={`/directory/${svgInfo.category.toLowerCase()}`}
+            class="text-sm lowercase text-neutral-500 hover:underline font-mono"
+            >{svgInfo.category}</a
           >
-        {/each}
-      {:else}
-        <a
-          href={`/directory/${svgInfo.category.toLowerCase()}`}
-          class="text-sm lowercase text-neutral-500 hover:underline font-mono">{svgInfo.category}</a
-        >
-      {/if}
+        {/if}
+      </div>
     </div>
     <!-- Actions -->
     <div class="flex items-center space-x-1">
