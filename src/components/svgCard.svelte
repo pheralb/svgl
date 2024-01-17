@@ -179,7 +179,7 @@
       </p>
       <a
         href={`/directory/${svgInfo.category.toLowerCase()}`}
-        class="text-sm lowercase text-neutral-500 hover:underline font-mono">{svgInfo.category}</a
+        class="text-sm lowercase text-neutral-400 hover:underline font-mono">{svgInfo.category}</a
       >
     </div>
     <!-- Actions -->
