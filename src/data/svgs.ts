@@ -2215,6 +2215,15 @@ export const svgs: iSVG[] = [
     url: 'https://1password.com'
   },
   {
+    title: 'Flask',
+    category: 'Framework',
+    route: {
+      light: '/library/flask-light.svg',
+      dark: '/library/flask-dark.svg'
+    },
+    url: 'https://flask.palletsprojects.com/'
+  },
+  {
     title: 'Alacritty',
     category: 'Software',
     route: '/library/alacritty.svg',
