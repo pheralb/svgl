@@ -2312,5 +2312,11 @@ export const svgs: iSVG[] = [
     category: 'Crypto',
     route: '/library/litecoin.svg',
     url: 'https://litecoin.org/'
+  },
+  {
+    title: 'ElysiaJS',
+    category: 'Framework',
+    route: '/library/elysiajs.svg',
+    url: 'https://elysiajs.com/'
   }
 ];
