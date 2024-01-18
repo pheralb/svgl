@@ -209,6 +209,10 @@
           >
         {/if}
       </div>
+      <a
+        href={`/directory/${svgInfo.category.toLowerCase()}`}
+        class="text-sm lowercase text-neutral-400 hover:underline font-mono">{svgInfo.category}</a
+      >
     </div>
     <!-- Actions -->
     <div class="flex items-center space-x-1">
