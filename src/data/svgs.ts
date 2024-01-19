@@ -2327,5 +2327,11 @@ export const svgs: iSVG[] = [
     category: 'Framework',
     route: '/library/elysiajs.svg',
     url: 'https://elysiajs.com/'
+  },
+  {
+    title: 'TensorFlow',
+    category: 'Library',
+    route: '/library/tensorflow.svg',
+    url: 'https://www.tensorflow.org/'
   }
 ];
