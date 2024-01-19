@@ -2008,7 +2008,10 @@ export const svgs: iSVG[] = [
   {
     title: 'bigcommerce',
     category: 'CMS',
-    route: '/library/bigcommerce.svg',
+    route: {
+      light: '/library/bigcommerce-light.svg',
+      dark: '/library/bigcommerce-dark.svg'
+    },
     url: 'https://www.bigcommerce.co.uk'
   },
   {
