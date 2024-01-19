@@ -50,10 +50,8 @@
   )}
 >
   <div class="flex items-center justify-between mx-auto">
-    <div class="flex items-center space-x-2">
-      <!-- Lighthouse diagnostic in Desktop mode returns an accesibility error respect the 'a' element -->
-      <!-- I don't know why :' -->
-      <a href="/" aria-label="Back to the SVGL home page">
+    <div class="flex items-center space-x-2">      
+      <a href="/" aria-label="Go to the SVGL v4.0 home page">
         <div class="flex items-center space-x-2 hover:opacity-80 transition-opacity">
           <svelte:component this={Logo} />
           <span class="text-[19px] font-medium tracking-wide hidden md:block">svgl</span>
