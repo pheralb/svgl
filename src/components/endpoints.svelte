@@ -12,7 +12,7 @@
   <div class="flex items-center space-x-4 mb-4">
     <p
       class={cn(
-        'm-0 rounded-md font-medium px-1.5 py-0.5 text-sm leading-5',
+        'm-0 rounded-md font-medium px-1.5 py-0.5 text-sm leading-5 select-none',
         method === 'GET' &&
           ' text-green-600 dark:text-green-500 bg-green-400/20 dark:bg-green-400/20',
         method === 'POST' && ' text-blue-600 dark:text-blue-500 bg-blue-400/20 dark:bg-blue-400/20',
