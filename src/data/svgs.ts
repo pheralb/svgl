@@ -1092,6 +1092,12 @@ export const svgs: iSVG[] = [
     url: 'https://www.hcaptcha.com/'
   },
   {
+    title: 'Appwrite',
+    category: 'Software',
+    route: '/library/appwrite.svg',
+    url: 'https://appwrite.io/'
+  },
+  {
     title: 'Loom',
     category: 'Software',
     route: '/library/loom.svg',
