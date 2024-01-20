@@ -21,7 +21,8 @@
       name: 'API',
       url: '/api',
       icon: CloudyIcon,
-      external: false
+      external: false,
+      label: "Go to the SVGL's API section"
     },
     {
       name: 'Extensions',
@@ -35,7 +36,7 @@
       url: 'https://github.com/pheralb/svgl#-getting-started',
       icon: ArrowUpRight,
       external: true,
-      label: "Go to the SVGL's getting started section"
+      label: "Submit logo and go to the SVGL's getting started section"
     }
   ];
 </script>
@@ -49,12 +50,12 @@
   )}
 >
   <div class="flex items-center justify-between mx-auto">
-    <div class="flex items-center space-x-2">
-      <a href="/" aria-label="Back to the SVGL home page">
+    <div class="flex items-center space-x-2">      
+      <a href="/" aria-label="Go to the SVGL v4.0 home page">
         <div class="flex items-center space-x-2 hover:opacity-80 transition-opacity">
           <svelte:component this={Logo} />
           <span class="text-[19px] font-medium tracking-wide hidden md:block">svgl</span>
-          <p class="text-neutral-500 hidden md:block font-mono">v4.0</p>
+          <p class="text-neutral-400 hidden md:block font-mono">v4.0</p>
         </div>
       </a>
     </div>
