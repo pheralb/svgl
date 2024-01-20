@@ -2351,5 +2351,11 @@ export const svgs: iSVG[] = [
     category: 'Library',
     route: '/library/tensorflow.svg',
     url: 'https://www.tensorflow.org/'
+  },
+  {
+    title: 'Midday',
+    category: 'AI',
+    route: '/library/midday.svg',
+    url: 'https://midday.ai/'
   }
 ];
