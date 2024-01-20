@@ -825,6 +825,15 @@ export const svgs: iSVG[] = [
     url: 'https://tanstack.com/query/v4'
   },
   {
+    title: 'Devto',
+    category: 'Community',
+    route: {
+      light: '/library/devto-light.svg',
+      dark: '/library/devto-dark.svg'
+    },
+    url: 'https://dev.to/'
+  },
+  {
     title: 'Redis',
     category: 'Database',
     route: '/library/redis.svg',
@@ -1090,6 +1099,12 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/hcaptcha.svg',
     url: 'https://www.hcaptcha.com/'
+  },
+  {
+    title: 'Appwrite',
+    category: 'Software',
+    route: '/library/appwrite.svg',
+    url: 'https://appwrite.io/'
   },
   {
     title: 'Loom',
@@ -2008,7 +2023,10 @@ export const svgs: iSVG[] = [
   {
     title: 'bigcommerce',
     category: 'CMS',
-    route: '/library/bigcommerce.svg',
+    route: {
+      light: '/library/bigcommerce-light.svg',
+      dark: '/library/bigcommerce-dark.svg'
+    },
     url: 'https://www.bigcommerce.co.uk'
   },
   {
