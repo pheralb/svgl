@@ -8,6 +8,7 @@
   import { ArrowUpRight, CloudyIcon, GithubIcon } from 'lucide-svelte';
   import XIcon from './xIcon.svelte';
 
+  // Se le pusieron aria-labels a los links
   const socials = [
     {
       name: 'GitHub',
@@ -49,8 +50,9 @@
     'backdrop-blur-md opacity-95'
   )}
 >
+<!-- Se le puso un aria-label al href="/" -->
   <div class="flex items-center justify-between mx-auto">
-    <div class="flex items-center space-x-2">      
+    <div class="flex items-center space-x-2">
       <a href="/" aria-label="Go to the SVGL v4.0 home page">
         <div class="flex items-center space-x-2 hover:opacity-80 transition-opacity">
           <svelte:component this={Logo} />
