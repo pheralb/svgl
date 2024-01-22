@@ -34,6 +34,7 @@
   };
 </script>
 
+<!--Se quito el aria-hidden="true" para que se pueda leer el contenido del card con el lector de pantalla  -->
 <article
   bind:this={domElement}
   on:mousemove={handleMouseMove}
