@@ -2357,5 +2357,11 @@ export const svgs: iSVG[] = [
     category: 'AI',
     route: '/library/midday.svg',
     url: 'https://midday.ai/'
+  },
+  {
+    title: 'C#',
+    category: 'Language',
+    route: '/library/csharp.svg',
+    url: 'https://dotnet.microsoft.com/languages/csharp'
   }
 ];
