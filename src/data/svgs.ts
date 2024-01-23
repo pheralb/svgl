@@ -2363,5 +2363,18 @@ export const svgs: iSVG[] = [
     category: 'Language',
     route: '/library/csharp.svg',
     url: 'https://dotnet.microsoft.com/languages/csharp'
+  },
+  {
+    title: 'Replicate',
+    category: 'AI',
+    route: {
+      light: '/library/replicate_light.svg',
+      dark: '/library/replicate_dark.svg'
+    },
+    wordmark: {
+      light: '/library/replicate-wordmark_light.svg',
+      dark: '/library/replicate-wordmark_dark.svg'
+    },
+    url: 'https://replicate.com/'
   }
 ];
