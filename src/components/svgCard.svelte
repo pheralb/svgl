@@ -132,6 +132,10 @@
   // Icon Stroke & Size:
   let iconStroke = 1.8;
   let iconSize = 16;
+
+  // Width & Height of <img>:
+  const width = 40;
+  const height = 40;
 </script>
 
 <CardSpotlight>
@@ -146,6 +150,8 @@
         alt={svgInfo.title}
         title={svgInfo.title}
         loading="lazy"
+        {width}
+        {height}
       />
       <img
         class="block dark:hidden mb-4 mt-2 h-10"
@@ -155,6 +161,8 @@
         alt={svgInfo.title}
         title={svgInfo.title}
         loading="lazy"
+        {width}
+        {height}
       />
     {:else}
       <img
@@ -163,6 +171,8 @@
         alt={svgInfo.title}
         title={svgInfo.title}
         loading="lazy"
+        {width}
+        {height}
       />
       <img
         class="block dark:hidden mb-4 mt-2 h-10"
@@ -170,6 +180,8 @@
         alt={svgInfo.title}
         title={svgInfo.title}
         loading="lazy"
+        {width}
+        {height}
       />
     {/if}
     <!-- Title -->
