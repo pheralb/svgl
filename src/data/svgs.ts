@@ -2376,5 +2376,14 @@ export const svgs: iSVG[] = [
       dark: '/library/replicate-wordmark_dark.svg'
     },
     url: 'https://replicate.com/'
+  },
+  {
+    title: 'Markdown',
+    category: 'Language',
+    route: {
+      light: '/library/markdown-light.svg',
+      dark: '/library/markdown-dark.svg'
+    },
+    url: 'https://www.markdownguide.org/'
   }
 ];
