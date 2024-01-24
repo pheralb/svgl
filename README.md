@@ -104,10 +104,22 @@ pnpm install
   "category": "Category",
   "route": "/library/your_logo.svg",
   "url": "Website"
-},
+}
 ```
 
-- If the logo has light and dark mode:
+- If the logo has logo + wordmark version:
+
+```json
+{
+  "title": "Title",
+  "category": "Category",
+  "route": "/library/your_logo.svg",
+  "wordmark": "/library/your_logo_wordmark.svg",
+  "url": "Website"
+}
+```
+
+- If the logo/wordmark has light and dark mode:
 
 ```json
 {
@@ -117,39 +129,18 @@ pnpm install
     "light": "/library/your_logo_light.svg",
     "dark": "/library/your_logo_dark.svg"
   },
-  "url": "Website"
-},
-```
-
-- If the logo has logo + wordmark version:
-
-```json
-// Only solid color:
-{
-  "title": "Title",
-  "category": "Category",
-  "route": "/library/your_logo.svg",
-  "wordmark": "/library/your_logo_wordmark.svg",
-  "url": "Website"
-},
-```
-
-```json
-// Add light/dark mode:
-{
-  "title": "Title",
-  "category": "Category",
-  "route": "/library/your_logo.svg",
   "wordmark": {
-    "light": "/library/your_logo_wordmark_light.svg",
-    "dark": "/library/your_logo_wordmark_dark.svg"
+    "light": "/library/your_wordmark-logo_light.svg",
+    "dark": "/library/your_wordmark-logo_dark.svg"
   },
   "url": "Website"
 }
 ```
 
 > [!NOTE]
-> The list of categories is here: [`src/types/categories.ts`](https://github.com/pheralb/svgl/blob/main/src/types/categories.ts). You can add a new category if you need it.
+>
+> - The list of categories is here: [`src/types/categories.ts`](https://github.com/pheralb/svgl/blob/main/src/types/categories.ts). You can add a new category if you need it.
+> - You can add multiple categories to the same logo, for example: `"category": ["Social", "Design"]` (max 3 categories per logo).
 
 And create a pull request with your logo 🚀.
 
