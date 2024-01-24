@@ -10,6 +10,10 @@
         Discover
     </a>
     <span>&nbsp;✦&nbsp;</span>
+    <a href="https://github.com/pheralb/svgl/issues/new?assignees=pheralb&labels=request&projects=&template=request-svg-.md&title=%5BRequest%5D%3A">
+        Request logo
+    </a>
+    <span>&nbsp;✦&nbsp;</span>
     <a href="#-getting-started">
         Submit logo
     </a>
@@ -128,7 +132,9 @@ pnpm install
   "wordmark": "/library/your_logo_wordmark.svg",
   "url": "Website"
 },
+```
 
+```json
 // Add light/dark mode:
 {
   "title": "Title",
@@ -139,7 +145,7 @@ pnpm install
     "dark": "/library/your_logo_wordmark_dark.svg"
   },
   "url": "Website"
-},
+}
 ```
 
 > [!NOTE]
