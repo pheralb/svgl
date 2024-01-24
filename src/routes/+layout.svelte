@@ -8,7 +8,7 @@
   // Get categories:
   import { svgs } from '@/data/svgs';
   const categories = svgs
-    .map((svg) => svg.category)
+    .flatMap((svg) => Array.isArray(svg.category) ? svg.category : [svg.category])
     .filter((category, index, array) => array.indexOf(category) === index);
 
   // Toaster:

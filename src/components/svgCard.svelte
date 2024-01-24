@@ -44,8 +44,13 @@
   // Download SVG:
   const downloadSvg = (url?: string) => {
     download(url || '');
+
+    const category = Array.isArray(svgInfo.category)
+      ? svgInfo.category.sort().join(' - ')
+      : svgInfo.category;
+
     toast.success(`Downloading...`, {
-      description: `${svgInfo.title} - ${svgInfo.category}`
+      description: `${svgInfo.title} - ${category}`
     });
   };
 
@@ -81,8 +86,12 @@
       download(content, `${svgInfo.title}.zip`, 'application/zip');
     });
 
+    const category = Array.isArray(svgInfo.category)
+      ? svgInfo.category.sort().join(' - ')
+      : svgInfo.category;
+
     toast.success('Downloading light & dark variants...', {
-      description: `${svgInfo.title} - ${svgInfo.category}`
+      description: `${svgInfo.title} - ${category}`
     });
   };
 
@@ -105,22 +114,26 @@
       await navigator.clipboard.writeText(content);
     }
 
+    const category = Array.isArray(svgInfo.category)
+      ? svgInfo.category.sort().join(' - ')
+      : svgInfo.category;
+
     if (isInFigma) {
       toast.success('Ready to paste in Figma!', {
-        description: `${svgInfo.title} - ${svgInfo.category}`
+        description: `${svgInfo.title} - ${category}`
       });
       return;
     }
 
     if (wordmarkSvg) {
       toast.success('Copied wordmark SVG to clipboard!', {
-        description: `${svgInfo.title} - ${svgInfo.category}`
+        description: `${svgInfo.title} - ${category}`
       });
       return;
     }
 
     toast.success('Copied to clipboard!', {
-      description: `${svgInfo.title} - ${svgInfo.category}`
+      description: `${svgInfo.title} - ${category}`
     });
   };
 
@@ -178,6 +191,25 @@
       <p class="truncate text-[15px] font-medium text-balance text-center select-all">
         {svgInfo.title}
       </p>
+      <div class="flex flex-wrap justify-center">
+        {#if Array.isArray(svgInfo.category)}
+          {#each svgInfo.category.sort() as c, index}
+            <a
+              href={`/directory/${c.toLowerCase()}`}
+              class="text-sm lowercase text-neutral-500 hover:underline font-mono">{c}</a
+            >
+            {#if index < svgInfo.category.length - 1}
+              <span class="text-neutral-500">.</span>
+            {/if}
+          {/each}
+        {:else}
+          <a
+            href={`/directory/${svgInfo.category.toLowerCase()}`}
+            class="text-sm lowercase text-neutral-500 hover:underline font-mono"
+            >{svgInfo.category}</a
+          >
+        {/if}
+      </div>
       <a
         href={`/directory/${svgInfo.category.toLowerCase()}`}
         class="text-sm lowercase text-neutral-400 hover:underline font-mono">{svgInfo.category}</a

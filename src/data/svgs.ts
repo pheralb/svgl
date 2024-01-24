@@ -1153,7 +1153,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'WordPress',
-    category: 'Software',
+    category: ['Software', 'CMS'],
     route: '/library/wordpress.svg',
     url: 'https://wordpress.org/'
   },
