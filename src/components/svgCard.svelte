@@ -28,6 +28,7 @@
   import { onMount } from 'svelte';
   import { copyToClipboard as figmaCopyToClipboard } from '@/figma/copy-to-clipboard';
   import { insertSVG as figmaInsertSVG } from '@/figma/insert-svg';
+  import { badgeStyles } from '@/ui/styles';
 
   // Props:
   export let svgInfo: iSVG;
@@ -186,34 +187,21 @@
       />
     {/if}
     <!-- Title -->
-    <!-- Aqui se modifico el text-neutral a 400 -->
-    <div class="mb-3 flex flex-col items-center justify-center">
+    <div class="mb-3 flex flex-col space-y-1 items-center justify-center">
       <p class="truncate text-[15px] font-medium text-balance text-center select-all">
         {svgInfo.title}
       </p>
-      <div class="flex flex-wrap justify-center">
+      <div class="flex items-center space-x-1 justify-center">
         {#if Array.isArray(svgInfo.category)}
           {#each svgInfo.category.sort() as c, index}
-            <a
-              href={`/directory/${c.toLowerCase()}`}
-              class="text-sm lowercase text-neutral-500 hover:underline font-mono">{c}</a
-            >
-            {#if index < svgInfo.category.length - 1}
-              <span class="text-neutral-500">.</span>
-            {/if}
+            <a href={`/directory/${c.toLowerCase()}`} class={badgeStyles}>{c} </a>
           {/each}
         {:else}
-          <a
-            href={`/directory/${svgInfo.category.toLowerCase()}`}
-            class="text-sm lowercase text-neutral-500 hover:underline font-mono"
-            >{svgInfo.category}</a
-          >
+          <a href={`/directory/${svgInfo.category.toLowerCase()}`} class={badgeStyles}>
+            {svgInfo.category}
+          </a>
         {/if}
       </div>
-      <a
-        href={`/directory/${svgInfo.category.toLowerCase()}`}
-        class="text-sm lowercase text-neutral-400 hover:underline font-mono">{svgInfo.category}</a
-      >
     </div>
     <!-- Actions -->
     <div class="flex items-center space-x-1">
