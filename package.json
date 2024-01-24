@@ -1,7 +1,7 @@
 {
   "name": "svgl",
   "author": "@pheralb_",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "description": "A beautiful library with SVG logos.",
   "private": true,
   "license": "MIT",
