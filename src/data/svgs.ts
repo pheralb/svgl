@@ -515,10 +515,7 @@ export const svgs: iSVG[] = [
   {
     title: 'Coinbase',
     category: 'Crypto',
-    route: {
-      light: '/library/coinbase-light.svg',
-      dark: '/library/coinbase-dark.svg'
-    },
+    route: '/library/coinbase.svg',
     url: 'https://www.coinbase.com/'
   },
   {
@@ -2021,16 +2018,7 @@ export const svgs: iSVG[] = [
     url: 'https://www.webflow.com'
   },
   {
-    title: 'bigcommerce',
-    category: 'CMS',
-    route: {
-      light: '/library/bigcommerce-light.svg',
-      dark: '/library/bigcommerce-dark.svg'
-    },
-    url: 'https://www.bigcommerce.co.uk'
-  },
-  {
-    title: 'sanity',
+    title: 'Sanity',
     category: 'CMS',
     route: '/library/sanity.svg',
     url: 'https://www.sanity.io'
@@ -2042,57 +2030,60 @@ export const svgs: iSVG[] = [
     url: 'https://www.sky.com'
   },
   {
-    title: 'airbnb',
+    title: 'Airbnb',
     category: 'Software',
     route: '/library/airbnb.svg',
     wordmark: '/library/airbnb-wordmark.svg',
     url: 'https://www.airbnb.com'
   },
   {
-    title: 'uber',
+    title: 'Uber',
     category: 'Software',
-    route: '/library/uber.svg',
+    route: {
+      light: '/library/uber_light.svg',
+      dark: '/library/uber_dark.svg'
+    },
     url: 'https://www.uber.com'
   },
   {
-    title: 'gmail',
+    title: 'Gmail',
     category: 'Software',
     route: '/library/gmail.svg',
     url: 'https://www.gmail.com'
   },
   {
-    title: 'outlook',
+    title: 'Outlook',
     category: 'Software',
     route: '/library/outlook.svg',
     url: 'https://www.outlook.com'
   },
   {
-    title: 'slack',
+    title: 'Slack',
     category: 'Software',
     route: '/library/slack.svg',
     wordmark: '/library/slack-wordmark.svg',
     url: 'https://www.slack.com'
   },
   {
-    title: 'snapchat',
+    title: 'Snapchat',
     category: 'Software',
     route: '/library/snapchat.svg',
     url: 'https://www.snapchat.com'
   },
   {
-    title: 'ebay',
+    title: 'Ebay',
     category: 'Software',
     route: '/library/ebay.svg',
     url: 'https://www.ebay.com'
   },
   {
-    title: 'ibm',
+    title: 'IBM',
     category: 'Software',
     route: '/library/ibm.svg',
     url: 'https://www.ibm.com'
   },
   {
-    title: 'trustpilot',
+    title: 'TrustPilot',
     category: 'Software',
     route: '/library/trustpilot.svg',
     url: 'https://www.trustpilot.com'
