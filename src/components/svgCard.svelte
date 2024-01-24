@@ -6,6 +6,7 @@
   import jszip from 'jszip';
 
   // Utils:
+  import { cn } from '@/utils/cn';
   import { MIMETYPE, getSvgContent } from '@/utils/getSvgContent';
   import { flyAndScale } from '@/utils/flyAndScale';
 
@@ -146,10 +147,6 @@
   // Icon Stroke & Size:
   let iconStroke = 1.8;
   let iconSize = 16;
-
-  // Width & Height of <img>:
-  const width = 40;
-  const height = 40;
 </script>
 
 <CardSpotlight>
@@ -157,45 +154,37 @@
     <!-- Image -->
     {#if wordmarkSvg == true}
       <img
-        class="hidden dark:block mb-4 mt-2 h-10"
+        class="hidden dark:block mb-4 mt-2 max-h-10 h-auto"
         src={typeof svgInfo.wordmark !== 'string'
           ? svgInfo.wordmark?.dark || ''
           : svgInfo.wordmark || ''}
         alt={svgInfo.title}
         title={svgInfo.title}
         loading="lazy"
-        {width}
-        {height}
       />
       <img
-        class="block dark:hidden mb-4 mt-2 h-10"
+        class="block dark:hidden mb-4 mt-2 max-h-10 h-auto"
         src={typeof svgInfo.wordmark !== 'string'
           ? svgInfo.wordmark?.light || ''
           : svgInfo.wordmark || ''}
         alt={svgInfo.title}
         title={svgInfo.title}
         loading="lazy"
-        {width}
-        {height}
       />
     {:else}
       <img
-        class="hidden dark:block mb-4 mt-2 h-10"
+        class={cn('hidden dark:block mb-4 mt-2 max-h-10')}
         src={typeof svgInfo.route !== 'string' ? svgInfo.route.dark : svgInfo.route}
         alt={svgInfo.title}
         title={svgInfo.title}
         loading="lazy"
-        {width}
-        {height}
       />
       <img
-        class="block dark:hidden mb-4 mt-2 h-10"
+        class={cn('block dark:hidden mb-4 mt-2 max-h-10')}
         src={typeof svgInfo.route !== 'string' ? svgInfo.route.light : svgInfo.route}
         alt={svgInfo.title}
         title={svgInfo.title}
         loading="lazy"
-        {width}
-        {height}
       />
     {/if}
     <!-- Title -->
