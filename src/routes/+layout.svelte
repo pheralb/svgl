@@ -11,10 +11,6 @@
     .map((svg) => svg.category)
     .filter((category, index, array) => array.indexOf(category) === index);
 
-  // Icons:
-  import Heart from 'phosphor-svelte/lib/Heart';
-  import { ArrowUpRight } from 'lucide-svelte';
-
   // Toaster:
   import { Toaster } from 'svelte-sonner';
 

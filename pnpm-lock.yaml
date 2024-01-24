@@ -82,9 +82,6 @@ devDependencies:
   mdsvex:
     specifier: 0.11.0
     version: 0.11.0(svelte@4.2.9)
-  phosphor-svelte:
-    specifier: 1.4.2
-    version: 1.4.2(svelte@4.2.9)
   postcss:
     specifier: 8.4.33
     version: 8.4.33
@@ -2219,14 +2216,6 @@ packages:
       '@types/estree': 1.0.5
       estree-walker: 3.0.3
       is-reference: 3.0.2
-
-  /phosphor-svelte@1.4.2(svelte@4.2.9):
-    resolution: {integrity: sha512-wdHKlZbE5D3ad1dd4K9bqWxpOb6gIwe+/ZeXGI9YpdKqECxqd+g3/NsLYE1+/hjlXixTWhQ7VMVIxTtBRXegCg==}
-    peerDependencies:
-      svelte: '>=3'
-    dependencies:
-      svelte: 4.2.9
-    dev: true
 
   /picocolors@1.0.0:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}

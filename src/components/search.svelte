@@ -3,7 +3,7 @@
   export let searchTerm: string;
   export let placeholder: string = 'Search...';
   export let clearSearch: () => void;
-  import X from 'phosphor-svelte/lib/X';
+  import { X } from 'lucide-svelte';
 
   let inputElement;
 
