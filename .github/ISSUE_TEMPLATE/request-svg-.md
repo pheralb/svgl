@@ -16,6 +16,5 @@ assignees: pheralb
 ## 📝 Checklist:
 
 - [x] I have permission to use this logo.
-- [x] I have optimized the SVG for web.
+- [x] The link I have provided is optimized for web use.
 - [x] The size of the SVG is less than **20kb**.
-- [x] The `viewBox` is not removed.
