@@ -1,9 +1,10 @@
 <script lang="ts">
+  import { inputStyles } from '@/ui/styles';
   import { Command, SearchIcon } from 'lucide-svelte';
   export let searchTerm: string;
   export let placeholder: string = 'Search...';
   export let clearSearch: () => void;
-  import X from 'phosphor-svelte/lib/X';
+  import { X } from 'lucide-svelte';
 
   let inputElement;
 
@@ -36,7 +37,7 @@
       type="text"
       {placeholder}
       autocomplete="off"
-      class="w-full border-b border-neutral-300 bg-white p-3 px-11 placeholder-neutral-500 focus:outline-none focus:ring-1 focus:ring-neutral-300 dark:border-neutral-800 dark:bg-neutral-900 dark:focus:ring-neutral-700"
+      class={inputStyles}
       bind:value={searchTerm}
       on:input
       use:focusInput

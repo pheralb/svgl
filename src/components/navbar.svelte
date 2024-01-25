@@ -50,14 +50,14 @@
     'backdrop-blur-md opacity-95'
   )}
 >
-<!-- Se le puso un aria-label al href="/" -->
+  <!-- Se le puso un aria-label al href="/" -->
   <div class="flex items-center justify-between mx-auto">
     <div class="flex items-center space-x-2">
-      <a href="/" aria-label="Go to the SVGL v4.0 home page">
+      <a href="/" aria-label="Go to the SVGL v4.1 home page">
         <div class="flex items-center space-x-2 hover:opacity-80 transition-opacity">
           <svelte:component this={Logo} />
           <span class="text-[19px] font-medium tracking-wide hidden md:block">svgl</span>
-          <p class="text-neutral-400 hidden md:block font-mono">v4.0</p>
+          <p class="text-neutral-400 hidden md:block font-mono">v4.1</p>
         </div>
       </a>
     </div>

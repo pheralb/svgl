@@ -15,6 +15,7 @@
 
   // Icons:
   import { ArrowDown, ArrowDownUpIcon, ArrowUpDownIcon } from 'lucide-svelte';
+  import { buttonStyles } from '@/ui/styles';
 
   let sorted: boolean = false;
   let isFirstLoad: boolean = true;
@@ -117,15 +118,14 @@
   </Grid>
   {#if filteredSvgs.length > 30 && !showAll}
     <div class="flex items-center justify-center mt-4">
-      <button
-        class="flex items-center space-x-2 rounded-md border border-neutral-300 p-2 duration-100 hover:bg-neutral-200 dark:border-neutral-700 dark:hover:bg-neutral-700/40"
-        on:click={() => (showAll = true)}
-      >
-        <ArrowDown size={16} strokeWidth={2} />
-        <span>Load All SVGs</span>
-        <span class="opacity-70">
-          ({filteredSvgs.length - 30} more)
-        </span>
+      <button class={buttonStyles} on:click={() => (showAll = true)}>
+        <div class="flex items-center space-x-2 relative">
+          <ArrowDown size={16} strokeWidth={2} />
+          <span>Load All SVGs</span>
+          <span class="opacity-70">
+            ({filteredSvgs.length - 30} more)
+          </span>
+        </div>
       </button>
     </div>
   {/if}
