@@ -515,9 +515,10 @@ export const svgs: iSVG[] = [
   {
     title: 'Coinbase',
     category: 'Crypto',
-    route: {
-      light: '/library/coinbase-light.svg',
-      dark: '/library/coinbase-dark.svg'
+    route: '/library/coinbase.svg',
+    wordmark: {
+      light: '/library/coinbase-wordmark-light.svg',
+      dark: '/library/coinbase-wordmark-dark.svg'
     },
     url: 'https://www.coinbase.com/'
   },
