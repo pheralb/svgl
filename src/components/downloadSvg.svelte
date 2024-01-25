@@ -14,6 +14,7 @@
     DialogDescription
   } from '@/ui/dialog';
   import { buttonStyles } from '@/ui/styles';
+  import { cn } from '@/utils/cn';
 
   // Props:
   export let svgInfo: iSVG;
@@ -108,13 +109,16 @@
       </DialogHeader>
 
       <div
-        class="flex w-full flex-col md:flex-row items-center justify-center space-y-2 md:space-y-0 md:space-x-2 mt-5"
+        class={cn(
+          'flex flex-col space-y-2 mt-4',
+          'md:space-y-0 md:flex-row md:space-x-4 md:items-center md:justify-center'
+        )}
       >
         <div class={cardDownloadStyles}>
           <img
             src={isDarkTheme() ? svgInfo.route.dark : svgInfo.route.light}
             alt={svgInfo.title}
-            class="h-8 my-4"
+            class="h-10 my-4"
           />
           <button
             title="Logo with light & dark variants"
