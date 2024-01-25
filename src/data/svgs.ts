@@ -516,6 +516,10 @@ export const svgs: iSVG[] = [
     title: 'Coinbase',
     category: 'Crypto',
     route: '/library/coinbase.svg',
+    wordmark: {
+      light: '/library/coinbase-wordmark-light.svg',
+      dark: '/library/coinbase-wordmark-dark.svg'
+    },
     url: 'https://www.coinbase.com/'
   },
   {
@@ -904,6 +908,12 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/vim.svg',
     url: 'https://www.vim.org/'
+  },
+  {
+    title: 'Movie Web',
+    category: 'Entertainment',
+    route: '/library/movie-web.svg',
+    url: 'https://movie-web.app/'
   },
   {
     title: 'Pocketbase',
