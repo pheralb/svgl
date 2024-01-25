@@ -909,6 +909,12 @@ export const svgs: iSVG[] = [
     url: 'https://www.vim.org/'
   },
   {
+    title: 'Movie Web',
+    category: 'Entertainment',
+    route: '/library/movie-web.svg',
+    url: 'https://movie-web.app/'
+  },
+  {
     title: 'Pocketbase',
     category: 'Database',
     route: '/library/pocket-base.svg',
