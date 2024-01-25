@@ -910,12 +910,6 @@ export const svgs: iSVG[] = [
     url: 'https://www.vim.org/'
   },
   {
-    title: 'Movie Web',
-    category: 'Entertainment',
-    route: '/library/movie-web.svg',
-    url: 'https://movie-web.app/'
-  },
-  {
     title: 'Pocketbase',
     category: 'Database',
     route: '/library/pocket-base.svg',
@@ -2386,5 +2380,20 @@ export const svgs: iSVG[] = [
       dark: '/library/markdown-dark.svg'
     },
     url: 'https://www.markdownguide.org/'
+  },
+  {
+    title: 'Movie Web',
+    category: 'Entertainment',
+    route: '/library/movie-web.svg',
+    url: 'https://movie-web.app/'
+  },
+  {
+    title: 'Radix UI',
+    category: 'Library',
+    route: {
+      light: '/library/radix-ui_light.svg',
+      dark: '/library/radix-ui_dark.svg'
+    },
+    url: 'https://www.radix-ui.com/'
   }
 ];
