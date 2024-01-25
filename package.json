@@ -39,7 +39,7 @@
     "jszip": "3.10.1",
     "lucide-svelte": "0.314.0",
     "shiki": "0.14.7",
-    "svelte-sonner": "0.3.11",
+    "svelte-sonner": "0.3.6",
     "tailwind-merge": "2.2.1"
   },
   "devDependencies": {
