@@ -25,7 +25,7 @@
   let mainDownloadStyles =
     'flex items-center space-x-2 rounded-md p-2 duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700/40';
   let cardDownloadStyles =
-    'mt-5 flex w-full flex-col space-y-2 p-4 rounded-md shadow-sm dark:bg-neutral-800/20 bg-neutral-200/10 border border-neutral-200 dark:border-neutral-800';
+    'flex w-full flex-col p-4 rounded-md shadow-sm dark:bg-neutral-800/20 bg-neutral-200/10 border border-neutral-200 dark:border-neutral-800 space-y-2';
 
   // Functions:
   const downloadSvg = (url?: string) => {
@@ -41,35 +41,34 @@
   };
 
   // Download all variants:
-  const downloadAllVariants = async ({ route }: iSVG) => {
+  const downloadAllVariants = async ({
+    lightRoute,
+    darkRoute,
+    isWordmark
+  }: {
+    lightRoute: string;
+    darkRoute: string;
+    isWordmark?: boolean;
+  }) => {
     const zip = new JSZip();
 
-    if (typeof route === 'string') {
-      downloadSvg(route);
-      return;
-    }
+    const lightSvg = await getSvgContent(lightRoute, false);
+    const darkSvg = await getSvgContent(darkRoute, false);
 
-    const lightSvg = await getSvgContent(route.light, false);
-    const darkSvg = await getSvgContent(route.dark, false);
-
-    zip.file(`${svgInfo.title}.svg`, lightSvg);
-    zip.file(`${svgInfo.title}.dark.svg`, darkSvg);
-
-    if (svgInfo.wordmark) {
-      if (typeof svgInfo.wordmark === 'string') {
-        downloadSvg(svgInfo.wordmark);
-        return;
-      }
-
-      const lightWordmarkSvg = await getSvgContent(svgInfo.wordmark.light, false);
-      const darkWordmarkSvg = await getSvgContent(svgInfo.wordmark.dark, false);
-
-      zip.file(`${svgInfo.title}.wordmark.svg`, lightWordmarkSvg);
-      zip.file(`${svgInfo.title}.wordmark.dark.svg`, darkWordmarkSvg);
+    if (isWordmark) {
+      zip.file(`${svgInfo.title}_wordmark_light.svg`, lightSvg);
+      zip.file(`${svgInfo.title}_wordmark_dark.svg`, darkSvg);
+    } else {
+      zip.file(`${svgInfo.title}_light.svg`, lightSvg);
+      zip.file(`${svgInfo.title}_dark.svg`, darkSvg);
     }
 
     zip.generateAsync({ type: 'blob' }).then((content) => {
-      download(content, `${svgInfo.title}.zip`, 'application/zip');
+      download(
+        content,
+        isWordmark ? `${svgInfo.title}_wordmark_light_dark.zip` : `${svgInfo.title}_light_dark.zip`,
+        'application/zip'
+      );
     });
 
     const category = Array.isArray(svgInfo.category)
@@ -77,7 +76,9 @@
       : svgInfo.category;
 
     toast.success('Downloading light & dark variants...', {
-      description: `${svgInfo.title} - ${category}`
+      description: isWordmark
+        ? `${svgInfo.title} - Wordmark - ${category}`
+        : `${svgInfo.title} - ${category}`
     });
   };
 </script>
@@ -106,7 +107,9 @@
         <DialogDescription>This logo has multiple options to download.</DialogDescription>
       </DialogHeader>
 
-      <div class="flex w-full items-center space-x-2">
+      <div
+        class="flex w-full flex-col md:flex-row items-center justify-center space-y-2 md:space-y-0 md:space-x-2 mt-5"
+      >
         <div class={cardDownloadStyles}>
           <img
             src={isDarkTheme() ? svgInfo.route.dark : svgInfo.route.light}
@@ -116,7 +119,14 @@
           <button
             title="Logo with light & dark variants"
             class={buttonStyles}
-            on:click={() => downloadAllVariants(svgInfo)}
+            on:click={() => {
+              if (typeof svgInfo.route !== 'string') {
+                downloadAllVariants({
+                  lightRoute: svgInfo.route.light,
+                  darkRoute: svgInfo.route.dark
+                });
+              }
+            }}
           >
             <DownloadIcon size={iconSize} />
             <p>Light & dark variants</p>
@@ -186,7 +196,11 @@
               class={buttonStyles}
               on:click={() => {
                 if (typeof svgInfo.wordmark !== 'string') {
-                  downloadAllVariants(svgInfo);
+                  downloadAllVariants({
+                    lightRoute: svgInfo.wordmark?.light || '',
+                    darkRoute: svgInfo.wordmark?.dark || '',
+                    isWordmark: true
+                  });
                   return;
                 }
               }}
