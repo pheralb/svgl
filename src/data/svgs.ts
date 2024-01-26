@@ -1024,6 +1024,12 @@ export const svgs: iSVG[] = [
     url: 'https://builder.io/'
   },
   {
+    title: 'Babel',
+    category: 'Compiler',
+    route: '/library/babel.svg',
+    url: 'https://babeljs.io/'
+  },
+  {
     title: 'Surrealdb',
     category: 'Database',
     route: '/library/surrealdb.svg',
