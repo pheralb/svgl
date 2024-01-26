@@ -63,7 +63,7 @@ export const svgs: iSVG[] = [
     url: 'https://nuxtjs.org/'
   },
   {
-    title: 'Nextjs',
+    title: 'Next.js',
     category: 'Framework',
     route: '/library/nextjs.svg',
     url: 'https://nextjs.org/'
