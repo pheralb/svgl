@@ -29,6 +29,9 @@ dependencies:
   lucide-svelte:
     specifier: 0.314.0
     version: 0.314.0(svelte@4.2.9)
+  mode-watcher:
+    specifier: 0.1.2
+    version: 0.1.2(svelte@4.2.9)
   shiki:
     specifier: 0.14.7
     version: 0.14.7
@@ -2046,6 +2049,14 @@ packages:
       pkg-types: 1.0.3
       ufo: 1.3.2
     dev: true
+
+  /mode-watcher@0.1.2(svelte@4.2.9):
+    resolution: {integrity: sha512-XTdPCdqC3kqSvB+Q262Kor983YJkkB2Z3vj9uqg5IqKQpOdiz+xB99Jihp8sWbyM67drC7KKp0Nt5FzCypZi2g==}
+    peerDependencies:
+      svelte: ^4.0.0
+    dependencies:
+      svelte: 4.2.9
+    dev: false
 
   /mri@1.2.0:
     resolution: {integrity: sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA==}
