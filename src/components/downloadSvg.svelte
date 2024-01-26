@@ -110,8 +110,8 @@
 
       <div
         class={cn(
-          'flex flex-col space-y-2 mt-4',
-          'md:space-y-0 md:flex-row md:space-x-4 md:items-center md:justify-center'
+          'flex flex-col space-y-2 mt-4 h-full',
+          'md:space-y-0 md:flex-row md:space-x-2 md:items-center md:justify-center'
         )}
       >
         <div class={cardDownloadStyles}>
@@ -193,7 +193,7 @@
             <img
               src={isDarkTheme() ? svgInfo.wordmark.dark : svgInfo.wordmark.light}
               alt={svgInfo.title}
-              class="h-8 my-4"
+              class="h-10 my-4"
             />
             <button
               title="Download Wordmark light variant"

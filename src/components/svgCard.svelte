@@ -7,7 +7,7 @@
   import { MIMETYPE, getSvgContent } from '@/utils/getSvgContent';
 
   // Icons:
-  import { CopyIcon, LinkIcon, ChevronsRight, Baseline } from 'lucide-svelte';
+  import { CopyIcon, LinkIcon, ChevronsRight, Baseline, Sparkles } from 'lucide-svelte';
 
   // Components & styles:
   import CardSpotlight from './cardSpotlight.svelte';
@@ -256,7 +256,11 @@
           }}
           class="flex items-center space-x-2 rounded-md p-2 duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700/40"
         >
-          <Baseline size={iconSize} strokeWidth={iconStroke} />
+          {#if wordmarkSvg}
+            <Sparkles size={iconSize} strokeWidth={iconStroke} />
+          {:else}
+            <Baseline size={iconSize} strokeWidth={iconStroke} />
+          {/if}
         </button>
       {/if}
     </div>
