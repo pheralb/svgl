@@ -1995,7 +1995,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'MonkeyType',
-    category: 'Typing',
+    category: 'Software',
     route: '/library/monkeytype.svg',
     url: 'https://monkeytype.com/'
   },
