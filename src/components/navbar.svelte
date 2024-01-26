@@ -54,7 +54,7 @@
   <div class="flex items-center justify-between mx-auto">
     <div class="flex items-center space-x-2">
       <a href="/" aria-label="Go to the SVGL v4.1 home page">
-        <div class="flex items-center space-x-2 hover:opacity-80 transition-opacity">
+        <div class="flex items-center space-x-2 opacity-80 hover:opacity-100 transition-opacity">
           <svelte:component this={Logo} />
           <span class="text-[19px] font-medium tracking-wide hidden md:block">svgl</span>
           <p class="text-neutral-400 hidden md:block font-mono">v4.1</p>
@@ -71,7 +71,7 @@
             target={link.external ? '_blank' : ''}
             aria-label={link.label ?? link.name}
             class={cn(
-              'flex items-center hover:opacity-80 transition-opacity text-[15px] pl-2 md:pl-3 group',
+              'flex items-center opacity-80 hover:opacity-100 transition-opacity text-[15px] pl-2 md:pl-3 group',
               currentPath === link.url &&
                 'underline underline-offset-8 decoration-dotted decoration-neutral-500'
             )}
@@ -102,7 +102,7 @@
         <a
           href="https://twitter.com/pheralb_"
           target="_blank"
-          class="flex items-center space-x-1 hover:opacity-80 transition-opacity"
+          class="flex items-center space-x-1 opacity-80 hover:opacity-100 transition-opacity"
           title="Twitter"
         >
           <XIcon iconSize={16} />
@@ -111,7 +111,7 @@
           <a
             href={social.url}
             target="_blank"
-            class="flex items-center space-x-1 hover:opacity-80 transition-opacity"
+            class="flex items-center space-x-1 opacity-80 hover:opacity-100 transition-opacity"
             title={social.name}
           >
             <svelte:component this={social.icon} size={20} strokeWidth={1.5} name={social.name} />
