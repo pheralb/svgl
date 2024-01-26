@@ -27,29 +27,30 @@ https://svgl.app/api/categories
 
 ## Typescript usage
 
-- For SVGs:
-
-```ts
-export interface svg {
-  id: number;
-  title: string;
-  category: string;
-  route:
-    | string
-    | {
-        dark: string;
-        light: string;
-      };
-  url: string;
-}
-```
-
 - For categories:
 
 ```ts
-export interface category {
+export interface Category {
   category: string;
   total: number;
+}
+```
+
+- For SVGs:
+
+```ts
+type ThemeOptions = {
+  light: string;
+  dark: string;
+};
+
+export interface iSVG {
+  id: number;
+  title: string;
+  category: string | string[];
+  route: string | ThemeOptions;
+  wordmark?: string | ThemeOptions;
+  url: string;
 }
 ```
 
