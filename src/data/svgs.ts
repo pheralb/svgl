@@ -63,7 +63,7 @@ export const svgs: iSVG[] = [
     url: 'https://nuxtjs.org/'
   },
   {
-    title: 'Nextjs',
+    title: 'Next.js',
     category: 'Framework',
     route: '/library/nextjs.svg',
     url: 'https://nextjs.org/'
@@ -1022,6 +1022,12 @@ export const svgs: iSVG[] = [
     category: 'CMS',
     route: '/library/builder.svg',
     url: 'https://builder.io/'
+  },
+  {
+    title: 'Babel',
+    category: 'Compiler',
+    route: '/library/babel.svg',
+    url: 'https://babeljs.io/'
   },
   {
     title: 'Surrealdb',
@@ -1995,7 +2001,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'MonkeyType',
-    category: 'Typing',
+    category: 'Software',
     route: '/library/monkeytype.svg',
     url: 'https://monkeytype.com/'
   },

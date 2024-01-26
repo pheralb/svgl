@@ -51,7 +51,7 @@
   </script>
 </svelte:head>
 
-<button on:click={toggle} aria-label="Toggle dark mode" class="hover:opacity-80">
+<button on:click={toggle} aria-label="Toggle dark mode" class="opacity-80 hover:opacity-100">
   <!-- moon icon -->
   {#if dark}
     <SunIcon size={20} strokeWidth={1.5} />
