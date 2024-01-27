@@ -103,6 +103,9 @@ devDependencies:
   svelte-check:
     specifier: 3.6.3
     version: 3.6.3(postcss@8.4.33)(svelte@4.2.9)
+  sveltekit-search-params:
+    specifier: ^2.1.0
+    version: 2.1.0(@sveltejs/kit@2.4.3)(svelte@4.2.9)
   tailwindcss:
     specifier: 3.4.1
     version: 3.4.1
@@ -2891,6 +2894,16 @@ packages:
       locate-character: 3.0.0
       magic-string: 0.30.5
       periscopic: 3.1.0
+
+  /sveltekit-search-params@2.1.0(@sveltejs/kit@2.4.3)(svelte@4.2.9):
+    resolution: {integrity: sha512-qP+epzWVm0gnfFRx4OYq4Ps77WrQ5D81je/nybXbNAj9qyiQhpvxqyqDAYVr8/fOpvF7OJnUS2LmcW3+Ujdc/Q==}
+    peerDependencies:
+      '@sveltejs/kit': ^1.0.0 || ^2.0.0
+      svelte: ^3.55.0 || ^4.0.0 || ^5.0.0
+    dependencies:
+      '@sveltejs/kit': 2.4.3(@sveltejs/vite-plugin-svelte@3.0.1)(svelte@4.2.9)(vite@5.0.12)
+      svelte: 4.2.9
+    dev: true
 
   /tabbable@6.2.0:
     resolution: {integrity: sha512-Cat63mxsVJlzYvN51JmVXIgNoUokrIaT2zLclCXjRd8boZ0004U4KCs/sToJ75C6sdlByWxpYnb5Boif1VSFew==}

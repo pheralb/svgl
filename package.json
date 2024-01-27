@@ -64,6 +64,7 @@
     "prettier-plugin-tailwindcss": "0.5.11",
     "svelte": "4.2.9",
     "svelte-check": "3.6.3",
+    "sveltekit-search-params": "^2.1.0",
     "tailwindcss": "3.4.1",
     "tslib": "2.6.2",
     "typescript": "5.3.3",

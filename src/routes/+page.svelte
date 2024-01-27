@@ -1,6 +1,7 @@
 <script lang="ts">
   import type { iSVG } from '@/types/svg';
   import { cn } from '@/utils/cn';
+  import { queryParam } from 'sveltekit-search-params';
 
   // Get all svgs:
   import { svgsData } from '@/data';
@@ -13,6 +14,9 @@
   import Grid from '@/components/grid.svelte';
   import NotFound from '@/components/notFound.svelte';
 
+  // URL params
+  const searchParam = queryParam('search');
+
   // Icons:
   import { ArrowDown, ArrowDownUpIcon, ArrowUpDownIcon } from 'lucide-svelte';
   import { buttonStyles } from '@/ui/styles';
@@ -22,7 +26,7 @@
   let showAll: boolean = false;
 
   // Search:
-  let searchTerm = '';
+  let searchTerm = $searchParam || '';
   let filteredSvgs: iSVG[] = [];
 
   // Order by last added:
@@ -43,6 +47,7 @@
 
   // Search svgs:
   const searchSvgs = () => {
+    $searchParam = searchTerm || null;
     loadSvgs();
     filteredSvgs = allSvgs.filter((svg: iSVG) => {
       let svgTitle = svg.title.toLowerCase();
@@ -80,7 +85,11 @@
     });
   };
 
-  loadSvgs();
+  if ($searchParam) {
+    searchSvgs();
+  } else {
+    loadSvgs();
+  }
 </script>
 
 <svelte:head>
