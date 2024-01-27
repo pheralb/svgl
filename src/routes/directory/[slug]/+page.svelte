@@ -28,7 +28,7 @@
   }
 
   const searchSvgs = () => {
-    $searchParam = searchTerm;
+    $searchParam = searchTerm || null;
     return (filteredSvgs = svgsByCategory.filter((svg: iSVG) => {
       let svgTitle = svg.title.toLowerCase();
       return svgTitle.includes(searchTerm.toLowerCase());

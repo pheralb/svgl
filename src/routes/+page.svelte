@@ -47,7 +47,7 @@
 
   // Search svgs:
   const searchSvgs = () => {
-    $searchParam = searchTerm;
+    $searchParam = searchTerm || null;
     loadSvgs();
     filteredSvgs = allSvgs.filter((svg: iSVG) => {
       let svgTitle = svg.title.toLowerCase();
