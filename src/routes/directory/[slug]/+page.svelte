@@ -1,6 +1,7 @@
 <script lang="ts">
   import type { PageData } from './$types';
   import type { iSVG } from '@/types/svg';
+  import { queryParam } from 'sveltekit-search-params';
 
   export let data: PageData;
   let svgsByCategory = data.svgs || [];
@@ -13,8 +14,11 @@
   import SvgCard from '@/components/svgCard.svelte';
   import NotFound from '@/components/notFound.svelte';
 
+  // URL params
+  const searchParam = queryParam('search');
+
   // Search:
-  let searchTerm = '';
+  let searchTerm = $searchParam || '';
   let filteredSvgs: iSVG[] = [];
 
   if (searchTerm.length === 0) {
@@ -24,6 +28,7 @@
   }
 
   const searchSvgs = () => {
+    $searchParam = searchTerm;
     return (filteredSvgs = svgsByCategory.filter((svg: iSVG) => {
       let svgTitle = svg.title.toLowerCase();
       return svgTitle.includes(searchTerm.toLowerCase());
@@ -34,6 +39,10 @@
     searchTerm = '';
     searchSvgs();
   };
+
+  if ($searchParam) {
+    searchSvgs();
+  }
 </script>
 
 <svelte:head>
