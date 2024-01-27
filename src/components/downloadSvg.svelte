@@ -84,7 +84,7 @@
   };
 </script>
 
-{#if typeof svgInfo.route === 'string'}
+{#if typeof svgInfo.route === 'string' && svgInfo.wordmark === undefined}
   <button
     title="Download Light & Dark variants"
     class={mainDownloadStyles}
@@ -114,56 +114,79 @@
           'md:space-y-0 md:flex-row md:space-x-2 md:items-center md:justify-center'
         )}
       >
-        <div class={cardDownloadStyles}>
-          <img
-            src={isDarkTheme() ? svgInfo.route.dark : svgInfo.route.light}
-            alt={svgInfo.title}
-            class="h-10 my-4"
-          />
-          <button
-            title="Logo with light & dark variants"
-            class={buttonStyles}
-            on:click={() => {
-              if (typeof svgInfo.route !== 'string') {
-                downloadAllVariants({
-                  lightRoute: svgInfo.route.light,
-                  darkRoute: svgInfo.route.dark
-                });
-              }
-            }}
-          >
-            <DownloadIcon size={iconSize} />
-            <p>Light & dark variants</p>
-          </button>
+        {#if typeof svgInfo.route === 'string'}
+          <div class={cardDownloadStyles}>
+            <img
+              src={isDarkTheme() ? svgInfo.route : svgInfo.route}
+              alt={svgInfo.title}
+              class="h-8 my-4"
+            />
+            <button
+              title="Download logo"
+              class={buttonStyles}
+              on:click={() => {
+                if (typeof svgInfo.route === 'string') {
+                  downloadSvg(svgInfo.route);
+                  return;
+                }
+              }}
+            >
+              <DownloadIcon class="mr-2" size={iconSize} />
+              <p>Icon logo</p>
+            </button>
+          </div>
+        {:else}
+          <div class={cardDownloadStyles}>
+            <img
+              src={isDarkTheme() ? svgInfo.route.dark : svgInfo.route.light}
+              alt={svgInfo.title}
+              class="h-10 my-4"
+            />
+            <button
+              title="Logo with light & dark variants"
+              class={buttonStyles}
+              on:click={() => {
+                if (typeof svgInfo.route !== 'string') {
+                  downloadAllVariants({
+                    lightRoute: svgInfo.route.light,
+                    darkRoute: svgInfo.route.dark
+                  });
+                }
+              }}
+            >
+              <DownloadIcon size={iconSize} />
+              <p>Light & dark variants</p>
+            </button>
 
-          <button
-            title="Download light variant"
-            class={buttonStyles}
-            on:click={() => {
-              if (typeof svgInfo.route !== 'string') {
-                downloadSvg(svgInfo.route.light);
-                return;
-              }
-            }}
-          >
-            <DownloadIcon class="mr-2" size={iconSize} />
-            Only light variant
-          </button>
+            <button
+              title="Download light variant"
+              class={buttonStyles}
+              on:click={() => {
+                if (typeof svgInfo.route !== 'string') {
+                  downloadSvg(svgInfo.route.light);
+                  return;
+                }
+              }}
+            >
+              <DownloadIcon class="mr-2" size={iconSize} />
+              Only light variant
+            </button>
 
-          <button
-            title="Download dark variant"
-            class={buttonStyles}
-            on:click={() => {
-              if (typeof svgInfo.route !== 'string') {
-                downloadSvg(svgInfo.route.dark);
-                return;
-              }
-            }}
-          >
-            <DownloadIcon class="mr-2" size={iconSize} />
-            Only dark variant
-          </button>
-        </div>
+            <button
+              title="Download dark variant"
+              class={buttonStyles}
+              on:click={() => {
+                if (typeof svgInfo.route !== 'string') {
+                  downloadSvg(svgInfo.route.dark);
+                  return;
+                }
+              }}
+            >
+              <DownloadIcon class="mr-2" size={iconSize} />
+              Only dark variant
+            </button>
+          </div>
+        {/if}
 
         {#if typeof svgInfo.wordmark === 'string' && svgInfo.wordmark !== undefined}
           <div class={cardDownloadStyles}>
