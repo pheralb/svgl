@@ -2401,5 +2401,14 @@ export const svgs: iSVG[] = [
       dark: '/library/radix-ui_dark.svg'
     },
     url: 'https://www.radix-ui.com/'
+  },
+  {
+    title: 'SWR',
+    category: 'Library',
+    route: {
+      light: '/library/swr-light.svg',
+      dark: '/library/swr-dark.svg'
+    },
+    url: 'https://swr.vercel.app/'
   }
 ];
