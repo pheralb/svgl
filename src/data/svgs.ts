@@ -2410,5 +2410,14 @@ export const svgs: iSVG[] = [
       dark: '/library/swr-dark.svg'
     },
     url: 'https://swr.vercel.app/'
+  },
+  {
+    title: 'Logitech',
+    category: 'Software',
+    route: {
+      light: '/library/logitech-light.svg',
+      dark: '/library/logitech-dark.svg'
+    },
+    url: 'https://www.logitech.com/'
   }
 ];
