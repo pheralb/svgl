@@ -2410,5 +2410,14 @@ export const svgs: iSVG[] = [
       dark: '/library/swr-dark.svg'
     },
     url: 'https://swr.vercel.app/'
-  }
+  },
+  {
+    title: 'Refine',
+    category: 'Framework',
+    route: {
+      light: '/library/refine_light.svg',
+      dark: '/library/refine_dark.svg'
+    },
+    url: 'https://refine.dev/'
+  },
 ];
