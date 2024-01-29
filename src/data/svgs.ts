@@ -2415,8 +2415,8 @@ export const svgs: iSVG[] = [
     title: 'Refine',
     category: 'Framework',
     route: {
-      light: '/library/refine_light.svg',
-      dark: '/library/refine_dark.svg'
+      light: '/library/refine_dark.svg',
+      dark: '/library/refine_light.svg'
     },
     url: 'https://refine.dev/'
   },
