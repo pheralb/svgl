@@ -118,8 +118,9 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Spotify',
-    category: 'Software',
+    category: 'Music',
     route: '/library/spotify.svg',
+    wordmark: '/library/spotify_wordmark.svg',
     url: 'https://www.spotify.com/'
   },
   {
@@ -2426,4 +2427,27 @@ export const svgs: iSVG[] = [
     },
     url: 'https://refine.dev/'
   },
+  {
+    title: 'Youtube Music',
+    category: 'Music',
+    route: '/library/youtube_music.svg',
+    wordmark: {
+      light: '/library/youtube_music_wordmark_light.svg',
+      dark: '/library/youtube_music_wordmark_dark.svg'
+    },
+    url: 'https://music.youtube.com/'
+  },
+  {
+    title: 'TIDAL',
+    category: 'Music',
+    route: {
+      light: '/library/tidal_light.svg',
+      dark: '/library/tidal_dark.svg'
+    },
+    wordmark: {
+      light: '/library/tidal_wordmark_light.svg',
+      dark: '/library/tidal_wordmark_dark.svg'
+    },
+    url: 'https://tidal.com/'
+  }
 ];
