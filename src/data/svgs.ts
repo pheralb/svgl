@@ -2401,5 +2401,11 @@ export const svgs: iSVG[] = [
       dark: '/library/radix-ui_dark.svg'
     },
     url: 'https://www.radix-ui.com/'
+  },
+  {
+    title: 'Web.dev',
+    category: 'Education',
+    route: '/library/webdev.svg',
+    url: 'https://web.dev/'
   }
 ];
