@@ -2420,5 +2420,15 @@ export const svgs: iSVG[] = [
       dark: '/library/refine_light.svg'
     },
     url: 'https://refine.dev/'
+  },
+  {
+    title: 'Youtube Music',
+    category: 'Music',
+    route: '/library/youtube_music.svg',
+    wordmark: {
+      light: '/library/youtube_music_wordmark_light.svg',
+      dark: '/library/youtube_music_wordmark_dark.svg'
+    },
+    url: 'https://music.youtube.com/'
   }
 ];
