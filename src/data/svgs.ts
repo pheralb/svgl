@@ -2403,6 +2403,12 @@ export const svgs: iSVG[] = [
     url: 'https://www.radix-ui.com/'
   },
   {
+    title: 'Web.dev',
+    category: 'Education',
+    route: '/library/webdev.svg',
+    url: 'https://web.dev/'
+  },
+  {
     title: 'SWR',
     category: 'Library',
     route: {
