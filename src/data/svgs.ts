@@ -2430,5 +2430,18 @@ export const svgs: iSVG[] = [
       dark: '/library/youtube_music_wordmark_dark.svg'
     },
     url: 'https://music.youtube.com/'
+  },
+  {
+    title: 'TIDAL',
+    category: 'Music',
+    route: {
+      light: '/library/tidal_light.svg',
+      dark: '/library/tidal_dark.svg'
+    },
+    wordmark: {
+      light: '/library/tidal_wordmark_light.svg',
+      dark: '/library/tidal_wordmark_dark.svg'
+    },
+    url: 'https://tidal.com/'
   }
 ];
