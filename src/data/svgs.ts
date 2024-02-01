@@ -118,8 +118,9 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Spotify',
-    category: 'Software',
+    category: 'Music',
     route: '/library/spotify.svg',
+    wordmark: '/library/spotify_wordmark.svg',
     url: 'https://www.spotify.com/'
   },
   {
@@ -2419,5 +2420,5 @@ export const svgs: iSVG[] = [
       dark: '/library/refine_light.svg'
     },
     url: 'https://refine.dev/'
-  },
+  }
 ];

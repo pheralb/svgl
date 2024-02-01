@@ -17,4 +17,5 @@ export type tCategory =
   | 'Design'
   | 'Community'
   | 'Marketplace'
-  | 'Fintech';
+  | 'Fintech'
+  | 'Music';
