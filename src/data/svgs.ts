@@ -2407,5 +2407,23 @@ export const svgs: iSVG[] = [
     category: 'Education',
     route: '/library/webdev.svg',
     url: 'https://web.dev/'
-  }
+  },
+  {
+    title: 'SWR',
+    category: 'Library',
+    route: {
+      light: '/library/swr-light.svg',
+      dark: '/library/swr-dark.svg'
+    },
+    url: 'https://swr.vercel.app/'
+  },
+  {
+    title: 'Refine',
+    category: 'Framework',
+    route: {
+      light: '/library/refine_dark.svg',
+      dark: '/library/refine_light.svg'
+    },
+    url: 'https://refine.dev/'
+  },
 ];
