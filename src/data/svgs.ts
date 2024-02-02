@@ -2449,5 +2449,11 @@ export const svgs: iSVG[] = [
       dark: '/library/tidal_wordmark_dark.svg'
     },
     url: 'https://tidal.com/'
+  },
+  {
+    title: 'OBS',
+    category: 'Software',
+    route: '/library/obs.svg',
+    url: 'Website'
   }
 ];
