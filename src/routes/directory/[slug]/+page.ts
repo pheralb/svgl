@@ -21,6 +21,11 @@ export const load = (async ({ params }) => {
     }
   });
 
+  // If SVGs array is empty, category can't exist
+  if (svgsByCategory.length === 0) {
+    return error(404, 'Not found');
+  }
+
   return {
     category: slug as string,
     svgs: svgsByCategory
