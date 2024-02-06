@@ -250,7 +250,7 @@
       </a>
       {#if svgInfo.wordmark !== undefined}
         <button
-          title="Show wordmark SVG"
+          title={wordmarkSvg ? 'Show logo SVG' : 'Show wordmark SVG'}
           on:click={() => {
             wordmarkSvg = !wordmarkSvg;
           }}
