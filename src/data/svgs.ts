@@ -2459,5 +2459,12 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/obs.svg',
     url: 'Website'
+  },
+  {
+    title: 'Stack Overflow',
+    category: 'Software',
+    route: '/library/stackoverflow.svg',
+    wordmark: '/library/stackoverflow_wordmark.svg',
+    url: 'https://stackoverflow.com/'
   }
 ];
