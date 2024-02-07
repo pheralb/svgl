@@ -2241,6 +2241,10 @@ export const svgs: iSVG[] = [
       light: '/library/flask-light.svg',
       dark: '/library/flask-dark.svg'
     },
+    wordmark: {
+      light: '/library/flask-wordmark-light.svg',
+      dark: '/library/flask-wordmark-dark.svg'
+    },
     url: 'https://flask.palletsprojects.com/'
   },
   {
