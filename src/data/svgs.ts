@@ -1013,6 +1013,12 @@ export const svgs: iSVG[] = [
     url: 'https://www.python.org/'
   },
   {
+    title: 'Solidity',
+    category: 'Language',
+    route: '/library/solidity.svg',
+    url: 'https://soliditylang.org/'
+  },
+  {
     title: 'Turbopack',
     category: 'Software',
     route: '/library/turbopack.svg',
