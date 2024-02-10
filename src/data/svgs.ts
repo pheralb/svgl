@@ -1178,6 +1178,15 @@ export const svgs: iSVG[] = [
     url: 'https://elementor.com/'
   },
   {
+    title: 'Kick',
+    category: 'Entertainment',
+    route: {
+      light: '/library/kick-light.svg',
+      dark: '/library/kick-dark.svg',
+    },
+    url: 'https://kick.com/'
+  },
+  {
     title: 'Prime video',
     category: 'Entertainment',
     route: '/library/prime-video.svg',
