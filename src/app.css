@@ -4,17 +4,6 @@
 
 @layer base {
   :root {
-    body {
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      text-rendering: optimizeLegibility;
-      scroll-behavior: smooth;
-    }
-  }
-}
-
-@layer base {
-  :root {
     --sb-track-color: rgb(229 229 229 / 0.5);
     --sb-thumb-color: #d4d4d4;
     --sb-size: 10px;
