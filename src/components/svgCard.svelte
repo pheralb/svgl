@@ -88,7 +88,7 @@
     <!-- Image -->
     {#if wordmarkSvg == true}
       <img
-        class="hidden dark:block mb-4 mt-2 h-10"
+        class="hidden dark:block mb-4 mt-2 h-10 select-none"
         src={typeof svgInfo.wordmark !== 'string'
           ? svgInfo.wordmark?.dark || ''
           : svgInfo.wordmark || ''}
@@ -97,7 +97,7 @@
         loading="lazy"
       />
       <img
-        class="block dark:hidden mb-4 mt-2 h-10"
+        class="block dark:hidden mb-4 mt-2 h-10 select-none"
         src={typeof svgInfo.wordmark !== 'string'
           ? svgInfo.wordmark?.light || ''
           : svgInfo.wordmark || ''}
@@ -107,14 +107,14 @@
       />
     {:else}
       <img
-        class={cn('hidden dark:block mb-4 mt-2 h-10')}
+        class={cn('hidden dark:block mb-4 mt-2 h-10 select-none')}
         src={typeof svgInfo.route !== 'string' ? svgInfo.route.dark : svgInfo.route}
         alt={svgInfo.title}
         title={svgInfo.title}
         loading="lazy"
       />
       <img
-        class={cn('block dark:hidden mb-4 mt-2 h-10')}
+        class={cn('block dark:hidden mb-4 mt-2 h-10 select-none')}
         src={typeof svgInfo.route !== 'string' ? svgInfo.route.light : svgInfo.route}
         alt={svgInfo.title}
         title={svgInfo.title}

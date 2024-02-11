@@ -1013,6 +1013,12 @@ export const svgs: iSVG[] = [
     url: 'https://www.python.org/'
   },
   {
+    title: 'Solidity',
+    category: 'Language',
+    route: '/library/solidity.svg',
+    url: 'https://soliditylang.org/'
+  },
+  {
     title: 'Turbopack',
     category: 'Software',
     route: '/library/turbopack.svg',
@@ -1176,6 +1182,15 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/elementor.svg',
     url: 'https://elementor.com/'
+  },
+  {
+    title: 'Kick',
+    category: 'Entertainment',
+    route: {
+      light: '/library/kick-light.svg',
+      dark: '/library/kick-dark.svg',
+    },
+    url: 'https://kick.com/'
   },
   {
     title: 'Prime video',

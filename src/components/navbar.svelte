@@ -47,7 +47,7 @@
     'dark:bg-neutral-900 bg-white',
     'w-full px-5 py-4 border-b border-neutral-200 dark:border-neutral-800',
     'sticky top-0 z-50',
-    'backdrop-blur-md opacity-95'
+    'backdrop-blur-md dark:bg-neutral-900/90 bg-white/90'
   )}
 >
   <!-- Se le puso un aria-label al href="/" -->
