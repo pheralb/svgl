@@ -2481,5 +2481,137 @@ export const svgs: iSVG[] = [
     route: '/library/stackoverflow.svg',
     wordmark: '/library/stackoverflow_wordmark.svg',
     url: 'https://stackoverflow.com/'
-  }
+  }, 
+  {
+    title: 'Mana',
+    category: 'Crypto',
+    route: '/library/decentraland-mana-logo.svg',
+    url: 'https://decentraland.org/'
+  }, 
+  {
+    title: 'Tezos',
+    category: 'Crypto',
+    route: '/library/tezos-xtz-logo.svg',
+    url: 'https://tezos.com/'
+  }, 
+  {
+    title: 'Aave',
+    category: 'Crypto',
+    route: '/library/aave-aave-logo.svg',
+    url: 'https://aave.com/'
+  }, 
+  {
+    title: 'Vechain',
+    category: 'Crypto',
+    route: '/library/vechain-vet-logo.svg',
+    url: 'https://www.vechain.org/'
+  }, 
+  {
+    title: 'ethereum classic',
+    category: 'Crypto',
+    route: '/library/ethereum-classic-etc-logo.svg',
+    url: 'https://ethereumclassic.org/'
+  }, 
+  {
+    title: 'busd',
+    category: 'Crypto',
+    route: '/library/binance-usd-busd-logo.svg',
+    url: 'https://decentraland.org/'
+  }, 
+  {
+    title: 'Uniswap',
+    category: 'Crypto',
+    route: '/library/uniswap-uni-logo.svg',
+    url: 'https://uniswap.org/'
+  }, 
+  {
+    title: 'stellar',
+    category: 'Crypto',
+    route: '/library/stellar-xlm-logo.svg',
+    url: 'https://stellar.org/'
+  },
+  {
+    title: 'chainlink',
+    category: 'Crypto',
+    route: '/library/chainlink-link-logo.svg',
+    url: 'https://chain.link/'
+  },
+  {
+    title: 'toncoin',
+    category: 'Crypto',
+    route: '/library/toncoin-ton-logo.svg',
+    url: 'https://ton.org/'
+  },
+  {
+    title: 'bitcoin cash',
+    category: 'Crypto',
+    route: '/library/bitcoin-cash-bch-logo.svg',
+    url: 'https://bitcoincash.org/'
+  },
+  {
+    title: 'avalanche',
+    category: 'Crypto',
+    route: '/library/avalanche-avax-logo.svg',
+    url: 'https://www.avax.network/'
+  },
+  {
+    title: 'dai',
+    category: 'Crypto',
+    route: '/library/multi-collateral-dai-dai-logo.svg',
+    url: 'https://makerdao.com/en/'
+  },
+  {
+    title: 'shiba inu',
+    category: 'Crypto',
+    route: '/library/shiba-inu-shib-logo.svg',
+    url: 'https://shibatoken.com/'
+  },
+  {
+    title: 'Polkadot',
+    category: 'Crypto',
+    route: '/library/polkadot-new-dot-logo.svg',
+    url: 'https://polkadot.network/'
+  },
+  {
+    title: 'Polygon',
+    category: 'Crypto',
+    route: '/library/polygon-matic-logo.svg',
+    url: 'https://polygon.technology/'
+  },
+  {
+    title: 'Cardano',
+    category: 'Crypto',
+    route: '/library/cardano-ada-logo.svg',
+    url: 'https://cardano.org/'
+  },
+  {
+    title: 'USDC',
+    category: 'Crypto',
+    route: '/library/usd-coin-usdc-logo.svg',
+    url: 'https://www.circle.com/en/usdc'
+  },
+  {
+    title: 'Apple Music',
+    category: 'Music',
+    route: '/library/Apple_Music_icon.svg',
+    url: 'https://www.apple.com/fr/apple-music/'
+  },
+  {
+    title: 'Amazon Music',
+    category: 'Music',
+    route: '/library/Amazon_Music_logo.svg',
+    url: 'https://music.amazon.fr/'
+  },
+  {
+    title: 'soundcloud',
+    category: 'Music',
+    route: '/library/soundcloud.svg',
+    url: 'https://m.soundcloud.com/'
+  },
+  {
+    title: 'deezer',
+    category: 'Music',
+    route: '/library/deezer.svg',
+    url: 'https://www.deezer.com/fr/'
+  },
 ];
