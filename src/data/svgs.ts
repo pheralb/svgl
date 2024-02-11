@@ -2592,25 +2592,25 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Apple Music',
-    category: 'Crypto',
+    category: 'Music',
     route: '/library/Apple_Music_icon.svg',
     url: 'https://www.apple.com/fr/apple-music/'
   },
   {
     title: 'Amazon Music',
-    category: 'Crypto',
+    category: 'Music',
     route: '/library/Amazon_Music_logo.svg',
     url: 'https://music.amazon.fr/'
   },
   {
     title: 'soundcloud',
-    category: 'Crypto',
+    category: 'Music',
     route: '/library/soundcloud.svg',
     url: 'https://m.soundcloud.com/'
   },
   {
     title: 'deezer',
-    category: 'Crypto',
+    category: 'Music',
     route: '/library/deezer.svg',
     url: 'https://www.deezer.com/fr/'
   },
