@@ -1188,7 +1188,7 @@ export const svgs: iSVG[] = [
     category: 'Entertainment',
     route: {
       light: '/library/kick-light.svg',
-      dark: '/library/kick-dark.svg',
+      dark: '/library/kick-dark.svg'
     },
     url: 'https://kick.com/'
   },
@@ -2481,5 +2481,11 @@ export const svgs: iSVG[] = [
     route: '/library/stackoverflow.svg',
     wordmark: '/library/stackoverflow_wordmark.svg',
     url: 'https://stackoverflow.com/'
+  },
+  {
+    title: 'TikTok',
+    category: 'Social',
+    route: '/library/tiktok.svg',
+    url: 'https://www.tiktok.com/'
   }
 ];
