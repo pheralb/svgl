@@ -9,6 +9,8 @@
     <a href="https://svgl.app" target="_blank">
         Discover
     </a>
+
+    
     <span>&nbsp;✦&nbsp;</span>
     <a href="https://github.com/pheralb/svgl/issues/new?assignees=pheralb&labels=request&projects=&template=request-svg-.md&title=%5BRequest%5D%3A">
         Request logo
