@@ -1866,6 +1866,10 @@ export const svgs: iSVG[] = [
       dark: '/library/axiom-dark.svg',
       light: '/library/axiom-light.svg'
     },
+    wordmark: {
+      light: '/library/axiom-wordmark-light.svg',
+      dark: '/library/axiom-wordmark-dark.svg'
+    },
     url: 'https://axiom.co/'
   },
   {
