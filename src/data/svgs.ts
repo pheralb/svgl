@@ -2491,5 +2491,11 @@ export const svgs: iSVG[] = [
     category: 'Social',
     route: '/library/tiktok.svg',
     url: 'https://www.tiktok.com/'
+  },
+  {
+    title: 'NIST',
+    category: 'Education',
+    route: '/library/nist.svg',
+    url: 'https://www.nist.gov/'
   }
 ];
