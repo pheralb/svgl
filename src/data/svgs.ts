@@ -2491,5 +2491,11 @@ export const svgs: iSVG[] = [
     category: 'Social',
     route: '/library/tiktok.svg',
     url: 'https://www.tiktok.com/'
+  },
+  {
+    title: 'IUPAC',
+    category: 'Education',
+    route: '/library/iupac.svg',
+    url: 'https://iupac.org/'
   }
 ];
