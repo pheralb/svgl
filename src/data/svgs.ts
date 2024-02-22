@@ -2491,5 +2491,14 @@ export const svgs: iSVG[] = [
     category: 'Social',
     route: '/library/tiktok.svg',
     url: 'https://www.tiktok.com/'
+  },
+  {
+    title: 'Ngrok',
+    category: 'Software',
+    route: {
+      dark: '/library/ngrok-dark.svg',
+      light: '/library/ngrok-light.svg'
+    },
+    url: 'https://ngrok.com'
   }
 ];
