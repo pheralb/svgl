@@ -2491,5 +2491,30 @@ export const svgs: iSVG[] = [
     category: 'Social',
     route: '/library/tiktok.svg',
     url: 'https://www.tiktok.com/'
+  },
+  {
+    title: 'Ngrok',
+    category: 'Software',
+    route: {
+      dark: '/library/ngrok-dark.svg',
+      light: '/library/ngrok-light.svg'
+    },
+    url: 'https://ngrok.com'
+  },
+  {
+    title: 'Lemon Squeezy',
+    category: 'Software',
+    route: '/library/lemonsqueezy.svg',
+    url: 'https://www.lemonsqueezy.com'
+  },
+  {
+    title: 'Asana',
+    category: 'Software',
+    route: '/library/asana-logo.svg',
+    wordmark: {
+      dark: '/library/asana-wordmark-dark.svg',
+      light: '/library/asana-wordmark-light.svg'
+    },
+    url: 'https://asana.com'
   }
 ];
