@@ -2506,5 +2506,15 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/lemonsqueezy.svg',
     url: 'https://www.lemonsqueezy.com'
+  },
+  {
+    title: 'Asana',
+    category: 'Software',
+    route: '/library/asana-logo.svg',
+    wordmark: {
+      dark: '/library/asana-wordmark-dark.svg',
+      light: '/library/asana-wordmark-light.svg'
+    },
+    url: 'https://asana.com'
   }
 ];
