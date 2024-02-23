@@ -2500,5 +2500,11 @@ export const svgs: iSVG[] = [
       light: '/library/ngrok-light.svg'
     },
     url: 'https://ngrok.com'
+  },
+  {
+    title: 'Lemon Squeezy',
+    category: 'Software',
+    route: '/library/lemonsqueezy.svg',
+    url: 'https://www.lemonsqueezy.com'
   }
 ];
