@@ -1885,6 +1885,10 @@ export const svgs: iSVG[] = [
       light: '/library/zeabur-light.svg',
       dark: '/library/zeabur-dark.svg'
     },
+    wordmark: {
+      light: '/library/zeabur_wordmark_light.svg',
+      dark: '/library/zeabur_wordmark_dark.svg'
+    },
     url: 'https://zeabur.com/'
   },
   {
