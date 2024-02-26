@@ -2520,5 +2520,11 @@ export const svgs: iSVG[] = [
       light: '/library/asana-wordmark-light.svg'
     },
     url: 'https://asana.com'
-  }
+  },
+  {
+    title: 'Zoom',
+    category: 'Software',
+    route: '/library/zoom.svg',
+    url: 'https://zoom.us/'
+  },
 ];
