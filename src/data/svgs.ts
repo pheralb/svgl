@@ -2527,4 +2527,11 @@ export const svgs: iSVG[] = [
     route: '/library/zoom.svg',
     url: 'https://zoom.us/'
   },
+  {
+    title: 'Tina',
+    category: 'CMS',
+    route: "/library/tina.svg",
+    wordmark: "/library/tina_wordmark.svg",
+    url: "https://tina.io/"
+  },
 ];
