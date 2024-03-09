@@ -73,12 +73,13 @@
     </Transition>
     <Toaster
       position="bottom-right"
+      theme={$mode}
+      class="toaster group"
       toastOptions={{
-        class: 'font-sans',
-        descriptionClass: 'font-mono',
-        style: `background-color: ${$mode === 'light' ? '#f5f5f5' : '#262626'};
-           color: ${$mode === 'light' ? '#121212' : '#ffff'}; 
-           border-radius: 0.4rem; border: 1px solid ${$mode === 'light' ? '#d4d4d4' : '#404040'};`
+        classes: {
+          toast: 'group toast dark:group-[.toaster]:bg-neutral-900 group-[.toaster]:font-sans',
+          description: 'group-[.toast]:text-xs font-mono'
+        }
       }}
     />
   </div>
