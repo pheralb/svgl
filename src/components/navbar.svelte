@@ -5,8 +5,9 @@
   import Logo from './logo.svelte';
   import Theme from './theme.svelte';
 
-  import { ArrowUpRight, CloudyIcon, GithubIcon } from 'lucide-svelte';
+  import { ArrowUpRight, CloudyIcon } from 'lucide-svelte';
   import XIcon from './xIcon.svelte';
+  import GithubIcon from './githubIcon.svelte';
 
   // Se le pusieron aria-labels a los links
   const socials = [
@@ -107,16 +108,14 @@
         >
           <XIcon iconSize={16} />
         </a>
-        {#each socials as social}
-          <a
-            href={social.url}
-            target="_blank"
-            class="flex items-center space-x-1 opacity-80 hover:opacity-100 transition-opacity"
-            title={social.name}
-          >
-            <svelte:component this={social.icon} size={20} strokeWidth={1.5} name={social.name} />
-          </a>
-        {/each}
+        <a
+          href="https://twitter.com/pheralb_"
+          target="_blank"
+          class="flex items-center space-x-1 opacity-80 hover:opacity-100 transition-opacity"
+          title="Twitter"
+        >
+          <GithubIcon iconSize={19} />
+        </a>
         <Theme />
       </div>
     </div>
