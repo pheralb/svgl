@@ -1841,6 +1841,10 @@ export const svgs: iSVG[] = [
       dark: '/library/axiom-dark.svg',
       light: '/library/axiom-light.svg'
     },
+    wordmark: {
+      light: '/library/axiom-wordmark-light.svg',
+      dark: '/library/axiom-wordmark-dark.svg'
+    },
     url: 'https://axiom.co/'
   },
   {
@@ -1855,6 +1859,10 @@ export const svgs: iSVG[] = [
     route: {
       light: '/library/zeabur-light.svg',
       dark: '/library/zeabur-dark.svg'
+    },
+    wordmark: {
+      light: '/library/zeabur_wordmark_light.svg',
+      dark: '/library/zeabur_wordmark_dark.svg'
     },
     url: 'https://zeabur.com/'
   },
@@ -2464,6 +2472,44 @@ export const svgs: iSVG[] = [
     url: 'https://www.tiktok.com/'
   },
   {
+    title: 'Ngrok',
+    category: 'Software',
+    route: {
+      dark: '/library/ngrok-dark.svg',
+      light: '/library/ngrok-light.svg'
+    },
+    url: 'https://ngrok.com'
+  },
+  {
+    title: 'Lemon Squeezy',
+    category: 'Software',
+    route: '/library/lemonsqueezy.svg',
+    url: 'https://www.lemonsqueezy.com'
+  },
+  {
+    title: 'Asana',
+    category: 'Software',
+    route: '/library/asana-logo.svg',
+    wordmark: {
+      dark: '/library/asana-wordmark-dark.svg',
+      light: '/library/asana-wordmark-light.svg'
+    },
+    url: 'https://asana.com'
+  },
+  {
+    title: 'Zoom',
+    category: 'Software',
+    route: '/library/zoom.svg',
+    url: 'https://zoom.us/'
+  },
+  {
+    title: 'Tina',
+    category: 'CMS',
+    route: '/library/tina.svg',
+    wordmark: '/library/tina_wordmark.svg',
+    url: 'https://tina.io/'
+  },
+  {
     title: 'Vercel',
     category: ['Hosting', 'Vercel'],
     route: {
@@ -2474,7 +2520,7 @@ export const svgs: iSVG[] = [
       light: '/library/vercel_wordmark.svg',
       dark: '/library/vercel_wordmark_dark.svg'
     },
-    url: 'https://vercel.com/',
+    url: 'https://vercel.com/'
   },
   {
     title: 'Next.js',
@@ -2484,18 +2530,18 @@ export const svgs: iSVG[] = [
       light: '/library/nextjs_logo_light.svg',
       dark: '/library/nextjs_logo_dark.svg'
     },
-    url: 'https://nextjs.org/',
+    url: 'https://nextjs.org/'
   },
   {
     title: 'Mistral AI',
-    category: "AI",
+    category: 'AI',
     route: '/library/mistral-ai_logo.svg',
     wordmark: '/library/mistral-ai_wordmark.svg',
     url: 'https://mistral.ai/'
   },
   {
     title: 'Hugging Face',
-    category: "AI",
+    category: 'AI',
     route: '/library/hugging_face.svg',
     url: 'https://huggingface.co/'
   },
@@ -2504,5 +2550,5 @@ export const svgs: iSVG[] = [
     category: 'Library',
     route: '/library/nodejs.svg',
     url: 'https://nodejs.org/'
-  },
+  }
 ];
