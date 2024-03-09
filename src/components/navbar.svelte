@@ -109,7 +109,7 @@
           <XIcon iconSize={16} />
         </a>
         <a
-          href="https://twitter.com/pheralb_"
+          href="https://svgl.app/git"
           target="_blank"
           class="flex items-center space-x-1 opacity-80 hover:opacity-100 transition-opacity"
           title="Twitter"
