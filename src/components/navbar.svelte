@@ -112,7 +112,7 @@
           href="https://svgl.app/git"
           target="_blank"
           class="flex items-center space-x-1 opacity-80 hover:opacity-100 transition-opacity"
-          title="Twitter"
+          title="GitHub"
         >
           <GithubIcon iconSize={19} />
         </a>
