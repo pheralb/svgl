@@ -26,19 +26,6 @@ export const svgs: iSVG[] = [
     url: 'https://reactjs.org/'
   },
   {
-    title: 'Vercel',
-    category: 'Hosting',
-    route: {
-      light: '/library/vercel.svg',
-      dark: '/library/vercel_dark.svg'
-    },
-    wordmark: {
-      light: '/library/vercel_wordmark.svg',
-      dark: '/library/vercel_wordmark_dark.svg'
-    },
-    url: 'https://vercel.com/'
-  },
-  {
     title: 'Svelte',
     category: 'Library',
     route: '/library/svelte.svg',
@@ -61,12 +48,6 @@ export const svgs: iSVG[] = [
     category: 'Framework',
     route: '/library/nuxt.svg',
     url: 'https://nuxtjs.org/'
-  },
-  {
-    title: 'Next.js',
-    category: 'Framework',
-    route: '/library/nextjs.svg',
-    url: 'https://nextjs.org/'
   },
   {
     title: 'Visual Studio Code',
@@ -202,12 +183,6 @@ export const svgs: iSVG[] = [
     url: 'https://twitter.com/'
   },
   {
-    title: 'Node.js',
-    category: 'Library',
-    route: '/library/nodejs.svg',
-    url: 'https://nodejs.org/'
-  },
-  {
     title: 'Esbuild',
     category: 'Compiler',
     route: '/library/esbuild.svg',
@@ -247,8 +222,8 @@ export const svgs: iSVG[] = [
     url: 'https://www.sublimetext.com/'
   },
   {
-    title: 'TurboRepo',
-    category: 'Library',
+    title: 'Turborepo',
+    category: ['Library', 'Vercel'],
     route: '/library/turborepo.svg',
     url: 'https://turborepo.org/'
   },
@@ -2487,5 +2462,47 @@ export const svgs: iSVG[] = [
     category: 'Social',
     route: '/library/tiktok.svg',
     url: 'https://www.tiktok.com/'
-  }
+  },
+  {
+    title: 'Vercel',
+    category: ['Hosting', 'Vercel'],
+    route: {
+      light: '/library/vercel.svg',
+      dark: '/library/vercel_dark.svg'
+    },
+    wordmark: {
+      light: '/library/vercel_wordmark.svg',
+      dark: '/library/vercel_wordmark_dark.svg'
+    },
+    url: 'https://vercel.com/',
+  },
+  {
+    title: 'Next.js',
+    category: ['Framework', 'Vercel'],
+    route: '/library/nextjs_icon_dark.svg',
+    wordmark: {
+      light: '/library/nextjs_logo_light.svg',
+      dark: '/library/nextjs_logo_dark.svg'
+    },
+    url: 'https://nextjs.org/',
+  },
+  {
+    title: 'Mistral AI',
+    category: "AI",
+    route: '/library/mistral-ai_logo.svg',
+    wordmark: '/library/mistral-ai_wordmark.svg',
+    url: 'https://mistral.ai/'
+  },
+  {
+    title: 'Hugging Face',
+    category: "AI",
+    route: '/library/hugging_face.svg',
+    url: 'https://huggingface.co/'
+  },
+  {
+    title: 'Node.js',
+    category: 'Library',
+    route: '/library/nodejs.svg',
+    url: 'https://nodejs.org/'
+  },
 ];
