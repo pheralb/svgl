@@ -1541,6 +1541,7 @@ export const svgs: iSVG[] = [
     title: 'Dub',
     category: 'Software',
     route: '/library/dub.svg',
+    wordmark:'/library/dub-wordmark.svg',
     url: 'https://dub.co'
   },
   {
