@@ -2,7 +2,7 @@
 <a href="https://svgl.app">
 <img src="static/images/readme.png">
 </a>
-<p></p>
+<p>voy a crear mi promia rama de este codigo editando solo el readmi\e</p>
 </div>
 
 <div align="center">
