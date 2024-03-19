@@ -2102,6 +2102,10 @@ export const svgs: iSVG[] = [
     title: 'Raycast',
     category: 'Software',
     route: '/library/raycast.svg',
+    wordmark: {
+      light: '/library/raycast-wordmark-light.svg',
+      dark: '/library/raycast-wordmark-dark.svg'
+    },
     url: 'https://raycast.com/'
   },
   {
