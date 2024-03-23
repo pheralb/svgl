@@ -14,6 +14,12 @@ export const svgs: iSVG[] = [
     url: 'https://aliexpress.com/'
   },
   {
+    title: 'Aliexpress',
+    category: 'Software',
+    route: '/library/aliexpress-logo.svg',
+    url: 'https://aliexpress.com/'
+  },
+  {
     title: 'Github',
     category: 'Software',
     route: '/library/github.svg',
