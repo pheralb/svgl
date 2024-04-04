@@ -2580,5 +2580,11 @@ export const svgs: iSVG[] = [
     category: 'Library',
     route: '/library/nodejs.svg',
     url: 'https://nodejs.org/'
+  },
+  {
+    title: 'Raindrop.io',
+    category: 'Software',
+    route: '/library/raindrop.svg',
+    url: 'https://raindrop.io/'
   }
 ];
