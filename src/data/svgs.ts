@@ -8,6 +8,18 @@ export const svgs: iSVG[] = [
     url: 'https://discord.com/'
   },
   {
+    title: 'Sansung',
+    category: 'Software',
+    route: '/library/sansung.svg',
+    url: 'https://samsung.com/'
+  },
+  {
+    title: 'Sony',
+    category: 'Software',
+    route: '/library/sony.svg',
+    url: 'https://sony.com/'
+  },
+  {
     title: 'Aliexpress',
     category: 'Software',
     route: '/library/aliexpress-icon.svg',
