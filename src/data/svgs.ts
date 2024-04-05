@@ -1530,7 +1530,7 @@ export const svgs: iSVG[] = [
     title: 'Premiere',
     category: 'Design',
     route: '/library/premiere.svg',
-    url: 'https://x.com'
+    url: 'https://www.adobe.com/es/products/premiere'
   },
   {
     title: 'VK',
