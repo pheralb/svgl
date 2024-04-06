@@ -8,9 +8,9 @@ export const svgs: iSVG[] = [
     url: 'https://discord.com/'
   },
   {
-    title: 'Sansung',
+    title: 'Samsung',
     category: 'Software',
-    route: '/library/sansung.svg',
+    route: '/library/samsung.svg',
     url: 'https://samsung.com/'
   },
   {
