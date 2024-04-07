@@ -2568,5 +2568,11 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/raindrop.svg',
     url: 'https://raindrop.io/'
+  },
+  {
+    title: 'Microsoft Todo',
+    category: 'Software',
+    route: '/library/microsoft-todo.svg',
+    url: 'https://to-do.office.com/'
   }
 ];
