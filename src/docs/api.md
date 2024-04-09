@@ -13,7 +13,7 @@ SVGL API is a RESTFul API that allows you to get all the information of the SVGs
 
 ## Limitations
 
-The API is currently open to everyone and does not require any authentication. However, to prevent abusive use of the API, there is a limit to the number of requests: **5 requests** with **60s** cooldown.
+The API is currently open to everyone and does not require any authentication. However, to prevent abusive use of the API, there is a limit to the number of requests.
 
 ## Base URL
 
