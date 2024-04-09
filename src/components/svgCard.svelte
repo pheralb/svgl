@@ -4,7 +4,7 @@
 
   // Utils:
   import { cn } from '@/utils/cn';
-  import { MIMETYPE, getSvgContent } from '@/utils/getSvgContent';
+  import { getSvgContent } from '@/utils/getSvgContent';
 
   // Icons:
   import { CopyIcon, LinkIcon, ChevronsRight, Baseline, Sparkles } from 'lucide-svelte';
@@ -12,11 +12,11 @@
   // Components & styles:
   import CardSpotlight from './cardSpotlight.svelte';
   import DownloadSvg from './downloadSvg.svelte';
+  import CopySvg from './copySvg.svelte';
   import { badgeStyles } from '@/ui/styles';
 
   // Figma
   import { onMount } from 'svelte';
-  import { copyToClipboard as figmaCopyToClipboard } from '@/figma/copy-to-clipboard';
   import { insertSVG as figmaInsertSVG } from '@/figma/insert-svg';
 
   // Props:
@@ -30,48 +30,6 @@
 
   // Wordmark SVG:
   let wordmarkSvg = false;
-
-  // Copy SVG to clipboard:
-  const copyToClipboard = async (url?: string) => {
-    const data = {
-      [MIMETYPE]: getSvgContent(url, true)
-    };
-
-    if (isInFigma) {
-      const content = (await getSvgContent(url, false)) as string;
-      figmaCopyToClipboard(content);
-    }
-
-    try {
-      const clipboardItem = new ClipboardItem(data);
-      await navigator.clipboard.write([clipboardItem]);
-    } catch (error) {
-      const content = (await getSvgContent(url, false)) as string;
-      await navigator.clipboard.writeText(content);
-    }
-
-    const category = Array.isArray(svgInfo.category)
-      ? svgInfo.category.sort().join(' - ')
-      : svgInfo.category;
-
-    if (isInFigma) {
-      toast.success('Ready to paste in Figma!', {
-        description: `${svgInfo.title} - ${category}`
-      });
-      return;
-    }
-
-    if (wordmarkSvg) {
-      toast.success('Copied wordmark SVG to clipboard!', {
-        description: `${svgInfo.title} - ${category}`
-      });
-      return;
-    }
-
-    toast.success('Copied to clipboard!', {
-      description: `${svgInfo.title} - ${category}`
-    });
-  };
 
   const insertSVG = async (url?: string) => {
     const content = (await getSvgContent(url, false)) as string;
@@ -172,63 +130,9 @@
       {/if}
 
       {#if wordmarkSvg}
-        <button
-          title="Copy wordmark SVG to clipboard"
-          on:click={() => {
-            const svgHasTheme = typeof svgInfo.wordmark !== 'string';
-
-            if (!svgHasTheme) {
-              copyToClipboard(
-                typeof svgInfo.wordmark === 'string'
-                  ? svgInfo.wordmark
-                  : "Something went wrong. Couldn't copy the SVG."
-              );
-              return;
-            }
-
-            const dark = document.documentElement.classList.contains('dark');
-
-            copyToClipboard(
-              typeof svgInfo.wordmark !== 'string'
-                ? dark
-                  ? svgInfo.wordmark?.dark
-                  : svgInfo.wordmark?.light
-                : svgInfo.wordmark
-            );
-          }}
-          class="flex items-center space-x-2 rounded-md p-2 duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700/40"
-        >
-          <CopyIcon size={iconSize} strokeWidth={iconStroke} />
-        </button>
+        <CopySvg {iconSize} {iconStroke} {svgInfo} isInFigma={false} isWordmarkSvg={true} />
       {:else}
-        <button
-          title="Copy to clipboard"
-          on:click={() => {
-            const svgHasTheme = typeof svgInfo.route !== 'string';
-
-            if (!svgHasTheme) {
-              copyToClipboard(
-                typeof svgInfo.route === 'string'
-                  ? svgInfo.route
-                  : "Something went wrong. Couldn't copy the SVG."
-              );
-              return;
-            }
-
-            const dark = document.documentElement.classList.contains('dark');
-
-            copyToClipboard(
-              typeof svgInfo.route !== 'string'
-                ? dark
-                  ? svgInfo.route.dark
-                  : svgInfo.route.light
-                : svgInfo.route
-            );
-          }}
-          class="flex items-center space-x-2 rounded-md p-2 duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700/40"
-        >
-          <CopyIcon size={iconSize} strokeWidth={iconStroke} />
-        </button>
+        <CopySvg {iconSize} {iconStroke} {svgInfo} isInFigma={false} isWordmarkSvg={false} />
       {/if}
 
       <DownloadSvg
