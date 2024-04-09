@@ -1,12 +1,16 @@
 <script lang="ts">
   import type { iSVG } from '@/types/svg';
 
-  import { CopyIcon } from 'lucide-svelte';
+  import { ClipboardIcon, CopyIcon, X } from 'lucide-svelte';
   import { toast } from 'svelte-sonner';
+  import * as Popover from '@/ui/popover';
 
   // Utils:
   import { MIMETYPE, getSvgContent } from '@/utils/getSvgContent';
   import { copyToClipboard as figmaCopyToClipboard } from '@/figma/copy-to-clipboard';
+  import { buttonStyles } from '@/ui/styles';
+  import { cn } from '@/utils/cn';
+  import ReactIcon from './reactIcon.svelte';
 
   // Props:
   export let iconSize = 24;
@@ -14,9 +18,9 @@
   export let isInFigma = false;
   export let isWordmarkSvg = false;
   export let svgInfo: iSVG;
+  let optionsOpen = false;
 
-  // Copy SVG to clipboard:
-  const copyToClipboard = async () => {
+  const getSvgUrl = () => {
     let svgUrlToCopy;
     const dark = document.documentElement.classList.contains('dark');
 
@@ -50,6 +54,14 @@
             : svgInfo.route.light
           : svgInfo.route;
     }
+
+    return svgUrlToCopy;
+  };
+
+  // Copy SVG to clipboard:
+  const copyToClipboard = async () => {
+    const svgUrlToCopy = getSvgUrl();
+    optionsOpen = false;
 
     const data = {
       [MIMETYPE]: getSvgContent(svgUrlToCopy, true)
@@ -90,12 +102,70 @@
       description: `${svgInfo.title} - ${category}`
     });
   };
+
+  // Copy as React component:
+  const copyToClipboardAsReactComponent = async (tsx: boolean) => {
+    const svgUrlToCopy = getSvgUrl();
+    optionsOpen = false;
+
+    try {
+      const title = svgInfo.title.split(' ').join('');
+      const content = (await getSvgContent(svgUrlToCopy, false)) as string;
+      const getCode = await fetch('/api/svgs/svgr', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ code: content, typescript: tsx, name: title })
+      });
+      const data = await getCode.json();
+      await navigator.clipboard.writeText(data);
+      toast.success('Copied as React component', {
+        description: `${svgInfo.title}`
+      });
+    } catch (error) {
+      toast.error('Failed to copy as React component', {
+        description: `${error}`,
+        duration: 5000
+      });
+    }
+  };
 </script>
 
-<button
-  title={isWordmarkSvg ? 'Copy wordmark SVG to clipboard' : 'Copy SVG to clipboard'}
-  on:click={() => copyToClipboard()}
-  class="flex items-center space-x-2 rounded-md p-2 duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700/40"
->
-  <CopyIcon size={iconSize} strokeWidth={iconStroke} />
-</button>
+<Popover.Root open={optionsOpen} onOpenChange={(isOpen) => (optionsOpen = isOpen)}>
+  <Popover.Trigger
+    class="flex items-center space-x-2 rounded-md p-2 duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700/40"
+  >
+    {#if optionsOpen}
+      <X size={iconSize} strokeWidth={iconStroke} />
+    {:else}
+      <CopyIcon size={iconSize} strokeWidth={iconStroke} />
+    {/if}
+  </Popover.Trigger>
+  <Popover.Content class="flex flex-col space-y-2" sideOffset={0.3}>
+    <button
+      class={cn(buttonStyles, 'rounded-md w-full')}
+      title={isWordmarkSvg ? 'Copy wordmark SVG to clipboard' : 'Copy SVG to clipboard'}
+      on:click={() => copyToClipboard()}
+    >
+      <ClipboardIcon size={16} strokeWidth={2} />
+      <span>Copy SVG</span>
+    </button>
+    <button
+      class={cn(buttonStyles, 'rounded-md w-full')}
+      title="Copy as React component"
+      on:click={() => copyToClipboardAsReactComponent(true)}
+    >
+      <ReactIcon iconSize={18} color="#2563eb" />
+      <span>Copy TSX</span>
+    </button>
+    <button
+      class={cn(buttonStyles, 'rounded-md w-full')}
+      title="Copy as React component"
+      on:click={() => copyToClipboardAsReactComponent(false)}
+    >
+      <ReactIcon iconSize={18} color="#60a5fa" />
+      <span>Copy JSX</span>
+    </button>
+  </Popover.Content>
+</Popover.Root>
