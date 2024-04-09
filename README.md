@@ -57,6 +57,7 @@
 - [**Prettier**](https://prettier.io/) + [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss) - An opinionated code formatter.
 - [**Lucide Icons**](https://lucide.dev/) + [**phosphor-svelte**](https://github.com/haruaki07/phosphor-svelte) - A clean and friendly icons libraries.
 - [**svelte-sonner**](https://github.com/wobsoriano/svelte-sonner) - An opinionated toast component for Svelte.
+- [**@svgr/core**](https://react-svgr.com/) - Node.js utility to transform SVGs into React components.
 - [**@upstash/redis** + **@upstash/ratelimit**](https://upstash.com/) - Serverless Redis for developers.
 - [**Vitest**](https://vitest.dev/) - Blazing Fast Unit Test Framework.
 
@@ -163,7 +164,7 @@ A list of extensions that use the [svgl API](https://svgl.app/api), created by t
 | ---------------------------------------------------------------------------------------------- | ---------------- | -------------------------------------------------- | ----------------------------------------- | ------------------------------------------------------------------------------- |
 | <img src="https://github.com/pheralb/svgl/blob/main/static/library/svgl.svg" height="25" />    | svgls            | A CLI for easily adding SVG icons to your project. | [sujjeee](https://twitter.com/sujjeeee)   | [Github Repository](https://github.com/sujjeee/svgls)                           |
 | <img src="https://github.com/pheralb/svgl/blob/main/static/library/figma.svg" height="25" />   | SVGL for Figma   | Add svgs from svgl to your Figma project.          | [quilljou](https://twitter.com/quillzhou) | [Figma Plugin](https://www.figma.com/community/plugin/1320306989350693206/svgl) |
-| <img src="https://github.com/pheralb/svgl/blob/main/static/library/raycast.svg" height="25" /> | SVGL for Raycast | Search SVG logos via svgl.                         | [1weiho](https://twitter.com/1weiho)      | [Raycast Store](https://www.raycast.com/1weiho/svgl)                       |
+| <img src="https://github.com/pheralb/svgl/blob/main/static/library/raycast.svg" height="25" /> | SVGL for Raycast | Search SVG logos via svgl.                         | [1weiho](https://twitter.com/1weiho)      | [Raycast Store](https://www.raycast.com/1weiho/svgl)                            |
 
 ## ✌️ Contributing
 
