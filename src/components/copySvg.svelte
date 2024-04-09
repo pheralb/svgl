@@ -104,8 +104,8 @@
     });
   };
 
-  // Copy as React component:
-  const copyToClipboardAsReactComponent = async (tsx: boolean) => {
+  // Convert SVG as React component:
+  const convertSvgReactComponent = async (tsx: boolean) => {
     const svgUrlToCopy = getSvgUrl();
     optionsOpen = false;
 
@@ -122,7 +122,7 @@
         body: JSON.stringify({ code: content, typescript: tsx, name: title })
       });
       const data = await getCode.json();
-      await navigator.clipboard.writeText(data);
+      await copyReactContent(data);
       toast.success(`Copied as React ${tsx ? 'TSX' : 'JSX'} component`, {
         description: `${svgInfo.title} - ${svgInfo.category}`
       });
@@ -133,6 +133,18 @@
       });
     } finally {
       isLoading = false;
+    }
+  };
+
+  // Copy React content:
+  const copyReactContent = async (content: string) => {
+    try {
+      const clipboardItem = new ClipboardItem({
+        'text/plain': new Blob([content], { type: 'text/plain' })
+      });
+      await navigator.clipboard.write([clipboardItem]);
+    } catch (error) {
+      await navigator.clipboard.writeText(content);
     }
   };
 </script>
@@ -162,7 +174,7 @@
       class={cn(buttonStyles, 'rounded-md w-full')}
       title="Copy as React component"
       disabled={isLoading}
-      on:click={() => copyToClipboardAsReactComponent(true)}
+      on:click={() => convertSvgReactComponent(true)}
     >
       <ReactIcon iconSize={18} color="#2563eb" />
       <span>Copy TSX</span>
@@ -171,7 +183,7 @@
       class={cn(buttonStyles, 'rounded-md w-full')}
       title="Copy as React component"
       disabled={isLoading}
-      on:click={() => copyToClipboardAsReactComponent(false)}
+      on:click={() => convertSvgReactComponent(false)}
     >
       <ReactIcon iconSize={18} color="#60a5fa" />
       <span>Copy JSX</span>
