@@ -1,7 +1,7 @@
 <script lang="ts">
   import type { iSVG } from '@/types/svg';
 
-  import { ClipboardIcon, CopyIcon, X } from 'lucide-svelte';
+  import { ClipboardIcon, CopyIcon, Loader, X } from 'lucide-svelte';
   import { toast } from 'svelte-sonner';
   import * as Popover from '@/ui/popover';
 
@@ -19,6 +19,7 @@
   export let isWordmarkSvg = false;
   export let svgInfo: iSVG;
   let optionsOpen = false;
+  let isLoading = false;
 
   const getSvgUrl = () => {
     let svgUrlToCopy;
@@ -85,20 +86,20 @@
       : svgInfo.category;
 
     if (isInFigma) {
-      toast.success('Ready to paste in Figma!', {
+      toast.success('Ready to paste in Figma', {
         description: `${svgInfo.title} - ${category}`
       });
       return;
     }
 
     if (isWordmarkSvg) {
-      toast.success('Copied wordmark SVG to clipboard!', {
+      toast.success('Copied wordmark SVG to clipboard', {
         description: `${svgInfo.title} - ${category}`
       });
       return;
     }
 
-    toast.success('Copied to clipboard!', {
+    toast.success('Copied to clipboard', {
       description: `${svgInfo.title} - ${category}`
     });
   };
@@ -107,6 +108,8 @@
   const copyToClipboardAsReactComponent = async (tsx: boolean) => {
     const svgUrlToCopy = getSvgUrl();
     optionsOpen = false;
+
+    isLoading = true;
 
     try {
       const title = svgInfo.title.split(' ').join('');
@@ -120,14 +123,16 @@
       });
       const data = await getCode.json();
       await navigator.clipboard.writeText(data);
-      toast.success('Copied as React component', {
-        description: `${svgInfo.title}`
+      toast.success(`Copied as React ${tsx ? 'TSX' : 'JSX'} component`, {
+        description: `${svgInfo.title} - ${svgInfo.category}`
       });
     } catch (error) {
       toast.error('Failed to copy as React component', {
         description: `${error}`,
         duration: 5000
       });
+    } finally {
+      isLoading = false;
     }
   };
 </script>
@@ -138,6 +143,8 @@
   >
     {#if optionsOpen}
       <X size={iconSize} strokeWidth={iconStroke} />
+    {:else if isLoading}
+      <Loader size={iconSize} strokeWidth={iconStroke} class="animate-spin" />
     {:else}
       <CopyIcon size={iconSize} strokeWidth={iconStroke} />
     {/if}
@@ -154,6 +161,7 @@
     <button
       class={cn(buttonStyles, 'rounded-md w-full')}
       title="Copy as React component"
+      disabled={isLoading}
       on:click={() => copyToClipboardAsReactComponent(true)}
     >
       <ReactIcon iconSize={18} color="#2563eb" />
@@ -162,6 +170,7 @@
     <button
       class={cn(buttonStyles, 'rounded-md w-full')}
       title="Copy as React component"
+      disabled={isLoading}
       on:click={() => copyToClipboardAsReactComponent(false)}
     >
       <ReactIcon iconSize={18} color="#60a5fa" />
