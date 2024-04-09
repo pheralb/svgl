@@ -122,7 +122,7 @@
         body: JSON.stringify({ code: content, typescript: tsx, name: title })
       });
       const data = await getCode.json();
-      await copyReactContent(data);
+      await navigator.clipboard.writeText(data);
       toast.success(`Copied as React ${tsx ? 'TSX' : 'JSX'} component`, {
         description: `${svgInfo.title} - ${svgInfo.category}`
       });
@@ -133,18 +133,6 @@
       });
     } finally {
       isLoading = false;
-    }
-  };
-
-  // Copy React content:
-  const copyReactContent = async (content: string) => {
-    try {
-      const clipboardItem = new ClipboardItem({
-        'text/plain': new Blob([content], { type: 'text/plain' })
-      });
-      await navigator.clipboard.write([clipboardItem]);
-    } catch (error) {
-      await navigator.clipboard.writeText(content);
     }
   };
 </script>
