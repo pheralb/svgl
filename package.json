@@ -32,6 +32,8 @@
   "dependencies": {
     "@figma/plugin-typings": "1.90.0",
     "@svelte-dev/pretty-code": "1.0.0",
+    "@svgr/core": "8.1.0",
+    "@svgr/plugin-jsx": "8.1.0",
     "@upstash/ratelimit": "1.0.3",
     "@upstash/redis": "1.29.0",
     "bits-ui": "0.21.2",
