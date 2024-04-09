@@ -122,7 +122,10 @@
         body: JSON.stringify({ code: content, typescript: tsx, name: title })
       });
       const data = await getCode.json();
-      await navigator.clipboard.writeText(data);
+      const clipboardItem = new ClipboardItem({
+        'text/plain': new Blob([data], { type: 'text/plain' })
+      });
+      await navigator.clipboard.write([clipboardItem]);
       toast.success(`Copied as React ${tsx ? 'TSX' : 'JSX'} component`, {
         description: `${svgInfo.title} - ${svgInfo.category}`
       });
