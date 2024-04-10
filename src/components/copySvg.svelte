@@ -6,7 +6,9 @@
   import * as Popover from '@/ui/popover';
 
   // Utils:
-  import { MIMETYPE, getSvgContent } from '@/utils/getSvgContent';
+  import { getSvgContent } from '@/utils/getSvgContent';
+  import { getReactComponentCode } from '@/utils/getReactComponentCode';
+  import { clipboard } from '@/utils/clipboard';
   import { copyToClipboard as figmaCopyToClipboard } from '@/figma/copy-to-clipboard';
   import { buttonStyles } from '@/ui/styles';
   import { cn } from '@/utils/cn';
@@ -64,22 +66,12 @@
     const svgUrlToCopy = getSvgUrl();
     optionsOpen = false;
 
-    const data = {
-      [MIMETYPE]: getSvgContent(svgUrlToCopy, true)
-    };
-
+    const content = await getSvgContent(svgUrlToCopy);
     if (isInFigma) {
-      const content = (await getSvgContent(svgUrlToCopy, false)) as string;
       figmaCopyToClipboard(content);
     }
 
-    try {
-      const clipboardItem = new ClipboardItem(data);
-      await navigator.clipboard.write([clipboardItem]);
-    } catch (error) {
-      const content = (await getSvgContent(svgUrlToCopy, false)) as string;
-      await navigator.clipboard.writeText(content);
-    }
+    await clipboard(content);
 
     const category = Array.isArray(svgInfo.category)
       ? svgInfo.category.sort().join(' - ')
@@ -111,32 +103,26 @@
 
     isLoading = true;
 
-    try {
-      const title = svgInfo.title.split(' ').join('');
-      const content = (await getSvgContent(svgUrlToCopy, false)) as string;
-      const getCode = await fetch('/api/svgs/svgr', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ code: content, typescript: tsx, name: title })
-      });
-      const data = await getCode.json();
-      const clipboardItem = new ClipboardItem({
-        'text/plain': new Blob([data], { type: 'text/plain' })
-      });
-      await navigator.clipboard.write([clipboardItem]);
-      toast.success(`Copied as React ${tsx ? 'TSX' : 'JSX'} component`, {
-        description: `${svgInfo.title} - ${svgInfo.category}`
-      });
-    } catch (error) {
-      toast.error('Failed to copy as React component', {
-        description: `${error}`,
+    const title = svgInfo.title.split(' ').join('');
+    const content = await getSvgContent(svgUrlToCopy);
+    const dataComponent = { code: content, typescript: tsx, name: title };
+    const { data, error } = await getReactComponentCode(dataComponent);
+
+    if (error || !data) {
+      toast.error('Failed to fetch React component', {
+        description: `${error ?? ''}`,
         duration: 5000
       });
-    } finally {
-      isLoading = false;
+      return;
     }
+
+    await clipboard(data);
+
+    toast.success(`Copied as React ${tsx ? 'TSX' : 'JSX'} component`, {
+      description: `${svgInfo.title} - ${svgInfo.category}`
+    });
+
+    isLoading = false;
   };
 </script>
 
