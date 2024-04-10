@@ -2188,6 +2188,10 @@ export const svgs: iSVG[] = [
       light: '/library/pnpm.svg',
       dark: '/library/pnpm_dark.svg'
     },
+    wordmark: {
+      light: '/library/pnpm_wordmark_light.svg',
+      dark: '/library/pnpm_wordmark_dark.svg'
+    },
     url: 'https://pnpm.io/'
   },
   {
