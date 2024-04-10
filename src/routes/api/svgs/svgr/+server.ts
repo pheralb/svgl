@@ -41,7 +41,7 @@ export const POST = async ({ request }: RequestEvent) => {
       { componentName: name }
     );
 
-    return json(jsCode, { status: 200 });
+    return json({ data: jsCode }, { status: 200 });
   } catch (error) {
     return json(
       { error: `Error al transformar el SVG a componente React: ${error}` },
