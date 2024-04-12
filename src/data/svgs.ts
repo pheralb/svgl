@@ -166,16 +166,6 @@ export const svgs: iSVG[] = [
     url: 'https://firebase.google.com/'
   },
   {
-    title: 'Supabase',
-    category: 'Database',
-    route: '/library/supabase.svg',
-    url: 'https://supabase.com/',
-    wordmark: {
-      light: '/library/supabase_wordmark_light.svg',
-      dark: '/library/supabase_wordmark_dark.svg'
-    }
-  },
-  {
     title: 'Vite.js',
     category: 'Compiler',
     route: '/library/vitejs.svg',
@@ -2582,5 +2572,15 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/microsoft-todo.svg',
     url: 'https://to-do.office.com/'
+  },
+  {
+    title: 'Supabase',
+    category: 'Database',
+    route: '/library/supabase.svg',
+    url: 'https://supabase.com/',
+    wordmark: {
+      light: '/library/supabase_wordmark_light.svg',
+      dark: '/library/supabase_wordmark_dark.svg'
+    }
   }
 ];
