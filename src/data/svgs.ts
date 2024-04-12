@@ -169,7 +169,11 @@ export const svgs: iSVG[] = [
     title: 'Supabase',
     category: 'Database',
     route: '/library/supabase.svg',
-    url: 'https://supabase.com/'
+    url: 'https://supabase.com/',
+    wordmark: {
+      light: '/library/supabase_wordmark_light.svg',
+      dark: '/library/supabase_wordmark_dark.svg'
+    }
   },
   {
     title: 'Vite.js',
