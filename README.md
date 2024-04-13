@@ -160,11 +160,12 @@ UPSTASH_REDIS_TOKEN = ""
 
 A list of extensions that use the [svgl API](https://svgl.app/api), created by the community:
 
-|                                                                                                | Extension        | Description                                        | Created by                                | Link                                                                            |
-| ---------------------------------------------------------------------------------------------- | ---------------- | -------------------------------------------------- | ----------------------------------------- | ------------------------------------------------------------------------------- |
-| <img src="https://github.com/pheralb/svgl/blob/main/static/library/svgl.svg" height="25" />    | svgls            | A CLI for easily adding SVG icons to your project. | [sujjeee](https://twitter.com/sujjeeee)   | [Github Repository](https://github.com/sujjeee/svgls)                           |
-| <img src="https://github.com/pheralb/svgl/blob/main/static/library/figma.svg" height="25" />   | SVGL for Figma   | Add svgs from svgl to your Figma project.          | [quilljou](https://twitter.com/quillzhou) | [Figma Plugin](https://www.figma.com/community/plugin/1320306989350693206/svgl) |
-| <img src="https://github.com/pheralb/svgl/blob/main/static/library/raycast.svg" height="25" /> | SVGL for Raycast | Search SVG logos via svgl.                         | [1weiho](https://twitter.com/1weiho)      | [Raycast Store](https://www.raycast.com/1weiho/svgl)                            |
+|                                                                                                | Extension        | Description                                        | Created by                                 | Link                                                                                        |
+| ---------------------------------------------------------------------------------------------- | ---------------- | -------------------------------------------------- | ------------------------------------------ | ------------------------------------------------------------------------------------------- |
+| <img src="https://github.com/pheralb/svgl/blob/main/static/library/svgl.svg" height="25" />    | svgls            | A CLI for easily adding SVG icons to your project. | [sujjeee](https://twitter.com/sujjeeee)    | [Github Repository](https://github.com/sujjeee/svgls)                                       |
+| <img src="https://github.com/pheralb/svgl/blob/main/static/library/figma.svg" height="25" />   | SVGL for Figma   | Add svgs from svgl to your Figma project.          | [quilljou](https://twitter.com/quillzhou)  | [Figma Plugin](https://www.figma.com/community/plugin/1320306989350693206/svgl)             |
+| <img src="https://github.com/pheralb/svgl/blob/main/static/library/raycast.svg" height="25" /> | SVGL for Raycast | Search SVG logos via svgl.                         | [1weiho](https://twitter.com/1weiho)       | [Raycast Store](https://www.raycast.com/1weiho/svgl)                                        |
+| <img src="https://github.com/pheralb/svgl/blob/main/static/library/vscode.svg" height="25" />  | SVGL for VSCode  | SVGL directly in your VSCode.                      | [girlazote](https://twitter.com/girlazote) | [VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=EsteveSegura.svgl) |
 
 ## ✌️ Contributing
 
