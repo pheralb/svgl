@@ -166,6 +166,7 @@ A list of extensions that use the [svgl API](https://svgl.app/api), created by t
 | <img src="https://github.com/pheralb/svgl/blob/main/static/library/figma.svg" height="25" />   | SVGL for Figma   | Add svgs from svgl to your Figma project.          | [quilljou](https://twitter.com/quillzhou)  | [Figma Plugin](https://www.figma.com/community/plugin/1320306989350693206/svgl)             |
 | <img src="https://github.com/pheralb/svgl/blob/main/static/library/raycast.svg" height="25" /> | SVGL for Raycast | Search SVG logos via svgl.                         | [1weiho](https://twitter.com/1weiho)       | [Raycast Store](https://www.raycast.com/1weiho/svgl)                                        |
 | <img src="https://github.com/pheralb/svgl/blob/main/static/library/vscode.svg" height="25" />  | SVGL for VSCode  | SVGL directly in your VSCode.                      | [girlazote](https://twitter.com/girlazote) | [VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=EsteveSegura.svgl) |
+| <img src="https://svgl-badge.vercel.app/api/Library/Svgl?theme=light" height="25" />  | SVGL Badge  | A beautiful badges with svgl SVG logos.                      | [ridemountainpig](https://twitter.com/ridemountainpig) | [Svgl Badge](https://svgl-badge.vercel.app/) |
 
 ## ✌️ Contributing
 
