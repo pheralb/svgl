@@ -1,5 +1,6 @@
 import type { RequestEvent } from './$types';
 import type { iSVG } from '@/types/svg';
+import type { tCategory } from '@/types/categories';
 
 import { error, json } from '@sveltejs/kit';
 import { ratelimit } from '@/server/redis';
@@ -58,7 +59,17 @@ export const GET = async ({ url, request }: RequestEvent) => {
 
   if (category) {
     const categorySvgs = fullRouteSvgsData.filter((svg) => {
-      return svg.category === category.charAt(0).toUpperCase() + category.slice(1);
+      const targetCategory = category.charAt(0).toUpperCase() + category.slice(1);
+
+      if (typeof svg.category === 'string') {
+        return svg.category === targetCategory;
+      }
+
+      if (Array.isArray(svg.category)) {
+        return svg.category.includes(targetCategory as tCategory);
+      }
+
+      return false;
     });
 
     // Error 400 | If category does not exist:
