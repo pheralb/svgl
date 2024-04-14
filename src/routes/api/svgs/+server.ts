@@ -58,9 +58,8 @@ export const GET = async ({ url, request }: RequestEvent) => {
   const category = getCategoryParams;
 
   if (category) {
+    const targetCategory = category.charAt(0).toUpperCase() + category.slice(1);
     const categorySvgs = fullRouteSvgsData.filter((svg) => {
-      const targetCategory = category.charAt(0).toUpperCase() + category.slice(1);
-
       if (typeof svg.category === 'string') {
         return svg.category === targetCategory;
       }
