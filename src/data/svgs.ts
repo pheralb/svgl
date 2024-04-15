@@ -2588,5 +2588,11 @@ export const svgs: iSVG[] = [
     category: 'Language',
     route: '/library/gleam.svg',
     url: 'https://gleam.run/'
+  },
+  {
+    title: 'Flowbite',
+    category: 'Framework',
+    route: '/library/flowbite.svg',
+    url: 'https://flowbite.com/'
   }
 ];
