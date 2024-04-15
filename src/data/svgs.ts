@@ -434,7 +434,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'jQuery',
-    category: 'Language',
+    category: 'Library',
     route: {
       light: '/library/jquery.svg',
       dark: '/library/jquery_dark.svg'
