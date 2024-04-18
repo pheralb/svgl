@@ -2594,5 +2594,11 @@ export const svgs: iSVG[] = [
     category: 'Framework',
     route: '/library/flowbite.svg',
     url: 'https://flowbite.com/'
+  },
+  {
+    title: "Hume AI",
+    category: "AI",
+    route: "/library/hume-ai.svg",
+    url: "https://hume.ai/",
   }
 ];
