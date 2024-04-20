@@ -22,6 +22,7 @@
   // Layout:
   import Navbar from '@/components/navbar.svelte';
   import { cn } from '@/utils/cn';
+  import { sidebarItemStyles } from '@/ui/styles';
 </script>
 
 <ModeWatcher />
@@ -42,11 +43,12 @@
       >
         <a
           href="/"
-          class={`flex w-full items-center rounded-md p-2 transition-none duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700/40 text-neutral-600 hover:text-dark dark:hover:text-white dark:text-neutral-400 ${
-            data.pathname === `/`
+          class={cn(
+            sidebarItemStyles,
+            data.pathname === '/'
               ? 'bg-neutral-200 dark:bg-neutral-700/30 font-medium dark:text-white text-dark'
               : ''
-          }`}
+          )}
           data-sveltekit-preload-data>All</a
         >
         <!-- Order alfabetically: -->
@@ -54,7 +56,7 @@
           <a
             href={`/directory/${category.toLowerCase()}`}
             class={cn(
-              'flex w-full items-center justify-between rounded-md p-2 transition-none duration-100 text-neutral-600 hover:text-dark dark:hover:text-white dark:text-neutral-400 hover:bg-neutral-200 dark:hover:bg-neutral-700/40',
+              sidebarItemStyles,
               data.pathname === `/directory/${category.toLowerCase()}`
                 ? 'bg-neutral-200 dark:bg-neutral-700/30 font-medium dark:text-white text-dark'
                 : ''

@@ -9,15 +9,6 @@
   import XIcon from './xIcon.svelte';
   import GithubIcon from './githubIcon.svelte';
 
-  // Se le pusieron aria-labels a los links
-  const socials = [
-    {
-      name: 'GitHub',
-      url: 'https://github.com/pheralb/svgl',
-      icon: GithubIcon
-    }
-  ];
-
   const externalLinks = [
     {
       name: 'API',
@@ -58,7 +49,7 @@
         <div class="flex items-center space-x-2 opacity-80 hover:opacity-100 transition-opacity">
           <svelte:component this={Logo} />
           <span class="text-[19px] font-medium tracking-wide hidden md:block">svgl</span>
-          <p class="text-neutral-400 hidden md:block font-mono">v4.1</p>
+          <p class="text-neutral-400 hidden md:block font-mono">v4.2</p>
         </div>
       </a>
     </div>
