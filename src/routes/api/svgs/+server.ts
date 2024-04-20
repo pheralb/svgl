@@ -9,7 +9,6 @@ import { ratelimit } from '@/server/redis';
 import { svgsData } from '@/data';
 
 export const GET = async ({ url, request }: RequestEvent) => {
-  const fullUrl = url.origin ?? 'svgl.vercel.app';
   const ip = request.headers.get('x-forwarded-for') ?? '';
   const { success, reset } = await ratelimit.limit(ip);
 
@@ -36,14 +35,14 @@ export const GET = async ({ url, request }: RequestEvent) => {
       return {
         ...svg,
         route: {
-          light: `${fullUrl}${svg.route.light}`,
-          dark: `${fullUrl}${svg.route.dark}`
+          light: `${svg.route.light}`,
+          dark: `${svg.route.dark}`
         }
       };
     } else if (typeof svg.route === 'string') {
       return {
         ...svg,
-        route: `${fullUrl}${svg.route}`
+        route: `${svg.route}`
       };
     }
     return svg;
