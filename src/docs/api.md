@@ -71,7 +71,7 @@ export interface iSVG {
     "id": 0,
     "title": "Discord",
     "category": "Software",
-    "route": "https://cdn.svgl.app/discord.svg",
+    "route": "https://svgl.app/discord.svg",
     "url": "https://discord.com/"
   },
   ...
@@ -95,7 +95,7 @@ export interface iSVG {
     "id": 0,
     "title": "Discord",
     "category": "Software",
-    "route": "https://cdn.svgl.app/discord.svg",
+    "route": "https://svgl.app/discord.svg",
     "url": "https://discord.com/"
   },
   ...
@@ -119,7 +119,7 @@ export interface iSVG {
     "id": 0,
     "title": "Discord",
     "category": "Software",
-    "route": "https://cdn.svgl.app/discord.svg",
+    "route": "https://svgl.app/discord.svg",
     "url": "https://discord.com/"
   },
   ...
@@ -171,8 +171,8 @@ The list of categories is available [here](https://github.com/pheralb/svgl/blob/
     "title": "Axiom",
     "category": "Software",
     "route": {
-      "light": "https://cdn.svgl.app/axiom-light.svg",
-      "dark": "https://cdn.svgl.app/axiom-dark.svg"
+      "light": "https://svgl.app/axiom-light.svg",
+      "dark": "https://svgl.app/axiom-dark.svg"
     },
     "url": "https://axiom.co/"
   }
