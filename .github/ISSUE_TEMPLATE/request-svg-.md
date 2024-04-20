@@ -3,17 +3,20 @@ name: Request SVG.
 about: Request an SVG here.
 title: '🔔 [Request]:'
 labels: request
-assignees: pheralb
 ---
 
 ## 🔎 Information:
 
+> **All fields are required**:
+
 - **Title**:
-- **Category**:
-- **Source (.svg)**:
-- **Website**:
+- **Category** ([check categories](https://github.com/pheralb/svgl/blob/main/src/types/categories.ts#L1)):
+- **Source (.svg)** (type the link of the svg):
+- **Company/Product Website**:
 
 ## 📝 Checklist:
+
+> **Make sure that you have completed the following steps**:
 
 - [x] I have permission to use this logo.
 - [x] The link I have provided is optimized for web use.
