@@ -128,6 +128,7 @@
 
 <Popover.Root open={optionsOpen} onOpenChange={(isOpen) => (optionsOpen = isOpen)}>
   <Popover.Trigger
+    title="Copy SVG element as svg file, React TSX code, or React JSX code"
     class="flex items-center space-x-2 rounded-md p-2 duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700/40"
   >
     {#if optionsOpen}
