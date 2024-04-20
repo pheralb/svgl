@@ -43,7 +43,7 @@
 </script>
 
 <div
-  class="flex flex-col items-center justify-center rounded-md p-4 border border-neutral-200 dark:border-neutral-800 hover:bg-neutral-300/50 dark:hover:bg-neutral-800/20 transition-colors duration-100 group"
+  class="flex flex-col items-center justify-center rounded-md p-4 border border-neutral-200 dark:border-neutral-800 hover:bg-neutral-100/80 dark:hover:bg-neutral-800/20 transition-colors duration-100 group"
 >
   <!-- Image -->
   {#if wordmarkSvg == true}
