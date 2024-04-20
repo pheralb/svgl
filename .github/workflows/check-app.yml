@@ -1,4 +1,4 @@
-name: 🔎 Check
+name: ⚙️ Check app
 
 on:
   push:
@@ -43,3 +43,8 @@ jobs:
       - name: Check svgs size
         run: pnpm start
         working-directory: ./check-size
+  build-app:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build
+        run: pnpm onlybuild
