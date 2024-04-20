@@ -32,7 +32,7 @@
   let wordmarkSvg = false;
 
   const insertSVG = async (url?: string) => {
-    const content = (await getSvgContent(url, false)) as string;
+    const content = (await getSvgContent(url)) as string;
     figmaInsertSVG(content);
   };
 
