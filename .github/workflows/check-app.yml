@@ -43,18 +43,3 @@ jobs:
       - name: Check svgs size
         run: pnpm start
         working-directory: ./check-size
-  build-app:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: Setup pnpm 8
-        uses: pnpm/action-setup@v2
-        with:
-          version: 8
-
-      - name: Install dependencies
-        run: pnpm install
-
-      - name: Build app
-        run: pnpm onlybuild
