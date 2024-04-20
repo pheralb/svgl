@@ -1,123 +1,122 @@
 import type { iSVG } from '../types/svg';
-import { MAIN_URL_CDN } from './mainUrl';
 
 export const svgs: iSVG[] = [
   {
     title: 'Discord',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/discord.svg`,
+    route: '/library/discord.svg',
     url: 'https://discord.com/'
   },
   {
     title: 'Aliexpress',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/aliexpress-icon.svg`,
-    wordmark: `${MAIN_URL_CDN}/aliexpress-logo.svg`,
+    route: '/library/aliexpress-icon.svg',
+    wordmark: '/library/aliexpress-logo.svg',
     url: 'https://aliexpress.com/'
   },
   {
     title: 'Github',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/github.svg`,
+    route: '/library/github.svg',
     url: 'https://github.com/'
   },
   {
     title: 'Preact',
     category: 'Library',
-    route: `${MAIN_URL_CDN}/preact.svg`,
+    route: '/library/preact.svg',
     url: 'https://preactjs.com/'
   },
   {
     title: 'React',
     category: 'Library',
-    route: `${MAIN_URL_CDN}/react.svg`,
+    route: '/library/react.svg',
     url: 'https://reactjs.org/'
   },
   {
     title: 'Svelte',
     category: 'Library',
-    route: `${MAIN_URL_CDN}/svelte.svg`,
+    route: '/library/svelte.svg',
     url: 'https://svelte.dev/'
   },
   {
     title: 'Vue',
     category: 'Framework',
-    route: `${MAIN_URL_CDN}/vue.svg`,
+    route: '/library/vue.svg',
     url: 'https://vuejs.org/'
   },
   {
     title: 'Vuetify',
     category: 'Library',
-    route: `${MAIN_URL_CDN}/vuetify.svg`,
+    route: '/library/vuetify.svg',
     url: 'https://vuetifyjs.com/'
   },
   {
     title: 'Nuxt',
     category: 'Framework',
-    route: `${MAIN_URL_CDN}/nuxt.svg`,
+    route: '/library/nuxt.svg',
     url: 'https://nuxtjs.org/'
   },
   {
     title: 'Visual Studio Code',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/vscode.svg`,
+    route: '/library/vscode.svg',
     url: 'https://code.visualstudio.com/'
   },
   {
     title: 'Ton',
     category: 'Crypto',
-    route: `${MAIN_URL_CDN}/ton.svg`,
+    route: '/library/ton.svg',
     url: 'https://ton.org/'
   },
   {
     title: 'Locofy',
     category: 'AI',
-    route: `${MAIN_URL_CDN}/locofy.svg`,
+    route: '/library/locofy.svg',
     url: 'https://www.locofy.ai/'
   },
   {
     title: 'Runway',
     category: 'AI',
-    route: `${MAIN_URL_CDN}/runway.svg`,
+    route: '/library/runway.svg',
     url: 'https://runwayml.com/'
   },
   {
     title: 'Yarn',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/yarn.svg`,
+    route: '/library/yarn.svg',
     url: 'https://yarnpkg.com/'
   },
   {
     title: 'JWT',
     category: 'Library',
-    route: `${MAIN_URL_CDN}/jwt.svg`,
+    route: '/library/jwt.svg',
     url: 'https://jwt.io/'
   },
   {
     title: 'Strapi',
     category: 'CMS',
-    route: `${MAIN_URL_CDN}/strapi.svg`,
+    route: '/library/strapi.svg',
     url: 'https://strapi.io/'
   },
   {
     title: 'Figma',
     category: 'Design',
-    route: `${MAIN_URL_CDN}/figma.svg`,
+    route: '/library/figma.svg',
     url: 'https://www.figma.com/'
   },
   {
     title: 'Spotify',
     category: 'Music',
-    route: `${MAIN_URL_CDN}/spotify.svg`,
-    wordmark: `${MAIN_URL_CDN}/spotify_wordmark.svg`,
+    route: '/library/spotify.svg',
+    wordmark: '/library/spotify_wordmark.svg',
     url: 'https://www.spotify.com/'
   },
   {
     title: 'WorkOS',
     category: 'Software',
     route: {
-      light: `${MAIN_URL_CDN}/workos.svg`,
-      dark: `${MAIN_URL_CDN}/workos-light.svg`
+      light: '/library/workos.svg',
+      dark: '/library/workos-light.svg'
     },
     url: 'https://workos.com/'
   },
@@ -125,296 +124,296 @@ export const svgs: iSVG[] = [
     title: 'Whop',
     category: 'Marketplace',
     route: {
-      light: `${MAIN_URL_CDN}/whop.svg`,
-      dark: `${MAIN_URL_CDN}/whop-light.svg`
+      light: '/library/whop.svg',
+      dark: '/library/whop-light.svg'
     },
     url: 'https://whop.com/'
   },
   {
     title: 'Postman',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/postman.svg`,
+    route: '/library/postman.svg',
     url: 'https://www.getpostman.com/'
   },
   {
     title: 'Discord.js',
     category: 'Library',
-    route: `${MAIN_URL_CDN}/djs.svg`,
+    route: '/library/djs.svg',
     url: 'https://discord.js.org/'
   },
   {
     title: 'OpenSea',
     category: 'Crypto',
-    route: `${MAIN_URL_CDN}/opensea.svg`,
+    route: '/library/opensea.svg',
     url: 'https://opensea.io/'
   },
   {
     title: 'Algolia',
     category: 'Library',
-    route: `${MAIN_URL_CDN}/algolia.svg`,
+    route: '/library/algolia.svg',
     url: 'https://www.algolia.com/'
   },
   {
     title: 'Bootstrap',
     category: 'Framework',
-    route: `${MAIN_URL_CDN}/bootstrap.svg`,
+    route: '/library/bootstrap.svg',
     url: 'https://getbootstrap.com/'
   },
   {
     title: 'Firebase',
     category: 'Hosting',
-    route: `${MAIN_URL_CDN}/firebase.svg`,
+    route: '/library/firebase.svg',
     url: 'https://firebase.google.com/'
   },
   {
     title: 'Vite.js',
     category: 'Compiler',
-    route: `${MAIN_URL_CDN}/vitejs.svg`,
+    route: '/library/vitejs.svg',
     url: 'https://vitejs.dev'
   },
   {
     title: 'Facebook',
     category: 'Social',
-    route: `${MAIN_URL_CDN}/facebook.svg`,
+    route: '/library/facebook.svg',
     url: 'https://www.facebook.com/'
   },
   {
     title: 'Twitter',
     category: 'Social',
-    route: `${MAIN_URL_CDN}/twitter.svg`,
+    route: '/library/twitter.svg',
     url: 'https://twitter.com/'
   },
   {
     title: 'Esbuild',
     category: 'Compiler',
-    route: `${MAIN_URL_CDN}/esbuild.svg`,
+    route: '/library/esbuild.svg',
     url: 'https://esbuild.github.io/'
   },
   {
     title: 'Deno',
     category: 'Library',
     route: {
-      light: `${MAIN_URL_CDN}/deno.svg`,
-      dark: `${MAIN_URL_CDN}/deno_dark.svg`
+      light: '/library/deno.svg',
+      dark: '/library/deno_dark.svg'
     },
     url: 'https://deno.land/'
   },
   {
     title: 'Gatsby',
     category: 'Framework',
-    route: `${MAIN_URL_CDN}/gatsby.svg`,
+    route: '/library/gatsby.svg',
     url: 'https://www.gatsbyjs.org/'
   },
   {
     title: 'NPM',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/npm.svg`,
+    route: '/library/npm.svg',
     url: 'https://www.npmjs.com/'
   },
   {
     title: 'Homebrew',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/homebrew.svg`,
+    route: '/library/homebrew.svg',
     url: 'https://brew.sh/'
   },
   {
     title: 'Sublime Text',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/sublimetext.svg`,
+    route: '/library/sublimetext.svg',
     url: 'https://www.sublimetext.com/'
   },
   {
     title: 'Turborepo',
     category: ['Library', 'Vercel'],
-    route: `${MAIN_URL_CDN}/turborepo.svg`,
+    route: '/library/turborepo.svg',
     url: 'https://turborepo.org/'
   },
   {
     title: 'Tailwind CSS',
     category: 'Framework',
-    route: `${MAIN_URL_CDN}/tailwindcss.svg`,
+    route: '/library/tailwindcss.svg',
     url: 'https://tailwindcss.com/'
   },
   {
     title: 'Styled Components',
     category: 'Library',
-    route: `${MAIN_URL_CDN}/styledcomponents.svg`,
+    route: '/library/styledcomponents.svg',
     url: 'https://styled-components.com/'
   },
   {
     title: 'Angular',
     category: 'Framework',
-    route: `${MAIN_URL_CDN}/angular.svg`,
+    route: '/library/angular.svg',
     url: 'https://angular.dev/'
   },
   {
     title: 'Blitz',
     category: 'Framework',
-    route: `${MAIN_URL_CDN}/blitzjs.svg`,
+    route: '/library/blitzjs.svg',
     url: 'https://blitzjs.com/'
   },
   {
     title: 'Lit',
     category: 'Library',
-    route: `${MAIN_URL_CDN}/lit.svg`,
+    route: '/library/lit.svg',
     url: 'https://lit.dev/'
   },
   {
     title: 'Atom',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/atom.svg`,
+    route: '/library/atom.svg',
     url: 'https://atom.io/'
   },
   {
     title: 'YouTube',
     category: 'Social',
-    route: `${MAIN_URL_CDN}/youtube.svg`,
-    wordmark: `${MAIN_URL_CDN}/youtube-wordmark.svg`,
+    route: '/library/youtube.svg',
+    wordmark: '/library/youtube-wordmark.svg',
     url: 'https://www.youtube.com/'
   },
   {
     title: 'Astro',
     category: 'Framework',
     route: {
-      light: `${MAIN_URL_CDN}/astro.svg`,
-      dark: `${MAIN_URL_CDN}/astro_dark.svg`
+      light: '/library/astro.svg',
+      dark: '/library/astro_dark.svg'
     },
     url: 'https://astro.build/'
   },
   {
     title: 'Google',
     category: 'Social',
-    route: `${MAIN_URL_CDN}/google.svg`,
-    wordmark: `${MAIN_URL_CDN}/google-wordmark.svg`,
+    route: '/library/google.svg',
+    wordmark: '/library/google-wordmark.svg',
     url: 'https://www.google.com/'
   },
   {
     title: 'Framer',
     category: 'Software',
     route: {
-      light: `${MAIN_URL_CDN}/framer.svg`,
-      dark: `${MAIN_URL_CDN}/framer_dark.svg`
+      light: '/library/framer.svg',
+      dark: '/library/framer_dark.svg'
     },
     url: 'https://framer.com/'
   },
   {
     title: 'Netflix',
     category: 'Entertainment',
-    route: `${MAIN_URL_CDN}/netflix.svg`,
+    route: '/library/netflix.svg',
     url: 'https://www.netflix.com/'
   },
   {
     title: 'Firefox',
     category: 'Browser',
-    route: `${MAIN_URL_CDN}/firefox.svg`,
+    route: '/library/firefox.svg',
     url: 'https://www.mozilla.org/en-US/firefox/'
   },
   {
     title: 'LinkedIn',
     category: 'Social',
-    route: `${MAIN_URL_CDN}/linkedin.svg`,
+    route: '/library/linkedin.svg',
     url: 'https://www.linkedin.com/'
   },
   {
     title: 'Telegram',
     category: 'Social',
-    route: `${MAIN_URL_CDN}/telegram.svg`,
+    route: '/library/telegram.svg',
     url: 'https://web.telegram.org/'
   },
   {
     title: 'WhatsApp',
     category: 'Social',
-    route: `${MAIN_URL_CDN}/whatsapp.svg`,
+    route: '/library/whatsapp.svg',
     url: 'https://web.whatsapp.com/'
   },
   {
     title: 'Headless UI',
     category: 'Library',
-    route: `${MAIN_URL_CDN}/headlessui.svg`,
+    route: '/library/headlessui.svg',
     url: 'https://headlessui.dev/'
   },
   {
     title: 'Kotlin',
     category: 'Language',
-    route: `${MAIN_URL_CDN}/kotlin.svg`,
+    route: '/library/kotlin.svg',
     url: 'https://kotlinlang.org/'
   },
   {
     title: 'Vitest',
     category: 'Framework',
-    route: `${MAIN_URL_CDN}/vitest.svg`,
+    route: '/library/vitest.svg',
     url: 'https://vitest.dev/'
   },
   {
     title: 'Storybook',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/storybook.svg`,
+    route: '/library/storybook.svg',
     url: 'https://storybook.js.org/'
   },
   {
     title: 'Netlify',
     category: 'Hosting',
-    route: `${MAIN_URL_CDN}/netlify.svg`,
+    route: '/library/netlify.svg',
     url: 'https://www.netlify.com/'
   },
   {
     title: 'Solidjs',
     category: 'Framework',
-    route: `${MAIN_URL_CDN}/solidjs.svg`,
+    route: '/library/solidjs.svg',
     url: 'https://www.solidjs.com/'
   },
   {
     title: 'MongoDB',
     category: 'Database',
-    route: `${MAIN_URL_CDN}/mongodb.svg`,
-    wordmark: `${MAIN_URL_CDN}/mongodb-wordmark.svg`,
+    route: '/library/mongodb.svg',
+    wordmark: '/library/mongodb-wordmark.svg',
     url: 'https://www.mongodb.com/'
   },
   {
     title: 'Moon',
     category: 'Framework',
-    route: `${MAIN_URL_CDN}/moon.svg`,
+    route: '/library/moon.svg',
     url: 'https://moonjs.org/'
   },
   {
     title: 'Payload CMS',
     category: 'CMS',
     route: {
-      light: `${MAIN_URL_CDN}/payload.svg`,
-      dark: `${MAIN_URL_CDN}/payload_dark.svg`
+      light: '/library/payload.svg',
+      dark: '/library/payload_dark.svg'
     },
     url: 'https://payloadcms.com'
   },
   {
     title: 'Fly',
     category: 'Hosting',
-    route: `${MAIN_URL_CDN}/fly.svg`,
+    route: '/library/fly.svg',
     url: 'https://fly.io'
   },
   {
     title: 'LearnThis',
     category: 'Education',
-    route: `${MAIN_URL_CDN}/learnthis.svg`,
+    route: '/library/learnthis.svg',
     url: 'https://learnthisacademy.com'
   },
   {
     title: 'Visual Studio',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/visual-studio.svg`,
+    route: '/library/visual-studio.svg',
     url: 'https://visualstudio.microsoft.com'
   },
   {
     title: 'Chakra UI',
     category: 'Library',
-    route: `${MAIN_URL_CDN}/chakra-ui.svg`,
+    route: '/library/chakra-ui.svg',
     url: 'https://chakra-ui.com'
   },
   {
     title: 'Express.js',
     category: 'Framework',
     route: {
-      light: `${MAIN_URL_CDN}/expressjs.svg`,
-      dark: `${MAIN_URL_CDN}/expressjs_dark.svg`
+      light: '/library/expressjs.svg',
+      dark: '/library/expressjs_dark.svg'
     },
     url: 'https://expressjs.com'
   },
@@ -422,56 +421,56 @@ export const svgs: iSVG[] = [
     title: 'Fastify',
     category: 'Framework',
     route: {
-      light: `${MAIN_URL_CDN}/fastify.svg`,
-      dark: `${MAIN_URL_CDN}/fastify_dark.svg`
+      light: '/library/fastify.svg',
+      dark: '/library/fastify_dark.svg'
     },
     url: 'https://www.fastify.io'
   },
   {
     title: 'JavaScript',
     category: 'Language',
-    route: `${MAIN_URL_CDN}/javascript.svg`,
+    route: '/library/javascript.svg',
     url: 'https://developer.mozilla.org/docs/Web/JavaScript'
   },
   {
     title: 'jQuery',
     category: 'Library',
     route: {
-      light: `${MAIN_URL_CDN}/jquery.svg`,
-      dark: `${MAIN_URL_CDN}/jquery_dark.svg`
+      light: '/library/jquery.svg',
+      dark: '/library/jquery_dark.svg'
     },
     url: 'https://jquery.com'
   },
   {
     title: 'Rapid API',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/rapidapi.svg`,
+    route: '/library/rapidapi.svg',
     url: 'https://rapidapi.com'
   },
   {
     title: 'TypeScript',
     category: 'Language',
-    route: `${MAIN_URL_CDN}/typescript.svg`,
+    route: '/library/typescript.svg',
     url: 'https://www.typescriptlang.org'
   },
   {
     title: 'Bun',
     category: 'Library',
-    route: `${MAIN_URL_CDN}/bun.svg`,
+    route: '/library/bun.svg',
     url: 'https://bun.sh'
   },
   {
     title: 'Twilio',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/twilio.svg`,
+    route: '/library/twilio.svg',
     url: 'https://twilio.com'
   },
   {
     title: 'Arc',
     category: 'Social',
     route: {
-      light: `${MAIN_URL_CDN}/arc.svg`,
-      dark: `${MAIN_URL_CDN}/arc_dark.svg`
+      light: '/library/arc.svg',
+      dark: '/library/arc_dark.svg'
     },
     url: 'https://arc.dev'
   },
@@ -479,45 +478,45 @@ export const svgs: iSVG[] = [
     title: 'Arc',
     category: 'Fintech',
     route: {
-      light: `${MAIN_URL_CDN}/arc_fintech_light.svg`,
-      dark: `${MAIN_URL_CDN}/arc_fintech_dark.svg`
+      light: '/library/arc_fintech_light.svg',
+      dark: '/library/arc_fintech_dark.svg'
     },
     url: 'https://arc.tech'
   },
   {
     title: 'Qwik',
     category: 'Framework',
-    route: `${MAIN_URL_CDN}/qwik.svg`,
+    route: '/library/qwik.svg',
     url: 'https://qwik.builder.io/'
   },
   {
     title: 'Coinbase',
     category: 'Crypto',
-    route: `${MAIN_URL_CDN}/coinbase.svg`,
+    route: '/library/coinbase.svg',
     wordmark: {
-      light: `${MAIN_URL_CDN}/coinbase-wordmark-light.svg`,
-      dark: `${MAIN_URL_CDN}/coinbase-wordmark-dark.svg`
+      light: '/library/coinbase-wordmark-light.svg',
+      dark: '/library/coinbase-wordmark-dark.svg'
     },
     url: 'https://www.coinbase.com/'
   },
   {
     title: 'Authy',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/authy.svg`,
+    route: '/library/authy.svg',
     url: 'https://authy.com/'
   },
   {
     title: 'NestJS',
     category: 'Framework',
-    route: `${MAIN_URL_CDN}/nestjs.svg`,
+    route: '/library/nestjs.svg',
     url: 'https://nestjs.com/'
   },
   {
     title: 'Github Copilot',
     category: 'Software',
     route: {
-      light: `${MAIN_URL_CDN}/copilot.svg`,
-      dark: `${MAIN_URL_CDN}/copilot_dark.svg`
+      light: '/library/copilot.svg',
+      dark: '/library/copilot_dark.svg'
     },
     url: 'https://github.com/features/copilot'
   },
@@ -525,29 +524,29 @@ export const svgs: iSVG[] = [
     title: 'Railway',
     category: 'Software',
     route: {
-      light: `${MAIN_URL_CDN}/railway.svg`,
-      dark: `${MAIN_URL_CDN}/railway_dark.svg`
+      light: '/library/railway.svg',
+      dark: '/library/railway_dark.svg'
     },
     url: 'https://railway.app/'
   },
   {
     title: 'Docusaurus',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/docusaurus.svg`,
+    route: '/library/docusaurus.svg',
     url: 'https://docusaurus.io/'
   },
   {
     title: 'Twitch',
     category: 'Entertainment',
-    route: `${MAIN_URL_CDN}/twitch.svg`,
+    route: '/library/twitch.svg',
     url: 'https://twitch.tv'
   },
   {
     title: 'GoDaddy',
     category: 'Hosting',
     route: {
-      light: `${MAIN_URL_CDN}/godaddy.svg`,
-      dark: `${MAIN_URL_CDN}/godaddy_dark.svg`
+      light: '/library/godaddy.svg',
+      dark: '/library/godaddy_dark.svg'
     },
     url: 'https://www.godaddy.com/'
   },
@@ -555,29 +554,29 @@ export const svgs: iSVG[] = [
     title: 'Udemy',
     category: 'Education',
     route: {
-      light: `${MAIN_URL_CDN}/udemy.svg`,
-      dark: `${MAIN_URL_CDN}/udemy_dark.svg`
+      light: '/library/udemy.svg',
+      dark: '/library/udemy_dark.svg'
     },
     url: 'https://www.udemy.com/'
   },
   {
     title: 'GraphQL',
     category: 'Language',
-    route: `${MAIN_URL_CDN}/graphql.svg`,
+    route: '/library/graphql.svg',
     url: 'https://graphql.org/'
   },
   {
     title: 'GitLab',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/gitlab.svg`,
+    route: '/library/gitlab.svg',
     url: 'https://gitlab.com/'
   },
   {
     title: 'Prisma',
     category: 'Software',
     route: {
-      light: `${MAIN_URL_CDN}/prisma.svg`,
-      dark: `${MAIN_URL_CDN}/prisma_dark.svg`
+      light: '/library/prisma.svg',
+      dark: '/library/prisma_dark.svg'
     },
     url: 'https://prisma.io/'
   },
@@ -585,737 +584,737 @@ export const svgs: iSVG[] = [
     title: 'Go',
     category: 'Language',
     route: {
-      light: `${MAIN_URL_CDN}/golang.svg`,
-      dark: `${MAIN_URL_CDN}/golang_dark.svg`
+      light: '/library/golang.svg',
+      dark: '/library/golang_dark.svg'
     },
     url: 'https://go.dev/'
   },
   {
     title: 'Platzi',
     category: 'Education',
-    route: `${MAIN_URL_CDN}/platzi.svg`,
+    route: '/library/platzi.svg',
     url: 'https://platzi.com/'
   },
   {
     title: 'Coursera',
     category: 'Education',
-    route: `${MAIN_URL_CDN}/coursera.svg`,
+    route: '/library/coursera.svg',
     url: 'https://www.coursera.org/'
   },
   {
     title: 'Udacity',
     category: 'Education',
-    route: `${MAIN_URL_CDN}/udacity.svg`,
+    route: '/library/udacity.svg',
     url: 'https://www.udacity.com/'
   },
   {
     title: 'Kubernetes',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/kubernetes.svg`,
+    route: '/library/kubernetes.svg',
     url: 'https://kubernetes.io/'
   },
   {
     title: 'Docker',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/docker.svg`,
+    route: '/library/docker.svg',
     url: 'https://www.docker.com/'
   },
   {
     title: 'Amazon Web Services',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/aws.svg`,
+    route: '/library/aws.svg',
     url: 'https://aws.amazon.com/'
   },
   {
     title: 'Microsoft Azure',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/azure.svg`,
+    route: '/library/azure.svg',
     url: 'https://azure.microsoft.com/'
   },
   {
     title: 'Heroku',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/heroku.svg`,
+    route: '/library/heroku.svg',
     url: 'https://www.heroku.com/'
   },
   {
     title: 'JetBrains',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/jetbrains.svg`,
+    route: '/library/jetbrains.svg',
     url: 'https://www.jetbrains.com/'
   },
   {
     title: 'JetBrains Rider',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/rider.svg`,
+    route: '/library/rider.svg',
     url: 'https://www.jetbrains.com/rider/'
   },
   {
     title: 'PlanetScale',
     category: 'Database',
     route: {
-      light: `${MAIN_URL_CDN}/planetscale.svg`,
-      dark: `${MAIN_URL_CDN}/planetscale_dark.svg`
+      light: '/library/planetscale.svg',
+      dark: '/library/planetscale_dark.svg'
     },
     url: 'https://planetscale.com/'
   },
   {
     title: 'Playwright',
     category: 'Framework',
-    route: `${MAIN_URL_CDN}/playwright.svg`,
+    route: '/library/playwright.svg',
     url: 'https://playwright.dev/'
   },
   {
     title: 'Atlassian',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/atlassian.svg`,
+    route: '/library/atlassian.svg',
     url: 'https://www.atlassian.com/'
   },
   {
     title: 'Discourse',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/discourse.svg`,
+    route: '/library/discourse.svg',
     url: 'https://discourse.org/'
   },
   {
     title: 'Ember',
     category: 'Framework',
-    route: `${MAIN_URL_CDN}/ember.svg`,
+    route: '/library/ember.svg',
     url: 'https://emberjs.com/'
   },
   {
     title: 'Expo',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/expo.svg`,
+    route: '/library/expo.svg',
     url: 'https://expo.dev/'
   },
   {
     title: 'Flutter',
     category: 'Framework',
-    route: `${MAIN_URL_CDN}/flutter.svg`,
+    route: '/library/flutter.svg',
     url: 'https://flutter.dev/'
   },
   {
     title: 'Auth0',
     category: 'Library',
-    route: `${MAIN_URL_CDN}/auth0.svg`,
+    route: '/library/auth0.svg',
     url: 'https://auth0.com/'
   },
   {
     title: 'Fresh',
     category: 'Framework',
-    route: `${MAIN_URL_CDN}/fresh.svg`,
+    route: '/library/fresh.svg',
     url: 'https://fresh.deno.dev/'
   },
   {
     title: 'Git',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/git.svg`,
+    route: '/library/git.svg',
     url: 'https://git-scm.com/'
   },
   {
     title: 'Hostgator',
     category: 'Hosting',
-    route: `${MAIN_URL_CDN}/hostgator.svg`,
+    route: '/library/hostgator.svg',
     url: 'https://www.hostgator.com/'
   },
   {
     title: 'IntelliJ IDEA',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/intellijidea.svg`,
+    route: '/library/intellijidea.svg',
     url: 'https://www.jetbrains.com/idea/'
   },
   {
     title: 'Jasmine',
     category: 'Framework',
-    route: `${MAIN_URL_CDN}/jasmine.svg`,
+    route: '/library/jasmine.svg',
     url: 'https://jasmine.github.io/'
   },
   {
     title: 'Java',
     category: 'Language',
-    route: `${MAIN_URL_CDN}/java.svg`,
+    route: '/library/java.svg',
     url: 'https://www.java.com/'
   },
   {
     title: 'Jest',
     category: 'Framework',
-    route: `${MAIN_URL_CDN}/jest.svg`,
+    route: '/library/jest.svg',
     url: 'https://jestjs.io/'
   },
   {
     title: 'JetBrains',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/jetbrainsSolid.svg`,
+    route: '/library/jetbrainsSolid.svg',
     url: 'https://www.jetbrains.com/'
   },
   {
     title: 'KrakenJS',
     category: 'Framework',
-    route: `${MAIN_URL_CDN}/krakenjs.svg`,
+    route: '/library/krakenjs.svg',
     url: 'https://krakenjs.com/'
   },
   {
     title: 'Laravel',
     category: 'Framework',
-    route: `${MAIN_URL_CDN}/laravel.svg`,
+    route: '/library/laravel.svg',
     url: 'https://laravel.com/'
   },
   {
     title: 'MariaDB',
     category: 'Database',
-    route: `${MAIN_URL_CDN}/mariadb.svg`,
+    route: '/library/mariadb.svg',
     url: 'https://mariadb.org/'
   },
   {
     title: 'Material UI',
     category: 'Framework',
-    route: `${MAIN_URL_CDN}/materialui.svg`,
+    route: '/library/materialui.svg',
     url: 'https://mui.com/'
   },
   {
     title: 'MySQL',
     category: 'Database',
-    route: `${MAIN_URL_CDN}/mysql.svg`,
+    route: '/library/mysql.svg',
     url: 'https://www.mysql.com/'
   },
   {
     title: 'Parcel',
     category: 'Compiler',
-    route: `${MAIN_URL_CDN}/parcel.svg`,
+    route: '/library/parcel.svg',
     url: 'https://parceljs.org/'
   },
   {
     title: 'PM2',
     category: 'Framework',
-    route: `${MAIN_URL_CDN}/pm2.svg`,
+    route: '/library/pm2.svg',
     url: 'https://pm2.io/'
   },
   {
     title: 'PostgreSQL',
     category: 'Database',
-    route: `${MAIN_URL_CDN}/postgresql.svg`,
+    route: '/library/postgresql.svg',
     url: 'https://www.postgresql.org/'
   },
   {
     title: 'React Query',
     category: 'Framework',
-    route: `${MAIN_URL_CDN}/reactquery.svg`,
+    route: '/library/reactquery.svg',
     url: 'https://tanstack.com/query/v4'
   },
   {
     title: 'Devto',
     category: 'Community',
     route: {
-      light: `${MAIN_URL_CDN}/devto-light.svg`,
-      dark: `${MAIN_URL_CDN}/devto-dark.svg`
+      light: '/library/devto-light.svg',
+      dark: '/library/devto-dark.svg'
     },
     url: 'https://dev.to/'
   },
   {
     title: 'Redis',
     category: 'Database',
-    route: `${MAIN_URL_CDN}/redis.svg`,
+    route: '/library/redis.svg',
     url: 'https://redis.io/'
   },
   {
     title: 'RedwoodJS',
     category: 'Framework',
-    route: `${MAIN_URL_CDN}/redwoodjs.svg`,
+    route: '/library/redwoodjs.svg',
     url: 'https://redwoodjs.com/'
   },
   {
     title: 'Ruby',
     category: 'Language',
-    route: `${MAIN_URL_CDN}/ruby.svg`,
+    route: '/library/ruby.svg',
     url: 'https://www.ruby-lang.org/'
   },
   {
     title: 'Scala',
     category: 'Language',
-    route: `${MAIN_URL_CDN}/scala.svg`,
+    route: '/library/scala.svg',
     url: 'https://www.scala-lang.org/'
   },
   {
     title: 'Sequelize',
     category: 'Framework',
-    route: `${MAIN_URL_CDN}/sequelize.svg`,
+    route: '/library/sequelize.svg',
     url: 'https://sequelize.org/'
   },
   {
     title: 'Spinnaker',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/spinnaker.svg`,
+    route: '/library/spinnaker.svg',
     url: 'https://spinnaker.io/'
   },
   {
     title: 'SQLite',
     category: 'Database',
-    route: `${MAIN_URL_CDN}/sqlite.svg`,
+    route: '/library/sqlite.svg',
     url: 'https://www.sqlite.org/'
   },
   {
     title: 'Swagger',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/swagger.svg`,
+    route: '/library/swagger.svg',
     url: 'https://swagger.io/'
   },
   {
     title: 'Swift',
     category: 'Language',
-    route: `${MAIN_URL_CDN}/swift.svg`,
+    route: '/library/swift.svg',
     url: 'https://swift.org/'
   },
   {
     title: 'TypeORM',
     category: 'Database',
-    route: `${MAIN_URL_CDN}/typeorm.svg`,
+    route: '/library/typeorm.svg',
     url: 'https://typeorm.io/'
   },
   {
     title: 'Unity',
     category: 'Software',
     route: {
-      light: `${MAIN_URL_CDN}/unity.svg`,
-      dark: `${MAIN_URL_CDN}/unity_dark.svg`
+      light: '/library/unity.svg',
+      dark: '/library/unity_dark.svg'
     },
     url: 'https://unity.com/'
   },
   {
     title: 'Vim',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/vim.svg`,
+    route: '/library/vim.svg',
     url: 'https://www.vim.org/'
   },
   {
     title: 'Pocketbase',
     category: 'Database',
-    route: `${MAIN_URL_CDN}/pocket-base.svg`,
+    route: '/library/pocket-base.svg',
     url: 'https://pocketbase.io/'
   },
   {
     title: 'OpenBootcamp',
     category: 'Education',
-    route: `${MAIN_URL_CDN}/openbootcamp.svg`,
+    route: '/library/openbootcamp.svg',
     url: 'https://open-bootcamp.com/'
   },
   {
     title: 'Digital Ocean',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/digitalocean.svg`,
+    route: '/library/digitalocean.svg',
     url: 'https://www.digitalocean.com/'
   },
   {
     title: 'Disney+',
     category: 'Entertainment',
-    route: `${MAIN_URL_CDN}/disneyplus.svg`,
+    route: '/library/disneyplus.svg',
     url: 'https://www.disneyplus.com/'
   },
   {
     title: 'React Router',
     category: 'Library',
-    route: `${MAIN_URL_CDN}/reactrouter.svg`,
+    route: '/library/reactrouter.svg',
     url: 'https://reactrouter.com/en/main'
   },
   {
     title: 'AMP',
     category: 'Library',
-    route: `${MAIN_URL_CDN}/amp.svg`,
+    route: '/library/amp.svg',
     url: 'https://amp.dev/'
   },
   {
     title: 'Developer Student Club',
     category: 'Community',
-    route: `${MAIN_URL_CDN}/gdsc.svg`,
+    route: '/library/gdsc.svg',
     url: 'https://gdsc.community.dev/'
   },
   {
     title: 'Brave Browser',
     category: 'Browser',
-    route: `${MAIN_URL_CDN}/brave.svg`,
+    route: '/library/brave.svg',
     url: 'https://brave.com/'
   },
   {
     title: 'Eclipse IDE',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/eclipse.svg`,
+    route: '/library/eclipse.svg',
     url: 'https://www.eclipse.org/'
   },
   {
     title: 'Three.js',
     category: 'Library',
     route: {
-      light: `${MAIN_URL_CDN}/threejs-light.svg`,
-      dark: `${MAIN_URL_CDN}/threejs-dark.svg`
+      light: '/library/threejs-light.svg',
+      dark: '/library/threejs-dark.svg'
     },
     url: 'https://threejs.org/'
   },
   {
     title: 'HTML5',
     category: 'Language',
-    route: `${MAIN_URL_CDN}/html5.svg`,
+    route: '/library/html5.svg',
     url: 'https://es.wikipedia.org/wiki/HTML5'
   },
   {
     title: 'CSS',
     category: 'Language',
-    route: `${MAIN_URL_CDN}/css.svg`,
+    route: '/library/css.svg',
     url: 'https://es.wikipedia.org/wiki/CSS'
   },
   {
     title: 'midudev',
     category: 'Community',
-    route: `${MAIN_URL_CDN}/midudev.svg`,
+    route: '/library/midudev.svg',
     url: 'https://midu.dev'
   },
   {
     title: 'Apple',
     category: 'Software',
     route: {
-      light: `${MAIN_URL_CDN}/apple.svg`,
-      dark: `${MAIN_URL_CDN}/apple_dark.svg`
+      light: '/library/apple.svg',
+      dark: '/library/apple_dark.svg'
     },
     url: 'https://www.apple.com'
   },
   {
     title: 'Windows',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/windows.svg`,
+    route: '/library/windows.svg',
     url: 'https://www.microsoft.com/windows'
   },
   {
     title: 'Python',
     category: 'Language',
-    route: `${MAIN_URL_CDN}/python.svg`,
+    route: '/library/python.svg',
     url: 'https://www.python.org/'
   },
   {
     title: 'Solidity',
     category: 'Language',
-    route: `${MAIN_URL_CDN}/solidity.svg`,
+    route: '/library/solidity.svg',
     url: 'https://soliditylang.org/'
   },
   {
     title: 'Turbopack',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/turbopack.svg`,
+    route: '/library/turbopack.svg',
     url: 'https://turbo.build/'
   },
   {
     title: 'Builder',
     category: 'CMS',
-    route: `${MAIN_URL_CDN}/builder.svg`,
+    route: '/library/builder.svg',
     url: 'https://builder.io/'
   },
   {
     title: 'Babel',
     category: 'Compiler',
-    route: `${MAIN_URL_CDN}/babel.svg`,
+    route: '/library/babel.svg',
     url: 'https://babeljs.io/'
   },
   {
     title: 'Surrealdb',
     category: 'Database',
-    route: `${MAIN_URL_CDN}/surrealdb.svg`,
+    route: '/library/surrealdb.svg',
     url: 'https://surrealdb.com/'
   },
   {
     title: 'Jetbrains Space',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/jetbrains-space.svg`,
+    route: '/library/jetbrains-space.svg',
     url: 'https://www.jetbrains.com/space/'
   },
   {
     title: 'Stimulus',
     category: 'Framework',
-    route: `${MAIN_URL_CDN}/stimulus.svg`,
+    route: '/library/stimulus.svg',
     url: 'https://stimulus.hotwired.dev/'
   },
   {
     title: 'WindiCSS',
     category: 'Framework',
-    route: `${MAIN_URL_CDN}/windicss.svg`,
+    route: '/library/windicss.svg',
     url: 'https://windicss.org/'
   },
   {
     title: 'Mastodon',
     category: 'Social',
-    route: `${MAIN_URL_CDN}/mastodon.svg`,
+    route: '/library/mastodon.svg',
     url: 'https://joinmastodon.org/'
   },
   {
     title: 'Upstash',
     category: 'Database',
-    route: `${MAIN_URL_CDN}/upstash.svg`,
+    route: '/library/upstash.svg',
     url: 'https://upstash.com/'
   },
   {
     title: 'Storyblok',
     category: 'CMS',
-    route: `${MAIN_URL_CDN}/storyblok.svg`,
+    route: '/library/storyblok.svg',
     url: 'https://www.storyblok.com/'
   },
   {
     title: 'Cloudflare Workers',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/cloudflare-workers.svg`,
+    route: '/library/cloudflare-workers.svg',
     url: 'https://workers.cloudflare.com/'
   },
   {
     title: 'Cloudflare',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/cloudflare.svg`,
+    route: '/library/cloudflare.svg',
     url: 'https://www.cloudflare.com/'
   },
   {
     title: 'Bing',
     category: 'Browser',
-    route: `${MAIN_URL_CDN}/bing.svg`,
+    route: '/library/bing.svg',
     url: 'https://www.bing.com/'
   },
   {
     title: 'Cloudinary',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/cloudinary.svg`,
+    route: '/library/cloudinary.svg',
     url: 'https://cloudinary.com/'
   },
   {
     title: 'Dart',
     category: 'Language',
-    route: `${MAIN_URL_CDN}/dart.svg`,
+    route: '/library/dart.svg',
     url: 'https://dart.dev/'
   },
   {
     title: 'hCaptcha',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/hcaptcha.svg`,
+    route: '/library/hcaptcha.svg',
     url: 'https://www.hcaptcha.com/'
   },
   {
     title: 'Appwrite',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/appwrite.svg`,
+    route: '/library/appwrite.svg',
     url: 'https://appwrite.io/'
   },
   {
     title: 'Loom',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/loom.svg`,
+    route: '/library/loom.svg',
     url: 'https://www.loom.com/'
   },
   {
     title: 'Hulu',
     category: 'Entertainment',
     route: {
-      light: `${MAIN_URL_CDN}/hulu.svg`,
-      dark: `${MAIN_URL_CDN}/hulu-dark.svg`
+      light: '/library/hulu.svg',
+      dark: '/library/hulu-dark.svg'
     },
     url: 'https://www.hulu.com/'
   },
   {
     title: 'Stackblitz',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/stackblitz.svg`,
+    route: '/library/stackblitz.svg',
     url: 'https://stackblitz.com/'
   },
   {
     title: 'Binance',
     category: 'Crypto',
-    route: `${MAIN_URL_CDN}/binance.svg`,
+    route: '/library/binance.svg',
     url: 'https://binance.com/'
   },
   {
     title: 'Messenger',
     category: 'Social',
-    route: `${MAIN_URL_CDN}/messenger.svg`,
+    route: '/library/messenger.svg',
     url: 'https://www.messenger.com/'
   },
   {
     title: 'NHost',
     category: 'Hosting',
-    route: `${MAIN_URL_CDN}/nhost.svg`,
+    route: '/library/nhost.svg',
     url: 'https://nhost.io/'
   },
   {
     title: 'Medusa',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/medusa.svg`,
+    route: '/library/medusa.svg',
     url: 'https://medusajs.com/'
   },
   {
     title: 'WordPress',
     category: ['Software', 'CMS'],
-    route: `${MAIN_URL_CDN}/wordpress.svg`,
+    route: '/library/wordpress.svg',
     url: 'https://wordpress.org/'
   },
   {
     title: 'Microsoft',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/microsoft.svg`,
+    route: '/library/microsoft.svg',
     url: 'https://www.microsoft.com/'
   },
   {
     title: 'Elementor',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/elementor.svg`,
+    route: '/library/elementor.svg',
     url: 'https://elementor.com/'
   },
   {
     title: 'Kick',
     category: 'Entertainment',
     route: {
-      light: `${MAIN_URL_CDN}/kick-light.svg`,
-      dark: `${MAIN_URL_CDN}/kick-dark.svg`
+      light: '/library/kick-light.svg',
+      dark: '/library/kick-dark.svg'
     },
     url: 'https://kick.com/'
   },
   {
     title: 'Prime video',
     category: 'Entertainment',
-    route: `${MAIN_URL_CDN}/prime-video.svg`,
+    route: '/library/prime-video.svg',
     url: 'https://primevideo.com/'
   },
   {
     title: 'Chrome',
     category: 'Browser',
-    route: `${MAIN_URL_CDN}/chrome.svg`,
+    route: '/library/chrome.svg',
     url: 'https://chrome.com/'
   },
   {
     title: 'RxJS',
     category: 'Library',
-    route: `${MAIN_URL_CDN}/rxjs.svg`,
+    route: '/library/rxjs.svg',
     url: 'https://rxjs.dev/'
   },
   {
     title: 'Electron',
     category: 'Library',
-    route: `${MAIN_URL_CDN}/electron.svg`,
+    route: '/library/electron.svg',
     url: 'https://www.electronjs.org'
   },
   {
     title: 'Redux',
     category: 'Library',
-    route: `${MAIN_URL_CDN}/redux.svg`,
+    route: '/library/redux.svg',
     url: 'https://redux.js.org/'
   },
   {
     title: 'Trust Wallet',
     category: 'Crypto',
-    route: `${MAIN_URL_CDN}/trust.svg`,
+    route: '/library/trust.svg',
     url: 'https://trustwallet.com/'
   },
   {
     title: 'Php',
     category: 'Language',
     route: {
-      light: `${MAIN_URL_CDN}/php.svg`,
-      dark: `${MAIN_URL_CDN}/php_dark.svg`
+      light: '/library/php.svg',
+      dark: '/library/php_dark.svg'
     },
     url: 'https://www.php.net/'
   },
   {
     title: 'Hugo',
     category: 'Framework',
-    route: `${MAIN_URL_CDN}/hugo.svg`,
+    route: '/library/hugo.svg',
     url: 'https://gohugo.io/'
   },
   {
     title: 'Sass',
     category: 'Language',
-    route: `${MAIN_URL_CDN}/sass.svg`,
+    route: '/library/sass.svg',
     url: 'https://sass-lang.com/'
   },
   {
     title: 'Arc',
     category: 'Browser',
-    route: `${MAIN_URL_CDN}/arc_browser.svg`,
+    route: '/library/arc_browser.svg',
     url: 'https://arc.net/'
   },
   {
     title: 'Pinia',
     category: 'Library',
-    route: `${MAIN_URL_CDN}/pinia.svg`,
+    route: '/library/pinia.svg',
     url: 'https://pinia.vuejs.org/'
   },
   {
     title: 'Neon',
     category: 'Database',
-    route: `${MAIN_URL_CDN}/neon.svg`,
+    route: '/library/neon.svg',
     url: 'https://neon.tech/'
   },
   {
     title: 'Infojobs',
     category: 'Social',
-    route: `${MAIN_URL_CDN}/infojobs-logo.svg`,
+    route: '/library/infojobs-logo.svg',
     url: 'https://www.infojobs.net/'
   },
   {
     title: 'Linear',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/linear.svg`,
+    route: '/library/linear.svg',
     url: 'https://linear.app/'
   },
   {
     title: 'Tor',
     category: 'Browser',
-    route: `${MAIN_URL_CDN}/tor.svg`,
+    route: '/library/tor.svg',
     url: 'https://www.torproject.org/'
   },
   {
     title: 'Codesandbox',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/codesandbox-square.svg`,
+    route: '/library/codesandbox-square.svg',
     url: 'https://codesandbox.io/'
   },
   {
     title: 'Skype',
     category: 'Social',
-    route: `${MAIN_URL_CDN}/skype.svg`,
+    route: '/library/skype.svg',
     url: 'https://www.skype.com/'
   },
   {
     title: 'Tauri',
     category: 'Library',
-    route: `${MAIN_URL_CDN}/tauri.svg`,
+    route: '/library/tauri.svg',
     url: 'https://tauri.app/'
   },
   {
     title: 'WebKit',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/webkit.svg`,
+    route: '/library/webkit.svg',
     url: 'https://webkit.org/'
   },
   {
     title: 'Google Bard',
     category: 'AI',
-    route: `${MAIN_URL_CDN}/bard.svg`,
+    route: '/library/bard.svg',
     url: 'https://bard.google.com/'
   },
   {
     title: 'Obsidian',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/obsidian.svg`,
+    route: '/library/obsidian.svg',
     url: 'https://obsidian.md/'
   },
   {
     title: 'Zod',
     category: 'Library',
-    route: `${MAIN_URL_CDN}/zod.svg`,
+    route: '/library/zod.svg',
     url: 'https://zod.dev/'
   },
   {
     title: 'Dreamweaver',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/dw.svg`,
+    route: '/library/dw.svg',
     url: 'https://www.adobe.com/products/dreamweaver.html'
   },
   {
     title: 'OpenAI',
     category: 'AI',
     route: {
-      light: `${MAIN_URL_CDN}/openai.svg`,
-      dark: `${MAIN_URL_CDN}/openai_dark.svg`
+      light: '/library/openai.svg',
+      dark: '/library/openai_dark.svg'
     },
     url: 'https://openai.com/'
   },
@@ -1323,8 +1322,8 @@ export const svgs: iSVG[] = [
     title: 'Threads',
     category: 'Social',
     route: {
-      light: `${MAIN_URL_CDN}/threads.svg`,
-      dark: `${MAIN_URL_CDN}/threads_dark.svg`
+      light: '/library/threads.svg',
+      dark: '/library/threads_dark.svg'
     },
     url: 'https://threads.net/'
   },
@@ -1332,319 +1331,319 @@ export const svgs: iSVG[] = [
     title: 'Instagram',
     category: 'Social',
     route: {
-      light: `${MAIN_URL_CDN}/instagram.svg`,
-      dark: `${MAIN_URL_CDN}/instagram_dark.svg`
+      light: '/library/instagram.svg',
+      dark: '/library/instagram_dark.svg'
     },
     url: 'https://www.instagram.com/'
   },
   {
     title: 'VueUse',
     category: 'Library',
-    route: `${MAIN_URL_CDN}/vueuse.svg`,
+    route: '/library/vueuse.svg',
     url: 'https://vueuse.org/'
   },
   {
     title: 'Microsoft SQL Server ',
     category: 'Database',
-    route: `${MAIN_URL_CDN}/sql-server.svg`,
+    route: '/library/sql-server.svg',
     url: 'https://www.microsoft.com/en-us/sql-server/'
   },
   {
     title: 'Hono',
     category: 'Framework',
-    route: `${MAIN_URL_CDN}/hono.svg`,
+    route: '/library/hono.svg',
     url: 'https://hono.dev/'
   },
   {
     title: 'Million',
     category: 'Library',
-    route: `${MAIN_URL_CDN}/million.svg`,
+    route: '/library/million.svg',
     url: 'https://million.dev/'
   },
   {
     title: 'PandaCSS',
     category: 'Library',
-    route: `${MAIN_URL_CDN}/pandacss.svg`,
+    route: '/library/pandacss.svg',
     url: 'https://panda-css.com/'
   },
   {
     title: 'Pulumi',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/pulumi.svg`,
+    route: '/library/pulumi.svg',
     url: 'https://www.pulumi.com/'
   },
   {
     title: 'FastAPI',
     category: 'Framework',
-    route: `${MAIN_URL_CDN}/fastapi.svg`,
+    route: '/library/fastapi.svg',
     url: 'https://fastapi.tiangolo.com/'
   },
   {
     title: 'Codium',
     category: 'AI',
-    route: `${MAIN_URL_CDN}/codium.svg`,
+    route: '/library/codium.svg',
     url: 'https://www.codium.ai/'
   },
   {
     title: 'Crossplane',
     category: 'Framework',
-    route: `${MAIN_URL_CDN}/crossplane.svg`,
+    route: '/library/crossplane.svg',
     url: 'https://crossplane.io/'
   },
   {
     title: 'Volta',
     category: 'Software',
     route: {
-      light: `${MAIN_URL_CDN}/volta-dark.svg`,
-      dark: `${MAIN_URL_CDN}/volta-light.svg`
+      light: '/library/volta-dark.svg',
+      dark: '/library/volta-light.svg'
     },
     url: 'https://volta.net/'
   },
   {
     title: 'Typesense',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/typesense.svg`,
+    route: '/library/typesense.svg',
     url: 'https://typesense.org/'
   },
   {
     title: 'Bitcoin',
     category: 'Crypto',
-    route: `${MAIN_URL_CDN}/btc.svg`,
+    route: '/library/btc.svg',
     url: 'https://bitcoin.org/'
   },
   {
     title: 'Ethereum',
     category: 'Crypto',
-    route: `${MAIN_URL_CDN}/eth.svg`,
+    route: '/library/eth.svg',
     url: 'https://ethereum.org/'
   },
   {
     title: 'Solana',
     category: 'Crypto',
-    route: `${MAIN_URL_CDN}/sol.svg`,
+    route: '/library/sol.svg',
     url: 'https://solana.com/'
   },
   {
     title: 'Dogecoin',
     category: 'Crypto',
-    route: `${MAIN_URL_CDN}/doge.svg`,
+    route: '/library/doge.svg',
     url: 'https://dogecoin.com/'
   },
   {
     title: 'XRP',
     category: 'Crypto',
-    route: `${MAIN_URL_CDN}/xrp.svg`,
+    route: '/library/xrp.svg',
     url: 'https://xrpl.org/'
   },
   {
     title: 'BNB',
     category: 'Crypto',
-    route: `${MAIN_URL_CDN}/bnb.svg`,
+    route: '/library/bnb.svg',
     url: 'https://www.bnbchain.org/'
   },
   {
     title: 'Link',
     category: 'Crypto',
-    route: `${MAIN_URL_CDN}/link.svg`,
+    route: '/library/link.svg',
     wordmark: {
-      light: `${MAIN_URL_CDN}/link-wordmark-light.svg`,
-      dark: `${MAIN_URL_CDN}/link-wordmark-dark.svg`
+      light: '/library/link-wordmark-light.svg',
+      dark: '/library/link-wordmark-dark.svg'
     },
     url: 'https://chain.link/'
   },
   {
     title: 'Polygon',
     category: 'Crypto',
-    route: `${MAIN_URL_CDN}/matic.svg`,
+    route: '/library/matic.svg',
     url: 'https://polygon.technology/'
   },
   {
     title: 'Algorand',
     category: 'Crypto',
-    route: `${MAIN_URL_CDN}/algorand.svg`,
+    route: '/library/algorand.svg',
     url: 'https://algorand.org/'
   },
   {
     title: 'Tether',
     category: 'Crypto',
-    route: `${MAIN_URL_CDN}/tether.svg`,
+    route: '/library/tether.svg',
     url: 'https://tether.to/'
   },
   {
     title: 'X',
     category: 'Social',
     route: {
-      light: `${MAIN_URL_CDN}/x.svg`,
-      dark: `${MAIN_URL_CDN}/x_dark.svg`
+      light: '/library/x.svg',
+      dark: '/library/x_dark.svg'
     },
     url: 'https://x.com'
   },
   {
     title: 'Adobe',
     category: 'Design',
-    route: `${MAIN_URL_CDN}/adobe.svg`,
+    route: '/library/adobe.svg',
     url: 'https://x.com'
   },
   {
     title: 'After Effects',
     category: 'Design',
-    route: `${MAIN_URL_CDN}/after-effects.svg`,
+    route: '/library/after-effects.svg',
     url: 'https://x.com'
   },
   {
     title: 'Canva',
     category: 'Design',
-    route: `${MAIN_URL_CDN}/canva.svg`,
+    route: '/library/canva.svg',
     url: 'https://x.com'
   },
   {
     title: 'Illustrator',
     category: 'Design',
-    route: `${MAIN_URL_CDN}/illustrator.svg`,
+    route: '/library/illustrator.svg',
     url: 'https://x.com'
   },
   {
     title: 'InDesign',
     category: 'Design',
-    route: `${MAIN_URL_CDN}/indesign.svg`,
+    route: '/library/indesign.svg',
     url: 'https://x.com'
   },
   {
     title: 'Lightroom',
     category: 'Design',
-    route: `${MAIN_URL_CDN}/lightroom.svg`,
+    route: '/library/lightroom.svg',
     url: 'https://x.com'
   },
   {
     title: 'Photoshop',
     category: 'Design',
-    route: `${MAIN_URL_CDN}/photoshop.svg`,
+    route: '/library/photoshop.svg',
     url: 'https://x.com'
   },
   {
     title: 'Premiere',
     category: 'Design',
-    route: `${MAIN_URL_CDN}/premiere.svg`,
+    route: '/library/premiere.svg',
     url: 'https://www.adobe.com/es/products/premiere'
   },
   {
     title: 'VK',
     category: 'Social',
-    route: `${MAIN_URL_CDN}/vk.svg`,
+    route: '/library/vk.svg',
     url: 'https://vk.com'
   },
   {
     title: 'Hoppscotch',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/hoppscotch.svg`,
+    route: '/library/hoppscotch.svg',
     url: 'https://hoppscotch.com'
   },
   {
     title: 'Dub',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/dub.svg`,
-    wordmark: `${MAIN_URL_CDN}/dub-wordmark.svg`,
+    route: '/library/dub.svg',
+    wordmark: '/library/dub-wordmark.svg',
     url: 'https://dub.co'
   },
   {
     title: 'Opera',
     category: 'Browser',
-    route: `${MAIN_URL_CDN}/opera.svg`,
+    route: '/library/opera.svg',
     url: 'https://www.opera.com'
   },
   {
     title: 'Salesforce',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/salesforce.svg`,
+    route: '/library/salesforce.svg',
     url: 'https://www.salesforce.com'
   },
   {
     title: 'Unreal Engine',
     category: 'Software',
     route: {
-      light: `${MAIN_URL_CDN}/unreal_engine.svg`,
-      dark: `${MAIN_URL_CDN}/unreal_engine_dark.svg`
+      light: '/library/unreal_engine.svg',
+      dark: '/library/unreal_engine_dark.svg'
     },
     url: 'https://www.unrealengine.com/'
   },
   {
     title: 'Godot Engine',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/godot_engine.svg`,
+    route: '/library/godot_engine.svg',
     url: 'https://godotengine.org/'
   },
   {
     title: 'Datadog',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/datadog.svg`,
+    route: '/library/datadog.svg',
     url: 'https://www.datadoghq.com/'
   },
   {
     title: 'Tron',
     category: 'Crypto',
-    route: `${MAIN_URL_CDN}/tron.svg`,
+    route: '/library/tron.svg',
     url: 'https://tron.network/'
   },
   {
     title: 'Randevum',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/randevum.svg`,
+    route: '/library/randevum.svg',
     url: 'https://www.randevum.co'
   },
   {
     title: 'Chromium',
     category: 'Browser',
-    route: `${MAIN_URL_CDN}/chromium.svg`,
+    route: '/library/chromium.svg',
     url: 'https://www.chromium.org'
   },
   {
     title: 'Edge',
     category: 'Browser',
-    route: `${MAIN_URL_CDN}/edge.svg`,
+    route: '/library/edge.svg',
     url: 'https://www.microsoft.com/en-us/edge'
   },
   {
     title: 'Safari',
     category: 'Browser',
-    route: `${MAIN_URL_CDN}/safari.svg`,
+    route: '/library/safari.svg',
     url: 'https://www.apple.com/safari'
   },
   {
     title: 'Vivaldi',
     category: 'Browser',
-    route: `${MAIN_URL_CDN}/vivaldi.svg`,
+    route: '/library/vivaldi.svg',
     url: 'https://vivaldi.com'
   },
   {
     title: 'Beacon',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/Beacon-Logo.svg`,
+    route: '/library/Beacon-Logo.svg',
     url: 'https://www.beacon.com'
   },
   {
     title: 'Affinity Designer',
     category: 'Design',
-    route: `${MAIN_URL_CDN}/affinity_designer.svg`,
+    route: '/library/affinity_designer.svg',
     url: 'https://affinity.serif.com/en-us/designer/'
   },
   {
     title: 'Affinity Photo',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/affinity_photo.svg`,
+    route: '/library/affinity_photo.svg',
     url: 'https://affinity.serif.com/en-us/photo/'
   },
   {
     title: 'Affinity Publisher',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/affinity_publisher.svg`,
+    route: '/library/affinity_publisher.svg',
     url: 'https://affinity.serif.com/en-us/publisher/'
   },
   {
     title: 'Roblox',
     category: 'Software',
     route: {
-      dark: `${MAIN_URL_CDN}/roblox.svg`,
-      light: `${MAIN_URL_CDN}/roblox_light.svg`
+      dark: '/library/roblox.svg',
+      light: '/library/roblox_light.svg'
     },
     url: 'https://www.roblox.com/'
   },
@@ -1652,8 +1651,8 @@ export const svgs: iSVG[] = [
     title: 'Stately.ai',
     category: 'Software',
     route: {
-      light: `${MAIN_URL_CDN}/stately.svg`,
-      dark: `${MAIN_URL_CDN}/stately_dark.svg`
+      light: '/library/stately.svg',
+      dark: '/library/stately_dark.svg'
     },
     url: 'https://stately.ai/'
   },
@@ -1661,89 +1660,89 @@ export const svgs: iSVG[] = [
     title: 'XState',
     category: 'Library',
     route: {
-      light: `${MAIN_URL_CDN}/xstate.svg`,
-      dark: `${MAIN_URL_CDN}/xstate_dark.svg`
+      light: '/library/xstate.svg',
+      dark: '/library/xstate_dark.svg'
     },
     url: 'https://github.com/statelyai/xstate'
   },
   {
     title: 'Hashnode',
     category: 'Social',
-    route: `${MAIN_URL_CDN}/hashnode.svg`,
+    route: '/library/hashnode.svg',
     url: 'https://hashnode.com'
   },
   {
     title: 'Rowy',
     category: 'CMS',
-    route: `${MAIN_URL_CDN}/rowy.svg`,
+    route: '/library/rowy.svg',
     url: 'https://www.rowy.io/'
   },
   {
     title: 'Cal.com',
     category: 'Software',
     route: {
-      light: `${MAIN_URL_CDN}/cal.svg`,
-      dark: `${MAIN_URL_CDN}/cal_dark.svg`
+      light: '/library/cal.svg',
+      dark: '/library/cal_dark.svg'
     },
     url: 'https://cal.com'
   },
   {
     title: 'Calendly',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/calendly.svg`,
+    route: '/library/calendly.svg',
     url: 'https://calendly.com/'
   },
   {
     title: 'Mintlify',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/mintlify.svg`,
+    route: '/library/mintlify.svg',
     url: 'https://mintlify.com/'
   },
   {
     title: 'Patreon',
     category: 'Social',
     route: {
-      light: `${MAIN_URL_CDN}/patreon.svg`,
-      dark: `${MAIN_URL_CDN}/patreon_dark.svg`
+      light: '/library/patreon.svg',
+      dark: '/library/patreon_dark.svg'
     },
     url: 'https://www.patreon.com/'
   },
   {
     title: 'Peerlist',
     category: 'Social',
-    route: `${MAIN_URL_CDN}/peerlist.svg`,
+    route: '/library/peerlist.svg',
     url: 'https://www.peerlist.io/'
   },
   {
     title: 'Product Hunt',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/producthunt.svg`,
+    route: '/library/producthunt.svg',
     url: 'https://www.producthunt.com/'
   },
   {
     title: 'Remotion',
     category: 'Framework',
-    route: `${MAIN_URL_CDN}/remotion.svg`,
+    route: '/library/remotion.svg',
     url: 'https://www.remotion.dev/'
   },
   {
     title: 'Warp',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/warp.svg`,
+    route: '/library/warp.svg',
     url: 'https://www.warp.dev/'
   },
   {
     title: 'SST',
     category: 'Framework',
-    route: `${MAIN_URL_CDN}/sst.svg`,
+    route: '/library/sst.svg',
     url: 'https://sst.dev/'
   },
   {
     title: 'Documenso',
     category: 'Software',
     route: {
-      light: `${MAIN_URL_CDN}/documenso.svg`,
-      dark: `${MAIN_URL_CDN}/documenso_dark.svg`
+      light: '/library/documenso.svg',
+      dark: '/library/documenso_dark.svg'
     },
     url: 'https://documenso.com'
   },
@@ -1751,53 +1750,53 @@ export const svgs: iSVG[] = [
     title: 'Bash',
     category: 'Language',
     route: {
-      light: `${MAIN_URL_CDN}/bash.svg`,
-      dark: `${MAIN_URL_CDN}/bash_dark.svg`
+      light: '/library/bash.svg',
+      dark: '/library/bash_dark.svg'
     },
     url: 'https://www.gnu.org/software/bash/'
   },
   {
     title: 'C',
     category: 'Language',
-    route: `${MAIN_URL_CDN}/c.svg`,
+    route: '/library/c.svg',
     url: 'https://en.wikipedia.org/wiki/C_(programming_language)'
   },
   {
     title: 'C++',
     category: 'Language',
-    route: `${MAIN_URL_CDN}/c++.svg`,
+    route: '/library/c++.svg',
     url: 'https://en.wikipedia.org/wiki/C%2B%2B'
   },
   {
     title: 'Cobol',
     category: 'Language',
-    route: `${MAIN_URL_CDN}/cobol.svg`,
+    route: '/library/cobol.svg',
     url: 'https://en.wikipedia.org/wiki/COBOL'
   },
   {
     title: 'Fortran',
     category: 'Language',
-    route: `${MAIN_URL_CDN}/fortran.svg`,
+    route: '/library/fortran.svg',
     url: 'https://en.wikipedia.org/wiki/Fortran'
   },
   {
     title: 'Haskell',
     category: 'Language',
-    route: `${MAIN_URL_CDN}/haskell.svg`,
+    route: '/library/haskell.svg',
     url: 'https://www.haskell.org/'
   },
   {
     title: 'matlab',
     category: 'Language',
-    route: `${MAIN_URL_CDN}/matlab.svg`,
+    route: '/library/matlab.svg',
     url: 'https://www.mathworks.com/products/matlab.html'
   },
   {
     title: 'R',
     category: 'Language',
     route: {
-      light: `${MAIN_URL_CDN}/r.svg`,
-      dark: `${MAIN_URL_CDN}/r_dark.svg`
+      light: '/library/r.svg',
+      dark: '/library/r_dark.svg'
     },
     url: 'https://www.r-project.org/'
   },
@@ -1805,136 +1804,136 @@ export const svgs: iSVG[] = [
     title: 'Rust',
     category: 'Language',
     route: {
-      light: `${MAIN_URL_CDN}/rust.svg`,
-      dark: `${MAIN_URL_CDN}/rust_dark.svg`
+      light: '/library/rust.svg',
+      dark: '/library/rust_dark.svg'
     },
     url: 'https://www.rust-lang.org/'
   },
   {
     title: 'Zig',
     category: 'Language',
-    route: `${MAIN_URL_CDN}/zig.svg`,
+    route: '/library/zig.svg',
     url: 'https://ziglang.org/'
   },
   {
     title: 'Instatus',
     category: 'Software',
     route: {
-      light: `${MAIN_URL_CDN}/instatus.svg`,
-      dark: `${MAIN_URL_CDN}/instatus_dark.svg`
+      light: '/library/instatus.svg',
+      dark: '/library/instatus_dark.svg'
     },
     url: 'https://instatus.com'
   },
   {
     title: 'Front',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/front.svg`,
+    route: '/library/front.svg',
     url: 'https://front.com'
   },
   {
     title: 'Monero',
     category: 'Crypto',
-    route: `${MAIN_URL_CDN}/monero.svg`,
+    route: '/library/monero.svg',
     url: 'https://www.getmonero.org/'
   },
   {
     title: 'Axiom',
     category: 'Software',
     route: {
-      dark: `${MAIN_URL_CDN}/axiom-dark.svg`,
-      light: `${MAIN_URL_CDN}/axiom-light.svg`
+      dark: '/library/axiom-dark.svg',
+      light: '/library/axiom-light.svg'
     },
     wordmark: {
-      light: `${MAIN_URL_CDN}/axiom-wordmark-light.svg`,
-      dark: `${MAIN_URL_CDN}/axiom-wordmark-dark.svg`
+      light: '/library/axiom-wordmark-light.svg',
+      dark: '/library/axiom-wordmark-dark.svg'
     },
     url: 'https://axiom.co/'
   },
   {
     title: 'Django',
     category: 'Framework',
-    route: `${MAIN_URL_CDN}/django.svg`,
+    route: '/library/django.svg',
     url: 'https://www.djangoproject.com/'
   },
   {
     title: 'Zeabur',
     category: 'Hosting',
     route: {
-      light: `${MAIN_URL_CDN}/zeabur-light.svg`,
-      dark: `${MAIN_URL_CDN}/zeabur-dark.svg`
+      light: '/library/zeabur-light.svg',
+      dark: '/library/zeabur-dark.svg'
     },
     wordmark: {
-      light: `${MAIN_URL_CDN}/zeabur_wordmark_light.svg`,
-      dark: `${MAIN_URL_CDN}/zeabur_wordmark_dark.svg`
+      light: '/library/zeabur_wordmark_light.svg',
+      dark: '/library/zeabur_wordmark_dark.svg'
     },
     url: 'https://zeabur.com/'
   },
   {
     title: 'MetaMask',
     category: 'Crypto',
-    route: `${MAIN_URL_CDN}/metamask.svg`,
+    route: '/library/metamask.svg',
     url: 'https://metamask.io/'
   },
   {
     title: 'shadcn/ui',
     category: 'Library',
     route: {
-      light: `${MAIN_URL_CDN}/shadcn-ui.svg`,
-      dark: `${MAIN_URL_CDN}/shadcn-ui_dark.svg`
+      light: '/library/shadcn-ui.svg',
+      dark: '/library/shadcn-ui_dark.svg'
     },
     url: 'https://ui.shadcn.com/'
   },
   {
     title: 'putio',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/putio.svg`,
+    route: '/library/putio.svg',
     url: 'https://put.io/'
   },
   {
     title: 'Pinterest',
     category: 'Social',
-    route: `${MAIN_URL_CDN}/pinterest.svg`,
+    route: '/library/pinterest.svg',
     url: 'https://pinterest.com/'
   },
   {
     title: 'Reflex',
     category: 'Software',
     route: {
-      light: `${MAIN_URL_CDN}/reflex-dark.svg`,
-      dark: `${MAIN_URL_CDN}/reflex-light.svg`
+      light: '/library/reflex-dark.svg',
+      dark: '/library/reflex-light.svg'
     },
     url: 'https://reflex.dev/'
   },
   {
     title: 'Stripe',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/stripe.svg`,
+    route: '/library/stripe.svg',
     url: 'https://stripe.com/'
   },
   {
     title: 'Linux',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/linux.svg`,
+    route: '/library/linux.svg',
     url: 'https://www.linux.org/'
   },
   {
     title: 'XD',
     category: 'Design',
-    route: `${MAIN_URL_CDN}/adobe-xd.svg`,
+    route: '/library/adobe-xd.svg',
     url: 'https://helpx.adobe.com/xd/get-started.html'
   },
   {
     title: 'Axure',
     category: 'Design',
-    route: `${MAIN_URL_CDN}/axure.svg`,
+    route: '/library/axure.svg',
     url: 'https://www.axure.com/'
   },
   {
     title: 'Penpot',
     category: 'Design',
     route: {
-      light: `${MAIN_URL_CDN}/penpot.svg`,
-      dark: `${MAIN_URL_CDN}/penpot_dark.svg`
+      light: '/library/penpot.svg',
+      dark: '/library/penpot_dark.svg'
     },
     url: 'https://penpot.app/'
   },
@@ -1942,304 +1941,304 @@ export const svgs: iSVG[] = [
     title: 'Sketch',
     category: 'Design',
     route: {
-      light: `${MAIN_URL_CDN}/sketch_light.svg`,
-      dark: `${MAIN_URL_CDN}/sketch.svg`
+      light: '/library/sketch_light.svg',
+      dark: '/library/sketch.svg'
     },
     url: 'https://www.sketch.com/'
   },
   {
     title: 'Gimp',
     category: 'Design',
-    route: `${MAIN_URL_CDN}/gimp.svg`,
+    route: '/library/gimp.svg',
     url: 'https://www.gimp.org/'
   },
   {
     title: 'Ubuntu',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/ubuntu.svg`,
+    route: '/library/ubuntu.svg',
     url: 'https://ubuntu.com/'
   },
   {
     title: 'Cypress',
     category: 'Framework',
-    route: `${MAIN_URL_CDN}/cypress.svg`,
+    route: '/library/cypress.svg',
     url: 'https://www.cypress.io/'
   },
   {
     title: 'Reddit',
     category: 'Social',
-    route: `${MAIN_URL_CDN}/reddit.svg`,
+    route: '/library/reddit.svg',
     url: 'https://www.reddit.com/'
   },
   {
     title: 'JetBrains WebStorm',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/webstorm.svg`,
+    route: '/library/webstorm.svg',
     url: 'https://www.jetbrains.com/webstorm/'
   },
   {
     title: 'JetBrains PyCharm',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/pycharm.svg`,
+    route: '/library/pycharm.svg',
     url: 'https://www.jetbrains.com/pycharm/'
   },
   {
     title: 'JetBrains Fleet',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/fleet.svg`,
+    route: '/library/fleet.svg',
     url: 'https://www.jetbrains.com/fleet/'
   },
   {
     title: 'JetBrains RubyMine',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/rubymine.svg`,
+    route: '/library/rubymine.svg',
     url: 'https://www.jetbrains.com/ruby/'
   },
   {
     title: 'JetBrains PhpStorm',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/phpstorm.svg`,
+    route: '/library/phpstorm.svg',
     url: 'https://www.jetbrains.com/phpstorm/'
   },
   {
     title: 'MonkeyType',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/monkeytype.svg`,
+    route: '/library/monkeytype.svg',
     url: 'https://monkeytype.com/'
   },
   {
     title: 'PyCharm',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/pycharm.svg`,
+    route: '/library/pycharm.svg',
     url: 'https://www.jetbrains.com/pycharm/'
   },
   {
     title: 'Shopify',
     category: 'CMS',
-    route: `${MAIN_URL_CDN}/shopify.svg`,
+    route: '/library/shopify.svg',
     wordmark: {
-      dark: `${MAIN_URL_CDN}/shopify-wordmark-dark.svg`,
-      light: `${MAIN_URL_CDN}/shopify-wordmark-light.svg`
+      dark: '/library/shopify-wordmark-dark.svg',
+      light: '/library/shopify-wordmark-light.svg'
     },
     url: 'https://www.shopify.com'
   },
   {
     title: 'WebFlow',
     category: 'CMS',
-    route: `${MAIN_URL_CDN}/webflow.svg`,
+    route: '/library/webflow.svg',
     url: 'https://www.webflow.com'
   },
   {
     title: 'Sanity',
     category: 'CMS',
-    route: `${MAIN_URL_CDN}/sanity.svg`,
+    route: '/library/sanity.svg',
     url: 'https://www.sanity.io'
   },
   {
     title: 'sky',
     category: 'Entertainment',
-    route: `${MAIN_URL_CDN}/sky.svg`,
+    route: '/library/sky.svg',
     url: 'https://www.sky.com'
   },
   {
     title: 'Airbnb',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/airbnb.svg`,
-    wordmark: `${MAIN_URL_CDN}/airbnb-wordmark.svg`,
+    route: '/library/airbnb.svg',
+    wordmark: '/library/airbnb-wordmark.svg',
     url: 'https://www.airbnb.com'
   },
   {
     title: 'Uber',
     category: 'Software',
     route: {
-      light: `${MAIN_URL_CDN}/uber_light.svg`,
-      dark: `${MAIN_URL_CDN}/uber_dark.svg`
+      light: '/library/uber_light.svg',
+      dark: '/library/uber_dark.svg'
     },
     url: 'https://www.uber.com'
   },
   {
     title: 'Gmail',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/gmail.svg`,
+    route: '/library/gmail.svg',
     url: 'https://www.gmail.com'
   },
   {
     title: 'Outlook',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/outlook.svg`,
+    route: '/library/outlook.svg',
     url: 'https://www.outlook.com'
   },
   {
     title: 'Slack',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/slack.svg`,
-    wordmark: `${MAIN_URL_CDN}/slack-wordmark.svg`,
+    route: '/library/slack.svg',
+    wordmark: '/library/slack-wordmark.svg',
     url: 'https://www.slack.com'
   },
   {
     title: 'Snapchat',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/snapchat.svg`,
+    route: '/library/snapchat.svg',
     url: 'https://www.snapchat.com'
   },
   {
     title: 'Ebay',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/ebay.svg`,
+    route: '/library/ebay.svg',
     url: 'https://www.ebay.com'
   },
   {
     title: 'IBM',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/ibm.svg`,
+    route: '/library/ibm.svg',
     url: 'https://www.ibm.com'
   },
   {
     title: 'TrustPilot',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/trustpilot.svg`,
+    route: '/library/trustpilot.svg',
     url: 'https://www.trustpilot.com'
   },
   {
     title: 'Raycast',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/raycast.svg`,
+    route: '/library/raycast.svg',
     wordmark: {
-      light: `${MAIN_URL_CDN}/raycast-wordmark-light.svg`,
-      dark: `${MAIN_URL_CDN}/raycast-wordmark-dark.svg`
+      light: '/library/raycast-wordmark-light.svg',
+      dark: '/library/raycast-wordmark-dark.svg'
     },
     url: 'https://raycast.com/'
   },
   {
     title: 'Procure',
     category: 'Marketplace',
-    route: `${MAIN_URL_CDN}/procure.svg`,
+    route: '/library/procure.svg',
     url: 'https://procure.biz/'
   },
   {
     title: 'Julia',
     category: 'Language',
-    route: `${MAIN_URL_CDN}/julia.svg`,
+    route: '/library/julia.svg',
     url: 'https://julialang.org/'
   },
   {
     title: 'SWC',
     category: 'Compiler',
-    route: `${MAIN_URL_CDN}/swc.svg`,
+    route: '/library/swc.svg',
     url: 'https://swc.rs/'
   },
   {
     title: 'PlayStation',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/playstation.svg`,
+    route: '/library/playstation.svg',
     url: 'https://www.playstation.com/'
   },
   {
     title: 'Xbox',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/xbox.svg`,
+    route: '/library/xbox.svg',
     url: 'https://www.xbox.com/'
   },
   {
     title: 'Cody',
     category: 'AI',
-    route: `${MAIN_URL_CDN}/cody.svg`,
+    route: '/library/cody.svg',
     url: 'https://about.sourcegraph.com/'
   },
   {
     title: 'Sourcegraph',
     category: 'AI',
-    route: `${MAIN_URL_CDN}/sourcegraph.svg`,
+    route: '/library/sourcegraph.svg',
     url: 'https://about.sourcegraph.com/'
   },
   {
     title: 'Claude AI',
     category: 'AI',
-    route: `${MAIN_URL_CDN}/claude-ai.svg`,
+    route: '/library/claude-ai.svg',
     url: 'https://claude.ai/'
   },
   {
     title: 'Perplexity AI',
     category: 'AI',
-    route: `${MAIN_URL_CDN}/perplexity.svg`,
+    route: '/library/perplexity.svg',
     url: 'https://perplexity.ai/'
   },
   {
     title: 'Spring',
     category: 'Framework',
-    route: `${MAIN_URL_CDN}/spring.svg`,
+    route: '/library/spring.svg',
     url: 'https://spring.io/'
   },
   {
     title: 'Directus',
     category: 'CMS',
-    route: `${MAIN_URL_CDN}/directus.svg`,
+    route: '/library/directus.svg',
     url: 'https://directus.io/'
   },
   {
     title: 'Pnpm',
     category: 'Software',
     route: {
-      light: `${MAIN_URL_CDN}/pnpm.svg`,
-      dark: `${MAIN_URL_CDN}/pnpm_dark.svg`
+      light: '/library/pnpm.svg',
+      dark: '/library/pnpm_dark.svg'
     },
     wordmark: {
-      light: `${MAIN_URL_CDN}/pnpm_wordmark_light.svg`,
-      dark: `${MAIN_URL_CDN}/pnpm_wordmark_dark.svg`
+      light: '/library/pnpm_wordmark_light.svg',
+      dark: '/library/pnpm_wordmark_dark.svg'
     },
     url: 'https://pnpm.io/'
   },
   {
     title: 'Emacs',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/emacs.svg`,
+    route: '/library/emacs.svg',
     url: 'https://www.gnu.org/software/emacs/'
   },
   {
     title: 'Svgl',
     category: 'Library',
-    route: `${MAIN_URL_CDN}/svgl.svg`,
+    route: '/library/svgl.svg',
     url: 'https://svgl.app'
   },
   {
     title: 'Google Idx',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/google-idx.svg`,
+    route: '/library/google-idx.svg',
     url: 'https://idx.dev/'
   },
   {
     title: 'Bluesky',
     category: 'Social',
-    route: `${MAIN_URL_CDN}/bluesky.svg`,
+    route: '/library/bluesky.svg',
     url: 'https://blueskyweb.xyz/'
   },
   {
     title: 'Remix',
     category: 'Framework',
     route: {
-      light: `${MAIN_URL_CDN}/remix_light.svg`,
-      dark: `${MAIN_URL_CDN}/remix_dark.svg`
+      light: '/library/remix_light.svg',
+      dark: '/library/remix_dark.svg'
     },
     url: 'https://remix.run/'
   },
   {
     title: 'Steam',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/steam.svg`,
+    route: '/library/steam.svg',
     url: 'https://store.steampowered.com/'
   },
   {
     title: 'Tabby',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/tabby.svg`,
+    route: '/library/tabby.svg',
     url: 'https://tabby.sh/'
   },
   {
     title: '1Password',
     category: 'Software',
     route: {
-      light: `${MAIN_URL_CDN}/1password-light.svg`,
-      dark: `${MAIN_URL_CDN}/1password-dark.svg`
+      light: '/library/1password-light.svg',
+      dark: '/library/1password-dark.svg'
     },
     url: 'https://1password.com'
   },
@@ -2247,148 +2246,148 @@ export const svgs: iSVG[] = [
     title: 'Flask',
     category: 'Framework',
     route: {
-      light: `${MAIN_URL_CDN}/flask-light.svg`,
-      dark: `${MAIN_URL_CDN}/flask-dark.svg`
+      light: '/library/flask-light.svg',
+      dark: '/library/flask-dark.svg'
     },
     wordmark: {
-      light: `${MAIN_URL_CDN}/flask-wordmark-light.svg`,
-      dark: `${MAIN_URL_CDN}/flask-wordmark-dark.svg`
+      light: '/library/flask-wordmark-light.svg',
+      dark: '/library/flask-wordmark-dark.svg'
     },
     url: 'https://flask.palletsprojects.com/'
   },
   {
     title: 'Alacritty',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/alacritty.svg`,
+    route: '/library/alacritty.svg',
     url: 'https://alacritty.org'
   },
   {
     title: 'Qt',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/qt.svg`,
+    route: '/library/qt.svg',
     url: 'https://www.qt.io/'
   },
   {
     title: 'Bitwarden',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/bitwarden.svg`,
+    route: '/library/bitwarden.svg',
     url: 'https://bitwarden.com/'
   },
   {
     title: 'Voicemod',
     category: 'Entertainment',
     route: {
-      light: `${MAIN_URL_CDN}/voicemod_light.svg`,
-      dark: `${MAIN_URL_CDN}/voicemod_dark.svg`
+      light: '/library/voicemod_light.svg',
+      dark: '/library/voicemod_dark.svg'
     },
     url: 'https://voicemod.net/'
   },
   {
     title: 'Neovim',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/neovim.svg`,
+    route: '/library/neovim.svg',
     url: 'https://neovim.io/'
   },
   {
     title: 'Pitch',
     category: 'Design',
-    route: `${MAIN_URL_CDN}/pitch.svg`,
+    route: '/library/pitch.svg',
     url: 'https://pitch.com'
   },
   {
     title: 'Biomejs',
     category: 'Compiler',
-    route: `${MAIN_URL_CDN}/biomejs.svg`,
+    route: '/library/biomejs.svg',
     url: 'https://biomejs.dev/'
   },
   {
     title: 'Gradio',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/gradio.svg`,
+    route: '/library/gradio.svg',
     url: 'https://www.gradio.app/'
   },
   {
     title: 'Meta',
     category: 'Social',
-    route: `${MAIN_URL_CDN}/meta.svg`,
+    route: '/library/meta.svg',
     url: 'https://about.meta.com/es/'
   },
   {
     title: 'Stability AI',
     category: 'AI',
-    route: `${MAIN_URL_CDN}/stability-ai.svg`,
+    route: '/library/stability-ai.svg',
     url: 'https://stability.ai/'
   },
   {
     title: 'Google PaLM',
     category: 'AI',
-    route: `${MAIN_URL_CDN}/google-palm.svg`,
+    route: '/library/google-palm.svg',
     url: 'https://ai.google/discover/palm2/'
   },
   {
     title: 'Android',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/android-icon.svg`,
+    route: '/library/android-icon.svg',
     url: 'https://www.android.com/'
   },
   {
     title: 'Sentry',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/sentry.svg`,
+    route: '/library/sentry.svg',
     url: 'https://sentry.io/'
   },
   {
     title: 'Grafana',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/grafana.svg`,
+    route: '/library/grafana.svg',
     url: 'https://grafana.com/'
   },
   {
     title: 'Notion',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/notion.svg`,
+    route: '/library/notion.svg',
     url: 'https://notion.so/'
   },
   {
     title: 'Litecoin',
     category: 'Crypto',
-    route: `${MAIN_URL_CDN}/litecoin.svg`,
+    route: '/library/litecoin.svg',
     url: 'https://litecoin.org/'
   },
   {
     title: 'ElysiaJS',
     category: 'Framework',
-    route: `${MAIN_URL_CDN}/elysiajs.svg`,
+    route: '/library/elysiajs.svg',
     url: 'https://elysiajs.com/'
   },
   {
     title: 'TensorFlow',
     category: 'Library',
-    route: `${MAIN_URL_CDN}/tensorflow.svg`,
+    route: '/library/tensorflow.svg',
     url: 'https://www.tensorflow.org/'
   },
   {
     title: 'Midday',
     category: 'AI',
-    route: `${MAIN_URL_CDN}/midday.svg`,
+    route: '/library/midday.svg',
     url: 'https://midday.ai/'
   },
   {
     title: 'C#',
     category: 'Language',
-    route: `${MAIN_URL_CDN}/csharp.svg`,
+    route: '/library/csharp.svg',
     url: 'https://dotnet.microsoft.com/languages/csharp'
   },
   {
     title: 'Replicate',
     category: 'AI',
     route: {
-      light: `${MAIN_URL_CDN}/replicate_light.svg`,
-      dark: `${MAIN_URL_CDN}/replicate_dark.svg`
+      light: '/library/replicate_light.svg',
+      dark: '/library/replicate_dark.svg'
     },
     wordmark: {
-      light: `${MAIN_URL_CDN}/replicate-wordmark_light.svg`,
-      dark: `${MAIN_URL_CDN}/replicate-wordmark_dark.svg`
+      light: '/library/replicate-wordmark_light.svg',
+      dark: '/library/replicate-wordmark_dark.svg'
     },
     url: 'https://replicate.com/'
   },
@@ -2396,38 +2395,38 @@ export const svgs: iSVG[] = [
     title: 'Markdown',
     category: 'Language',
     route: {
-      light: `${MAIN_URL_CDN}/markdown-light.svg`,
-      dark: `${MAIN_URL_CDN}/markdown-dark.svg`
+      light: '/library/markdown-light.svg',
+      dark: '/library/markdown-dark.svg'
     },
     url: 'https://www.markdownguide.org/'
   },
   {
     title: 'Movie Web',
     category: 'Entertainment',
-    route: `${MAIN_URL_CDN}/movie-web.svg`,
+    route: '/library/movie-web.svg',
     url: 'https://movie-web.app/'
   },
   {
     title: 'Radix UI',
     category: 'Library',
     route: {
-      light: `${MAIN_URL_CDN}/radix-ui_light.svg`,
-      dark: `${MAIN_URL_CDN}/radix-ui_dark.svg`
+      light: '/library/radix-ui_light.svg',
+      dark: '/library/radix-ui_dark.svg'
     },
     url: 'https://www.radix-ui.com/'
   },
   {
     title: 'Web.dev',
     category: 'Education',
-    route: `${MAIN_URL_CDN}/webdev.svg`,
+    route: '/library/webdev.svg',
     url: 'https://web.dev/'
   },
   {
     title: 'SWR',
     category: 'Library',
     route: {
-      light: `${MAIN_URL_CDN}/swr-light.svg`,
-      dark: `${MAIN_URL_CDN}/swr-dark.svg`
+      light: '/library/swr-light.svg',
+      dark: '/library/swr-dark.svg'
     },
     url: 'https://swr.vercel.app/'
   },
@@ -2435,18 +2434,18 @@ export const svgs: iSVG[] = [
     title: 'Refine',
     category: 'Framework',
     route: {
-      light: `${MAIN_URL_CDN}/refine_dark.svg`,
-      dark: `${MAIN_URL_CDN}/refine_light.svg`
+      light: '/library/refine_dark.svg',
+      dark: '/library/refine_light.svg'
     },
     url: 'https://refine.dev/'
   },
   {
     title: 'Youtube Music',
     category: 'Music',
-    route: `${MAIN_URL_CDN}/youtube_music.svg`,
+    route: '/library/youtube_music.svg',
     wordmark: {
-      light: `${MAIN_URL_CDN}/youtube_music_wordmark_light.svg`,
-      dark: `${MAIN_URL_CDN}/youtube_music_wordmark_dark.svg`
+      light: '/library/youtube_music_wordmark_light.svg',
+      dark: '/library/youtube_music_wordmark_dark.svg'
     },
     url: 'https://music.youtube.com/'
   },
@@ -2454,152 +2453,165 @@ export const svgs: iSVG[] = [
     title: 'TIDAL',
     category: 'Music',
     route: {
-      light: `${MAIN_URL_CDN}/tidal_light.svg`,
-      dark: `${MAIN_URL_CDN}/tidal_dark.svg`
+      light: '/library/tidal_light.svg',
+      dark: '/library/tidal_dark.svg'
     },
     wordmark: {
-      light: `${MAIN_URL_CDN}/tidal_wordmark_light.svg`,
-      dark: `${MAIN_URL_CDN}/tidal_wordmark_dark.svg`
+      light: '/library/tidal_wordmark_light.svg',
+      dark: '/library/tidal_wordmark_dark.svg'
     },
     url: 'https://tidal.com/'
   },
   {
     title: 'OBS',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/obs.svg`,
+    route: '/library/obs.svg',
     url: 'Website'
   },
   {
     title: 'Stack Overflow',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/stackoverflow.svg`,
-    wordmark: `${MAIN_URL_CDN}/stackoverflow_wordmark.svg`,
+    route: '/library/stackoverflow.svg',
+    wordmark: '/library/stackoverflow_wordmark.svg',
     url: 'https://stackoverflow.com/'
   },
   {
     title: 'TikTok',
     category: 'Social',
-    route: `${MAIN_URL_CDN}/tiktok.svg`,
+    route: '/library/tiktok.svg',
     url: 'https://www.tiktok.com/'
   },
   {
     title: 'Ngrok',
     category: 'Software',
     route: {
-      dark: `${MAIN_URL_CDN}/ngrok-dark.svg`,
-      light: `${MAIN_URL_CDN}/ngrok-light.svg`
+      dark: '/library/ngrok-dark.svg',
+      light: '/library/ngrok-light.svg'
     },
     url: 'https://ngrok.com'
   },
   {
     title: 'Lemon Squeezy',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/lemonsqueezy.svg`,
+    route: '/library/lemonsqueezy.svg',
     url: 'https://www.lemonsqueezy.com'
   },
   {
     title: 'Asana',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/asana-logo.svg`,
+    route: '/library/asana-logo.svg',
     wordmark: {
-      dark: `${MAIN_URL_CDN}/asana-wordmark-dark.svg`,
-      light: `${MAIN_URL_CDN}/asana-wordmark-light.svg`
+      dark: '/library/asana-wordmark-dark.svg',
+      light: '/library/asana-wordmark-light.svg'
     },
     url: 'https://asana.com'
   },
   {
     title: 'Zoom',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/zoom.svg`,
+    route: '/library/zoom.svg',
     url: 'https://zoom.us/'
   },
   {
     title: 'Tina',
     category: 'CMS',
-    route: `${MAIN_URL_CDN}/tina.svg`,
-    wordmark: `${MAIN_URL_CDN}/tina_wordmark.svg`,
+    route: '/library/tina.svg',
+    wordmark: '/library/tina_wordmark.svg',
     url: 'https://tina.io/'
   },
   {
     title: 'Vercel',
     category: ['Hosting', 'Vercel'],
     route: {
-      light: `${MAIN_URL_CDN}/vercel.svg`,
-      dark: `${MAIN_URL_CDN}/vercel_dark.svg`
+      light: '/library/vercel.svg',
+      dark: '/library/vercel_dark.svg'
     },
     wordmark: {
-      light: `${MAIN_URL_CDN}/vercel_wordmark.svg`,
-      dark: `${MAIN_URL_CDN}/vercel_wordmark_dark.svg`
+      light: '/library/vercel_wordmark.svg',
+      dark: '/library/vercel_wordmark_dark.svg'
     },
     url: 'https://vercel.com/'
   },
   {
     title: 'Next.js',
     category: ['Framework', 'Vercel'],
-    route: `${MAIN_URL_CDN}/nextjs_icon_dark.svg`,
+    route: '/library/nextjs_icon_dark.svg',
     wordmark: {
-      light: `${MAIN_URL_CDN}/nextjs_logo_light.svg`,
-      dark: `${MAIN_URL_CDN}/nextjs_logo_dark.svg`
+      light: '/library/nextjs_logo_light.svg',
+      dark: '/library/nextjs_logo_dark.svg'
     },
     url: 'https://nextjs.org/'
   },
   {
     title: 'Mistral AI',
     category: 'AI',
-    route: `${MAIN_URL_CDN}/mistral-ai_logo.svg`,
-    wordmark: `${MAIN_URL_CDN}/mistral-ai_wordmark.svg`,
+    route: '/library/mistral-ai_logo.svg',
+    wordmark: '/library/mistral-ai_wordmark.svg',
     url: 'https://mistral.ai/'
   },
   {
     title: 'Hugging Face',
     category: 'AI',
-    route: `${MAIN_URL_CDN}/hugging_face.svg`,
+    route: '/library/hugging_face.svg',
     url: 'https://huggingface.co/'
   },
   {
     title: 'Node.js',
     category: 'Library',
-    route: `${MAIN_URL_CDN}/nodejs.svg`,
+    route: '/library/nodejs.svg',
     url: 'https://nodejs.org/'
   },
   {
     title: 'Raindrop.io',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/raindrop.svg`,
+    route: '/library/raindrop.svg',
     url: 'https://raindrop.io/'
   },
   {
     title: 'Microsoft Todo',
     category: 'Software',
-    route: `${MAIN_URL_CDN}/microsoft-todo.svg`,
+    route: '/library/microsoft-todo.svg',
     url: 'https://to-do.office.com/'
   },
   {
     title: 'Supabase',
     category: 'Database',
-    route: `${MAIN_URL_CDN}/supabase.svg`,
+    route: '/library/supabase.svg',
     url: 'https://supabase.com/',
     wordmark: {
-      light: `${MAIN_URL_CDN}/supabase_wordmark_light.svg`,
-      dark: `${MAIN_URL_CDN}/supabase_wordmark_dark.svg`
+      light: '/library/supabase_wordmark_light.svg',
+      dark: '/library/supabase_wordmark_dark.svg'
     }
   },
   {
     title: 'Gleam',
     category: 'Language',
-    route: `${MAIN_URL_CDN}/gleam.svg`,
+    route: '/library/gleam.svg',
     url: 'https://gleam.run/'
   },
   {
     title: 'Flowbite',
     category: 'Framework',
-    route: `${MAIN_URL_CDN}/flowbite.svg`,
+    route: '/library/flowbite.svg',
     url: 'https://flowbite.com/'
   },
   {
     title: 'Hume AI',
     category: 'AI',
-    route: `${MAIN_URL_CDN}/hume-ai.svg`,
+    route: '/library/hume-ai.svg',
     url: 'https://hume.ai/'
+  },
+  {
+    title: 'Resend',
+    category: 'Software',
+    url: 'https://resend.com/',
+    route: {
+      light: '/library/resend-icon-black.svg',
+      dark: '/library/resend-icon-white.svg'
+    },
+    wordmark: {
+      light: '/library/resend-wordmark-black.svg',
+      dark: '/library/resend-wordmark-white.svg'
+    }
   }
 ];

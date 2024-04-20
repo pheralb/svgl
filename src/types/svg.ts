@@ -3,7 +3,7 @@ import type { tCategory } from './categories';
 type CategoryPair = [tCategory, tCategory];
 type CategoryTriple = [tCategory, tCategory, tCategory];
 
-type ThemeOptions = {
+export type ThemeOptions = {
   dark: string;
   light: string;
 };
