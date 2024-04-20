@@ -21,3 +21,6 @@ yarn.lock
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 src/figma/dist
+
+# Lychee files
+.lycheecache
