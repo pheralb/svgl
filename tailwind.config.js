@@ -1,5 +1,7 @@
+import { fontFamily } from 'tailwindcss/defaultTheme';
+
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   darkMode: 'class',
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
@@ -9,8 +11,8 @@ module.exports = {
         light: '#f5f5f5'
       },
       fontFamily: {
-        sans: ['InterVariable', 'sans-serif'],
-        mono: ['GeistMono', 'monospace']
+        sans: ['InterVariable', ...fontFamily.sans],
+        mono: ['GeistMono', ...fontFamily.mono]
       },
       fontSize: {
         mini: '14px'
