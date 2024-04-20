@@ -26,4 +26,4 @@ jobs:
         uses: lycheeverse/lychee-action@v1.9.3
         with:
           fail: true
-          args: '--base . ./src/data/svgs.ts --cache --max-cache-age 3d . --include "https://cdn.svgl.app"'
+          args: '--base . ./src/data/svgs.ts --cache --max-cache-age 3d . --include "https://svgl.app"'
