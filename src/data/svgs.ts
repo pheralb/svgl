@@ -2617,7 +2617,10 @@ export const svgs: iSVG[] = [
   {
     title: 'Layers',
     category: 'Design',
-    route: '/library/layers.svg',
+    route: {
+      light: '/library/layers_light.svg',
+      dark: '/library/layers_dark.svg'
+    },
     url: 'https://layers.to/'
   }
 ];
