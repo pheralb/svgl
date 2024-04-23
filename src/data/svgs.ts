@@ -2613,5 +2613,11 @@ export const svgs: iSVG[] = [
       light: '/library/resend-wordmark-black.svg',
       dark: '/library/resend-wordmark-white.svg'
     }
+  },
+  {
+    title: 'Layers',
+    category: 'Design',
+    route: '/library/layers.svg',
+    url: 'https://layers.to/'
   }
 ];
