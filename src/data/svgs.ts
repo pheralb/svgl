@@ -2638,5 +2638,17 @@ export const svgs: iSVG[] = [
     category: 'Library',
     route: '/library/exome.svg',
     url: 'https://exome.dev/'
+  },
+  {
+    title: 'STranslate',
+    category: 'Library',
+    route: '/library/stranslate.svg',
+    url: 'https://stranslate.zggsong.com/'
+  },
+  {
+    title: 'LINQPad',
+    category: 'Library',
+    route: '/library/linqpad.svg',
+    url: 'https://www.linqpad.net/'
   }
 ];
