@@ -2638,5 +2638,11 @@ export const svgs: iSVG[] = [
     category: 'Library',
     route: '/library/exome.svg',
     url: 'https://exome.dev/'
+  },
+  {
+    title: "Poper",
+    category: "Software",
+    route: "/library/poper.svg",
+    url: "https://www.poper.ai"
   }
 ];
