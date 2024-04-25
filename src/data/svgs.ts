@@ -2641,7 +2641,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: "Poper",
-    category: "Software",
+    category: "AI",
     route: "/library/poper.svg",
     url: "https://www.poper.ai"
   }
