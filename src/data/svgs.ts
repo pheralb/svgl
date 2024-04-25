@@ -2632,5 +2632,11 @@ export const svgs: iSVG[] = [
       dark: '/library/layers_dark.svg'
     },
     url: 'https://layers.to/'
+  },
+  {
+    title: 'Exome',
+    category: 'Library',
+    route: '/library/exome.svg',
+    url: 'https://exome.dev/'
   }
 ];
