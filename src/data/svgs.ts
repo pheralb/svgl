@@ -2,6 +2,16 @@ import type { iSVG } from '../types/svg';
 
 export const svgs: iSVG[] = [
   {
+    title: 'ahooks',
+    category: 'Library',
+    route: '/library/ahooks.svg',
+    wordmark: {
+      light: '/library/ahooks-wordmark-light.svg',
+      dark: '/library/ahooks-wordmark-dark.svg'
+    },
+    url: 'https://ahooks.js.org/'
+  },
+  {
     title: 'Discord',
     category: 'Software',
     route: '/library/discord.svg',
