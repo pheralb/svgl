@@ -1113,6 +1113,12 @@ export const svgs: iSVG[] = [
     url: 'https://www.loom.com/'
   },
   {
+    title: 'Lowcoder',
+    category: ['Software', 'Framework'],
+    route: '/library/lowcoder.svg',
+    url: 'https://lowcoder.cloud/'
+  },
+  {
     title: 'Hulu',
     category: 'Entertainment',
     route: {
