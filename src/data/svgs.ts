@@ -2647,9 +2647,9 @@ export const svgs: iSVG[] = [
     url: 'https://exome.dev/'
   },
   {
-    title: 'Poper',
-    category: 'AI',
-    route: '/library/poper.svg',
-    url: 'https://www.poper.ai'
+    title: "Poper",
+    category: "AI",
+    route: "/library/poper.svg",
+    url: "https://www.poper.ai"
   }
 ];
