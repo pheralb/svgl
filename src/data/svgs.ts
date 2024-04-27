@@ -2,6 +2,13 @@ import type { iSVG } from '../types/svg';
 
 export const svgs: iSVG[] = [
   {
+    title: 'Mercado Pago',
+    category: 'Payment',
+    route: '/library/mercado-pago.svg',
+    wordmark: '/library/mercado-pago-wordmark.svg',
+    url: 'https://www.mercadopago.com/developers/'
+  },
+  {
     title: 'ahooks',
     category: 'Library',
     route: '/library/ahooks.svg',
@@ -2640,9 +2647,9 @@ export const svgs: iSVG[] = [
     url: 'https://exome.dev/'
   },
   {
-    title: "Poper",
-    category: "AI",
-    route: "/library/poper.svg",
-    url: "https://www.poper.ai"
+    title: 'Poper',
+    category: 'AI',
+    route: '/library/poper.svg',
+    url: 'https://www.poper.ai'
   }
 ];
