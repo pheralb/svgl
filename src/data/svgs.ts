@@ -9,6 +9,12 @@ export const svgs: iSVG[] = [
     url: 'https://www.mercadopago.com/developers/'
   },
   {
+    title: 'Basewell',
+    category: ['AI', 'Software'],
+    route: '/library/basewell.svg',
+    url: 'https://www.basewell.com/'
+  },
+  {
     title: 'ahooks',
     category: 'Library',
     route: '/library/ahooks.svg',
@@ -2647,9 +2653,9 @@ export const svgs: iSVG[] = [
     url: 'https://exome.dev/'
   },
   {
-    title: "Poper",
-    category: "AI",
-    route: "/library/poper.svg",
-    url: "https://www.poper.ai"
+    title: 'Poper',
+    category: 'AI',
+    route: '/library/poper.svg',
+    url: 'https://www.poper.ai'
   }
 ];
