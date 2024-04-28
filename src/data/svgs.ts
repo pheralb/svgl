@@ -2,6 +2,13 @@ import type { iSVG } from '../types/svg';
 
 export const svgs: iSVG[] = [
   {
+    title: 'Mercado Pago',
+    category: 'Payment',
+    route: '/library/mercado-pago.svg',
+    wordmark: '/library/mercado-pago-wordmark.svg',
+    url: 'https://www.mercadopago.com/developers/'
+  },
+  {
     title: 'ahooks',
     category: 'Library',
     route: '/library/ahooks.svg',

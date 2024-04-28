@@ -19,4 +19,5 @@ export type tCategory =
   | 'Marketplace'
   | 'Fintech'
   | 'Music'
-  | 'Vercel';
+  | 'Vercel'
+  | 'Payment';
