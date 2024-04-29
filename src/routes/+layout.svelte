@@ -5,12 +5,19 @@
   // Global styles:
   import '../app.css';
   import { ModeWatcher, mode } from 'mode-watcher';
+  import { sidebarCategoryCountStyles } from '@/ui/styles';
 
   // Get categories:
   import { svgs } from '@/data/svgs';
   const categories = svgs
     .flatMap((svg) => (Array.isArray(svg.category) ? svg.category : [svg.category]))
     .filter((category, index, array) => array.indexOf(category) === index);
+
+  // Get category counts:
+  let categoryCounts:any = {};
+  categories.forEach((category) => {
+    categoryCounts[category] = svgs.filter((svg) => svg.category.includes(category)).length;
+  });
 
   // Toaster:
   import { Toaster } from 'svelte-sonner';
@@ -37,7 +44,7 @@
       'border-r border-neutral-200 dark:border-neutral-800'
     )}
   >
-    <div class="md:px-6 md:py-6">
+    <div class="md:px-3 md:py-6">
       <nav
         class="flex items-center space-x-1 overflow-y-auto md:mb-3 md:flex-col md:space-x-0 md:space-y-1 md:overflow-y-visible px-5 md:px-0 pb-2 pt-3 md:pt-0"
       >
@@ -63,6 +70,7 @@
             )}
           >
             <span>{category}</span>
+            <span class={`hidden md:block ${sidebarCategoryCountStyles}`}>{categoryCounts[category]}</span>
           </a>
         {/each}
       </nav>
