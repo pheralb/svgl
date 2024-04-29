@@ -499,7 +499,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Arc',
-    category: 'Fintech',
+    category: 'Software',
     route: {
       light: '/library/arc_fintech_light.svg',
       dark: '/library/arc_fintech_dark.svg'
