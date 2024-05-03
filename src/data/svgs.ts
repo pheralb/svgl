@@ -2536,6 +2536,16 @@ export const svgs: iSVG[] = [
     url: 'https://tina.io/'
   },
   {
+      title: "VeedoAI",
+      category: ["AI", "Video"],
+      route: "/library/veedoai.svg",
+      wordmark: {
+        light: "/library/veedoai_wordmark.svg",
+        dark: "/library/veedoai_wordmark_dark.svg"
+      },
+      url: "https://veedo.ai"
+  },
+  {
     title: 'Vercel',
     category: ['Hosting', 'Vercel'],
     route: {
