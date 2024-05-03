@@ -1562,13 +1562,6 @@ export const svgs: iSVG[] = [
     url: 'https://hoppscotch.com'
   },
   {
-    title: 'Dub',
-    category: 'Software',
-    route: '/library/dub.svg',
-    wordmark: '/library/dub-wordmark.svg',
-    url: 'https://dub.co'
-  },
-  {
     title: 'Opera',
     category: 'Browser',
     route: '/library/opera.svg',
@@ -2657,5 +2650,18 @@ export const svgs: iSVG[] = [
     category: 'AI',
     route: '/library/poper.svg',
     url: 'https://www.poper.ai'
+  },
+  {
+    title: 'Dub',
+    category: 'Software',
+    route: {
+      light: '/library/dub.svg',
+      dark: '/library/dub_dark_logo.svg'
+    },
+    wordmark: {
+      light: '/library/dub_light_wordmark.svg',
+      dark: '/library/dub_dark_wordmark.svg'
+    },
+    url: 'https://dub.co'
   }
 ];
