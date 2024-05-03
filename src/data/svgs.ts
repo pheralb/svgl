@@ -2663,5 +2663,18 @@ export const svgs: iSVG[] = [
       dark: '/library/dub_dark_wordmark.svg'
     },
     url: 'https://dub.co'
+  },
+  {
+    title: 'Turso',
+    category: ['Database', 'Software'],
+    route: {
+      light: '/library/turso-light.svg',
+      dark: '/library/turso-dark.svg'
+    },
+    wordmark: {
+      light: '/library/turso-wordmark-light.svg',
+      dark: '/library/turso-wordmark-dark.svg'
+    },
+    url: 'https://turso.tech'
   }
 ];
