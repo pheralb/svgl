@@ -483,6 +483,12 @@ export const svgs: iSVG[] = [
     url: 'https://bun.sh'
   },
   {
+    title: 'BuildShip',
+    category: 'AI',
+    route: '/library/buildship.svg',
+    url: 'https://buildship.com/'
+  },
+  {
     title: 'Twilio',
     category: 'Software',
     route: '/library/twilio.svg',
