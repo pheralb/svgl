@@ -2682,5 +2682,18 @@ export const svgs: iSVG[] = [
       dark: '/library/turso-wordmark-dark.svg'
     },
     url: 'https://turso.tech'
+  },
+  {
+    title: 'RelaGit',
+    category: 'Software',
+    route: {
+      light: '/library/relagit-icon-light.svg',
+      dark: '/library/relagit-icon-dark.svg'
+    },
+    wordmark: {
+      light: '/library/relagit-wordmark-light.svg',
+      dark: '/library/relagit-wordmark-dark.svg'
+    },
+    url: 'https://rela.dev'
   }
 ];
