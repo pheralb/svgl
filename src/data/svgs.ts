@@ -2682,5 +2682,15 @@ export const svgs: iSVG[] = [
       dark: '/library/turso-wordmark-dark.svg'
     },
     url: 'https://turso.tech'
+  },
+  {
+    "title": "Ahrefs",
+    "category": "Software",
+    "route": "/library/ahrefs.svg",
+    "wordmark": {
+      "light": "/library/ahrefs_wordmark-logo_light.svg",
+      "dark": "/library/ahrefs_wordmark-logo_dark.svg"
+    },
+    "url": "https://ahrefs.com/"
   }
 ];
