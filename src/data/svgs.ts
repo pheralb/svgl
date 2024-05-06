@@ -2692,5 +2692,18 @@ export const svgs: iSVG[] = [
       "dark": "/library/ahrefs_wordmark-logo_dark.svg"
     },
     "url": "https://ahrefs.com/"
+  },
+  {
+    title: 'RelaGit',
+    category: 'Software',
+    route: {
+      light: '/library/relagit-icon-light.svg',
+      dark: '/library/relagit-icon-dark.svg'
+    },
+    wordmark: {
+      light: '/library/relagit-wordmark-light.svg',
+      dark: '/library/relagit-wordmark-dark.svg'
+    },
+    url: 'https://rela.dev'
   }
 ];
