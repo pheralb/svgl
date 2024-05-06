@@ -2,6 +2,24 @@ import type { iSVG } from '../types/svg';
 
 export const svgs: iSVG[] = [
   {
+    title: "Animate",
+    category: ["Software", "Design"],
+    "route": "/library/animate.svg",
+    "url": "https://www.adobe.com/products/animate.html"
+  },
+  {
+    title: "Blender",
+    category: ["Software", "Design"],
+    "route": "/library/blender.svg",
+    "url": "https://blender.org/"
+  },
+  {
+    title: "Lua",
+    category: "Language",
+    "route": "/library/lua.svg",
+    "url": "https://lua.org/"
+  },
+  {
     title: 'Mercado Pago',
     category: 'Payment',
     route: '/library/mercado-pago.svg',
