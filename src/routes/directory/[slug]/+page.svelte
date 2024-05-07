@@ -47,6 +47,7 @@
 
 <svelte:head>
   <title>{category} logos - Svgl</title>
+  <link rel="canonical" href="https://svgl.app/{category}/" />
 </svelte:head>
 
 <Container>
