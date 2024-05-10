@@ -6,7 +6,7 @@ const { join } = require('path');
 const core = require('@actions/core');
 
 // 🔎 Settings:
-const dir = '../static/library';
+const dir = '../../static/library';
 const sizeLimit = 20000; // 20kb;
 
 function convertBytes(bytes, format = 'KB') {
