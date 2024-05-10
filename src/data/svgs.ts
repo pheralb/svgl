@@ -2,6 +2,24 @@ import type { iSVG } from '../types/svg';
 
 export const svgs: iSVG[] = [
   {
+    title: "Animate",
+    category: ["Software", "Design"],
+    "route": "/library/animate.svg",
+    "url": "https://www.adobe.com/products/animate.html"
+  },
+  {
+    title: "Blender",
+    category: ["Software", "Design"],
+    "route": "/library/blender.svg",
+    "url": "https://blender.org/"
+  },
+  {
+    title: "Lua",
+    category: "Language",
+    "route": "/library/lua.svg",
+    "url": "https://lua.org/"
+  },
+  {
     title: 'Mercado Pago',
     category: 'Payment',
     route: '/library/mercado-pago.svg',
@@ -481,6 +499,12 @@ export const svgs: iSVG[] = [
     category: 'Library',
     route: '/library/bun.svg',
     url: 'https://bun.sh'
+  },
+  {
+    title: 'BuildShip',
+    category: 'AI',
+    route: '/library/buildship.svg',
+    url: 'https://buildship.com/'
   },
   {
     title: 'Twilio',
@@ -2663,5 +2687,31 @@ export const svgs: iSVG[] = [
       dark: '/library/dub_dark_wordmark.svg'
     },
     url: 'https://dub.co'
+  },
+  {
+    title: 'Turso',
+    category: ['Database', 'Software'],
+    route: {
+      light: '/library/turso-light.svg',
+      dark: '/library/turso-dark.svg'
+    },
+    wordmark: {
+      light: '/library/turso-wordmark-light.svg',
+      dark: '/library/turso-wordmark-dark.svg'
+    },
+    url: 'https://turso.tech'
+  },
+  {
+    title: 'RelaGit',
+    category: 'Software',
+    route: {
+      light: '/library/relagit-icon-light.svg',
+      dark: '/library/relagit-icon-dark.svg'
+    },
+    wordmark: {
+      light: '/library/relagit-wordmark-light.svg',
+      dark: '/library/relagit-wordmark-dark.svg'
+    },
+    url: 'https://rela.dev'
   }
 ];
