@@ -2715,11 +2715,11 @@ export const svgs: iSVG[] = [
     url: 'https://rela.dev'
   },
   {
-    title: 'T3',
+    title: 'T3 Stack',
     category: 'Framework',
     route: {
-      light: '/library/t3-light.svg',
-      dark: '/library/t3-dark.svg'
+      light: '/library/t3-dark.svg',
+      dark: '/library/t3-light.svg'
     },
     url: 'https://create.t3.gg/'
   }
