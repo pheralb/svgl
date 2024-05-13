@@ -2,22 +2,22 @@ import type { iSVG } from '../types/svg';
 
 export const svgs: iSVG[] = [
   {
-    title: "Animate",
-    category: ["Software", "Design"],
-    "route": "/library/animate.svg",
-    "url": "https://www.adobe.com/products/animate.html"
+    title: 'Animate',
+    category: ['Software', 'Design'],
+    route: '/library/animate.svg',
+    url: 'https://www.adobe.com/products/animate.html'
   },
   {
-    title: "Blender",
-    category: ["Software", "Design"],
-    "route": "/library/blender.svg",
-    "url": "https://blender.org/"
+    title: 'Blender',
+    category: ['Software', 'Design'],
+    route: '/library/blender.svg',
+    url: 'https://blender.org/'
   },
   {
-    title: "Lua",
-    category: "Language",
-    "route": "/library/lua.svg",
-    "url": "https://lua.org/"
+    title: 'Lua',
+    category: 'Language',
+    route: '/library/lua.svg',
+    url: 'https://lua.org/'
   },
   {
     title: 'Mercado Pago',
@@ -2713,5 +2713,14 @@ export const svgs: iSVG[] = [
       dark: '/library/relagit-wordmark-dark.svg'
     },
     url: 'https://rela.dev'
+  },
+  {
+    title: 'T3',
+    category: 'Framework',
+    route: {
+      light: '/library/t3-light.svg',
+      dark: '/library/t3-dark.svg'
+    },
+    url: 'https://create.t3.gg/'
   }
 ];
