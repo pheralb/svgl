@@ -2722,5 +2722,11 @@ export const svgs: iSVG[] = [
       dark: '/library/t3-light.svg'
     },
     url: 'https://create.t3.gg/'
+  },
+  {
+    title: 'YGeeker',
+    category: 'Software',
+    route: '/library/ygeeker.svg',
+    url: 'https://www.ygeeker.com'
   }
 ];
