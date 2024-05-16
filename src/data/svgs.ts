@@ -2727,7 +2727,10 @@ export const svgs: iSVG[] = [
     title: 'Apple Music',
     category: 'Music',
     route: '/library/apple-music-icon.svg',
-    wordmark: '/library/apple-music-wordmark.svg',
+    wordmark: {
+      light: '/library/apple-music-wordmark-light.svg',
+      dark: '/library/apple-music-wordmark-dark.svg'
+    },
     url: 'https://music.apple.com/'
   }
 ];
