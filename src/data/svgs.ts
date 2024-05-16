@@ -559,7 +559,7 @@ export const svgs: iSVG[] = [
     url: 'https://nestjs.com/'
   },
   {
-    title: 'Github Copilot',
+    title: 'GitHub Copilot',
     category: 'Software',
     route: {
       light: '/library/copilot.svg',
