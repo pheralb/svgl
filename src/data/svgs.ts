@@ -2724,6 +2724,16 @@ export const svgs: iSVG[] = [
     url: 'https://create.t3.gg/'
   },
   {
+    title: 'Apple Music',
+    category: 'Music',
+    route: '/library/apple-music-icon.svg',
+    wordmark: {
+      light: '/library/apple-music-wordmark-light.svg',
+      dark: '/library/apple-music-wordmark-dark.svg'
+    },
+    url: 'https://music.apple.com/'
+  },
+  {
     title: 'YGeeker',
     category: 'Software',
     route: '/library/ygeeker.svg',
