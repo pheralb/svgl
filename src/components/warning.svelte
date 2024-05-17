@@ -24,7 +24,7 @@
           target="_blank"
           class="underline underline-offset-4 decoration-dotted decoration-neutral-500"
           href="https://github.com/pheralb/svgl/issues/new">create an issue</a
-        > on Github.
+        > on GitHub.
       </p>
     </div>
     <button
