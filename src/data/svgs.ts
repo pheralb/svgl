@@ -2732,5 +2732,11 @@ export const svgs: iSVG[] = [
       dark: '/library/apple-music-wordmark-dark.svg'
     },
     url: 'https://music.apple.com/'
+  },
+  {
+    title: 'YGeeker',
+    category: 'Software',
+    route: '/library/ygeeker.svg',
+    url: 'https://www.ygeeker.com'
   }
 ];
