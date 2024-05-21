@@ -2750,6 +2750,6 @@ export const svgs: iSVG[] = [
       dark: '/library/plutolinks_wordmark_dark.svg',
       light: '/library/plutolinks_wordmark_light.svg'
     },
-    url: 'Website'
+    url: 'https://plutolinks.com'
   }
 ];
