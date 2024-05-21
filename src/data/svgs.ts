@@ -2738,5 +2738,18 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/ygeeker.svg',
     url: 'https://www.ygeeker.com'
+  },
+  {
+    title: 'PlutoLinks',
+    category: ['Analytics', 'Software'],
+    route: {
+      dark: '/library/plutolinks_dark.svg',
+      light: '/library/plutolinks_light.svg'
+    },
+    wordmark: {
+      dark: '/library/plutolinks_wordmark_dark.svg',
+      light: '/library/plutolinks_wordmark_light.svg'
+    },
+    url: 'https://plutolinks.com'
   }
 ];
