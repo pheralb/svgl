@@ -2738,5 +2738,11 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/ygeeker.svg',
     url: 'https://www.ygeeker.com'
-  }
+  },
+  {
+    title: 'Web components',
+    category: 'Library',
+    route: '/library/webcomponents.svg',
+    url: 'https://www.webcomponents.org/'
+  },
 ];
