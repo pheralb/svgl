@@ -2,6 +2,15 @@ import type { iSVG } from '../types/svg';
 
 export const svgs: iSVG[] = [
   {
+	title: 'Cisco',
+	category: 'Software',
+	route: {
+		light: '/library/cisco_light.svg',
+		dark: '/library/cisco_dark.svg'
+	},
+	url: 'https://www.cisco.com/'
+  },
+  {
     title: 'Animate',
     category: ['Software', 'Design'],
     route: '/library/animate.svg',
