@@ -1,13 +1,19 @@
 {
+  "name": "@pheralb/svgl-hono",
+  "author": "@pheralb_",
+  "version": "1.0.0",
+  "description": "Alternative SVGL API built with Hono",
+  "private": true,
+  "license": "MIT",
   "scripts": {
     "dev": "wrangler dev src/index.ts",
     "deploy": "wrangler deploy --minify src/index.ts"
   },
   "dependencies": {
-    "hono": "4.2.9"
+    "hono": "4.4.2"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "4.20240423.0",
-    "wrangler": "3.52.0"
+    "@cloudflare/workers-types": "4.20240529.0",
+    "wrangler": "3.58.0"
   }
 }
