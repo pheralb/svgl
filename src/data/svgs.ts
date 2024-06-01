@@ -2,13 +2,13 @@ import type { iSVG } from '../types/svg';
 
 export const svgs: iSVG[] = [
   {
-	title: 'Cisco',
-	category: 'Software',
-	route: {
-		light: '/library/cisco_light.svg',
-		dark: '/library/cisco_dark.svg'
-	},
-	url: 'https://www.cisco.com/'
+    title: 'Cisco',
+    category: 'Software',
+    route: {
+      light: '/library/cisco_light.svg',
+      dark: '/library/cisco_dark.svg'
+    },
+    url: 'https://www.cisco.com/'
   },
   {
     title: 'Animate',
@@ -1372,6 +1372,10 @@ export const svgs: iSVG[] = [
       light: '/library/openai.svg',
       dark: '/library/openai_dark.svg'
     },
+    wordmark: {
+      light: '/library/openai_wordmark_light.svg',
+      dark: '/library/openai_wordmark_dark.svg'
+    },
     url: 'https://openai.com/'
   },
   {
@@ -2210,6 +2214,10 @@ export const svgs: iSVG[] = [
     title: 'Perplexity AI',
     category: 'AI',
     route: '/library/perplexity.svg',
+    wordmark: {
+      light: '/library/perplexity_wordmark_light.svg',
+      dark: '/library/perplexity_wordmark_dark.svg'
+    },
     url: 'https://perplexity.ai/'
   },
   {
@@ -2753,5 +2761,5 @@ export const svgs: iSVG[] = [
     category: 'Library',
     route: '/library/webcomponents.svg',
     url: 'https://www.webcomponents.org/'
-  },
+  }
 ];
