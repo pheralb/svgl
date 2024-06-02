@@ -2,6 +2,15 @@ import type { iSVG } from '../types/svg';
 
 export const svgs: iSVG[] = [
   {
+    title: 'Together AI',
+    category: 'AI',
+    route: {
+      light: '/library/togetherai_light.svg',
+      dark: '/library/togetherai_dark.svg'
+    },
+    url: 'https://www.together.ai/'
+  },
+  {
     title: 'Suno',
     category: 'AI',
     route: '/library/suno.svg',
