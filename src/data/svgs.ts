@@ -2,6 +2,13 @@ import type { iSVG } from '../types/svg';
 
 export const svgs: iSVG[] = [
   {
+    title: 'Cohere',
+    category: 'AI',
+    route: '/library/cohere.svg',
+    wordmark: '/library/cohere_wordmark.svg',
+    url: 'https://cohere.com/'
+  },
+  {
     title: 'Cisco',
     category: 'Software',
     route: {
