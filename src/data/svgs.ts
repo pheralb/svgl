@@ -2,6 +2,16 @@ import type { iSVG } from '../types/svg';
 
 export const svgs: iSVG[] = [
   {
+    title: 'Suno',
+    category: 'AI',
+    route: '/library/suno.svg',
+    wordmark: {
+      light: '/library/suno_wordmark_light.svg',
+      dark: '/library/suno_wordmark_dark.svg'
+    },
+    url: 'https://suno.com/'
+  },
+  {
     title: 'Groq',
     category: 'AI',
     route: '/library/groq.svg',
