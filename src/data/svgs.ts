@@ -2,6 +2,16 @@ import type { iSVG } from '../types/svg';
 
 export const svgs: iSVG[] = [
   {
+    title: 'Groq',
+    category: 'AI',
+    route: '/library/groq.svg',
+    wordmark: {
+      light: '/library/groq_wordmark_light.svg',
+      dark: '/library/groq_wordmark_dark.svg'
+    },
+    url: 'https://groq.com/'
+  },
+  {
     title: 'Cohere',
     category: 'AI',
     route: '/library/cohere.svg',
