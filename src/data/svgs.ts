@@ -2,6 +2,51 @@ import type { iSVG } from '../types/svg';
 
 export const svgs: iSVG[] = [
   {
+    title: 'Inflection AI',
+    category: 'AI',
+    route: {
+      light: '/library/inflectionai_light.svg',
+      dark: '/library/inflectionai_dark.svg'
+    },
+    url: 'https://inflection.ai/'
+  },
+  {
+    title: 'Together AI',
+    category: 'AI',
+    route: {
+      light: '/library/togetherai_light.svg',
+      dark: '/library/togetherai_dark.svg'
+    },
+    url: 'https://www.together.ai/'
+  },
+  {
+    title: 'Suno',
+    category: 'AI',
+    route: '/library/suno.svg',
+    wordmark: {
+      light: '/library/suno_wordmark_light.svg',
+      dark: '/library/suno_wordmark_dark.svg'
+    },
+    url: 'https://suno.com/'
+  },
+  {
+    title: 'Groq',
+    category: 'AI',
+    route: '/library/groq.svg',
+    wordmark: {
+      light: '/library/groq_wordmark_light.svg',
+      dark: '/library/groq_wordmark_dark.svg'
+    },
+    url: 'https://groq.com/'
+  },
+  {
+    title: 'Cohere',
+    category: 'AI',
+    route: '/library/cohere.svg',
+    wordmark: '/library/cohere_wordmark.svg',
+    url: 'https://cohere.com/'
+  },
+  {
     title: 'Cisco',
     category: 'Software',
     route: {
