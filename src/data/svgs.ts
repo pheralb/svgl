@@ -428,6 +428,19 @@ export const svgs: iSVG[] = [
     url: 'https://headlessui.dev/'
   },
   {
+    title: 'GreatFrontEnd',
+    category: 'Education',
+    route: {
+      light: '/library/greatfrontend_light.svg',
+      dark: '/library/greatfrontend_dark.svg'
+    },
+    wordmark: {
+      light: '/library/greatfrontend_mark_light.svg',
+      dark: '/library/greatfrontend_mark_dark.svg'
+    },
+    url: 'https://greatfrontend.com'
+  },
+  {
     title: 'Kotlin',
     category: 'Language',
     route: '/library/kotlin.svg',
