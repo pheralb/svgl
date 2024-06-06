@@ -47,6 +47,15 @@ export const svgs: iSVG[] = [
     url: 'https://cohere.com/'
   },
   {
+    title: 'Ollama',
+    category: 'AI',
+    route: {
+      light: '/library/ollama_light.svg',
+      dark: '/library/ollama_dark.svg'
+    },
+    url: 'https://www.ollama.com/'
+  },
+  {
     title: 'Cisco',
     category: 'Software',
     route: {
