@@ -2815,5 +2815,12 @@ export const svgs: iSVG[] = [
     category: 'Library',
     route: '/library/webcomponents.svg',
     url: 'https://www.webcomponents.org/'
+  },
+  {
+    title: 'PostCSS',
+    category: 'Compiler',
+    route: '/library/postcss.svg',
+    wordmark: '/library/postcss_wordmark.svg',
+    url: 'https://postcss.org/'
   }
 ];
