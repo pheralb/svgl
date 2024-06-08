@@ -2817,6 +2817,13 @@ export const svgs: iSVG[] = [
     url: 'https://www.webcomponents.org/'
   },
   {
+    title: "SVG",
+    category: ["Language", "Design"],
+    route: "/library/svg.svg",
+    wordmark: "/library/svg_wordmark.svg",
+    url: "https://www.w3.org/TR/SVG/"
+  },
+  {
     title: 'A11Y Project',
     category: 'Education',
     route: {
@@ -2824,5 +2831,5 @@ export const svgs: iSVG[] = [
       dark: '/library/a11yproject-dark.svg'
     },
     url: 'https://www.a11yproject.com/'
-  }
+  },
 ];
