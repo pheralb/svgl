@@ -2815,5 +2815,12 @@ export const svgs: iSVG[] = [
     category: 'Library',
     route: '/library/webcomponents.svg',
     url: 'https://www.webcomponents.org/'
+  },
+  {
+    title: "SVG",
+    category: ["Language", "Design"],
+    route: "/library/svg.svg",
+    wordmark: "/library/svg_wordmark.svg",
+    url: "https://www.w3.org/TR/SVG/"
   }
 ];
