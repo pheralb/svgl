@@ -2815,5 +2815,11 @@ export const svgs: iSVG[] = [
     category: 'Library',
     route: '/library/webcomponents.svg',
     url: 'https://www.webcomponents.org/'
+  },
+  {
+    title: 'Lighthouse',
+    category: 'Software',
+    route: '/library/lighthouse.svg',
+    url: 'https://developer.chrome.com/docs/lighthouse'
   }
 ];
