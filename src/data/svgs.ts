@@ -2822,5 +2822,14 @@ export const svgs: iSVG[] = [
     route: "/library/svg.svg",
     wordmark: "/library/svg_wordmark.svg",
     url: "https://www.w3.org/TR/SVG/"
-  }
+  },
+  {
+    title: 'A11Y Project',
+    category: 'Education',
+    route: {
+      light: '/library/a11yproject-light.svg',
+      dark: '/library/a11yproject-dark.svg'
+    },
+    url: 'https://www.a11yproject.com/'
+  },
 ];
