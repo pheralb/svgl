@@ -2815,5 +2815,14 @@ export const svgs: iSVG[] = [
     category: 'Library',
     route: '/library/webcomponents.svg',
     url: 'https://www.webcomponents.org/'
+  },
+  {
+    title: 'A11Y Project',
+    category: 'Education',
+    route: {
+      light: '/library/a11yproject-light.svg',
+      dark: '/library/a11yproject-dark.svg'
+    },
+    url: 'https://www.a11yproject.com/'
   }
 ];
