@@ -254,7 +254,7 @@ export const svgs: iSVG[] = [
   {
     title: 'DFINITY',
     category: 'Blockchain',
-    route: '/library/Internet Computer ICP - Dfinity.svg',
+    route: '/library/Internet Computer ICP – Dfinity.svg',
     url: 'https://dfinity.org/'
   },
   {
