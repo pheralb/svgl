@@ -6,6 +6,7 @@ export type tCategory =
   | 'Hosting'
   | 'Framework'
   | 'CMS'
+  | 'Blockchain'
   | 'Database'
   | 'Compiler'
   | 'Crypto'
