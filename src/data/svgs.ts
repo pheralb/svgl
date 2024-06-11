@@ -253,13 +253,13 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'DFINITY',
-    category: 'Blockchain',
+    category: 'Crypto',
     route: '/library/Internet Computer ICP – Dfinity.svg',
     url: 'https://dfinity.org/'
   },
   {
     title: 'ICP',
-    category: 'Crypto',
+    category: 'Blockchain',
     route: '/library/Internet Computer ICP Icon.svg',
     url: 'https://internetcomputer.org/'
   },
