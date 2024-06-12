@@ -2836,5 +2836,12 @@ export const svgs: iSVG[] = [
     route: '/library/todoist.svg',
     wordmark: '/library/todoist-wordmark.svg',
     url: 'https://todoist.com/'
+  },
+  {
+    title: 'Odoo',
+    category: ['ERP', 'Software'],
+    route: '/library/odoo_inverted.svg',
+    wordmark: '/library/odoo.svg',
+    url: 'https://www.odoo.com/'
   }
 ];
