@@ -2838,7 +2838,7 @@ export const svgs: iSVG[] = [
     url: 'https://todoist.com/'
   },
   {
-    title: 'Todoist',
+    title: 'UpLeveled',
     category: 'Education',
     route: '/library/upleveled.svg',
     wordmark: '/library/upleveled-wordmark.svg',
