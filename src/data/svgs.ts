@@ -2824,11 +2824,11 @@ export const svgs: iSVG[] = [
     url: 'https://postcss.org/'
   },
   {
-    title: "SVG",
-    category: ["Language", "Design"],
-    route: "/library/svg.svg",
-    wordmark: "/library/svg_wordmark.svg",
-    url: "https://www.w3.org/TR/SVG/"
+    title: 'SVG',
+    category: ['Language', 'Design'],
+    route: '/library/svg.svg',
+    wordmark: '/library/svg_wordmark.svg',
+    url: 'https://www.w3.org/TR/SVG/'
   },
   {
     title: 'Todoist',
@@ -2836,5 +2836,12 @@ export const svgs: iSVG[] = [
     route: '/library/todoist.svg',
     wordmark: '/library/todoist-wordmark.svg',
     url: 'https://todoist.com/'
+  },
+  {
+    title: 'Todoist',
+    category: 'Education',
+    route: '/library/upleveled.svg',
+    wordmark: '/library/upleveled-wordmark.svg',
+    url: 'https://upleveled.io/'
   }
 ];
