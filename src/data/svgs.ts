@@ -2838,10 +2838,10 @@ export const svgs: iSVG[] = [
     url: 'https://todoist.com/'
   },
   {
-    title: "Odoo",
-    category: ["ERP", "Software"],
-    route: "/library/odoo_inverted.svg",
-    wordmark: "/library/odoo.svg",
-    url: "https://www.odoo.com/"
+    title: 'Odoo',
+    category: ['ERP', 'Software'],
+    route: '/library/odoo_inverted.svg',
+    wordmark: '/library/odoo.svg',
+    url: 'https://www.odoo.com/'
   }
 ];
