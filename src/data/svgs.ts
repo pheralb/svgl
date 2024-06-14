@@ -2,6 +2,12 @@ import type { iSVG } from '../types/svg';
 
 export const svgs: iSVG[] = [
   {
+    title: 'October CMS',
+    category: 'CMS',
+    route: '/library/october_cms.svg',
+    url: 'https://octobercms.com/'
+  },
+  {
     title: 'Craft CMS',
     category: 'CMS',
     route: '/library/craft_cms.svg',
