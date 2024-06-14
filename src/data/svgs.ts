@@ -2,6 +2,13 @@ import type { iSVG } from '../types/svg';
 
 export const svgs: iSVG[] = [
   {
+    title: 'Craft CMS',
+    category: 'CMS',
+    route: '/library/craft_cms.svg',
+    wordmark: '/library/craft_cms_wordmark.svg',
+    url: 'https://craftcms.com/'
+  },
+  {
     title: 'Inflection AI',
     category: 'AI',
     route: {
