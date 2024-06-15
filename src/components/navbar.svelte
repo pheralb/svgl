@@ -48,7 +48,7 @@
       <a href="/" aria-label="Go to the SVGL v4.1 home page">
         <div class="flex items-center space-x-2 opacity-100 hover:opacity-80 transition-opacity">
           <svelte:component this={Logo} />
-          <span class="text-[19px] font-medium tracking-wide hidden md:block">svgl</span>
+          <h1 class="text-[19px] font-medium tracking-wide hidden md:block">svgl</h1>
           <p class="text-neutral-400 hidden md:block font-mono">v4.2</p>
         </div>
       </a>
