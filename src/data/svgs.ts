@@ -2618,6 +2618,13 @@ export const svgs: iSVG[] = [
     url: 'https://asana.com'
   },
   {
+    title: 'UpLeveled',
+    category: 'Education',
+    route: '/library/upleveled.svg',
+    wordmark: '/library/upleveled-wordmark.svg',
+    url: 'https://upleveled.io/'
+  },
+  {
     title: 'Zoom',
     category: 'Software',
     route: '/library/zoom.svg',
@@ -2838,10 +2845,27 @@ export const svgs: iSVG[] = [
     url: 'https://todoist.com/'
   },
   {
-    title: 'UpLeveled',
-    category: 'Education',
-    route: '/library/upleveled.svg',
-    wordmark: '/library/upleveled-wordmark.svg',
-    url: 'https://upleveled.io/'
+    title: 'Apidog',
+    category: 'Software',
+    route: '/library/apidog.svg',
+    url: 'https://apidog.com/'
+  },
+  {
+    title: 'Chart.js',
+    category: 'Library',
+    route: '/library/chartjs.svg',
+    url: 'https://www.chartjs.org/'
+  },
+  {
+    title: 'Faker',
+    category: 'Library',
+    route: '/library/faker.svg',
+    url: 'https://fakerjs.dev/'
+  },
+  {
+    title: 'JSON Schema',
+    category: 'Library',
+    route: '/library/json-schema.svg',
+    url: 'https://json-schema.org/'
   }
 ];
