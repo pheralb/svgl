@@ -2857,15 +2857,18 @@ export const svgs: iSVG[] = [
     url: 'https://www.chartjs.org/'
   },
   {
-    title: 'Faker',
-    category: 'Library',
-    route: '/library/faker.svg',
-    url: 'https://fakerjs.dev/'
-  },
-  {
     title: 'JSON Schema',
     category: 'Library',
     route: '/library/json-schema.svg',
     url: 'https://json-schema.org/'
+  },
+  {
+    title: 'v0',
+    category: 'Vercel',
+    route: {
+      light: '/library/v0_light.svg',
+      dark: '/library/v0_dark.svg'
+    },
+    url: 'https://v0.dev/'
   }
 ];
