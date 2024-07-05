@@ -5,7 +5,8 @@
   import { cn } from '@/utils/cn';
 
   let warning = false;
-  const initialValue = browser ? window.localStorage.getItem('warning') : true;
+  let warningName = 'svgl_warning_message';
+  const initialValue = browser ? window.localStorage.getItem(warningName) : true;
 </script>
 
 {#if !warning && !initialValue}
@@ -34,7 +35,7 @@
     <button
       class={cn(buttonStyles, 'h-10 text-sm')}
       on:click={() => {
-        localStorage.setItem('warning', 'true');
+        localStorage.setItem(warningName, 'true');
         warning = true;
       }}
     >
