@@ -33,7 +33,7 @@ async function checkSize() {
       if (stats.size >= sizeLimit) {
         maxFiles.push({
           filename: file,
-          size: stats.size
+          size: convertBytes(stats.size)
         });
         if (stats.size > maxSize) {
           maxSize = stats.size;
@@ -53,9 +53,7 @@ async function checkSize() {
   } finally {
     if (maxFiles.length > 0) {
       console.log('🔎 Files found:');
-      maxFiles.forEach((file) => {
-        console.log(`- 📄 ${file.filename} - ${convertBytes(file.size, 'KB')}`);
-      });
+      console.table(maxFiles);
     }
     console.log('⚙️ Settings:');
     console.log(`- 📁 Directory: ${dir}`);

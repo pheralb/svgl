@@ -4,7 +4,7 @@ const { readFile, writeFile } = require('fs/promises');
 const { join } = require('path');
 
 // 🔎 Settings:
-const dir = '../static/library';
+const dir = '../../static/library';
 
 async function fixViewbox() {
   const files = await readdir(dir);
