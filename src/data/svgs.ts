@@ -2870,5 +2870,11 @@ export const svgs: iSVG[] = [
       dark: '/library/v0_dark.svg'
     },
     url: 'https://v0.dev/'
+  },
+  {
+    title: 'Snipcart',
+    category: 'Library',
+    route: '/library/snipcart.svg',
+    url: 'https://snipcart.com/'
   }
 ];
