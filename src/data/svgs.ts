@@ -121,7 +121,10 @@ export const svgs: iSVG[] = [
   {
     title: 'Github',
     category: 'Software',
-    route: '/library/github.svg',
+    route: {
+      light: '/library/github-light.svg',
+      dark: '/library/github-dark.svg'
+    },
     url: 'https://github.com/'
   },
   {
