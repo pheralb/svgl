@@ -53,8 +53,8 @@
   }) => {
     const zip = new JSZip();
 
-    const lightSvg = await getSvgContent(lightRoute, false);
-    const darkSvg = await getSvgContent(darkRoute, false);
+    const lightSvg = await getSvgContent(lightRoute);
+    const darkSvg = await getSvgContent(darkRoute);
 
     if (isWordmark) {
       zip.file(`${svgInfo.title}_wordmark_light.svg`, lightSvg);
