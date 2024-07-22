@@ -6,8 +6,13 @@ yarn.lock
 # Folders
 /.svelte-kit
 /build
+dist
 /package
 .idea/
+
+# Hono
+.wrangler
+.dev.vars
 
 # Logs
 .DS_Store

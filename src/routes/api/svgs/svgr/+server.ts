@@ -29,7 +29,7 @@ export const POST = async ({ request }: RequestEvent) => {
 
     const svgCode = body.code;
     const typescript = body.typescript;
-    const name = body.name;
+    const name = body.name.replace(/[^a-zA-Z0-9]/g, '');
 
     const jsCode = await transform(
       svgCode,

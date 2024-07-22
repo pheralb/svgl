@@ -38,8 +38,8 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
-        working-directory: ./check-size
+        working-directory: ./utils/check-size
 
       - name: Check svgs size
         run: pnpm start
-        working-directory: ./check-size
+        working-directory: ./utils/check-size

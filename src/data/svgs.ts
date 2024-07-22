@@ -2,6 +2,87 @@ import type { iSVG } from '../types/svg';
 
 export const svgs: iSVG[] = [
   {
+    title: 'Inflection AI',
+    category: 'AI',
+    route: {
+      light: '/library/inflectionai_light.svg',
+      dark: '/library/inflectionai_dark.svg'
+    },
+    url: 'https://inflection.ai/'
+  },
+  {
+    title: 'Together AI',
+    category: 'AI',
+    route: {
+      light: '/library/togetherai_light.svg',
+      dark: '/library/togetherai_dark.svg'
+    },
+    url: 'https://www.together.ai/'
+  },
+  {
+    title: 'Suno',
+    category: 'AI',
+    route: '/library/suno.svg',
+    wordmark: {
+      light: '/library/suno_wordmark_light.svg',
+      dark: '/library/suno_wordmark_dark.svg'
+    },
+    url: 'https://suno.com/'
+  },
+  {
+    title: 'Groq',
+    category: 'AI',
+    route: '/library/groq.svg',
+    wordmark: {
+      light: '/library/groq_wordmark_light.svg',
+      dark: '/library/groq_wordmark_dark.svg'
+    },
+    url: 'https://groq.com/'
+  },
+  {
+    title: 'Cohere',
+    category: 'AI',
+    route: '/library/cohere.svg',
+    wordmark: '/library/cohere_wordmark.svg',
+    url: 'https://cohere.com/'
+  },
+  {
+    title: 'Ollama',
+    category: 'AI',
+    route: {
+      light: '/library/ollama_light.svg',
+      dark: '/library/ollama_dark.svg'
+    },
+    url: 'https://www.ollama.com/'
+  },
+  {
+    title: 'Cisco',
+    category: 'Software',
+    route: {
+      light: '/library/cisco_light.svg',
+      dark: '/library/cisco_dark.svg'
+    },
+    url: 'https://www.cisco.com/'
+  },
+  {
+    title: 'Animate',
+    category: ['Software', 'Design'],
+    route: '/library/animate.svg',
+    url: 'https://www.adobe.com/products/animate.html'
+  },
+  {
+    title: 'Blender',
+    category: ['Software', 'Design'],
+    route: '/library/blender.svg',
+    url: 'https://blender.org/'
+  },
+  {
+    title: 'Lua',
+    category: 'Language',
+    route: '/library/lua.svg',
+    url: 'https://lua.org/'
+  },
+  {
     title: 'Mercado Pago',
     category: 'Payment',
     route: '/library/mercado-pago.svg',
@@ -40,7 +121,10 @@ export const svgs: iSVG[] = [
   {
     title: 'Github',
     category: 'Software',
-    route: '/library/github.svg',
+    route: {
+      light: '/library/github-light.svg',
+      dark: '/library/github-dark.svg'
+    },
     url: 'https://github.com/'
   },
   {
@@ -541,7 +625,7 @@ export const svgs: iSVG[] = [
     url: 'https://nestjs.com/'
   },
   {
-    title: 'Github Copilot',
+    title: 'GitHub Copilot',
     category: 'Software',
     route: {
       light: '/library/copilot.svg',
@@ -1344,6 +1428,10 @@ export const svgs: iSVG[] = [
     route: {
       light: '/library/openai.svg',
       dark: '/library/openai_dark.svg'
+    },
+    wordmark: {
+      light: '/library/openai_wordmark_light.svg',
+      dark: '/library/openai_wordmark_dark.svg'
     },
     url: 'https://openai.com/'
   },
@@ -2183,6 +2271,10 @@ export const svgs: iSVG[] = [
     title: 'Perplexity AI',
     category: 'AI',
     route: '/library/perplexity.svg',
+    wordmark: {
+      light: '/library/perplexity_wordmark_light.svg',
+      dark: '/library/perplexity_wordmark_dark.svg'
+    },
     url: 'https://perplexity.ai/'
   },
   {
@@ -2529,6 +2621,13 @@ export const svgs: iSVG[] = [
     url: 'https://asana.com'
   },
   {
+    title: 'UpLeveled',
+    category: 'Education',
+    route: '/library/upleveled.svg',
+    wordmark: '/library/upleveled-wordmark.svg',
+    url: 'https://upleveled.io/'
+  },
+  {
     title: 'Zoom',
     category: 'Software',
     route: '/library/zoom.svg',
@@ -2705,5 +2804,84 @@ export const svgs: iSVG[] = [
       dark: '/library/relagit-wordmark-dark.svg'
     },
     url: 'https://rela.dev'
+  },
+  {
+    title: 'T3 Stack',
+    category: 'Framework',
+    route: {
+      light: '/library/t3-dark.svg',
+      dark: '/library/t3-light.svg'
+    },
+    url: 'https://create.t3.gg/'
+  },
+  {
+    title: 'Apple Music',
+    category: 'Music',
+    route: '/library/apple-music-icon.svg',
+    wordmark: {
+      light: '/library/apple-music-wordmark-light.svg',
+      dark: '/library/apple-music-wordmark-dark.svg'
+    },
+    url: 'https://music.apple.com/'
+  },
+  {
+    title: 'YGeeker',
+    category: 'Software',
+    route: '/library/ygeeker.svg',
+    url: 'https://www.ygeeker.com'
+  },
+  {
+    title: 'Web components',
+    category: 'Library',
+    route: '/library/webcomponents.svg',
+    url: 'https://www.webcomponents.org/'
+  },
+  {
+    title: 'PostCSS',
+    category: 'Compiler',
+    route: '/library/postcss.svg',
+    wordmark: '/library/postcss_wordmark.svg',
+    url: 'https://postcss.org/'
+  },
+  {
+    title: 'SVG',
+    category: ['Language', 'Design'],
+    route: '/library/svg.svg',
+    wordmark: '/library/svg_wordmark.svg',
+    url: 'https://www.w3.org/TR/SVG/'
+  },
+  {
+    title: 'Todoist',
+    category: 'Software',
+    route: '/library/todoist.svg',
+    wordmark: '/library/todoist-wordmark.svg',
+    url: 'https://todoist.com/'
+  },
+  {
+    title: 'Apidog',
+    category: 'Software',
+    route: '/library/apidog.svg',
+    url: 'https://apidog.com/'
+  },
+  {
+    title: 'Chart.js',
+    category: 'Library',
+    route: '/library/chartjs.svg',
+    url: 'https://www.chartjs.org/'
+  },
+  {
+    title: 'JSON Schema',
+    category: 'Library',
+    route: '/library/json-schema.svg',
+    url: 'https://json-schema.org/'
+  },
+  {
+    title: 'v0',
+    category: 'Vercel',
+    route: {
+      light: '/library/v0_light.svg',
+      dark: '/library/v0_dark.svg'
+    },
+    url: 'https://v0.dev/'
   }
 ];
