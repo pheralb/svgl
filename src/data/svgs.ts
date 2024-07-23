@@ -2873,5 +2873,17 @@ export const svgs: iSVG[] = [
       dark: '/library/v0_dark.svg'
     },
     url: 'https://v0.dev/'
+  },
+  {
+    title: 'Microsoft Excel',
+    category: 'Software',
+    route: '/library/excel.svg',
+    url: 'https://www.microsoft.com/en-us/microsoft-365/excel'
+  },
+  {
+    title: 'Microsoft Word',
+    category: 'Software',
+    route: '/library/word.svg',
+    url: 'https://www.microsoft.com/en-us/microsoft-365/word'
   }
 ];
