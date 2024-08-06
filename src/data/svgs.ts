@@ -2873,5 +2873,11 @@ export const svgs: iSVG[] = [
       dark: '/library/v0_dark.svg'
     },
     url: 'https://v0.dev/'
+  },
+  {
+    title: 'Bento',
+    category: 'Software',
+    route: '/library/bento.svg',
+    url: 'https://bento.me/home'
   }
 ];
