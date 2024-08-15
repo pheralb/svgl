@@ -2889,5 +2889,17 @@ export const svgs: iSVG[] = [
       dark: '/library/prettier-icon-dark.svg'
     },
     url: 'https://prettier.io/'
+  },
+  {
+    title: 'Microsoft Excel',
+    category: 'Software',
+    route: '/library/excel.svg',
+    url: 'https://www.microsoft.com/en-us/microsoft-365/excel'
+  },
+  {
+    title: 'Microsoft Word',
+    category: 'Software',
+    route: '/library/word.svg',
+    url: 'https://www.microsoft.com/en-us/microsoft-365/word'
   }
 ];
