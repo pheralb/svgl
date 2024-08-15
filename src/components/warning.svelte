@@ -20,12 +20,9 @@
         class="mr-1 flex-shrink-0 text-yellow-600 dark:text-yellow-500"
       />
       <p>
-        All svgs provides the link to the product or company that owns it, <strong
-          >please contact them</strong
-        >
-        if you are going to use their logo. If you are the owner of an svg and do not want it to appear
-        here, please
-        <a
+        All SVGs include links to the respective products or companies that own them. Please contact
+        the owner directly if you intend to use their logo. If you are the owner of an SVG and
+        prefer it not to be displayed here, <a
           target="_blank"
           class="underline underline-offset-4 decoration-dotted decoration-neutral-500"
           href="https://github.com/pheralb/svgl/issues/new">create an issue</a
