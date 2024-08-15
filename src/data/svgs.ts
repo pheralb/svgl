@@ -267,12 +267,6 @@ export const svgs: iSVG[] = [
     url: 'https://getbootstrap.com/'
   },
   {
-    title: 'Firebase',
-    category: 'Hosting',
-    route: '/library/firebase.svg',
-    url: 'https://firebase.google.com/'
-  },
-  {
     title: 'Vite.js',
     category: 'Compiler',
     route: '/library/vitejs.svg',
@@ -1587,7 +1581,7 @@ export const svgs: iSVG[] = [
     url: 'https://tether.to/'
   },
   {
-    title: 'X',
+    title: 'X (formerly Twitter)',
     category: 'Social',
     route: {
       light: '/library/x.svg',
@@ -2879,5 +2873,21 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/bento.svg',
     url: 'https://bento.me/home'
+  },
+  {
+    title: 'Firebase',
+    category: 'Hosting',
+    route: '/library/firebase.svg',
+    wordmark: '/library/firebase-wordmark.svg',
+    url: 'https://firebase.google.com/'
+  },
+  {
+    title: 'Prettier',
+    category: 'Library',
+    route: {
+      light: '/library/prettier-icon-light.svg',
+      dark: '/library/prettier-icon-dark.svg'
+    },
+    url: 'https://prettier.io/'
   }
 ];
