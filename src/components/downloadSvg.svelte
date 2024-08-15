@@ -53,8 +53,8 @@
   }) => {
     const zip = new JSZip();
 
-    const lightSvg = await getSvgContent(lightRoute, false);
-    const darkSvg = await getSvgContent(darkRoute, false);
+    const lightSvg = await getSvgContent(lightRoute);
+    const darkSvg = await getSvgContent(darkRoute);
 
     if (isWordmark) {
       zip.file(`${svgInfo.title}_wordmark_light.svg`, lightSvg);
@@ -105,7 +105,7 @@
     <DialogContent class="max-w-[630px]">
       <DialogHeader>
         <DialogTitle>Download {svgInfo.title}</DialogTitle>
-        <DialogDescription>This logo has multiple options to download.</DialogDescription>
+        <DialogDescription>This logo has multiple options to download:</DialogDescription>
       </DialogHeader>
 
       <div
