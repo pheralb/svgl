@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { BookIcon, Check, MegaphoneIcon } from 'lucide-svelte';
+  import { BookIcon, Check, MegaphoneIcon, XIcon } from 'lucide-svelte';
   import { browser } from '$app/environment';
   import { buttonStyles } from '@/ui/styles';
   import { cn } from '@/utils/cn';
@@ -36,8 +36,8 @@
           warning = true;
         }}
       >
-        <Check size={14} strokeWidth={2} />
-        <span>Accept</span>
+        <XIcon size={14} strokeWidth={2} />
+        <span>Close</span>
       </button>
     </div>
   </div>
