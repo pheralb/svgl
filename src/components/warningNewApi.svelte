@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { AlertTriangleIcon, BookIcon, Check, MegaphoneIcon } from 'lucide-svelte';
+  import { BookIcon, Check, MegaphoneIcon } from 'lucide-svelte';
   import { browser } from '$app/environment';
   import { buttonStyles } from '@/ui/styles';
   import { cn } from '@/utils/cn';
@@ -20,7 +20,7 @@
         class="mr-1 flex-shrink-0 text-rose-600 dark:text-rose-500 animate-pulse -rotate-12"
       />
       <p>
-        Starting <strong>August 26th</strong>, the API route <strong>svgl.app/api/*</strong> will no
+        Starting <strong>August 24th</strong>, the API route <strong>svgl.app/api/*</strong> will no
         longer be available. There is now a new route: <strong>api.svgl.app</strong>.
       </p>
     </div>
