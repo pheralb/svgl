@@ -20,9 +20,9 @@ The API is currently open to everyone and does not require any authentication. H
 The base URL for the API is:
 
 ```bash
-https://svgl.app/api/svgs
+https://api.svgl.app
 # or
-https://svgl.app/api/categories
+https://api.svgl.app/categories
 ```
 
 ## Typescript usage
@@ -59,7 +59,7 @@ export interface iSVG {
 <Endpoint title="Get all SVGs" method="GET" description="Returns all the SVGs in the repository.">
 
 ```bash
-/api/svgs
+https://api.svgl.app
 ```
 
 <p></p>
@@ -83,7 +83,7 @@ export interface iSVG {
 <Endpoint title="Get a limited number of SVGs" method="GET" description="Returns a limited number of SVGs in the repository. Start from the first SVG.">
 
 ```bash
-/api/svgs?limit=10
+https://api.svgl.app?limit=10
 ```
 
 <p></p>
@@ -107,7 +107,7 @@ export interface iSVG {
 <Endpoint title="Filter SVGs by category" method="GET" description="Returns all the SVGs in the repository that match the category.">
 
 ```bash
-/api/svgs?category=software
+https://api.svgl.app/category/software
 ```
 
 <p></p>
@@ -133,7 +133,7 @@ The list of categories is available [here](https://github.com/pheralb/svgl/blob/
 <Endpoint title="Get only categories" method="GET" description="Returns only categories with the number of SVGs in each category.">
 
 ```bash
-/api/categories
+https://api.svgl.app/categories
 ```
 
 <p></p>
@@ -158,7 +158,7 @@ The list of categories is available [here](https://github.com/pheralb/svgl/blob/
 <Endpoint title="Search SVGs by name" method="GET" description="Returns all the SVGs in the repository that match the name.">
 
 ```bash
-/api/svgs?search=axiom
+https://api.svgl.app?search=axiom
 ```
 
 <p></p>

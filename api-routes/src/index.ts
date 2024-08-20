@@ -1,5 +1,11 @@
-import { Hono } from 'hono';
+import { Context, Hono } from 'hono';
+import { env } from 'hono/adapter';
 import { cors } from 'hono/cors';
+import { BlankInput, Env } from 'hono/types';
+import { Ratelimit } from '@upstash/ratelimit';
+import { Redis } from '@upstash/redis/cloudflare';
+
+// 🌿 Import utils:
 import { addFullUrl } from './utils';
 
 // 📦 Import data from main app:
@@ -7,6 +13,13 @@ import { svgsData } from '../../src/data';
 import { iSVG } from '../../src/types/svg';
 import { tCategory } from '../../src/types/categories';
 
+declare module 'hono' {
+  interface ContextVariableMap {
+    ratelimit: Ratelimit;
+  }
+}
+
+// ✨ Return the full route for each SVG:
 const fullRouteSvgsData = svgsData.map((svg) => {
   return {
     ...svg,
@@ -15,29 +28,85 @@ const fullRouteSvgsData = svgsData.map((svg) => {
   };
 }) as iSVG[];
 
-// ⚙️ Create a new Hono instance:
+// ⚙️ Create a new Hono & Cache instance:
 const app = new Hono();
+const cache = new Map();
+
+class RedisRateLimiter {
+  static instance: Ratelimit;
+  static getInstance(c: Context<Env, '/api/*', BlankInput>) {
+    if (!this.instance) {
+      const { UPSTASH_REDIS_URL, UPSTASH_REDIS_TOKEN } = env<{
+        UPSTASH_REDIS_URL: string;
+        UPSTASH_REDIS_TOKEN: string;
+      }>(c);
+      const redisClient = new Redis({
+        token: UPSTASH_REDIS_TOKEN,
+        url: UPSTASH_REDIS_URL
+      });
+      const ratelimit = new Ratelimit({
+        redis: redisClient,
+        limiter: Ratelimit.slidingWindow(5, '5 s'),
+        ephemeralCache: cache
+      });
+      this.instance = ratelimit;
+      return this.instance;
+    } else {
+      return this.instance;
+    }
+  }
+}
+
+app.use(async (c, next) => {
+  const ratelimit = RedisRateLimiter.getInstance(c);
+  c.set('ratelimit', ratelimit);
+  await next();
+});
+
 app.use('/api/*', cors());
 
 // 🌱 GET: "/" - Returns all the SVGs data:
-app.get('/', (c) => {
+app.get('/', async (c) => {
+  const limit = c.req.query('limit');
+  const search = c.req.query('search');
+  const ratelimit = c.get('ratelimit');
+  const ip = c.req.raw.headers.get('CF-Connecting-IP');
+  const { success } = await ratelimit.limit(ip ?? 'anonymous');
+
+  if (!success) {
+    return c.json({ error: 'Too many request' }, 429);
+  }
+
+  if (limit) {
+    const limitNumber = parseInt(limit);
+    if (limitNumber) {
+      return c.json(fullRouteSvgsData.slice(0, limitNumber));
+    }
+  }
+
+  if (search) {
+    const searchResults = fullRouteSvgsData.filter((svg) =>
+      svg.title.toLowerCase().includes(search.toLowerCase())
+    );
+    if (searchResults.length === 0) {
+      return c.json({ error: 'not found' }, 404);
+    }
+    return c.json(searchResults);
+  }
+
   return c.json(fullRouteSvgsData);
 });
 
-// 🌱 GET: "/:search" - Returns a single SVG data:
-app.get('/search/:search', (c) => {
-  const title = c.req.param('search') as string;
-  const svg = fullRouteSvgsData.find((svg) =>
-    svg.title.toLowerCase().includes(title.toLowerCase())
-  );
-  if (!svg) {
-    return c.json({ error: 'not found' }, 404);
-  }
-  return c.json(svg);
-});
-
 // 🌱 GET: "/categories" - Return an array with categories:
-app.get('/categories', (c) => {
+app.get('/categories', async (c) => {
+  const ratelimit = c.get('ratelimit');
+  const ip = c.req.raw.headers.get('CF-Connecting-IP');
+  const { success } = await ratelimit.limit(ip ?? 'anonymous');
+
+  if (!success) {
+    return c.json({ error: 'Too many request' }, 429);
+  }
+
   const categories = fullRouteSvgsData.reduce((acc, svg) => {
     if (typeof svg.category === 'string') {
       if (!acc.includes(svg.category)) {
@@ -57,9 +126,17 @@ app.get('/categories', (c) => {
 });
 
 // 🌱 GET: "/category/:category - Return an list of svgs by specific category:
-app.get('/category/:category', (c) => {
+app.get('/category/:category', async (c) => {
   const category = c.req.param('category') as string;
   const targetCategory = category.charAt(0).toUpperCase() + category.slice(1);
+  const ratelimit = c.get('ratelimit');
+  const ip = c.req.raw.headers.get('CF-Connecting-IP');
+  const { success } = await ratelimit.limit(ip ?? 'anonymous');
+
+  if (!success) {
+    return c.json({ error: 'Too many request' }, 429);
+  }
+
   const categorySvgs = fullRouteSvgsData.filter((svg) => {
     if (typeof svg.category === 'string') {
       return svg.category === targetCategory;

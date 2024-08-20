@@ -30,6 +30,7 @@
 
   // Layout:
   import Navbar from '@/components/navbar.svelte';
+    import WarningNewApi from '@/components/warningNewApi.svelte';
 </script>
 
 <ModeWatcher />
@@ -87,6 +88,7 @@
   </aside>
   <div class="ml-0 md:ml-56 pb-6">
     <Warning />
+    <WarningNewApi />
     <Transition pathname={data.pathname}>
       <slot />
     </Transition>
