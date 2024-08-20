@@ -3,7 +3,9 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 // Extensions:
 import { mdsvex, escapeSvelte } from 'mdsvex';
-import { getHighlighter } from 'shiki';
+import { createHighlighter, makeSingletonHighlighter } from 'shiki';
+
+const getHighlighter = makeSingletonHighlighter(createHighlighter);
 
 // Markdown config:
 /** @type {import('mdsvex').MdsvexOptions} */
