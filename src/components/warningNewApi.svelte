@@ -17,7 +17,7 @@
       <MegaphoneIcon
         size={20}
         strokeWidth={2}
-        class="mr-1 flex-shrink-0 text-rose-600 dark:text-rose-500 animate-pulse"
+        class="mr-1 flex-shrink-0 text-rose-600 dark:text-rose-500 animate-pulse -rotate-12"
       />
       <p>
         Starting <strong>August 26th</strong>, the API route <strong>svgl.app/api/*</strong> will no
