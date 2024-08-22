@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@upstash/ratelimit": "2.0.1",
-    "hono": "4.4.2"
+    "hono": "4.5.8"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "4.20240529.0",
