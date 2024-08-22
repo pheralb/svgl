@@ -6,12 +6,20 @@
   import { getSvgContent } from '@/utils/getSvgContent';
 
   // Icons:
-  import { LinkIcon, ChevronsRight, Baseline, Sparkles } from 'lucide-svelte';
+  import {
+    LinkIcon,
+    ChevronsRight,
+    Baseline,
+    Sparkles,
+    EllipsisIcon,
+    TagIcon
+  } from 'lucide-svelte';
 
   // Components & styles:
   import DownloadSvg from './downloadSvg.svelte';
   import CopySvg from './copySvg.svelte';
-  import { badgeStyles } from '@/ui/styles';
+  import { badgeStyles, buttonStyles } from '@/ui/styles';
+  import * as Popover from '@/ui/popover';
 
   // Figma
   import { onMount } from 'svelte';
@@ -37,6 +45,9 @@
   // Icon Stroke & Size:
   let iconStroke = 1.8;
   let iconSize = 16;
+
+  // Max Categories:
+  let maxVisibleCategories = 1;
 
   // Global Images Styles:
   const globalImageStyles = 'mb-4 mt-2 h-10 select-none';
@@ -88,9 +99,29 @@
     </p>
     <div class="flex items-center space-x-1 justify-center">
       {#if Array.isArray(svgInfo.category)}
-        {#each svgInfo.category.sort() as c, index}
-          <a href={`/directory/${c.toLowerCase()}`} class={badgeStyles}>{c} </a>
+        {#each svgInfo.category.slice(0, maxVisibleCategories) as c, index}
+          <a href={`/directory/${c.toLowerCase()}`} class={badgeStyles}>{c}</a>
         {/each}
+
+        {#if svgInfo.category.length > maxVisibleCategories}
+          <Popover.Root>
+            <Popover.Trigger class={badgeStyles} title="More Tags">
+              <EllipsisIcon size={15} strokeWidth={1.5} />
+            </Popover.Trigger>
+            <Popover.Content class="flex flex-col space-y-2">
+              <p class="font-medium">More tags:</p>
+              {#each svgInfo.category.slice(maxVisibleCategories) as c}
+                <a
+                  href={`/directory/${c.toLowerCase()}`}
+                  class={cn(buttonStyles, 'rounded-md w-full')}
+                >
+                  <TagIcon size={15} strokeWidth={1.5} />
+                  <span>{c}</span>
+                </a>
+              {/each}
+            </Popover.Content>
+          </Popover.Root>
+        {/if}
       {:else}
         <a href={`/directory/${svgInfo.category.toLowerCase()}`} class={badgeStyles}>
           {svgInfo.category}

@@ -139,7 +139,7 @@
       <CopyIcon size={iconSize} strokeWidth={iconStroke} />
     {/if}
   </Popover.Trigger>
-  <Popover.Content class="flex flex-col space-y-2" sideOffset={0.3}>
+  <Popover.Content class="flex flex-col space-y-2" sideOffset={3}>
     <button
       class={cn(buttonStyles, 'rounded-md w-full')}
       title={isWordmarkSvg ? 'Copy wordmark SVG to clipboard' : 'Copy SVG to clipboard'}
