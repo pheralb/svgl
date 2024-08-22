@@ -74,7 +74,7 @@ app.get('/', async (c) => {
   const { success } = await ratelimit.limit(ip ?? 'anonymous');
 
   if (!success) {
-    return c.json({ error: 'Too many request' }, 429);
+    return c.json({ error: '🛑 Too many request' }, 429);
   }
 
   if (limit) {
@@ -104,7 +104,7 @@ app.get('/categories', async (c) => {
   const { success } = await ratelimit.limit(ip ?? 'anonymous');
 
   if (!success) {
-    return c.json({ error: 'Too many request' }, 429);
+    return c.json({ error: '🛑 Too many request' }, 429);
   }
 
   const categoryTotals: Record<string, number> = {};
@@ -127,7 +127,7 @@ app.get('/categories', async (c) => {
   return c.json(categories);
 });
 
-// 🌱 GET: "/category/:category - Return an list of svgs by specific category:
+// 🌱 GET: /category/:category - Return an list of svgs by specific category:
 app.get('/category/:category', async (c) => {
   const category = c.req.param('category') as string;
   const targetCategory = category.charAt(0).toUpperCase() + category.slice(1);
@@ -136,7 +136,7 @@ app.get('/category/:category', async (c) => {
   const { success } = await ratelimit.limit(ip ?? 'anonymous');
 
   if (!success) {
-    return c.json({ error: 'Too many request' }, 429);
+    return c.json({ error: '🛑 Too many request' }, 429);
   }
 
   const categorySvgs = fullRouteSvgsData.filter((svg) => {
