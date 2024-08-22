@@ -2,6 +2,15 @@ import type { iSVG } from '../types/svg';
 
 export const svgs: iSVG[] = [
   {
+    title: 'Nx',
+    category: ['Devtool', 'Monorepo'],
+    route: {
+      light: '/library/nx_light.svg',
+      dark: '/library/nx_dark.svg'
+    },
+    url: 'https://nx.dev'
+  },
+  {
     title: 'Inflection AI',
     category: 'AI',
     route: {

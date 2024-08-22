@@ -5,6 +5,8 @@ export type tCategory =
   | 'Library'
   | 'Hosting'
   | 'Framework'
+  | 'Devtool'
+  | 'Monorepo'
   | 'CMS'
   | 'Database'
   | 'Compiler'
