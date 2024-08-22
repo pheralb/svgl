@@ -2889,5 +2889,15 @@ export const svgs: iSVG[] = [
       dark: '/library/prettier-icon-dark.svg'
     },
     url: 'https://prettier.io/'
+  },
+  {
+    title: 'Leap Wallet',
+    category: ['Crypto', 'Software', 'Payment'],
+    route: '/library/leap-wallet.svg',
+    wordmark: {
+      light: '/library/leap-wallet-wordmark-light.svg',
+      dark: '/library/leap-wallet-wordmark-dark.svg'
+    },
+    url: 'https://leapwallet.io/'
   }
 ];
