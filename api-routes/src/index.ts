@@ -107,21 +107,23 @@ app.get('/categories', async (c) => {
     return c.json({ error: 'Too many request' }, 429);
   }
 
-  const categories = fullRouteSvgsData.reduce((acc, svg) => {
+  const categoryTotals: Record<string, number> = {};
+
+  fullRouteSvgsData.forEach((svg) => {
     if (typeof svg.category === 'string') {
-      if (!acc.includes(svg.category)) {
-        acc.push(svg.category);
-      }
-    }
-    if (Array.isArray(svg.category)) {
+      categoryTotals[svg.category] = (categoryTotals[svg.category] || 0) + 1;
+    } else if (Array.isArray(svg.category)) {
       svg.category.forEach((category) => {
-        if (!acc.includes(category)) {
-          acc.push(category);
-        }
+        categoryTotals[category] = (categoryTotals[category] || 0) + 1;
       });
     }
-    return acc;
-  }, [] as string[]);
+  });
+
+  const categories = Object.entries(categoryTotals).map(([category, total]) => ({
+    category,
+    total
+  }));
+
   return c.json(categories);
 });
 
