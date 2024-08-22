@@ -12,7 +12,8 @@
     Baseline,
     Sparkles,
     EllipsisIcon,
-    TagIcon
+    TagIcon,
+    XIcon
   } from 'lucide-svelte';
 
   // Components & styles:
@@ -48,6 +49,7 @@
 
   // Max Categories:
   let maxVisibleCategories = 1;
+  let moreTagsOptions = false;
 
   // Global Images Styles:
   const globalImageStyles = 'mb-4 mt-2 h-10 select-none';
@@ -104,9 +106,16 @@
         {/each}
 
         {#if svgInfo.category.length > maxVisibleCategories}
-          <Popover.Root>
+          <Popover.Root
+            open={moreTagsOptions}
+            onOpenChange={(isOpen) => (moreTagsOptions = isOpen)}
+          >
             <Popover.Trigger class={badgeStyles} title="More Tags">
-              <EllipsisIcon size={15} strokeWidth={1.5} />
+              {#if moreTagsOptions}
+                <XIcon size={15} strokeWidth={1.5} />
+              {:else}
+                <EllipsisIcon size={15} strokeWidth={1.5} />
+              {/if}
             </Popover.Trigger>
             <Popover.Content class="flex flex-col space-y-2">
               <p class="font-medium">More tags:</p>
