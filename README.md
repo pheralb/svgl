@@ -68,7 +68,7 @@
 
 You will need:
 
-- [Node.js 16+ (recommended 18 LTS)](https://nodejs.org/en/).
+- [Node.js 18+ (recommended 20 LTS)](https://nodejs.org/en/).
 - [Git](https://git-scm.com/).
 
 1. [Fork](https://github.com/pheralb/svgl/fork) this repository and clone it locally:
@@ -97,7 +97,7 @@ pnpm install
 
 4. Go to the [**`src/data/svgs.ts`**](https://github.com/pheralb/svgl/blob/main/src/data/svgs.ts) and add the information about your logo, following the structure:
 
-- If the logo is a solid color:
+- **Simple logo**:
 
 ```json
 {
@@ -108,7 +108,7 @@ pnpm install
 }
 ```
 
-- If the logo has logo + wordmark version:
+- **Logo + wordmark** version:
 
 ```json
 {
@@ -120,7 +120,7 @@ pnpm install
 }
 ```
 
-- If the logo/wordmark has light and dark mode:
+- **Logo + wordmark** & **light + dark mode**:
 
 ```json
 {
@@ -141,7 +141,7 @@ pnpm install
 > [!NOTE]
 >
 > - The list of categories is here: [`src/types/categories.ts`](https://github.com/pheralb/svgl/blob/main/src/types/categories.ts). You can add a new category if you need it.
-> - You can add multiple categories to the same logo, for example: `"category": ["Social", "Design"]` (max 3 categories per logo).
+> - You can add multiple categories to the same logo, for example: `"category": ["Social", "Design"]`.
 
 And create a pull request with your logo 🚀.
 
