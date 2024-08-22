@@ -2,15 +2,6 @@ import type { iSVG } from '../types/svg';
 
 export const svgs: iSVG[] = [
   {
-    title: 'Nx',
-    category: ['Devtool', 'Monorepo'],
-    route: {
-      light: '/library/nx_light.svg',
-      dark: '/library/nx_dark.svg'
-    },
-    url: 'https://nx.dev'
-  },
-  {
     title: 'Inflection AI',
     category: 'AI',
     route: {
@@ -334,7 +325,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Turborepo',
-    category: ['Library', 'Vercel'],
+    category: ['Library', 'Vercel', 'Monorepo'],
     route: '/library/turborepo.svg',
     url: 'https://turborepo.org/'
   },
@@ -2908,5 +2899,14 @@ export const svgs: iSVG[] = [
       dark: '/library/leap-wallet-wordmark-dark.svg'
     },
     url: 'https://leapwallet.io/'
+  },
+  {
+    title: 'Nx',
+    category: ['Devtool', 'Monorepo'],
+    route: {
+      light: '/library/nx_light.svg',
+      dark: '/library/nx_dark.svg'
+    },
+    url: 'https://nx.dev'
   }
 ];
