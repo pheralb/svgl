@@ -18,7 +18,7 @@
   const searchParam = queryParam('search');
 
   // Icons:
-  import { ArrowDown, ArrowDownUpIcon, ArrowUpDownIcon } from 'lucide-svelte';
+  import { ArrowDown, ArrowDownUpIcon, ArrowUpDownIcon, TrashIcon } from 'lucide-svelte';
   import { buttonStyles } from '@/ui/styles';
 
   let sorted: boolean = false;
@@ -104,10 +104,22 @@
 />
 
 <Container>
-  <div class="flex items-center justify-end mb-4">
+  <div class={cn('flex items-center mb-4 justify-end', searchTerm.length > 0 && 'justify-between')}>
+    {#if searchTerm.length > 0}
+      <button
+        class={cn(
+          'flex items-center justify-center space-x-1 rounded-md py-1.5 text-sm font-medium opacity-80 hover:opacity-100 transition-opacity',
+          filteredSvgs.length === 0 && 'hidden'
+        )}
+        on:click={() => clearSearch()}
+      >
+        <TrashIcon size={16} strokeWidth={2} class="mr-1" />
+        <span>Clear results</span>
+      </button>
+    {/if}
     <button
       class={cn(
-        'flex items-center justify-center space-x-1 rounded-md px-3 py-1.5 text-sm font-medium opacity-80 hover:opacity-100 transition-opacity',
+        'flex items-center justify-center space-x-1 rounded-md py-1.5 text-sm font-medium opacity-80 hover:opacity-100 transition-opacity',
         filteredSvgs.length === 0 && 'hidden'
       )}
       on:click={() => sort()}

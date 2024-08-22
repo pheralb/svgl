@@ -30,7 +30,7 @@
 
   // Layout:
   import Navbar from '@/components/navbar.svelte';
-    import WarningNewApi from '@/components/warningNewApi.svelte';
+  import WarningNewApi from '@/components/warningNewApi.svelte';
 </script>
 
 <ModeWatcher />
@@ -39,10 +39,10 @@
   <aside
     class={cn(
       'z-50 w-full overflow-y-auto overflow-x-hidden',
-      'dark:border-neutral-800 md:fixed md:left-0 md:h-full md:w-56 md:pb-10',
+      'dark:border-neutral-800 md:fixed md:left-0 md:w-56 md:pb-0 md:h-[calc(100vh-63px)]',
       'bg-white dark:bg-neutral-900',
       'backdrop-blur-md opacity-95',
-      'border-r border-neutral-200 dark:border-neutral-800'
+      'border-b md:border-r border-neutral-200 dark:border-neutral-800'
     )}
   >
     <div class="md:px-3 md:py-6">
