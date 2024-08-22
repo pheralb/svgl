@@ -2777,6 +2777,16 @@ export const svgs: iSVG[] = [
     url: 'https://turso.tech'
   },
   {
+    "title": "Ahrefs",
+    "category": "Software",
+    "route": "/library/ahrefs.svg",
+    "wordmark": {
+      "light": "/library/ahrefs_wordmark-logo_light.svg",
+      "dark": "/library/ahrefs_wordmark-logo_dark.svg"
+    },
+    "url": "https://ahrefs.com/"
+  },
+  {
     title: 'RelaGit',
     category: 'Software',
     route: {
