@@ -1,12 +1,16 @@
 import type { RequestEvent } from '../$types';
 
 import { transform } from '@svgr/core';
-import { json } from '@sveltejs/kit';
+import { json, redirect } from '@sveltejs/kit';
 
 import { ratelimit } from '@/server/redis';
 
 // SVGR Plugins:
 import svgrJSX from '@svgr/plugin-jsx';
+
+export const GET = async () => {
+  return redirect(301, 'https://svgl.app/api');
+};
 
 export const POST = async ({ request }: RequestEvent) => {
   const ip = request.headers.get('x-forwarded-for') ?? '';
