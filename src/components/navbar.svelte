@@ -2,12 +2,13 @@
   export let currentPath: string;
 
   import { cn } from '@/utils/cn';
-  import Logo from './logo.svelte';
+  import Logo from './icons/logo.svelte';
   import Theme from './theme.svelte';
 
   import { ArrowUpRight, CloudyIcon } from 'lucide-svelte';
-  import XIcon from './xIcon.svelte';
-  import GithubIcon from './githubIcon.svelte';
+  import XIcon from './icons/xIcon.svelte';
+  import GithubIcon from './icons/githubIcon.svelte';
+  import HeaderLogoLink from './headerLogoLink.svelte';
 
   const externalLinks = [
     {
@@ -42,17 +43,8 @@
     'backdrop-blur-md dark:bg-neutral-900/90 bg-white/90'
   )}
 >
-  <!-- Se le puso un aria-label al href="/" -->
   <div class="flex items-center justify-between mx-auto">
-    <div class="flex items-center space-x-2">
-      <a href="/" aria-label="Go to the SVGL v4.1 home page">
-        <div class="flex items-center space-x-2 opacity-100 hover:opacity-80 transition-opacity">
-          <svelte:component this={Logo} />
-          <span class="text-[19px] font-medium tracking-wide hidden md:block">svgl</span>
-          <p class="text-neutral-400 hidden md:block font-mono">v4.2</p>
-        </div>
-      </a>
-    </div>
+    <HeaderLogoLink />
     <div class="flex items-center space-x-0 md:space-x-7">
       <div
         class="flex items-center md:space-x-4 divide-x divide-neutral-300 dark:divide-neutral-700"

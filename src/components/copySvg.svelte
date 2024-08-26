@@ -12,7 +12,7 @@
   import { copyToClipboard as figmaCopyToClipboard } from '@/figma/copy-to-clipboard';
   import { buttonStyles } from '@/ui/styles';
   import { cn } from '@/utils/cn';
-  import ReactIcon from './reactIcon.svelte';
+  import ReactIcon from './icons/reactIcon.svelte';
 
   // Props:
   export let iconSize = 24;
