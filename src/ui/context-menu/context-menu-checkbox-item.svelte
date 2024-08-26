@@ -1,6 +1,6 @@
 <script lang="ts">
   import { ContextMenu as ContextMenuPrimitive } from 'bits-ui';
-  import Check from 'svelte-radix/Check.svelte';
+  import { CheckIcon } from 'lucide-svelte';
   import { cn } from '@/utils/cn';
 
   type $$Props = ContextMenuPrimitive.CheckboxItemProps;
@@ -28,7 +28,7 @@
 >
   <span class="absolute left-2 flex h-3.5 w-3.5 items-center justify-center">
     <ContextMenuPrimitive.CheckboxIndicator>
-      <Check class="h-4 w-4" />
+      <CheckIcon class="h-4 w-4" />
     </ContextMenuPrimitive.CheckboxIndicator>
   </span>
   <slot />
