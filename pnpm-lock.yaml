@@ -50,9 +50,6 @@ importers:
       shiki:
         specifier: 1.13.0
         version: 1.13.0
-      svelte-radix:
-        specifier: ^1.1.1
-        version: 1.1.1(svelte@4.2.18)
       svelte-sonner:
         specifier: 0.3.27
         version: 0.3.27(svelte@4.2.18)
@@ -2341,11 +2338,6 @@ packages:
         optional: true
       typescript:
         optional: true
-
-  svelte-radix@1.1.1:
-    resolution: {integrity: sha512-TCbV7fzlJ2aEUB0nu2EodVA+r1eYj526IYpmGUTV32Z0bIrCUvx3K8xX3tcxR5dDFA5ZBU1Hxr4RYC4TDFEQ4A==}
-    peerDependencies:
-      svelte: ^3.54.0 || ^4.0.0 || ^5.0.0 || ^5.0.0-next.1
 
   svelte-sonner@0.3.27:
     resolution: {integrity: sha512-+PvbuePNTyTNCepCWqKcFeu+Lo27yYuwfSc7zJvrWjCRMJrWAmccPg3j7jO1W13QoN3TySXU5Trb956VBQiM5Q==}
@@ -4869,10 +4861,6 @@ snapshots:
       postcss: 8.4.41
       postcss-load-config: 4.0.2(postcss@8.4.41)
       typescript: 5.5.4
-
-  svelte-radix@1.1.1(svelte@4.2.18):
-    dependencies:
-      svelte: 4.2.18
 
   svelte-sonner@0.3.27(svelte@4.2.18):
     dependencies:
