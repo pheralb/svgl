@@ -21,4 +21,5 @@ export type tCategory =
   | 'Marketplace'
   | 'Music'
   | 'Vercel'
+  | 'Google'
   | 'Payment';
