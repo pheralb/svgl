@@ -367,7 +367,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'YouTube',
-    category: 'Social',
+    category: ['Google', 'Social'],
     route: '/library/youtube.svg',
     wordmark: '/library/youtube-wordmark.svg',
     url: 'https://www.youtube.com/'
@@ -383,7 +383,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Google',
-    category: 'Social',
+    category: 'Google',
     route: '/library/google.svg',
     wordmark: '/library/google-wordmark.svg',
     url: 'https://www.google.com/'
@@ -1393,10 +1393,10 @@ export const svgs: iSVG[] = [
     url: 'https://webkit.org/'
   },
   {
-    title: 'Google Bard',
-    category: 'AI',
+    title: 'Gemini',
+    category: ['Google', 'AI'],
     route: '/library/bard.svg',
-    url: 'https://bard.google.com/'
+    url: 'https://gemini.google.com/'
   },
   {
     title: 'Obsidian',
@@ -2162,7 +2162,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Gmail',
-    category: 'Software',
+    category: ['Google', 'Software'],
     route: '/library/gmail.svg',
     url: 'https://www.gmail.com'
   },
@@ -2549,7 +2549,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Youtube Music',
-    category: 'Music',
+    category: ['Google', 'Music'],
     route: '/library/youtube_music.svg',
     wordmark: {
       light: '/library/youtube_music_wordmark_light.svg',
@@ -2908,5 +2908,11 @@ export const svgs: iSVG[] = [
       dark: '/library/nx_dark.svg'
     },
     url: 'https://nx.dev'
+  },
+  {
+    title: 'Google Colaboratory',
+    category: ['Google', 'Software'],
+    route: '/library/Google_Colaboratory.svg',
+    url: 'https://colab.research.google.com/'
   }
 ];
