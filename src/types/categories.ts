@@ -2,6 +2,7 @@ export type tCategory =
   | 'All'
   | 'AI'
   | 'Software'
+  | 'Hardware'
   | 'Library'
   | 'Hosting'
   | 'Framework'
