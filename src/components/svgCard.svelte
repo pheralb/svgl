@@ -52,7 +52,7 @@
   let moreTagsOptions = false;
 
   // Global Images Styles:
-  const globalImageStyles = 'mb-4 mt-2 h-10 select-none';
+  const globalImageStyles = 'mb-4 mt-2 h-10 select-none pointer-events-none';
 </script>
 
 <div
