@@ -2914,5 +2914,11 @@ export const svgs: iSVG[] = [
     category: ['Google', 'Software'],
     route: '/library/Google_Colaboratory.svg',
     url: 'https://colab.research.google.com/'
+  },
+  {
+    title: 'Raspberry PI',
+    category: ['Hardware', 'Software'],
+    route: '/library/raspberry_pi.svg',
+    url: 'https://www.raspberrypi.com/'
   }
 ];
