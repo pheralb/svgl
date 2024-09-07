@@ -2010,7 +2010,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Stripe',
-    category: 'Software',
+    category: ['Software', 'Payment'],
     route: '/library/stripe.svg',
     url: 'https://stripe.com/'
   },
