@@ -2509,12 +2509,6 @@ export const svgs: iSVG[] = [
     url: 'https://www.markdownguide.org/'
   },
   {
-    title: 'Movie Web',
-    category: 'Entertainment',
-    route: '/library/movie-web.svg',
-    url: 'https://movie-web.app/'
-  },
-  {
     title: 'Radix UI',
     category: 'Library',
     route: {
