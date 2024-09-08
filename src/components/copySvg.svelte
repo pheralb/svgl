@@ -113,6 +113,7 @@
         description: `${error ?? ''}`,
         duration: 5000
       });
+      isLoading = false;
       return;
     }
 
