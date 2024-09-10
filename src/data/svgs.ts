@@ -2914,5 +2914,12 @@ export const svgs: iSVG[] = [
     category: ['Hardware', 'Software'],
     route: '/library/raspberry_pi.svg',
     url: 'https://www.raspberrypi.com/'
+  },
+  {
+    title: 'Arduino',
+    category: ['Hardware', 'Software'],
+    route: '/library/arduino.svg',
+    wordmark: '/library/arduino-wordmark.svg',
+    url: 'https://www.arduino.cc/'
   }
 ];
