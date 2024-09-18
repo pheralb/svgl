@@ -2914,5 +2914,11 @@ export const svgs: iSVG[] = [
     category: ['Hardware', 'Software'],
     route: '/library/raspberry_pi.svg',
     url: 'https://www.raspberrypi.com/'
+  },
+  {
+    "title": "Maya",
+    "category": ['Software', 'Design'],
+    "route": "/library/maya-logo.svg",
+    "url": "https://www.autodesk.com/es/products/maya/"
   }
 ];
