@@ -112,6 +112,24 @@ export const svgs: iSVG[] = [
     url: 'https://discord.com/'
   },
   {
+    title: 'Samsung',
+    category: 'Software',
+    route: '/library/samsung.svg',
+    url: 'https://samsung.com/'
+  },
+  {
+    title: 'Sony',
+    category: 'Software',
+    route: '/library/sony.svg',
+    url: 'https://sony.com/'
+  },
+  {
+    title: 'Intel',
+    category: 'Software',
+    route: '/library/intel.svg',
+    url: 'https://intel.com/'
+  },
+  {
     title: 'Aliexpress',
     category: 'Software',
     route: '/library/aliexpress-icon.svg',
