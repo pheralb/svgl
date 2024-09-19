@@ -2,6 +2,19 @@ import type { iSVG } from '../types/svg';
 
 export const svgs: iSVG[] = [
   {
+    title: 'Milanote',
+    category: 'Software',
+    route: {
+      light: '/library/milanote-light.svg',
+      dark: '/library/milanote-dark.svg'
+    },
+    wordmark: {
+      light: '/library/milanote-wordmark-light.svg',
+      dark: '/library/milanote-wordmark-dark.svg'
+    },
+    url: 'https://milanote.com'
+  },
+  {
     title: 'Inflection AI',
     category: 'AI',
     route: {
