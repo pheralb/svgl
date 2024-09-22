@@ -2,6 +2,16 @@ import type { iSVG } from '../types/svg';
 
 export const svgs: iSVG[] = [
   {
+    title: 'Hack The Box',
+    category: 'Cybersecurity',
+    route: '/library/hack-the-box.svg',
+    wordmark: {
+      light: '/library/hack-the-box-wordmark-light.svg',
+      dark: '/library/hack-the-box-wordmark-dark.svg'
+    },
+    url: 'https://www.hackthebox.com/'
+  },
+  {
     title: 'Milanote',
     category: 'Software',
     route: {
