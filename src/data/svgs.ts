@@ -2,6 +2,19 @@ import type { iSVG } from '../types/svg';
 
 export const svgs: iSVG[] = [
   {
+    title: 'Quarkus',
+    category: 'Framework',
+    route: {
+      light: '/library/quarkus-light.svg',
+      dark: '/library/quarkus-dark.svg'
+    },
+    wordmark: {
+      light: '/library/quarkus-wordmark-light.svg',
+      dark: '/library/quarkus-wordmark-dark.svg'
+    },
+    url: 'https://quarkus.io/'
+  },
+  {
     title: 'Milanote',
     category: 'Software',
     route: {
