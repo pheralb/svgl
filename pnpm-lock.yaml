@@ -102,6 +102,9 @@ importers:
       eslint-plugin-svelte:
         specifier: 2.44.0
         version: 2.44.0(eslint@8.57.1)(svelte@4.2.19)
+      globals:
+        specifier: 15.9.0
+        version: 15.9.0
       mdsvex:
         specifier: 0.12.3
         version: 0.12.3(svelte@4.2.19)
@@ -141,6 +144,9 @@ importers:
       vitest:
         specifier: 2.1.1
         version: 2.1.1(@types/node@22.5.5)
+      wrangler:
+        specifier: 3.78.7
+        version: 3.78.7(@cloudflare/workers-types@4.20240919.0)
 
 packages:
 
@@ -1657,6 +1663,10 @@ packages:
   globals@13.24.0:
     resolution: {integrity: sha512-AhO5QUcj8llrbG09iWhPU2B204J1xnPeL8kQmVorSsy+Sjj1sk8gIyh6cUocGmH4L0UuhAJy+hJMRA4mgA4mFQ==}
     engines: {node: '>=8'}
+
+  globals@15.9.0:
+    resolution: {integrity: sha512-SmSKyLLKFbSr6rptvP8izbyxJL4ILwqO9Jg23UA0sDlGlu58V59D1//I3vlc0KJphVdUR7vMjHIplYnzBxorQA==}
+    engines: {node: '>=18'}
 
   globalyzer@0.1.0:
     resolution: {integrity: sha512-40oNTM9UfG6aBmuKxk/giHn5nQ8RVz/SS4Ir6zgzOv9/qC3kKZ9v4etGTcJbEl/NyVQH7FGU7d+X1egr57Md2Q==}
@@ -4374,6 +4384,8 @@ snapshots:
   globals@13.24.0:
     dependencies:
       type-fest: 0.20.2
+
+  globals@15.9.0: {}
 
   globalyzer@0.1.0: {}
 
