@@ -2,6 +2,19 @@ import type { iSVG } from '../types/svg';
 
 export const svgs: iSVG[] = [
   {
+    title: 'Milanote',
+    category: 'Software',
+    route: {
+      light: '/library/milanote-light.svg',
+      dark: '/library/milanote-dark.svg'
+    },
+    wordmark: {
+      light: '/library/milanote-wordmark-light.svg',
+      dark: '/library/milanote-wordmark-dark.svg'
+    },
+    url: 'https://milanote.com'
+  },
+  {
     title: 'Inflection AI',
     category: 'AI',
     route: {
@@ -2010,7 +2023,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Stripe',
-    category: 'Software',
+    category: ['Software', 'Payment'],
     route: '/library/stripe.svg',
     url: 'https://stripe.com/'
   },
@@ -2507,12 +2520,6 @@ export const svgs: iSVG[] = [
       dark: '/library/markdown-dark.svg'
     },
     url: 'https://www.markdownguide.org/'
-  },
-  {
-    title: 'Movie Web',
-    category: 'Entertainment',
-    route: '/library/movie-web.svg',
-    url: 'https://movie-web.app/'
   },
   {
     title: 'Radix UI',

@@ -102,7 +102,11 @@
     <div class="flex items-center justify-center space-x-1">
       {#if Array.isArray(svgInfo.category)}
         {#each svgInfo.category.slice(0, maxVisibleCategories) as c, index}
-          <a href={`/directory/${c.toLowerCase()}`} class={badgeStyles}>{c}</a>
+          <a
+            href={`/directory/${c.toLowerCase()}`}
+            class={badgeStyles}
+            title={`This icon is part of the ${svgInfo.category} category`}>{c}</a
+          >
         {/each}
 
         {#if svgInfo.category.length > maxVisibleCategories}
