@@ -1,7 +1,10 @@
-import { fontFamily } from 'tailwindcss/defaultTheme';
+import type { Config } from 'tailwindcss';
 
-/** @type {import('tailwindcss').Config} */
-export default {
+// Plugins:
+import defaultTheme from 'tailwindcss/defaultTheme';
+import twTypography from '@tailwindcss/typography';
+
+const config = {
   darkMode: 'class',
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
@@ -11,8 +14,8 @@ export default {
         light: '#f5f5f5'
       },
       fontFamily: {
-        sans: ['InterVariable', ...fontFamily.sans],
-        mono: ['GeistMono', ...fontFamily.mono]
+        sans: ['InterVariable', ...defaultTheme.fontFamily.sans],
+        mono: ['GeistMono', ...defaultTheme.fontFamily.mono]
       },
       fontSize: {
         mini: '14px'
@@ -20,7 +23,7 @@ export default {
     }
   },
   plugins: [
-    require('@tailwindcss/typography'),
+    twTypography,
     ({ addUtilities }) => {
       addUtilities({
         '.text-balance': {
@@ -29,4 +32,6 @@ export default {
       });
     }
   ]
-};
+} satisfies Config;
+
+export default config;
