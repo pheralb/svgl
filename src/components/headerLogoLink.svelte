@@ -9,7 +9,6 @@
   import { clipboard } from '@/utils/clipboard';
   import { getSvgContent } from '@/utils/getSvgContent';
   import { getReactComponentCode } from '@/utils/getReactComponentCode';
-    import { cn } from '@/utils/cn';
 
   const logoUrl = '/library/svgl.svg';
 
