@@ -60,6 +60,7 @@
     "@sveltejs/vite-plugin-svelte": "3.1.2",
     "@tailwindcss/typography": "0.5.15",
     "@types/downloadjs": "1.4.6",
+    "@types/node": "22.5.5",
     "@typescript-eslint/eslint-plugin": "7.18.0",
     "@typescript-eslint/parser": "7.18.0",
     "autoprefixer": "10.4.20",
