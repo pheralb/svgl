@@ -1,14 +1,13 @@
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 // ☁️ Adapter:
-import adapter from '@sveltejs/adapter-cloudflare';
+import adapter from '@sveltejs/adapter-vercel';
 
 // 📦 Extensions:
 import { mdsvex, escapeSvelte } from 'mdsvex';
 import { createHighlighter, makeSingletonHighlighter } from 'shiki';
 
 // 📄 Markdown config:
-
 const getHighlighter = makeSingletonHighlighter(createHighlighter);
 
 /** @type {import('mdsvex').MdsvexOptions} */
