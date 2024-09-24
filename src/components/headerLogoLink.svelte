@@ -54,7 +54,7 @@
       <div class="flex items-center space-x-2 opacity-100 hover:opacity-80 transition-opacity">
         <svelte:component this={Logo} />
         <span class="text-[19px] font-medium tracking-wide hidden md:block">svgl</span>
-        <p class="text-neutral-400 hidden md:block font-mono">v4.3</p>
+        <p class="text-neutral-400 hidden md:block font-mono tracking-tight">4.3</p>
       </div>
     </a>
   </ContextMenu.Trigger>

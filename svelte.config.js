@@ -1,13 +1,15 @@
-import adapter from '@sveltejs/adapter-auto';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
-// Extensions:
+// ☁️ Adapter:
+import adapter from '@sveltejs/adapter-vercel';
+
+// 📦 Extensions:
 import { mdsvex, escapeSvelte } from 'mdsvex';
 import { createHighlighter, makeSingletonHighlighter } from 'shiki';
 
+// 📄 Markdown config:
 const getHighlighter = makeSingletonHighlighter(createHighlighter);
 
-// Markdown config:
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexOptions = {
   extensions: ['.md'],

@@ -11,9 +11,7 @@
 
   // Get categories:
   import { svgs } from '@/data/svgs';
-  const categories = svgs
-    .flatMap((svg) => (Array.isArray(svg.category) ? svg.category : [svg.category]))
-    .filter((category, index, array) => array.indexOf(category) === index);
+  const categories = getCategories();
 
   // Get category counts:
   let categoryCounts: Record<string, number> = {};
@@ -30,6 +28,7 @@
 
   // Layout:
   import Navbar from '@/components/navbar.svelte';
+  import { getCategories } from '@/data';
 </script>
 
 <ModeWatcher />
@@ -38,22 +37,22 @@
   <aside
     class={cn(
       'z-50 w-full overflow-y-auto overflow-x-hidden',
-      'dark:border-neutral-800 md:fixed md:left-0 md:w-56 md:pb-0 md:h-[calc(100vh-63px)]',
+      'dark:border-neutral-800 md:fixed md:left-0 md:h-[calc(100vh-63px)] md:w-56 md:pb-0',
       'bg-white dark:bg-neutral-900',
-      'backdrop-blur-md opacity-95',
-      'border-b md:border-r border-neutral-200 dark:border-neutral-800'
+      'opacity-95 backdrop-blur-md',
+      'border-b border-neutral-200 dark:border-neutral-800 md:border-r'
     )}
   >
     <div class="md:px-3 md:py-6">
       <nav
-        class="flex items-center space-x-1 overflow-y-auto md:mb-3 md:flex-col md:space-x-0 md:space-y-1 md:overflow-y-visible px-6 md:px-0 pb-2 pt-2 md:pt-0"
+        class="flex items-center space-x-1 overflow-y-auto px-6 pb-2 pt-2 md:mb-3 md:flex-col md:space-x-0 md:space-y-1 md:overflow-y-visible md:px-0 md:pt-0"
       >
         <a
           href="/"
           class={cn(
             sidebarItemStyles,
             data.pathname === '/'
-              ? 'bg-neutral-200 dark:bg-neutral-700/30 font-medium dark:text-white text-dark'
+              ? 'bg-neutral-200 font-medium text-dark dark:bg-neutral-700/30 dark:text-white'
               : ''
           )}
           data-sveltekit-preload-data>All</a
@@ -66,7 +65,7 @@
             class={cn(
               sidebarItemStyles,
               data.pathname === `/directory/${category.toLowerCase()}`
-                ? 'bg-neutral-200 dark:bg-neutral-700/30 font-medium dark:text-white text-dark'
+                ? 'bg-neutral-200 font-medium text-dark dark:bg-neutral-700/30 dark:text-white'
                 : ''
             )}
           >
@@ -77,7 +76,7 @@
                 data.pathname === `/directory/${category.toLowerCase()}`
                   ? 'border-neutral-300 dark:border-neutral-700'
                   : '',
-                'text-xs font-mono hidden md:inline'
+                'hidden font-mono text-xs md:inline'
               )}>{categoryCounts[category]}</span
             >
           </a>
@@ -85,7 +84,7 @@
       </nav>
     </div>
   </aside>
-  <div class="ml-0 md:ml-56 pb-6">
+  <div class="ml-0 pb-6 md:ml-56">
     <Warning />
     <Transition pathname={data.pathname}>
       <slot />
