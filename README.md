@@ -35,7 +35,8 @@
 
 <div align="center">
 
-![Svelte Badge](https://img.shields.io/badge/Svelte-FF3E00?logo=svelte&logoColor=fff&style=flat)
+![Svelte Badge](https://img.shields.io/badge/Sveltekit-FF3E00?logo=svelte&logoColor=fff&style=flat)
+![Hono Badge](https://img.shields.io/badge/Hono-E36002?logo=hono&logoColor=fff&style=flat)
 [![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fpheralb%2Fsvgl%2Fbadge%3Fref%3Dmain&style=flat)](https://actions-badge.atrox.dev/pheralb/svgl/goto?ref=main)
 ![GitHub stars](https://img.shields.io/github/stars/pheralb/svgl)
 ![GitHub issues](https://img.shields.io/github/issues/pheralb/svgl)
