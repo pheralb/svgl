@@ -1,7 +1,7 @@
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 // ☁️ Adapter:
-import adapter from '@sveltejs/adapter-vercel';
+import adapter from '@sveltejs/adapter-node';
 
 // 📦 Extensions:
 import { mdsvex, escapeSvelte } from 'mdsvex';
@@ -26,7 +26,7 @@ const mdsvexOptions = {
   }
 };
 
-// Svelte config:
+// 🧡 Svelte config:
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
   extensions: ['.svelte', '.md'],
