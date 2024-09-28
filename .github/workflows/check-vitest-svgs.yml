@@ -1,4 +1,4 @@
-name: ⚙️ Check app
+name: 🛠️ Check
 
 on:
   push:
@@ -13,6 +13,7 @@ on:
 jobs:
   vitest:
     runs-on: ubuntu-latest
+    name: Testing with Vitest
     steps:
       - uses: actions/checkout@v3
 
@@ -28,6 +29,7 @@ jobs:
         run: pnpm test
   svgs-size:
     runs-on: ubuntu-latest
+    name: SVGs Size
     steps:
       - uses: actions/checkout@v3
 
