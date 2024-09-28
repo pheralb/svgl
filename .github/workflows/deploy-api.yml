@@ -8,7 +8,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    name: Deploy
+    name: Cloudflare Workers
     steps:
       - uses: actions/checkout@v4
 
