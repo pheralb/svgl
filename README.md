@@ -42,7 +42,6 @@
 ![GitHub issues](https://img.shields.io/github/issues/pheralb/svgl)
 ![GitHub forks](https://img.shields.io/github/forks/pheralb/svgl)
 ![GitHub PRs](https://img.shields.io/github/issues-pr/pheralb/svgl)
-![Tailwind CSS Badge](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=fff&style=flat)
 
 </div>
 
