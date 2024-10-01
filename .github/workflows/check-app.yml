@@ -62,4 +62,4 @@ jobs:
         run: pnpm install
 
       - name: Build app
-        run: pnpm build
+        run: pnpm vite:build
