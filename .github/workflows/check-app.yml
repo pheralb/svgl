@@ -1,4 +1,4 @@
-name: ⚙️ Check app
+name: 🧑‍🚀 Check
 
 on:
   push:
@@ -13,33 +13,57 @@ on:
 jobs:
   vitest:
     runs-on: ubuntu-latest
+    name: ⚡ Testing with Vitest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
-      - name: Setup pnpm 8
-        uses: pnpm/action-setup@v2
+      - name: Setup pnpm 9
+        uses: pnpm/action-setup@v4
         with:
-          version: 8
+          version: 9
 
       - name: Install dependencies
         run: pnpm install
 
       - name: Run Vitest
         run: pnpm test
+
   svgs-size:
     runs-on: ubuntu-latest
+    name: 📦 SVGs Size
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
-      - name: Setup pnpm 8
-        uses: pnpm/action-setup@v2
+      - name: Setup pnpm 9
+        uses: pnpm/action-setup@v4
         with:
-          version: 8
+          version: 9
 
-      - name: Install dependencies
+      - name: Install utility dependencies
         run: pnpm install
         working-directory: ./utils/check-size
 
       - name: Check svgs size
         run: pnpm start
         working-directory: ./utils/check-size
+
+  build-app:
+    runs-on: ubuntu-latest
+    name: 🛠️ Build app
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup pnpm 9
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build app
+        run: pnpm vite:build
+        env:
+          UPSTASH_REDIS_TOKEN: ${{ secrets.UPSTASH_REDIS_TOKEN }}
+          UPSTASH_REDIS_URL: ${{ secrets.UPSTASH_REDIS_URL }}
+          SVGL_API_REQUESTS: ${{ secrets.SVGL_API_REQUESTS }}

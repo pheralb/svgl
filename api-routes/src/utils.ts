@@ -1,4 +1,4 @@
-import { ThemeOptions } from '../../src/types/svg';
+import type { ThemeOptions } from '../../src/types/svg';
 
 const fullUrl = 'https://svgl.app';
 
@@ -13,3 +13,4 @@ export const addFullUrl = (value: string | ThemeOptions): string | ThemeOptions 
   }
   return value;
 };
+

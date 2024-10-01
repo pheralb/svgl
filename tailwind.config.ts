@@ -9,6 +9,27 @@ const config = {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
     extend: {
+      typography: {
+        DEFAULT: {
+          css: {
+            'code::before': {
+              content: '""'
+            },
+            'code::after': {
+              content: '""'
+            },
+            'h1 a': {
+              'text-decoration': 'none'
+            },
+            'h2 a': {
+              'text-decoration': 'none'
+            },
+            blockquote: {
+              'font-style': 'normal'
+            }
+          }
+        }
+      },
       colors: {
         dark: '#161616',
         light: '#f5f5f5'
