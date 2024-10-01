@@ -7,11 +7,31 @@ import adapter from '@sveltejs/adapter-node';
 import { mdsvex, escapeSvelte } from 'mdsvex';
 import { createHighlighter, makeSingletonHighlighter } from 'shiki';
 
+// 🎨 Markdown Plugins:
+import remarkGfm from 'remark-gfm';
+import rehypeAutolinkHeadings from 'rehype-autolink-headings';
+import rehypeSlug from 'rehype-slug';
+
 // 📄 Markdown config:
 const getHighlighter = makeSingletonHighlighter(createHighlighter);
 
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexOptions = {
+  remarkPlugins: [[remarkGfm]],
+  rehypePlugins: [
+    [rehypeSlug],
+    [
+      rehypeAutolinkHeadings,
+      {
+        behavior: 'wrap',
+        properties: {
+          className: [
+            `before:content-['#'] before:absolute before:-ml-[1em] before:text-neutral-100/0 hover:before:text-neutral-200/50 pl-[1em] -ml-[1em]`
+          ]
+        }
+      }
+    ]
+  ],
   extensions: ['.md'],
   highlight: {
     highlighter: async (code, lang = 'text') => {
