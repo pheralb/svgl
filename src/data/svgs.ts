@@ -2,6 +2,12 @@ import type { iSVG } from '../types/svg';
 
 export const svgs: iSVG[] = [
   {
+    title: 'Google Drive',
+    category: 'Google',
+    route: '/library/drive.svg',
+    url: 'https://www.google.com/drive/'
+  },
+  {
     title: 'Milanote',
     category: 'Software',
     route: {
