@@ -63,3 +63,7 @@ jobs:
 
       - name: Build app
         run: pnpm vite:build
+        env:
+          UPSTASH_REDIS_TOKEN: ${{ secrets.UPSTASH_REDIS_TOKEN }}
+          UPSTASH_REDIS_URL: ${{ secrets.UPSTASH_REDIS_URL }}
+          SVGL_API_REQUESTS: ${{ secrets.SVGL_API_REQUESTS }}
