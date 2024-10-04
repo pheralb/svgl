@@ -2957,5 +2957,15 @@ export const svgs: iSVG[] = [
     category: ['Community'],
     route: '/library/manzdev.svg',
     url: 'https://manz.dev/'
+  },
+  {
+    title: 'MediaWiki',
+    category: ['Software', 'CMS'],
+    "route": "/library/mediawiki.svg",
+    "wordmark": {
+      "light": "/library/mediawiki-wordmark-light.svg",
+      "dark": "/library/mediawiki-wordmark-dark.svg"
+    },
+    "url": "Website"
   }
 ];
