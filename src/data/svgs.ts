@@ -2951,5 +2951,11 @@ export const svgs: iSVG[] = [
     category: ['Compiler', 'void(0)'],
     route: '/library/rolldown.svg',
     url: 'https://rolldown.rs/'
+  },
+  {
+    title: 'ManzDev',
+    category: ['Community'],
+    route: '/library/manzdev.svg',
+    url: 'https://manz.dev/'
   }
 ];
