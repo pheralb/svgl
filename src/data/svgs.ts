@@ -2957,5 +2957,14 @@ export const svgs: iSVG[] = [
     category: ['Community'],
     route: '/library/manzdev.svg',
     url: 'https://manz.dev/'
+  },
+  {
+    title: 'Afordin',
+    category: ['Community'],
+    route: {
+      light: '/library/afordin-light.svg',
+      dark: '/library/afordin-dark.svg'
+    },
+    url: 'https://github.com/Afordin'
   }
 ];
