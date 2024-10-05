@@ -11,12 +11,12 @@
 </svelte:head>
 
 <section
-  class="bg-white dark:bg-neutral-900 bg-[url('/images/hero-pattern_light.svg')] dark:bg-[url('/images/hero-pattern_dark.svg')]"
+  class="bg-white bg-[url('/images/hero-pattern_light.svg')] dark:bg-neutral-900 dark:bg-[url('/images/hero-pattern_dark.svg')]"
 >
-  <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-20 z-10 relative">
-    <div class="flex items-center space-x-4 text-center justify-center">
+  <div class="relative z-10 mx-auto max-w-screen-xl px-4 py-8 text-center lg:py-20">
+    <div class="flex items-center justify-center space-x-4 text-center">
       <h1
-        class="mb-4 text-4xl font-bold tracking-tight leading-none text-neutral-900 md:text-5xl lg:text-6xl dark:text-white"
+        class="mb-4 text-4xl font-bold leading-none tracking-tight text-neutral-900 dark:text-white md:text-5xl lg:text-6xl"
       >
         API Reference
       </h1>
@@ -25,13 +25,13 @@
           class="absolute inset-[-1000%] animate-[spin_4s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#f4f4f5_0%,#f4f4f5_50%,#737373_100%)] dark:bg-[conic-gradient(from_90deg_at_50%_50%,#121212_0%,#121212_50%,#737373_100%)]"
         />
         <div
-          class="inline-flex h-full w-full cursor-default items-center justify-center rounded-full bg-neutral-100 dark:bg-neutral-900 px-3 py-1 text-xs font-medium dark:text-white backdrop-blur-3xl border border-neutral-100 dark:border-neutral-800 font-mono"
+          class="inline-flex h-full w-full cursor-default items-center justify-center rounded-full border border-neutral-100 bg-neutral-100 px-3 py-1 font-mono text-xs font-medium backdrop-blur-3xl dark:border-neutral-800 dark:bg-neutral-900 dark:text-white"
         >
-          beta
+          v1
         </div>
       </span>
     </div>
-    <p class="text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-200">
+    <p class="text-lg font-normal text-gray-500 dark:text-gray-200 sm:px-16 lg:px-48 lg:text-xl">
       The API reference is a detailed documentation of all the endpoints available in the API.
     </p>
   </div>
@@ -40,9 +40,9 @@
 <article
   class={cn(
     'prose dark:prose-invert',
-    'mx-auto py-10 px-4 max-w-3xl',
-    'prose-h2:font-medium',
-    'prose-pre:m-0'
+    'mx-auto max-w-3xl px-4 py-10',
+    'prose-h2:font-medium prose-h2:tracking-tight prose-h2:underline prose-h2:decoration-neutral-300 prose-h2:underline-offset-[6px] prose-h2:transition-opacity hover:prose-h2:opacity-70 dark:prose-h2:decoration-neutral-700/65',
+    'prose-pre:m-0 prose-pre:border-neutral-200 dark:prose-pre:border dark:prose-pre:border-neutral-800/65'
   )}
 >
   <svelte:component this={data.content} />

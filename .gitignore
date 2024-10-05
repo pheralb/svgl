@@ -14,6 +14,9 @@ dist
 .wrangler
 .dev.vars
 
+# Vercel
+.vercel
+
 # Logs
 .DS_Store
 
