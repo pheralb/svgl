@@ -453,12 +453,6 @@ export const svgs: iSVG[] = [
     url: 'https://kotlinlang.org/'
   },
   {
-    title: 'Vitest',
-    category: 'Framework',
-    route: '/library/vitest.svg',
-    url: 'https://vitest.dev/'
-  },
-  {
     title: 'Storybook',
     category: 'Software',
     route: '/library/storybook.svg',
