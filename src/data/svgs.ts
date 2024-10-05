@@ -2966,6 +2966,6 @@ export const svgs: iSVG[] = [
       "light": "/library/mediawiki-wordmark-light.svg",
       "dark": "/library/mediawiki-wordmark-dark.svg"
     },
-    "url": "Website"
+    "url": "https://www.mediawiki.org/"
   }
 ];
