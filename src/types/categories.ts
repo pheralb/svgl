@@ -23,4 +23,5 @@ export type tCategory =
   | 'Music'
   | 'Vercel'
   | 'Google'
-  | 'Payment';
+  | 'Payment'
+  | 'void(0)';

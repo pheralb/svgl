@@ -293,12 +293,6 @@ export const svgs: iSVG[] = [
     url: 'https://getbootstrap.com/'
   },
   {
-    title: 'Vite.js',
-    category: 'Compiler',
-    route: '/library/vitejs.svg',
-    url: 'https://vitejs.dev'
-  },
-  {
     title: 'Facebook',
     category: 'Social',
     route: '/library/facebook.svg',
@@ -464,12 +458,6 @@ export const svgs: iSVG[] = [
     category: 'Language',
     route: '/library/kotlin.svg',
     url: 'https://kotlinlang.org/'
-  },
-  {
-    title: 'Vitest',
-    category: 'Framework',
-    route: '/library/vitest.svg',
-    url: 'https://vitest.dev/'
   },
   {
     title: 'Storybook',
@@ -2940,5 +2928,45 @@ export const svgs: iSVG[] = [
     category: ['Hardware', 'Software'],
     route: '/library/raspberry_pi.svg',
     url: 'https://www.raspberrypi.com/'
+  },
+  {
+    title: 'Vite',
+    category: ['Devtool', 'void(0)'],
+    route: '/library/vitejs.svg',
+    url: 'https://vitejs.dev'
+  },
+  {
+    title: 'Vitest',
+    category: ['Framework', 'void(0)'],
+    route: '/library/vitest.svg',
+    url: 'https://vitest.dev/'
+  },
+  {
+    title: 'Oxc',
+    category: ['Devtool', 'void(0)'],
+    route: '/library/oxc.svg',
+    url: 'https://oxc.rs/'
+  },
+  {
+    title: 'Rolldown',
+    category: ['Compiler', 'void(0)'],
+    route: '/library/rolldown.svg',
+    url: 'https://rolldown.rs/'
+  },
+  {
+    title: 'ManzDev',
+    category: ['Community'],
+    route: '/library/manzdev.svg',
+    url: 'https://manz.dev/'
+  },
+  {
+    title: 'MediaWiki',
+    category: ['Software', 'CMS'],
+    "route": "/library/mediawiki.svg",
+    "wordmark": {
+      "light": "/library/mediawiki-wordmark-light.svg",
+      "dark": "/library/mediawiki-wordmark-dark.svg"
+    },
+    "url": "https://www.mediawiki.org/"
   }
 ];
