@@ -453,12 +453,6 @@ export const svgs: iSVG[] = [
     url: 'https://kotlinlang.org/'
   },
   {
-    title: 'Vitest',
-    category: 'Framework',
-    route: '/library/vitest.svg',
-    url: 'https://vitest.dev/'
-  },
-  {
     title: 'Storybook',
     category: 'Software',
     route: '/library/storybook.svg',
@@ -2959,6 +2953,16 @@ export const svgs: iSVG[] = [
     url: 'https://manz.dev/'
   },
   {
+    title: 'MediaWiki',
+    category: ['Software', 'CMS'],
+    "route": "/library/mediawiki.svg",
+    "wordmark": {
+      "light": "/library/mediawiki-wordmark-light.svg",
+      "dark": "/library/mediawiki-wordmark-dark.svg"
+    },
+    "url": "https://www.mediawiki.org/"
+  },
+  {
     title: 'Afordin',
     category: ['Community'],
     route: {
@@ -2966,5 +2970,5 @@ export const svgs: iSVG[] = [
       dark: '/library/afordin-dark.svg'
     },
     url: 'https://github.com/Afordin'
-  }
+  }   
 ];
