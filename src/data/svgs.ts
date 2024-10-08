@@ -2221,6 +2221,16 @@ export const svgs: iSVG[] = [
     url: 'https://raycast.com/'
   },
   {
+    title: 'Hack The Box',
+    category: 'Cybersecurity',
+    route: '/library/hack-the-box.svg',
+    wordmark: {
+      light: '/library/hack-the-box-wordmark-light.svg',
+      dark: '/library/hack-the-box-wordmark-dark.svg'
+    },
+    url: 'https://www.hackthebox.com/'
+  },
+  {
     title: 'Procure',
     category: 'Marketplace',
     route: '/library/procure.svg',
