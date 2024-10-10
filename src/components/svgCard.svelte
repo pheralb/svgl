@@ -28,6 +28,7 @@
 
   // Props:
   export let svgInfo: iSVG;
+  export let searchTerm: string;
 
   let isInFigma = false;
   onMount(() => {
@@ -37,6 +38,11 @@
 
   // Wordmark SVG:
   let wordmarkSvg = false;
+  $: {
+    if (searchTerm) {
+      wordmarkSvg = false;
+    }
+  }
 
   const insertSVG = async (url?: string) => {
     const content = (await getSvgContent(url)) as string;
@@ -59,7 +65,7 @@
   class="group flex flex-col items-center justify-center rounded-md border border-neutral-200 p-4 transition-colors duration-100 hover:bg-neutral-100/80 dark:border-neutral-800 dark:hover:bg-neutral-800/20"
 >
   <!-- Image -->
-  {#if wordmarkSvg == true}
+  {#if wordmarkSvg == true && svgInfo.wordmark !== undefined}
     <img
       class={cn('hidden dark:block', globalImageStyles)}
       src={typeof svgInfo.wordmark !== 'string'
@@ -175,7 +181,7 @@
       </button>
     {/if}
 
-    {#if wordmarkSvg}
+    {#if wordmarkSvg && svgInfo.wordmark !== undefined}
       <CopySvg {iconSize} {iconStroke} {svgInfo} isInFigma={false} isWordmarkSvg={true} />
     {:else}
       <CopySvg {iconSize} {iconStroke} {svgInfo} isInFigma={false} isWordmarkSvg={false} />
