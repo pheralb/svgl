@@ -2,6 +2,25 @@ import type { iSVG } from '../types/svg';
 
 export const svgs: iSVG[] = [
   {
+    title: 'Google Drive',
+    category: 'Google',
+    route: '/library/drive.svg',
+    url: 'https://www.google.com/drive/'
+  },
+  {
+    title: 'Milanote',
+    category: 'Software',
+    route: {
+      light: '/library/milanote-light.svg',
+      dark: '/library/milanote-dark.svg'
+    },
+    wordmark: {
+      light: '/library/milanote-wordmark-light.svg',
+      dark: '/library/milanote-wordmark-dark.svg'
+    },
+    url: 'https://milanote.com'
+  },
+  {
     title: 'Inflection AI',
     category: 'AI',
     route: {
@@ -267,12 +286,6 @@ export const svgs: iSVG[] = [
     url: 'https://getbootstrap.com/'
   },
   {
-    title: 'Vite.js',
-    category: 'Compiler',
-    route: '/library/vitejs.svg',
-    url: 'https://vitejs.dev'
-  },
-  {
     title: 'Facebook',
     category: 'Social',
     route: '/library/facebook.svg',
@@ -438,12 +451,6 @@ export const svgs: iSVG[] = [
     category: 'Language',
     route: '/library/kotlin.svg',
     url: 'https://kotlinlang.org/'
-  },
-  {
-    title: 'Vitest',
-    category: 'Framework',
-    route: '/library/vitest.svg',
-    url: 'https://vitest.dev/'
   },
   {
     title: 'Storybook',
@@ -2010,7 +2017,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Stripe',
-    category: 'Software',
+    category: ['Software', 'Payment'],
     route: '/library/stripe.svg',
     url: 'https://stripe.com/'
   },
@@ -2212,6 +2219,16 @@ export const svgs: iSVG[] = [
       dark: '/library/raycast-wordmark-dark.svg'
     },
     url: 'https://raycast.com/'
+  },
+  {
+    title: 'Hack The Box',
+    category: 'Cybersecurity',
+    route: '/library/hack-the-box.svg',
+    wordmark: {
+      light: '/library/hack-the-box-wordmark-light.svg',
+      dark: '/library/hack-the-box-wordmark-dark.svg'
+    },
+    url: 'https://www.hackthebox.com/'
   },
   {
     title: 'Procure',
@@ -2507,12 +2524,6 @@ export const svgs: iSVG[] = [
       dark: '/library/markdown-dark.svg'
     },
     url: 'https://www.markdownguide.org/'
-  },
-  {
-    title: 'Movie Web',
-    category: 'Entertainment',
-    route: '/library/movie-web.svg',
-    url: 'https://movie-web.app/'
   },
   {
     title: 'Radix UI',
@@ -2932,5 +2943,45 @@ export const svgs: iSVG[] = [
     category: ['Office', 'Software'],
     route: '/library/microsoft_excel.svg',
     url: 'https://www.microsoft.com/en-us/microsoft-365/excel'
+  },
+  {
+    title: 'Vite',
+    category: ['Devtool', 'void(0)'],
+    route: '/library/vitejs.svg',
+    url: 'https://vitejs.dev'
+  },
+  {
+    title: 'Vitest',
+    category: ['Framework', 'void(0)'],
+    route: '/library/vitest.svg',
+    url: 'https://vitest.dev/'
+  },
+  {
+    title: 'Oxc',
+    category: ['Devtool', 'void(0)'],
+    route: '/library/oxc.svg',
+    url: 'https://oxc.rs/'
+  },
+  {
+    title: 'Rolldown',
+    category: ['Compiler', 'void(0)'],
+    route: '/library/rolldown.svg',
+    url: 'https://rolldown.rs/'
+  },
+  {
+    title: 'ManzDev',
+    category: ['Community'],
+    route: '/library/manzdev.svg',
+    url: 'https://manz.dev/'
+  },
+  {
+    title: 'MediaWiki',
+    category: ['Software', 'CMS'],
+    "route": "/library/mediawiki.svg",
+    "wordmark": {
+      "light": "/library/mediawiki-wordmark-light.svg",
+      "dark": "/library/mediawiki-wordmark-dark.svg"
+    },
+    "url": "https://www.mediawiki.org/"
   }
 ];

@@ -28,6 +28,7 @@
 
   // Props:
   export let svgInfo: iSVG;
+  export let searchTerm: string;
 
   let isInFigma = false;
   onMount(() => {
@@ -37,6 +38,11 @@
 
   // Wordmark SVG:
   let wordmarkSvg = false;
+  $: {
+    if (searchTerm) {
+      wordmarkSvg = false;
+    }
+  }
 
   const insertSVG = async (url?: string) => {
     const content = (await getSvgContent(url)) as string;
@@ -56,10 +62,10 @@
 </script>
 
 <div
-  class="flex flex-col items-center justify-center rounded-md p-4 border border-neutral-200 dark:border-neutral-800 hover:bg-neutral-100/80 dark:hover:bg-neutral-800/20 transition-colors duration-100 group"
+  class="group flex flex-col items-center justify-center rounded-md border border-neutral-200 p-4 transition-colors duration-100 hover:bg-neutral-100/80 dark:border-neutral-800 dark:hover:bg-neutral-800/20"
 >
   <!-- Image -->
-  {#if wordmarkSvg == true}
+  {#if wordmarkSvg == true && svgInfo.wordmark !== undefined}
     <img
       class={cn('hidden dark:block', globalImageStyles)}
       src={typeof svgInfo.wordmark !== 'string'
@@ -95,14 +101,18 @@
     />
   {/if}
   <!-- Title -->
-  <div class="mb-3 flex flex-col space-y-1 items-center justify-center">
-    <p class="truncate text-[15px] font-medium text-balance text-center select-all">
+  <div class="mb-3 flex flex-col items-center justify-center space-y-1">
+    <p class="select-all truncate text-balance text-center text-[15px] font-medium">
       {svgInfo.title}
     </p>
-    <div class="flex items-center space-x-1 justify-center">
+    <div class="flex items-center justify-center space-x-1">
       {#if Array.isArray(svgInfo.category)}
         {#each svgInfo.category.slice(0, maxVisibleCategories) as c, index}
-          <a href={`/directory/${c.toLowerCase()}`} class={badgeStyles}>{c}</a>
+          <a
+            href={`/directory/${c.toLowerCase()}`}
+            class={badgeStyles}
+            title={`This icon is part of the ${svgInfo.category} category`}>{c}</a
+          >
         {/each}
 
         {#if svgInfo.category.length > maxVisibleCategories}
@@ -122,7 +132,7 @@
               {#each svgInfo.category.slice(maxVisibleCategories) as c}
                 <a
                   href={`/directory/${c.toLowerCase()}`}
-                  class={cn(buttonStyles, 'rounded-md w-full')}
+                  class={cn(buttonStyles, 'w-full rounded-md')}
                 >
                   <TagIcon size={15} strokeWidth={1.5} />
                   <span>{c}</span>
@@ -171,7 +181,7 @@
       </button>
     {/if}
 
-    {#if wordmarkSvg}
+    {#if wordmarkSvg && svgInfo.wordmark !== undefined}
       <CopySvg {iconSize} {iconStroke} {svgInfo} isInFigma={false} isWordmarkSvg={true} />
     {:else}
       <CopySvg {iconSize} {iconStroke} {svgInfo} isInFigma={false} isWordmarkSvg={false} />

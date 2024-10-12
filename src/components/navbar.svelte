@@ -92,7 +92,7 @@
           <XIcon iconSize={16} />
         </a>
         <a
-          href="https://svgl.app/git"
+          href="https://github.com/pheralb/svgl"
           target="_blank"
           class="flex items-center space-x-1 opacity-80 hover:opacity-100 transition-opacity"
           title="GitHub"
