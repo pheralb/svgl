@@ -2957,6 +2957,15 @@ export const svgs: iSVG[] = [
     url: 'https://manz.dev/'
   },
   {
+    title: 'Afordin',
+    category: ['Community'],
+    route: {
+      light: '/library/afordin-light.svg',
+      dark: '/library/afordin-dark.svg'
+    },
+    url: 'https://github.com/Afordin'   
+  },
+  {
     title: 'MediaWiki',
     category: ['Software', 'CMS'],
     route: '/library/mediawiki.svg',
@@ -2964,7 +2973,7 @@ export const svgs: iSVG[] = [
       light: '/library/mediawiki-wordmark-light.svg',
       dark: '/library/mediawiki-wordmark-dark.svg'
     },
-    url: 'https://www.mediawiki.org/'
+    url: "https://www.mediawiki.org/"
   },
   {
     title: 'Carrd',
