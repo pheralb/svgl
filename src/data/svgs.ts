@@ -2273,12 +2273,6 @@ export const svgs: iSVG[] = [
     url: 'https://about.sourcegraph.com/'
   },
   {
-    title: 'Claude AI',
-    category: 'AI',
-    route: '/library/claude-ai.svg',
-    url: 'https://claude.ai/'
-  },
-  {
     title: 'Perplexity AI',
     category: 'AI',
     route: '/library/perplexity.svg',
@@ -2977,5 +2971,21 @@ export const svgs: iSVG[] = [
     category: ['Social'],
     route: '/library/carrd.svg',
     url: 'https://carrd.co/'
+  },
+  {
+    title: 'Claude AI',
+    category: 'AI',
+    route: '/library/claude-ai-icon.svg',
+    wordmark: {
+      light: '/library/claude-ai-wordmark-icon_light.svg',
+      dark: '/library/claude-ai-wordmark-icon_dark.svg'
+    },
+    url: 'https://claude.ai/'
+  },
+  {
+    title: 'UnoCSS',
+    category: 'Devtool',
+    route: '/library/unocss.svg',
+    url: 'https://unocss.dev/'
   }
 ];
