@@ -134,7 +134,7 @@
   </div>
   <Grid>
     {#each filteredSvgs.slice(0, showAll ? undefined : 30) as svg}
-      <SvgCard svgInfo={svg} />
+      <SvgCard svgInfo={svg} searchTerm={searchTerm} />
     {/each}
   </Grid>
   {#if filteredSvgs.length > 30 && !showAll}

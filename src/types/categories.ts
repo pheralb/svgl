@@ -12,6 +12,7 @@ export type tCategory =
   | 'Database'
   | 'Compiler'
   | 'Crypto'
+  | 'Cybersecurity'
   | 'Social'
   | 'Entertainment'
   | 'Browser'

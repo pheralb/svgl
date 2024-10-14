@@ -2221,6 +2221,16 @@ export const svgs: iSVG[] = [
     url: 'https://raycast.com/'
   },
   {
+    title: 'Hack The Box',
+    category: 'Cybersecurity',
+    route: '/library/hack-the-box.svg',
+    wordmark: {
+      light: '/library/hack-the-box-wordmark-light.svg',
+      dark: '/library/hack-the-box-wordmark-dark.svg'
+    },
+    url: 'https://www.hackthebox.com/'
+  },
+  {
     title: 'Procure',
     category: 'Marketplace',
     route: '/library/procure.svg',
@@ -2261,12 +2271,6 @@ export const svgs: iSVG[] = [
     category: 'AI',
     route: '/library/sourcegraph.svg',
     url: 'https://about.sourcegraph.com/'
-  },
-  {
-    title: 'Claude AI',
-    category: 'AI',
-    route: '/library/claude-ai.svg',
-    url: 'https://claude.ai/'
   },
   {
     title: 'Perplexity AI',
@@ -2953,22 +2957,44 @@ export const svgs: iSVG[] = [
     url: 'https://manz.dev/'
   },
   {
-    title: 'MediaWiki',
-    category: ['Software', 'CMS'],
-    "route": "/library/mediawiki.svg",
-    "wordmark": {
-      "light": "/library/mediawiki-wordmark-light.svg",
-      "dark": "/library/mediawiki-wordmark-dark.svg"
-    },
-    "url": "https://www.mediawiki.org/"
-  },
-  {
     title: 'Afordin',
     category: ['Community'],
     route: {
       light: '/library/afordin-light.svg',
       dark: '/library/afordin-dark.svg'
     },
-    url: 'https://github.com/Afordin'
-  }   
+    url: 'https://github.com/Afordin'   
+  },
+  {
+    title: 'MediaWiki',
+    category: ['Software', 'CMS'],
+    route: '/library/mediawiki.svg',
+    wordmark: {
+      light: '/library/mediawiki-wordmark-light.svg',
+      dark: '/library/mediawiki-wordmark-dark.svg'
+    },
+    url: "https://www.mediawiki.org/"
+  },
+  {
+    title: 'Carrd',
+    category: ['Social'],
+    route: '/library/carrd.svg',
+    url: 'https://carrd.co/'
+  },
+  {
+    title: 'Claude AI',
+    category: 'AI',
+    route: '/library/claude-ai-icon.svg',
+    wordmark: {
+      light: '/library/claude-ai-wordmark-icon_light.svg',
+      dark: '/library/claude-ai-wordmark-icon_dark.svg'
+    },
+    url: 'https://claude.ai/'
+  },
+  {
+    title: 'UnoCSS',
+    category: 'Devtool',
+    route: '/library/unocss.svg',
+    url: 'https://unocss.dev/'
+  }
 ];
