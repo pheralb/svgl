@@ -2965,11 +2965,17 @@ export const svgs: iSVG[] = [
   {
     title: 'MediaWiki',
     category: ['Software', 'CMS'],
-    "route": "/library/mediawiki.svg",
-    "wordmark": {
-      "light": "/library/mediawiki-wordmark-light.svg",
-      "dark": "/library/mediawiki-wordmark-dark.svg"
+    route: '/library/mediawiki.svg',
+    wordmark: {
+      light: '/library/mediawiki-wordmark-light.svg',
+      dark: '/library/mediawiki-wordmark-dark.svg'
     },
-    "url": "https://www.mediawiki.org/"
+    url: 'https://www.mediawiki.org/'
+  },
+  {
+    title: 'Carrd',
+    category: ['Social'],
+    route: '/library/carrd.svg',
+    url: 'https://carrd.co/'
   }
 ];
