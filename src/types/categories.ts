@@ -25,4 +25,5 @@ export type tCategory =
   | 'Vercel'
   | 'Google'
   | 'Payment'
+  | 'Office'
   | 'void(0)';
