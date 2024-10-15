@@ -54,7 +54,8 @@ const config = {
   kit: {
     adapter: adapter(),
     alias: {
-      '@': './src/*'
+      '@': './src/*',
+      'svg-to': './utils/svg-to/src/*'
     }
   }
 };
