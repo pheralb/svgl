@@ -2,8 +2,10 @@
   "name": "@svgl/check-size",
   "version": "1.0.0",
   "description": "Limit the size of your SVG files",
+  "private": true,
   "main": "index.js",
   "author": "@pheralb_",
+  "type": "module",
   "license": "ISC",
   "keywords": [
     "svg",
