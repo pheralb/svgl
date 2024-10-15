@@ -10,5 +10,6 @@
     "sourceMap": true,
     "strict": true,
     "types": ["@figma/plugin-typings"]
-  }
+  },
+  "exclude": ["node_modules", "dist", "utils"]
 }

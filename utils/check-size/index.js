@@ -1,9 +1,8 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-const { readdir, stat } = require('fs').promises;
-const { join } = require('path');
+/* eslint-disable @typescript-eslint/no-unused-vars */
 
-// For GitHub Actions:
-const core = require('@actions/core');
+import { readdir, stat } from 'fs/promises';
+import { join } from 'path';
+import core from '@actions/core';
 
 // 🔎 Settings:
 const dir = '../../static/library';
@@ -48,7 +47,7 @@ async function checkSize() {
       message = `- ❌ There are files bigger than ${convertBytes(sizeLimit)}.`;
       throw new Error(message);
     }
-  } catch (err) {
+  } catch (error) {
     core.setFailed(message);
   } finally {
     if (maxFiles.length > 0) {

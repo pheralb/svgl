@@ -1,7 +1,5 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-const { readdir, stat } = require('fs').promises;
-const { readFile, writeFile } = require('fs/promises');
-const { join } = require('path');
+import { readdir, stat, readFile, writeFile } from 'fs/promises';
+import { join } from 'path';
 
 // 🔎 Settings:
 const dir = '../../static/library';
