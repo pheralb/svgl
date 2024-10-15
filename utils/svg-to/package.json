@@ -1,0 +1,32 @@
+{
+  "name": "svg-to",
+  "version": "0.1.0",
+  "license": "MIT",
+  "private": "false",
+  "author": "@pheralb_",
+  "description": "A utility to convert SVG code to other frameworks",
+  "files": [
+    "dist/**"
+  ],
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.mts"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "lint": "eslint src",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@eslint/js": "9.11.1",
+    "eslint": "9.11.1",
+    "typescript-eslint": "8.7.0",
+    "tsup": "8.3.0"
+  }
+}
