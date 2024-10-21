@@ -1,12 +1,9 @@
-import type { RequestEvent } from '../$types';
+import type { RequestEvent } from './$types';
 
-import { transform } from '@svgr/core';
 import { json, redirect } from '@sveltejs/kit';
+import { convertToReact } from 'svg-to';
 
 import { ratelimit } from '@/server/redis';
-
-// SVGR Plugins:
-import svgrJSX from '@svgr/plugin-jsx';
 
 export const GET = async () => {
   return redirect(301, 'https://svgl.app/api');
@@ -35,17 +32,9 @@ export const POST = async ({ request }: RequestEvent) => {
     const typescript = body.typescript;
     const name = body.name.replace(/[^a-zA-Z0-9]/g, '');
 
-    const jsCode = await transform(
-      svgCode,
-      {
-        plugins: [svgrJSX],
-        icon: true,
-        typescript: typescript
-      },
-      { componentName: name }
-    );
+    const code = await convertToReact({ svgCode, name, typescript });
 
-    return json({ data: jsCode }, { status: 200 });
+    return json({ data: code }, { status: 200 });
   } catch (error) {
     return json(
       { error: `Error al transformar el SVG a componente React: ${error}` },

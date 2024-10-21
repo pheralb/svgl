@@ -8,7 +8,7 @@
 
   import { clipboard } from '@/utils/clipboard';
   import { getSvgContent } from '@/utils/getSvgContent';
-  import { getReactComponentCode } from '@/utils/getReactComponentCode';
+  import { getReactComponentCode } from '@/utils/getFrameworkComponentCode';
 
   const logoUrl = '/library/svgl.svg';
 
