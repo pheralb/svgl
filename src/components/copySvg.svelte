@@ -3,16 +3,17 @@
 
   import { ClipboardIcon, CopyIcon, Loader, X } from 'lucide-svelte';
   import { toast } from 'svelte-sonner';
+
   import * as Popover from '@/ui/popover';
+  import { buttonStyles } from '@/ui/styles';
+  import ReactIcon from '@/components/icons/reactIcon.svelte';
 
   // Utils:
   import { getSvgContent } from '@/utils/getSvgContent';
-  import { getReactComponentCode } from '@/utils/getReactComponentCode';
+  import { getReactComponentCode } from '@/utils/getFrameworkComponentCode';
   import { clipboard } from '@/utils/clipboard';
   import { copyToClipboard as figmaCopyToClipboard } from '@/figma/copy-to-clipboard';
-  import { buttonStyles } from '@/ui/styles';
   import { cn } from '@/utils/cn';
-  import ReactIcon from './icons/reactIcon.svelte';
 
   // Props:
   export let iconSize = 24;
@@ -142,7 +143,7 @@
   </Popover.Trigger>
   <Popover.Content class="flex flex-col space-y-2" sideOffset={3}>
     <button
-      class={cn(buttonStyles, 'rounded-md w-full')}
+      class={cn(buttonStyles, 'w-full rounded-md')}
       title={isWordmarkSvg ? 'Copy wordmark SVG to clipboard' : 'Copy SVG to clipboard'}
       on:click={() => copyToClipboard()}
     >
@@ -150,7 +151,7 @@
       <span>Copy SVG</span>
     </button>
     <button
-      class={cn(buttonStyles, 'rounded-md w-full')}
+      class={cn(buttonStyles, 'w-full rounded-md')}
       title="Copy as React component"
       disabled={isLoading}
       on:click={() => convertSvgReactComponent(true)}
@@ -159,7 +160,7 @@
       <span>Copy TSX</span>
     </button>
     <button
-      class={cn(buttonStyles, 'rounded-md w-full')}
+      class={cn(buttonStyles, 'w-full rounded-md')}
       title="Copy as React component"
       disabled={isLoading}
       on:click={() => convertSvgReactComponent(false)}
