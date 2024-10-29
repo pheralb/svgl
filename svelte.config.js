@@ -1,9 +1,9 @@
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
-// ☁️ Adapter:
+// ☁️ Adapter-Adaptador:
 import adapter from '@sveltejs/adapter-node';
 
-// 📦 Extensions:
+// 📦 Extensions-Extensiones:
 import { mdsvex, escapeSvelte } from 'mdsvex';
 import { createHighlighter, makeSingletonHighlighter } from 'shiki';
 
