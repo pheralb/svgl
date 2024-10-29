@@ -26,9 +26,6 @@ importers:
       '@upstash/redis':
         specifier: 1.34.0
         version: 1.34.0
-      bits-ui:
-        specifier: 0.21.15
-        version: 0.21.15(svelte@4.2.19)
       clsx:
         specifier: 2.1.1
         version: 2.1.1
@@ -96,6 +93,9 @@ importers:
       autoprefixer:
         specifier: 10.4.20
         version: 10.4.20(postcss@8.4.47)
+      bits-ui:
+        specifier: 0.21.15
+        version: 0.21.15(svelte@4.2.19)
       concurrently:
         specifier: 9.0.1
         version: 9.0.1
@@ -2299,6 +2299,7 @@ packages:
 
   shikiji@0.10.2:
     resolution: {integrity: sha512-wtZg3T0vtYV2PnqusWQs3mDaJBdCPWxFDrBM/SE5LfrX92gjUvfEMlc+vJnoKY6Z/S44OWaCRzNIsdBRWcTAiw==}
+    deprecated: Shikiji is merged back to Shiki v1.0, please migrate over to get the latest updates
 
   siginfo@2.0.0:
     resolution: {integrity: sha512-ybx0WO1/8bSBLEWXZvEd7gMW3Sn3JFlW3TvX1nREbDLRNQNaeNN8WK0meBwPdAaOI7TtRRRJn/Es1zhrrCHu7g==}
