@@ -3,7 +3,9 @@
 
   import { ClipboardIcon, CopyIcon, Loader, X } from 'lucide-svelte';
   import { toast } from 'svelte-sonner';
+
   import * as Popover from '@/ui/popover';
+  import * as Tabs from '@/ui/tabs';
 
   // Utils:
   import { getSvgContent } from '@/utils/getSvgContent';
@@ -25,6 +27,8 @@
   export let isInFigma = false;
   export let isWordmarkSvg = false;
   export let svgInfo: iSVG;
+
+  // Variables:
   let optionsOpen = false;
   let isLoading = false;
 
@@ -174,70 +178,93 @@
       <CopyIcon size={iconSize} strokeWidth={iconStroke} />
     {/if}
   </Popover.Trigger>
-  <Popover.Content class="flex flex-col space-y-2" sideOffset={3}>
-    <button
-      class={cn(buttonStyles, 'w-full rounded-md')}
-      title={isWordmarkSvg ? 'Copy wordmark SVG to clipboard' : 'Copy SVG to clipboard'}
-      on:click={() => copyToClipboard()}
-    >
-      <ClipboardIcon size={16} strokeWidth={2} />
-      <span>Copy SVG</span>
-    </button>
-    <button
-      class={cn(buttonStyles, 'w-full rounded-md')}
-      title="Copy as React component"
-      disabled={isLoading}
-      on:click={() => convertSvgReactComponent(true)}
-    >
-      <ReactIcon iconSize={18} color="#2563eb" />
-      <span>Copy TSX</span>
-    </button>
-    <button
-      class={cn(buttonStyles, 'w-full rounded-md')}
-      title="Copy as React component"
-      disabled={isLoading}
-      on:click={() => convertSvgReactComponent(false)}
-    >
-      <ReactIcon iconSize={18} color="#60a5fa" />
-      <span>Copy JSX</span>
-    </button>
-    <button
-      class={cn(buttonStyles, 'w-full rounded-md')}
-      title="Copy as Vue component"
-      disabled={isLoading}
-      on:click={() => copySvgComponent(false, 'Vue')}
-    >
-      <VueIcon iconSize={18} />
-      <span>Copy JS</span>
-    </button>
-    <button
-      class={cn(buttonStyles, 'w-full rounded-md')}
-      title="Copy as Vue component"
-      disabled={isLoading}
-      on:click={() => copySvgComponent(true, 'Vue')}
-    >
-      <VueIcon iconSize={18} />
-      <span>Copy TS</span>
-    </button>
+  <Popover.Content class="flex flex-col space-y-2 p-3" sideOffset={2}>
+    <Tabs.Root value="source" class="w-full">
+      <Tabs.List>
+        <Tabs.Trigger value="source">Source</Tabs.Trigger>
+        <Tabs.Trigger value="react">React</Tabs.Trigger>
+        <Tabs.Trigger value="vue">Vue</Tabs.Trigger>
+        <Tabs.Trigger value="svelte">Svelte</Tabs.Trigger>
+      </Tabs.List>
+      <Tabs.Content value="source">
+        <section class="flex flex-col space-y-2">
+          <button
+            class={cn(buttonStyles, 'w-full rounded-md')}
+            title={isWordmarkSvg ? 'Copy wordmark SVG to clipboard' : 'Copy SVG to clipboard'}
+            on:click={() => copyToClipboard()}
+          >
+            <ClipboardIcon size={16} strokeWidth={2} />
+            <span>Copy SVG</span>
+          </button>
+        </section>
+      </Tabs.Content>
+      <Tabs.Content value="react">
+        <section class="flex flex-col space-y-2">
+          <button
+            class={cn(buttonStyles, 'w-full rounded-md')}
+            title="Copy as React component"
+            disabled={isLoading}
+            on:click={() => convertSvgReactComponent(true)}
+          >
+            <ReactIcon iconSize={18} color="#2563eb" />
+            <span>Copy TSX</span>
+          </button>
+          <button
+            class={cn(buttonStyles, 'w-full rounded-md')}
+            title="Copy as React component"
+            disabled={isLoading}
+            on:click={() => convertSvgReactComponent(false)}
+          >
+            <ReactIcon iconSize={18} color="#60a5fa" />
+            <span>Copy JSX</span>
+          </button>
+        </section>
+      </Tabs.Content>
+      <Tabs.Content value="svelte">
+        <section class="flex flex-col space-y-2">
+          <button
+            class={cn(buttonStyles, 'w-full rounded-md')}
+            title="Copy as Svelte component"
+            disabled={isLoading}
+            on:click={() => copySvgComponent(false, 'Svelte')}
+          >
+            <SvelteIcon iconSize={18} />
+            <span>Copy JS</span>
+          </button>
 
-    <button
-      class={cn(buttonStyles, 'w-full rounded-md')}
-      title="Copy as Svelte component"
-      disabled={isLoading}
-      on:click={() => copySvgComponent(false, 'Svelte')}
-    >
-      <SvelteIcon iconSize={18} />
-      <span>Copy JS</span>
-    </button>
-
-    <button
-      class={cn(buttonStyles, 'w-full rounded-md')}
-      title="Copy as Svelte component"
-      disabled={isLoading}
-      on:click={() => copySvgComponent(true, 'Svelte')}
-    >
-      <SvelteIcon iconSize={18} />
-      <span>Copy TS</span>
-    </button>
+          <button
+            class={cn(buttonStyles, 'w-full rounded-md')}
+            title="Copy as Svelte component"
+            disabled={isLoading}
+            on:click={() => copySvgComponent(true, 'Svelte')}
+          >
+            <SvelteIcon iconSize={18} />
+            <span>Copy TS</span>
+          </button>
+        </section>
+      </Tabs.Content>
+      <Tabs.Content value="vue">
+        <section class="flex flex-col space-y-2">
+          <button
+            class={cn(buttonStyles, 'w-full rounded-md')}
+            title="Copy as Vue component"
+            disabled={isLoading}
+            on:click={() => copySvgComponent(false, 'Vue')}
+          >
+            <VueIcon iconSize={18} />
+            <span>Copy JS</span>
+          </button>
+          <button
+            class={cn(buttonStyles, 'w-full rounded-md')}
+            title="Copy as Vue component"
+            disabled={isLoading}
+            on:click={() => copySvgComponent(true, 'Vue')}
+          >
+            <VueIcon iconSize={18} />
+            <span>Copy TS</span>
+          </button>
+        </section>
+      </Tabs.Content>
+    </Tabs.Root>
   </Popover.Content>
 </Popover.Root>
