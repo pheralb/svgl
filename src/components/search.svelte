@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { page } from '$app/stores';
   import { inputStyles } from '@/ui/styles';
   import { Command, SearchIcon } from 'lucide-svelte';
   export let searchTerm: string;
@@ -23,6 +24,17 @@
         window.removeEventListener('keydown', handleKeydown);
       }
     };
+  }
+
+  let searchParams = {} as { [key: string]: string };
+
+  $: {
+    if ($page) {
+      searchParams = Object.fromEntries($page.url.searchParams);
+      if (!searchParams?.search) {
+        clearSearch();
+      }
+    }
   }
 </script>
 
