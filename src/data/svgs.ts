@@ -2996,5 +2996,14 @@ export const svgs: iSVG[] = [
     category: 'Devtool',
     route: '/library/unocss.svg',
     url: 'https://unocss.dev/'
+  },
+  {
+    title: 'Uphold',
+    category: 'Crypto',
+    route: {
+      light: '/library/uphold-light.svg',
+      dark: '/library/uphold-dark.svg'
+    },
+    url: 'https://uphold.com/'
   }
 ];
