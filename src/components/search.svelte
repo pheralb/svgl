@@ -72,7 +72,7 @@
     {:else}
       <div class="absolute inset-y-0 right-0 flex items-center pr-4 text-neutral-500">
         {#if isMac}
-          <Command size={18} />
+          <Command size={16} />
         {:else}
           <kbd class="rounded border border-neutral-500 px-1 py-0.5 text-xs shadow-sm">Ctrl</kbd>
         {/if}
