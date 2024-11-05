@@ -70,7 +70,7 @@
         </button>
       </div>
     {:else}
-      <div class="absolute inset-y-0 right-0 flex items-center pr-4 text-neutral-500">
+      <div class="absolute inset-y-0 right-0 flex items-center pointer-events-none  pr-4 text-neutral-500">
         {#if isMac}
           <Command size={16} />
         {:else}
@@ -78,7 +78,7 @@
         {/if}
         <kbd
           class={isMac
-            ? ''
+            ? 'ml-1'
             : 'ml-1 rounded border border-neutral-500 px-1 py-0.5 text-xs shadow-sm'}>K</kbd
         >
       </div>
