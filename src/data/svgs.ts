@@ -2996,5 +2996,11 @@ export const svgs: iSVG[] = [
     category: 'Devtool',
     route: '/library/unocss.svg',
     url: 'https://unocss.dev/'
+  },
+  {
+    title: 'tRPC',
+    category: 'Framework',
+    route: '/library/trpc.svg',
+    url: 'https://trpc.io/'
   }
 ];
