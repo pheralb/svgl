@@ -3001,6 +3001,10 @@ export const svgs: iSVG[] = [
     title: 'tRPC',
     category: 'Framework',
     route: '/library/trpc.svg',
+    wordmark: {
+      light: '/library/trpc_wordmark_light.svg',
+      dark : 'library/trpc_wordmark_dark.svg'
+    },
     url: 'https://trpc.io/'
   }
 ];
