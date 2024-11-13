@@ -1875,7 +1875,7 @@ export const svgs: iSVG[] = [
   {
     title: 'C++',
     category: 'Language',
-    route: '/library/c++.svg',
+    route: '/library/c-plusplus.svg',
     url: 'https://en.wikipedia.org/wiki/C%2B%2B'
   },
   {
@@ -2324,12 +2324,6 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/google-idx.svg',
     url: 'https://idx.dev/'
-  },
-  {
-    title: 'Bluesky',
-    category: 'Social',
-    route: '/library/bluesky.svg',
-    url: 'https://blueskyweb.xyz/'
   },
   {
     title: 'Remix',
@@ -3006,5 +3000,11 @@ export const svgs: iSVG[] = [
       dark : 'library/trpc_wordmark_dark.svg'
     },
     url: 'https://trpc.io/'
-  }
+  },
+  {
+    title: 'Bluesky',
+    category: 'Social',
+    route: '/library/bluesky.svg',
+    url: 'https://blueskyweb.xyz/'
+  },
 ];
