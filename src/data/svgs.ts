@@ -2957,7 +2957,7 @@ export const svgs: iSVG[] = [
       light: '/library/afordin-light.svg',
       dark: '/library/afordin-dark.svg'
     },
-    url: 'https://github.com/Afordin'   
+    url: 'https://github.com/Afordin'
   },
   {
     title: 'MediaWiki',
@@ -2997,7 +2997,7 @@ export const svgs: iSVG[] = [
     route: '/library/trpc.svg',
     wordmark: {
       light: '/library/trpc_wordmark_light.svg',
-      dark : 'library/trpc_wordmark_dark.svg'
+      dark: 'library/trpc_wordmark_dark.svg'
     },
     url: 'https://trpc.io/'
   },
@@ -3006,5 +3006,15 @@ export const svgs: iSVG[] = [
     category: 'Social',
     route: '/library/bluesky.svg',
     url: 'https://blueskyweb.xyz/'
+  },
+  {
+    title: '.NET',
+    category: 'Framework',
+    route: '/library/dotnet.svg',
+    wordmark: {
+      light: '/library/dotnet-wordmark-light.svg',
+      dark: '/library/dotnet-wordmark-dark.svg'
+    },
+    url: 'https://dotnet.microsoft.com/'
   },
 ];
