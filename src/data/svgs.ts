@@ -3009,7 +3009,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Drizzle ORM',
-    category: 'Social',
+    category: ['Library', 'Database'],
     route: '/library/drizzle-orm.svg',
     url: 'https://orm.drizzle.team/'
   }
