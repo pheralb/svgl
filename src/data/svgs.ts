@@ -3007,4 +3007,13 @@ export const svgs: iSVG[] = [
     route: '/library/bluesky.svg',
     url: 'https://blueskyweb.xyz/'
   },
+  {
+    title: 'daily.dev',
+    category: ['Social', 'Community'],
+    route: {
+      light: '/library/daily-dev-icon-ligth.svg',
+      dark: '/library/daily-dev-icon-dark.svg'
+    },
+    url: 'https://daily.dev/'
+  },
 ];
