@@ -3008,6 +3008,12 @@ export const svgs: iSVG[] = [
     url: 'https://blueskyweb.xyz/'
   },
   {
+    title: 'Drizzle ORM',
+    category: ['Library', 'Database'],
+    route: '/library/drizzle-orm.svg',
+    url: 'https://orm.drizzle.team/'
+  },
+  {
     title: 'daily.dev',
     category: ['Social', 'Community'],
     route: {
