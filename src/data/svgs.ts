@@ -3012,5 +3012,14 @@ export const svgs: iSVG[] = [
     category: ['Library', 'Database'],
     route: '/library/drizzle-orm.svg',
     url: 'https://orm.drizzle.team/'
+  },
+  {
+    title: 'daily.dev',
+    category: ['Social', 'Community'],
+    route: {
+      light: '/library/daily-dev-ligth.svg',
+      dark: '/library/daily-dev-dark.svg'
+    },
+    url: 'https://daily.dev/'
   }
 ];
