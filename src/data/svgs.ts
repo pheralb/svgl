@@ -3048,5 +3048,18 @@ export const svgs: iSVG[] = [
       dark: '/library/polar-sh_dark.svg'
     },
     url: 'https://polar.sh/'
+  },
+  {
+    title: 'SoundCloud',
+    category: 'Entertainment',
+    route: {
+      light: '/library/soundcloud-logo.svg',
+      dark: '/library/soundcloud-logo_dark.svg'
+    },
+    wordmark: {
+      light: '/library/soundcloud-wordmark.svg',
+      dark: 'library/soundcloud-wordmark_dark.svg'
+    },
+    url: 'https://trpc.io/'
   }
 ];
