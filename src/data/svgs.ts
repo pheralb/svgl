@@ -3048,5 +3048,15 @@ export const svgs: iSVG[] = [
       dark: '/library/polar-sh_dark.svg'
     },
     url: 'https://polar.sh/'
+  },
+  {
+    title: 'WooCommerce',
+    category: ['CMS', 'Marketplace'],
+    route: '/library/woocommerce.svg',
+    wordmark: {
+      light: '/library/woocommerce-wordmark_light.svg',
+      dark: '/library/woocommerce-wordmark_dark.svg'
+    },
+    url: 'https://woocommerce.com/'
   }
 ];
