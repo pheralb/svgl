@@ -3054,5 +3054,11 @@ export const svgs: iSVG[] = [
     category: 'Payment',
     route: '/library/apple-pay.svg',
     url: 'https://www.apple.com/apple-pay/'
+  },
+  {
+    title: 'Google Pay',
+    category: 'Payment',
+    route: '/library/google-pay.svg',
+    url: 'https://pay.google.com/about/'
   }
 ];
