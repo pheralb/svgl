@@ -3010,7 +3010,10 @@ export const svgs: iSVG[] = [
   {
     title: 'Drizzle ORM',
     category: ['Library', 'Database'],
-    route: '/library/drizzle-orm.svg',
+    route: {
+      light: '/library/drizzle-orm_light.svg',
+      dark: '/library/drizzle-orm_dark.svg'
+    },
     url: 'https://orm.drizzle.team/'
   },
   {
@@ -3025,7 +3028,10 @@ export const svgs: iSVG[] = [
   {
     title: 'Zed',
     category: 'Software',
-    route: '/library/zed-logo.svg',
+    route: {
+      light: '/library/zed-logo.svg',
+      dark: '/library/zed-logo_dark.svg'
+    },
     url: 'https://zed.dev/'
   }
 ];
