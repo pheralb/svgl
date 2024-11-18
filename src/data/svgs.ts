@@ -3010,7 +3010,10 @@ export const svgs: iSVG[] = [
   {
     title: 'Drizzle ORM',
     category: ['Library', 'Database'],
-    route: '/library/drizzle-orm.svg',
+    route: {
+      light: '/library/drizzle-orm_light.svg',
+      dark: '/library/drizzle-orm_dark.svg'
+    },
     url: 'https://orm.drizzle.team/'
   },
   {
@@ -3023,15 +3026,27 @@ export const svgs: iSVG[] = [
     url: 'https://daily.dev/'
   },
   {
+    title: 'Polars',
+    category: 'Library',
+    route: '/library/polars-logo.svg',
+    url: 'https://pola.rs/'
+  },
+  {
     title: 'Zed',
     category: 'Software',
-    route: '/library/zed-logo.svg',
+    route: {
+      light: '/library/zed-logo.svg',
+      dark: '/library/zed-logo_dark.svg'
+    },
     url: 'https://zed.dev/'
   },
   {
-    title: 'Polars',
-    category: 'Library',
-    route: 'library/polars-logo.svg',
-    url: 'https://pola.rs/'
+    title: 'Polar',
+    category: 'Software',
+    route: {
+      light: '/library/polar-sh_light.svg',
+      dark: '/library/polar-sh_dark.svg'
+    },
+    url: 'https://polar.sh/'
   }
 ];
