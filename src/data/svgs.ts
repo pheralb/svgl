@@ -3048,5 +3048,14 @@ export const svgs: iSVG[] = [
       dark: '/library/polar-sh_dark.svg'
     },
     url: 'https://polar.sh/'
+  },
+  {
+    title: 'Fiber',
+    category: 'Framework',
+    route: {
+      light: '/library/fiber_light.svg',
+      dark: '/library/fiber_dark.svg'
+    },
+    url: 'https://gofiber.io/'
   }
 ];
