@@ -3048,5 +3048,11 @@ export const svgs: iSVG[] = [
       dark: '/library/polar-sh_dark.svg'
     },
     url: 'https://polar.sh/'
+  },
+  {
+    title: 'JSON',
+    category: 'Language',
+    route: '/library/json.svg',
+    url: 'https://json.org/'
   }
 ];
