@@ -3048,5 +3048,14 @@ export const svgs: iSVG[] = [
       dark: '/library/polar-sh_dark.svg'
     },
     url: 'https://polar.sh/'
+  },
+  {
+    title: 'Motion',
+    category: 'Library',
+    route: {
+      light: '/library/motion.svg',
+      dark: '/library/motion_dark.svg'
+    },
+    url: 'https://motion.dev/'
   }
 ];
