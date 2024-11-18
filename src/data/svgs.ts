@@ -3048,5 +3048,18 @@ export const svgs: iSVG[] = [
       dark: '/library/polar-sh_dark.svg'
     },
     url: 'https://polar.sh/'
+  },
+  {
+    title: 'Okta',
+    category: 'Cybersecurity',
+    route: {
+      light: '/library/okta_light.svg',
+      dark: '/library/okta_dark.svg'
+    },
+    wordmark: {
+      light: '/library/okta-wordmark_light.svg',
+      dark: '/library/okta-wordmark_dark.svg'
+    },
+    url: 'https://www.okta.com/'
   }
 ];
