@@ -3026,6 +3026,12 @@ export const svgs: iSVG[] = [
     url: 'https://daily.dev/'
   },
   {
+    title: 'Polars',
+    category: 'Library',
+    route: '/library/polars-logo.svg',
+    url: 'https://pola.rs/'
+  },
+  {
     title: 'Zed',
     category: 'Software',
     route: {
