@@ -3033,5 +3033,14 @@ export const svgs: iSVG[] = [
       dark: '/library/zed-logo_dark.svg'
     },
     url: 'https://zed.dev/'
+  },
+  {
+    title: 'Polar',
+    category: 'Software',
+    route: {
+      light: '/library/polar-sh_light.svg',
+      dark: '/library/polar-sh_dark.svg'
+    },
+    url: 'https://polar.sh/'
   }
 ];
