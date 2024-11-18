@@ -3048,5 +3048,17 @@ export const svgs: iSVG[] = [
       dark: '/library/polar-sh_dark.svg'
     },
     url: 'https://polar.sh/'
+  },
+  {
+    title: 'Apple Pay',
+    category: 'Payment',
+    route: '/library/apple-pay.svg',
+    url: 'https://www.apple.com/apple-pay/'
+  },
+  {
+    title: 'Google Pay',
+    category: 'Payment',
+    route: '/library/google-pay.svg',
+    url: 'https://pay.google.com/about/'
   }
 ];
