@@ -3060,6 +3060,6 @@ export const svgs: iSVG[] = [
       light: '/library/soundcloud-wordmark.svg',
       dark: 'library/soundcloud-wordmark_dark.svg'
     },
-    url: 'https://trpc.io/'
+    url: 'https://soundcloud.com/'
   }
 ];
