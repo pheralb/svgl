@@ -3021,5 +3021,11 @@ export const svgs: iSVG[] = [
       dark: '/library/daily-dev-dark.svg'
     },
     url: 'https://daily.dev/'
+  },
+  {
+    title: 'Zed',
+    category: 'Software',
+    route: '/library/zed-logo.svg',
+    url: 'https://zed.dev/'
   }
 ];
