@@ -2921,6 +2921,18 @@ export const svgs: iSVG[] = [
     url: 'https://www.raspberrypi.com/'
   },
   {
+    title: 'Microsoft Word',
+    category: ['Office', 'Software'],
+    route: '/library/microsoft_word.svg',
+    url: 'https://www.microsoft.com/en-us/microsoft-365/word'
+  },
+  {
+    title: 'Microsoft Excel',
+    category: ['Office', 'Software'],
+    route: '/library/microsoft_excel.svg',
+    url: 'https://www.microsoft.com/en-us/microsoft-365/excel'
+  },
+  {
     title: 'Vite',
     category: ['Devtool', 'void(0)'],
     route: '/library/vitejs.svg',
