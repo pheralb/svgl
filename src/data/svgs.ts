@@ -3048,5 +3048,15 @@ export const svgs: iSVG[] = [
       dark: '/library/polar-sh_dark.svg'
     },
     url: 'https://polar.sh/'
+  },
+  {
+    title: 'PostHog',
+    category: 'Devtool',
+    route: '/library/posthog.svg',
+    wordmark: {
+      light: '/library/posthog-wordmark.svg',
+      dark: '/library/posthog-wordmark_dark.svg'
+    },
+    url: 'https://posthog.com/'
   }
 ];
