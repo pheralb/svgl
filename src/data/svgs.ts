@@ -3048,5 +3048,15 @@ export const svgs: iSVG[] = [
       dark: '/library/polar-sh_dark.svg'
     },
     url: 'https://polar.sh/'
+  },
+  {
+    title: 'Clickhouse',
+    category: 'Database',
+    route: '/library/clickhouse.svg',
+    wordmark: {
+      light: '/library/clickhouse-wordmark.svg',
+      dark: '/library/clickhouse-wordmark_dark.svg'
+    },
+    url: 'https://clickhouse.com/'
   }
 ];
