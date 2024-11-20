@@ -2967,7 +2967,7 @@ export const svgs: iSVG[] = [
       light: '/library/mediawiki-wordmark-light.svg',
       dark: '/library/mediawiki-wordmark-dark.svg'
     },
-    url: "https://www.mediawiki.org/"
+    url: 'https://www.mediawiki.org/'
   },
   {
     title: 'Carrd',
@@ -3008,6 +3008,61 @@ export const svgs: iSVG[] = [
     url: 'https://blueskyweb.xyz/'
   },
   {
+    title: 'Drizzle ORM',
+    category: ['Library', 'Database'],
+    route: {
+      light: '/library/drizzle-orm_light.svg',
+      dark: '/library/drizzle-orm_dark.svg'
+    },
+    url: 'https://orm.drizzle.team/'
+  },
+  {
+    title: 'daily.dev',
+    category: ['Social', 'Community'],
+    route: {
+      light: '/library/daily-dev-ligth.svg',
+      dark: '/library/daily-dev-dark.svg'
+    },
+    url: 'https://daily.dev/'
+  },
+  {
+    title: 'Polars',
+    category: 'Library',
+    route: '/library/polars-logo.svg',
+    url: 'https://pola.rs/'
+  },
+  {
+    title: 'Zed',
+    category: 'Software',
+    route: {
+      light: '/library/zed-logo.svg',
+      dark: '/library/zed-logo_dark.svg'
+    },
+    url: 'https://zed.dev/'
+  },
+  {
+    title: 'Polar',
+    category: 'Software',
+    route: {
+      light: '/library/polar-sh_light.svg',
+      dark: '/library/polar-sh_dark.svg'
+    },
+    url: 'https://polar.sh/'
+  },
+  {
+    title: 'SoundCloud',
+    category: 'Entertainment',
+    route: {
+      light: '/library/soundcloud-logo.svg',
+      dark: '/library/soundcloud-logo_dark.svg'
+    },
+    wordmark: {
+      light: '/library/soundcloud-wordmark.svg',
+      dark: 'library/soundcloud-wordmark_dark.svg'
+    },
+    url: 'https://soundcloud.com/'
+  },
+  {
     title: '.NET',
     category: 'Framework',
     route: '/library/dotnet.svg',
@@ -3016,5 +3071,5 @@ export const svgs: iSVG[] = [
       dark: '/library/dotnet-wordmark-dark.svg'
     },
     url: 'https://dotnet.microsoft.com/'
-  },
+  }
 ];
