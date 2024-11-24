@@ -3050,6 +3050,19 @@ export const svgs: iSVG[] = [
     url: 'https://polar.sh/'
   },
   {
+    title: 'nuqs',
+    category: 'Library',
+    route: {
+      light: '/library/nuqs.svg',
+      dark: '/library/nuqs_dark.svg'
+    },
+    wordmark: {
+      light: '/library/nuqs-wordmark.svg',
+      dark: '/library/nuqs-wordmark_dark.svg'
+    },
+    url: 'https://nuqs.47ng.com/'
+  },
+  {
     title: 'SoundCloud',
     category: 'Entertainment',
     route: {
