@@ -3078,7 +3078,10 @@ export const svgs: iSVG[] = [
   {
     title: 'Clerk',
     category: ['Software', 'Authentication'],
-    route: '/library/clerk.svg',
+    route: {
+      light: '/library/clerk-light.svg',
+      dark: '/library/clerk-dark.svg'
+    },
     url: 'https://clerk.com/'
   }
 ];
