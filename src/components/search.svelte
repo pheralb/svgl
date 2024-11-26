@@ -6,9 +6,13 @@
   export let placeholder: string = 'Search...';
   export let clearSearch: () => void;
   import { X } from 'lucide-svelte';
+  import { onMount } from 'svelte';
 
   let inputElement;
-
+  let isMac = true;
+  onMount(() => {
+    isMac = /(Macintosh|iPhone|iPod|iPad)/i.test(navigator.userAgent);
+  });
   function focusInput(node: HTMLElement) {
     const handleKeydown = (event: KeyboardEvent) => {
       if ((event.metaKey || event.ctrlKey) && event.key === 'k') {
@@ -66,11 +70,17 @@
         </button>
       </div>
     {:else}
-      <div class="absolute inset-y-0 right-0 flex items-center pr-4 text-neutral-500">
-        <div class="flex h-full items-center pointer-events-none gap-x-1 font-mono">
+      <div class="absolute inset-y-0 right-0 flex items-center pointer-events-none  pr-4 text-neutral-500">
+        {#if isMac}
           <Command size={16} />
-          <span>K</span>
-        </div>
+        {:else}
+          <kbd class="rounded border border-neutral-500 px-1 py-0.5 text-xs shadow-sm">Ctrl</kbd>
+        {/if}
+        <kbd
+          class={isMac
+            ? 'ml-1'
+            : 'ml-1 rounded border border-neutral-500 px-1 py-0.5 text-xs shadow-sm'}>K</kbd
+        >
       </div>
     {/if}
   </div>
