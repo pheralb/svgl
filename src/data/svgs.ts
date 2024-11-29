@@ -736,7 +736,10 @@ export const svgs: iSVG[] = [
   {
     title: 'Amazon Web Services',
     category: 'Software',
-    route: '/library/aws.svg',
+    route: {
+      light: '/library/aws_light.svg',
+      dark: '/library/aws_dark.svg'
+    },
     url: 'https://aws.amazon.com/'
   },
   {
