@@ -748,7 +748,14 @@ export const svgs: iSVG[] = [
   {
     title: 'Heroku',
     category: 'Software',
-    route: '/library/heroku.svg',
+    route: {
+      light: '/library/heroku_light.svg',
+      dark: '/library/heroku_dark.svg'
+    },
+    wordmark: {
+      light: '/library/heroku-wordmark_light.svg',
+      dark: '/library/heroku-wordmark_dark.svg'
+    },
     url: 'https://www.heroku.com/'
   },
   {
