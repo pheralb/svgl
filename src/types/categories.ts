@@ -9,6 +9,7 @@ export type tCategory =
   | 'Devtool'
   | 'Monorepo'
   | 'CMS'
+  | 'Blockchain'
   | 'Database'
   | 'Compiler'
   | 'Crypto'
