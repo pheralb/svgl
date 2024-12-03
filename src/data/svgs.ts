@@ -3083,5 +3083,14 @@ export const svgs: iSVG[] = [
       dark: '/library/clerk-dark.svg'
     },
     url: 'https://clerk.com/'
+  },
+  {
+    title: 'Mermaid',
+    category: ['Library'],
+    route: {
+      light: '/library/mermaid-logo-light.svg',
+      dark: '/library/mermaid-logo-dark.svg'
+    },
+    url: 'https://mermaid.js.org/'
   }
 ];
