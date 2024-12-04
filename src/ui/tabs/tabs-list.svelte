@@ -9,7 +9,7 @@
 </script>
 
 <TabsPrimitive.List
-  class={cn('inline-flex h-9 items-center justify-center space-x-1 rounded-lg', className)}
+  class={cn('mb-2 flex flex-wrap items-center justify-center space-x-1 rounded-lg', className)}
   {...$$restProps}
 >
   <slot />
