@@ -214,7 +214,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'JWT',
-    category: 'Library',
+    category: ['Library', 'Authentication'],
     route: '/library/jwt.svg',
     url: 'https://jwt.io/'
   },
@@ -239,7 +239,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'WorkOS',
-    category: 'Software',
+    category: ['Software', 'Authentication'],
     route: {
       light: '/library/workos.svg',
       dark: '/library/workos-light.svg'
@@ -575,7 +575,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Twilio',
-    category: 'Software',
+    category: ['Software', 'Authentication'],
     route: '/library/twilio.svg',
     url: 'https://twilio.com'
   },
@@ -615,7 +615,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Authy',
-    category: 'Software',
+    category: ['Software', 'Authentication'],
     route: '/library/authy.svg',
     url: 'https://authy.com/'
   },
@@ -810,7 +810,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Auth0',
-    category: 'Library',
+    category: ['Library', 'Authentication'],
     route: '/library/auth0.svg',
     url: 'https://auth0.com/'
   },
@@ -3050,6 +3050,19 @@ export const svgs: iSVG[] = [
     url: 'https://polar.sh/'
   },
   {
+    title: 'nuqs',
+    category: 'Library',
+    route: {
+      light: '/library/nuqs.svg',
+      dark: '/library/nuqs_dark.svg'
+    },
+    wordmark: {
+      light: '/library/nuqs-wordmark.svg',
+      dark: '/library/nuqs-wordmark_dark.svg'
+    },
+    url: 'https://nuqs.47ng.com/'
+  },
+  {
     title: 'SoundCloud',
     category: 'Entertainment',
     route: {
@@ -3061,6 +3074,24 @@ export const svgs: iSVG[] = [
       dark: 'library/soundcloud-wordmark_dark.svg'
     },
     url: 'https://soundcloud.com/'
+  },
+  {
+    title: 'Clerk',
+    category: ['Software', 'Authentication'],
+    route: {
+      light: '/library/clerk-light.svg',
+      dark: '/library/clerk-dark.svg'
+    },
+    url: 'https://clerk.com/'
+  },
+  {
+    title: 'Mermaid',
+    category: ['Library'],
+    route: {
+      light: '/library/mermaid-logo-light.svg',
+      dark: '/library/mermaid-logo-dark.svg'
+    },
+    url: 'https://mermaid.js.org/'
   },
   {
     title: '.NET',
