@@ -26,4 +26,6 @@ export type tCategory =
   | 'Google'
   | 'Payment'
   | 'void(0)'
-  | 'Authentication';
+  | 'Authentication'
+  | 'IoT'
+  | 'Home Automation';
