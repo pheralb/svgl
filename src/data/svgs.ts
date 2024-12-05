@@ -3092,5 +3092,15 @@ export const svgs: iSVG[] = [
       dark: '/library/mermaid-logo-dark.svg'
     },
     url: 'https://mermaid.js.org/'
+  },
+  {
+    title: '.NET',
+    category: 'Framework',
+    route: '/library/dotnet.svg',
+    wordmark: {
+      light: '/library/dotnet-wordmark-light.svg',
+      dark: '/library/dotnet-wordmark-dark.svg'
+    },
+    url: 'https://dotnet.microsoft.com/'
   }
 ];
