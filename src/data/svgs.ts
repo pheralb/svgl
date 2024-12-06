@@ -3094,6 +3094,16 @@ export const svgs: iSVG[] = [
     url: 'https://mermaid.js.org/'
   },
   {
+    title: 'Home Assistant',
+    category: ['IoT', 'Home Automation', 'Software'],
+    route: '/library/home-assistant.svg',
+    wordmark: {
+      light: '/library/home-assistant-wordmark.svg',
+      dark: '/library/home-assistant-wordmark-dark.svg'
+    },
+    url: 'https://github.com/home-assistant/assets/tree/master/logo'
+  },
+  {
     title: 'UXAnaRangel',
     category: ['Community'],
     route: '/library/uxanarangel.svg',
