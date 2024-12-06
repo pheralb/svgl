@@ -3092,5 +3092,20 @@ export const svgs: iSVG[] = [
       dark: '/library/mermaid-logo-dark.svg'
     },
     url: 'https://mermaid.js.org/'
+  },
+  {
+    title: 'UXAnaRangel',
+    category: ['Community'],
+    route: '/library/uxanarangel.svg',
+    url: 'https://uxanarangel.com/'
+  },
+  {
+    title: 'UXCorpRangel',
+    category: ['Community'],
+    route: {
+      light: '/library/uxcorprangel-light.svg',
+      dark: '/library/uxcorprangel-dark.svg'
+    },
+    url: 'https://github.com/UXCorpRangel/'
   }
 ];
