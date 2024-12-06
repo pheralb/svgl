@@ -3106,7 +3106,10 @@ export const svgs: iSVG[] = [
   {
     title: 'UXAnaRangel',
     category: ['Community'],
-    route: '/library/uxanarangel.svg',
+    route: {
+      light: '/library/uxanarangel-light.svg',
+      dark: '/library/uxanarangel-dark.svg'
+    },
     url: 'https://uxanarangel.com/'
   },
   {
