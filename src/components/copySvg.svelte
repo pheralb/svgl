@@ -15,11 +15,13 @@
   import { buttonStyles } from '@/ui/styles';
   import { cn } from '@/utils/cn';
   import { componentTemplate } from '@/utils/componentTemplate';
+  import { generateAngularComponent } from '@/utils/generateAngularComponent';
 
   //Icons:
   import ReactIcon from './icons/reactIcon.svelte';
   import VueIcon from './icons/vueIcon.svelte';
   import SvelteIcon from './icons/svelteIcon.svelte';
+  import AngularIcon from './icons/angularIcon.svelte';
 
   // Props:
   export let iconSize = 24;
@@ -163,6 +165,33 @@
       toast.error(`Failed to copy ${framework} component`);
     }
   };
+
+  // Copy SVG as Standalone Angular component:
+  const convertSvgAngularComponent = async () => {
+    isLoading = true;
+    optionsOpen = false;
+
+    const title = svgInfo.title.split(' ').join('');
+    const svgUrlToCopy = getSvgUrl();
+    const content = await getSvgContent(svgUrlToCopy);
+
+    if (!content) {
+      toast.error('Failed to fetch the SVG content', {
+        duration: 5000
+      });
+      isLoading = false;
+      return;
+    }
+
+    const angularComponent = generateAngularComponent(content, title);
+    await clipboard(angularComponent);
+
+    toast.success(`Copied as Standalone Angular component`, {
+      description: `${svgInfo.title} - ${svgInfo.category}`
+    });
+
+    isLoading = false;
+  };
 </script>
 
 <Popover.Root open={optionsOpen} onOpenChange={(isOpen) => (optionsOpen = isOpen)}>
@@ -185,6 +214,7 @@
         <Tabs.Trigger value="react">React</Tabs.Trigger>
         <Tabs.Trigger value="vue">Vue</Tabs.Trigger>
         <Tabs.Trigger value="svelte">Svelte</Tabs.Trigger>
+        <Tabs.Trigger value="angular">Angular</Tabs.Trigger>
       </Tabs.List>
       <Tabs.Content value="source">
         <section class="flex flex-col space-y-2">
@@ -262,6 +292,19 @@
           >
             <VueIcon iconSize={18} />
             <span>Copy TS</span>
+          </button>
+        </section>
+      </Tabs.Content>
+      <Tabs.Content value="angular">
+        <section class="flex flex-col space-y-2">
+          <button
+            class={cn(buttonStyles, 'w-full rounded-md')}
+            title="Copy as Standalone Component"
+            disabled={isLoading}
+            on:click={() => convertSvgAngularComponent()}
+          >
+            <AngularIcon iconSize={18} />
+            <span>Copy Standalone Component</span>
           </button>
         </section>
       </Tabs.Content>
