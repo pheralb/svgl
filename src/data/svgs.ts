@@ -3053,6 +3053,12 @@ export const svgs: iSVG[] = [
     url: 'https://polar.sh/'
   },
   {
+    title: 'JSON',
+    category: 'Language',
+    route: '/library/json.svg',
+    url: 'https://json.org/'
+  },
+  {
     title: 'nuqs',
     category: 'Library',
     route: {
