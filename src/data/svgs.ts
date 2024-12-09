@@ -3102,5 +3102,23 @@ export const svgs: iSVG[] = [
       dark: '/library/home-assistant-wordmark-dark.svg'
     },
     url: 'https://github.com/home-assistant/assets/tree/master/logo'
+  },
+  {
+    title: 'UXAnaRangel',
+    category: ['Community'],
+    route: {
+      light: '/library/uxanarangel-light.svg',
+      dark: '/library/uxanarangel-dark.svg'
+    },
+    url: 'https://uxanarangel.com/'
+  },
+  {
+    title: 'UXCorpRangel',
+    category: ['Community'],
+    route: {
+      light: '/library/uxcorprangel-light.svg',
+      dark: '/library/uxcorprangel-dark.svg'
+    },
+    url: 'https://github.com/UXCorpRangel/'
   }
 ];
