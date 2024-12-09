@@ -1073,9 +1073,15 @@ export const svgs: iSVG[] = [
     url: 'https://es.wikipedia.org/wiki/HTML5'
   },
   {
-    title: 'CSS',
+    title: 'CSS (New)',
     category: 'Language',
     route: '/library/css.svg',
+    url: 'https://es.wikipedia.org/wiki/CSS'
+  },
+  {
+    title: 'CSS',
+    category: 'Language',
+    route: '/library/css_old.svg',
     url: 'https://es.wikipedia.org/wiki/CSS'
   },
   {
