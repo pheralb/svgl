@@ -3120,5 +3120,15 @@ export const svgs: iSVG[] = [
       dark: '/library/uxcorprangel-dark.svg'
     },
     url: 'https://github.com/UXCorpRangel/'
+  },
+  {
+    title: 'PostHog',
+    category: 'Devtool',
+    route: '/library/posthog.svg',
+    wordmark: {
+      light: '/library/posthog-wordmark.svg',
+      dark: '/library/posthog-wordmark_dark.svg'
+    },
+    url: 'https://posthog.com/'
   }
 ];
