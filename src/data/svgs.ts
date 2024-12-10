@@ -3059,6 +3059,15 @@ export const svgs: iSVG[] = [
     url: 'https://polar.sh/'
   },
   {
+    title: 'bolt',
+    category: 'Devtool',
+    route: {
+      light: '/library/bolt-new.svg',
+      dark: '/library/bolt-new_dark.svg'
+    },
+    url: 'https://bolt.new/'
+  },
+  {
     title: 'JSON',
     category: 'Language',
     route: '/library/json.svg',
