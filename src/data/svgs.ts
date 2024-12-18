@@ -3154,5 +3154,11 @@ export const svgs: iSVG[] = [
       dark: '/library/posthog-wordmark_dark.svg'
     },
     url: 'https://posthog.com/'
+  },
+  {
+    title: 'Lottielab',
+    category: 'Design',
+    route: '/library/lottielab.svg',
+    url: 'https://www.lottielab.com/'
   }
 ];
