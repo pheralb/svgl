@@ -46,6 +46,7 @@
     "jszip": "3.10.1",
     "lucide-svelte": "0.445.0",
     "mode-watcher": "0.4.1",
+    "pnpm": "^9.15.0",
     "rehype-autolink-headings": "7.1.0",
     "rehype-pretty-code": "0.14.0",
     "rehype-slug": "6.0.0",
