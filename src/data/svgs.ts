@@ -3154,5 +3154,11 @@ export const svgs: iSVG[] = [
       dark: '/library/posthog-wordmark_dark.svg'
     },
     url: 'https://posthog.com/'
+  },
+  {
+    title: 'Mailtester Ninja',
+    category: 'Software',
+    route: '/library/Mailtester-Ninja.svg',
+    url: 'https://mailtester.ninja/'
   }
 ];
