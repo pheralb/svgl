@@ -3154,5 +3154,15 @@ export const svgs: iSVG[] = [
       dark: '/library/posthog-wordmark_dark.svg'
     },
     url: 'https://posthog.com/'
+  },
+  {
+    title: '.NET',
+    category: 'Framework',
+    route: '/library/dotnet.svg',
+    wordmark: {
+      light: '/library/dotnet-wordmark-light.svg',
+      dark: '/library/dotnet-wordmark-dark.svg'
+    },
+    url: 'https://dotnet.microsoft.com/'
   }
 ];
