@@ -3095,7 +3095,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'SoundCloud',
-    category: 'Entertainment',
+    category: 'Music',
     route: {
       light: '/library/soundcloud-logo.svg',
       dark: '/library/soundcloud-logo_dark.svg'
