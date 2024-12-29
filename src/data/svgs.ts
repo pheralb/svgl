@@ -3167,5 +3167,11 @@ export const svgs: iSVG[] = [
     category: 'Design',
     route: '/library/lottielab.svg',
     url: 'https://www.lottielab.com/'
+  },
+  {
+    title: "CakePHP",
+    category: "Framework",
+    route: "/library/cakephp.svg",
+    url: "https://cakephp.org/"
   }
 ];
