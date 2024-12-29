@@ -3167,5 +3167,15 @@ export const svgs: iSVG[] = [
     category: 'Design',
     route: '/library/lottielab.svg',
     url: 'https://www.lottielab.com/'
+  },
+  {
+    title: 'Webstudio',
+    category: ['Design', 'Devtool'],
+    route: '/library/webstudio.svg',
+    wordmark: {
+      light: '/library/webstudio-wordmark_light.svg',
+      dark: '/library/webstudio-wordmark_dark.svg'
+    },
+    url: 'https://webstudio.is'
   }
 ];
