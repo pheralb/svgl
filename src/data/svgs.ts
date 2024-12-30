@@ -3167,5 +3167,11 @@ export const svgs: iSVG[] = [
     category: 'Design',
     route: '/library/lottielab.svg',
     url: 'https://www.lottielab.com/'
+  },
+  {
+    title: 'TanStack',
+    category: ['Software', 'Library'],
+    route: '/library/tanstack.svg',
+    url: 'https://tanstack.com/'
   }
 ];
