@@ -3173,5 +3173,15 @@ export const svgs: iSVG[] = [
     category: ['Software', 'Library'],
     route: '/library/tanstack.svg',
     url: 'https://tanstack.com/'
+  },
+  {
+    title: 'Replit',
+    category: 'Software',
+    route: '/library/replit.svg',
+    wordmark: {
+      light: '/library/replit-wordmark.svg',
+      dark: '/library/replit-wordmark_dark.svg'
+    },
+    url: 'https://replit.com/'
   }
 ];
