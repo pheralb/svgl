@@ -3173,5 +3173,11 @@ export const svgs: iSVG[] = [
     category: ['Software', 'Library'],
     route: '/library/tanstack.svg',
     url: 'https://tanstack.com/'
+  },
+  {
+    title: "CakePHP",
+    category: "Framework",
+    route: "/library/cakephp.svg",
+    url: "https://cakephp.org/"
   }
 ];
