@@ -2,6 +2,15 @@ import type { iSVG } from '../types/svg';
 
 export const svgs: iSVG[] = [
   {
+    title: 'Visa',
+    category: 'Payment',
+    route: {
+      light: '/library/visa-light.svg',
+      dark: '/library/visa-dark.svg'
+    },
+    url: 'https://visa.com'
+  },
+  {
     title: 'Google Drive',
     category: 'Google',
     route: '/library/drive.svg',
