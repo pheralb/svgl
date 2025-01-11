@@ -1409,7 +1409,7 @@ export const svgs: iSVG[] = [
     url: 'https://webkit.org/'
   },
   {
-    title: 'DuckDucgGo',
+    title: 'DuckDuckGo',
     category: ['Software', 'Browser'],
     route: '/library/duckduckgo.svg',
     wordmark: '/library/duckduckgo-wordmark.svg',
