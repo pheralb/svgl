@@ -3173,5 +3173,18 @@ export const svgs: iSVG[] = [
     category: ['Software', 'Library'],
     route: '/library/tanstack.svg',
     url: 'https://tanstack.com/'
+  },
+  {
+    title: 'TypeGPU',
+    category: ['Software', 'Library'],
+    route: {
+      light: '/library/typegpu-light.svg',
+      dark: '/library/typegpu-dark.svg'
+    },
+    wordmark: {
+      light: '/library/typegpu-wordmark-light.svg',
+      dark: '/library/typegpu-wordmark-dark.svg'
+    },
+    url: 'https://typegpu.com'
   }
 ];
