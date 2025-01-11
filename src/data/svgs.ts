@@ -2,6 +2,13 @@ import type { iSVG } from '../types/svg';
 
 export const svgs: iSVG[] = [
   {
+    title: 'JigsawStack',
+    category: ['AI', 'Devtool', 'Library'],
+    route: '/library/jigsawstack.svg',
+    wordmark: '/library/jigsawstack_wordmark.svg',
+    url: 'https://jigsawstack.com'
+  },
+  {
     title: 'Google Drive',
     category: 'Google',
     route: '/library/drive.svg',
