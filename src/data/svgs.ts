@@ -2,6 +2,12 @@ import type { iSVG } from '../types/svg';
 
 export const svgs: iSVG[] = [
   {
+    title: 'Bootstrap Logos',
+    category: 'Marketplace',
+    route: '/library/bootstraplogos.svg',
+    url: 'https://bootstraplogos.com'
+  },
+  {
     title: 'Google Drive',
     category: 'Google',
     route: '/library/drive.svg',
