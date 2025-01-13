@@ -3193,5 +3193,11 @@ export const svgs: iSVG[] = [
       dark: '/library/typegpu-wordmark-dark.svg'
     },
     url: 'https://typegpu.com'
+  },
+  {
+    title: 'dotenv',
+    category: ['Config', 'Library', 'Devtool'],
+    route: '/library/dotenv.svg',
+    url: 'https://github.com/motdotla/dotenv'
   }
 ];
