@@ -13,7 +13,7 @@ export const svgs: iSVG[] = [
     category: 'Payment',
     route: '/library/paypal.svg',
     wordmark: '/library/paypal-wordmark.svg',
-    url: 'https://paypal.com
+    url: 'https://paypal.com'
   },
   {
     title: 'Google Drive',
