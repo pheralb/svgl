@@ -3204,6 +3204,7 @@ export const svgs: iSVG[] = [
     title: 'Apache Kafka',
     category: 'Software',
     route: '/library/apache-kafka.svg',
+    wordmark: '/library/apache-kafka-wordmark.svg',
     url: 'https://kafka.apache.org'
   }
 ];
