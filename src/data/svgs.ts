@@ -9,6 +9,13 @@ export const svgs: iSVG[] = [
     url: 'https://www.virtualbox.org/',
   },
   {
+    title: 'PayPal',
+    category: 'Payment',
+    route: '/library/paypal.svg',
+    wordmark: '/library/paypal-wordmark.svg',
+    url: 'https://paypal.com
+  },
+  {
     title: 'Google Drive',
     category: 'Google',
     route: '/library/drive.svg',
@@ -3180,5 +3187,24 @@ export const svgs: iSVG[] = [
     category: ['Software', 'Library'],
     route: '/library/tanstack.svg',
     url: 'https://tanstack.com/'
+  },
+  {
+    title: 'TypeGPU',
+    category: ['Software', 'Library'],
+    route: {
+      light: '/library/typegpu-light.svg',
+      dark: '/library/typegpu-dark.svg'
+    },
+    wordmark: {
+      light: '/library/typegpu-wordmark-light.svg',
+      dark: '/library/typegpu-wordmark-dark.svg'
+    },
+    url: 'https://typegpu.com'
+  },
+  {
+    title: 'dotenv',
+    category: ['Config', 'Library', 'Devtool'],
+    route: '/library/dotenv.svg',
+    url: 'https://github.com/motdotla/dotenv'
   }
 ];
