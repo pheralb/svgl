@@ -3199,5 +3199,11 @@ export const svgs: iSVG[] = [
     category: ['Config', 'Library', 'Devtool'],
     route: '/library/dotenv.svg',
     url: 'https://github.com/motdotla/dotenv'
+  },
+  {
+    title: 'dotenvx',
+    category: ['Secrets', 'Config', 'Devtool'],
+    route: '/library/dotenvx.svg',
+    url: 'https://dotenvx.com'
   }
 ];
