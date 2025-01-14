@@ -2,6 +2,12 @@ import type { iSVG } from '../types/svg';
 
 export const svgs: iSVG[] = [
   {
+    title: "Cavalry",
+    category: ["Design", "Software"],
+    route: "/library/cavalry.svg",
+    url: "https://cavalry.scenegroup.co"
+  },
+  {
     title: 'PayPal',
     category: 'Payment',
     route: '/library/paypal.svg',
