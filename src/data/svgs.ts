@@ -3199,5 +3199,11 @@ export const svgs: iSVG[] = [
     category: ['Config', 'Library', 'Devtool'],
     route: '/library/dotenv.svg',
     url: 'https://github.com/motdotla/dotenv'
+  },
+  {
+    title: 'Apache Kafka',
+    category: 'Software',
+    route: '/library/apache-kafka.svg',
+    url: 'https://kafka.apache.org'
   }
 ];
