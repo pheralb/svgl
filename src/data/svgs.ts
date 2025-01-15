@@ -3205,5 +3205,11 @@ export const svgs: iSVG[] = [
     category: ['Secrets', 'Config', 'Devtool'],
     route: '/library/dotenvx.svg',
     url: 'https://dotenvx.com'
+  },
+  {
+    title: "Prusa Research",
+    category: ['Hardware', 'IoT'],
+    route: "/library/prusa_research.svg",
+    url: "https://www.prusa3d.com"
   }
 ];
