@@ -36,11 +36,19 @@ const mdsvexOptions = {
   highlight: {
     highlighter: async (code, lang = 'text') => {
       const highlighter = await getHighlighter({
-        themes: ['vesper'],
+        themes: ['github-light', 'github-dark'],
         langs: ['javascript', 'typescript', 'bash', 'json']
       });
       await highlighter.loadLanguage('javascript', 'typescript', 'bash');
-      const html = escapeSvelte(highlighter.codeToHtml(code, { lang, theme: 'vesper' }));
+      const html = escapeSvelte(
+        highlighter.codeToHtml(code, {
+          lang,
+          themes: {
+            light: 'github-light',
+            dark: 'github-dark'
+          }
+        })
+      );
       return `{@html \`${html}\` }`;
     }
   }

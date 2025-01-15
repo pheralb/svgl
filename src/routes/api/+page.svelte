@@ -42,7 +42,7 @@
     'prose dark:prose-invert',
     'mx-auto max-w-3xl px-4 py-10',
     'prose-h2:font-medium prose-h2:tracking-tight prose-h2:underline prose-h2:decoration-neutral-300 prose-h2:underline-offset-[6px] prose-h2:transition-opacity hover:prose-h2:opacity-70 dark:prose-h2:decoration-neutral-700/65',
-    'prose-pre:m-0 prose-pre:border-neutral-200 dark:prose-pre:border dark:prose-pre:border-neutral-800/65'
+    'prose-pre:m-0 prose-pre:border prose-pre:border-neutral-200 dark:prose-pre:border dark:prose-pre:border-neutral-800/65'
   )}
 >
   <svelte:component this={data.content} />
