@@ -2667,6 +2667,7 @@ export const svgs: iSVG[] = [
       light: '/library/vercel_wordmark.svg',
       dark: '/library/vercel_wordmark_dark.svg'
     },
+    brandUrl: 'https://vercel.com/geist/brands',
     url: 'https://vercel.com/'
   },
   {
@@ -3211,5 +3212,12 @@ export const svgs: iSVG[] = [
     category: 'Language',
     route: '/library/Tcl.svg',
     url: 'https://wiki.tcl-lang.org/page/What+is+Tcl'
+  },
+  {
+    title: 'Apache Kafka',
+    category: 'Software',
+    route: '/library/apache-kafka.svg',
+    wordmark: '/library/apache-kafka-wordmark.svg',
+    url: 'https://kafka.apache.org'
   }
 ];
