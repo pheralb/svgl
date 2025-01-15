@@ -12,5 +12,5 @@
 ## ✅ Checklist
 
 - [ ] I have permission to use this logo.
-- [ ] The .svg URL I have provided is optimized for web use.
-- [ ] The .svg size is less than **20kb**.
+- [ ] The ``.svg`` file is optimized for web use.
+- [ ] The ``.svg`` size is less than **20kb**.
