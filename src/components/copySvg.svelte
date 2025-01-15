@@ -309,5 +309,13 @@
         </section>
       </Tabs.Content>
     </Tabs.Root>
+    <div
+      class="mt-1 flex w-full items-center text-center text-[12px] text-neutral-600 dark:text-neutral-400"
+    >
+      <p>
+        Remember to request permission from the creators for the use of the SVG. Modification is not
+        allowed.
+      </p>
+    </div>
   </Popover.Content>
 </Popover.Root>

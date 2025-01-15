@@ -2667,6 +2667,7 @@ export const svgs: iSVG[] = [
       light: '/library/vercel_wordmark.svg',
       dark: '/library/vercel_wordmark_dark.svg'
     },
+    brandUrl: 'https://vercel.com/geist/brands',
     url: 'https://vercel.com/'
   },
   {
@@ -3199,6 +3200,12 @@ export const svgs: iSVG[] = [
     category: ['Config', 'Library', 'Devtool'],
     route: '/library/dotenv.svg',
     url: 'https://github.com/motdotla/dotenv'
+  },
+  {
+    title: 'dotenvx',
+    category: ['Secrets', 'Config', 'Devtool'],
+    route: '/library/dotenvx.svg',
+    url: 'https://dotenvx.com'
   },
   {
     title: 'Apache Kafka',

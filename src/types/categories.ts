@@ -29,4 +29,5 @@ export type tCategory =
   | 'Authentication'
   | 'IoT'
   | 'Home Automation'
-  | 'Config';
+  | 'Config'
+  | 'Secrets';
