@@ -2667,6 +2667,7 @@ export const svgs: iSVG[] = [
       light: '/library/vercel_wordmark.svg',
       dark: '/library/vercel_wordmark_dark.svg'
     },
+    brandUrl: 'https://vercel.com/geist/brands',
     url: 'https://vercel.com/'
   },
   {
