@@ -13,7 +13,8 @@
     Sparkles,
     EllipsisIcon,
     TagIcon,
-    XIcon
+    XIcon,
+    PaletteIcon
   } from 'lucide-svelte';
 
   // Components & styles:
@@ -57,8 +58,10 @@
   let maxVisibleCategories = 1;
   let moreTagsOptions = false;
 
-  // Global Images Styles:
+  // Global Styles:
   const globalImageStyles = 'mb-4 mt-2 h-10 select-none pointer-events-none';
+  const btnStyles =
+    'flex items-center space-x-2 rounded-md p-2 duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700/40';
 </script>
 
 <div
@@ -175,7 +178,7 @@
               : svgInfo.route
           );
         }}
-        class="flex items-center space-x-2 rounded-md p-2 duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700/40"
+        class={btnStyles}
       >
         <ChevronsRight size={iconSize} strokeWidth={iconStroke} />
       </button>
@@ -200,7 +203,7 @@
       title="Website"
       target="_blank"
       rel="noopener noreferrer"
-      class="flex items-center space-x-2 rounded-md p-2 duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700/40"
+      class={btnStyles}
     >
       <LinkIcon size={iconSize} strokeWidth={iconStroke} />
     </a>
@@ -210,7 +213,7 @@
         on:click={() => {
           wordmarkSvg = !wordmarkSvg;
         }}
-        class="flex items-center space-x-2 rounded-md p-2 duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700/40"
+        class={btnStyles}
       >
         {#if wordmarkSvg}
           <Sparkles size={iconSize} strokeWidth={iconStroke} />
@@ -218,6 +221,17 @@
           <Baseline size={iconSize} strokeWidth={iconStroke} />
         {/if}
       </button>
+    {/if}
+    {#if svgInfo.brandUrl !== undefined}
+      <a
+        href={svgInfo.brandUrl}
+        title="Brand Assets"
+        target="_blank"
+        rel="noopener noreferrer"
+        class={btnStyles}
+      >
+        <PaletteIcon size={iconSize} strokeWidth={iconStroke} />
+      </a>
     {/if}
   </div>
 </div>
