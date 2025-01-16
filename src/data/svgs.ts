@@ -3213,5 +3213,35 @@ export const svgs: iSVG[] = [
     route: '/library/apache-kafka.svg',
     wordmark: '/library/apache-kafka-wordmark.svg',
     url: 'https://kafka.apache.org'
+  },
+  {
+    title: 'Transloadit',
+    category: ['Software', 'File Processing', 'AI'],
+    route: {
+      light: '/library/transloadit_light.svg',
+      dark: '/library/transloadit_dark.svg'
+    },
+    wordmark: {
+      light: '/library/transloadit_wordmark_light.svg',
+      dark: '/library/transloadit_wordmark_dark.svg'
+    },
+    url: 'https://transloadit.com'
+  },
+  {
+    title: 'Uppy',
+    category: ['Library', 'File Processing'],
+    route: '/library/uppy.svg',
+    wordmark: '/library/uppy_wordmark.svg',
+    url: 'https://uppy.io'
+  },
+  {
+    title: 'tus',
+    category: ['Protocol', 'File Processing'],
+    route: '/library/tus.svg',
+    wordmark: {
+      light: '/library/tus_wordmark_light.svg',
+      dark: '/library/tus_wordmark_dark.svg'
+    },
+    url: 'https://tus.io'
   }
 ];

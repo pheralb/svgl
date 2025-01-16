@@ -30,4 +30,6 @@ export type tCategory =
   | 'IoT'
   | 'Home Automation'
   | 'Config'
-  | 'Secrets';
+  | 'Secrets'
+  | 'File Processing'
+  | 'Protocol';
