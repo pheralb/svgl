@@ -3205,5 +3205,32 @@ export const svgs: iSVG[] = [
     category: ['Secrets', 'Config', 'Devtool'],
     route: '/library/dotenvx.svg',
     url: 'https://dotenvx.com'
+  },
+  {
+    title: 'Transloadit',
+    category: ['Software', 'File Processing', 'AI'],
+    route: {
+      light: '/library/transloadit_light.svg',
+      dark: '/library/transloadit_dark.svg'
+    },
+    wordmark: {
+      light: '/library/transloadit_wordmark_light.svg',
+      dark: '/library/transloadit_wordmark_dark.svg'
+    },
+    url: 'https://transloadit.com'
+  },
+  {
+    title: 'Uppy',
+    category: ['Library', 'File Processing'],
+    route: '/library/uppy.svg',
+    wordmark: '/library/uppy_wordmark.svg',
+    url: 'https://uppy.io'
+  },
+  {
+    title: 'tus',
+    category: ['Protocol', 'File Processing'],
+    route: '/library/tus.svg',
+    wordmark: '/library/tus_wordmark.svg',
+    url: 'https://tus.io'
   }
 ];
