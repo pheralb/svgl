@@ -3230,7 +3230,10 @@ export const svgs: iSVG[] = [
     title: 'tus',
     category: ['Protocol', 'File Processing'],
     route: '/library/tus.svg',
-    wordmark: '/library/tus_wordmark.svg',
+    wordmark: {
+      light: '/library/tus_wordmark_light.svg',
+      dark: '/library/tus_wordmark_dark.svg'
+    },
     url: 'https://tus.io'
   }
 ];
