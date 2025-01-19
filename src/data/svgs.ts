@@ -94,7 +94,7 @@ export const svgs: iSVG[] = [
     title: 'Animate',
     category: ['Software', 'Design'],
     route: '/library/animate.svg',
-    url: 'https://www.adobe.com/products/animate.html'
+    url: 'https://www.adobe.com/products/animate'
   },
   {
     title: 'Blender',
@@ -1623,49 +1623,49 @@ export const svgs: iSVG[] = [
     title: 'Adobe',
     category: 'Design',
     route: '/library/adobe.svg',
-    url: 'https://x.com'
+    url: 'https://www.adobe.com/'
   },
   {
     title: 'After Effects',
     category: 'Design',
     route: '/library/after-effects.svg',
-    url: 'https://x.com'
+    url: 'https://www.adobe.com/products/aftereffects'
   },
   {
     title: 'Canva',
     category: 'Design',
     route: '/library/canva.svg',
-    url: 'https://x.com'
+    url: 'https://www.canva.com/'
   },
   {
     title: 'Illustrator',
     category: 'Design',
     route: '/library/illustrator.svg',
-    url: 'https://x.com'
+    url: 'https://www.adobe.com/products/illustrator'
   },
   {
     title: 'InDesign',
     category: 'Design',
     route: '/library/indesign.svg',
-    url: 'https://x.com'
+    url: 'https://www.adobe.com/products/indesign'
   },
   {
     title: 'Lightroom',
     category: 'Design',
     route: '/library/lightroom.svg',
-    url: 'https://x.com'
+    url: 'https://www.adobe.com/products/photoshop-lightroom'
   },
   {
     title: 'Photoshop',
     category: 'Design',
     route: '/library/photoshop.svg',
-    url: 'https://x.com'
+    url: 'https://www.adobe.com/products/photoshop'
   },
   {
     title: 'Premiere',
     category: 'Design',
     route: '/library/premiere.svg',
-    url: 'https://www.adobe.com/es/products/premiere'
+    url: 'https://www.adobe.com/products/premiere'
   },
   {
     title: 'VK',
@@ -1911,7 +1911,7 @@ export const svgs: iSVG[] = [
     title: 'Fortran',
     category: 'Language',
     route: '/library/fortran.svg',
-    url: 'https://en.wikipedia.org/wiki/Fortran'
+    url: 'https://fortran-lang.org/'
   },
   {
     title: 'Haskell',
@@ -2054,7 +2054,7 @@ export const svgs: iSVG[] = [
     title: 'XD',
     category: 'Design',
     route: '/library/adobe-xd.svg',
-    url: 'https://helpx.adobe.com/xd/get-started.html'
+    url: 'https://www.adobe.com/products/xd'
   },
   {
     title: 'Axure',
@@ -2596,7 +2596,7 @@ export const svgs: iSVG[] = [
     title: 'OBS',
     category: 'Software',
     route: '/library/obs.svg',
-    url: 'Website'
+    url: 'https://obsproject.com/'
   },
   {
     title: 'Stack Overflow',
