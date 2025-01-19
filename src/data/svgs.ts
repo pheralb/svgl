@@ -2,6 +2,13 @@ import type { iSVG } from '../types/svg';
 
 export const svgs: iSVG[] = [
   {
+    title: 'PayPal',
+    category: 'Payment',
+    route: '/library/paypal.svg',
+    wordmark: '/library/paypal-wordmark.svg',
+    url: 'https://paypal.com'
+  },
+  {
     title: 'Google Drive',
     category: 'Google',
     route: '/library/drive.svg',
@@ -214,7 +221,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'JWT',
-    category: 'Library',
+    category: ['Library', 'Authentication'],
     route: '/library/jwt.svg',
     url: 'https://jwt.io/'
   },
@@ -239,7 +246,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'WorkOS',
-    category: 'Software',
+    category: ['Software', 'Authentication'],
     route: {
       light: '/library/workos.svg',
       dark: '/library/workos-light.svg'
@@ -575,7 +582,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Twilio',
-    category: 'Software',
+    category: ['Software', 'Authentication'],
     route: '/library/twilio.svg',
     url: 'https://twilio.com'
   },
@@ -615,7 +622,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Authy',
-    category: 'Software',
+    category: ['Software', 'Authentication'],
     route: '/library/authy.svg',
     url: 'https://authy.com/'
   },
@@ -736,7 +743,10 @@ export const svgs: iSVG[] = [
   {
     title: 'Amazon Web Services',
     category: 'Software',
-    route: '/library/aws.svg',
+    route: {
+      light: '/library/aws_light.svg',
+      dark: '/library/aws_dark.svg'
+    },
     url: 'https://aws.amazon.com/'
   },
   {
@@ -810,7 +820,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Auth0',
-    category: 'Library',
+    category: ['Library', 'Authentication'],
     route: '/library/auth0.svg',
     url: 'https://auth0.com/'
   },
@@ -1070,9 +1080,15 @@ export const svgs: iSVG[] = [
     url: 'https://es.wikipedia.org/wiki/HTML5'
   },
   {
-    title: 'CSS',
+    title: 'CSS (New)',
     category: 'Language',
     route: '/library/css.svg',
+    url: 'https://es.wikipedia.org/wiki/CSS'
+  },
+  {
+    title: 'CSS',
+    category: 'Language',
+    route: '/library/css_old.svg',
     url: 'https://es.wikipedia.org/wiki/CSS'
   },
   {
@@ -1398,6 +1414,13 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/webkit.svg',
     url: 'https://webkit.org/'
+  },
+  {
+    title: 'DuckDuckGo',
+    category: ['Software', 'Browser'],
+    route: '/library/duckduckgo.svg',
+    wordmark: '/library/duckduckgo-wordmark.svg',
+    url: 'https://duckduckgo.com/'
   },
   {
     title: 'Gemini',
@@ -2644,6 +2667,7 @@ export const svgs: iSVG[] = [
       light: '/library/vercel_wordmark.svg',
       dark: '/library/vercel_wordmark_dark.svg'
     },
+    brandUrl: 'https://vercel.com/geist/brands',
     url: 'https://vercel.com/'
   },
   {
@@ -3048,6 +3072,147 @@ export const svgs: iSVG[] = [
       dark: '/library/polar-sh_dark.svg'
     },
     url: 'https://polar.sh/'
+  },
+  {
+    title: 'bolt',
+    category: 'Devtool',
+    route: {
+      light: '/library/bolt-new.svg',
+      dark: '/library/bolt-new_dark.svg'
+    },
+    url: 'https://bolt.new/'
+  },
+  {
+    title: 'JSON',
+    category: 'Language',
+    route: '/library/json.svg',
+    url: 'https://json.org/'
+  },
+  {
+    title: 'nuqs',
+    category: 'Library',
+    route: {
+      light: '/library/nuqs.svg',
+      dark: '/library/nuqs_dark.svg'
+    },
+    wordmark: {
+      light: '/library/nuqs-wordmark.svg',
+      dark: '/library/nuqs-wordmark_dark.svg'
+    },
+    url: 'https://nuqs.47ng.com/'
+  },
+  {
+    title: 'SoundCloud',
+    category: 'Music',
+    route: {
+      light: '/library/soundcloud-logo.svg',
+      dark: '/library/soundcloud-logo_dark.svg'
+    },
+    wordmark: {
+      light: '/library/soundcloud-wordmark.svg',
+      dark: 'library/soundcloud-wordmark_dark.svg'
+    },
+    url: 'https://soundcloud.com/'
+  },
+  {
+    title: 'Clerk',
+    category: ['Software', 'Authentication'],
+    route: {
+      light: '/library/clerk-light.svg',
+      dark: '/library/clerk-dark.svg'
+    },
+    url: 'https://clerk.com/'
+  },
+  {
+    title: 'Mermaid',
+    category: ['Library'],
+    route: {
+      light: '/library/mermaid-logo-light.svg',
+      dark: '/library/mermaid-logo-dark.svg'
+    },
+    url: 'https://mermaid.js.org/'
+  },
+  {
+    title: 'Home Assistant',
+    category: ['IoT', 'Home Automation', 'Software'],
+    route: '/library/home-assistant.svg',
+    wordmark: {
+      light: '/library/home-assistant-wordmark.svg',
+      dark: '/library/home-assistant-wordmark-dark.svg'
+    },
+    url: 'https://github.com/home-assistant/assets/tree/master/logo'
+  },
+  {
+    title: 'UXAnaRangel',
+    category: ['Community'],
+    route: {
+      light: '/library/uxanarangel-light.svg',
+      dark: '/library/uxanarangel-dark.svg'
+    },
+    url: 'https://uxanarangel.com/'
+  },
+  {
+    title: 'UXCorpRangel',
+    category: ['Community'],
+    route: {
+      light: '/library/uxcorprangel-light.svg',
+      dark: '/library/uxcorprangel-dark.svg'
+    },
+    url: 'https://github.com/UXCorpRangel/'
+  },
+  {
+    title: 'PostHog',
+    category: 'Devtool',
+    route: '/library/posthog.svg',
+    wordmark: {
+      light: '/library/posthog-wordmark.svg',
+      dark: '/library/posthog-wordmark_dark.svg'
+    },
+    url: 'https://posthog.com/'
+  },
+  {
+    title: 'Lottielab',
+    category: 'Design',
+    route: '/library/lottielab.svg',
+    url: 'https://www.lottielab.com/'
+  },
+  {
+    title: 'TanStack',
+    category: ['Software', 'Library'],
+    route: '/library/tanstack.svg',
+    url: 'https://tanstack.com/'
+  },
+  {
+    title: 'TypeGPU',
+    category: ['Software', 'Library'],
+    route: {
+      light: '/library/typegpu-light.svg',
+      dark: '/library/typegpu-dark.svg'
+    },
+    wordmark: {
+      light: '/library/typegpu-wordmark-light.svg',
+      dark: '/library/typegpu-wordmark-dark.svg'
+    },
+    url: 'https://typegpu.com'
+  },
+  {
+    title: 'dotenv',
+    category: ['Config', 'Library', 'Devtool'],
+    route: '/library/dotenv.svg',
+    url: 'https://github.com/motdotla/dotenv'
+  },
+  {
+    title: 'dotenvx',
+    category: ['Secrets', 'Config', 'Devtool'],
+    route: '/library/dotenvx.svg',
+    url: 'https://dotenvx.com'
+  },
+  {
+    title: 'Apache Kafka',
+    category: 'Software',
+    route: '/library/apache-kafka.svg',
+    wordmark: '/library/apache-kafka-wordmark.svg',
+    url: 'https://kafka.apache.org'
   },
   {
     title: 'Motion',
