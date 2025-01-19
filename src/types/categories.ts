@@ -28,4 +28,6 @@ export type tCategory =
   | 'void(0)'
   | 'Authentication'
   | 'IoT'
-  | 'Home Automation';
+  | 'Home Automation'
+  | 'Config'
+  | 'Secrets';

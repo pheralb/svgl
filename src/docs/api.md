@@ -39,17 +39,18 @@ export interface Category {
 - For SVGs:
 
 ```ts
-type ThemeOptions = {
-  light: string;
+export type ThemeOptions = {
   dark: string;
+  light: string;
 };
 
 export interface iSVG {
-  id: number;
+  id?: number;
   title: string;
-  category: string | string[];
+  category: tCategory | tCategory[];
   route: string | ThemeOptions;
   wordmark?: string | ThemeOptions;
+  brandUrl?: string;
   url: string;
 }
 ```

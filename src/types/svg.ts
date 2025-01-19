@@ -11,5 +11,6 @@ export interface iSVG {
   category: tCategory | tCategory[];
   route: string | ThemeOptions;
   wordmark?: string | ThemeOptions;
+  brandUrl?: string;
   url: string;
 }
