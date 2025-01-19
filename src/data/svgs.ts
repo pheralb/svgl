@@ -3213,5 +3213,14 @@ export const svgs: iSVG[] = [
     route: '/library/apache-kafka.svg',
     wordmark: '/library/apache-kafka-wordmark.svg',
     url: 'https://kafka.apache.org'
+  },
+  {
+    title: 'Motion',
+    category: 'Library',
+    route: {
+      light: '/library/motion.svg',
+      dark: '/library/motion_dark.svg'
+    },
+    url: 'https://motion.dev/'
   }
 ];
