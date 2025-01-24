@@ -3222,5 +3222,12 @@ export const svgs: iSVG[] = [
       dark: '/library/motion_dark.svg'
     },
     url: 'https://motion.dev/'
+  },
+  {
+    title: 'DeepSeek',
+    category: 'AI',
+    route: '/library/deepseek.svg',
+    wordmark: '/library/deepseek_wordmark.svg',
+    url: 'https://deepseek.com/'
   }
 ];
