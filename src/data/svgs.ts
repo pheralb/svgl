@@ -162,8 +162,15 @@ export const svgs: iSVG[] = [
   {
     title: 'React',
     category: 'Library',
-    route: '/library/react.svg',
-    url: 'https://reactjs.org/'
+    route: {
+      light: '/library/react_light.svg',
+      dark: '/library/react_dark.svg'
+    },
+    wordmark: {
+      light: '/library/react_wordmark_light.svg',
+      dark: '/library/react_wordmark_dark.svg'
+    },
+    url: 'https://react.dev/'
   },
   {
     title: 'Svelte',
