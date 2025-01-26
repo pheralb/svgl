@@ -3229,5 +3229,11 @@ export const svgs: iSVG[] = [
     route: '/library/deepseek.svg',
     wordmark: '/library/deepseek_wordmark.svg',
     url: 'https://deepseek.com/'
+  },
+  {
+    title: 'Shiki',
+    category: 'Library',
+    route: '/library/shiki.svg',
+    url: 'https://shiki.style/'
   }
 ];
