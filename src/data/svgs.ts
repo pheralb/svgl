@@ -3242,5 +3242,11 @@ export const svgs: iSVG[] = [
     category: 'Library',
     route: '/library/shiki.svg',
     url: 'https://shiki.style/'
+  },
+  {
+    title: 'Open WebUI',
+    category: ['AI', 'Software'],
+    route: '/library/openwebui.svg',
+    url: 'https://openwebui.com/'
   }
 ];
