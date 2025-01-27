@@ -3048,6 +3048,19 @@ export const svgs: iSVG[] = [
     url: 'https://orm.drizzle.team/'
   },
   {
+    title: 'Dropbox',
+    category: 'Hosting',
+    route: {
+      light: '/library/dropbox_light.svg',
+      dark: '/library/dropbox_dark.svg'
+    },
+    wordmark: {
+      light: '/library/dropbox_wordmark_light.svg',
+      dark: '/library/dropbox_wordmark_dark.svg'
+    },
+    url: 'https://www.dropbox.com/'
+  },
+  {
     title: 'daily.dev',
     category: ['Social', 'Community'],
     route: {
