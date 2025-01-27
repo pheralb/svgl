@@ -2953,25 +2953,25 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Vite',
-    category: ['Devtool', 'void(0)'],
+    category: ['Devtool', 'VoidZero'],
     route: '/library/vitejs.svg',
     url: 'https://vitejs.dev'
   },
   {
     title: 'Vitest',
-    category: ['Framework', 'void(0)'],
+    category: ['Framework', 'VoidZero'],
     route: '/library/vitest.svg',
     url: 'https://vitest.dev/'
   },
   {
     title: 'Oxc',
-    category: ['Devtool', 'void(0)'],
+    category: ['Devtool', 'VoidZero'],
     route: '/library/oxc.svg',
     url: 'https://oxc.rs/'
   },
   {
     title: 'Rolldown',
-    category: ['Compiler', 'void(0)'],
+    category: ['Compiler', 'VoidZero'],
     route: '/library/rolldown.svg',
     url: 'https://rolldown.rs/'
   },
