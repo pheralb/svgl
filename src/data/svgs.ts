@@ -3244,6 +3244,16 @@ export const svgs: iSVG[] = [
     url: 'https://shiki.style/'
   },
   {
+    title: 'Dropbox',
+    category: ['Hosting', 'Software'],
+    route: '/library/dropbox.svg',
+    wordmark: {
+      light: '/library/dropbox_wordmark.svg',
+      dark: '/library/dropbox_wordmark_dark.svg'
+    },
+    url: 'https://www.dropbox.com/'
+  },
+  {
     title: 'Open WebUI',
     category: ['AI', 'Software'],
     route: '/library/openwebui.svg',
