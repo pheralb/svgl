@@ -2142,9 +2142,13 @@ export const svgs: iSVG[] = [
     url: 'https://www.jetbrains.com/phpstorm/'
   },
   {
-    title: 'MonkeyType',
+    title: 'Monkeytype',
     category: 'Software',
     route: '/library/monkeytype.svg',
+    wordmark: {
+      dark: '/library/monkeytype-wordmark-dark.svg',
+      light: '/library/monkeytype-wordmark-light.svg'
+    },
     url: 'https://monkeytype.com/'
   },
   {
