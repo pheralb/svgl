@@ -2351,7 +2351,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Google Idx',
-    category: 'Software',
+    category: ['Software', 'Google'],
     route: '/library/google-idx.svg',
     url: 'https://idx.dev/'
   },
@@ -2412,7 +2412,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Bitwarden',
-    category: 'Software',
+    category: ['Software', 'Authentication'],
     route: '/library/bitwarden.svg',
     url: 'https://bitwarden.com/'
   },
@@ -2463,7 +2463,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Google PaLM',
-    category: 'AI',
+    category: ['AI', 'Google'],
     route: '/library/google-palm.svg',
     url: 'https://ai.google/discover/palm2/'
   },
@@ -2906,7 +2906,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Firebase',
-    category: 'Hosting',
+    category: ['Hosting', 'Google'],
     route: '/library/firebase.svg',
     wordmark: '/library/firebase-wordmark.svg',
     url: 'https://firebase.google.com/'
@@ -3252,5 +3252,11 @@ export const svgs: iSVG[] = [
       dark: '/library/dropbox_wordmark_dark.svg'
     },
     url: 'https://www.dropbox.com/'
+  },
+  {
+    title: 'Open WebUI',
+    category: ['AI', 'Software'],
+    route: '/library/openwebui.svg',
+    url: 'https://openwebui.com/'
   }
 ];
