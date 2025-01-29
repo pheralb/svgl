@@ -3262,5 +3262,14 @@ export const svgs: iSVG[] = [
     category: ['AI', 'Software'],
     route: '/library/openwebui.svg',
     url: 'https://openwebui.com/'
+  },
+  {
+    title: 'Base UI',
+    category: 'Library',
+    route: {
+      light: '/library/base-ui.svg',
+      dark: '/library/base-ui-dark.svg'
+    },
+    url: 'https://base-ui.com/'
   }
 ];
