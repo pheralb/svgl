@@ -97,6 +97,12 @@ export const svgs: iSVG[] = [
     url: 'https://www.adobe.com/products/animate'
   },
   {
+    title: 'Apollo.io',
+    category: 'Software',
+    route: '/library/apollo.io.svg',
+    url: 'https://www.apollo.io/'
+  },
+  {
     title: 'Blender',
     category: ['Software', 'Design'],
     route: '/library/blender.svg',
