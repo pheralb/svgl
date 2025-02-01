@@ -360,6 +360,11 @@ export const svgs: iSVG[] = [
     title: 'Tailwind CSS',
     category: 'Framework',
     route: '/library/tailwindcss.svg',
+    wordmark: {
+      light: '/library/tailwindcss-wordmark.svg',
+      dark: '/library/tailwindcss-wordmark-dark.svg'
+    },
+    brandUrl: 'https://tailwindcss.com/brand',
     url: 'https://tailwindcss.com/'
   },
   {
