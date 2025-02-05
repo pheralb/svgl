@@ -3282,5 +3282,12 @@ export const svgs: iSVG[] = [
       dark: '/library/base-ui-dark.svg'
     },
     url: 'https://base-ui.com/'
+  },
+  {
+    title: 'Mobilizon',
+    category: 'Social',
+    route: '/library/mobilizon.svg',
+    wordmark: '/library/mobilizon_wordmark.svg',
+    url: 'https://mobilizon.org/'
   }
 ];
