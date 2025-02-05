@@ -2679,20 +2679,6 @@ export const svgs: iSVG[] = [
     url: 'https://tina.io/'
   },
   {
-    title: 'Vercel',
-    category: ['Hosting', 'Vercel'],
-    route: {
-      light: '/library/vercel.svg',
-      dark: '/library/vercel_dark.svg'
-    },
-    wordmark: {
-      light: '/library/vercel_wordmark.svg',
-      dark: '/library/vercel_wordmark_dark.svg'
-    },
-    brandUrl: 'https://vercel.com/geist/brands',
-    url: 'https://vercel.com/'
-  },
-  {
     title: 'Next.js',
     category: ['Framework', 'Vercel'],
     route: '/library/nextjs_icon_dark.svg',
@@ -3282,5 +3268,19 @@ export const svgs: iSVG[] = [
       dark: '/library/base-ui-dark.svg'
     },
     url: 'https://base-ui.com/'
-  }
+  },
+  {
+    title: 'Vercel',
+    category: ['Hosting', 'Vercel'],
+    route: {
+      light: '/library/vercel.svg',
+      dark: '/library/vercel_dark.svg'
+    },
+    wordmark: {
+      light: '/library/vercel_wordmark.svg',
+      dark: '/library/vercel_wordmark_dark.svg'
+    },
+    brandUrl: 'https://vercel.com/geist/brands',
+    url: 'https://vercel.com/'
+  },
 ];
