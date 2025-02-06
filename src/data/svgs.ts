@@ -330,7 +330,12 @@ export const svgs: iSVG[] = [
       light: '/library/deno.svg',
       dark: '/library/deno_dark.svg'
     },
-    url: 'https://deno.land/'
+    wordmark: {
+      light: '/library/deno_wordmark.svg',
+      dark: '/library/deno_wordmark_dark.svg'
+    },
+    brandUrl: 'https://deno.com/brand',
+    url: 'https://deno.com/'
   },
   {
     title: 'Gatsby',
@@ -3282,5 +3287,5 @@ export const svgs: iSVG[] = [
     },
     brandUrl: 'https://vercel.com/geist/brands',
     url: 'https://vercel.com/'
-  },
+  }
 ];
