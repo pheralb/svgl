@@ -3221,6 +3221,12 @@ export const svgs: iSVG[] = [
     url: 'https://dotenvx.com'
   },
   {
+    title: 'tcl',
+    category: 'Language',
+    route: '/library/Tcl.svg',
+    url: 'https://wiki.tcl-lang.org/page/What+is+Tcl'
+  },
+  {
     title: 'Apache Kafka',
     category: 'Software',
     route: '/library/apache-kafka.svg',
