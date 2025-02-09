@@ -3287,5 +3287,11 @@ export const svgs: iSVG[] = [
     },
     brandUrl: 'https://vercel.com/geist/brands',
     url: 'https://vercel.com/'
+  },
+  {
+    "title": "Socket.io",
+    "category": "Software",
+    "route": "/library/socketio-dark.svg",
+    "url": "https://socket.io/"
   }
 ];
