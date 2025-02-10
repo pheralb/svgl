@@ -3237,6 +3237,12 @@ export const svgs: iSVG[] = [
     url: 'https://motion.dev/'
   },
   {
+    title: 'Keycloak',
+    category: 'Authentication',
+    route: '/library/keycloak.svg',
+    url: 'https://keycloak.org'
+  },
+  {
     title: 'DeepSeek',
     category: 'AI',
     route: '/library/deepseek.svg',
