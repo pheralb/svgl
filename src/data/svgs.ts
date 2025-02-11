@@ -3302,5 +3302,11 @@ export const svgs: iSVG[] = [
       light: "/library/socketio-light.svg"
     },
     "url": "https://socket.io/"
+  },
+  {
+    "title": "Ant Design",
+    "category": "Library",
+    "route": "/library/ant-design-dark-theme.svg",
+    "url": "https://ant.design/"
   }
 ];
