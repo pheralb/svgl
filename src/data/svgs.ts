@@ -3302,5 +3302,11 @@ export const svgs: iSVG[] = [
       light: "/library/socketio-light.svg"
     },
     "url": "https://socket.io/"
+  },
+  {
+    title: 'VSCodium',
+    category: 'Software',
+    route: '/library/vscodium.svg',
+    url: 'https://vscodium.com/'
   }
 ];
