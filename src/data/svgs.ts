@@ -3295,13 +3295,13 @@ export const svgs: iSVG[] = [
     url: 'https://vercel.com/'
   },
   {
-    title: 'Socket.io',
-    category: 'Software',
-    route: {
-      dark: '/library/socketio-dark.svg',
-      light: '/library/socketio-light.svg'
+    "title": "Socket.io",
+    "category": "Software",
+    "route": {
+      "dark": "/library/socketio-dark.svg",
+      "light": "/library/socketio-light.svg"
     },
-    url: 'https://socket.io/'
+    "url": "https://socket.io/"
   },
   {
     title: 'VSCodium',
