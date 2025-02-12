@@ -3308,5 +3308,11 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/vscodium.svg',
     url: 'https://vscodium.com/'
+  },
+  {
+    title: 'Zen Browser',
+    category: 'Browser',
+    route: '/library/zen-browser.svg',
+    url: 'https://zen-browser.app/'
   }
 ];
