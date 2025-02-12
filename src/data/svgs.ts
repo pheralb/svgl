@@ -3298,8 +3298,8 @@ export const svgs: iSVG[] = [
     "title": "Socket.io",
     "category": "Software",
     "route": {
-      "dark": "/library/socketio-dark.svg",
-      "light": "/library/socketio-light.svg"
+      dark: "/library/socketio-dark.svg",
+      light: "/library/socketio-light.svg"
     },
     "url": "https://socket.io/"
   },
