@@ -3308,5 +3308,11 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/vscodium.svg',
     url: 'https://vscodium.com/'
+  },
+  {
+    title: 'Mock Service Worker',
+    category: 'Library',
+    route: '/library/mswjs.svg',
+    url: 'https://mswjs.io/'
   }
 ];
