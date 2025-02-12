@@ -3295,13 +3295,13 @@ export const svgs: iSVG[] = [
     url: 'https://vercel.com/'
   },
   {
-    "title": "Socket.io",
-    "category": "Software",
-    "route": {
-      dark: "/library/socketio-dark.svg",
-      light: "/library/socketio-light.svg"
+    title: 'Socket.io',
+    category: 'Software',
+    route: {
+      dark: '/library/socketio-dark.svg',
+      light: '/library/socketio-light.svg'
     },
-    "url": "https://socket.io/"
+    url: 'https://socket.io/'
   },
   {
     title: 'VSCodium',
@@ -3312,7 +3312,14 @@ export const svgs: iSVG[] = [
   {
     title: 'Zen Browser',
     category: 'Browser',
-    route: '/library/zen-browser.svg',
+    route: {
+      light: '/library/zen-browser-light.svg',
+      dark: '/library/zen-browser-dark.svg'
+    },
+    wordmark: {
+      light: '/library/zen-browser-wordmark-light.svg',
+      dark: '/library/zen-browser-wordmark-dark.svg'
+    },
     url: 'https://zen-browser.app/'
   }
 ];
