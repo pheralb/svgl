@@ -3308,5 +3308,11 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/vscodium.svg',
     url: 'https://vscodium.com/'
+  },
+  {
+    title: 'Passport.js',
+    category: ['Authentication', 'Library'],
+    route: '/library/passportjs.svg',
+    url: 'https://www.passportjs.org/'
   }
 ];
