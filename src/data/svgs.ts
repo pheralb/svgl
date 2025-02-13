@@ -3310,6 +3310,19 @@ export const svgs: iSVG[] = [
     url: 'https://vscodium.com/'
   },
   {
+    title: 'Zen Browser',
+    category: 'Browser',
+    route: {
+      light: '/library/zen-browser-light.svg',
+      dark: '/library/zen-browser-dark.svg'
+    },
+    wordmark: {
+      light: '/library/zen-browser-wordmark-light.svg',
+      dark: '/library/zen-browser-wordmark-dark.svg'
+    },
+    url: 'https://zen-browser.app/'
+  },
+  {
     title: 'Passport.js',
     category: ['Authentication', 'Library'],
     route: '/library/passportjs.svg',
