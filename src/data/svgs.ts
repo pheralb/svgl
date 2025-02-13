@@ -125,6 +125,10 @@ export const svgs: iSVG[] = [
     title: 'Basewell',
     category: ['AI', 'Software'],
     route: '/library/basewell.svg',
+		wordmark: {
+      light: '/library/basewell_wordmark-light.svg',
+      dark: '/library/basewell_wordmark-dark.svg'
+    },
     url: 'https://www.basewell.com/'
   },
   {
