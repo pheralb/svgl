@@ -3304,6 +3304,12 @@ export const svgs: iSVG[] = [
     "url": "https://socket.io/"
   },
   {
+    "title": "Ant Design",
+    "category": "Library",
+    "route": "/library/ant-design-dark-theme.svg",
+    "url": "https://ant.design/"
+  },
+  {
     title: 'VSCodium',
     category: 'Software',
     route: '/library/vscodium.svg',
