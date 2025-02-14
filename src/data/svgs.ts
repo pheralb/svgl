@@ -3327,5 +3327,11 @@ export const svgs: iSVG[] = [
       dark: '/library/zen-browser-wordmark-dark.svg'
     },
     url: 'https://zen-browser.app/'
+  },
+  {
+    title: 'Passport.js',
+    category: ['Authentication', 'Library'],
+    route: '/library/passportjs.svg',
+    url: 'https://www.passportjs.org/'
   }
 ];
