@@ -3327,5 +3327,17 @@ export const svgs: iSVG[] = [
       dark: '/library/zen-browser-wordmark-dark.svg'
     },
     url: 'https://zen-browser.app/'
+  },
+  {
+    title: 'Momo Square',
+    category: 'Payment',
+    route: '/library/momo_square.svg',
+    url: 'https://www.momo.vn/'
+  },
+  {
+    title: 'Momo Circle',
+    category: 'Payment',
+    route: '/library/momo_circle.svg',
+    url: 'https://www.momo.vn/'
   }
 ];
