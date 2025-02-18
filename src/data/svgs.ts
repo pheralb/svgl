@@ -27,15 +27,7 @@ export const svgs: iSVG[] = [
     },
     url: 'https://milanote.com'
   },
-  {
-    title: 'Inflection AI',
-    category: 'AI',
-    route: {
-      light: '/library/inflectionai_light.svg',
-      dark: '/library/inflectionai_dark.svg'
-    },
-    url: 'https://inflection.ai/'
-  },
+
   {
     title: 'Together AI',
     category: 'AI',
@@ -1445,12 +1437,7 @@ export const svgs: iSVG[] = [
     wordmark: '/library/duckduckgo-wordmark.svg',
     url: 'https://duckduckgo.com/'
   },
-  {
-    title: 'Gemini',
-    category: ['Google', 'AI'],
-    route: '/library/bard.svg',
-    url: 'https://gemini.google.com/'
-  },
+
   {
     title: 'Obsidian',
     category: 'Software',
@@ -3221,13 +3208,6 @@ export const svgs: iSVG[] = [
     url: 'https://dotenvx.com'
   },
   {
-    title: 'Apache Kafka',
-    category: 'Software',
-    route: '/library/apache-kafka.svg',
-    wordmark: '/library/apache-kafka-wordmark.svg',
-    url: 'https://kafka.apache.org'
-  },
-  {
     title: 'Motion',
     category: 'Library',
     route: {
@@ -3295,19 +3275,19 @@ export const svgs: iSVG[] = [
     url: 'https://vercel.com/'
   },
   {
-    "title": "Socket.io",
-    "category": "Software",
-    "route": {
-      dark: "/library/socketio-dark.svg",
-      light: "/library/socketio-light.svg"
+    title: 'Socket.io',
+    category: 'Software',
+    route: {
+      dark: '/library/socketio-dark.svg',
+      light: '/library/socketio-light.svg'
     },
-    "url": "https://socket.io/"
+    url: 'https://socket.io/'
   },
   {
-    "title": "Ant Design",
-    "category": "Library",
-    "route": "/library/ant-design-dark-theme.svg",
-    "url": "https://ant.design/"
+    title: 'Ant Design',
+    category: 'Library',
+    route: '/library/ant-design-dark-theme.svg',
+    url: 'https://ant.design/'
   },
   {
     title: 'VSCodium',
@@ -3327,5 +3307,43 @@ export const svgs: iSVG[] = [
       dark: '/library/zen-browser-wordmark-dark.svg'
     },
     url: 'https://zen-browser.app/'
+  },
+  {
+    title: 'Gemini',
+    category: ['Google', 'AI'],
+    route: '/library/gemini.svg',
+    wordmark: '/library/gemini_wordmark.svg',
+    url: 'https://gemini.google.com/'
+  },
+  {
+    title: 'xAI (Grok)',
+    category: ['AI'],
+    route: {
+      light: '/library/xai_light.svg',
+      dark: '/library/xai_dark.svg'
+    },
+    url: 'https://grok.com/'
+  },
+  {
+    title: 'Qwen',
+    category: ['AI'],
+    route: {
+      light: '/library/qwen_light.svg',
+      dark: '/library/qwen_dark.svg'
+    },
+    url: 'https://chat.qwenlm.ai/'
+  },
+  {
+    title: 'Inflection AI',
+    category: 'AI',
+    route: {
+      light: '/library/inflectionai_light.svg',
+      dark: '/library/inflectionai_dark.svg'
+    },
+    wordmark: {
+      light: '/library/inflectionai_wordmark_light.svg',
+      dark: '/library/inflectionai_wordmark_dark.svg'
+    },
+    url: 'https://inflection.ai/'
   }
 ];
