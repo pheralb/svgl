@@ -43,6 +43,7 @@
     "@upstash/redis": "1.34.0",
     "clsx": "2.1.1",
     "downloadjs": "1.4.7",
+    "fuse.js": "^7.0.0",
     "jszip": "3.10.1",
     "lucide-svelte": "0.445.0",
     "mode-watcher": "0.4.1",

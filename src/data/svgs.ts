@@ -2,6 +2,13 @@ import type { iSVG } from '../types/svg';
 
 export const svgs: iSVG[] = [
   {
+    title: 'PayPal',
+    category: 'Payment',
+    route: '/library/paypal.svg',
+    wordmark: '/library/paypal-wordmark.svg',
+    url: 'https://paypal.com'
+  },
+  {
     title: 'Google Drive',
     category: 'Google',
     route: '/library/drive.svg',
@@ -20,15 +27,7 @@ export const svgs: iSVG[] = [
     },
     url: 'https://milanote.com'
   },
-  {
-    title: 'Inflection AI',
-    category: 'AI',
-    route: {
-      light: '/library/inflectionai_light.svg',
-      dark: '/library/inflectionai_dark.svg'
-    },
-    url: 'https://inflection.ai/'
-  },
+
   {
     title: 'Together AI',
     category: 'AI',
@@ -87,7 +86,13 @@ export const svgs: iSVG[] = [
     title: 'Animate',
     category: ['Software', 'Design'],
     route: '/library/animate.svg',
-    url: 'https://www.adobe.com/products/animate.html'
+    url: 'https://www.adobe.com/products/animate'
+  },
+  {
+    title: 'Apollo.io',
+    category: 'Software',
+    route: '/library/apollo.io.svg',
+    url: 'https://www.apollo.io/'
   },
   {
     title: 'Blender',
@@ -155,8 +160,15 @@ export const svgs: iSVG[] = [
   {
     title: 'React',
     category: 'Library',
-    route: '/library/react.svg',
-    url: 'https://reactjs.org/'
+    route: {
+      light: '/library/react_light.svg',
+      dark: '/library/react_dark.svg'
+    },
+    wordmark: {
+      light: '/library/react_wordmark_light.svg',
+      dark: '/library/react_wordmark_dark.svg'
+    },
+    url: 'https://react.dev/'
   },
   {
     title: 'Svelte',
@@ -310,7 +322,12 @@ export const svgs: iSVG[] = [
       light: '/library/deno.svg',
       dark: '/library/deno_dark.svg'
     },
-    url: 'https://deno.land/'
+    wordmark: {
+      light: '/library/deno_wordmark.svg',
+      dark: '/library/deno_wordmark_dark.svg'
+    },
+    brandUrl: 'https://deno.com/brand',
+    url: 'https://deno.com/'
   },
   {
     title: 'Gatsby',
@@ -346,6 +363,11 @@ export const svgs: iSVG[] = [
     title: 'Tailwind CSS',
     category: 'Framework',
     route: '/library/tailwindcss.svg',
+    wordmark: {
+      light: '/library/tailwindcss-wordmark.svg',
+      dark: '/library/tailwindcss-wordmark-dark.svg'
+    },
+    brandUrl: 'https://tailwindcss.com/brand',
     url: 'https://tailwindcss.com/'
   },
   {
@@ -1409,18 +1431,13 @@ export const svgs: iSVG[] = [
     url: 'https://webkit.org/'
   },
   {
-    title: 'DuckDucgGo',
+    title: 'DuckDuckGo',
     category: ['Software', 'Browser'],
     route: '/library/duckduckgo.svg',
     wordmark: '/library/duckduckgo-wordmark.svg',
     url: 'https://duckduckgo.com/'
   },
-  {
-    title: 'Gemini',
-    category: ['Google', 'AI'],
-    route: '/library/bard.svg',
-    url: 'https://gemini.google.com/'
-  },
+
   {
     title: 'Obsidian',
     category: 'Software',
@@ -1616,49 +1633,49 @@ export const svgs: iSVG[] = [
     title: 'Adobe',
     category: 'Design',
     route: '/library/adobe.svg',
-    url: 'https://x.com'
+    url: 'https://www.adobe.com/'
   },
   {
     title: 'After Effects',
     category: 'Design',
     route: '/library/after-effects.svg',
-    url: 'https://x.com'
+    url: 'https://www.adobe.com/products/aftereffects'
   },
   {
     title: 'Canva',
     category: 'Design',
     route: '/library/canva.svg',
-    url: 'https://x.com'
+    url: 'https://www.canva.com/'
   },
   {
     title: 'Illustrator',
     category: 'Design',
     route: '/library/illustrator.svg',
-    url: 'https://x.com'
+    url: 'https://www.adobe.com/products/illustrator'
   },
   {
     title: 'InDesign',
     category: 'Design',
     route: '/library/indesign.svg',
-    url: 'https://x.com'
+    url: 'https://www.adobe.com/products/indesign'
   },
   {
     title: 'Lightroom',
     category: 'Design',
     route: '/library/lightroom.svg',
-    url: 'https://x.com'
+    url: 'https://www.adobe.com/products/photoshop-lightroom'
   },
   {
     title: 'Photoshop',
     category: 'Design',
     route: '/library/photoshop.svg',
-    url: 'https://x.com'
+    url: 'https://www.adobe.com/products/photoshop'
   },
   {
     title: 'Premiere',
     category: 'Design',
     route: '/library/premiere.svg',
-    url: 'https://www.adobe.com/es/products/premiere'
+    url: 'https://www.adobe.com/products/premiere'
   },
   {
     title: 'VK',
@@ -1904,7 +1921,7 @@ export const svgs: iSVG[] = [
     title: 'Fortran',
     category: 'Language',
     route: '/library/fortran.svg',
-    url: 'https://en.wikipedia.org/wiki/Fortran'
+    url: 'https://fortran-lang.org/'
   },
   {
     title: 'Haskell',
@@ -2047,7 +2064,7 @@ export const svgs: iSVG[] = [
     title: 'XD',
     category: 'Design',
     route: '/library/adobe-xd.svg',
-    url: 'https://helpx.adobe.com/xd/get-started.html'
+    url: 'https://www.adobe.com/products/xd'
   },
   {
     title: 'Axure',
@@ -2128,9 +2145,13 @@ export const svgs: iSVG[] = [
     url: 'https://www.jetbrains.com/phpstorm/'
   },
   {
-    title: 'MonkeyType',
+    title: 'Monkeytype',
     category: 'Software',
     route: '/library/monkeytype.svg',
+    wordmark: {
+      dark: '/library/monkeytype-wordmark-dark.svg',
+      light: '/library/monkeytype-wordmark-light.svg'
+    },
     url: 'https://monkeytype.com/'
   },
   {
@@ -2337,7 +2358,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Google Idx',
-    category: 'Software',
+    category: ['Software', 'Google'],
     route: '/library/google-idx.svg',
     url: 'https://idx.dev/'
   },
@@ -2398,7 +2419,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Bitwarden',
-    category: 'Software',
+    category: ['Software', 'Authentication'],
     route: '/library/bitwarden.svg',
     url: 'https://bitwarden.com/'
   },
@@ -2449,7 +2470,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Google PaLM',
-    category: 'AI',
+    category: ['AI', 'Google'],
     route: '/library/google-palm.svg',
     url: 'https://ai.google/discover/palm2/'
   },
@@ -2589,7 +2610,7 @@ export const svgs: iSVG[] = [
     title: 'OBS',
     category: 'Software',
     route: '/library/obs.svg',
-    url: 'Website'
+    url: 'https://obsproject.com/'
   },
   {
     title: 'Stack Overflow',
@@ -2648,19 +2669,6 @@ export const svgs: iSVG[] = [
     route: '/library/tina.svg',
     wordmark: '/library/tina_wordmark.svg',
     url: 'https://tina.io/'
-  },
-  {
-    title: 'Vercel',
-    category: ['Hosting', 'Vercel'],
-    route: {
-      light: '/library/vercel.svg',
-      dark: '/library/vercel_dark.svg'
-    },
-    wordmark: {
-      light: '/library/vercel_wordmark.svg',
-      dark: '/library/vercel_wordmark_dark.svg'
-    },
-    url: 'https://vercel.com/'
   },
   {
     title: 'Next.js',
@@ -2891,7 +2899,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Firebase',
-    category: 'Hosting',
+    category: ['Hosting', 'Google'],
     route: '/library/firebase.svg',
     wordmark: '/library/firebase-wordmark.svg',
     url: 'https://firebase.google.com/'
@@ -2938,25 +2946,25 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Vite',
-    category: ['Devtool', 'void(0)'],
+    category: ['Devtool', 'VoidZero'],
     route: '/library/vitejs.svg',
     url: 'https://vitejs.dev'
   },
   {
     title: 'Vitest',
-    category: ['Framework', 'void(0)'],
+    category: ['Framework', 'VoidZero'],
     route: '/library/vitest.svg',
     url: 'https://vitest.dev/'
   },
   {
     title: 'Oxc',
-    category: ['Devtool', 'void(0)'],
+    category: ['Devtool', 'VoidZero'],
     route: '/library/oxc.svg',
     url: 'https://oxc.rs/'
   },
   {
     title: 'Rolldown',
-    category: ['Compiler', 'void(0)'],
+    category: ['Compiler', 'VoidZero'],
     route: '/library/rolldown.svg',
     url: 'https://rolldown.rs/'
   },
@@ -3175,13 +3183,167 @@ export const svgs: iSVG[] = [
     url: 'https://tanstack.com/'
   },
   {
-    title: 'Replit',
-    category: 'Software',
-    route: '/library/replit.svg',
-    wordmark: {
-      light: '/library/replit-wordmark.svg',
-      dark: '/library/replit-wordmark_dark.svg'
+    title: 'TypeGPU',
+    category: ['Software', 'Library'],
+    route: {
+      light: '/library/typegpu-light.svg',
+      dark: '/library/typegpu-dark.svg'
     },
-    url: 'https://replit.com/'
-  }
+    wordmark: {
+      light: '/library/typegpu-wordmark-light.svg',
+      dark: '/library/typegpu-wordmark-dark.svg'
+    },
+    url: 'https://typegpu.com'
+  },
+  {
+    title: 'dotenv',
+    category: ['Config', 'Library', 'Devtool'],
+    route: '/library/dotenv.svg',
+    url: 'https://github.com/motdotla/dotenv'
+  },
+  {
+    title: 'dotenvx',
+    category: ['Secrets', 'Config', 'Devtool'],
+    route: '/library/dotenvx.svg',
+    url: 'https://dotenvx.com'
+  },
+  {
+    title: 'Motion',
+    category: 'Library',
+    route: {
+      light: '/library/motion.svg',
+      dark: '/library/motion_dark.svg'
+    },
+    url: 'https://motion.dev/'
+  },
+  {
+    title: 'Keycloak',
+    category: 'Authentication',
+    route: '/library/keycloak.svg',
+    url: 'https://keycloak.org'
+  },
+  {
+    title: 'DeepSeek',
+    category: 'AI',
+    route: '/library/deepseek.svg',
+    wordmark: '/library/deepseek_wordmark.svg',
+    url: 'https://deepseek.com/'
+  },
+  {
+    title: 'Shiki',
+    category: 'Library',
+    route: '/library/shiki.svg',
+    url: 'https://shiki.style/'
+  },
+  {
+    title: 'Dropbox',
+    category: ['Hosting', 'Software'],
+    route: '/library/dropbox.svg',
+    wordmark: {
+      light: '/library/dropbox_wordmark.svg',
+      dark: '/library/dropbox_wordmark_dark.svg'
+    },
+    url: 'https://www.dropbox.com/'
+  },
+  {
+    title: 'Open WebUI',
+    category: ['AI', 'Software'],
+    route: '/library/openwebui.svg',
+    url: 'https://openwebui.com/'
+  },
+  {
+    title: 'Base UI',
+    category: 'Library',
+    route: {
+      light: '/library/base-ui.svg',
+      dark: '/library/base-ui-dark.svg'
+    },
+    url: 'https://base-ui.com/'
+  },
+  {
+    title: 'Vercel',
+    category: ['Hosting', 'Vercel'],
+    route: {
+      light: '/library/vercel.svg',
+      dark: '/library/vercel_dark.svg'
+    },
+    wordmark: {
+      light: '/library/vercel_wordmark.svg',
+      dark: '/library/vercel_wordmark_dark.svg'
+    },
+    brandUrl: 'https://vercel.com/geist/brands',
+    url: 'https://vercel.com/'
+  },
+  {
+    title: 'Socket.io',
+    category: 'Software',
+    route: {
+      dark: '/library/socketio-dark.svg',
+      light: '/library/socketio-light.svg'
+    },
+    url: 'https://socket.io/'
+  },
+  {
+    title: 'Ant Design',
+    category: 'Library',
+    route: '/library/ant-design-dark-theme.svg',
+    url: 'https://ant.design/'
+  },
+  {
+    title: 'VSCodium',
+    category: 'Software',
+    route: '/library/vscodium.svg',
+    url: 'https://vscodium.com/'
+  },
+  {
+    title: 'Zen Browser',
+    category: 'Browser',
+    route: {
+      light: '/library/zen-browser-light.svg',
+      dark: '/library/zen-browser-dark.svg'
+    },
+    wordmark: {
+      light: '/library/zen-browser-wordmark-light.svg',
+      dark: '/library/zen-browser-wordmark-dark.svg'
+    },
+    url: 'https://zen-browser.app/'
+  },
+  {
+    title: 'Gemini',
+    category: ['Google', 'AI'],
+    route: '/library/gemini.svg',
+    wordmark: '/library/gemini_wordmark.svg',
+    url: 'https://gemini.google.com/'
+  },
+  {
+    title: 'xAI (Grok)',
+    category: ['AI'],
+    route: {
+      light: '/library/xai_light.svg',
+      dark: '/library/xai_dark.svg'
+    },
+    url: 'https://grok.com/'
+  },
+  {
+    title: 'Qwen',
+    category: ['AI'],
+    route: {
+      light: '/library/qwen_light.svg',
+      dark: '/library/qwen_dark.svg'
+    },
+    url: 'https://chat.qwenlm.ai/'
+  },
+  {
+    title: 'Inflection AI',
+    category: 'AI',
+    route: {
+      light: '/library/inflectionai_light.svg',
+      dark: '/library/inflectionai_dark.svg'
+    },
+    wordmark: {
+      light: '/library/inflectionai_wordmark_light.svg',
+      dark: '/library/inflectionai_wordmark_dark.svg'
+    },
+    url: 'https://inflection.ai/'
+  },
 ];

@@ -1,11 +1,26 @@
 <script lang="ts">
   import type { iSVG } from '@/types/svg';
   import { cn } from '@/utils/cn';
+  import { onMount } from 'svelte';
   import { queryParam } from 'sveltekit-search-params';
-
+  import Fuse from 'fuse.js';
+  
   // Get all svgs:
   import { svgsData } from '@/data';
   const allSvgs = JSON.parse(JSON.stringify(svgsData));
+
+  // Cache sorted arrays
+  const latestSorted = [...allSvgs].sort((a, b) => b.id! - a.id!);
+  const alphabeticallySorted = [...allSvgs].sort((a, b) => a.title.localeCompare(b.title));
+
+  // Fuzzy search setup:
+  const fuse = new Fuse<iSVG>(allSvgs, {
+    keys: ['title'],
+    threshold: 0.35,
+    ignoreLocation: true,
+    isCaseSensitive: false,
+    shouldSort: true
+  });
 
   // Components:
   import Search from '@/components/search.svelte';
@@ -22,73 +37,66 @@
   import { buttonStyles } from '@/ui/styles';
 
   let sorted: boolean = false;
-  let isFirstLoad: boolean = true;
   let showAll: boolean = false;
 
   // Search:
-  let searchTerm = $searchParam || '';
+  let searchTerm = '';
   let filteredSvgs: iSVG[] = [];
+  let displaySvgs: iSVG[] = [];
 
-  // Order by last added:
-  if (searchTerm.length === 0) {
-    filteredSvgs = allSvgs.sort((a: iSVG, b: iSVG) => {
-      return b.id! - a.id!;
-    });
-  }
-
-  const loadSvgs = () => {
-    if (isFirstLoad || showAll) {
-      filteredSvgs = allSvgs;
-      isFirstLoad = false;
-    } else {
-      filteredSvgs = allSvgs.slice(0, 30);
-    }
+  const updateDisplaySvgs = () => {
+    displaySvgs = showAll ? filteredSvgs : filteredSvgs.slice(0, 30);
   };
 
-  // Search svgs:
+  // Hybrid search strategy:
+  // - Simple string matching for queries < 3 chars
+  // - Fuzzy search for longer queries (handle typos and partial matches)
   const searchSvgs = () => {
     $searchParam = searchTerm || null;
-    loadSvgs();
-    filteredSvgs = allSvgs.filter((svg: iSVG) => {
-      let svgTitle = svg.title.toLowerCase();
-      return svgTitle.includes(searchTerm.toLowerCase());
-    });
+
+    if (!searchTerm) {
+      filteredSvgs = sorted ? alphabeticallySorted : latestSorted;
+      updateDisplaySvgs();
+      return;
+    }
+
+    if (searchTerm.length < 3) {
+      filteredSvgs = allSvgs.filter((svg: iSVG) =>
+        svg.title.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+    } else {
+      filteredSvgs = fuse.search(searchTerm).map((result) => result.item);
+    }
+
+    updateDisplaySvgs();
   };
 
   // Clear search:
   const clearSearch = () => {
     searchTerm = '';
-    searchSvgs();
+    // Use current sort state to determine order
+    filteredSvgs = sorted ? alphabeticallySorted : latestSorted;
+    updateDisplaySvgs();
   };
 
   // Sort:
   const sort = () => {
-    if (sorted) {
-      sortByLatest();
-    } else {
-      sortAlphabetically();
-    }
     sorted = !sorted;
+    filteredSvgs = sorted ? alphabeticallySorted : latestSorted;
+    updateDisplaySvgs();
   };
 
-  // Sort alphabetically:
-  const sortAlphabetically = () => {
-    filteredSvgs = allSvgs.sort((a: iSVG, b: iSVG) => {
-      return a.title.localeCompare(b.title);
-    });
-  };
-
-  // Sort by latest:
-  const sortByLatest = () => {
-    filteredSvgs = filteredSvgs.sort((a: iSVG, b: iSVG) => {
-      return b.id! - a.id!;
-    });
-  };
-
-  if ($searchParam) {
+  onMount(() => {
+    if ($searchParam) {
+      searchTerm = $searchParam;
+    }
     searchSvgs();
-  } else {
-    loadSvgs();
+  });
+
+  $: {
+    if (showAll || filteredSvgs) {
+      updateDisplaySvgs();
+    }
   }
 </script>
 
@@ -100,15 +108,15 @@
   bind:searchTerm
   on:input={searchSvgs}
   clearSearch={() => clearSearch()}
-  placeholder={`Search ${filteredSvgs.length} logos...`}
+  placeholder={`Search ${allSvgs.length} logos...`}
 />
 
 <Container>
-  <div class={cn('flex items-center mb-4 justify-end', searchTerm.length > 0 && 'justify-between')}>
+  <div class={cn('mb-4 flex items-center justify-end', searchTerm.length > 0 && 'justify-between')}>
     {#if searchTerm.length > 0}
       <button
         class={cn(
-          'flex items-center justify-center space-x-1 rounded-md py-1.5 text-sm font-medium opacity-80 hover:opacity-100 transition-opacity',
+          'flex items-center justify-center space-x-1 rounded-md py-1.5 text-sm font-medium opacity-80 transition-opacity hover:opacity-100',
           filteredSvgs.length === 0 && 'hidden'
         )}
         on:click={() => clearSearch()}
@@ -119,7 +127,7 @@
     {/if}
     <button
       class={cn(
-        'flex items-center justify-center space-x-1 rounded-md py-1.5 text-sm font-medium opacity-80 hover:opacity-100 transition-opacity',
+        'flex items-center justify-center space-x-1 rounded-md py-1.5 text-sm font-medium opacity-80 transition-opacity hover:opacity-100',
         filteredSvgs.length === 0 && 'hidden'
       )}
       on:click={() => sort()}
@@ -129,18 +137,24 @@
       {:else}
         <ArrowUpDownIcon size={16} strokeWidth={2} class="mr-1" />
       {/if}
-      <span>{sorted ? 'Sort by latest' : 'Sort alphabetically'}</span>
+      <span>{sorted ? 'Sort by latest' : 'Sort A-Z'}</span>
     </button>
   </div>
   <Grid>
-    {#each filteredSvgs.slice(0, showAll ? undefined : 30) as svg}
-      <SvgCard svgInfo={svg} searchTerm={searchTerm} />
+    {#each displaySvgs as svg}
+      <SvgCard svgInfo={svg} {searchTerm} />
     {/each}
   </Grid>
   {#if filteredSvgs.length > 30 && !showAll}
-    <div class="flex items-center justify-center mt-4">
-      <button class={buttonStyles} on:click={() => (showAll = true)}>
-        <div class="flex items-center space-x-2 relative">
+    <div class="mt-4 flex items-center justify-center">
+      <button
+        class={buttonStyles}
+        on:click={() => {
+          showAll = true;
+          updateDisplaySvgs();
+        }}
+      >
+        <div class="relative flex items-center space-x-2">
           <ArrowDown size={16} strokeWidth={2} />
           <span>Load All SVGs</span>
           <span class="opacity-70">

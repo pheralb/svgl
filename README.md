@@ -10,7 +10,7 @@
         Discover
     </a>
     <span>&nbsp;✦&nbsp;</span>
-    <a href="https://github.com/pheralb/svgl/issues/new?assignees=pheralb&labels=request&projects=&template=request-svg-.md&title=%5BRequest%5D%3A">
+    <a href="https://github.com/pheralb/svgl/issues/new?assignees=&labels=request&projects=&template=request-svg.yml&title=%5B%F0%9F%94%94+Request+SVG%5D%3A+">
         Request logo
     </a>
     <span>&nbsp;✦&nbsp;</span>
@@ -138,6 +138,19 @@ pnpm install
 }
 ```
 
+- **Add brand guidelines**:
+
+```json
+{
+  "title": "Title",
+  "category": "Category",
+  "route": "/library/your_logo.svg",
+  "wordmark": "/library/your_logo_wordmark.svg",
+  "brandUrl": "https://assets.website.com/brand-guidelines",
+  "url": "Website"
+}
+```
+
 > [!NOTE]
 >
 > - The list of categories is here: [`src/types/categories.ts`](https://github.com/pheralb/svgl/blob/main/src/types/categories.ts). You can add a new category if you need it.
@@ -160,13 +173,14 @@ UPSTASH_REDIS_TOKEN = ""
 
 A list of extensions that use the [svgl API](https://svgl.app/api), created by the community:
 
-|                                                                                                | Extension        | Description                                        | Created by                                             | Link                                                                                        |
-| ---------------------------------------------------------------------------------------------- | ---------------- | -------------------------------------------------- | ------------------------------------------------------ | ------------------------------------------------------------------------------------------- |
-| <img src="https://github.com/pheralb/svgl/blob/main/static/library/svgl.svg" height="25" />    | svgls            | A CLI for easily adding SVG icons to your project. | [sujjeee](https://twitter.com/sujjeeee)                | [GitHub Repository](https://github.com/sujjeee/svgls)                                       |
-| <img src="https://github.com/pheralb/svgl/blob/main/static/library/figma.svg" height="25" />   | SVGL for Figma   | Add svgs from svgl to your Figma project.          | [quilljou](https://twitter.com/quillzhou)              | [Figma Plugin](https://www.figma.com/community/plugin/1320306989350693206/svgl)             |
-| <img src="https://github.com/pheralb/svgl/blob/main/static/library/raycast.svg" height="25" /> | SVGL for Raycast | Search SVG logos via svgl.                         | [1weiho](https://twitter.com/1weiho)                   | [Raycast Store](https://www.raycast.com/1weiho/svgl)                                        |
-| <img src="https://github.com/pheralb/svgl/blob/main/static/library/vscode.svg" height="25" />  | SVGL for VSCode  | SVGL directly in your VSCode.                      | [girlazote](https://twitter.com/girlazote)             | [VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=EsteveSegura.svgl) |
-| <img src="https://svgl-badge.vercel.app/api/Library/Svgl?theme=light" height="25" />           | SVGL Badge       | A beautiful badges with svgl SVG logos.            | [ridemountainpig](https://twitter.com/ridemountainpig) | [Svgl Badge](https://svgl-badge.vercel.app/)                                                |
+|                                                                                                            | Extension        | Description                                        | Created by                                             | Link                                                                                        |
+| ---------------------------------------------------------------------------------------------------------- | ---------------- | -------------------------------------------------- | ------------------------------------------------------ | ------------------------------------------------------------------------------------------- |
+| <img src="https://github.com/pheralb/svgl/blob/main/static/library/svgl.svg" height="25" />                | svgls            | A CLI for easily adding SVG icons to your project. | [sujjeee](https://twitter.com/sujjeeee)                | [GitHub Repository](https://github.com/sujjeee/svgls)                                       |
+| <img src="https://github.com/pheralb/svgl/blob/main/static/library/figma.svg" height="25" />               | SVGL for Figma   | Add svgs from svgl to your Figma project.          | [quilljou](https://twitter.com/quillzhou)              | [Figma Plugin](https://www.figma.com/community/plugin/1320306989350693206/svgl)             |
+| <img src="https://github.com/pheralb/svgl/blob/main/static/library/raycast.svg" height="25" />             | SVGL for Raycast | Search SVG logos via svgl.                         | [1weiho](https://twitter.com/1weiho)                   | [Raycast Store](https://www.raycast.com/1weiho/svgl)                                        |
+| <img src="https://github.com/pheralb/svgl/blob/main/static/library/vscode.svg" height="25" />              | SVGL for VSCode  | SVGL directly in your VSCode.                      | [girlazote](https://twitter.com/girlazote)             | [VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=EsteveSegura.svgl) |
+| <img src="https://svgl-badge.vercel.app/api/Library/Svgl?theme=light" height="25" />                       | SVGL Badge       | A beautiful badges with svgl SVG logos.            | [ridemountainpig](https://twitter.com/ridemountainpig) | [Website](https://svgl-badge.vercel.app/)                                                   |
+| <img src="https://github.com/serafimcloud/21st/blob/main/apps/web/public/icon.png?raw=true" height="25" /> | Magic            | AI extension for Cursor & other IDEs               | [serafimcloud](https://x.com/serafimcloud)             | [Website](https://21st.dev/magic)                                                           |
 
 ## ✌️ Contributing
 
