@@ -3346,4 +3346,15 @@ export const svgs: iSVG[] = [
     },
     url: 'https://inflection.ai/'
   },
+  {
+    title: 'Replit',
+    category: 'AI',
+    route: '/library/replit.svg',
+    wordmark: {
+      light: '/library/replit-wordmark.svg',
+      dark: '/library/replit-wordmark_dark.svg'
+    },
+    brandUrl: 'https://replit.com/brandkit',
+    url: 'https://replit.com/'
+  }
 ];
