@@ -20,7 +20,7 @@
         class="mr-1 flex-shrink-0 animate-pulse text-yellow-600 dark:text-yellow-500"
       />
       <p>
-        All SVGs include links to the respective products or companies that own them. <strong
+        - All SVGs include links to the respective products or companies that own them. <strong
           >Please contact the owner directly if you need to use their logo.</strong
         >
         If you are the owner of an SVG and would like it removed,
@@ -28,7 +28,7 @@
           target="_blank"
           class="underline decoration-neutral-500 decoration-dotted underline-offset-4"
           href="https://github.com/pheralb/svgl/issues/new">create an issue</a
-        > on GitHub.
+        > on GitHub. -
       </p>
     </div>
     <button
