@@ -2171,10 +2171,15 @@ export const svgs: iSVG[] = [
     url: 'https://www.shopify.com'
   },
   {
-    title: 'WebFlow',
+    title: 'Webflow',
     category: 'CMS',
     route: '/library/webflow.svg',
-    url: 'https://www.webflow.com'
+    wordmark: {
+      dark: '/library/webflow-wordmark-dark.svg',
+      light: '/library/webflow-wordmark-light.svg'
+    },
+    url: 'https://www.webflow.com',
+    brandUrl: 'https://brand-at.webflow.io/resources'
   },
   {
     title: 'Sanity',
@@ -3345,6 +3350,12 @@ export const svgs: iSVG[] = [
       dark: '/library/inflectionai_wordmark_dark.svg'
     },
     url: 'https://inflection.ai/'
+  },
+  {
+    title: 'D3.js',
+    category: 'Library',
+    route: '/library/D3.svg',
+    url: 'https://d3js.org/'
   },
   {
     title: 'Anthropic',
