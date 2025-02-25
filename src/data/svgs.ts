@@ -3345,5 +3345,18 @@ export const svgs: iSVG[] = [
       dark: '/library/inflectionai_wordmark_dark.svg'
     },
     url: 'https://inflection.ai/'
+  },
+  {
+    title: 'Anthropic',
+    category: 'AI',
+    route: {
+      light: '/library/anthropic_black.svg',
+      dark: '/library/anthropic_white.svg'
+    },
+    wordmark: {
+      light: '/library/anthropic_black_wordmark.svg',
+      dark: '/library/anthropic_white_wordmark.svg'
+    },
+    url: 'https://www.anthropic.com/'
   }
 ];
