@@ -293,15 +293,29 @@
       <CopyIcon size={iconSize} strokeWidth={iconStroke} />
     {/if}
   </Popover.Trigger>
-  <Popover.Content class="flex flex-col space-y-2 p-3" sideOffset={2}>
-    <Tabs.Root value="source" class="w-full">
+  <Popover.Content class="flex flex-col space-y-2 p-4" sideOffset={2}>
+    <Tabs.Root value="source" class="flex w-full flex-col space-y-1">
       <Tabs.List>
         <Tabs.Trigger value="source">Source</Tabs.Trigger>
-        <Tabs.Trigger value="react">React</Tabs.Trigger>
-        <Tabs.Trigger value="vue">Vue</Tabs.Trigger>
-        <Tabs.Trigger value="svelte">Svelte</Tabs.Trigger>
-        <Tabs.Trigger value="angular">Angular</Tabs.Trigger>
-        <Tabs.Trigger value="web-component">Web Component</Tabs.Trigger>
+        <div
+          class="ml-3 flex flex-row space-x-0.5 border-l border-dashed border-neutral-200 pl-3 dark:border-neutral-800"
+        >
+          <Tabs.Trigger value="react" title="React">
+            <ReactIcon iconSize={20} />
+          </Tabs.Trigger>
+          <Tabs.Trigger value="vue" title="Vue">
+            <VueIcon iconSize={20} />
+          </Tabs.Trigger>
+          <Tabs.Trigger value="svelte" title="Svelte">
+            <SvelteIcon iconSize={20} />
+          </Tabs.Trigger>
+          <Tabs.Trigger value="angular" title="Angular">
+            <AngularIcon iconSize={20} />
+          </Tabs.Trigger>
+          <Tabs.Trigger value="web-component" title="Web Component">
+            <WebComponentIcon iconSize={21} />
+          </Tabs.Trigger>
+        </div>
       </Tabs.List>
       <Tabs.Content value="source">
         <section class="flex flex-col space-y-2">
@@ -323,7 +337,7 @@
             disabled={isLoading}
             on:click={() => convertSvgReactComponent(true)}
           >
-            <ReactIcon iconSize={18} color="#2563eb" />
+            <ReactIcon iconSize={18} />
             <span>Copy TSX</span>
           </button>
           <button
@@ -332,7 +346,7 @@
             disabled={isLoading}
             on:click={() => convertSvgReactComponent(false)}
           >
-            <ReactIcon iconSize={18} color="#60a5fa" />
+            <ReactIcon iconSize={18} />
             <span>Copy JSX</span>
           </button>
         </section>
