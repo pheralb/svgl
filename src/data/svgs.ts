@@ -3371,13 +3371,6 @@ export const svgs: iSVG[] = [
     url: 'https://www.anthropic.com/'
   },
   {
-    title: 'Jenkins',
-    category: 'Software',
-    route: '/library/jenkins.svg',
-    wordmark: '/library/jenkins-wordmark.svg',
-    url: 'https://www.jenkins.io/'
-  },
-  {
     title: 'Replit',
     category: 'Software',
     route: '/library/replit.svg',
@@ -3393,5 +3386,5 @@ export const svgs: iSVG[] = [
     category: 'Library',
     route: '/library/magicui.svg',
     url: 'https://magicui.design/'
-  },
+  }
 ];
