@@ -1,58 +1,18 @@
 <script lang="ts">
   import type { IconProps } from '@/types/icon';
 
-  export let iconProps: IconProps;
+  export let iconSize: IconProps['size'];
 </script>
 
-<svg
-  xmlns="http://www.w3.org/2000/svg"
-  width={iconProps.size}
-  height={iconProps.size}
-  viewBox="0 0 200 161"
->
-  <defs
-    ><linearGradient
-      id="a"
-      x1="48.9"
-      x2="127.1"
-      y1="40"
-      y2="40"
-      gradientTransform="scale(1.25056 .79964)"
-      gradientUnits="userSpaceOnUse"
-      ><stop offset="0" stop-color={iconProps.color || '#2a3b8f'} /><stop
-        offset="1"
-        stop-color={iconProps.color || '#29abe2'}
-      /></linearGradient
-    ><linearGradient
-      id="b"
-      x1="126.9"
-      x2="48.7"
-      y1="124.8"
-      y2="124.8"
-      gradientTransform="scale(1.2532 .79796)"
-      gradientUnits="userSpaceOnUse"
-      ><stop offset="0" stop-color={iconProps.color || '#b4d44e'} /><stop
-        offset="1"
-        stop-color={iconProps.color || '#e7f716'}
-      /></linearGradient
-    ></defs
-  ><g fill="none" fill-rule="evenodd" stroke-width=".3"
-    ><path fill={iconProps.color || '#166da5'} d="m197 80.2-21.4 36-30-36.5 30-35.6z" /><path
-      fill={iconProps.color || '#8fdb69'}
-      d="m173.3 122.4-32.6-39L121 116l30.4 44.4z"
-    /><path fill={iconProps.color || '#166da5'} d="m172.9 37.8-32.2 39L121 44.2l30.5-44z" /><path
-      fill="url(#a)"
-      d="M61.1 31.4H141L123.4.7H78.7zm53.7 31.9H159l-15.9-26.8H98.8"
-      opacity=".9"
-      transform="translate(-.5 -.9) scale(1.22972)"
-    /><path
-      fill="url(#b)"
-      d="M141.3 100.3H61l17.6 30.5h45zm-26.5-31.9H159l-15.9 26.8H98.8"
-      opacity=".9"
-      transform="translate(-.5 -.9) scale(1.22972)"
-    /><path
-      fill={iconProps.color || '#010101'}
-      d="M96.2 160 49.9 80 96.8.2H46L0 80.1 46.1 160z"
-    /></g
-  >
+<svg viewBox="0 0 128 128" width={iconSize || 16} height={iconSize || 16}>
+  <path
+    fill="var(--bgcolor, #fff)"
+    d="m31 12-1 1L2 63l29 51h67l15-26v-2l14-23-15-24v-2L98 12H31zm21 30h21l13 21-13 21H52L40 63z"
+  />
+  <path fill="#166da5" d="m122 63-12 21-18-21 18-21z" />
+  <path fill="#8fdb69" d="M108 88 89 65 78 84l17 26z" />
+  <path fill="#166da5" d="M108 38 89 61 78 42l17-26z" />
+  <path d="M63 110 35 63l28-47H33L6 63l27 47z" />
+  <path fill="#287bbe" d="m50 38 13-22h32l13 22zm28 4h32l11 19H89z" />
+  <path fill="#ddf021" d="m50 88 13 22h32l13-22zm28-4h32l11-19H89z" />
 </svg>
