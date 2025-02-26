@@ -1,5 +1,11 @@
+<script lang="ts">
+  import type { IconProps } from '@/types/icon';
+
+  export let iconProps: IconProps;
+</script>
+
 <svg
-  width="30"
+  width={iconProps.size}
   name="SVGL Logo"
   viewBox="0 0 512 512"
   fill="none"
