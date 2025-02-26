@@ -4,7 +4,8 @@
   import download from 'downloadjs';
   import { toast } from 'svelte-sonner';
   import { DownloadIcon } from 'lucide-svelte';
-  import { getSvgContent } from '@/utils/getSvgContent';
+  import { getSource } from '@/templates/getSource';
+
   import {
     Dialog,
     DialogTrigger,
@@ -54,8 +55,12 @@
   }) => {
     const zip = new JSZip();
 
-    const lightSvg = await getSvgContent(lightRoute);
-    const darkSvg = await getSvgContent(darkRoute);
+    const lightSvg = await getSource({
+      url: lightRoute
+    });
+    const darkSvg = await getSource({
+      url: darkRoute
+    });
 
     if (isWordmark) {
       zip.file(`${svgInfo.title}_wordmark_light.svg`, lightSvg);

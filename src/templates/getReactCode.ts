@@ -1,11 +1,11 @@
-interface iComponentCode {
+interface ReactComponentParams {
   code: string;
   name: string;
   typescript: boolean;
 }
 
-export const getReactComponentCode = async (
-  params: iComponentCode
+export const getReactCode = async (
+  params: ReactComponentParams
 ): Promise<{ data?: string; error?: string }> => {
   try {
     const getCode = await fetch('/api/svgs/svgr', {
@@ -18,6 +18,6 @@ export const getReactComponentCode = async (
     const data = await getCode.json();
     return data;
   } catch (error) {
-    return { error: 'An error has ocurred. Try again.' };
+    return { error: `⚠️ getReactCode: An error has ocurred - ${error}` };
   }
 };

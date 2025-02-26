@@ -6,13 +6,16 @@
   import Logo from './icons/logo.svelte';
 
   import { clipboard } from '@/utils/clipboard';
-  import { getSvgContent } from '@/utils/getSvgContent';
+
   import GithubIcon from './icons/githubIcon.svelte';
+  import { getSource } from '@/templates/getSource';
 
   const logoUrl = '/library/svgl.svg';
 
   const copyToClipboard = async () => {
-    const content = await getSvgContent(logoUrl);
+    const content = await getSource({
+      url: logoUrl
+    });
     await clipboard(content);
     toast.success('Copied to clipboard', {
       description: `Svgl - Library`

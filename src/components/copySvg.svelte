@@ -6,22 +6,27 @@
 
   import * as Popover from '@/ui/popover';
   import * as Tabs from '@/ui/tabs';
+  import { buttonStyles } from '@/ui/styles';
 
   // Utils:
-  import { getSvgContent } from '@/utils/getSvgContent';
-  import { getReactComponentCode } from '@/utils/getReactComponentCode';
+  import { cn } from '@/utils/cn';
   import { clipboard } from '@/utils/clipboard';
   import { copyToClipboard as figmaCopyToClipboard } from '@/figma/copy-to-clipboard';
-  import { buttonStyles } from '@/ui/styles';
-  import { cn } from '@/utils/cn';
-  import { componentTemplate } from '@/utils/componentTemplate';
-  import { generateAngularComponent } from '@/utils/generateAngularComponent';
+
+  // Templates:
+  import { getSource } from '@/templates/getSource';
+  import { getReactCode } from '@/templates/getReactCode';
+  import { getVueCode } from '@/templates/getVueCode';
+  import { getSvelteCode } from '@/templates/getSvelteCode';
+  import { getAngularCode } from '@/templates/getAngularCode';
+  import { getWebComponent } from '@/templates/getWebComponent';
 
   //Icons:
-  import ReactIcon from './icons/reactIcon.svelte';
-  import VueIcon from './icons/vueIcon.svelte';
-  import SvelteIcon from './icons/svelteIcon.svelte';
-  import AngularIcon from './icons/angularIcon.svelte';
+  import ReactIcon from '@/components/icons/reactIcon.svelte';
+  import VueIcon from '@/components/icons/vueIcon.svelte';
+  import SvelteIcon from '@/components/icons/svelteIcon.svelte';
+  import AngularIcon from '@/components/icons/angularIcon.svelte';
+  import WebComponentIcon from '@/components/icons/webComponentIcon.svelte';
 
   // Props:
   export let iconSize = 24;
@@ -77,7 +82,9 @@
     const svgUrlToCopy = getSvgUrl();
     optionsOpen = false;
 
-    const content = await getSvgContent(svgUrlToCopy);
+    const content = await getSource({
+      url: svgUrlToCopy
+    });
 
     if (isInFigma) {
       figmaCopyToClipboard(content);
@@ -116,9 +123,11 @@
     isLoading = true;
 
     const title = svgInfo.title.split(' ').join('');
-    const content = await getSvgContent(svgUrlToCopy);
+    const content = await getSource({
+      url: svgUrlToCopy
+    });
     const dataComponent = { code: content, typescript: tsx, name: title };
-    const { data, error } = await getReactComponentCode(dataComponent);
+    const { data, error } = await getReactCode(dataComponent);
 
     if (error || !data) {
       toast.error('Failed to fetch React component', {
@@ -138,16 +147,21 @@
     isLoading = false;
   };
 
-  // Copy as either Vue or Svelte component:
-  const copySvgComponent = async (ts: boolean, framework: 'Vue' | 'Svelte') => {
+  // Copy SVG as Vue Component:
+  const convertSvgVueComponent = async (ts: boolean) => {
     try {
       const svgUrlToCopy = getSvgUrl();
 
       optionsOpen = false;
 
-      const content = await getSvgContent(svgUrlToCopy);
+      const content = await getSource({
+        url: svgUrlToCopy
+      });
 
-      const copyCode = componentTemplate(ts ? 'ts' : '', content, framework);
+      const copyCode = getVueCode({
+        content: content,
+        lang: ts ? 'ts' : 'js'
+      });
 
       if (copyCode) {
         await clipboard(copyCode);
@@ -157,12 +171,45 @@
         ? svgInfo.category.sort().join(' - ')
         : svgInfo.category;
 
-      toast.success(`Copied as ${framework} ${ts ? 'TS' : 'JS'} component`, {
+      toast.success(`Copied as Vue ${ts ? 'TS' : 'JS'} component`, {
         description: `${svgInfo?.title} - ${category}`
       });
     } catch (err) {
-      console.error(`Error copying ${framework} component:`, err);
-      toast.error(`Failed to copy ${framework} component`);
+      console.error(`Error copying Vue component:`, err);
+      toast.error(`Failed to copy Vue component`);
+    }
+  };
+
+  // Copy SVG as Svelte Component:
+  const convertSvgSvelteComponent = async (ts: boolean) => {
+    try {
+      const svgUrlToCopy = getSvgUrl();
+
+      optionsOpen = false;
+
+      const content = await getSource({
+        url: svgUrlToCopy
+      });
+
+      const copyCode = getSvelteCode({
+        content: content,
+        lang: ts ? 'ts' : 'js'
+      });
+
+      if (copyCode) {
+        await clipboard(copyCode);
+      }
+
+      const category = Array.isArray(svgInfo?.category)
+        ? svgInfo.category.sort().join(' - ')
+        : svgInfo.category;
+
+      toast.success(`Copied as Svelte ${ts ? 'TS' : 'JS'} component`, {
+        description: `${svgInfo?.title} - ${category}`
+      });
+    } catch (err) {
+      console.error(`Error copying Svelte component:`, err);
+      toast.error(`Failed to copy Svelte component`);
     }
   };
 
@@ -173,7 +220,9 @@
 
     const title = svgInfo.title.split(' ').join('');
     const svgUrlToCopy = getSvgUrl();
-    const content = await getSvgContent(svgUrlToCopy);
+    const content = await getSource({
+      url: svgUrlToCopy
+    });
 
     if (!content) {
       toast.error('Failed to fetch the SVG content', {
@@ -183,10 +232,47 @@
       return;
     }
 
-    const angularComponent = generateAngularComponent(content, title);
+    const angularComponent = getAngularCode({
+      componentName: title,
+      svgContent: content
+    });
+
     await clipboard(angularComponent);
 
     toast.success(`Copied as Standalone Angular component`, {
+      description: `${svgInfo.title} - ${svgInfo.category}`
+    });
+
+    isLoading = false;
+  };
+
+  // Copy SVG as Standalone Angular component:
+  const convertSvgWebComponent = async () => {
+    isLoading = true;
+    optionsOpen = false;
+
+    const title = svgInfo.title.split(' ').join('');
+    const svgUrlToCopy = getSvgUrl();
+    const content = await getSource({
+      url: svgUrlToCopy
+    });
+
+    if (!content) {
+      toast.error('Failed to fetch the SVG content', {
+        duration: 5000
+      });
+      isLoading = false;
+      return;
+    }
+
+    const webComponentCode = getWebComponent({
+      name: title,
+      content: content
+    });
+
+    await clipboard(webComponentCode);
+
+    toast.success(`Copied as Web Component`, {
       description: `${svgInfo.title} - ${svgInfo.category}`
     });
 
@@ -215,6 +301,7 @@
         <Tabs.Trigger value="vue">Vue</Tabs.Trigger>
         <Tabs.Trigger value="svelte">Svelte</Tabs.Trigger>
         <Tabs.Trigger value="angular">Angular</Tabs.Trigger>
+        <Tabs.Trigger value="web-component">Web Component</Tabs.Trigger>
       </Tabs.List>
       <Tabs.Content value="source">
         <section class="flex flex-col space-y-2">
@@ -256,7 +343,7 @@
             class={cn(buttonStyles, 'w-full rounded-md')}
             title="Copy as Svelte component"
             disabled={isLoading}
-            on:click={() => copySvgComponent(false, 'Svelte')}
+            on:click={() => convertSvgSvelteComponent(false)}
           >
             <SvelteIcon iconSize={18} />
             <span>Copy JS</span>
@@ -266,7 +353,7 @@
             class={cn(buttonStyles, 'w-full rounded-md')}
             title="Copy as Svelte component"
             disabled={isLoading}
-            on:click={() => copySvgComponent(true, 'Svelte')}
+            on:click={() => convertSvgSvelteComponent(true)}
           >
             <SvelteIcon iconSize={18} />
             <span>Copy TS</span>
@@ -279,7 +366,7 @@
             class={cn(buttonStyles, 'w-full rounded-md')}
             title="Copy as Vue component"
             disabled={isLoading}
-            on:click={() => copySvgComponent(false, 'Vue')}
+            on:click={() => convertSvgVueComponent(false)}
           >
             <VueIcon iconSize={18} />
             <span>Copy JS</span>
@@ -288,7 +375,7 @@
             class={cn(buttonStyles, 'w-full rounded-md')}
             title="Copy as Vue component"
             disabled={isLoading}
-            on:click={() => copySvgComponent(true, 'Vue')}
+            on:click={() => convertSvgVueComponent(true)}
           >
             <VueIcon iconSize={18} />
             <span>Copy TS</span>
@@ -305,6 +392,19 @@
           >
             <AngularIcon iconSize={18} />
             <span>Copy Standalone Component</span>
+          </button>
+        </section>
+      </Tabs.Content>
+      <Tabs.Content value="web-component">
+        <section class="flex flex-col space-y-2">
+          <button
+            class={cn(buttonStyles, 'w-full rounded-md')}
+            title="Copy as Web Component"
+            disabled={isLoading}
+            on:click={() => convertSvgWebComponent()}
+          >
+            <WebComponentIcon iconSize={18} />
+            <span>Copy Web Component</span>
           </button>
         </section>
       </Tabs.Content>
