@@ -4,7 +4,7 @@
   import { onMount } from 'svelte';
   import { queryParam } from 'sveltekit-search-params';
   import Fuse from 'fuse.js';
-  
+
   // Get all svgs:
   import { svgsData } from '@/data';
   const allSvgs = JSON.parse(JSON.stringify(svgsData));
@@ -43,9 +43,10 @@
   let searchTerm = '';
   let filteredSvgs: iSVG[] = [];
   let displaySvgs: iSVG[] = [];
+  let maxDisplay = 24;
 
   const updateDisplaySvgs = () => {
-    displaySvgs = showAll ? filteredSvgs : filteredSvgs.slice(0, 30);
+    displaySvgs = showAll ? filteredSvgs : filteredSvgs.slice(0, maxDisplay);
   };
 
   // Hybrid search strategy:
@@ -145,7 +146,7 @@
       <SvgCard svgInfo={svg} {searchTerm} />
     {/each}
   </Grid>
-  {#if filteredSvgs.length > 30 && !showAll}
+  {#if filteredSvgs.length > maxDisplay && !showAll}
     <div class="mt-4 flex items-center justify-center">
       <button
         class={buttonStyles}
@@ -158,7 +159,7 @@
           <ArrowDown size={16} strokeWidth={2} />
           <span>Load All SVGs</span>
           <span class="opacity-70">
-            ({filteredSvgs.length - 30} more)
+            ({filteredSvgs.length - maxDisplay} more)
           </span>
         </div>
       </button>
