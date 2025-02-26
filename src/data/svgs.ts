@@ -2843,12 +2843,6 @@ export const svgs: iSVG[] = [
     url: 'https://www.ygeeker.com'
   },
   {
-    title: 'Web components',
-    category: 'Library',
-    route: '/library/webcomponents.svg',
-    url: 'https://www.webcomponents.org/'
-  },
-  {
     title: 'PostCSS',
     category: 'Compiler',
     route: '/library/postcss.svg',
@@ -3386,5 +3380,11 @@ export const svgs: iSVG[] = [
     category: 'Library',
     route: '/library/magicui.svg',
     url: 'https://magicui.design/'
+  },
+  {
+    title: 'Web Components',
+    category: 'Library',
+    route: '/library/webcomponents.svg',
+    url: 'https://www.webcomponents.org/'
   }
 ];
