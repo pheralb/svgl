@@ -3386,5 +3386,17 @@ export const svgs: iSVG[] = [
     category: 'Library',
     route: '/library/webcomponents.svg',
     url: 'https://www.webcomponents.org/'
+  },
+  {
+    title: 'Dart Project Management',
+    category: 'Software',
+    route: '/library/dart_ai.svg',
+    wordmark: {
+      light: '/library/dart_ai_wordmark_light.svg',
+      dark: '/library/dart_ai_wordmark_dark.svg'
+    },
+    url: 'https://itsdart.com/',
+    brandUrl: 'https://live.standards.site/dart'
   }
+
 ];
