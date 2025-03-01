@@ -2,6 +2,12 @@ import type { iSVG } from '../types/svg';
 
 export const svgs: iSVG[] = [
   {
+    title: 'daisyUI',
+    category: 'Library',
+    route: '/library/daisyui.svg',
+    url: 'https://daisyui.com/'
+  },
+  {
     title: 'PayPal',
     category: 'Payment',
     route: '/library/paypal.svg',
