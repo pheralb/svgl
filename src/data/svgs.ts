@@ -2,6 +2,15 @@ import type { iSVG } from '../types/svg';
 
 export const svgs: iSVG[] = [
   {
+    title: 'Designali',
+    category: ['Software', 'Design'],
+    route: {
+      light: '/library/designali.svg',
+      dark: '/library/designali-dark.svg'
+    },
+    url: 'https://designali.in'
+  },
+  {
     title: 'PayPal',
     category: 'Payment',
     route: '/library/paypal.svg',
