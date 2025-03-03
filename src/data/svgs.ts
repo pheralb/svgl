@@ -3176,6 +3176,12 @@ export const svgs: iSVG[] = [
     url: 'https://posthog.com/'
   },
   {
+    title: 'PowerToys',
+    category: 'Software',
+    route: '/library/powertoys.svg',
+    url: 'https://learn.microsoft.com/en-us/windows/powertoys/'
+  },
+  {
     title: 'Lottielab',
     category: 'Design',
     route: '/library/lottielab.svg',
