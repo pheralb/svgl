@@ -3398,5 +3398,14 @@ export const svgs: iSVG[] = [
     category: 'Library',
     route: '/library/webcomponents.svg',
     url: 'https://www.webcomponents.org/'
+  },
+  {
+    title: 'Designali',
+    category: ['Software', 'Design'],
+    route: {
+      light: '/library/designali.svg',
+      dark: '/library/designali-dark.svg'
+    },
+    url: 'https://designali.in'
   }
 ];
