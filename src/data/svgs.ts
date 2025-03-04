@@ -3139,7 +3139,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Home Assistant',
-    category: ['IoT', 'Home Automation', 'Software'],
+    category: ['IoT', 'Software'],
     route: '/library/home-assistant.svg',
     wordmark: {
       light: '/library/home-assistant-wordmark.svg',
