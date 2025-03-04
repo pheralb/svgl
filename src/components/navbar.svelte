@@ -37,17 +37,17 @@
 
 <nav
   class={cn(
-    'dark:bg-neutral-900 bg-white',
-    'w-full px-5 py-4 border-b border-neutral-200 dark:border-neutral-800',
+    'bg-white dark:bg-neutral-900',
+    'w-full border-b border-neutral-200 px-5 py-4 dark:border-neutral-800',
     'sticky top-0 z-50',
-    'backdrop-blur-md dark:bg-neutral-900/90 bg-white/90'
+    'bg-white/90 backdrop-blur-md dark:bg-neutral-900/90'
   )}
 >
-  <div class="flex items-center justify-between mx-auto">
+  <div class="mx-auto flex items-center justify-between">
     <HeaderLogoLink />
     <div class="flex items-center space-x-0 md:space-x-7">
       <div
-        class="flex items-center md:space-x-4 divide-x divide-neutral-300 dark:divide-neutral-700"
+        class="flex items-center divide-x divide-dashed divide-neutral-300 dark:divide-neutral-700 md:space-x-4"
       >
         {#each externalLinks as link}
           <a
@@ -55,9 +55,9 @@
             target={link.external ? '_blank' : ''}
             aria-label={link.label ?? link.name}
             class={cn(
-              'flex items-center opacity-80 hover:opacity-100 transition-opacity text-[15px] pl-2 md:pl-3 group',
+              'group flex items-center pl-2 text-[15px] opacity-80 transition-opacity hover:opacity-100 md:pl-3',
               currentPath === link.url &&
-                'underline underline-offset-8 decoration-dotted decoration-neutral-500'
+                'underline decoration-neutral-500 decoration-dotted underline-offset-8'
             )}
           >
             {#if !link.external}
@@ -76,7 +76,7 @@
                 size={16}
                 name="External link"
                 strokeWidth={1.5}
-                class="ml-1 transition-transform duration-300 group-hover:-translate-y-[1px] group-hover:translate-x-[1px] hidden md:block"
+                class="ml-1 hidden transition-transform duration-300 group-hover:-translate-y-[1px] group-hover:translate-x-[1px] md:block"
               />
             {/if}
           </a>
@@ -86,15 +86,15 @@
         <a
           href="https://twitter.com/pheralb_"
           target="_blank"
-          class="flex items-center space-x-1 opacity-80 hover:opacity-100 transition-opacity"
+          class="flex items-center space-x-1 opacity-80 transition-opacity hover:opacity-100"
           title="Twitter"
         >
-          <XIcon iconSize={16} />
+          <XIcon size={16} color="currentColor" />
         </a>
         <a
           href="https://github.com/pheralb/svgl"
           target="_blank"
-          class="flex items-center space-x-1 opacity-80 hover:opacity-100 transition-opacity"
+          class="flex items-center space-x-1 opacity-80 transition-opacity hover:opacity-100"
           title="GitHub"
         >
           <GithubIcon iconSize={19} />
