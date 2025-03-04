@@ -1,6 +1,8 @@
 <script lang="ts">
-  export let iconSize: number;
-  export let className: string;
+  import type { IconProps } from '@/types/icon';
+
+  export let iconSize: IconProps['size'];
+  export let className: IconProps['className'];
 </script>
 
 <svg

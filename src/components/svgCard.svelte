@@ -3,7 +3,6 @@
 
   // Utils:
   import { cn } from '@/utils/cn';
-  import { getSvgContent } from '@/utils/getSvgContent';
 
   // Icons:
   import {
@@ -26,6 +25,7 @@
   // Figma
   import { onMount } from 'svelte';
   import { insertSVG as figmaInsertSVG } from '@/figma/insert-svg';
+  import { getSource } from '@/templates/getSource';
 
   // Props:
   export let svgInfo: iSVG;
@@ -46,7 +46,9 @@
   }
 
   const insertSVG = async (url?: string) => {
-    const content = (await getSvgContent(url)) as string;
+    const content = (await getSource({
+      url
+    })) as string;
     figmaInsertSVG(content);
   };
 

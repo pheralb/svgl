@@ -4,14 +4,16 @@
   import download from 'downloadjs';
   import { toast } from 'svelte-sonner';
   import { DownloadIcon } from 'lucide-svelte';
-  import { getSvgContent } from '@/utils/getSvgContent';
+  import { getSource } from '@/templates/getSource';
+
   import {
     Dialog,
     DialogTrigger,
     DialogContent,
     DialogHeader,
     DialogTitle,
-    DialogDescription
+    DialogDescription,
+    DialogFooter
   } from '@/ui/dialog';
   import { buttonStyles } from '@/ui/styles';
   import { cn } from '@/utils/cn';
@@ -53,8 +55,12 @@
   }) => {
     const zip = new JSZip();
 
-    const lightSvg = await getSvgContent(lightRoute);
-    const darkSvg = await getSvgContent(darkRoute);
+    const lightSvg = await getSource({
+      url: lightRoute
+    });
+    const darkSvg = await getSource({
+      url: darkRoute
+    });
 
     if (isWordmark) {
       zip.file(`${svgInfo.title}_wordmark_light.svg`, lightSvg);
@@ -104,14 +110,13 @@
     </DialogTrigger>
     <DialogContent class="max-w-[630px]">
       <DialogHeader>
-        <DialogTitle>Download {svgInfo.title}</DialogTitle>
+        <DialogTitle>Download {svgInfo.title} SVG</DialogTitle>
         <DialogDescription>This logo has multiple options to download:</DialogDescription>
       </DialogHeader>
-
       <div
         class={cn(
-          'flex flex-col space-y-2 mt-4 h-full',
-          'md:space-y-0 md:flex-row md:space-x-2 md:items-center md:justify-center'
+          'flex h-full flex-col space-y-2 pb-0.5 pt-4',
+          'md:flex-row md:items-center md:justify-center md:space-x-2 md:space-y-0'
         )}
       >
         {#if typeof svgInfo.route === 'string'}
@@ -119,7 +124,7 @@
             <img
               src={isDarkTheme() ? svgInfo.route : svgInfo.route}
               alt={svgInfo.title}
-              class="h-8 my-4"
+              class="my-4 h-8"
             />
             <button
               title="Download logo"
@@ -140,7 +145,7 @@
             <img
               src={isDarkTheme() ? svgInfo.route.dark : svgInfo.route.light}
               alt={svgInfo.title}
-              class="h-10 my-4"
+              class="my-4 h-10"
             />
             <button
               title="Logo with light & dark variants"
@@ -193,7 +198,7 @@
             <img
               src={isDarkTheme() ? svgInfo.wordmark : svgInfo.wordmark}
               alt={svgInfo.title}
-              class="h-8 my-4"
+              class="my-4 h-8"
             />
             <button
               title="Download Wordmark logo"
@@ -216,7 +221,7 @@
             <img
               src={isDarkTheme() ? svgInfo.wordmark.dark : svgInfo.wordmark.light}
               alt={svgInfo.title}
-              class="h-10 my-4"
+              class="my-4 h-10"
             />
             <button
               title="Download Wordmark light variant"
@@ -266,6 +271,12 @@
           </div>
         {/if}
       </div>
+      <DialogFooter class="mt-3 text-xs text-neutral-600 dark:text-neutral-400">
+        <p>
+          Remember to request permission from the creators for the use of the SVG. Modification is
+          not allowed.
+        </p>
+      </DialogFooter>
     </DialogContent>
   </Dialog>
 {/if}
