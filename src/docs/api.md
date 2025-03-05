@@ -5,6 +5,7 @@ description: The API reference is a detailed documentation of all the endpoints 
 
 <script>
   import Endpoint from '../components/endpoints.svelte';
+  import Alert from '../ui/alert/alert-component.svelte';
 </script>
 
 ## Introduction
@@ -14,6 +15,10 @@ SVGL API is a RESTFul API that allows you to get all the information of the SVGs
 ## Limitations
 
 The API is currently open to everyone and does not require any authentication. However, to prevent abusive use of the API, there is a limit to the number of requests.
+
+<Alert type="info">
+  Don't use the API for create the same product as SVGL. The API is intended to be used for extensions, plugins, or other tools that can help the community.
+</Alert>
 
 ## Base URL
 
@@ -54,6 +59,8 @@ export interface iSVG {
   url: string;
 }
 ```
+
+- `tCategory` is a large list of categories that can be found [here](https://github.com/pheralb/svgl/blob/main/src/types/categories.ts#L1).
 
 ## Endpoints
 
