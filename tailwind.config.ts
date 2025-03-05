@@ -1,6 +1,7 @@
 import type { Config } from 'tailwindcss';
 
 // Plugins:
+import plugin from 'tailwindcss/plugin';
 import defaultTheme from 'tailwindcss/defaultTheme';
 import twTypography from '@tailwindcss/typography';
 
@@ -28,6 +29,12 @@ const config = {
               'font-style': 'normal'
             }
           }
+        },
+        quoteless: {
+          css: {
+            'blockquote p:first-of-type::before': { content: 'none' },
+            'blockquote p:first-of-type::after': { content: 'none' }
+          }
         }
       },
       colors: {
@@ -51,7 +58,13 @@ const config = {
           'text-wrap': 'balance'
         }
       });
-    }
+    },
+    plugin(function ({ addVariant }) {
+      addVariant(
+        'prose-inline-code',
+        '&.prose :where(:not(pre)>code):not(:where([class~="not-prose"] *))'
+      );
+    })
   ]
 } satisfies Config;
 
