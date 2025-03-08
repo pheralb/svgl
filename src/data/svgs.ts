@@ -3404,5 +3404,20 @@ export const svgs: iSVG[] = [
     category: ['Software', 'Design'],
     route: '/library/designali.svg',
     url: 'https://designali.in'
+  },
+  {
+    title: 'CurseForge',
+    category: ['Marketplace', 'Community'],
+    route: {
+      light: '/library/curseforge.svg',
+      dark: '/library/curseforge-dark.svg'
+    },
+    wordmark: {
+      light: '/library/curseforge-wordmark.svg',
+      dark: '/library/curseforge-wordmark-dark.svg'
+    },
+    url: 'https://curseforge.com/',
+    brandUrl:
+      'https://www.figma.com/file/YYn36CxVpcT6aPKDXIH9JG/CurseForge-Brandbook?type=design&node-id=0-1&t=dvC0gPtyP36PQdsi-0'
   }
 ];
