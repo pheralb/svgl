@@ -3404,5 +3404,18 @@ export const svgs: iSVG[] = [
     category: ['Software', 'Design'],
     route: '/library/designali.svg',
     url: 'https://designali.in'
+  },
+  {
+    title: 'Cursor',
+    category: ['Software'],
+    route: {
+      light: '/library/cursor_light.svg',
+      dark: '/library/cursor_dark.svg'
+    },
+    wordmark: {
+      light: '/library/cursor_wordmark_light.svg',
+      dark: '/library/cursor_wordmark_dark.svg'
+    },
+    url: 'https://www.cursor.com'
   }
 ];
