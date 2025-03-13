@@ -1,23 +1,15 @@
 <script lang="ts">
-  import type { LayoutServerData } from './$types';
-  export let data: LayoutServerData;
+  import { page } from '$app/stores';
 
   // Global styles:
-  import '../app.css';
+  import '@/styles/app.css';
   import { cn } from '@/utils/cn';
   import { ModeWatcher, mode } from 'mode-watcher';
-  import { sidebarCategoryCountStyles } from '@/ui/styles';
-  import { sidebarItemStyles } from '@/ui/styles';
 
-  // Get categories:
+  // Categories:
+  import type { tCategory } from '@/types/categories';
   import { svgs } from '@/data/svgs';
-  const categories = getCategories();
-
-  // Get category counts:
-  let categoryCounts: Record<string, number> = {};
-  categories.forEach((category) => {
-    categoryCounts[category] = svgs.filter((svg) => svg.category.includes(category)).length;
-  });
+  import { getCategories } from '@/data';
 
   // Toaster:
   import { Toaster } from 'svelte-sonner';
@@ -28,11 +20,22 @@
 
   // Layout:
   import Navbar from '@/components/navbar.svelte';
-  import { getCategories } from '@/data';
+  import { sidebarCategoryCountStyles } from '@/ui/styles';
+  import { sidebarItemStyles } from '@/ui/styles';
+
+  // Get category counts:
+  const categories: tCategory[] = getCategories();
+  let categoryCounts: Record<string, number> = {};
+  categories.forEach((category) => {
+    categoryCounts[category] = svgs.filter((svg) => svg.category.includes(category)).length;
+  });
+
+  // Get main pathname:
+  $: pathname = $page.url.pathname;
 </script>
 
 <ModeWatcher />
-<Navbar currentPath={data.pathname} />
+<Navbar currentPath={pathname} />
 <main>
   <aside
     class={cn(
@@ -51,7 +54,7 @@
           href="/"
           class={cn(
             sidebarItemStyles,
-            data.pathname === '/'
+            pathname === '/'
               ? 'bg-neutral-200 font-medium text-dark dark:bg-neutral-700/30 dark:text-white'
               : ''
           )}
@@ -64,7 +67,7 @@
             data-sveltekit-preload-data
             class={cn(
               sidebarItemStyles,
-              data.pathname === `/directory/${category.toLowerCase()}`
+              pathname === `/directory/${category.toLowerCase()}`
                 ? 'bg-neutral-200 font-medium text-dark dark:bg-neutral-700/30 dark:text-white'
                 : ''
             )}
@@ -73,7 +76,7 @@
             <span
               class={cn(
                 sidebarCategoryCountStyles,
-                data.pathname === `/directory/${category.toLowerCase()}`
+                pathname === `/directory/${category.toLowerCase()}`
                   ? 'border-neutral-300 dark:border-neutral-700'
                   : '',
                 'hidden font-mono text-xs md:inline'
@@ -86,7 +89,7 @@
   </aside>
   <div class="ml-0 pb-6 md:ml-56">
     <Warning />
-    <Transition pathname={data.pathname}>
+    <Transition {pathname}>
       <slot />
     </Transition>
     <Toaster
