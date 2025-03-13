@@ -2,7 +2,6 @@
   export let currentPath: string;
 
   import { cn } from '@/utils/cn';
-  import Logo from './icons/logo.svelte';
   import Theme from './theme.svelte';
 
   import { ArrowUpRight, CloudyIcon } from 'lucide-svelte';
