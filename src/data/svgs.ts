@@ -3432,5 +3432,15 @@ export const svgs: iSVG[] = [
       dark: '/library/cursor_wordmark_dark.svg'
     },
     url: 'https://www.cursor.com'
+  },
+  {
+    title: 'Ghostty',
+    category: ['Software'],
+    route: '/library/ghostty.svg',
+    wordmark: {
+      dark: '/library/ghostty_wordmark_dark.svg',
+      light: '/library/ghostty_wordmark_light.svg'
+    },
+    url: 'https://ghostty.org/'
   }
 ];
