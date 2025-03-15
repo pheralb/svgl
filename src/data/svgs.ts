@@ -708,6 +708,19 @@ export const svgs: iSVG[] = [
     url: 'https://graphql.org/'
   },
   {
+    title: 'Grok',
+    category: 'AI',
+    route: {
+      light: '/library/grok-light.svg',
+      dark: '/library/grok-dark.svg'
+    },
+    wordmark: {
+      light: '/library/grok-wordmark-light.svg',
+      dark: '/library/grok-wordmark-dark.svg'
+    },
+    url: 'https://grok.com/'
+  },
+  {
     title: 'GitLab',
     category: 'Software',
     route: '/library/gitlab.svg',
