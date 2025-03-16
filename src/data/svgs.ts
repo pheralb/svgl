@@ -3457,5 +3457,11 @@ export const svgs: iSVG[] = [
     category: "PIM",
     route: "/library/akeneo.svg",
     url: "https://www.akeneo.com/"
+  },
+  {
+    title: "BeezUp",
+    category: "Marketplace",
+    route: "/library/beezup.svg",
+    url: "https://www.beezup.com/"
   }
 ];
