@@ -3445,5 +3445,11 @@ export const svgs: iSVG[] = [
       dark: '/library/cursor_wordmark_dark.svg'
     },
     url: 'https://www.cursor.com'
+  },
+  {
+    title: "Odoo",
+    category: "ERP",
+    route: "/library/odoo.svg",
+    url: "https://www.odoo.com/"
   }
 ];
