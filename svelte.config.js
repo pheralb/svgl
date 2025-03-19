@@ -1,7 +1,7 @@
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 // ☁️ Adapter:
-import adapter from '@sveltejs/adapter-node';
+import adapter from '@sveltejs/adapter-auto';
 
 // 📦 Extensions:
 import { mdsvex, escapeSvelte } from 'mdsvex';
