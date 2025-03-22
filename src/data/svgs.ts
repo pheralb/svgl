@@ -3455,5 +3455,18 @@ export const svgs: iSVG[] = [
       light: '/library/ghostty_wordmark_light.svg'
     },
     url: 'https://ghostty.org/'
+  },
+  {
+    title: 'Better Auth',
+    category: ['Authentication', 'Library'],
+    route: {
+      light: '/library/better-auth_light.svg',
+      dark: '/library/better-auth_dark.svg'
+    },
+    wordmark: {
+      dark: '/library/better-auth_wordmark_dark.svg',
+      light: '/library/better-auth_wordmark_light.svg'
+    },
+    url: 'https://www.better-auth.com/'
   }
 ];
