@@ -3468,5 +3468,12 @@ export const svgs: iSVG[] = [
       light: '/library/better-auth_wordmark_light.svg'
     },
     url: 'https://www.better-auth.com/'
+  },
+  {
+    title: 'Buy Me a Coffee',
+    category: ['Software'],
+    route: '/library/bmc.svg',
+    brandUrl: 'https://buymeacoffee.com/brand',
+    url: 'https://buymeacoffee.com/'
   }
 ];
