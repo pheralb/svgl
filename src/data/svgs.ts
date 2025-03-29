@@ -3050,6 +3050,11 @@ export const svgs: iSVG[] = [
     url: 'https://blueskyweb.xyz/'
   },
   {
+    title: 'Zerops',
+    category: 'Hosting',
+    route: '/library/zerops.svg',
+    url: 'https://zerops.io/'
+  },
     title: 'Drizzle ORM',
     category: ['Library', 'Database'],
     route: {
