@@ -2472,6 +2472,10 @@ export const svgs: iSVG[] = [
     title: 'Biomejs',
     category: 'Compiler',
     route: '/library/biomejs.svg',
+    wordmark: {
+      light: '/library/biome-wordmark.svg',
+      dark: '/library/biome-wordmark_dark.svg'
+    },
     url: 'https://biomejs.dev/'
   },
   {
