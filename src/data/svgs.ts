@@ -3523,5 +3523,48 @@ export const svgs: iSVG[] = [
     route: '/library/bmc.svg',
     brandUrl: 'https://buymeacoffee.com/brand',
     url: 'https://buymeacoffee.com/'
-  }
+  },
+  {
+    title: 'Kafka',
+    category: ['Software'],
+    route: '/library/kafka-2.svg',
+    brandUrl: 'https://kafka.apache.org/downloads',
+    url: 'https://kafka.apache.org/'
+  },
+  {
+    title: 'apache kafka',
+    category: ['Software'],
+    route: '/library/kafka-icon.svg',
+    brandUrl: 'https://kafka.apache.org/downloads',
+    url: 'https://kafka.apache.org/'
+  },
+  {
+    title: 'Apache',
+    category: ['Software'],
+    route: '/library/apache.svg',
+    brandUrl: 'https://httpd.apache.org/',
+    url: 'https://httpd.apache.org/'
+  },
+  {
+    title: 'NGINX',
+    category: ['Software'],
+    route: '/library/nginx-logo.svg',
+    brandUrl: 'https://nginx.org/en/',
+    url: 'https://nginx.org/en/download.html'
+  },
+  {
+    title: 'NGINX 16',
+    category: ['Software'],
+    route: '/library/nginx-16.svg',
+    brandUrl: 'https://nginx.org/en/',
+    url: 'https://nginx.org/en/download.html'
+  },
+  {
+    title: 'Scylla DB',
+    category: ['Software','Database'],
+    route: '/library/nginx-16.svg',
+    brandUrl: 'https://nginx.org/en/',
+    url: 'https://nginx.org/en/download.html'
+  },
+
 ];
