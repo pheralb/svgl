@@ -3566,5 +3566,12 @@ export const svgs: iSVG[] = [
     brandUrl: 'https://www.scylladb.com/',
     url: 'https://www.scylladb.com/'
   },
+  {
+    title: 'Composer',
+    category: ['Software'],
+    route: '/library/composer.svg',
+    brandUrl: 'https://getcomposer.org/',
+    url: 'https://getcomposer.org/'
+  }
 
 ];
