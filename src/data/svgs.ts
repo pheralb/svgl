@@ -3562,9 +3562,9 @@ export const svgs: iSVG[] = [
   {
     title: 'Scylla DB',
     category: ['Software','Database'],
-    route: '/library/nginx-16.svg',
-    brandUrl: 'https://nginx.org/en/',
-    url: 'https://nginx.org/en/download.html'
+    route: '/library/scylladb.svg',
+    brandUrl: 'https://www.scylladb.com/',
+    url: 'https://www.scylladb.com/'
   },
 
 ];
