@@ -3547,7 +3547,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'NGINX',
-    category: ['Software'],
+    category: ['Software','Web Server'],
     route: '/library/nginx-logo.svg',
     brandUrl: 'https://nginx.org/en/',
     url: 'https://nginx.org/en/download.html'
