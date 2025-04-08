@@ -3573,13 +3573,6 @@ export const svgs: iSVG[] = [
     url: 'https://www.scylladb.com/'
   },
   {
-    title: 'Composer',
-    category: ['Software'],
-    route: '/library/composer.svg',
-    brandUrl: 'https://getcomposer.org/',
-    url: 'https://getcomposer.org/'
-  },
-  {
     title: 'JetBrains Goland',
     category: 'Software',
     route: '/library/Goland.svg',
