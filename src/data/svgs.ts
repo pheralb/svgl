@@ -157,16 +157,6 @@ export const svgs: iSVG[] = [
     url: 'https://aliexpress.com/'
   },
   {
-    title: 'Github',
-    category: 'Software',
-    route: {
-      light: '/library/github-light.svg',
-      dark: '/library/github-dark.svg'
-    },
-    url: 'https://github.com/',
-    brandUrl: 'https://brand.github.com/'
-  },
-  {
     title: 'Preact',
     category: 'Library',
     route: '/library/preact.svg',
@@ -3529,5 +3519,19 @@ export const svgs: iSVG[] = [
     route: '/library/bmc.svg',
     brandUrl: 'https://buymeacoffee.com/brand',
     url: 'https://buymeacoffee.com/'
+  },
+  {
+    title: 'GitHub',
+    category: 'Software',
+    route: {
+      light: '/library/github_light.svg',
+      dark: '/library/github_dark.svg'
+    },
+    wordmark: {
+      light: '/library/github_wordmark_light.svg',
+      dark: '/library/github_wordmark_dark.svg'
+    },
+    url: 'https://github.com/',
+    brandUrl: 'https://brand.github.com/'
   }
 ];
