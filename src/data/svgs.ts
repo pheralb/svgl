@@ -2,6 +2,12 @@ import type { iSVG } from '../types/svg';
 
 export const svgs: iSVG[] = [
   {
+    title: 'Windsurf',
+    category: 'Software',
+    route: '/library/windsurf-logo.svg',
+    url: 'https://codeium.com/windsurf'
+  },
+  {
     title: 'daisyUI',
     category: 'Library',
     route: '/library/daisyui.svg',
