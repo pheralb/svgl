@@ -3583,6 +3583,5 @@ export const svgs: iSVG[] = [
     url: 'https://github.com/',
     brandUrl: 'https://brand.github.com/'
    }
-  }
 
 ];
