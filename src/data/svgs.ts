@@ -3566,7 +3566,8 @@ export const svgs: iSVG[] = [
   {
     title: 'JetBrains Goland',
     category: 'Software',
-    route: '/library/Goland.svg',
+    route: '/library/GoLand.svg',
+    brandUrl: 'https://www.jetbrains.com/',
     url: 'https://www.jetbrains.com/go/'
   },
    {
@@ -3582,6 +3583,20 @@ export const svgs: iSVG[] = [
     },
     url: 'https://github.com/',
     brandUrl: 'https://brand.github.com/'
-   }
+   },
+   {
+    title: 'Terraform',
+    category: 'Software',
+    route: {
+      light: '/library/terraform-icon.svg',
+      dark: '/library/terraform-dark.svg'
+    },
+    wordmark: {
+      light: '/library/terraform-with-text.svg',
+      dark: '/library/terraform-with-text.svg'
+    },
+    url: 'https://www.hashicorp.com/products/terraform',
+    brandUrl: 'https://www.hashicorp.com/brand'
+  }
 
 ];
