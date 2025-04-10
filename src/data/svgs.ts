@@ -1497,6 +1497,16 @@ export const svgs: iSVG[] = [
     url: 'https://zod.dev/'
   },
   {
+    title: 'Valibot',
+    category: 'Library',
+    route: '/library/valibot.svg',
+    wordmark: {
+      light: '/library/valibot-wordmark-light.svg',
+      dark: '/library/valibot-wordmark-dark.svg'
+    },
+    url: 'https://valibot.dev'
+  },
+  {
     title: 'Dreamweaver',
     category: 'Software',
     route: '/library/dw.svg',
