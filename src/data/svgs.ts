@@ -354,6 +354,12 @@ export const svgs: iSVG[] = [
     url: 'https://www.npmjs.com/'
   },
   {
+    title: 'Nuget',
+    category: 'Software',
+    route: '/library/nuget.svg',
+    url: 'https://www.nuget.org/'
+  },
+  {
     title: 'Homebrew',
     category: 'Software',
     route: '/library/homebrew.svg',
