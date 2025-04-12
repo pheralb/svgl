@@ -3549,5 +3549,11 @@ export const svgs: iSVG[] = [
     },
     url: 'https://github.com/',
     brandUrl: 'https://brand.github.com/'
+  },
+  {
+    title: 'ASP.NET Core',
+    category: ['Software', 'Framework'],
+    route: '/library/asp.net.core.svg',
+    url: 'https://dotnet.microsoft.com/en-us/apps/aspnet'
   }
 ];
