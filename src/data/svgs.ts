@@ -3521,17 +3521,16 @@ export const svgs: iSVG[] = [
     url: 'https://buymeacoffee.com/'
   },
   {
-
-    title: 'Kafka',
-    category: ['Software'],
-    route: '/library/kafka-2.svg',
-    brandUrl: 'https://kafka.apache.org/downloads',
-    url: 'https://kafka.apache.org/'
-  },
-  {
     title: 'apache kafka',
     category: ['Software'],
-    route: '/library/kafka-icon.svg',
+    route: {
+      light: '/library/kafka-icon.svg',
+      dark: '/library/kafka-icon-light.svg'
+    },
+    wordmark: {
+       light: '/library/kafka-2.svg',
+      dark: '/library/kafka-2-light.svg'
+    },
     brandUrl: 'https://kafka.apache.org/downloads',
     url: 'https://kafka.apache.org/'
   },
