@@ -2,6 +2,12 @@ import type { iSVG } from '@/types/svg';
 
 export const svgs: iSVG[] = [
   {
+    title: 'Firebase Studio',
+    category: ['AI', 'Google'],
+    route: '/library/firebase-studio.svg',
+    url: 'https://firebase.studio/'
+  },
+  {
     title: 'Windsurf',
     category: 'Software',
     route: '/library/windsurf-logo.svg',
