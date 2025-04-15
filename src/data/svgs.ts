@@ -4,7 +4,7 @@ export const svgs: iSVG[] = [
   {
     title: 'Firebase Studio',
     category: ['AI', 'Google'],
-    route: '/library/firebase-studio.svg',
+    route: '/library/firebasestudio.svg',
     url: 'https://firebase.studio/'
   },
   {
