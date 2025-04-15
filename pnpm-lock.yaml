@@ -33,7 +33,7 @@ importers:
         specifier: 1.4.7
         version: 1.4.7
       fuse.js:
-        specifier: ^7.0.0
+        specifier: 7.1.0
         version: 7.1.0
       jszip:
         specifier: 3.10.1
@@ -2287,7 +2287,6 @@ packages:
 
   shikiji-core@0.10.2:
     resolution: {integrity: sha512-9Of8HMlF96usXJHmCL3Gd0Fcf0EcyJUF9m8EoAKKd98mHXi0La2AZl1h6PegSFGtiYcBDK/fLuKbDa1l16r1fA==}
-    deprecated: Deprecated, use @shikijs/core instead
 
   shikiji@0.10.2:
     resolution: {integrity: sha512-wtZg3T0vtYV2PnqusWQs3mDaJBdCPWxFDrBM/SE5LfrX92gjUvfEMlc+vJnoKY6Z/S44OWaCRzNIsdBRWcTAiw==}
