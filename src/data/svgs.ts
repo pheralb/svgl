@@ -9,7 +9,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Windsurf',
-    category: 'Software',
+    category: ['Software', 'AI'],
     route: '/library/windsurf-logo.svg',
     url: 'https://codeium.com/windsurf'
   },
