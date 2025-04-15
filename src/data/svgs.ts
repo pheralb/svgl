@@ -354,6 +354,12 @@ export const svgs: iSVG[] = [
     url: 'https://www.npmjs.com/'
   },
   {
+    title: 'Nuget',
+    category: 'Software',
+    route: '/library/nuget.svg',
+    url: 'https://www.nuget.org/'
+  },
+  {
     title: 'Homebrew',
     category: 'Software',
     route: '/library/homebrew.svg',
@@ -1489,6 +1495,16 @@ export const svgs: iSVG[] = [
     category: 'Library',
     route: '/library/zod.svg',
     url: 'https://zod.dev/'
+  },
+  {
+    title: 'Valibot',
+    category: 'Library',
+    route: '/library/valibot.svg',
+    wordmark: {
+      light: '/library/valibot-wordmark-light.svg',
+      dark: '/library/valibot-wordmark-dark.svg'
+    },
+    url: 'https://valibot.dev'
   },
   {
     title: 'Dreamweaver',
