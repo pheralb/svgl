@@ -20,6 +20,7 @@
   import { getSvelteCode } from '@/templates/getSvelteCode';
   import { getAngularCode } from '@/templates/getAngularCode';
   import { getWebComponent } from '@/templates/getWebComponent';
+  import { getAstroCode } from '@/templates/getAstroCode';
 
   //Icons:
   import ReactIcon from '@/components/icons/reactIcon.svelte';
@@ -27,6 +28,7 @@
   import SvelteIcon from '@/components/icons/svelteIcon.svelte';
   import AngularIcon from '@/components/icons/angularIcon.svelte';
   import WebComponentIcon from '@/components/icons/webComponentIcon.svelte';
+  import AstroIcon from '@/components/icons/astroIcon.svelte';
 
   // Props:
   export let iconSize = 24;
@@ -246,7 +248,7 @@
     isLoading = false;
   };
 
-  // Copy SVG as Standalone Angular component:
+  // Copy SVG as Web Component:
   const convertSvgWebComponent = async () => {
     isLoading = true;
     optionsOpen = false;
@@ -278,6 +280,37 @@
 
     isLoading = false;
   };
+
+  // Copy SVG as Astro component:
+  const convertSvgAstroComponent = async () => {
+    isLoading = true;
+    optionsOpen = false;
+
+    const svgUrlToCopy = getSvgUrl();
+    const content = await getSource({
+      url: svgUrlToCopy
+    });
+
+    if (!content) {
+      toast.error('Failed to fetch the SVG content', {
+        duration: 5000
+      });
+      isLoading = false;
+      return;
+    }
+
+    const astroComponentCode = getAstroCode({
+      svgContent: content
+    });
+
+    await clipboard(astroComponentCode);
+
+    toast.success(`Copied as Astro Component`, {
+      description: `${svgInfo.title} - ${svgInfo.category}`
+    });
+
+    isLoading = false;
+  };
 </script>
 
 <Popover.Root open={optionsOpen} onOpenChange={(isOpen) => (optionsOpen = isOpen)}>
@@ -300,6 +333,9 @@
         <div
           class="ml-3 flex flex-row space-x-0.5 border-l border-dashed border-neutral-200 pl-3 dark:border-neutral-800"
         >
+          <Tabs.Trigger value="web-component" title="Web Component">
+            <WebComponentIcon iconSize={21} />
+          </Tabs.Trigger>
           <Tabs.Trigger value="react" title="React">
             <ReactIcon iconSize={20} />
           </Tabs.Trigger>
@@ -312,8 +348,8 @@
           <Tabs.Trigger value="angular" title="Angular">
             <AngularIcon iconSize={20} />
           </Tabs.Trigger>
-          <Tabs.Trigger value="web-component" title="Web Component">
-            <WebComponentIcon iconSize={21} />
+          <Tabs.Trigger value="astro" title="Astro" class="text-black dark:text-white">
+            <AstroIcon iconSize={21} />
           </Tabs.Trigger>
         </div>
       </Tabs.List>
@@ -419,6 +455,19 @@
           >
             <WebComponentIcon iconSize={18} />
             <span>Copy Web Component</span>
+          </button>
+        </section>
+      </Tabs.Content>
+      <Tabs.Content value="astro">
+        <section class="flex flex-col space-y-2">
+          <button
+            class={cn(buttonStyles, 'w-full rounded-md')}
+            title="Copy as Astro Component"
+            disabled={isLoading}
+            on:click={() => convertSvgAstroComponent()}
+          >
+            <AstroIcon iconSize={18} />
+            <span>Copy Astro Component</span>
           </button>
         </section>
       </Tabs.Content>
