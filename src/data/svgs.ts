@@ -1,9 +1,9 @@
-import type { iSVG } from '../types/svg';
+import type { iSVG } from '@/types/svg';
 
 export const svgs: iSVG[] = [
   {
     title: 'Windsurf',
-    category: 'Software',
+    category: ['Software', 'AI'],
     route: '/library/windsurf-logo.svg',
     url: 'https://codeium.com/windsurf'
   },
@@ -3612,6 +3612,12 @@ export const svgs: iSVG[] = [
     },
     url: 'https://www.hashicorp.com/products/terraform',
     brandUrl: 'https://www.hashicorp.com/brand'
+  },
+  {
+    title: 'Firebase Studio',
+    category: ['AI', 'Google'],
+    route: '/library/firebase-studio.svg',
+    url: 'https://firebase.studio/'
   }
 
 ];

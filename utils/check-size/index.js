@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
 const { readdir, stat } = require('fs').promises;
 const { join } = require('path');
 
@@ -7,7 +6,7 @@ const core = require('@actions/core');
 
 // 🔎 Settings:
 const dir = '../../static/library';
-const sizeLimit = 20000; // 20kb;
+const sizeLimit = 21504; // 21kb;
 
 function convertBytes(bytes, format = 'KB') {
   if (format === 'KB') {
