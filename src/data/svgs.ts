@@ -3555,5 +3555,14 @@ export const svgs: iSVG[] = [
     category: ['AI', 'Google'],
     route: '/library/firebase-studio.svg',
     url: 'https://firebase.studio/'
+  },
+  {
+    title: 'HeroUI',
+    category: 'Library',
+    route: {
+      light: '/library/heroui_black.svg',
+      dark: '/library/heroui_light.svg'
+    },
+    url: 'https://www.heroui.com/'
   }
 ];
