@@ -1,6 +1,13 @@
-import type { iSVG } from '@/types/svg';
+import { C } from '@upstash/redis/zmscore-uDFFyCiZ';
 
 export const svgs: iSVG[] = [
+  {
+    title: 'FFmpeg',
+    category: 'Software',
+    route: '/library/ffmpeg.svg',
+    url: 'https://ffmpeg.org/',
+    brandUrl: 'https://ffmpeg.org/legal.html'
+  },
   {
     title: 'Windsurf',
     category: ['Software', 'AI'],
