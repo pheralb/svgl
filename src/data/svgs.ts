@@ -3254,6 +3254,12 @@ export const svgs: iSVG[] = [
     url: 'https://learn.microsoft.com/en-us/windows/powertoys/'
   },
   {
+    title: 'PowerShell',
+    category: 'Language',
+    route: '/library/powershell.svg',
+    url: 'https://learn.microsoft.com/en-us/powershell/'
+  },
+  {
     title: 'Lottielab',
     category: 'Design',
     route: '/library/lottielab.svg',
