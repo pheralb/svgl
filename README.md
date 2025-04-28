@@ -60,6 +60,7 @@ A list of extensions that use the [svgl API](https://svgl.app/api), created by t
 | <img src="https://github.com/pheralb/svgl/blob/main/static/library/vscode.svg" height="25" />              | SVGL for VSCode    | SVGL directly in your VSCode.                                  | [girlazote](https://twitter.com/girlazote)             | [VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=EsteveSegura.svgl)      |
 | <img src="https://svgl-badge.vercel.app/api/Library/Svgl?theme=light" height="25" />                       | SVGL Badge         | A beautiful badges with svgl SVG logos.                        | [ridemountainpig](https://twitter.com/ridemountainpig) | [Website](https://svgl-badge.vercel.app/)                                                        |
 | <img src="https://github.com/serafimcloud/21st/blob/main/apps/web/public/icon.png?raw=true" height="25" /> | Magic              | AI extension for Cursor & other IDEs                           | [serafimcloud](https://x.com/serafimcloud)             | [Website](https://21st.dev/magic)                                                                |
+| <img src="" height="25" /> | SVGL for PowerShell | PowerShell extension to quickly get svgl logos anywhere       | [Bart Spaans](https://bsky.app/profile/bartspaans.bsky.social)             | [GitHub](https://github.com/spaansba/SVGL-PowerShell)         |
 
 ## 🛠️ Stack
 
