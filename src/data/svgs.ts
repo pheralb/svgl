@@ -195,6 +195,13 @@ export const svgs: iSVG[] = [
     brandUrl: 'https://vuetifyjs.com/en/resources/brand-kit/'
   },
   {
+    title: 'nginx',
+    category: 'Software',
+    route: '/library/nginx.svg',
+    url: 'https://nginx.org/',
+    brandUrl: 'https://nuxt.com/design-kit'
+  },
+  {
     title: 'Nuxt',
     category: 'Framework',
     route: '/library/nuxt.svg',
@@ -2442,7 +2449,12 @@ export const svgs: iSVG[] = [
       light: '/library/remix_light.svg',
       dark: '/library/remix_dark.svg'
     },
-    url: 'https://remix.run/'
+    wordmark: {
+      light: "/library/remix_wordmark_light.svg",
+      dark: "/library/remix_wordmark_dark.svg"
+    },
+    url: 'https://remix.run/',
+    brandUrl: 'https://remix.run/brand'
   },
   {
     title: 'Steam',
