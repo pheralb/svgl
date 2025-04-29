@@ -60,11 +60,11 @@ importers:
         specifier: 0.3.28
         version: 0.3.28(svelte@4.2.19)
       tailwind-merge:
-        specifier: 2.5.2
-        version: 2.5.2
+        specifier: 2.6.0
+        version: 2.6.0
       tailwind-variants:
-        specifier: 0.2.1
-        version: 0.2.1(tailwindcss@3.4.12)
+        specifier: 0.3.1
+        version: 0.3.1(tailwindcss@3.4.17)
     devDependencies:
       '@sveltejs/adapter-auto':
         specifier: 3.2.5
@@ -80,7 +80,7 @@ importers:
         version: 3.1.2(svelte@4.2.19)(vite@5.4.7(@types/node@22.5.5))
       '@tailwindcss/typography':
         specifier: 0.5.15
-        version: 0.5.15(tailwindcss@3.4.12)
+        version: 0.5.15(tailwindcss@3.4.17)
       '@types/downloadjs':
         specifier: 1.4.6
         version: 1.4.6
@@ -94,8 +94,8 @@ importers:
         specifier: 10.4.20
         version: 10.4.20(postcss@8.4.47)
       bits-ui:
-        specifier: 0.21.15
-        version: 0.21.15(svelte@4.2.19)
+        specifier: 0.22.0
+        version: 0.22.0(svelte@4.2.19)
       concurrently:
         specifier: 9.0.1
         version: 9.0.1
@@ -139,8 +139,8 @@ importers:
         specifier: 3.0.0
         version: 3.0.0(@sveltejs/kit@2.5.28(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.7(@types/node@22.5.5)))(svelte@4.2.19)(vite@5.4.7(@types/node@22.5.5)))(svelte@4.2.19)(vite@5.4.7(@types/node@22.5.5))
       tailwindcss:
-        specifier: 3.4.12
-        version: 3.4.12
+        specifier: 3.4.17
+        version: 3.4.17
       tslib:
         specifier: 2.7.0
         version: 2.7.0
@@ -1093,10 +1093,10 @@ packages:
     resolution: {integrity: sha512-Ceh+7ox5qe7LJuLHoY0feh3pHuUDHAcRUeyL2VYghZwfpkNIy/+8Ocg0a3UuSoYzavmylwuLWQOf3hl0jjMMIw==}
     engines: {node: '>=8'}
 
-  bits-ui@0.21.15:
-    resolution: {integrity: sha512-+m5WSpJnFdCcNdXSTIVC1WYBozipO03qRh03GFWgrdxoHiolCfwW71EYG4LPCWYPG6KcTZV0Cj6iHSiZ7cdKdg==}
+  bits-ui@0.22.0:
+    resolution: {integrity: sha512-r7Fw1HNgA4YxZBRcozl7oP0bheQ8EHh+kfMBZJgyFISix8t4p/nqDcHLmBgIiJ3T5XjYnJRorYDjIWaCfhb5fw==}
     peerDependencies:
-      svelte: ^4.0.0 || ^5.0.0-next.118
+      svelte: ^4.0.0 || ^5.0.0
 
   brace-expansion@1.1.11:
     resolution: {integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==}
@@ -2412,17 +2412,20 @@ packages:
   tabbable@6.2.0:
     resolution: {integrity: sha512-Cat63mxsVJlzYvN51JmVXIgNoUokrIaT2zLclCXjRd8boZ0004U4KCs/sToJ75C6sdlByWxpYnb5Boif1VSFew==}
 
-  tailwind-merge@2.5.2:
-    resolution: {integrity: sha512-kjEBm+pvD+6eAwzJL2Bi+02/9LFLal1Gs61+QB7HvTfQQ0aXwC5LGT8PEt1gS0CWKktKe6ysPTAy3cBC5MeiIg==}
+  tailwind-merge@2.5.4:
+    resolution: {integrity: sha512-0q8cfZHMu9nuYP/b5Shb7Y7Sh1B7Nnl5GqNr1U+n2p6+mybvRtayrQ+0042Z5byvTA8ihjlP8Odo8/VnHbZu4Q==}
 
-  tailwind-variants@0.2.1:
-    resolution: {integrity: sha512-2xmhAf4UIc3PijOUcJPA1LP4AbxhpcHuHM2C26xM0k81r0maAO6uoUSHl3APmvHZcY5cZCY/bYuJdfFa4eGoaw==}
+  tailwind-merge@2.6.0:
+    resolution: {integrity: sha512-P+Vu1qXfzediirmHOC3xKGAYeZtPcV9g76X+xg2FD4tYgR71ewMA35Y3sCz3zhiN/dwefRpJX0yBcgwi1fXNQA==}
+
+  tailwind-variants@0.3.1:
+    resolution: {integrity: sha512-krn67M3FpPwElg4FsZrOQd0U26o7UDH/QOkK8RNaiCCrr052f6YJPBUfNKnPo/s/xRzNPtv1Mldlxsg8Tb46BQ==}
     engines: {node: '>=16.x', pnpm: '>=7.x'}
     peerDependencies:
       tailwindcss: '*'
 
-  tailwindcss@3.4.12:
-    resolution: {integrity: sha512-Htf/gHj2+soPb9UayUNci/Ja3d8pTmu9ONTfh4QY8r3MATTZOzmv6UYWF7ZwikEIC8okpfqmGqrmDehua8mF8w==}
+  tailwindcss@3.4.17:
+    resolution: {integrity: sha512-w33E2aCvSDP0tW9RZuNXadXlkHXqFzSkQew/aIa2i/Sj8fThxwovwlXHSPXTbAHwEIhBFXAedUhP2tueAKP8Og==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -3319,13 +3322,13 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  '@tailwindcss/typography@0.5.15(tailwindcss@3.4.12)':
+  '@tailwindcss/typography@0.5.15(tailwindcss@3.4.17)':
     dependencies:
       lodash.castarray: 4.4.0
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       postcss-selector-parser: 6.0.10
-      tailwindcss: 3.4.12
+      tailwindcss: 3.4.17
 
   '@types/cookie@0.6.0': {}
 
@@ -3559,7 +3562,7 @@ snapshots:
 
   binary-extensions@2.3.0: {}
 
-  bits-ui@0.21.15(svelte@4.2.19):
+  bits-ui@0.22.0(svelte@4.2.19):
     dependencies:
       '@internationalized/date': 3.7.0
       '@melt-ui/svelte': 0.76.2(svelte@4.2.19)
@@ -5089,14 +5092,16 @@ snapshots:
 
   tabbable@6.2.0: {}
 
-  tailwind-merge@2.5.2: {}
+  tailwind-merge@2.5.4: {}
 
-  tailwind-variants@0.2.1(tailwindcss@3.4.12):
+  tailwind-merge@2.6.0: {}
+
+  tailwind-variants@0.3.1(tailwindcss@3.4.17):
     dependencies:
-      tailwind-merge: 2.5.2
-      tailwindcss: 3.4.12
+      tailwind-merge: 2.5.4
+      tailwindcss: 3.4.17
 
-  tailwindcss@3.4.12:
+  tailwindcss@3.4.17:
     dependencies:
       '@alloc/quick-lru': 5.2.0
       arg: 5.0.2
@@ -5107,7 +5112,7 @@ snapshots:
       glob-parent: 6.0.2
       is-glob: 4.0.3
       jiti: 1.21.7
-      lilconfig: 2.1.0
+      lilconfig: 3.1.3
       micromatch: 4.0.8
       normalize-path: 3.0.0
       object-hash: 3.0.0
