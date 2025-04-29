@@ -2443,8 +2443,8 @@ export const svgs: iSVG[] = [
       dark: '/library/remix_dark.svg'
     },
     wordmark: {
-      light: "/library/remix_wordmark_light.svg",
-      dark: "/library/remix_wordmark_dark.svg"
+      light: '/library/remix_wordmark_light.svg',
+      dark: '/library/remix_wordmark_dark.svg'
     },
     url: 'https://remix.run/',
     brandUrl: 'https://remix.run/brand'
@@ -3196,15 +3196,6 @@ export const svgs: iSVG[] = [
     url: 'https://soundcloud.com/'
   },
   {
-    title: 'Clerk',
-    category: ['Software', 'Authentication'],
-    route: {
-      light: '/library/clerk-light.svg',
-      dark: '/library/clerk-dark.svg'
-    },
-    url: 'https://clerk.com/'
-  },
-  {
     title: 'Mermaid',
     category: ['Library'],
     route: {
@@ -3585,5 +3576,19 @@ export const svgs: iSVG[] = [
       dark: '/library/convex_wordmark_dark.svg'
     },
     url: 'https://www.convex.dev/'
+  },
+  {
+    title: 'Clerk',
+    category: ['Software', 'Authentication'],
+    route: {
+      light: '/library/clerk-light.svg',
+      dark: '/library/clerk-dark.svg'
+    },
+    wordmark: {
+      light: '/library/clerk-wordmark-light.svg',
+      dark: '/library/clerk-wordmark-dark.svg'
+    },
+    url: 'https://clerk.com/',
+    brandUrl: 'https://clerk.com/design'
   }
 ];
