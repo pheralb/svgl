@@ -2442,7 +2442,12 @@ export const svgs: iSVG[] = [
       light: '/library/remix_light.svg',
       dark: '/library/remix_dark.svg'
     },
-    url: 'https://remix.run/'
+    wordmark: {
+      light: "/library/remix_wordmark_light.svg",
+      dark: "/library/remix_wordmark_dark.svg"
+    },
+    url: 'https://remix.run/',
+    brandUrl: 'https://remix.run/brand'
   },
   {
     title: 'Steam',
