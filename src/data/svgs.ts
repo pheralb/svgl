@@ -3564,5 +3564,15 @@ export const svgs: iSVG[] = [
       dark: '/library/heroui_light.svg'
     },
     url: 'https://www.heroui.com/'
+  },
+  {
+    title: 'Convex',
+    category: ['Database', 'Software'],
+    route: '/library/convex.svg',
+    wordmark: {
+      light: '/library/convex_wordmark_light.svg',
+      dark: '/library/convex_wordmark_dark.svg'
+    },
+    url: 'https://www.convex.dev/'
   }
 ];
