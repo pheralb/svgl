@@ -3575,5 +3575,14 @@ export const svgs: iSVG[] = [
       dark: '/library/heroui_light.svg'
     },
     url: 'https://www.heroui.com/'
+  },
+  {
+    title: 'Anchorpoint',
+    category: ['Software'],
+    route: {
+      light: '/library/anchorpoint_dark.svg',
+      dark: '/library/anchorpoint_light.svg'
+    },
+    url: 'https://www.anchorpoint.app/'
   }
 ];
