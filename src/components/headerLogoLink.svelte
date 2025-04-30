@@ -48,7 +48,7 @@
     </ContextMenu.Item>
     <ContextMenu.Item disabled class="font-mono">
       <StarsIcon size={16} strokeWidth={1.5} />
-      <span>v4.6</span>
+      <span>v4.6.1</span>
     </ContextMenu.Item>
   </ContextMenu.Content>
 </ContextMenu.Root>

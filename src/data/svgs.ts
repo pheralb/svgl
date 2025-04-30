@@ -2442,7 +2442,12 @@ export const svgs: iSVG[] = [
       light: '/library/remix_light.svg',
       dark: '/library/remix_dark.svg'
     },
-    url: 'https://remix.run/'
+    wordmark: {
+      light: '/library/remix_wordmark_light.svg',
+      dark: '/library/remix_wordmark_dark.svg'
+    },
+    url: 'https://remix.run/',
+    brandUrl: 'https://remix.run/brand'
   },
   {
     title: 'Steam',
@@ -3191,15 +3196,6 @@ export const svgs: iSVG[] = [
     url: 'https://soundcloud.com/'
   },
   {
-    title: 'Clerk',
-    category: ['Software', 'Authentication'],
-    route: {
-      light: '/library/clerk-light.svg',
-      dark: '/library/clerk-dark.svg'
-    },
-    url: 'https://clerk.com/'
-  },
-  {
     title: 'Mermaid',
     category: ['Library'],
     route: {
@@ -3252,6 +3248,12 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/powertoys.svg',
     url: 'https://learn.microsoft.com/en-us/windows/powertoys/'
+  },
+  {
+    title: 'PowerShell',
+    category: 'Language',
+    route: '/library/powershell.svg',
+    url: 'https://learn.microsoft.com/en-us/powershell/'
   },
   {
     title: 'Lottielab',
@@ -3618,6 +3620,39 @@ export const svgs: iSVG[] = [
     category: ['AI', 'Google'],
     route: '/library/firebase-studio.svg',
     url: 'https://firebase.studio/'
+  },
+  {
+    title: 'HeroUI',
+    category: 'Library',
+    route: {
+      light: '/library/heroui_black.svg',
+      dark: '/library/heroui_light.svg'
+    },
+    url: 'https://www.heroui.com/'
+  },
+  {
+    title: 'Convex',
+    category: ['Database', 'Software'],
+    route: '/library/convex.svg',
+    wordmark: {
+      light: '/library/convex_wordmark_light.svg',
+      dark: '/library/convex_wordmark_dark.svg'
+    },
+    url: 'https://www.convex.dev/'
+  },
+  {
+    title: 'Clerk',
+    category: ['Software', 'Authentication'],
+    route: {
+      light: '/library/clerk-light.svg',
+      dark: '/library/clerk-dark.svg'
+    },
+    wordmark: {
+      light: '/library/clerk-wordmark-light.svg',
+      dark: '/library/clerk-wordmark-dark.svg'
+    },
+    url: 'https://clerk.com/',
+    brandUrl: 'https://clerk.com/design'
   }
 
 ];
