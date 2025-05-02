@@ -3590,5 +3590,12 @@ export const svgs: iSVG[] = [
     },
     url: 'https://clerk.com/',
     brandUrl: 'https://clerk.com/design'
+  },
+  {
+    title: 'Terraform',
+    category: ['Software', 'Language', 'IaC'],
+    route: 'library/terraform.svg',
+    url: 'https://terraform.io',
+    brandUrl: 'https://brand.hashicorp.com'
   }
 ];
