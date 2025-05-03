@@ -3590,5 +3590,28 @@ export const svgs: iSVG[] = [
     },
     url: 'https://clerk.com/',
     brandUrl: 'https://clerk.com/design'
+  },
+  {
+    title: 'Concord',
+    category: ['AI', 'Privacy', 'Software'],
+    route: {
+      light: '/library/concord_logo_light.svg',
+      dark: '/library/concord_logo_dark.svg'
+    },
+    wordmark: {
+      light: '/library/concord_wordmark_light.svg',
+      dark: '/library/concord_wordmark_dark.svg'
+    },
+    url: 'https://concord.tech'
+  },
+  {
+    title: 'Logspot',
+    category: ['AI', 'Analytics', 'Privacy', 'Software'],
+    route: {
+      light: '/library/logspot_logo_light.svg',
+      dark: '/library/logspot_logo_dark.svg'
+    },
+    wordmark: '/library/logspot_wordmark.svg',
+    url: 'https://logspot.io'
   }
 ];
