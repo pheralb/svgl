@@ -3370,6 +3370,17 @@ export const svgs: iSVG[] = [
     url: 'https://vercel.com/'
   },
   {
+    title: 'Planning Center',
+    category: 'Software',
+    route: '/library/planning-center.svg',
+    wordmark: {
+      light: '/library/planning-center-wordmark-light.svg',
+      dark: '/library/planning-center-wordmark-dark.svg'
+    },
+    brandUrl: 'https://www.planningcenter.com/logos',
+    url: 'https://www.planningcenter.com/'
+  },
+  {
     title: 'Socket.io',
     category: 'Software',
     route: {
