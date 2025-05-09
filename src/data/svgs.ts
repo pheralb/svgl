@@ -8,6 +8,15 @@ export const svgs: iSVG[] = [
     url: 'https://codeium.com/windsurf'
   },
   {
+    title: 'Inngest',
+    category: 'Software',
+    route: {
+      light: '/library/inngest-light.svg',
+      dark: '/library/inngest-dark.svg'
+    },
+    url: 'https://inngest.com/'
+  },
+  {
     title: 'daisyUI',
     category: 'Library',
     route: '/library/daisyui.svg',
