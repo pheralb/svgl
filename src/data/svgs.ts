@@ -3548,6 +3548,55 @@ export const svgs: iSVG[] = [
     url: 'https://buymeacoffee.com/'
   },
   {
+    title: 'apache kafka',
+    category: ['Software'],
+    route: {
+      light: '/library/kafka-icon.svg',
+      dark: '/library/kafka-icon-light.svg'
+    },
+    wordmark: {
+       light: '/library/kafka-2.svg',
+      dark: '/library/kafka-2-light.svg'
+    },
+    brandUrl: 'https://kafka.apache.org/downloads',
+    url: 'https://kafka.apache.org/'
+  },
+  {
+    title: 'Apache',
+    category: ['Software'],
+    route: '/library/apache.svg',
+    brandUrl: 'https://httpd.apache.org/',
+    url: 'https://httpd.apache.org/'
+  },
+  {
+    title: 'NGINX',
+    category: ['Software','Web Server'],
+    route: '/library/nginx-logo.svg',
+    brandUrl: 'https://nginx.org/en/',
+    url: 'https://nginx.org/en/download.html'
+  },
+  {
+    title: 'NGINX 16',
+    category: ['Software'],
+    route: '/library/nginx-16.svg',
+    brandUrl: 'https://nginx.org/en/',
+    url: 'https://nginx.org/en/download.html'
+  },
+  {
+    title: 'Scylla DB',
+    category: ['Software','Database'],
+    route: '/library/scylladb.svg',
+    brandUrl: 'https://www.scylladb.com/',
+    url: 'https://www.scylladb.com/'
+  },
+  {
+    title: 'JetBrains Goland',
+    category: 'Software',
+    route: '/library/GoLand.svg',
+    brandUrl: 'https://www.jetbrains.com/',
+    url: 'https://www.jetbrains.com/go/'
+  },
+   {
     title: 'GitHub',
     category: 'Software',
     route: {
@@ -3560,6 +3609,20 @@ export const svgs: iSVG[] = [
     },
     url: 'https://github.com/',
     brandUrl: 'https://brand.github.com/'
+   },
+   {
+    title: 'Terraform',
+    category: 'Software',
+    route: {
+      light: '/library/terraform-icon.svg',
+      dark: '/library/terraform-dark.svg'
+    },
+    wordmark: {
+      light: '/library/terraform-with-text.svg',
+      dark: '/library/terraform-with-text.svg'
+    },
+    url: 'https://www.hashicorp.com/products/terraform',
+    brandUrl: 'https://www.hashicorp.com/brand'
   },
   {
     title: 'Firebase Studio',
@@ -3600,4 +3663,5 @@ export const svgs: iSVG[] = [
     url: 'https://clerk.com/',
     brandUrl: 'https://clerk.com/design'
   }
+
 ];
