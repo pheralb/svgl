@@ -3612,7 +3612,7 @@ export const svgs: iSVG[] = [
   {
     title: 'Terraform',
     category: ['Software', 'Language', 'IaC'],
-    route: 'library/terraform.svg',
+    route: '/library/terraform.svg',
     url: 'https://terraform.io',
     brandUrl: 'https://brand.hashicorp.com'
   }

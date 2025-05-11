@@ -30,4 +30,4 @@ export type tCategory =
   | 'IoT'
   | 'Config'
   | 'Secrets'
-  | 'Iac';
+  | 'IaC';
