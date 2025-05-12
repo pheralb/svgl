@@ -21,6 +21,15 @@ export const svgs: iSVG[] = [
     url: 'https://codeium.com/windsurf'
   },
   {
+    title: 'Mattermost',
+    category: 'Software',
+    "route": {
+    "light": "/library/mattermost-light.svg",
+    "dark": "/library/mattermost-dark.svg"
+    },
+    url: 'http://mattermost.com/'
+  },
+  {
     title: 'Inngest',
     category: 'Software',
     route: {
@@ -3612,5 +3621,12 @@ export const svgs: iSVG[] = [
     },
     url: 'https://clerk.com/',
     brandUrl: 'https://clerk.com/design'
+  },
+  {
+    title: 'Terraform',
+    category: ['Software', 'Language', 'IaC'],
+    route: '/library/terraform.svg',
+    url: 'https://terraform.io',
+    brandUrl: 'https://brand.hashicorp.com'
   }
 ];
