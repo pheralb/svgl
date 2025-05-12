@@ -40,6 +40,7 @@
   },
   "dependencies": {
     "@figma/plugin-typings": "1.100.2",
+    "@pheralb/svgl": "file:",
     "@svelte-dev/pretty-code": "1.0.0",
     "@svgr/core": "8.1.0",
     "@svgr/plugin-jsx": "8.1.0",
