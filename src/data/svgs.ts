@@ -419,6 +419,12 @@ export const svgs: iSVG[] = [
     url: 'https://angular.dev/',
     brandUrl: 'https://angular.dev/press-kit'
   },
+  { 
+    title: 'jsPlumb Toolkit',
+    category: 'Library',
+    route: '/library/jsplumb.svg',
+    url: 'https://jsplumbtoolkit.com/'
+  },
   {
     title: 'Blitz',
     category: 'Framework',
