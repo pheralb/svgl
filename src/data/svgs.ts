@@ -2,6 +2,19 @@ import type { iSVG } from '@/types/svg';
 
 export const svgs: iSVG[] = [
   {
+    title: 'Perspective',
+    category: 'Software',
+    route: {
+      light: '/library/perspective-light.svg',
+      dark: '/library/perspective-dark.svg'
+    },
+    wordmark: {
+      light: '/library/perspective-wordmark-light.svg',
+      dark: '/library/perspective-wordmark-dark.svg'
+    },
+    url: 'https://perspective.co/'
+  },
+  {
     title: 'Windsurf',
     category: ['Software', 'AI'],
     route: '/library/windsurf-logo.svg',
