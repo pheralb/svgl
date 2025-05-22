@@ -23,9 +23,9 @@ export const svgs: iSVG[] = [
   {
     title: 'Mattermost',
     category: 'Software',
-    "route": {
-    "light": "/library/mattermost-light.svg",
-    "dark": "/library/mattermost-dark.svg"
+    route: {
+      light: '/library/mattermost-light.svg',
+      dark: '/library/mattermost-dark.svg'
     },
     url: 'http://mattermost.com/'
   },
@@ -509,6 +509,15 @@ export const svgs: iSVG[] = [
     category: 'Social',
     route: '/library/telegram.svg',
     url: 'https://web.telegram.org/'
+  },
+  {
+    title: 'Matrix',
+    category: 'Social',
+    route: {
+      light: '/library/matrix-light.svg',
+      dark: '/library/matrix-dark.svg'
+    },
+    url: 'https://matrix.org/'
   },
   {
     title: 'WhatsApp',
