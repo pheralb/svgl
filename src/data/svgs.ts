@@ -2371,6 +2371,12 @@ export const svgs: iSVG[] = [
     url: 'https://raycast.com/'
   },
   {
+    title: 'Flow Launcher',
+    category: ['Software','Devtool'],
+    route: '/library/FlowLauncher.svg',
+    url: 'https://www.flowlauncher.com/'
+  },
+  {
     title: 'Hack The Box',
     category: 'Cybersecurity',
     route: '/library/hack-the-box.svg',
