@@ -3637,5 +3637,11 @@ export const svgs: iSVG[] = [
     route: '/library/terraform.svg',
     url: 'https://terraform.io',
     brandUrl: 'https://brand.hashicorp.com'
+  },
+  {
+    title: 'Thena',
+    category: 'AI Customer Support',
+    route: '/library/thena.svg',
+    url: 'https://www.thena.ai'
   }
 ];
