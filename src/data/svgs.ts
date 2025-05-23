@@ -3572,6 +3572,19 @@ export const svgs: iSVG[] = [
     url: 'https://www.better-auth.com/'
   },
   {
+    title: 'OnlyNv',
+    category: ['Software'],
+    route: {
+      light: '/library/onlynv-icon-light.svg',
+      dark: '/library/onlynv-icon-dark.svg'
+    },
+    wordmark: {
+      light: '/library/onlynv-wordmark-light.svg',
+      dark: '/library/onlynv-wordmark-dark.svg'
+    },
+    url: 'https://onlynv.dev'
+  },
+  {
     title: 'Buy Me a Coffee',
     category: ['Software'],
     route: '/library/bmc.svg',
