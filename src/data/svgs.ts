@@ -58,6 +58,12 @@ export const svgs: iSVG[] = [
     url: 'https://www.google.com/drive/'
   },
   {
+    title: 'Kamero',
+    category: 'Software',
+    route: '/library/kamero.svg',
+    url: 'https://kamero.ai'
+  },
+  {
     title: 'Milanote',
     category: 'Software',
     route: {
