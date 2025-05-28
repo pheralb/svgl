@@ -2,10 +2,32 @@ import type { iSVG } from '@/types/svg';
 
 export const svgs: iSVG[] = [
   {
+    title: 'Perspective',
+    category: 'Software',
+    route: {
+      light: '/library/perspective-light.svg',
+      dark: '/library/perspective-dark.svg'
+    },
+    wordmark: {
+      light: '/library/perspective-wordmark-light.svg',
+      dark: '/library/perspective-wordmark-dark.svg'
+    },
+    url: 'https://perspective.co/'
+  },
+  {
     title: 'Windsurf',
     category: ['Software', 'AI'],
     route: '/library/windsurf-logo.svg',
     url: 'https://codeium.com/windsurf'
+  },
+  {
+    title: 'Mattermost',
+    category: 'Software',
+    route: {
+      light: '/library/mattermost-light.svg',
+      dark: '/library/mattermost-dark.svg'
+    },
+    url: 'http://mattermost.com/'
   },
   {
     title: 'Inngest',
@@ -487,6 +509,15 @@ export const svgs: iSVG[] = [
     category: 'Social',
     route: '/library/telegram.svg',
     url: 'https://web.telegram.org/'
+  },
+  {
+    title: 'Matrix',
+    category: 'Social',
+    route: {
+      light: '/library/matrix-light.svg',
+      dark: '/library/matrix-dark.svg'
+    },
+    url: 'https://matrix.org/'
   },
   {
     title: 'WhatsApp',
@@ -3662,6 +3693,13 @@ export const svgs: iSVG[] = [
     },
     url: 'https://clerk.com/',
     brandUrl: 'https://clerk.com/design'
+  },
+  {
+    title: 'Terraform',
+    category: ['Software', 'Language', 'IaC'],
+    route: '/library/terraform.svg',
+    url: 'https://terraform.io',
+    brandUrl: 'https://brand.hashicorp.com'
   }
 
 ];
