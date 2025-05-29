@@ -3656,5 +3656,11 @@ export const svgs: iSVG[] = [
     route: '/library/terraform.svg',
     url: 'https://terraform.io',
     brandUrl: 'https://brand.hashicorp.com'
+  },
+  {
+    title: 'Plex',
+    category: ['Software'],
+    route: '/library/plex.svg',
+    url: 'https://www.plex.tv'
   }
 ];
