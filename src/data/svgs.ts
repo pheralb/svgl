@@ -3401,6 +3401,19 @@ export const svgs: iSVG[] = [
     url: 'https://vercel.com/'
   },
   {
+    title: 'Model Context Protocol',
+    category: ['AI', 'Framework'],
+    route: {
+      light: '/library/model-context-protocol-light.svg',
+      dark: '/library/model-context-protocol-dark.svg'
+    },
+    wordmark: {
+      light: '/library/model-context-protocol-wordmark-light.svg',
+      dark: '/library/model-context-protocol-wordmark-dark.svg'
+    },
+    url: 'https://modelcontextprotocol.io/'
+  },
+  {
     title: 'Socket.io',
     category: 'Software',
     route: {
