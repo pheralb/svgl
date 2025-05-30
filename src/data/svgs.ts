@@ -3656,5 +3656,19 @@ export const svgs: iSVG[] = [
     route: '/library/terraform.svg',
     url: 'https://terraform.io',
     brandUrl: 'https://brand.hashicorp.com'
+  },
+  {
+    title: 'Aternos',
+    category: ['Hosting', 'Software'],
+    "route": {
+      "light": "/library/aternos-light.svg",
+      "dark": "/library/aternos-dark.svg"
+    },
+    "wordmark": {
+      "light": "/library/aternos-wordmark-light.svg",
+      "dark": "/library/aternos-wordmark-dark.svg"
+    },
+    url: 'https://aternos.org/',
+    brandUrl: 'https://aternos.gmbh/en/branding'
   }
 ];
