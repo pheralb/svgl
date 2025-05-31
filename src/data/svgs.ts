@@ -3656,5 +3656,14 @@ export const svgs: iSVG[] = [
     route: '/library/terraform.svg',
     url: 'https://terraform.io',
     brandUrl: 'https://brand.hashicorp.com'
+  },
+  {
+    title: 'Lynx',
+    category: "Framework",
+    route: {
+      light: '/library/lynx-light.svg',
+      dark: '/library/lynx-dark.svg'
+    },
+    url: 'https://lynxjs.org'
   }
 ];
