@@ -3656,5 +3656,17 @@ export const svgs: iSVG[] = [
     route: '/library/terraform.svg',
     url: 'https://terraform.io',
     brandUrl: 'https://brand.hashicorp.com'
+  },
+  {
+    title: 'Rspack',
+    category: 'Compiler',
+    route: '/library/rspack.svg',
+    url: 'https://rspack.rs/'
+  },
+  {
+    title: 'Rsbuild',
+    category: ['Devtool', 'Compiler'],
+    route: '/library/rsbuild.svg',
+    url: 'https://rsbuild.rs'
   }
 ];
