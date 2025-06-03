@@ -3670,6 +3670,15 @@ export const svgs: iSVG[] = [
     url: 'https://rsbuild.rs'
   },
   {
+    title: 'React Wheel Picker',
+    category: 'Library',
+    route: {
+      light: '/library/react-wheel-picker_light.svg',
+      dark: '/library/react-wheel-picker_dark.svg'
+    },
+    url: 'https://react-wheel-picker.chanhdai.com'
+  },
+  {
     title: 'ZaDark',
     category: 'Software',
     route: '/library/zadark.svg',
