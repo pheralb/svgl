@@ -3677,5 +3677,11 @@ export const svgs: iSVG[] = [
       dark: '/library/react-wheel-picker_dark.svg'
     },
     url: 'https://react-wheel-picker.chanhdai.com'
+  },
+  {
+    title: 'ZaDark',
+    category: 'Software',
+    route: '/library/zadark.svg',
+    url: 'https://zadark.com'
   }
 ];
