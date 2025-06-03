@@ -3668,5 +3668,11 @@ export const svgs: iSVG[] = [
     category: ['Devtool', 'Compiler'],
     route: '/library/rsbuild.svg',
     url: 'https://rsbuild.rs'
+  },
+  {
+    title: 'ZaDark',
+    category: 'Software',
+    route: '/library/zadark.svg',
+    url: 'https://zadark.com'
   }
 ];
