@@ -2372,7 +2372,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Flow Launcher',
-    category: ['Software','Devtool'],
+    category: ['Software', 'Devtool'],
     route: '/library/FlowLauncher.svg',
     url: 'https://www.flowlauncher.com/'
   },
@@ -3677,5 +3677,12 @@ export const svgs: iSVG[] = [
       dark: '/library/react-wheel-picker_dark.svg'
     },
     url: 'https://react-wheel-picker.chanhdai.com'
+  },
+  {
+    title: 'Lovable',
+    category: 'AI',
+    route: '/library/lovable.svg',
+    url: 'https://lovable.dev/',
+    brandUrl: 'https://lovable.dev/brand'
   }
 ];
