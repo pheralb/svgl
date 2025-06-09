@@ -3684,5 +3684,12 @@ export const svgs: iSVG[] = [
     route: '/library/lovable.svg',
     url: 'https://lovable.dev/',
     brandUrl: 'https://lovable.dev/brand'
+  },
+  {
+    title: 'Subnoto',
+    category: 'Software',
+    route: '/library/subnoto.svg',
+    wordmark: '/library/subnoto-wordmark.svg',
+    url: 'https://subnoto.com/'
   }
 ];
