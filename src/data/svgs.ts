@@ -3679,6 +3679,14 @@ export const svgs: iSVG[] = [
     url: 'https://react-wheel-picker.chanhdai.com'
   },
   {
+    title: 'cPanel',
+    category: 'Software',
+    route: '/library/cP_orange.svg',
+    wordmark: '/library/cPanel_orange_wordmark.svg',
+    url: 'https://cpanel.net/',
+    brandUrl: 'https://cpanel.net/company/cpanel-brand-guide/'
+  },
+  {
     title: 'Lovable',
     category: 'AI',
     route: '/library/lovable.svg',
