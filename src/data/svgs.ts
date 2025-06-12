@@ -3698,7 +3698,7 @@ export const svgs: iSVG[] = [
     category: 'AI',
     route: {
       light: '/library/mocha-light.svg',
-      dark: '/library/mocha_dark.svg'
+      dark: '/library/mocha-dark.svg'
     },
     wordmark: {
       light: '/library/mocha-light_wordmark.svg',
