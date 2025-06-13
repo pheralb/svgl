@@ -58,6 +58,12 @@ export const svgs: iSVG[] = [
     url: 'https://www.google.com/drive/'
   },
   {
+    title: 'UV',
+    category: 'Devtool',
+    route: '/library/uv.svg',
+    url: 'https://docs.astral.sh/uv/'
+  },
+  {
     title: 'Milanote',
     category: 'Software',
     route: {
