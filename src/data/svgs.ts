@@ -3692,5 +3692,18 @@ export const svgs: iSVG[] = [
     route: '/library/lovable.svg',
     url: 'https://lovable.dev/',
     brandUrl: 'https://lovable.dev/brand'
+  },
+  {
+    title: 'Mocha',
+    category: 'AI',
+    route: {
+      light: '/library/mocha-light.svg',
+      dark: '/library/mocha-dark.svg'
+    },
+    wordmark: {
+      light: '/library/mocha-light_wordmark.svg',
+      dark: '/library/mocha-dark_wordmark.svg'
+    },
+    url: 'https://getmocha.com/'
   }
 ];
