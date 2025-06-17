@@ -3711,5 +3711,13 @@ export const svgs: iSVG[] = [
       dark: '/library/mocha-dark_wordmark.svg'
     },
     url: 'https://getmocha.com/'
+  },
+  {
+    title: 'Node-Red',
+    category: ['Devtool', 'Software'],
+    route: '/library/node-red.svg',
+    wordmark: '/library/node-red_wordmark.svg',
+    brandUrl: 'https://nodered.org/about/resources/',
+    url: 'https://nodered.org/'
   }
 ];
