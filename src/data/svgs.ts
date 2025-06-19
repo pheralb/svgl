@@ -3692,5 +3692,14 @@ export const svgs: iSVG[] = [
     route: '/library/lovable.svg',
     url: 'https://lovable.dev/',
     brandUrl: 'https://lovable.dev/brand'
+  },
+  {
+    title: 'OpenRouter',
+    category: 'AI',
+    route: {
+      light: '/library/openrouter_light.svg',
+      dark: '/library/openrouter_dark.svg'
+    },
+    url: 'https://openrouter.ai/'
   }
 ];
