@@ -3143,6 +3143,12 @@ export const svgs: iSVG[] = [
     url: 'https://claude.ai/'
   },
   {
+    title: 'CleanShot X',
+    category: 'Software',
+    route: '/library/cleanshot-x.svg',
+    url: 'https://cleanshot.com/'
+  },
+  {
     title: 'UnoCSS',
     category: 'Devtool',
     route: '/library/unocss.svg',
