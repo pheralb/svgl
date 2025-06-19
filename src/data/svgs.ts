@@ -58,6 +58,12 @@ export const svgs: iSVG[] = [
     url: 'https://www.google.com/drive/'
   },
   {
+    title: 'UV',
+    category: 'Devtool',
+    route: '/library/uv.svg',
+    url: 'https://docs.astral.sh/uv/'
+  },
+  {
     title: 'Milanote',
     category: 'Software',
     route: {
@@ -3692,6 +3698,19 @@ export const svgs: iSVG[] = [
     route: '/library/lovable.svg',
     url: 'https://lovable.dev/',
     brandUrl: 'https://lovable.dev/brand'
+  },
+  {
+    title: 'Mocha',
+    category: 'AI',
+    route: {
+      light: '/library/mocha-light.svg',
+      dark: '/library/mocha-dark.svg'
+    },
+    wordmark: {
+      light: '/library/mocha-light_wordmark.svg',
+      dark: '/library/mocha-dark_wordmark.svg'
+    },
+    url: 'https://getmocha.com/'
   },
   {
     title: 'OpenRouter',
