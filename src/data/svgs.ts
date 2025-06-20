@@ -3154,7 +3154,7 @@ export const svgs: iSVG[] = [
     route: '/library/trpc.svg',
     wordmark: {
       light: '/library/trpc_wordmark_light.svg',
-      dark: 'library/trpc_wordmark_dark.svg'
+      dark: '/library/trpc_wordmark_dark.svg'
     },
     url: 'https://trpc.io/'
   },
@@ -3243,7 +3243,7 @@ export const svgs: iSVG[] = [
     },
     wordmark: {
       light: '/library/soundcloud-wordmark.svg',
-      dark: 'library/soundcloud-wordmark_dark.svg'
+      dark: '/library/soundcloud-wordmark_dark.svg'
     },
     url: 'https://soundcloud.com/'
   },
