@@ -2,6 +2,13 @@ import type { iSVG } from '@/types/svg';
 
 export const svgs: iSVG[] = [
   {
+    title: 'Arduino',
+    category: ['Software', 'Community', 'Education', 'IoT'],
+    route: '/library/arduino.svg',
+    wordmark: '/library/arduino_wordmark.svg',
+    url: 'https://www.arduino.cc/'
+  },
+  {
     title: 'Perspective',
     category: 'Software',
     route: {
