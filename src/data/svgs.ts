@@ -3720,5 +3720,14 @@ export const svgs: iSVG[] = [
       dark: '/library/openrouter_dark.svg'
     },
     url: 'https://openrouter.ai/'
+  },
+  {
+    title: 'Kokonut UI',
+    category: 'Library',
+    route: {
+      light: '/library/kokonutui-light.svg',
+      dark: '/library/kokonutui-dark.svg'
+    },
+    url: 'https://kokonutui.com/'
   }
 ];
