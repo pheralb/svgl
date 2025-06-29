@@ -1,7 +1,7 @@
 <div align="center">
-<a href="https://svgl.app">
-<img src="static/images/readme.png">
-</a>
+    <a href="https://svgl.app">
+       <img src="static/images/readme.png">
+    </a>
 <p></p>
 </div>
 
