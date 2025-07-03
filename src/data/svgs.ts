@@ -213,6 +213,12 @@ export const svgs: iSVG[] = [
     url: 'https://react.dev/'
   },
   {
+    title: 'React Cursor',
+    category: 'Library',
+    route: '/library/react_cursor.svg',
+    url: 'https://reactcursor.tech/'
+  },
+  {
     title: 'Svelte',
     category: 'Library',
     route: '/library/svelte.svg',
