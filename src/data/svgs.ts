@@ -3729,5 +3729,11 @@ export const svgs: iSVG[] = [
       dark: '/library/kokonutui-dark.svg'
     },
     url: 'https://kokonutui.com/'
-  }
+  },
+  {
+    title: 'Google Cloud',
+    category: ['Google', 'Hosting'],
+    route: '/library/google-cloud.svg',
+    url: 'https://cloud.google.com/'
+  },
 ];
