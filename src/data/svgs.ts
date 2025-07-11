@@ -2,6 +2,16 @@ import type { iSVG } from '@/types/svg';
 
 export const svgs: iSVG[] = [
   {
+    title: 'NVIDIA',
+    category: ['Hardware', 'Software', 'AI'],
+    route: {
+      light: '/library/nvidia.svg',
+      dark: '/library/nvidia_dark.svg'
+    },
+    url: 'https://www.nvidia.com/',
+    brandUrl: 'https://www.nvidia.com/en-us/about-nvidia/legal-info/logo-brand-usage/'
+  },
+  {
     title: 'Perspective',
     category: 'Software',
     route: {
