@@ -3722,6 +3722,12 @@ export const svgs: iSVG[] = [
     url: 'https://openrouter.ai/'
   },
   {
+    title: 'OpenHunts',
+    category: ['Platform', 'Community'],
+    route: '/library/openhunts.svg',
+    url: 'https://openhunts.com'
+  },
+  {
     title: 'Kokonut UI',
     category: 'Library',
     route: {
