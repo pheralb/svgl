@@ -58,6 +58,12 @@ export const svgs: iSVG[] = [
     url: 'https://www.google.com/drive/'
   },
   {
+    title: 'Amazon Q',
+    category: 'AI',
+    route: '/library/amazon-q.svg',
+    url: 'https://aws.amazon.com/q'
+  },
+  {
     title: 'UV',
     category: 'Devtool',
     route: '/library/uv.svg',
