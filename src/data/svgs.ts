@@ -3736,4 +3736,10 @@ export const svgs: iSVG[] = [
     route: '/library/google-cloud.svg',
     url: 'https://cloud.google.com/'
   },
+  {
+    title: "Edge-TTS",
+    category: "AI",
+    route: "/library/edge-tts.svg",
+    url: "https://edge-tts.com/"
+  }
 ];
