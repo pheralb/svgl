@@ -60,7 +60,7 @@ importers:
         specifier: 0.3.28
         version: 0.3.28(svelte@4.2.20)
       svgo:
-        specifier: ^4.0.0
+        specifier: 4.0.0
         version: 4.0.0
       tailwind-merge:
         specifier: 2.6.0
