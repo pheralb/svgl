@@ -17,6 +17,7 @@
   } from '@/ui/dialog';
   import { buttonStyles } from '@/ui/styles';
   import { cn } from '@/utils/cn';
+  import { getPrefixFromSvgUrl, prefixSvgIds } from '@/utils/prefixSvgIds';
 
   // Props:
   export let svgInfo: iSVG;
@@ -31,8 +32,14 @@
     'flex w-full h-full flex-col p-4 rounded-md shadow-sm dark:bg-neutral-800/20 bg-neutral-200/10 border border-neutral-200 dark:border-neutral-800 space-y-2';
 
   // Functions:
-  const downloadSvg = (url?: string) => {
-    download(url || '');
+  const downloadSvg = async (url?: string) => {
+    let content = await getSource({
+      url: url
+    });
+    if (url) {
+      content = prefixSvgIds(content, getPrefixFromSvgUrl(url));
+    }
+    download(content || '', url?.split('/').pop() || '', 'image/svg+xml');
 
     const category = Array.isArray(svgInfo.category)
       ? svgInfo.category.sort().join(' - ')
@@ -55,12 +62,21 @@
   }) => {
     const zip = new JSZip();
 
-    const lightSvg = await getSource({
+    let lightSvg = await getSource({
       url: lightRoute
     });
-    const darkSvg = await getSource({
+    let darkSvg = await getSource({
       url: darkRoute
     });
+
+    lightSvg = prefixSvgIds(
+      lightSvg,
+      svgInfo.title.toLowerCase() + (isWordmark ? '_wordmark_light' : '_light')
+    );
+    darkSvg = prefixSvgIds(
+      darkSvg,
+      svgInfo.title.toLowerCase() + (isWordmark ? '_wordmark_dark' : '_dark')
+    );
 
     if (isWordmark) {
       zip.file(`${svgInfo.title}_wordmark_light.svg`, lightSvg);
