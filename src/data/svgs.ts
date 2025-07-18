@@ -3749,4 +3749,22 @@ export const svgs: iSVG[] = [
     route: '/library/google-cloud.svg',
     url: 'https://cloud.google.com/'
   },
+  {
+    title: 'YourGPT',
+    category: ['AI', 'Software'],
+    route: {
+      light: '/library/yourgpt-icon-light.svg',
+      dark: '/library/yourgpt-icon-dark.svg'
+    },
+    url: 'https://yourgpt.ai/'
+  },
+  {
+    title: 'YourGPT Chatbot',
+    category: ['AI', 'Software'],
+    route: {
+      light: '/library/yourgpt-chatbot-icon-light.svg',
+      dark: '/library/yourgpt-chatbot-icon-dark.svg'
+    },
+    url: 'https://yourgpt.ai/'
+  },
 ];
