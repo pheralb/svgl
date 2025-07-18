@@ -2,14 +2,11 @@ import type { iSVG } from '@/types/svg';
 
 export const svgs: iSVG[] = [
   {
-    title: 'NVIDIA',
-    category: ['Hardware', 'Software', 'AI'],
-    route: {
-      light: '/library/nvidia.svg',
-      dark: '/library/nvidia_dark.svg'
-    },
-    url: 'https://www.nvidia.com/',
-    brandUrl: 'https://www.nvidia.com/en-us/about-nvidia/legal-info/logo-brand-usage/'
+    title: 'Google Classroom',
+    category: ['Google', 'Education'],
+    route: '/library/google-classroom.svg',
+    url: 'https://edu.google.com/workspace-for-education/products/classroom/',
+    brandUrl: 'https://developers.google.com/workspace/classroom/brand'
   },
   {
     title: 'Perspective',
@@ -66,6 +63,12 @@ export const svgs: iSVG[] = [
     category: 'Google',
     route: '/library/drive.svg',
     url: 'https://www.google.com/drive/'
+  },
+  {
+    title: 'Amazon Q',
+    category: 'AI',
+    route: '/library/amazon-q.svg',
+    url: 'https://aws.amazon.com/q'
   },
   {
     title: 'UV',
@@ -3746,4 +3749,14 @@ export const svgs: iSVG[] = [
     route: '/library/google-cloud.svg',
     url: 'https://cloud.google.com/'
   },
+  {
+    title: 'NVIDIA',
+    category: ['Hardware', 'Software', 'AI'],
+    route: {
+      light: '/library/nvidia.svg',
+      dark: '/library/nvidia_dark.svg'
+    },
+    url: 'https://www.nvidia.com/',
+    brandUrl: 'https://www.nvidia.com/en-us/about-nvidia/legal-info/logo-brand-usage/',
+  }
 ];

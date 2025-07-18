@@ -12,6 +12,7 @@
   import { cn } from '@/utils/cn';
   import { clipboard } from '@/utils/clipboard';
   import { copyToClipboard as figmaCopyToClipboard } from '@/figma/copy-to-clipboard';
+  import { getPrefixFromSvgUrl, prefixSvgIds } from '@/utils/prefixSvgIds';
 
   // Templates:
   import { getSource } from '@/templates/getSource';
@@ -84,9 +85,13 @@
     const svgUrlToCopy = getSvgUrl();
     optionsOpen = false;
 
-    const content = await getSource({
+    let content = await getSource({
       url: svgUrlToCopy
     });
+
+    if (svgUrlToCopy) {
+      content = prefixSvgIds(content, getPrefixFromSvgUrl(svgUrlToCopy));
+    }
 
     if (isInFigma) {
       figmaCopyToClipboard(content);
@@ -125,9 +130,14 @@
     isLoading = true;
 
     const title = svgInfo.title.split(' ').join('');
-    const content = await getSource({
+    let content = await getSource({
       url: svgUrlToCopy
     });
+
+    if (svgUrlToCopy) {
+      content = prefixSvgIds(content, getPrefixFromSvgUrl(svgUrlToCopy));
+    }
+
     const dataComponent = { code: content, typescript: tsx, name: title };
     const { data, error } = await getReactCode(dataComponent);
 
@@ -156,9 +166,13 @@
 
       optionsOpen = false;
 
-      const content = await getSource({
+      let content = await getSource({
         url: svgUrlToCopy
       });
+
+      if (svgUrlToCopy) {
+        content = prefixSvgIds(content, getPrefixFromSvgUrl(svgUrlToCopy));
+      }
 
       const copyCode = getVueCode({
         content: content,
@@ -189,9 +203,13 @@
 
       optionsOpen = false;
 
-      const content = await getSource({
+      let content = await getSource({
         url: svgUrlToCopy
       });
+
+      if (svgUrlToCopy) {
+        content = prefixSvgIds(content, getPrefixFromSvgUrl(svgUrlToCopy));
+      }
 
       const copyCode = getSvelteCode({
         content: content,
@@ -222,9 +240,13 @@
 
     const title = svgInfo.title.split(' ').join('');
     const svgUrlToCopy = getSvgUrl();
-    const content = await getSource({
+    let content = await getSource({
       url: svgUrlToCopy
     });
+
+    if (svgUrlToCopy) {
+      content = prefixSvgIds(content, getPrefixFromSvgUrl(svgUrlToCopy));
+    }
 
     if (!content) {
       toast.error('Failed to fetch the SVG content', {
@@ -255,9 +277,13 @@
 
     const title = svgInfo.title.split(' ').join('');
     const svgUrlToCopy = getSvgUrl();
-    const content = await getSource({
+    let content = await getSource({
       url: svgUrlToCopy
     });
+
+    if (svgUrlToCopy) {
+      content = prefixSvgIds(content, getPrefixFromSvgUrl(svgUrlToCopy));
+    }
 
     if (!content) {
       toast.error('Failed to fetch the SVG content', {
@@ -287,9 +313,13 @@
     optionsOpen = false;
 
     const svgUrlToCopy = getSvgUrl();
-    const content = await getSource({
+    let content = await getSource({
       url: svgUrlToCopy
     });
+
+    if (svgUrlToCopy) {
+      content = prefixSvgIds(content, getPrefixFromSvgUrl(svgUrlToCopy));
+    }
 
     if (!content) {
       toast.error('Failed to fetch the SVG content', {
