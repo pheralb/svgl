@@ -2,6 +2,13 @@ import type { iSVG } from '@/types/svg';
 
 export const svgs: iSVG[] = [
   {
+    title: 'Google Classroom',
+    category: ['Google', 'Education'],
+    route: '/library/google-classroom.svg',
+    url: 'https://edu.google.com/workspace-for-education/products/classroom/',
+    brandUrl: 'https://developers.google.com/workspace/classroom/brand'
+  },
+  {
     title: 'Perspective',
     category: 'Software',
     route: {
