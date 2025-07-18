@@ -3749,4 +3749,13 @@ export const svgs: iSVG[] = [
     route: '/library/google-cloud.svg',
     url: 'https://cloud.google.com/'
   },
+  {
+    title: 'Effect TS',
+    category: 'Library',
+    route: {
+      light: '/library/effect_light.svg',
+      dark: '/library/effect_dark.svg'
+    },
+    url: 'https://effect.website/'
+  }
 ];
