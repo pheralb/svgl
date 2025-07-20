@@ -3749,4 +3749,10 @@ export const svgs: iSVG[] = [
     route: '/library/google-cloud.svg',
     url: 'https://cloud.google.com/'
   },
+  {
+    title: 'Postion',
+    category: 'Software',
+    route: '/library/postion.svg',
+    url: 'https://postion.app/'
+  },
 ];
