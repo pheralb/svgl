@@ -9,6 +9,12 @@ export const svgs: iSVG[] = [
     brandUrl: 'https://developers.google.com/workspace/classroom/brand'
   },
   {
+    title: 'Kimi',
+    category: 'AI',
+    route: '/library/kimi.svg',
+    url: 'https://kimi.ai/'
+  },
+  {
     title: 'Perspective',
     category: 'Software',
     route: {
