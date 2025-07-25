@@ -3749,4 +3749,10 @@ export const svgs: iSVG[] = [
     route: '/library/google-cloud.svg',
     url: 'https://cloud.google.com/'
   },
+  {
+    title: 'Ark UI',
+    category: 'Library',
+    route: '/library/ark-ui.svg',
+    url: 'https://ark-ui.com/'
+  }
 ];
