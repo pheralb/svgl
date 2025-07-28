@@ -3759,5 +3759,11 @@ export const svgs: iSVG[] = [
     url: 'https://effect.website/',
     brandUrl:
       'https://sparkling-lancer-5bd.notion.site/Effect-logo-guidelines-14280adbc6354eaa8bd173e1bc0128a4'
+  },
+  {
+    title: 'Ark UI',
+    category: 'Library',
+    route: '/library/ark-ui.svg',
+    url: 'https://ark-ui.com/'
   }
 ];
