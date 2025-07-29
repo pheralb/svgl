@@ -3765,5 +3765,11 @@ export const svgs: iSVG[] = [
     category: 'Library',
     route: '/library/ark-ui.svg',
     url: 'https://ark-ui.com/'
+  },
+  {
+    title: 'Mantine',
+    category: 'Library',
+    route: '/library/mantine.svg',
+    url: 'https://mantine.dev'
   }
 ];
