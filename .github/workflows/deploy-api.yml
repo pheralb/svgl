@@ -8,14 +8,14 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    name: API - Cloudflare Workers
+    name: ☁️ API
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup pnpm 8
+      - name: Setup pnpm 9
         uses: pnpm/action-setup@v2
         with:
-          version: 8
+          version: 9
 
       - name: Install global dependencies
         run: pnpm install

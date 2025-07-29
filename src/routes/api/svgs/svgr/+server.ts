@@ -13,21 +13,6 @@ export const GET = async () => {
 };
 
 export const POST = async ({ request }: RequestEvent) => {
-  const ip = request.headers.get('x-forwarded-for') ?? '';
-  const { success, reset } = await ratelimit.limit(ip);
-
-  // Error 429 | If rate limit is exceeded:
-  if (!success) {
-    const now = Date.now();
-    const retryAfter = Math.floor((reset - now) / 500);
-    return new Response('Too Many Requests', {
-      status: 429,
-      headers: {
-        'Retry-After': retryAfter.toString()
-      }
-    });
-  }
-
   try {
     const body = await request.json();
 
@@ -47,9 +32,6 @@ export const POST = async ({ request }: RequestEvent) => {
 
     return json({ data: jsCode }, { status: 200 });
   } catch (error) {
-    return json(
-      { error: `Error al transformar el SVG a componente React: ${error}` },
-      { status: 500 }
-    );
+    return json({ error: `⚠️ api/svgs/svgr - Error: ${error}` }, { status: 500 });
   }
 };

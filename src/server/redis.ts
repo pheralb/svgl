@@ -2,8 +2,10 @@ import { Redis } from '@upstash/redis';
 import { Ratelimit } from '@upstash/ratelimit';
 import { UPSTASH_REDIS_TOKEN, UPSTASH_REDIS_URL, SVGL_API_REQUESTS } from '$env/static/private';
 
+const cleanUrl = UPSTASH_REDIS_URL.replace(/^['"]|['"]$/g, '').trim();
+
 const redis = new Redis({
-  url: UPSTASH_REDIS_URL,
+  url: cleanUrl,
   token: UPSTASH_REDIS_TOKEN
 });
 

@@ -58,7 +58,7 @@
   />
   <Grid>
     {#each filteredSvgs as svg}
-      <SvgCard svgInfo={svg} />
+      <SvgCard svgInfo={svg} {searchTerm} />
     {/each}
   </Grid>
   {#if filteredSvgs.length === 0}

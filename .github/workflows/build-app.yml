@@ -1,0 +1,28 @@
+name: 📦 Build
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-app:
+    runs-on: ubuntu-latest
+    name: 🛠️ Build app
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup pnpm 9
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build app
+        run: pnpm vite:build
+        env:
+          UPSTASH_REDIS_TOKEN: ${{ secrets.UPSTASH_REDIS_TOKEN }}
+          UPSTASH_REDIS_URL: ${{ secrets.UPSTASH_REDIS_URL }}
+          SVGL_API_REQUESTS: ${{ secrets.SVGL_API_REQUESTS }}
