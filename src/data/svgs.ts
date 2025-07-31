@@ -3771,5 +3771,15 @@ export const svgs: iSVG[] = [
     category: 'Library',
     route: '/library/mantine.svg',
     url: 'https://mantine.dev'
+  },
+  {
+    title: 'Culqi',
+    category: 'Payment',
+    route: '/library/culqi.svg',
+    wordmark: {
+      light: '/library/culqi-workmark-light.svg',
+      dark: '/library/culqi-workmark-dark.svg'
+    },
+    url: 'https://culqi.com'
   }
 ];
