@@ -2,6 +2,13 @@ import type { iSVG } from '@/types/svg';
 
 export const svgs: iSVG[] = [
   {
+    title: 'Google Classroom',
+    category: ['Google', 'Education'],
+    route: '/library/google-classroom.svg',
+    url: 'https://edu.google.com/workspace-for-education/products/classroom/',
+    brandUrl: 'https://developers.google.com/workspace/classroom/brand'
+  },
+  {
     title: 'Perspective',
     category: 'Software',
     route: {
@@ -3750,5 +3757,28 @@ export const svgs: iSVG[] = [
     url: 'https://zulip.com/',
     brandUrl:
       'https://github.com/zulip/zulip/tree/bd29fb3e2691daef570ba5661351922a16782dd2/static/images/logo'
+  },
+  {
+    title: 'Effect TS',
+    category: 'Library',
+    route: {
+      light: '/library/effect_light.svg',
+      dark: '/library/effect_dark.svg'
+    },
+    url: 'https://effect.website/',
+    brandUrl:
+      'https://sparkling-lancer-5bd.notion.site/Effect-logo-guidelines-14280adbc6354eaa8bd173e1bc0128a4'
+  },
+  {
+    title: 'Ark UI',
+    category: 'Library',
+    route: '/library/ark-ui.svg',
+    url: 'https://ark-ui.com/'
+  },
+  {
+    title: 'Mantine',
+    category: 'Library',
+    route: '/library/mantine.svg',
+    url: 'https://mantine.dev'
   }
 ];
