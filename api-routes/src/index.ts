@@ -40,9 +40,10 @@ class RedisRateLimiter {
         UPSTASH_REDIS_URL: string;
         UPSTASH_REDIS_TOKEN: string;
       }>(c);
+      const cleanRedisUrl = UPSTASH_REDIS_URL.replace(/^['"]|['"]$/g, '').trim();
       const redisClient = new Redis({
         token: UPSTASH_REDIS_TOKEN,
-        url: UPSTASH_REDIS_URL
+        url: cleanRedisUrl
       });
       const ratelimit = new Ratelimit({
         redis: redisClient,
@@ -63,7 +64,7 @@ app.use(async (c, next) => {
   await next();
 });
 
-app.use('/api/*', cors());
+app.use(cors());
 
 // 🌱 GET: "/" - Returns all the SVGs data:
 app.get('/', async (c) => {
