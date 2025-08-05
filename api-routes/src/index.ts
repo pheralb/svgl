@@ -155,4 +155,28 @@ app.get('/category/:category', async (c) => {
   return c.json(categorySvgs);
 });
 
+// 🌱 GET: "/svg/:filename" - Return the SVG file by filename:
+app.get('/svg/:filename', async (c) => {
+  const fileName = c.req.param('filename') as string;
+  const svgLibrary = 'https://svgl.app/library/';
+
+  const ratelimit = c.get('ratelimit');
+  const ip = c.req.raw.headers.get('CF-Connecting-IP');
+  const { success } = await ratelimit.limit(ip ?? 'anonymous');
+
+  if (!success) {
+    return c.json({ error: '🛑 Too many request' }, 429);
+  }
+
+  try {
+    const svg = await fetch(`${svgLibrary}${fileName}`).then((res) => {
+      if (!res.ok) throw new Error('Network response was not ok');
+      return res.text();
+    });
+    return c.body(svg, 200);
+  } catch (err) {
+    return c.json({ error: 'not found' }, 404);
+  }
+});
+
 export default app;
