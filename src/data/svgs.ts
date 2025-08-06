@@ -3212,7 +3212,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Polar',
-    category: 'Software',
+    category: ['Software', 'Payment'],
     route: {
       light: '/library/polar-sh_light.svg',
       dark: '/library/polar-sh_dark.svg'
