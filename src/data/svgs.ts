@@ -2861,6 +2861,13 @@ export const svgs: iSVG[] = [
     url: 'https://to-do.office.com/'
   },
   {
+    title: 'Manifest',
+    category: ['Software', 'AI', 'Database'],
+    route: '/library/manifest.svg',
+    url: 'https://manifest.build',
+    brandUrl: 'https://manifest.build/brand-assets'
+  },
+  {
     title: 'Supabase',
     category: 'Database',
     route: '/library/supabase.svg',
