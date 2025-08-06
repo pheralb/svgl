@@ -3771,5 +3771,11 @@ export const svgs: iSVG[] = [
     category: 'Library',
     route: '/library/mantine.svg',
     url: 'https://mantine.dev'
+  },
+  {
+    title: 'ESLint',
+    category: 'Library',
+    route: '/library/eslint.svg',
+    url: 'https://eslint.org/'
   }
 ];
