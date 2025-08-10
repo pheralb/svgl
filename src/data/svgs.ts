@@ -3784,5 +3784,11 @@ export const svgs: iSVG[] = [
     category: 'Library',
     route: '/library/eslint.svg',
     url: 'https://eslint.org/'
+  },
+  {
+    title: 'PlainSignal',
+    category: 'Analytics',
+    route: '/library/plainsignal.svg',
+    url: 'https://plainsignal.com/'
   }
 ];
