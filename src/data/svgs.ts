@@ -3790,5 +3790,11 @@ export const svgs: iSVG[] = [
     category: 'Analytics',
     route: '/library/plainsignal.svg',
     url: 'https://plainsignal.com/'
+  },
+  {
+    title: 'Heptabase',
+    category: 'Software',
+    route: '/library/heptabase.svg',
+    url: 'https://heptabase.com/'
   }
 ];
