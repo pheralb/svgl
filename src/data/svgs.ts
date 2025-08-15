@@ -3538,7 +3538,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Replit',
-    category: 'Software',
+    category: 'AI',
     route: '/library/replit.svg',
     wordmark: {
       light: '/library/replit-wordmark-light.svg',
