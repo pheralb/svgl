@@ -2327,6 +2327,13 @@ export const svgs: iSVG[] = [
     url: 'https://www.airbnb.com'
   },
   {
+    title: 'Friym',
+    category: 'Social',
+    route: '/library/friym.svg',
+    wordmark: '/library/friym-wordmark.svg',
+    url: 'https://www.friym.com'
+  },
+  {
     title: 'Uber',
     category: 'Software',
     route: {
