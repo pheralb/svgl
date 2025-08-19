@@ -226,6 +226,12 @@ export const svgs: iSVG[] = [
     url: 'https://react.dev/'
   },
   {
+    title: 'RisingWave',
+    category: 'Database',
+    route: '/library/risingwave.svg',
+    url: 'https://risingwave.com/'
+  },
+  {
     title: 'Svelte',
     category: 'Library',
     route: '/library/svelte.svg',
