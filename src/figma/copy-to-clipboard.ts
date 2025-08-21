@@ -18,8 +18,8 @@ export function copyToClipboard(value: string) {
         throw new Error();
       }
     }
-  } catch (e) {
-    console.error(`Unable to copy the value: ${value}`);
+  } catch (error) {
+    console.error(`Unable to copy the value: ${value} - Error: ${error}`);
     return false;
   }
   return true;
