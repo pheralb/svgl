@@ -26,8 +26,10 @@
     "prepare": "svelte-kit sync || echo ''",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-    "format": "prettier --write .",
-    "lint": "prettier --check . && eslint ."
+    "format": "prettier --write \"src/**/*.{ts,js,md,svelte}\" --cache",
+    "format:check": "prettier --check \"src/**/*.{ts,js,md,svelte}\" --cache",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint ./src --fix"
   },
   "devDependencies": {
     "@eslint/compat": "1.3.2",
