@@ -1,4 +1,4 @@
-import type { tCategory } from './categories';
+import type { tCategory } from "./categories";
 
 export type ThemeOptions = {
   dark: string;
