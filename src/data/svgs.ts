@@ -3808,5 +3808,11 @@ export const svgs: iSVG[] = [
     category: 'Software',
     route: '/library/heptabase.svg',
     url: 'https://heptabase.com/'
+  },
+  {
+    title: 'UnJS',
+    category: 'Library',
+    route: '/library/unjs.svg',
+    url: 'https://unjs.io/'
   }
 ];
