@@ -119,62 +119,62 @@ pnpm install
 
 - **Simple logo**:
 
-```json
+```ts
 {
-  "title": "Title",
-  "category": "Category",
-  "route": "/library/your_logo.svg",
-  "url": "Website"
+  title: 'Title',
+  category: 'Category',
+  route: '/library/your_logo.svg',
+  url: 'Website'
 }
 ```
 
 - **Logo + wordmark** version:
 
-```json
+```ts
 {
-  "title": "Title",
-  "category": "Category",
-  "route": "/library/your_logo.svg",
-  "wordmark": "/library/your_logo_wordmark.svg",
-  "url": "Website"
+  title: 'Title',
+  category: 'Category',
+  route: '/library/your_logo.svg',
+  wordmark: '/library/your_logo_wordmark.svg',
+  url: 'Website'
 }
 ```
 
 - **Logo + wordmark** & **light + dark mode**:
 
-```json
+```ts
 {
-  "title": "Title",
-  "category": "Category",
-  "route": {
-    "light": "/library/your_logo_light.svg",
-    "dark": "/library/your_logo_dark.svg"
+  title: 'Title',
+  category: 'Category',
+  route: {
+    light: '/library/your_logo_light.svg',
+    dark: '/library/your_logo_dark.svg'
   },
-  "wordmark": {
-    "light": "/library/your_wordmark-logo_light.svg",
-    "dark": "/library/your_wordmark-logo_dark.svg"
+  wordmark: {
+    light: '/library/your_wordmark-logo_light.svg',
+    dark: '/library/your_wordmark-logo_dark.svg'
   },
-  "url": "Website"
+  url: 'Website'
 }
 ```
 
 - **Add brand guidelines**:
 
-```json
+```ts
 {
-  "title": "Title",
-  "category": "Category",
-  "route": "/library/your_logo.svg",
-  "wordmark": "/library/your_logo_wordmark.svg",
-  "brandUrl": "https://assets.website.com/brand-guidelines",
-  "url": "Website"
+  title: 'Title',
+  category: 'Category',
+  route: '/library/your_logo.svg',
+  wordmark: '/library/your_logo_wordmark.svg',
+  brandUrl: 'https://assets.website.com/brand-guidelines',
+  url: 'Website'
 }
 ```
 
 > [!NOTE]
 >
 > - The list of categories is here: [`src/types/categories.ts`](https://github.com/pheralb/svgl/blob/main/src/types/categories.ts). You can add a new category if you need it.
-> - You can add multiple categories to the same logo, for example: `"category": ["Social", "Design"]`.
+> - You can add multiple categories to the same logo, for example: `category: ['Social', 'Design']`.
 
 And create a pull request with your logo 🚀.
 
