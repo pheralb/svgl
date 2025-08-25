@@ -3,7 +3,7 @@ import { svgs } from "./svgs";
 
 export const svgsData = svgs.map((svg: iSVG, index: number) => {
   return { id: index, ...svg };
-});
+}) as iSVG[];
 
 export const getCategories = () => {
   const categories = svgs
