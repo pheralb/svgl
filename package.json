@@ -19,6 +19,11 @@
     "type": "git",
     "url": "git+https://github.com/pheralb/svgl.git"
   },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  },
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
@@ -30,6 +35,12 @@
     "format:check": "prettier --check \"src/**/*.{ts,js,md,svelte}\" --cache",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix"
+  },
+  "dependencies": {
+    "fuse.js": "7.1.0",
+    "jszip": "3.10.1",
+    "mode-watcher": "1.1.0",
+    "svgo": "4.0.0"
   },
   "devDependencies": {
     "@eslint/compat": "1.3.2",
@@ -52,6 +63,7 @@
     "prettier-plugin-tailwindcss": "0.6.14",
     "svelte": "5.38.2",
     "svelte-check": "4.3.1",
+    "svelte-sonner": "^1.0.5",
     "tailwind-merge": "3.3.1",
     "tailwind-variants": "1.0.0",
     "tailwindcss": "4.1.12",
@@ -59,10 +71,5 @@
     "typescript": "5.9.2",
     "typescript-eslint": "8.40.0",
     "vite": "7.1.3"
-  },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "esbuild"
-    ]
   }
 }
