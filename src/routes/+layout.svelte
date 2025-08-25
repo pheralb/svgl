@@ -2,7 +2,18 @@
   // Styles:
   import "@/styles/globals.css";
 
+  // Layout:
+  import Header from "@/components/layout/header.svelte";
+
+  // Providers:
+  import { ModeWatcher } from "mode-watcher";
+  import Sidebar from "@/components/layout/sidebar.svelte";
+
   let { children } = $props();
 </script>
 
-{@render children?.()}
+<ModeWatcher />
+<Header />
+<Sidebar>
+  {@render children?.()}
+</Sidebar>
