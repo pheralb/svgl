@@ -19,6 +19,8 @@
   // Components:
   import CopySvg from "@/components/copySvg.svelte";
   import DownloadSvg from "@/components/downloadSvg.svelte";
+  import Heart from "@lucide/svelte/icons/heart";
+  import AddToFavorite from "./addToFavorite.svelte";
 
   // Props:
   interface Props {
@@ -37,16 +39,20 @@
   let maxVisibleCategories = 1;
 
   // Global Styles:
-  const globalImageStyles = "mb-4 mt-2 h-10 select-none pointer-events-none";
+  const globalImageStyles = "mb-4 mt-1.5 h-10 select-none pointer-events-none";
 </script>
 
 <div
   class={cn(
-    "group flex flex-col items-center justify-center p-4",
+    "group flex flex-col items-center justify-center px-3.5 py-3",
     "rounded-md border border-neutral-200 dark:border-neutral-800",
     "transition-colors duration-100 hover:bg-neutral-100/80 dark:hover:bg-neutral-800/20",
   )}
 >
+  <!-- Image Options -->
+  <div class="flex w-full items-center justify-end space-x-0.5">
+    <AddToFavorite svg={svgInfo} />
+  </div>
   <!-- Image -->
   {#if wordmarkSvg == true && svgInfo.wordmark !== undefined}
     <img
@@ -99,7 +105,7 @@
         {#each svgInfo.category.slice(0, maxVisibleCategories) as c, index}
           <a
             href={`/directory/${c.toLowerCase()}`}
-            class={badgeVariants({ variant: "outline" })}
+            class={badgeVariants({ variant: "outline", class: "font-mono" })}
             title={`This icon is part of the ${svgInfo.category} category`}
           >
             {c}
@@ -112,7 +118,7 @@
             onOpenChange={(isOpen) => (moreTagsOptions = isOpen)}
           >
             <Popover.Trigger
-              class={badgeVariants({ variant: "outline" })}
+              class={badgeVariants({ variant: "outline", class: "font-mono" })}
               title="More Tags"
             >
               {#if moreTagsOptions}
@@ -138,7 +144,7 @@
       {:else}
         <a
           href={`/directory/${svgInfo.category.toLowerCase()}`}
-          class={badgeVariants({ variant: "outline" })}
+          class={badgeVariants({ variant: "outline", class: "font-mono" })}
         >
           {svgInfo.category}
         </a>
@@ -146,7 +152,7 @@
     </div>
   </div>
   <!-- Actions -->
-  <div class="flex items-center space-x-1">
+  <div class="flex items-center space-x-0.5">
     {#if wordmarkSvg && svgInfo.wordmark !== undefined}
       <CopySvg
         size={iconSize}
