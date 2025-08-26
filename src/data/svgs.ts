@@ -352,6 +352,18 @@ export const svgs: iSVG[] = [
     url: 'https://opensea.io/'
   },
   {
+    title: 'DFINITY',
+    category: 'Crypto',
+    route: '/library/Internet Computer ICP – Dfinity.svg',
+    url: 'https://dfinity.org/'
+  },
+  {
+    title: 'ICP',
+    category: 'Blockchain',
+    route: '/library/Internet Computer ICP Icon.svg',
+    url: 'https://internetcomputer.org/'
+  },
+  {
     title: 'Algolia',
     category: 'Library',
     route: '/library/algolia.svg',
