@@ -6,8 +6,14 @@
   export let placeholder: string = 'Search...';
   export let clearSearch: () => void;
   import { X } from 'lucide-svelte';
+  import { onMount } from 'svelte';
 
   let inputElement;
+  let os: string = '';
+
+  onMount(() => {
+    os = navigator.userAgent;
+  });
 
   function focusInput(node: HTMLElement) {
     const handleKeydown = (event: KeyboardEvent) => {
@@ -67,9 +73,13 @@
       </div>
     {:else}
       <div class="absolute inset-y-0 right-0 flex items-center pr-4 text-neutral-500">
-        <div class="flex h-full items-center pointer-events-none gap-x-1 font-mono">
-          <Command size={16} />
-          <span>K</span>
+        <div class="pointer-events-none flex h-full items-center gap-x-1 font-mono">
+          {#if os.includes('Mac')}
+            <Command size={16} />
+            <span>K</span>
+          {:else}
+            <span>Ctrl + K</span>
+          {/if}
         </div>
       </div>
     {/if}
