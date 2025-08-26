@@ -3824,5 +3824,14 @@ export const svgs: iSVG[] = [
       light: '/library/n8n-wordmark-light.svg'
     },
     url: 'https://n8n.io/'
+  },
+  {
+    title: 'Kibo UI',
+    category: 'Library',
+    route: {
+      light: '/library/kibo-ui-light.svg',
+      dark: '/library/kibo-ui-dark.svg'
+    },
+    url: 'https://kibo-ui.com/'
   }
 ];
