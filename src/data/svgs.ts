@@ -3365,6 +3365,12 @@ export const svgs: iSVG[] = [
     url: 'https://github.com/motdotla/dotenv'
   },
   {
+    title: 'Stirling PDF',
+    category: 'Software',
+    route: '/library/stirling-pdf.svg',
+    url: 'https://www.stirlingpdf.com/'
+  },
+  {
     title: 'dotenvx',
     category: ['Secrets', 'Config', 'Devtool'],
     route: '/library/dotenvx.svg',
