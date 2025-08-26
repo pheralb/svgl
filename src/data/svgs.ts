@@ -9,6 +9,12 @@ export const svgs: iSVG[] = [
     brandUrl: 'https://developers.google.com/workspace/classroom/brand'
   },
   {
+    title: 'Kimi',
+    category: 'AI',
+    route: '/library/kimi.svg',
+    url: 'https://kimi.ai/'
+  },
+  {
     title: 'Capacitor',
     category: ['Software'],
     route: '/library/capacitor.svg',
@@ -2867,6 +2873,13 @@ export const svgs: iSVG[] = [
     url: 'https://to-do.office.com/'
   },
   {
+    title: 'Manifest',
+    category: ['Software', 'AI', 'Database'],
+    route: '/library/manifest.svg',
+    url: 'https://manifest.build',
+    brandUrl: 'https://manifest.build/brand-assets'
+  },
+  {
     title: 'Supabase',
     category: 'Database',
     route: '/library/supabase.svg',
@@ -3218,7 +3231,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Polar',
-    category: 'Software',
+    category: ['Software', 'Payment'],
     route: {
       light: '/library/polar-sh_light.svg',
       dark: '/library/polar-sh_dark.svg'
@@ -3537,7 +3550,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Replit',
-    category: 'Software',
+    category: 'AI',
     route: '/library/replit.svg',
     wordmark: {
       light: '/library/replit-wordmark-light.svg',
@@ -3741,6 +3754,12 @@ export const svgs: iSVG[] = [
     url: 'https://openrouter.ai/'
   },
   {
+    title: 'OpenHunts',
+    category: ['Platform', 'Community'],
+    route: '/library/openhunts.svg',
+    url: 'https://openhunts.com'
+  },
+  {
     title: 'Kokonut UI',
     category: 'Library',
     route: {
@@ -3755,4 +3774,51 @@ export const svgs: iSVG[] = [
     route: '/library/google-cloud.svg',
     url: 'https://cloud.google.com/'
   },
+  {
+    title: 'Effect TS',
+    category: 'Library',
+    route: {
+      light: '/library/effect_light.svg',
+      dark: '/library/effect_dark.svg'
+    },
+    url: 'https://effect.website/',
+    brandUrl:
+      'https://sparkling-lancer-5bd.notion.site/Effect-logo-guidelines-14280adbc6354eaa8bd173e1bc0128a4'
+  },
+  {
+    title: 'Ark UI',
+    category: 'Library',
+    route: '/library/ark-ui.svg',
+    url: 'https://ark-ui.com/'
+  },
+  {
+    title: 'Mantine',
+    category: 'Library',
+    route: '/library/mantine.svg',
+    url: 'https://mantine.dev'
+  },
+  {
+    title: 'ESLint',
+    category: 'Library',
+    route: '/library/eslint.svg',
+    url: 'https://eslint.org/'
+  },
+  {
+    title: 'PlainSignal',
+    category: 'Analytics',
+    route: '/library/plainsignal.svg',
+    url: 'https://plainsignal.com/'
+  },
+  {
+    title: 'Heptabase',
+    category: 'Software',
+    route: '/library/heptabase.svg',
+    url: 'https://heptabase.com/'
+  },
+  {
+    title: 'UnJS',
+    category: 'Library',
+    route: '/library/unjs.svg',
+    url: 'https://unjs.io/'
+  }
 ];
