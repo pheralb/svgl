@@ -3814,5 +3814,15 @@ export const svgs: iSVG[] = [
     category: 'Library',
     route: '/library/unjs.svg',
     url: 'https://unjs.io/'
+  },
+  {
+    title: 'PowerSync',
+    category: ['Sync Engine', 'Database', 'Library'],
+    route: '/library/powersync.svg',
+    wordmark: {
+      light: '/library/powersync-wordmark-light.svg',
+      dark: '/library/powersync-wordmark-dark.svg'
+    },
+    url: 'https://powersync.com/'
   }
 ];
