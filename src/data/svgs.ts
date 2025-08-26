@@ -3814,5 +3814,14 @@ export const svgs: iSVG[] = [
     category: 'Library',
     route: '/library/unjs.svg',
     url: 'https://unjs.io/'
+  },
+  {
+    title: 'Kibo UI',
+    category: 'Library',
+    route: {
+      light: '/library/kibo-ui-light.svg',
+      dark: '/library/kibo-ui-dark.svg'
+    },
+    url: 'https://kibo-ui.com/'
   }
 ];
