@@ -3816,6 +3816,16 @@ export const svgs: iSVG[] = [
     url: 'https://unjs.io/'
   },
   {
+    title: 'n8n',
+    category: ['Platform', 'Automation', 'AI'],
+    route: '/library/n8n.svg',
+    wordmark: {
+      dark: '/library/n8n-wordmark-dark.svg',
+      light: '/library/n8n-wordmark-light.svg'
+    },
+    url: 'https://n8n.io/'
+  },
+  {
     title: 'Kibo UI',
     category: 'Library',
     route: {
