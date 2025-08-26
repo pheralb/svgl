@@ -3814,5 +3814,11 @@ export const svgs: iSVG[] = [
     category: 'Library',
     route: '/library/unjs.svg',
     url: 'https://unjs.io/'
+  },
+    {
+    title: 'Dingocoin',
+    category: 'Crypto',
+    route: '/library/dingocoin.svg',
+    url: 'https://dingocoin.com/'
   }
 ];
