@@ -1019,6 +1019,12 @@ export const svgs: iSVG[] = [
     url: 'https://mui.com/'
   },
   {
+    title: 'Fluent 2 Design',
+    category: 'Framework',
+    route: '/library/fluent-2.svg',
+    url: 'https://fluent2.microsoft.design/'
+  },
+  {
     title: 'MySQL',
     category: 'Database',
     route: '/library/mysql.svg',
