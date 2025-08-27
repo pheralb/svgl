@@ -16,13 +16,6 @@ function createFavoritesStore() {
           JSON.stringify(svg.route) === JSON.stringify(favorite.route)
         );
       });
-
-      if (!existsInSvgs) {
-        console.warn(
-          `🗑️ Favorito eliminado: "${favorite.title}" ya no existe en la colección de SVGs`,
-        );
-      }
-
       return existsInSvgs;
     });
   };
