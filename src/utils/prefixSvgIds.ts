@@ -1,4 +1,4 @@
-import { optimize } from "svgo";
+import { optimize } from "svgo/browser";
 
 export const getPrefixFromSvgUrl = (svgUrl: string) => {
   return svgUrl.split("/").pop()!.replace(".svg", "").split("-").join("_");
