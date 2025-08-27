@@ -35,6 +35,8 @@
     "format:check": "prettier --check \"src/**/*.{ts,js,md,svelte}\" --cache",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",
+    "build:shadcn": "shadcn build --output ./static/r",
+    "build:prod": "vite build && pnpm build:registry",
     "build:registry": "tsx ./generate-registry.ts"
   },
   "dependencies": {
