@@ -31,4 +31,6 @@ export type tCategory =
   | 'Config'
   | 'Secrets'
   | 'IaC'
-  | 'Analytics';
+  | 'Analytics'
+  | 'Platform'
+  | 'Automation';
