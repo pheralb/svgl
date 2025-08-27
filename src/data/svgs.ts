@@ -219,7 +219,7 @@ export const svgs: iSVG[] = [
     url: 'https://preactjs.com/'
   },
   {
-    title: 'React',
+    title: 'React.js',
     category: 'Library',
     route: {
       light: '/library/react_light.svg',
