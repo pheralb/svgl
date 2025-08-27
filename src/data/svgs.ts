@@ -159,7 +159,7 @@ export const svgs: iSVG[] = [
   {
     title: "Apollo.io",
     category: "Software",
-    route: "/library/apollo.io.svg",
+    route: "/library/apollo-io.svg",
     url: "https://www.apollo.io/",
   },
   {
@@ -432,6 +432,7 @@ export const svgs: iSVG[] = [
     category: ["Library", "Vercel", "Monorepo"],
     route: "/library/turborepo.svg",
     url: "https://turborepo.org/",
+    shadcnCommand: "shadcn@canary add https://svgl.app/r/vercel.json",
   },
   {
     title: "Tailwind CSS",
