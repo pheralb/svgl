@@ -6,14 +6,14 @@ import { exec } from "child_process";
 import { promisify } from "util";
 
 import { svgs } from "./src/data/svgs";
-import { optimize } from "svgo";
-import { parse, print } from "@swc/core";
+import { optimizeSvg } from "./src/utils/optimizeSvg";
+import { parseReactSvgContent } from "./src/utils/parseReactSvgContent";
 
 const execAsync = promisify(exec);
 
 // ⚙️ Settings:
 const MINIFY_TSX = false;
-const REGENERATE_ALL = false;
+const REGENERATE_ALL = true;
 const SVGS_DATA = svgs;
 const PUBLIC_FOLDER = "static";
 const SHADCN_COMMAND = "shadcn build --output ./static/r";
@@ -208,45 +208,14 @@ function createSpinner() {
 
 async function convertSvgToReact(svgPath: string): Promise<string> {
   const rawSvg = await fs.promises.readFile(svgPath, "utf-8");
-
-  const { data: optimizedSvg } = optimize(rawSvg, {
-    multipass: true,
-    plugins: [
-      "removeDimensions",
-      "removeXMLNS",
-      "removeDoctype",
-      "removeComments",
-      "removeStyleElement",
-      "cleanupAttrs",
-      "cleanupEnableBackground",
-      "cleanupIds",
-      "minifyStyles",
-      "removeDoctype",
-      "removeDesc",
-      "removeEmptyAttrs",
-      "removeEmptyText",
-      "removeHiddenElems",
-      "removeNonInheritableGroupAttrs",
-      "removeUnknownsAndDefaults",
-      "removeUselessDefs",
-      "removeUselessStrokeAndFill",
-      "removeXMLProcInst",
-      {
-        name: "removeAttrs",
-        params: { attrs: "(data-name|id|class)" },
-      },
-    ],
-  });
+  const optimizedSvg = optimizeSvg({ svgCode: rawSvg });
   const componentName = toComponentName(path.basename(svgPath, ".svg"));
-  const componentCode = `
-    import type { SVGProps } from "react";
-    const ${componentName} = (props: SVGProps<SVGSVGElement>) => {
-      return ${optimizedSvg.replace("<svg", "<svg {...props}")}
-    }
-    export { ${componentName} }
-  `;
-  const ast = await parse(componentCode, { syntax: "typescript", tsx: true });
-  const { code } = await print(ast, { minify: MINIFY_TSX });
+  const code = await parseReactSvgContent({
+    componentName,
+    svgCode: optimizedSvg,
+    typescript: true,
+    minify: MINIFY_TSX,
+  });
   return code;
 }
 
