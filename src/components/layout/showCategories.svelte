@@ -5,7 +5,9 @@
   import { svgs } from "@/data/svgs";
   import { page } from "$app/state";
   import { getCategories } from "@/data";
+
   import { sidebarItemClasses } from "./sidebarItemClasses";
+  import { sidebarBadgeClasses } from "./sidebarBadgeClasses";
 
   // Get category counts:
   const categories: tCategory[] = getCategories();
@@ -30,10 +32,7 @@
   >
     <p class="truncate">{category}</p>
     <span
-      class={cn(
-        "dark:bg-dark rounded-lg border border-neutral-200 bg-white px-2 py-0.5 font-mono text-xs font-medium text-neutral-600 shadow-sm dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-400",
-        page.url.pathname && "border-transparent",
-      )}
+      class={cn(sidebarBadgeClasses, page.url.pathname && "border-transparent")}
     >
       {categoryCounts[category]}
     </span>

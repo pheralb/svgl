@@ -1,8 +1,8 @@
 import type { iSVG } from "@/types/svg";
 import type { Load } from "@sveltejs/kit";
 
-import Fuse from "fuse.js";
 import { svgsData } from "@/data";
+import { searchWithFuse } from "@/utils/searchWithFuse";
 
 export const load: Load = ({ url }) => {
   const searchParam = url.searchParams.get("search") || "";
@@ -17,21 +17,15 @@ export const load: Load = ({ url }) => {
   if (!searchParam) {
     filteredSvgs = sortParam ? alphabeticallySorted : latestSorted;
   } else {
-    const fuse = new Fuse<iSVG>(svgsData, {
-      keys: ["title"],
-      threshold: 0.35,
-      ignoreLocation: true,
-      isCaseSensitive: false,
-      shouldSort: true,
-    });
-
     if (searchParam.length < 3) {
       const baseData = sortParam ? alphabeticallySorted : latestSorted;
       filteredSvgs = baseData.filter((svg: iSVG) =>
         svg.title.toLowerCase().includes(searchParam.toLowerCase()),
       );
     } else {
-      filteredSvgs = fuse.search(searchParam).map((result) => result.item);
+      filteredSvgs = searchWithFuse(filteredSvgs)
+        .search(searchParam)
+        .map((result) => result.item);
     }
   }
 

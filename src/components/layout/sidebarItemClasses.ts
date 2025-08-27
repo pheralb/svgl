@@ -2,7 +2,7 @@ import { cn } from "@/utils/cn";
 
 export const sidebarItemClasses = {
   base: cn(
-    "rounded-md px-2 py-1.5",
+    "rounded-md px-2 py-1.5 h-8",
     "flex w-full items-center justify-between space-x-3 text-sm",
     "text-neutral-600 dark:text-neutral-400",
     "hover:text-black dark:hover:text-white",

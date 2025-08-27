@@ -8,9 +8,16 @@
   import Github from "@/components/logos/github.svelte";
   import Twitter from "@/components/logos/twitter.svelte";
 
+  import { Separator } from "@/components/ui/separator";
   import Badge from "@/components/ui/badge/badge.svelte";
   import { buttonVariants } from "@/components/ui/button";
   import SendIcon from "@/components/ui/moving-icons/send-icon.svelte";
+
+  interface HeaderProps {
+    githubStars: number;
+  }
+
+  let { githubStars }: HeaderProps = $props();
 
   const headerItemsClasses = cn(
     buttonVariants({ variant: "ghost" }),
@@ -32,10 +39,8 @@
       </a>
       <Badge variant="outline">{globals.currentVersion}</Badge>
     </div>
-    <div class="flex items-center">
-      <div
-        class="mr-4 flex items-center space-x-0.5 border-r border-neutral-300 pr-3 dark:border-neutral-800"
-      >
+    <div class="flex h-8 items-center">
+      <div class="flex items-center space-x-0.5">
         <a
           target="_blank"
           title="X/Twitter"
@@ -44,16 +49,23 @@
         >
           <Twitter size={18} />
         </a>
-        <a
-          target="_blank"
-          title="GitHub Repository"
-          href={globals.githubUrl}
-          class={cn(headerItemsClasses, "h-9 w-9")}
-        >
-          <Github size={20} />
-        </a>
         <ModeToggle className={cn(headerItemsClasses, "h-9 w-9")} />
       </div>
+      <Separator orientation="vertical" class="mx-2 h-8" />
+      <a
+        target="_blank"
+        title="GitHub Repository"
+        href={globals.githubUrl}
+        class={cn(headerItemsClasses, "h-9 w-fit")}
+      >
+        <Github size={20} />
+        <span class="text-neutral-600 dark:text-neutral-400">
+          {githubStars >= 1000
+            ? `${(githubStars / 1000).toFixed(1)}k`
+            : githubStars.toLocaleString()}
+        </span>
+      </a>
+      <Separator orientation="vertical" class="mr-3 ml-2" />
       <a
         target="_blank"
         href={globals.submitUrl}
