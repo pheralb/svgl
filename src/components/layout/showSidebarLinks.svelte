@@ -54,7 +54,7 @@
   class={cn(
     sidebarItemClasses.base,
     "justify-start space-x-3",
-    String(page.url.pathname) === "/api" && sidebarItemClasses.active,
+    String(page.url.pathname) === "/docs/api" && sidebarItemClasses.active,
   )}
 >
   <Cloud size={16} />

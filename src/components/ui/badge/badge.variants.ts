@@ -17,7 +17,7 @@ const badgeVariants = tv({
       danger:
         "bg-red-100 text-red-800 border-red-200 dark:bg-red-900 dark:text-red-100 dark:border-red-800",
       outline:
-        "bg-transparent border border-neutral-300 text-neutral-700 dark:border-neutral-700 dark:text-neutral-400",
+        "bg-transparent border border-neutral-300 text-neutral-700 dark:border-neutral-800 dark:text-neutral-400",
     },
     size: {
       sm: "text-xs px-2 py-0.5",

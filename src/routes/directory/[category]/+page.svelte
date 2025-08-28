@@ -2,6 +2,10 @@
   import type { iSVG } from "@/types/svg";
   import type { PageProps } from "./$types";
 
+  import { page } from "$app/state";
+  import { goto } from "$app/navigation";
+  import { SvelteURLSearchParams } from "svelte/reactivity";
+
   import { cn } from "@/utils/cn";
   import { searchWithFuse } from "@/utils/searchWithFuse";
 
@@ -12,16 +16,14 @@
   import Container from "@/components/container.svelte";
 
   import PageCard from "@/components/pageCard.svelte";
+  import PageHeader from "@/components/pageHeader.svelte";
   import FolderIcon from "@lucide/svelte/icons/folder-open";
   import ArrowLeftIcon from "@lucide/svelte/icons/arrow-left";
-
-  import { page } from "$app/state";
-  import { goto } from "$app/navigation";
-  import { SvelteURLSearchParams } from "svelte/reactivity";
   import { buttonVariants } from "@/components/ui/button";
 
   // SSR Data:
   let { data }: PageProps = $props();
+  const directoryData = $derived(data);
 
   // States:
   let searchTerm = $state<string>(data.searchTerm || "");
@@ -62,12 +64,19 @@
     searchSvgs();
   };
 
+  const formatCategory = (category: string) =>
+    category.charAt(0).toUpperCase() + category.slice(1);
+
   $effect(() => {
     filteredSvgs = data.svgs.filter((svg: iSVG) =>
       svg.title.toLowerCase().includes(searchTerm.toLowerCase()),
     );
   });
 </script>
+
+<svelte:head>
+  <title>{formatCategory(directoryData.category)} SVG logos - Svgl</title>
+</svelte:head>
 
 <Search
   searchValue={searchTerm}
@@ -76,13 +85,7 @@
 />
 
 <PageCard>
-  <div
-    class={cn(
-      "sticky top-0 z-50 flex h-12.5 items-center justify-between py-1.5 pr-2 pl-2",
-      "border-b border-neutral-200 dark:border-neutral-800",
-      "bg-white/80 backdrop-blur-sm dark:bg-neutral-900/40",
-    )}
-  >
+  <PageHeader>
     <div
       class="flex items-center space-x-2 font-medium text-neutral-950 dark:text-neutral-50"
     >
@@ -100,7 +103,7 @@
       </a>
       <FolderIcon size={18} strokeWidth={1.5} />
       <p>
-        {data.category.slice(0, 1).toUpperCase() + data.category.slice(1)}
+        {formatCategory(directoryData.category)}
       </p>
       <span>-</span>
       {#if !searchTerm}
@@ -114,7 +117,7 @@
         </p>
       {/if}
     </div>
-  </div>
+  </PageHeader>
   <Container className="my-6">
     <Grid>
       {#each filteredSvgs as svg}
