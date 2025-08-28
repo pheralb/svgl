@@ -33,3 +33,5 @@ export type tCategory =
   | 'IaC'
   | 'Analytics'
   | 'Sync Engine';
+  | 'Platform'
+  | 'Automation';

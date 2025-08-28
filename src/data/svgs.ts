@@ -3824,5 +3824,24 @@ export const svgs: iSVG[] = [
       dark: '/library/powersync-wordmark-dark.svg'
     },
     url: 'https://powersync.com/'
+},
+{
+    title: 'n8n',
+    category: ['Platform', 'Automation', 'AI'],
+    route: '/library/n8n.svg',
+    wordmark: {
+      dark: '/library/n8n-wordmark-dark.svg',
+      light: '/library/n8n-wordmark-light.svg'
+    },
+    url: 'https://n8n.io/'
+  },
+  {
+    title: 'Kibo UI',
+    category: 'Library',
+    route: {
+      light: '/library/kibo-ui-light.svg',
+      dark: '/library/kibo-ui-dark.svg'
+    },
+    url: 'https://kibo-ui.com/'
   }
 ];
