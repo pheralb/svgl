@@ -77,6 +77,12 @@ export const svgs: iSVG[] = [
     url: 'https://aws.amazon.com/q'
   },
   {
+    title: 'Mulesoft',
+    category: 'Software',
+    route: '/library/mulesoft.svg',
+    url: 'https://www.mulesoft.com/'
+  },
+  {
     title: 'UV',
     category: 'Devtool',
     route: '/library/uv.svg',
