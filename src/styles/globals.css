@@ -41,3 +41,33 @@
     "OnestMedium", system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Noto Color Emoji";
 }
+
+/* Shiki light/dark mode */
+html.dark .shiki,
+html.dark .shiki span {
+  color: var(--shiki-dark) !important;
+  background-color: transparent !important;
+}
+
+/* Shiki Line Numbers */
+code {
+  counter-reset: step;
+  counter-increment: step 0;
+}
+
+code:has(.line:nth-child(2)) .line::before {
+  content: counter(step);
+  counter-increment: step;
+  width: 1rem;
+  margin-right: 1.5rem;
+  display: inline-block;
+  text-align: right;
+}
+
+html.light code:has(.line:nth-child(2)) .line::before {
+  color: #a0a0a0;
+}
+
+html.dark code:has(.line:nth-child(2)) .line::before {
+  color: #525252;
+}
