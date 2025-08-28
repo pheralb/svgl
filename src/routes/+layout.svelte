@@ -10,12 +10,14 @@
   // Providers:
   import { ModeWatcher } from "mode-watcher";
   import Sidebar from "@/components/layout/sidebar.svelte";
+  import ViewTransitions from "@/components/viewTransitions.svelte";
 
   // SSR Data:
   let { data, children }: LayoutProps = $props();
 </script>
 
 <ModeWatcher />
+<ViewTransitions />
 <Header githubStars={data?.stars} />
 <Sidebar>
   {@render children?.()}
