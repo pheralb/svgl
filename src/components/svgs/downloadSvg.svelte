@@ -85,6 +85,7 @@
     title="Download Light & Dark variants"
     variant="ghost"
     size="icon"
+    class="hover:bg-neutral-200"
     onclick={() => {
       if (typeof svgInfo.route === "string") {
         handleDownloadSvg(svgInfo.route);
@@ -98,7 +99,13 @@
   <Dialog.Root>
     <Dialog.Trigger
       title="Download SVG"
-      class={cn(buttonVariants({ variant: "ghost", size: "icon" }))}
+      class={cn(
+        buttonVariants({
+          size: "icon",
+          variant: "ghost",
+          class: "hover:bg-neutral-200",
+        }),
+      )}
     >
       <DownloadIcon size={iconSize} strokeWidth={iconStroke} />
     </Dialog.Trigger>

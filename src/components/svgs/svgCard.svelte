@@ -49,7 +49,21 @@
   )}
 >
   <!-- Image Options -->
-  <div class="flex w-full items-center justify-end space-x-0.5">
+  <div class="flex w-full items-center justify-end space-x-3">
+    {#if svgInfo.brandUrl !== undefined}
+      <a
+        href={svgInfo.brandUrl}
+        title="Brand Assets"
+        target="_blank"
+        rel="noopener noreferrer"
+        class={cn(
+          "cursor-pointer transition-colors",
+          "text-neutral-500 hover:text-black dark:text-neutral-400 dark:hover:text-white",
+        )}
+      >
+        <PaletteIcon size={iconSize} strokeWidth={iconStroke} />
+      </a>
+    {/if}
     <AddToFavorite svg={svgInfo} />
   </div>
   <!-- Image -->
@@ -104,7 +118,10 @@
         {#each svgInfo.category.slice(0, maxVisibleCategories) as c, index}
           <a
             href={`/directory/${c.toLowerCase()}`}
-            class={badgeVariants({ variant: "outline", class: "font-mono" })}
+            class={badgeVariants({
+              variant: "outline",
+              class: "cursor-pointer font-mono",
+            })}
             title={`This icon is part of the ${svgInfo.category} category`}
           >
             {c}
@@ -117,7 +134,10 @@
             onOpenChange={(isOpen) => (moreTagsOptions = isOpen)}
           >
             <Popover.Trigger
-              class={badgeVariants({ variant: "outline", class: "font-mono" })}
+              class={badgeVariants({
+                variant: "outline",
+                class: "cursor-pointer font-mono",
+              })}
               title="More Tags"
             >
               {#if moreTagsOptions}
@@ -126,7 +146,7 @@
                 <EllipsisIcon size={15} strokeWidth={1.5} />
               {/if}
             </Popover.Trigger>
-            <Popover.Content class="flex flex-col space-y-2">
+            <Popover.Content class="flex w-auto flex-col space-y-2">
               <p class="font-medium">More tags:</p>
               {#each svgInfo.category.slice(maxVisibleCategories) as c}
                 <a
@@ -143,7 +163,10 @@
       {:else}
         <a
           href={`/directory/${svgInfo.category.toLowerCase()}`}
-          class={badgeVariants({ variant: "outline", class: "font-mono" })}
+          class={badgeVariants({
+            variant: "outline",
+            class: "cursor-pointer font-mono",
+          })}
         >
           {svgInfo.category}
         </a>
@@ -183,7 +206,11 @@
       title="Website"
       target="_blank"
       rel="noopener noreferrer"
-      class={buttonVariants({ variant: "ghost" })}
+      class={buttonVariants({
+        size: "icon",
+        variant: "ghost",
+        class: "hover:bg-neutral-200",
+      })}
     >
       <LinkIcon size={iconSize} strokeWidth={iconStroke} />
     </a>
@@ -195,6 +222,7 @@
         }}
         variant="ghost"
         size="icon"
+        class="hover:bg-neutral-200"
       >
         {#if wordmarkSvg}
           <SparklesIcon size={iconSize} strokeWidth={iconStroke} />
@@ -202,17 +230,6 @@
           <BaselineIcon size={iconSize} strokeWidth={iconStroke} />
         {/if}
       </Button>
-    {/if}
-    {#if svgInfo.brandUrl !== undefined}
-      <a
-        href={svgInfo.brandUrl}
-        title="Brand Assets"
-        target="_blank"
-        rel="noopener noreferrer"
-        class={buttonVariants({ variant: "ghost" })}
-      >
-        <PaletteIcon size={iconSize} strokeWidth={iconStroke} />
-      </a>
     {/if}
   </div>
 </div>
