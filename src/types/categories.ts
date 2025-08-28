@@ -32,5 +32,6 @@ export type tCategory =
   | 'Secrets'
   | 'IaC'
   | 'Analytics'
+  | 'Sync Engine';
   | 'Platform'
   | 'Automation';
