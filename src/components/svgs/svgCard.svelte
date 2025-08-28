@@ -6,9 +6,9 @@
   import XIcon from "@lucide/svelte/icons/x";
   import TagIcon from "@lucide/svelte/icons/tag";
   import LinkIcon from "@lucide/svelte/icons/link";
+  import PaletteIcon from "@lucide/svelte/icons/palette";
   import SparklesIcon from "@lucide/svelte/icons/sparkles";
   import BaselineIcon from "@lucide/svelte/icons/baseline";
-  import PaletteIcon from "@lucide/svelte/icons/palette";
   import EllipsisIcon from "@lucide/svelte/icons/ellipsis";
 
   // UI Components:
@@ -17,10 +17,9 @@
   import { Button, buttonVariants } from "@/components/ui/button";
 
   // Components:
-  import CopySvg from "@/components/copySvg.svelte";
-  import DownloadSvg from "@/components/downloadSvg.svelte";
-  import Heart from "@lucide/svelte/icons/heart";
-  import AddToFavorite from "./addToFavorite.svelte";
+  import CopySvg from "@/components/svgs/copySvg.svelte";
+  import DownloadSvg from "@/components/svgs/downloadSvg.svelte";
+  import AddToFavorite from "@/components/addToFavorite.svelte";
 
   // Props:
   interface Props {

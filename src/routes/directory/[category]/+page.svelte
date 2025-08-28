@@ -8,7 +8,7 @@
   // Components:
   import Grid from "@/components/grid.svelte";
   import Search from "@/components/search.svelte";
-  import SvgCard from "@/components/svgCard.svelte";
+  import SvgCard from "@/components/svgs/svgCard.svelte";
   import Container from "@/components/container.svelte";
 
   import PageCard from "@/components/pageCard.svelte";
@@ -116,9 +116,7 @@
     </div>
   </div>
   <Container className="my-6">
-    <Grid
-      className="animate-in fill-mode-backwards fade-in slide-in-from-bottom-4 duration-500"
-    >
+    <Grid>
       {#each filteredSvgs as svg}
         <SvgCard svgInfo={svg} />
       {/each}
