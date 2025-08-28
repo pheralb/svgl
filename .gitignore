@@ -1,4 +1,8 @@
+# Dependencies
 node_modules
+
+# Content Collections
+.content-collections
 
 # Output
 .output
