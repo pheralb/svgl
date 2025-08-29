@@ -13,7 +13,9 @@ export const parseSvgFilename = (params: ParseSvgFilename): string => {
 
   if (/^\d/.test(component)) {
     if (log) {
-      console.log(`[⚠️] Component name starts with a number: ${component}`);
+      console.log(
+        `\n - [⚠️] Component name starts with a number: ${component}`,
+      );
     }
     component = "Icon" + component;
   }
@@ -33,7 +35,9 @@ export const parseSvgFilename = (params: ParseSvgFilename): string => {
   ]);
   if (reserved.has(component)) {
     if (log) {
-      console.log(`[⚠️] Component name is a reserved keyword: ${component}`);
+      console.log(
+        `\n - [⚠️] Component name is a reserved keyword: ${component}`,
+      );
     }
     component = "Icon" + component[0].toUpperCase() + component.slice(1);
   }
