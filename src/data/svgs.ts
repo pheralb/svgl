@@ -30,8 +30,16 @@ export const svgs: iSVG[] = [
   {
     title: "Windsurf",
     category: ["Software", "AI"],
-    route: "/library/windsurf-logo.svg",
-    url: "https://codeium.com/windsurf",
+    route: {
+      light: "/library/windsurf-light.svg",
+      dark: "/library/windsurf-dark.svg",
+    },
+    wordmark: {
+      light: "/library/windsurf-wordmark-light.svg",
+      dark: "/library/windsurf-wordmark-dark.svg",
+    },
+    url: "https://windsurf.com/editor",
+    brandUrl: "https://windsurf.com/brand",
   },
   {
     title: "Mattermost",
@@ -3810,5 +3818,51 @@ export const svgs: iSVG[] = [
     category: "Software",
     route: "/library/heptabase.svg",
     url: "https://heptabase.com/",
+  },
+  {
+    title: "UnJS",
+    category: "Library",
+    route: "/library/unjs.svg",
+    url: "https://unjs.io/",
+  },
+  {
+    title: "PowerSync",
+    category: ["Sync Engine", "Database", "Library"],
+    route: "/library/powersync.svg",
+    wordmark: {
+      light: "/library/powersync-wordmark-light.svg",
+      dark: "/library/powersync-wordmark-dark.svg",
+    },
+    url: "https://powersync.com/",
+  },
+  {
+    title: "n8n",
+    category: ["Platform", "Automation", "AI"],
+    route: "/library/n8n.svg",
+    wordmark: {
+      dark: "/library/n8n-wordmark-dark.svg",
+      light: "/library/n8n-wordmark-light.svg",
+    },
+    url: "https://n8n.io/",
+  },
+  {
+    title: "Kibo UI",
+    category: "Library",
+    route: {
+      light: "/library/kibo-ui-light.svg",
+      dark: "/library/kibo-ui-dark.svg",
+    },
+    url: "https://kibo-ui.com/",
+  },
+  {
+    title: "Ahrefs",
+    category: "Platform",
+    route: "/library/ahrefs.svg",
+    wordmark: {
+      dark: "/library/ahrefs-wordmark-dark.svg",
+      light: "/library/ahrefs-wordmark-light.svg",
+    },
+    url: "https://ahrefs.com/",
+    brandUrl: "https://ahrefs.com/logo",
   },
 ];
