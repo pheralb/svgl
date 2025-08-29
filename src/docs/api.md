@@ -3,11 +3,6 @@ title: API Reference
 description: The API reference is a detailed documentation of all the endpoints available in the SVGL API.
 ---
 
-<script>
-  import Endpoint from '../components/endpoints.svelte';
-  import Alert from '../ui/alert/alert-component.svelte';
-</script>
-
 ## Introduction
 
 SVGL API is a RESTFul API that allows you to get all the information of the SVGs that are in the repository.
@@ -16,9 +11,7 @@ SVGL API is a RESTFul API that allows you to get all the information of the SVGs
 
 The API is currently open to everyone and does not require any authentication. However, to prevent abusive use of the API, there is a limit to the number of requests.
 
-<Alert type="info">
-  Don't use the API for create the same product as SVGL. The API is intended to be used for extensions, plugins, or other tools that can help the community.
-</Alert>
+Don't use the API for create the same product as SVGL. The API is intended to be used for extensions, plugins, or other tools that can help the community.
 
 ## Base URL
 
@@ -64,8 +57,6 @@ export interface iSVG {
 
 ## Endpoints
 
-<Endpoint title="Get all SVGs" method="GET" description="Returns all the SVGs in the repository.">
-
 ```bash
 https://api.svgl.app
 ```
@@ -86,10 +77,6 @@ https://api.svgl.app
 ]
 ```
 
-</Endpoint>
-
-<Endpoint title="Get a limited number of SVGs" method="GET" description="Returns a limited number of SVGs in the repository. Start from the first SVG.">
-
 ```bash
 https://api.svgl.app?limit=10
 ```
@@ -109,10 +96,6 @@ https://api.svgl.app?limit=10
   ...
 ]
 ```
-
-</Endpoint>
-
-<Endpoint title="Filter SVGs by category" method="GET" description="Returns all the SVGs in the repository that match the category.">
 
 ```bash
 https://api.svgl.app/category/software
@@ -135,10 +118,6 @@ https://api.svgl.app/category/software
 ```
 
 The list of categories is available [here](https://github.com/pheralb/svgl/blob/main/src/types/categories.ts) (except for the _all_ category).
-
-</Endpoint>
-
-<Endpoint title="Get the SVG code for a logo" method="GET" description="Returns the SVG code directly.">
 
 ```bash
 https://api.svgl.app/svg/adobe.svg
@@ -171,10 +150,6 @@ https://api.svgl.app/svg/adobe.svg
 </svg>
 ```
 
-</Endpoint>
-
-<Endpoint title="Get only categories" method="GET" description="Returns only categories with the number of SVGs in each category.">
-
 ```bash
 https://api.svgl.app/categories
 ```
@@ -195,10 +170,6 @@ https://api.svgl.app/categories
   ...
 ]
 ```
-
-</Endpoint>
-
-<Endpoint title="Search SVGs by name" method="GET" description="Returns all the SVGs in the repository that match the name.">
 
 ```bash
 https://api.svgl.app?search=axiom
@@ -221,5 +192,3 @@ https://api.svgl.app?search=axiom
   }
 ]
 ```
-
-</Endpoint>
