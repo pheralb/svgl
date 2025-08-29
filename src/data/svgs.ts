@@ -30,8 +30,16 @@ export const svgs: iSVG[] = [
   {
     title: 'Windsurf',
     category: ['Software', 'AI'],
-    route: '/library/windsurf-logo.svg',
-    url: 'https://codeium.com/windsurf'
+    route: {
+      light: '/library/windsurf-light.svg',
+      dark: '/library/windsurf-dark.svg'
+    },
+    wordmark: {
+      light: '/library/windsurf-wordmark-light.svg',
+      dark: '/library/windsurf-wordmark-dark.svg'
+    },
+    url: 'https://windsurf.com/editor',
+    brandUrl: 'https://windsurf.com/brand'
   },
   {
     title: 'Mattermost',
