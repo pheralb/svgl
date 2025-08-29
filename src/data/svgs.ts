@@ -406,8 +406,9 @@ export const svgs: iSVG[] = [
   {
     title: "NPM",
     category: "Software",
-    route: "/library/npm.svg",
     url: "https://www.npmjs.com/",
+    route: "/library/npm.svg",
+    wordmark: "/library/npm-wordmark.svg",
   },
   {
     title: "Nuget",
@@ -3750,7 +3751,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: "OpenHunts",
-    category: ["Platform", "Community"],
+    category: ["Community"],
     route: "/library/openhunts.svg",
     url: "https://openhunts.com",
   },
