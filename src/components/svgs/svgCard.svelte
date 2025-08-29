@@ -19,7 +19,7 @@
   // Components:
   import CopySvg from "@/components/svgs/copySvg.svelte";
   import DownloadSvg from "@/components/svgs/downloadSvg.svelte";
-  import AddToFavorite from "@/components/addToFavorite.svelte";
+  import AddToFavorite from "@/components/svgs/addToFavorite.svelte";
 
   // Props:
   interface Props {

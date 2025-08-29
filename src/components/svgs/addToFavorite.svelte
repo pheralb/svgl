@@ -1,8 +1,9 @@
 <script lang="ts">
   import type { iSVG } from "@/types/svg";
+
+  import { cn } from "@/utils/cn";
   import favoritesStore from "@/stores/favorites.store";
   import HeartIcon from "@lucide/svelte/icons/heart";
-  import { cn } from "@/utils/cn";
 
   interface Props {
     svg: iSVG;

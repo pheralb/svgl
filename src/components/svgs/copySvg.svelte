@@ -2,6 +2,7 @@
   import type { iSVG } from "@/types/svg";
 
   // Utils:
+  import { cn } from "@/utils/cn";
   import { clipboard } from "@/utils/clipboard";
   import { getPrefixFromSvgUrl, prefixSvgIds } from "@/utils/prefixSvgIds";
   import { copyToClipboard as figmaCopyToClipboard } from "@/figma/copy-to-clipboard";
@@ -15,8 +16,11 @@
   // UI Components:
   import { toast } from "svelte-sonner";
   import * as Tabs from "@/components/ui/tabs";
-  import { Button } from "@/components/ui/button";
+  import { Button, buttonVariants } from "@/components/ui/button";
   import * as Popover from "@/components/ui/popover";
+
+  // CLIs:
+  import CopyShadcnCommand from "@/components/svgs/copyShadcnCommand.svelte";
 
   // Templates:
   import { getSource } from "@/templates/getSource";
@@ -360,7 +364,13 @@
 <Popover.Root bind:open={optionsOpen}>
   <Popover.Trigger
     title="Copy SVG element as svg file, React TSX code, or React JSX code"
-    class="flex items-center space-x-2 rounded-md p-2 duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700/40"
+    class={cn(
+      buttonVariants({
+        variant: "ghost",
+        size: "icon",
+        class: "hover:bg-neutral-200",
+      }),
+    )}
   >
     {#if optionsOpen}
       <XIcon {size} strokeWidth={iconStroke} />
@@ -370,32 +380,37 @@
       <CopyIcon {size} strokeWidth={iconStroke} />
     {/if}
   </Popover.Trigger>
-  <Popover.Content class="flex flex-col space-y-2 p-4" sideOffset={2}>
+  <Popover.Content class="flex w-fit flex-col space-y-2 p-4" sideOffset={2}>
     <Tabs.Root value="source" class="flex w-full flex-col space-y-1">
-      <Tabs.List>
+      <Tabs.List class="w-fit border-none bg-transparent">
         <Tabs.Trigger value="source">Source</Tabs.Trigger>
+        <Tabs.Trigger value="shadcn">shadcn/ui</Tabs.Trigger>
         <div
-          class="ml-3 flex flex-row space-x-0.5 border-l border-dashed border-neutral-200 pl-3 dark:border-neutral-800"
+          class="ml-3 flex flex-row space-x-1 border-l border-neutral-200 pl-3 dark:border-neutral-800"
         >
-          <Tabs.Trigger value="web-component" title="Web Component">
+          <Tabs.Trigger
+            class="px-2.5"
+            value="web-component"
+            title="Web Component"
+          >
             <WebComponents size={21} />
           </Tabs.Trigger>
-          <Tabs.Trigger value="react" title="React">
+          <Tabs.Trigger class="px-2.5" value="react" title="React">
             <React size={20} />
           </Tabs.Trigger>
-          <Tabs.Trigger value="vue" title="Vue">
+          <Tabs.Trigger class="px-2.5" value="vue" title="Vue">
             <Vue size={20} />
           </Tabs.Trigger>
-          <Tabs.Trigger value="svelte" title="Svelte">
+          <Tabs.Trigger class="px-2.5" value="svelte" title="Svelte">
             <Svelte size={20} />
           </Tabs.Trigger>
-          <Tabs.Trigger value="angular" title="Angular">
+          <Tabs.Trigger class="px-2.5" value="angular" title="Angular">
             <Angular size={20} />
           </Tabs.Trigger>
           <Tabs.Trigger
             value="astro"
             title="Astro"
-            class="text-black dark:text-white"
+            class="px-2.5 text-black dark:text-white"
           >
             <Astro size={21} />
           </Tabs.Trigger>
@@ -406,6 +421,7 @@
         <section class="flex flex-col space-y-2">
           <Button
             variant="outline"
+            class="justify-start"
             title={isWordmarkSvg
               ? "Copy wordmark SVG to clipboard"
               : "Copy SVG to clipboard"}
@@ -416,11 +432,18 @@
           </Button>
         </section>
       </Tabs.Content>
+      <!-- CLI -->
+      <Tabs.Content value="shadcn">
+        <section class="flex flex-col space-y-2">
+          <CopyShadcnCommand svgTitle={svgInfo.title} />
+        </section>
+      </Tabs.Content>
       <!-- React -->
       <Tabs.Content value="react">
         <section class="flex flex-col space-y-2">
           <Button
             variant="outline"
+            class="justify-start"
             title="Copy as React component"
             disabled={isLoading}
             onclick={() => convertSvgReactComponent(true)}
@@ -430,6 +453,7 @@
           </Button>
           <Button
             variant="outline"
+            class="justify-start"
             title="Copy as React component"
             disabled={isLoading}
             onclick={() => convertSvgReactComponent(false)}
@@ -444,6 +468,7 @@
         <section class="flex flex-col space-y-2">
           <Button
             variant="outline"
+            class="justify-start"
             title="Copy as Svelte component"
             disabled={isLoading}
             onclick={() => convertSvgSvelteComponent(false)}
@@ -454,6 +479,7 @@
 
           <Button
             variant="outline"
+            class="justify-start"
             title="Copy as Svelte component"
             disabled={isLoading}
             onclick={() => convertSvgSvelteComponent(false)}
@@ -464,6 +490,7 @@
 
           <Button
             variant="outline"
+            class="justify-start"
             title="Copy as Svelte component"
             disabled={isLoading}
             onclick={() => convertSvgSvelteComponent(true)}
@@ -478,6 +505,7 @@
         <section class="flex flex-col space-y-2">
           <Button
             variant="outline"
+            class="justify-start"
             title="Copy as Vue component"
             disabled={isLoading}
             onclick={() => convertSvgVueComponent(false)}
@@ -487,6 +515,7 @@
           </Button>
           <Button
             variant="outline"
+            class="justify-start"
             title="Copy as Vue component"
             disabled={isLoading}
             onclick={() => convertSvgVueComponent(true)}
@@ -501,6 +530,7 @@
         <section class="flex flex-col space-y-2">
           <Button
             variant="outline"
+            class="justify-start"
             title="Copy as Standalone Component"
             disabled={isLoading}
             onclick={() => convertSvgAngularComponent()}
@@ -515,6 +545,7 @@
         <section class="flex flex-col space-y-2">
           <Button
             variant="outline"
+            class="justify-start"
             title="Copy as Web Component"
             disabled={isLoading}
             onclick={() => convertSvgWebComponent()}
@@ -529,6 +560,7 @@
         <section class="flex flex-col space-y-2">
           <Button
             variant="outline"
+            class="justify-start"
             title="Copy as Astro Component"
             disabled={isLoading}
             onclick={() => convertSvgAstroComponent()}
