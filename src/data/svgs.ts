@@ -3843,5 +3843,16 @@ export const svgs: iSVG[] = [
       dark: '/library/kibo-ui-dark.svg'
     },
     url: 'https://kibo-ui.com/'
+  },
+  {
+    title: 'Ahrefs',
+    category: 'Platform',
+    route: '/library/ahrefs.svg',
+    wordmark: {
+      dark: '/library/ahrefs-wordmark-dark.svg',
+      light: '/library/ahrefs-wordmark-light.svg'
+    },
+    url: 'https://ahrefs.com/',
+    brandUrl: 'https://ahrefs.com/logo'
   }
 ];
