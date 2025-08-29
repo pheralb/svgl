@@ -7,6 +7,7 @@ import { promisify } from "util";
 
 import { svgs } from "./src/data/svgs";
 import { optimizeSvg } from "./src/utils/optimizeSvg";
+import { parseSvgFilename } from "./src/utils/parseSvgFilename";
 import { parseReactSvgContent } from "./src/utils/parseReactSvgContent";
 
 const execAsync = promisify(exec);
@@ -58,12 +59,16 @@ function prepareRegistryJson(): ShadcnSchema {
       .toLowerCase()
       .replace(/\s+/g, "-")
       .replace(/[^a-z0-9-]/g, "");
+      
     const files: RegistryFile[] = [];
 
     const svgPaths = extractSvgPaths(svg);
 
     svgPaths.forEach((svgFile) => {
-      const tsxComponentName = toComponentName(svgFile.filename);
+      const tsxComponentName = parseSvgFilename({
+        file: svgFile.filename,
+        log: false,
+      });
       files.push({
         path: `./${OUTPUT_DIR}/${tsxComponentName}.tsx`,
         type: "registry:component",
@@ -209,7 +214,10 @@ function createSpinner() {
 async function convertSvgToReact(svgPath: string): Promise<string> {
   const rawSvg = await fs.promises.readFile(svgPath, "utf-8");
   const optimizedSvg = optimizeSvg({ svgCode: rawSvg });
-  const componentName = toComponentName(path.basename(svgPath, ".svg"));
+  const componentName = parseSvgFilename({
+    file: path.basename(svgPath, ".svg"),
+    log: true,
+  });
   const code = await parseReactSvgContent({
     componentName,
     svgCode: optimizedSvg,
@@ -217,37 +225,6 @@ async function convertSvgToReact(svgPath: string): Promise<string> {
     minify: MINIFY_TSX,
   });
   return code;
-}
-
-function toComponentName(file: string): string {
-  const name = file.replace(/\.svg$/i, "");
-
-  let component = name.replace(/(^\w|[-_]\w)/g, (m) =>
-    m.replace(/[-_]/, "").toUpperCase(),
-  );
-
-  if (/^\d/.test(component)) {
-    component = "Icon" + component;
-  }
-
-  const reserved = new Set([
-    "default",
-    "class",
-    "function",
-    "var",
-    "export",
-    "import",
-    "extends",
-    "new",
-    "delete",
-    "enum",
-    "package",
-  ]);
-  if (reserved.has(component)) {
-    component = "Icon" + component[0].toUpperCase() + component.slice(1);
-  }
-
-  return component;
 }
 
 async function cleanupDirectory(dirPath: string) {
@@ -333,7 +310,7 @@ async function run() {
         const tsx = await convertSvgToReact(filesystemPath);
         const outPath = path.join(
           OUTPUT_DIR,
-          toComponentName(svgFile.filename) + ".tsx",
+          parseSvgFilename({ file: svgFile.filename, log: false }) + ".tsx",
         );
         await fs.promises.writeFile(outPath, tsx, "utf-8");
         convertedCount++;
