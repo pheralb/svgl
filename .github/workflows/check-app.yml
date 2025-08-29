@@ -4,11 +4,11 @@ on:
   push:
     branches:
       - main
-      - next
+      - dev
   pull_request:
     branches:
       - main
-      - next
+      - dev
 
 jobs:
   vitest:
@@ -17,10 +17,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup pnpm 9
+      - name: Setup pnpm 10
         uses: pnpm/action-setup@v4
         with:
-          version: 9
+          version: 10
 
       - name: Install dependencies
         run: pnpm install
@@ -34,10 +34,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup pnpm 9
+      - name: Setup pnpm 10
         uses: pnpm/action-setup@v4
         with:
-          version: 9
+          version: 10
 
       - name: Install utility dependencies
         run: pnpm install
