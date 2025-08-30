@@ -30,8 +30,16 @@ export const svgs: iSVG[] = [
   {
     title: 'Windsurf',
     category: ['Software', 'AI'],
-    route: '/library/windsurf-logo.svg',
-    url: 'https://codeium.com/windsurf'
+    route: {
+      light: '/library/windsurf-light.svg',
+      dark: '/library/windsurf-dark.svg'
+    },
+    wordmark: {
+      light: '/library/windsurf-wordmark-light.svg',
+      dark: '/library/windsurf-wordmark-dark.svg'
+    },
+    url: 'https://windsurf.com/editor',
+    brandUrl: 'https://windsurf.com/brand'
   },
   {
     title: 'Mattermost',
@@ -95,7 +103,6 @@ export const svgs: iSVG[] = [
     },
     url: 'https://milanote.com'
   },
-
   {
     title: 'Together AI',
     category: 'AI',
@@ -3650,6 +3657,12 @@ export const svgs: iSVG[] = [
     url: 'https://firebase.studio/'
   },
   {
+    title: 'Dingocoin',
+    category: 'Crypto',
+    route: '/library/dingocoin.svg',
+    url: 'https://dingocoin.com/'
+  },
+  {
     title: 'HeroUI',
     category: 'Library',
     route: {
@@ -3816,12 +3829,16 @@ export const svgs: iSVG[] = [
     url: 'https://unjs.io/'
   },
   {
-    title: 'Dingocoin',
-    category: 'Crypto',
-    route: '/library/dingocoin.svg',
-    url: 'https://dingocoin.com/'
-  },
-  {
+    title: 'PowerSync',
+    category: ['Sync Engine', 'Database', 'Library'],
+    route: '/library/powersync.svg',
+    wordmark: {
+      light: '/library/powersync-wordmark-light.svg',
+      dark: '/library/powersync-wordmark-dark.svg'
+    },
+    url: 'https://powersync.com/'
+},
+{
     title: 'n8n',
     category: ['Platform', 'Automation', 'AI'],
     route: '/library/n8n.svg',
@@ -3839,5 +3856,16 @@ export const svgs: iSVG[] = [
       dark: '/library/kibo-ui-dark.svg'
     },
     url: 'https://kibo-ui.com/'
+  },
+  {
+    title: 'Ahrefs',
+    category: 'Platform',
+    route: '/library/ahrefs.svg',
+    wordmark: {
+      dark: '/library/ahrefs-wordmark-dark.svg',
+      light: '/library/ahrefs-wordmark-light.svg'
+    },
+    url: 'https://ahrefs.com/',
+    brandUrl: 'https://ahrefs.com/logo'
   }
 ];
