@@ -9,8 +9,8 @@
   import Twitter from "@/components/logos/twitter.svelte";
 
   import { Separator } from "@/components/ui/separator";
-  import Badge from "@/components/ui/badge/badge.svelte";
   import { buttonVariants } from "@/components/ui/button";
+  import SvglVersion from "@/components/svglVersion.svelte";
   import SendIcon from "@/components/ui/moving-icons/send-icon.svelte";
 
   interface HeaderProps {
@@ -37,7 +37,7 @@
         <Svgl size={28} />
         <h2 class="font-onest text-xl font-medium tracking-tight">svgl</h2>
       </a>
-      <Badge variant="outline">{globals.currentVersion}</Badge>
+      <SvglVersion />
     </div>
     <div class="flex h-8 items-center">
       <div class="flex items-center space-x-0.5">
