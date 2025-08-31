@@ -13,7 +13,6 @@ import { parseReactSvgContent } from "./src/utils/parseReactSvgContent";
 const execAsync = promisify(exec);
 
 // ⚙️ Settings:
-const MINIFY_TSX = false;
 const REGENERATE_ALL = true;
 const SVGS_DATA = svgs;
 const PUBLIC_FOLDER = "static";
@@ -59,7 +58,7 @@ function prepareRegistryJson(): ShadcnSchema {
       .toLowerCase()
       .replace(/\s+/g, "-")
       .replace(/[^a-z0-9-]/g, "");
-      
+
     const files: RegistryFile[] = [];
 
     const svgPaths = extractSvgPaths(svg);
@@ -188,29 +187,6 @@ function convertToFilesystemPath(svgPath: string): string {
   return `./${PUBLIC_FOLDER}/${cleanPath}`;
 }
 
-function createSpinner() {
-  const frames = ["⠋", "⠙", "⠹", "⠸", "⠼", "⠴", "⠦", "⠧", "⠇", "⠏"];
-  let current = 0;
-  let interval;
-
-  return {
-    start(getMessage) {
-      interval = setInterval(() => {
-        const message =
-          typeof getMessage === "function" ? getMessage() : getMessage;
-        process.stdout.write(`\r${frames[current]} ${message}`);
-        current = (current + 1) % frames.length;
-      }, 100);
-    },
-    stop() {
-      if (interval) {
-        clearInterval(interval);
-        process.stdout.write("\r");
-      }
-    },
-  };
-}
-
 async function convertSvgToReact(svgPath: string): Promise<string> {
   const rawSvg = await fs.promises.readFile(svgPath, "utf-8");
   const optimizedSvg = optimizeSvg({ svgCode: rawSvg });
@@ -222,7 +198,6 @@ async function convertSvgToReact(svgPath: string): Promise<string> {
     componentName,
     svgCode: optimizedSvg,
     typescript: true,
-    minify: MINIFY_TSX,
   });
   return code;
 }
@@ -264,7 +239,6 @@ async function runShadcnBuild() {
 }
 
 async function run() {
-  const spinner = createSpinner();
   let convertedCount = 0;
   let totalCount = 0;
 
@@ -287,9 +261,7 @@ async function run() {
       return;
     }
 
-    spinner.start(
-      () => `[📦] ${convertedCount}/${totalCount} SVGs converted to TSX`,
-    );
+    console.log(`[📦] Converting ${totalCount} SVGs converted to TSX...`);
 
     // Process files
     for (const svgFile of svgFiles) {
@@ -319,11 +291,8 @@ async function run() {
         throw new Error(error);
       }
     }
-
-    spinner.stop();
-
     console.log(
-      `\n[✅] Conversion completed: ${convertedCount}/${totalCount} SVGs processed`,
+      `\n[📦] ✨ Conversion completed: ${convertedCount}/${totalCount} SVGs processed`,
     );
 
     if (convertedCount < totalCount) {
@@ -335,7 +304,6 @@ async function run() {
       await runShadcnBuild();
     }
   } catch (error) {
-    spinner.stop();
     console.error("[❌] Error:", error);
     throw new Error(error);
   } finally {

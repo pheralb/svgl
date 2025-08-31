@@ -37,7 +37,7 @@
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",
     "build:shadcn": "shadcn build --output ./static/r",
-    "build:prod": "vite build && pnpm build:registry",
+    "build:prod": "pnpm build:registry && vite build",
     "build:registry": "tsx ./generate-registry.ts"
   },
   "dependencies": {
