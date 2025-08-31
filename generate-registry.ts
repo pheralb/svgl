@@ -191,6 +191,7 @@ async function convertSvgToReact(svgPath: string): Promise<string> {
   const componentName = parseSvgFilename({
     file: path.basename(svgPath, ".svg"),
     log: true,
+    firstUpperCase: true,
   });
   const code = await parseReactSvgContent({
     componentName,

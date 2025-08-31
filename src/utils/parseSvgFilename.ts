@@ -1,15 +1,18 @@
 interface ParseSvgFilename {
   file: string;
   log?: boolean;
+  firstUpperCase?: boolean;
 }
 
 export const parseSvgFilename = (params: ParseSvgFilename): string => {
-  const { file, log } = params;
+  const { file, log, firstUpperCase = false } = params;
   const name = file.replace(/\.svg$/i, "");
 
   let component = name
     .replace(/[-_\s]+(.)?/g, (_, char) => (char ? char.toUpperCase() : ""))
-    .replace(/^(.)/, (char) => char.toLowerCase());
+    .replace(/^(.)/, (char) =>
+      firstUpperCase ? char.toUpperCase() : char.toLowerCase(),
+    );
 
   if (/^\d/.test(component)) {
     if (log) {
