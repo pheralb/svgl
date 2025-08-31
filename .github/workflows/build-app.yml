@@ -34,3 +34,5 @@ jobs:
 
       - name: Build app
         run: pnpm build
+        env:
+          PUBLIC_SVGL_VERSION: v5

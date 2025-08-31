@@ -11,9 +11,9 @@ on:
       - dev
 
 jobs:
-  vitest:
+  lint:
     runs-on: ubuntu-latest
-    name: ⚡ Testing with Vitest
+    name: ⚙️ Linting
     steps:
       - uses: actions/checkout@v4
 
@@ -23,8 +23,10 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Run Vitest
-        run: pnpm test
+      - name: Run Eslint
+        run: pnpm lint
+        env:
+          PUBLIC_SVGL_VERSION: v5
 
   svgs-size:
     runs-on: ubuntu-latest
