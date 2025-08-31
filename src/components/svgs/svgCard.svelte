@@ -1,6 +1,7 @@
 <script lang="ts">
   import type { iSVG } from "@/types/svg";
   import { cn } from "@/utils/cn";
+  import { mode } from "mode-watcher";
 
   // Icons:
   import XIcon from "@lucide/svelte/icons/x";
@@ -31,6 +32,7 @@
   // States:
   let wordmarkSvg = $state<boolean>(false);
   let moreTagsOptions = $state<boolean>(false);
+  let changeThemeMode = $state<boolean>(false);
 
   // Icon Stroke & Size:
   let iconStroke = 1.8;
@@ -68,20 +70,46 @@
   </div>
   <!-- Image -->
   {#if wordmarkSvg == true && svgInfo.wordmark !== undefined}
+    {#if changeThemeMode}
+      <img
+        class={cn("block", globalImageStyles)}
+        src={typeof svgInfo.wordmark !== "string"
+          ? mode.current === "dark"
+            ? svgInfo.wordmark?.light || ""
+            : svgInfo.wordmark?.dark || ""
+          : svgInfo.wordmark || ""}
+        alt={svgInfo.title}
+        title={svgInfo.title}
+        loading="lazy"
+      />
+    {:else}
+      <img
+        class={cn("hidden dark:block", globalImageStyles)}
+        src={typeof svgInfo.wordmark !== "string"
+          ? svgInfo.wordmark?.dark || ""
+          : svgInfo.wordmark || ""}
+        alt={svgInfo.title}
+        title={svgInfo.title}
+        loading="lazy"
+      />
+      <img
+        class={cn("block dark:hidden", globalImageStyles)}
+        src={typeof svgInfo.wordmark !== "string"
+          ? svgInfo.wordmark?.light || ""
+          : svgInfo.wordmark || ""}
+        alt={svgInfo.title}
+        title={svgInfo.title}
+        loading="lazy"
+      />
+    {/if}
+  {:else if changeThemeMode}
     <img
-      class={cn("hidden dark:block", globalImageStyles)}
-      src={typeof svgInfo.wordmark !== "string"
-        ? svgInfo.wordmark?.dark || ""
-        : svgInfo.wordmark || ""}
-      alt={svgInfo.title}
-      title={svgInfo.title}
-      loading="lazy"
-    />
-    <img
-      class={cn("block dark:hidden", globalImageStyles)}
-      src={typeof svgInfo.wordmark !== "string"
-        ? svgInfo.wordmark?.light || ""
-        : svgInfo.wordmark || ""}
+      class={cn("block", globalImageStyles)}
+      src={typeof svgInfo.route !== "string"
+        ? mode.current === "dark"
+          ? svgInfo.route.light
+          : svgInfo.route.dark
+        : svgInfo.route}
       alt={svgInfo.title}
       title={svgInfo.title}
       loading="lazy"
