@@ -30,7 +30,6 @@ interface RegistryItem {
   name: string;
   type: string;
   title: string;
-  registryDependencies: string[];
   files: RegistryFile[];
 }
 
@@ -80,7 +79,6 @@ function prepareRegistryJson(): ShadcnSchema {
         name: componentName,
         type: "registry:component",
         title: componentName,
-        registryDependencies: [""],
         files: files,
       });
     }
@@ -238,6 +236,34 @@ async function runShadcnBuild() {
   }
 }
 
+const checkFinallyDirs = async () => {
+  // Check if static/r directory exists
+  const rDirExists = await fs.promises
+    .access(`./${PUBLIC_FOLDER}/r`)
+    .then(() => true)
+    .catch(() => false);
+
+  if (!rDirExists) {
+    console.error("[🔎] Error - Directory ./static/r does not exist");
+    return;
+  } else {
+    console.log("[🔎] Directory ./static/r exists");
+  }
+
+  // Check if registry.json exists
+  const registryExists = await fs.promises
+    .access("./registry.json")
+    .then(() => true)
+    .catch(() => false);
+
+  if (!registryExists) {
+    console.error("[🔎] Error - File registry.json does not exist");
+    return;
+  } else {
+    console.log("[🔎] File registry.json exists");
+  }
+};
+
 async function run() {
   let convertedCount = 0;
   let totalCount = 0;
@@ -307,6 +333,7 @@ async function run() {
     console.error("[❌] Error:", error);
     throw new Error(error);
   } finally {
+    await checkFinallyDirs();
     await cleanupDirectory(OUTPUT_DIR);
     console.log("[🎉] Process completed");
   }

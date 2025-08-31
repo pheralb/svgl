@@ -7,9 +7,9 @@ export const parseSvgFilename = (params: ParseSvgFilename): string => {
   const { file, log } = params;
   const name = file.replace(/\.svg$/i, "");
 
-  let component = name.replace(/(^\w|[-_]\w)/g, (m) =>
-    m.replace(/[-_]/, "").toUpperCase(),
-  );
+  let component = name
+    .replace(/[-_\s]+(.)?/g, (_, char) => (char ? char.toUpperCase() : ""))
+    .replace(/^(.)/, (char) => char.toLowerCase());
 
   if (/^\d/.test(component)) {
     if (log) {
