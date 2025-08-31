@@ -105,7 +105,7 @@
   </PageHeader>
   <Container className="my-6">
     <Grid>
-      {#each displaySvgs as svg}
+      {#each displaySvgs as svg (svg.id)}
         <SvgCard svgInfo={svg} />
       {/each}
     </Grid>

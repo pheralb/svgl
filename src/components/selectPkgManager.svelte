@@ -27,7 +27,7 @@
     {/if}
   </Select.Trigger>
   <Select.Content sideOffset={1.5}>
-    {#each Object.entries(managers) as [value, { Icon, label }]}
+    {#each Object.entries(managers) as [value, { Icon, label }] (value)}
       <Select.Item
         {value}
         onclick={() => pkgManager.set(value as PackageManager)}

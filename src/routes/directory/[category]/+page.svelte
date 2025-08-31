@@ -27,7 +27,7 @@
 
   // States:
   let searchTerm = $state<string>(data.searchTerm || "");
-  let filteredSvgs = $state<iSVG[]>(data.filteredSvgs);
+  let filteredSvgs = $derived<iSVG[]>(data.filteredSvgs);
 
   const searchSvgs = () => {
     if (!searchTerm) {
@@ -120,7 +120,7 @@
   </PageHeader>
   <Container className="my-6">
     <Grid>
-      {#each filteredSvgs as svg}
+      {#each filteredSvgs as svg (svg.id)}
         <SvgCard svgInfo={svg} />
       {/each}
     </Grid>

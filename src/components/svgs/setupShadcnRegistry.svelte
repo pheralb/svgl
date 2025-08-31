@@ -18,7 +18,7 @@
 
 <Dialog.Root>
   <Dialog.Trigger>
-    {@render children?.()}
+    {@render children()}
   </Dialog.Trigger>
   <Dialog.Content class="text-sm">
     <Dialog.Header>
@@ -33,6 +33,6 @@
     </p>
     <CodeBlock code={registryCode} />
     <p class="mt-2">2. Then use the following command to add SVGs:</p>
-    <CodeBlock code={`npx shadcn@latest add @svgl/[svg-name]`} />
+    <CodeBlock code="npx shadcn@latest add @svgl/[svg-name]" />
   </Dialog.Content>
 </Dialog.Root>

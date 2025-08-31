@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { Component, Snippet, SvelteComponent } from "svelte";
+  import type { Component } from "svelte";
 
   import { cn } from "@/utils/cn";
   import CopyIcon from "@lucide/svelte/icons/copy";
@@ -18,21 +18,17 @@
   let timeoutId: ReturnType<typeof setTimeout> | null = null;
 
   const handleCopy = async () => {
-    try {
-      await clipboard(code);
+    await clipboard(code);
 
-      if (timeoutId) {
-        clearTimeout(timeoutId);
-      }
-
-      copied = true;
-      timeoutId = setTimeout(() => {
-        copied = false;
-        timeoutId = null;
-      }, copyDuration);
-    } catch (error) {
-      copied = false;
+    if (timeoutId) {
+      clearTimeout(timeoutId);
     }
+
+    copied = true;
+    timeoutId = setTimeout(() => {
+      copied = false;
+      timeoutId = null;
+    }, copyDuration);
   };
 
   $effect(() => {

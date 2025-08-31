@@ -19,7 +19,7 @@
   });
 </script>
 
-{#each categories.sort() as category}
+{#each categories.sort() as category (category)}
   <a
     href={`/directory/${category.toLowerCase()}`}
     data-sveltekit-preload-data

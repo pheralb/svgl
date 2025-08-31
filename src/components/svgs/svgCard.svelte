@@ -143,7 +143,7 @@
     </p>
     <div class="flex items-center justify-center space-x-1">
       {#if Array.isArray(svgInfo.category)}
-        {#each svgInfo.category.slice(0, maxVisibleCategories) as c, index}
+        {#each svgInfo.category.slice(0, maxVisibleCategories) as c (c)}
           <a
             href={`/directory/${c.toLowerCase()}`}
             class={badgeVariants({
@@ -176,7 +176,7 @@
             </Popover.Trigger>
             <Popover.Content class="flex w-auto flex-col space-y-2">
               <p class="font-medium">More tags:</p>
-              {#each svgInfo.category.slice(maxVisibleCategories) as c}
+              {#each svgInfo.category.slice(maxVisibleCategories) as c (c)}
                 <a
                   href={`/directory/${c.toLowerCase()}`}
                   class={cn(buttonVariants({ variant: "outline" }), "w-full")}
