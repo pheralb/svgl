@@ -41,14 +41,9 @@ export default ts.config(
     },
     rules: {
       "svelte/no-unused-svelte-ignore": "warn",
-      "@typescript-eslint/no-unused-vars": [
-        "warn",
-        {
-          argsIgnorePattern: "^_",
-          varsIgnorePattern: "^(_|\\$\\$)",
-          destructuredArrayIgnorePattern: "^_",
-        },
-      ],
+      "svelte/no-useless-mustaches": "warn",
+      "svelte/require-each-key": "warn",
+      "svelte/no-at-html-tags": "off",
     },
   },
 );
