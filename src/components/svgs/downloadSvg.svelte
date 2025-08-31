@@ -118,7 +118,7 @@
       </Dialog.Header>
       <div
         class={cn(
-          "flex h-full flex-col space-y-2 pt-4 pb-0.5",
+          "flex h-full flex-col space-y-2 pt-2 pb-0.5",
           "md:flex-row md:items-center md:justify-center md:space-y-0 md:space-x-2",
         )}
       >
@@ -130,6 +130,7 @@
               class="my-4 h-8"
             />
             <Button
+              class="justify-start"
               title="Download logo"
               variant="outline"
               onclick={() => {
@@ -151,6 +152,7 @@
               class="my-4 h-10"
             />
             <Button
+              class="justify-start"
               title="Logo with light & dark variants"
               variant="outline"
               onclick={() => {
@@ -167,6 +169,7 @@
             </Button>
 
             <Button
+              class="justify-start"
               title="Download light variant"
               variant="outline"
               onclick={() => {
@@ -181,6 +184,7 @@
             </Button>
 
             <Button
+              class="justify-start"
               title="Download dark variant"
               variant="outline"
               onclick={() => {
@@ -204,6 +208,7 @@
               class="my-4 h-8"
             />
             <Button
+              class="justify-start"
               title="Download Wordmark logo"
               variant="outline"
               onclick={() => {
@@ -229,6 +234,7 @@
               class="my-4 h-10"
             />
             <Button
+              class="justify-start"
               title="Download Wordmark light variant"
               variant="outline"
               onclick={() => {
@@ -247,6 +253,7 @@
             </Button>
 
             <Button
+              class="justify-start"
               title="Download Wordmark light variant"
               variant="outline"
               onclick={() => {
@@ -261,6 +268,7 @@
             </Button>
 
             <Button
+              class="justify-start"
               title="Download Wordmark dark variant"
               variant="outline"
               onclick={() => {
