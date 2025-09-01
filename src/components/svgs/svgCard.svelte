@@ -1,7 +1,9 @@
 <script lang="ts">
   import type { iSVG } from "@/types/svg";
+
   import { cn } from "@/utils/cn";
   import { mode } from "mode-watcher";
+  import { getSvgImgUrl } from "@/data";
 
   // Icons:
   import XIcon from "@lucide/svelte/icons/x";
@@ -32,7 +34,6 @@
   // States:
   let wordmarkSvg = $state<boolean>(false);
   let moreTagsOptions = $state<boolean>(false);
-  let changeThemeMode = $state<boolean>(false);
 
   // Icon Stroke & Size:
   let iconStroke = 1.8;
@@ -69,47 +70,17 @@
     <AddToFavorite svg={svgInfo} />
   </div>
   <!-- Image -->
-  {#if wordmarkSvg == true && svgInfo.wordmark !== undefined}
-    {#if changeThemeMode}
-      <img
-        class={cn("block", globalImageStyles)}
-        src={typeof svgInfo.wordmark !== "string"
-          ? mode.current === "dark"
-            ? svgInfo.wordmark?.light || ""
-            : svgInfo.wordmark?.dark || ""
-          : svgInfo.wordmark || ""}
-        alt={svgInfo.title}
-        title={svgInfo.title}
-        loading="lazy"
-      />
-    {:else}
-      <img
-        class={cn("hidden dark:block", globalImageStyles)}
-        src={typeof svgInfo.wordmark !== "string"
-          ? svgInfo.wordmark?.dark || ""
-          : svgInfo.wordmark || ""}
-        alt={svgInfo.title}
-        title={svgInfo.title}
-        loading="lazy"
-      />
-      <img
-        class={cn("block dark:hidden", globalImageStyles)}
-        src={typeof svgInfo.wordmark !== "string"
-          ? svgInfo.wordmark?.light || ""
-          : svgInfo.wordmark || ""}
-        alt={svgInfo.title}
-        title={svgInfo.title}
-        loading="lazy"
-      />
-    {/if}
-  {:else if changeThemeMode}
+  {#if wordmarkSvg && svgInfo.wordmark !== undefined}
     <img
-      class={cn("block", globalImageStyles)}
-      src={typeof svgInfo.route !== "string"
-        ? mode.current === "dark"
-          ? svgInfo.route.light
-          : svgInfo.route.dark
-        : svgInfo.route}
+      class={cn("hidden dark:block", globalImageStyles)}
+      src={getSvgImgUrl({ url: svgInfo.wordmark, isDark: true })}
+      alt={svgInfo.title}
+      title={svgInfo.title}
+      loading="lazy"
+    />
+    <img
+      class={cn("block dark:hidden", globalImageStyles)}
+      src={getSvgImgUrl({ url: svgInfo.wordmark, isDark: false })}
       alt={svgInfo.title}
       title={svgInfo.title}
       loading="lazy"
@@ -117,18 +88,14 @@
   {:else}
     <img
       class={cn("hidden dark:block", globalImageStyles)}
-      src={typeof svgInfo.route !== "string"
-        ? svgInfo.route.dark
-        : svgInfo.route}
+      src={getSvgImgUrl({ url: svgInfo.route, isDark: true })}
       alt={svgInfo.title}
       title={svgInfo.title}
       loading="lazy"
     />
     <img
       class={cn("block dark:hidden", globalImageStyles)}
-      src={typeof svgInfo.route !== "string"
-        ? svgInfo.route.light
-        : svgInfo.route}
+      src={getSvgImgUrl({ url: svgInfo.route, isDark: false })}
       alt={svgInfo.title}
       title={svgInfo.title}
       loading="lazy"
@@ -148,7 +115,8 @@
             href={`/directory/${c.toLowerCase()}`}
             class={badgeVariants({
               variant: "outline",
-              class: "cursor-pointer font-mono",
+              class:
+                "cursor-pointer font-mono hover:border-neutral-400 dark:hover:border-neutral-600",
             })}
             title={`This icon is part of the ${svgInfo.category} category`}
           >
@@ -164,7 +132,8 @@
             <Popover.Trigger
               class={badgeVariants({
                 variant: "outline",
-                class: "cursor-pointer font-mono",
+                class:
+                  "cursor-pointer font-mono hover:border-neutral-400 dark:hover:border-neutral-600",
               })}
               title="More Tags"
             >
@@ -193,7 +162,8 @@
           href={`/directory/${svgInfo.category.toLowerCase()}`}
           class={badgeVariants({
             variant: "outline",
-            class: "cursor-pointer font-mono",
+            class:
+              "cursor-pointer font-mono hover:border-neutral-400 dark:hover:border-neutral-600",
           })}
         >
           {svgInfo.category}
@@ -221,13 +191,7 @@
       />
     {/if}
 
-    <DownloadSvg
-      {svgInfo}
-      isDarkTheme={() => {
-        const dark = document.documentElement.classList.contains("dark");
-        return dark;
-      }}
-    />
+    <DownloadSvg {svgInfo} isDarkTheme={() => mode.current === "dark"} />
 
     <a
       href={svgInfo.url}
