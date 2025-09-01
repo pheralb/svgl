@@ -1,4 +1,4 @@
-export type tCategory =
+export type Category =
   | "All"
   | "AI"
   | "Software"
