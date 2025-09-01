@@ -23,7 +23,8 @@ export const load: Load = ({ url }) => {
         svg.title.toLowerCase().includes(searchParam.toLowerCase()),
       );
     } else {
-      filteredSvgs = searchWithFuse(filteredSvgs)
+      const baseData = sortParam ? alphabeticallySorted : latestSorted;
+      filteredSvgs = searchWithFuse(baseData)
         .search(searchParam)
         .map((result) => result.item);
     }
