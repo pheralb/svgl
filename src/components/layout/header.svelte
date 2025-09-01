@@ -18,11 +18,6 @@
   }
 
   let { githubStars }: HeaderProps = $props();
-
-  const headerItemsClasses = cn(
-    buttonVariants({ variant: "ghost" }),
-    "hover:bg-neutral-200 dark:hover:bg-neutral-800",
-  );
 </script>
 
 <header
@@ -39,24 +34,35 @@
       </a>
       <SvglVersion />
     </div>
-    <div class="flex h-8 items-center">
-      <div class="flex items-center space-x-0.5">
+    <div class="flex h-5 items-center space-x-2.5">
+      <div class="flex items-center space-x-1.5">
         <a
           target="_blank"
           title="X/Twitter"
           href={globals.twitterUrl}
-          class={cn(headerItemsClasses, "h-9 w-9")}
+          class={cn(
+            buttonVariants({ variant: "ghost", size: "icon" }),
+            "hover:bg-neutral-200 dark:hover:bg-neutral-800",
+          )}
         >
           <Twitter size={18} />
         </a>
-        <ModeToggle className={cn(headerItemsClasses, "h-9 w-9")} />
+        <ModeToggle
+          className={cn(
+            buttonVariants({ variant: "ghost", size: "icon" }),
+            "hover:bg-neutral-200 dark:hover:bg-neutral-800",
+          )}
+        />
       </div>
-      <Separator orientation="vertical" class="mx-2 h-8" />
+      <Separator orientation="vertical" />
       <a
         target="_blank"
         title="GitHub Repository"
         href={globals.githubUrl}
-        class={cn(headerItemsClasses, "h-9 w-fit")}
+        class={cn(
+          buttonVariants({ variant: "ghost" }),
+          "w-fit hover:bg-neutral-200 dark:hover:bg-neutral-800",
+        )}
       >
         <Github size={20} />
         <span class="text-neutral-600 dark:text-neutral-400">
@@ -65,7 +71,7 @@
             : githubStars.toLocaleString()}
         </span>
       </a>
-      <Separator orientation="vertical" class="mr-3 ml-2" />
+      <Separator orientation="vertical" />
       <a
         target="_blank"
         href={globals.submitUrl}
