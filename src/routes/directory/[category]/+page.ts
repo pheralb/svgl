@@ -1,48 +1,50 @@
 import type { PageLoad } from "./$types";
 import type { iSVG } from "@/types/svg";
 
-import { svgs } from "@/data/svgs";
 import { error } from "@sveltejs/kit";
+import { getSvgsByCategory } from "@/data";
 import { searchWithFuse } from "@/utils/searchWithFuse";
 
 export const load: PageLoad = (async ({ params, url }) => {
   const { category } = params;
   const searchParam = url.searchParams.get("search") || "";
+  const sortParam = url.searchParams.get("sort") === "alphabetical";
 
-  const svgsByCategory = svgs.filter((svg: iSVG) => {
-    if (Array.isArray(svg.category)) {
-      return svg.category.some(
-        (categoryItem) => categoryItem.toLowerCase() === category.toLowerCase(),
-      );
-    } else {
-      return svg.category.toLowerCase() === category.toLowerCase();
-    }
-  });
+  const svgsByCategory = getSvgsByCategory(category);
 
-  if (svgsByCategory.length === 0) {
+  if (!svgsByCategory.length) {
     throw error(404, "Category not found");
   }
 
   let filteredSvgs: iSVG[] = [];
+  const latestSorted = [...svgsByCategory].sort((a, b) => b.id! - a.id!);
+  const alphabeticallySorted = [...svgsByCategory].sort((a, b) =>
+    a.title.localeCompare(b.title),
+  );
+  const formatCategory = category.charAt(0).toUpperCase() + category.slice(1);
 
   if (!searchParam) {
-    filteredSvgs = svgsByCategory;
+    filteredSvgs = sortParam ? alphabeticallySorted : latestSorted;
   } else {
     if (searchParam.length < 3) {
-      filteredSvgs = svgsByCategory.filter((svg: iSVG) =>
+      const baseData = sortParam ? alphabeticallySorted : latestSorted;
+      filteredSvgs = baseData.filter((svg: iSVG) =>
         svg.title.toLowerCase().includes(searchParam.toLowerCase()),
       );
     } else {
-      filteredSvgs = searchWithFuse(svgsByCategory)
+      const baseData = sortParam ? alphabeticallySorted : latestSorted;
+      filteredSvgs = searchWithFuse(baseData)
         .search(searchParam)
         .map((result) => result.item);
     }
   }
 
   return {
-    category: category,
+    category: formatCategory,
     searchTerm: searchParam,
-    svgs: svgsByCategory,
-    filteredSvgs: filteredSvgs,
+    sorted: sortParam,
+    initialSvgs: filteredSvgs,
+    latestSorted,
+    alphabeticallySorted,
   };
 }) satisfies PageLoad;
