@@ -3,7 +3,6 @@
   import type { PageProps } from "./$types";
 
   import { page } from "$app/state";
-  import { goto } from "$app/navigation";
   import { SvelteURLSearchParams } from "svelte/reactivity";
 
   import { cn } from "@/utils/cn";
@@ -14,68 +13,70 @@
   import Search from "@/components/search.svelte";
   import SvgCard from "@/components/svgs/svgCard.svelte";
   import Container from "@/components/container.svelte";
+  import SearchXIcon from "@lucide/svelte/icons/search-x";
 
   import PageCard from "@/components/pageCard.svelte";
   import PageHeader from "@/components/pageHeader.svelte";
   import FolderIcon from "@lucide/svelte/icons/folder-open";
   import ArrowLeftIcon from "@lucide/svelte/icons/arrow-left";
-  import { buttonVariants } from "@/components/ui/button";
+  import { Button, buttonVariants } from "@/components/ui/button";
+  import SortSvgs from "@/components/svgs/sortSvgs.svelte";
+  import { deleteParam } from "@/utils/searchParams";
 
   // SSR Data:
   let { data }: PageProps = $props();
   const directoryData = $derived(data);
 
   // States:
+  let maxDisplay = 30;
   let searchTerm = $state<string>(data.searchTerm || "");
-  let filteredSvgs = $derived<iSVG[]>(data.filteredSvgs);
+  let filteredSvgs = $derived<iSVG[]>(data.initialSvgs);
+  let sorted = $state<boolean>(data.sorted);
+  let displaySvgs = $state<iSVG[]>([]);
+  let showAll = $state<boolean>(false);
+
+  const updateDisplaySvgs = () => {
+    displaySvgs = showAll ? filteredSvgs : filteredSvgs.slice(0, maxDisplay);
+  };
 
   const searchSvgs = () => {
     if (!searchTerm) {
-      filteredSvgs = data.svgs;
+      filteredSvgs = sorted ? data.alphabeticallySorted : data.latestSorted;
+      updateDisplaySvgs();
       return;
     }
     if (searchTerm.length < 3) {
-      filteredSvgs = data.svgs.filter((svg: iSVG) =>
+      filteredSvgs = (
+        sorted ? data.alphabeticallySorted : data.latestSorted
+      ).filter((svg: iSVG) =>
         svg.title.toLowerCase().includes(searchTerm.toLowerCase()),
       );
     } else {
-      filteredSvgs = searchWithFuse(data.svgs)
+      filteredSvgs = searchWithFuse(filteredSvgs)
         .search(searchTerm)
         .map((result) => result.item);
     }
+    updateDisplaySvgs();
   };
 
   const handleSearch = (value: string) => {
     searchTerm = value;
-
-    const params = new SvelteURLSearchParams(page.url.searchParams);
-    if (value) {
-      params.set("search", value);
-    } else {
-      params.delete("search");
-    }
-
-    goto(`?${params.toString()}`, {
-      keepFocus: true,
-      noScroll: true,
-      replaceState: true,
-    });
-
     searchSvgs();
   };
 
-  const formatCategory = (category: string) =>
-    category.charAt(0).toUpperCase() + category.slice(1);
+  const handleClearSearch = () => {
+    searchTerm = "";
+    deleteParam("search");
+    updateDisplaySvgs();
+  };
 
   $effect(() => {
-    filteredSvgs = data.svgs.filter((svg: iSVG) =>
-      svg.title.toLowerCase().includes(searchTerm.toLowerCase()),
-    );
+    updateDisplaySvgs();
   });
 </script>
 
 <svelte:head>
-  <title>{formatCategory(directoryData.category)} SVG logos - Svgl</title>
+  <title>{directoryData.category} SVG logos - Svgl</title>
 </svelte:head>
 
 <Search
@@ -91,24 +92,29 @@
     >
       <a
         href="/"
-        class={cn(
-          buttonVariants({ class: "group", variant: "ghost", size: "icon" }),
-        )}
+        class={cn(buttonVariants({ variant: "ghost", size: "icon" }))}
       >
-        <ArrowLeftIcon
-          size={18}
-          strokeWidth={1.5}
-          class="transition-transform group-hover:translate-x-[-2px]"
-        />
+        <ArrowLeftIcon size={18} strokeWidth={1.5} />
       </a>
-      <FolderIcon size={18} strokeWidth={1.5} />
+      {#if searchTerm}
+        <Button
+          title="Clear Search"
+          onclick={handleClearSearch}
+          variant="ghost"
+          size="icon"
+        >
+          <SearchXIcon size={18} strokeWidth={1.5} />
+        </Button>
+      {:else}
+        <FolderIcon class="ml-1" size={18} strokeWidth={1.5} />
+      {/if}
       <p>
-        {formatCategory(directoryData.category)}
+        {directoryData.category}
       </p>
       <span>-</span>
       {#if !searchTerm}
         <p>
-          <span>{data.svgs.length} SVGs </span>
+          <span>{data.initialSvgs.length} SVGs </span>
         </p>
       {:else}
         <p>
@@ -117,6 +123,14 @@
         </p>
       {/if}
     </div>
+    <SortSvgs
+      className={cn(filteredSvgs.length === 0 && "hidden")}
+      isSorted={sorted}
+      onSortedChange={(value) => {
+        sorted = value;
+        searchSvgs();
+      }}
+    />
   </PageHeader>
   <Container className="my-6">
     <Grid>

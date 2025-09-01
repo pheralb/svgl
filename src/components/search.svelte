@@ -2,12 +2,9 @@
   import { cn } from "@/utils/cn";
   import { onMount } from "svelte";
 
-  import { page } from "$app/state";
-  import { goto } from "$app/navigation";
-
+  import { addParams } from "@/utils/searchParams";
   import SearchIcon from "@lucide/svelte/icons/search";
   import CommandIcon from "@lucide/svelte/icons/command";
-  import { SvelteURLSearchParams } from "svelte/reactivity";
 
   interface Props {
     searchValue: string;
@@ -19,19 +16,12 @@
   let inputElement: HTMLInputElement;
 
   const onInput = (event: Event) => {
-    const param = "search";
     const value = (event.target as HTMLInputElement).value;
     onSearch(value);
-    const params = new SvelteURLSearchParams(page.url.searchParams);
-    if (value) {
-      params.set(param, value);
-    } else {
-      params.delete(param);
-    }
-    goto(`?${params.toString()}`, {
-      keepFocus: true,
-      noScroll: true,
-      replaceState: true,
+    addParams({
+      params: {
+        search: value,
+      },
     });
   };
 

@@ -3,6 +3,7 @@
   import type { PageProps } from "./$types";
 
   import { cn } from "@/utils/cn";
+  import { deleteParam } from "@/utils/searchParams";
   import { svgsData } from "@/data";
   import { searchWithFuse } from "@/utils/searchWithFuse";
 
@@ -12,11 +13,12 @@
   import SvgCard from "@/components/svgs/svgCard.svelte";
   import SortSvgs from "@/components/svgs/sortSvgs.svelte";
   import Container from "@/components/container.svelte";
+  import SearchXIcon from "@lucide/svelte/icons/search-x";
 
   import PageCard from "@/components/pageCard.svelte";
-  import PageHeader from "@/components/pageHeader.svelte";
   import FolderIcon from "@lucide/svelte/icons/folder";
-  import FolderSearchIcon from "@lucide/svelte/icons/folder-search";
+  import PageHeader from "@/components/pageHeader.svelte";
+  import Button from "@/components/ui/button/button.svelte";
 
   // SSR Data:
   let { data }: PageProps = $props();
@@ -60,6 +62,13 @@
     searchSvgs();
   };
 
+  const handleClearSearch = () => {
+    searchTerm = "";
+    filteredSvgs = sorted ? alphabeticallySorted : latestSorted;
+    deleteParam("search");
+    updateDisplaySvgs();
+  };
+
   $effect(() => {
     updateDisplaySvgs();
   });
@@ -87,7 +96,14 @@
           <span>logos</span>
         </p>
       {:else}
-        <FolderSearchIcon size={18} strokeWidth={1.5} />
+        <Button
+          title="Clear Search"
+          onclick={handleClearSearch}
+          variant="ghost"
+          size="icon"
+        >
+          <SearchXIcon size={18} strokeWidth={1.5} />
+        </Button>
         <p>
           <span class="font-mono">{filteredSvgs.length}</span>
           <span>logos</span>
