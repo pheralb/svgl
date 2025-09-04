@@ -1,10 +1,17 @@
 import type { iSVG, ThemeOptions } from "@/types/svg";
 import type { Category } from "@/types/categories";
+import type { Extension } from "@/types/extensions";
+
 import { svgs } from "@/data/svgs";
+import { extensions } from "@/data/extensions";
 
 export const svgsData = svgs.map((svg: iSVG, index: number) => {
   return { id: index, ...svg };
 }) as iSVG[];
+
+export const extensionsData = extensions.map((extension, index) => {
+  return { id: index, ...extension };
+}) as Extension[];
 
 export const getCategories = (): Category[] => {
   const categories = svgs

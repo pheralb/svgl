@@ -2,14 +2,58 @@ import type { Extension } from "@/types/extensions";
 
 export const extensions: Extension[] = [
   {
-    name: "SVGL for Raycast",
-    description: "Search SVG logos via svgl using Raycast.",
-    url: "https://www.raycast.com/1weiho/svgl",
+    name: "SVGL CLI",
+    description: "A CLI for easily adding SVG icons to your project.",
+    url: "https://github.com/sujjeee/svgls",
     image:
-      "https://github.com/pheralb/svgl/raw/main/static/library/raycast.svg",
+      "https://raw.githubusercontent.com/pheralb/svgl/refs/heads/main/static/images/logo.svg",
     created_by: {
-      name: "1weiho",
-      socialUrl: "https://x.com/1weiho",
+      name: "sujjeee",
+      socialUrl: "https://x.com/sujjeeee",
+    },
+  },
+  {
+    name: "SVGL for React",
+    description:
+      "An open-source NPM package that offers a SVGL Logos for React.",
+    url: "https://github.com/ridemountainpig/svgl-react",
+    image:
+      "https://raw.githubusercontent.com/pheralb/svgl/refs/heads/main/static/library/react_light.svg",
+    created_by: {
+      name: "ridemountainpig",
+      socialUrl: "https://x.com/ridemountainpig",
+    },
+  },
+  {
+    name: "SVGL for Vue",
+    description: "An open-source NPM package that offers a SVGL Logos for Vue.",
+    url: "https://github.com/ridemountainpig/svgl-vue",
+    image:
+      "https://raw.githubusercontent.com/pheralb/svgl/refs/heads/main/static/library/vue.svg",
+    created_by: {
+      name: "selemondev",
+      socialUrl: "https://x.com/selemondev",
+    },
+  },
+  {
+    name: "SVGL for Svelte",
+    description:
+      "An open-source NPM package that offers a SVGL Logos for Svelte.",
+    url: "https://github.com/ridemountainpig/svgl-svelte",
+    image: "https://github.com/pheralb/svgl/raw/main/static/library/svelte.svg",
+    created_by: {
+      name: "selemondev",
+      socialUrl: "https://x.com/selemondev",
+    },
+  },
+  {
+    name: "SVGL for Figma",
+    description: "Add svgs from svgl to your Figma project.",
+    url: "https://www.figma.com/community/plugin/1320306989350693206/svgl",
+    image: "https://github.com/pheralb/svgl/raw/main/static/library/figma.svg",
+    created_by: {
+      name: "quilljou",
+      socialUrl: "https://x.com/quillzhou",
     },
   },
   {
@@ -20,72 +64,72 @@ export const extensions: Extension[] = [
       "https://github.com/pheralb/svgl/raw/main/static/library/powertoys.svg",
     created_by: {
       name: "SameerJS6",
-      socialUrl: "https://svgl.sameerjs.com/",
+      socialUrl: "https://x.com/Sameerjs6",
     },
   },
   {
-    name: "SVGL for React",
-    description:
-      "An open-source NPM package that offers a collection of high-quality SVGL logos for React.",
-    url: "https://github.com/ridemountainpig/svgl-react?tab=readme-ov-file",
+    name: "SVGL for Raycast",
+    description: "Search SVG logos via svgl.",
+    url: "https://www.raycast.com/1weiho/svgl",
     image:
-      "https://raw.githubusercontent.com/pheralb/svgl/0d4514c9521688e76c6a1b426f3054a424d96aa5/static/library/react_dark.svg",
+      "https://github.com/pheralb/svgl/raw/main/static/library/raycast.svg",
     created_by: {
-      name: "ridemountainpig",
-      socialUrl: "https://twitter.com/ridemountainpig",
+      name: "1weiho",
+      socialUrl: "https://x.com/1weiho",
     },
   },
   {
-    name: "SVGL Badges",
-    description: "A beautiful badges with svgl SVG logos.",
+    name: "SVGL for Visual Studio Code",
+    description: "SVGL directly in your VSCode.",
+    url: "https://marketplace.visualstudio.com/items?itemName=EsteveSegura.svgl",
+    image: "https://github.com/pheralb/svgl/raw/main/static/library/vscode.svg",
+    created_by: {
+      name: "girlazote",
+      socialUrl: "https://x.com/girlazote",
+    },
+  },
+  {
+    name: "SVGL Badge",
+    description: "A beautiful badges with SVGL SVGs logos.",
     url: "https://svgl-badge.vercel.app/",
     image:
       "https://camo.githubusercontent.com/b516f0f725ad1827dd854f16ec08626569d02ab827cd06b4f42163e519b813c7/68747470733a2f2f7376676c2d62616467652e76657263656c2e6170702f6170692f4c6962726172792f5376676c3f7468656d653d6c69676874",
     created_by: {
       name: "ridemountainpig",
-      socialUrl: "https://twitter.com/ridemountainpig",
+      socialUrl: "https://x.com/ridemountainpig",
     },
   },
   {
-    name: "Magic",
-    description: "AI extension for Cursor & other IDEs.",
+    name: "SVGL on Magic by 21st",
+    description: "Integrate company logos and icons via SVGL on Magic.",
     url: "https://21st.dev/magic",
     image:
-      "https://github.com/serafimcloud/21st/blob/main/apps/web/public/icon.png?raw=true",
+      "https://github.com/serafimcloud/21st/raw/main/apps/web/public/icon.png?raw=true",
     created_by: {
-      name: "serafim",
+      name: "serafimcloud",
       socialUrl: "https://x.com/serafimcloud",
     },
   },
   {
-    name: "svgls",
-    description: "A CLI for easily adding SVG icons to your project.",
-    url: "https://github.com/sujjeee/svgls",
-    image: "https://github.com/pheralb/svgl/raw/main/static/library/svgl.svg",
-    created_by: {
-      name: "Sujjeee",
-      socialUrl: "https://twitter.com/sujjeeee",
-    },
-  },
-  {
-    name: "SVGL for Figma",
-    description: "Add svgs from svgl to your Figma project.",
-    url: "https://www.figma.com/community/plugin/1320306989350693206/svgl",
-    image: "https://github.com/pheralb/svgl/raw/main/static/library/figma.svg",
-    created_by: {
-      name: "Quill",
-      socialUrl: "https://x.com/quillzhou",
-    },
-  },
-  {
-    name: "SVGL for VSCode",
-    description: "SVGL directly in your VSCode.",
-    url: "https://marketplace.visualstudio.com/items?itemName=EsteveSegura.svgl",
+    name: "SVGL for PowerShell",
+    description: "PowerShell extension to quickly get svgl logos anywhere.",
+    url: "https://github.com/spaansba/SVGL-PowerShell",
     image:
-      "https://github.com/pheralb/svgl/blob/main/static/library/vscode.svg",
+      "https://github.com/pheralb/svgl/raw/main/static/library/powershell.svg",
     created_by: {
-      name: "GiR",
-      socialUrl: "https://x.com/girlazote",
+      name: "Bart Spaans",
+      socialUrl: "https://bsky.app/profile/bartspaans.bsky.social",
+    },
+  },
+  {
+    name: "SVGL for Flow Launcher",
+    description: "Search & copy SVG logos in Flow Launcher.",
+    url: "https://github.com/spaansba/SVGL-Flow-Launcher",
+    image:
+      "https://github.com/pheralb/svgl/raw/main/static/library/FlowLauncher.svg",
+    created_by: {
+      name: "AF_Askar",
+      socialUrl: "https://x.com/Askar_AF",
     },
   },
 ];
