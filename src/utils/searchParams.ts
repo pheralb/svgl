@@ -6,6 +6,11 @@ interface SearchParams {
   params: Record<string, string | null>;
 }
 
+const getParamValue = (key: string): string | null => {
+  const params = new SvelteURLSearchParams(page.url.searchParams);
+  return params.get(key);
+};
+
 const addParams = ({ params }: SearchParams) => {
   const searchParams = new SvelteURLSearchParams(page.url.searchParams);
   Object.entries(params).forEach(([key, value]) => {
@@ -32,4 +37,4 @@ const deleteParam = (key: string) => {
   });
 };
 
-export { addParams, deleteParam };
+export { getParamValue, addParams, deleteParam };
