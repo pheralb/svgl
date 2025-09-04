@@ -29,11 +29,11 @@
   let searchTerm = $state<string>(data.searchTerm || "");
   let filteredSvgs = $derived<iSVG[]>(data.initialSvgs);
   let sorted = $state<boolean>(data.sorted);
-  let displaySvgs = $state<iSVG[]>([]);
   let showAll = $state<boolean>(false);
 
   const updateDisplaySvgs = () => {
-    displaySvgs = showAll ? filteredSvgs : filteredSvgs.slice(0, maxDisplay);
+    const data = showAll ? filteredSvgs : filteredSvgs.slice(0, maxDisplay);
+    return data;
   };
 
   const searchSvgs = () => {
