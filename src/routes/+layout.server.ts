@@ -5,10 +5,6 @@ export const load: LayoutServerLoad = async ({ fetch, setHeaders }) => {
   try {
     const response = await fetch(globals.apiGithubUrl);
 
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-
     const data = await response.json();
 
     // 1 day cache:
@@ -22,7 +18,7 @@ export const load: LayoutServerLoad = async ({ fetch, setHeaders }) => {
   } catch (error) {
     console.error("Error fetching GitHub data:", error);
     return {
-      stars: 0,
+      stars: null,
       error: "Failed to fetch repository data",
     };
   }

@@ -14,7 +14,7 @@
   import SendIcon from "@/components/ui/moving-icons/send-icon.svelte";
 
   interface HeaderProps {
-    githubStars: number;
+    githubStars?: number;
   }
 
   let { githubStars }: HeaderProps = $props();
@@ -55,22 +55,36 @@
         />
       </div>
       <Separator orientation="vertical" />
-      <a
-        target="_blank"
-        title="GitHub Repository"
-        href={globals.githubUrl}
-        class={cn(
-          buttonVariants({ variant: "ghost" }),
-          "w-fit hover:bg-neutral-200 dark:hover:bg-neutral-800",
-        )}
-      >
-        <Github size={20} />
-        <span class="text-neutral-600 dark:text-neutral-400">
-          {githubStars >= 1000
-            ? `${(githubStars / 1000).toFixed(1)}k`
-            : githubStars.toLocaleString()}
-        </span>
-      </a>
+      {#if githubStars !== undefined}
+        <a
+          target="_blank"
+          title="GitHub Repository"
+          href={globals.githubUrl}
+          class={cn(
+            buttonVariants({ variant: "ghost" }),
+            "w-fit hover:bg-neutral-200 dark:hover:bg-neutral-800",
+          )}
+        >
+          <Github size={20} />
+          <span class="text-neutral-600 dark:text-neutral-400">
+            {githubStars >= 1000
+              ? `${(githubStars / 1000).toFixed(1)}k`
+              : githubStars.toLocaleString()}
+          </span>
+        </a>
+      {:else}
+        <a
+          target="_blank"
+          title="GitHub Repository"
+          href={globals.githubUrl}
+          class={cn(
+            buttonVariants({ variant: "ghost", size: "icon" }),
+            "hover:bg-neutral-200 dark:hover:bg-neutral-800",
+          )}
+        >
+          <Github size={20} />
+        </a>
+      {/if}
       <Separator orientation="vertical" />
       <a
         target="_blank"

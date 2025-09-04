@@ -482,17 +482,6 @@
             class="justify-start"
             title="Copy as Svelte component"
             disabled={isLoading}
-            onclick={() => convertSvgSvelteComponent(false)}
-          >
-            <Svelte size={18} />
-            <span>Copy JS</span>
-          </Button>
-
-          <Button
-            variant="outline"
-            class="justify-start"
-            title="Copy as Svelte component"
-            disabled={isLoading}
             onclick={() => convertSvgSvelteComponent(true)}
           >
             <Svelte size={18} />

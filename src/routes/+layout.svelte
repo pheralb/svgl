@@ -10,7 +10,6 @@
   // Providers:
   import { ModeWatcher } from "mode-watcher";
   import Sidebar from "@/components/layout/sidebar.svelte";
-  import ViewTransitions from "@/components/viewTransitions.svelte";
   import Sonner from "@/components/ui/sonner/sonner.svelte";
 
   // SSR Data:
@@ -18,7 +17,6 @@
 </script>
 
 <ModeWatcher />
-<ViewTransitions />
 <Sonner />
 <Header githubStars={data?.stars} />
 <Sidebar>

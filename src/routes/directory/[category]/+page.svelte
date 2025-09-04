@@ -2,11 +2,8 @@
   import type { iSVG } from "@/types/svg";
   import type { PageProps } from "./$types";
 
-  import { page } from "$app/state";
-  import { SvelteURLSearchParams } from "svelte/reactivity";
-
   import { cn } from "@/utils/cn";
-  import { searchWithFuse } from "@/utils/searchWithFuse";
+  import { searchSvgsWithFuse } from "@/utils/searchWithFuse";
 
   // Components:
   import Grid from "@/components/grid.svelte";
@@ -45,17 +42,9 @@
       updateDisplaySvgs();
       return;
     }
-    if (searchTerm.length < 3) {
-      filteredSvgs = (
-        sorted ? data.alphabeticallySorted : data.latestSorted
-      ).filter((svg: iSVG) =>
-        svg.title.toLowerCase().includes(searchTerm.toLowerCase()),
-      );
-    } else {
-      filteredSvgs = searchWithFuse(filteredSvgs)
-        .search(searchTerm)
-        .map((result) => result.item);
-    }
+    filteredSvgs = searchSvgsWithFuse(filteredSvgs)
+      .search(searchTerm)
+      .map((result) => result.item);
     updateDisplaySvgs();
   };
 

@@ -23,7 +23,10 @@
   let iconSize = 16;
   let iconStroke = 2;
   let cardDownloadStyles =
-    "flex w-full h-full flex-col p-4 rounded-md shadow-sm dark:bg-neutral-800/20 bg-neutral-200/10 border border-neutral-200 dark:border-neutral-800 space-y-2";
+    "flex w-full h-full flex-col p-4 rounded-md shadow-sm dark:bg-neutral-800/20 bg-neutral-200/10 border border-neutral-200 dark:border-neutral-800 space-y-1.5";
+  let imgStyles = "my-7 h-10 select-none pointer-events-none";
+  let badgeButtonStyles =
+    "font-mono text-neutral-600 dark:text-neutral-400 text-xs";
 
   // Functions:
   const handleDownloadSvg = async (url?: string) => {
@@ -109,28 +112,23 @@
     >
       <DownloadIcon size={iconSize} strokeWidth={iconStroke} />
     </Dialog.Trigger>
-    <Dialog.Content class="max-w-[630px]">
+    <Dialog.Content>
       <Dialog.Header>
         <Dialog.Title>Download {svgInfo.title} SVG</Dialog.Title>
         <Dialog.Description>
           This logo has multiple options to download:
         </Dialog.Description>
       </Dialog.Header>
-      <div
-        class={cn(
-          "flex h-full flex-col space-y-2 pt-2 pb-0.5",
-          "md:flex-row md:items-center md:justify-center md:space-y-0 md:space-x-2",
-        )}
-      >
+      <div class={cn("flex flex-col gap-4 md:flex-row")}>
         {#if typeof svgInfo.route === "string"}
           <div class={cardDownloadStyles}>
             <img
               src={isDarkTheme() ? svgInfo.route : svgInfo.route}
               alt={svgInfo.title}
-              class="my-4 h-8"
+              class={imgStyles}
             />
             <Button
-              class="justify-start"
+              class="justify-between"
               title="Download logo"
               variant="outline"
               onclick={() => {
@@ -140,8 +138,11 @@
                 }
               }}
             >
-              <DownloadIcon class="mr-2" size={iconSize} />
-              <p>Icon logo</p>
+              <div class="flex items-center space-x-2">
+                <DownloadIcon size={iconSize} />
+                <p>Icon logo</p>
+              </div>
+              <span class={badgeButtonStyles}>.svg</span>
             </Button>
           </div>
         {:else}
@@ -149,10 +150,10 @@
             <img
               src={isDarkTheme() ? svgInfo.route.dark : svgInfo.route.light}
               alt={svgInfo.title}
-              class="my-4 h-10"
+              class={imgStyles}
             />
             <Button
-              class="justify-start"
+              class="justify-between"
               title="Logo with light & dark variants"
               variant="outline"
               onclick={() => {
@@ -164,12 +165,15 @@
                 }
               }}
             >
-              <DownloadIcon size={iconSize} />
-              <p>Light & dark variants</p>
+              <div class="flex items-center space-x-2">
+                <DownloadIcon size={iconSize} />
+                <p>Light & dark variants</p>
+              </div>
+              <span class={badgeButtonStyles}>.zip</span>
             </Button>
 
             <Button
-              class="justify-start"
+              class="justify-between"
               title="Download light variant"
               variant="outline"
               onclick={() => {
@@ -179,12 +183,15 @@
                 }
               }}
             >
-              <DownloadIcon class="mr-2" size={iconSize} />
-              <p>Only light variant</p>
+              <div class="flex items-center space-x-2">
+                <DownloadIcon size={iconSize} />
+                <p>Only light variant</p>
+              </div>
+              <span class={badgeButtonStyles}>.svg</span>
             </Button>
 
             <Button
-              class="justify-start"
+              class="justify-between"
               title="Download dark variant"
               variant="outline"
               onclick={() => {
@@ -194,8 +201,11 @@
                 }
               }}
             >
-              <DownloadIcon class="mr-2" size={iconSize} />
-              <p>Only dark variant</p>
+              <div class="flex items-center space-x-2">
+                <DownloadIcon size={iconSize} />
+                <p>Only dark variant</p>
+              </div>
+              <span class={badgeButtonStyles}>.svg</span>
             </Button>
           </div>
         {/if}
@@ -205,10 +215,10 @@
             <img
               src={isDarkTheme() ? svgInfo.wordmark : svgInfo.wordmark}
               alt={svgInfo.title}
-              class="my-4 h-8"
+              class={imgStyles}
             />
             <Button
-              class="justify-start"
+              class="justify-between"
               title="Download Wordmark logo"
               variant="outline"
               onclick={() => {
@@ -218,8 +228,11 @@
                 }
               }}
             >
-              <DownloadIcon class="mr-2" size={iconSize} />
-              <p>Wordmark logo</p>
+              <div class="flex items-center space-x-2">
+                <DownloadIcon size={iconSize} />
+                <p>Wordmark logo</p>
+              </div>
+              <span class={badgeButtonStyles}>.svg</span>
             </Button>
           </div>
         {/if}
@@ -231,10 +244,10 @@
                 ? svgInfo.wordmark.dark
                 : svgInfo.wordmark.light}
               alt={svgInfo.title}
-              class="my-4 h-10"
+              class={imgStyles}
             />
             <Button
-              class="justify-start"
+              class="justify-between"
               title="Download Wordmark light variant"
               variant="outline"
               onclick={() => {
@@ -248,12 +261,15 @@
                 }
               }}
             >
-              <DownloadIcon class="mr-2" size={iconSize} />
-              <p>Light & dark variants</p>
+              <div class="flex items-center space-x-2">
+                <DownloadIcon size={iconSize} />
+                <p>Light & dark variants</p>
+              </div>
+              <span class={badgeButtonStyles}>.zip</span>
             </Button>
 
             <Button
-              class="justify-start"
+              class="justify-between"
               title="Download Wordmark light variant"
               variant="outline"
               onclick={() => {
@@ -263,12 +279,15 @@
                 }
               }}
             >
-              <DownloadIcon class="mr-2" size={iconSize} />
-              <p>Wordmark light variant</p>
+              <div class="flex items-center space-x-2">
+                <DownloadIcon size={iconSize} />
+                <p>Wordmark light variant</p>
+              </div>
+              <span class={badgeButtonStyles}>.svg</span>
             </Button>
 
             <Button
-              class="justify-start"
+              class="justify-between"
               title="Download Wordmark dark variant"
               variant="outline"
               onclick={() => {
@@ -278,15 +297,16 @@
                 }
               }}
             >
-              <DownloadIcon class="mr-2" size={iconSize} />
-              <p>Wordmark dark variant</p>
+              <div class="flex items-center space-x-2">
+                <DownloadIcon size={iconSize} />
+                <p>Wordmark dark variant</p>
+              </div>
+              <span class={badgeButtonStyles}>.svg</span>
             </Button>
           </div>
         {/if}
       </div>
-      <Dialog.Footer
-        class="mt-3 text-xs text-neutral-600 dark:text-neutral-400"
-      >
+      <Dialog.Footer class="text-xs text-neutral-600 dark:text-neutral-400">
         <p>
           Remember to request permission from the creators for the use of the
           SVG. Modification is not allowed.

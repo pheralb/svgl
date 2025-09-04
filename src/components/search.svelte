@@ -10,9 +10,12 @@
     searchValue: string;
     onSearch: (value: string) => void;
     placeholder?: string;
+    iconSize?: number;
+    inputClass?: string;
   }
 
-  let { searchValue, onSearch, placeholder }: Props = $props();
+  let { searchValue, onSearch, placeholder, iconSize, inputClass }: Props =
+    $props();
   let inputElement: HTMLInputElement;
 
   const onInput = (event: Event) => {
@@ -42,7 +45,7 @@
 
 <div class="relative">
   <SearchIcon
-    size={20}
+    size={iconSize ? iconSize : 20}
     strokeWidth={2}
     class={cn(
       "pointer-events-none absolute top-1/2 left-2.5 -translate-y-1/2 transition-colors",
@@ -65,6 +68,7 @@
       "bg-white dark:bg-neutral-900",
       "rounded-md border border-neutral-200 dark:border-neutral-800",
       "focus:border-neutral-400 focus:outline-none dark:focus:border-neutral-600",
+      inputClass,
     )}
   />
   {#if !searchValue}

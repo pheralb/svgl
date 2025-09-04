@@ -5,7 +5,7 @@
   import { cn } from "@/utils/cn";
   import { deleteParam } from "@/utils/searchParams";
   import { svgsData } from "@/data";
-  import { searchWithFuse } from "@/utils/searchWithFuse";
+  import { searchSvgsWithFuse } from "@/utils/searchWithFuse";
 
   // Components:
   import Grid from "@/components/grid.svelte";
@@ -17,6 +17,7 @@
 
   import PageCard from "@/components/pageCard.svelte";
   import FolderIcon from "@lucide/svelte/icons/folder";
+  import ChevronDownIcon from "@lucide/svelte/icons/chevron-down";
   import PageHeader from "@/components/pageHeader.svelte";
   import Button from "@/components/ui/button/button.svelte";
 
@@ -43,17 +44,9 @@
       updateDisplaySvgs();
       return;
     }
-    if (searchTerm.length < 3) {
-      filteredSvgs = (sorted ? alphabeticallySorted : latestSorted).filter(
-        (svg: iSVG) =>
-          svg.title.toLowerCase().includes(searchTerm.toLowerCase()),
-      );
-    } else {
-      filteredSvgs = searchWithFuse(filteredSvgs)
-        .search(searchTerm)
-        .map((result) => result.item);
-    }
-
+    filteredSvgs = searchSvgsWithFuse(filteredSvgs)
+      .search(searchTerm)
+      .map((result) => result.item);
     updateDisplaySvgs();
   };
 
@@ -125,5 +118,16 @@
         <SvgCard svgInfo={svg} />
       {/each}
     </Grid>
+    {#if showAll === false && filteredSvgs.length > maxDisplay}
+      <div class="mt-6 flex justify-center">
+        <Button variant="outline" size="lg" onclick={() => (showAll = true)}>
+          <span>Show All</span>
+          <span class="text-neutral-500 dark:text-neutral-700">
+            (+ {filteredSvgs.length - maxDisplay} SVGs)
+          </span>
+          <ChevronDownIcon size={16} strokeWidth={2} />
+        </Button>
+      </div>
+    {/if}
   </Container>
 </PageCard>

@@ -3,7 +3,7 @@ import type { iSVG } from "@/types/svg";
 
 import { error } from "@sveltejs/kit";
 import { getSvgsByCategory } from "@/data";
-import { searchWithFuse } from "@/utils/searchWithFuse";
+import { searchSvgsWithFuse } from "@/utils/searchWithFuse";
 
 export const load: PageLoad = (async ({ params, url }) => {
   const { category } = params;
@@ -26,17 +26,10 @@ export const load: PageLoad = (async ({ params, url }) => {
   if (!searchParam) {
     filteredSvgs = sortParam ? alphabeticallySorted : latestSorted;
   } else {
-    if (searchParam.length < 3) {
-      const baseData = sortParam ? alphabeticallySorted : latestSorted;
-      filteredSvgs = baseData.filter((svg: iSVG) =>
-        svg.title.toLowerCase().includes(searchParam.toLowerCase()),
-      );
-    } else {
-      const baseData = sortParam ? alphabeticallySorted : latestSorted;
-      filteredSvgs = searchWithFuse(baseData)
-        .search(searchParam)
-        .map((result) => result.item);
-    }
+    const baseData = sortParam ? alphabeticallySorted : latestSorted;
+    filteredSvgs = searchSvgsWithFuse(baseData)
+      .search(searchParam)
+      .map((result) => result.item);
   }
 
   return {
