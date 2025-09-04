@@ -21,7 +21,7 @@
 >
   <div
     class={cn(
-      "max-h-[calc(100vh-8.6rem)] min-h-[calc(100vh-8.6rem)] overflow-y-auto",
+      "max-h-[calc(100vh-8.2rem)] min-h-[calc(100vh-8.2rem)] overflow-y-auto",
       contentCardClass,
     )}
   >

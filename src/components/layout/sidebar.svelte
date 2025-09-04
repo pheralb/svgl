@@ -9,7 +9,7 @@
 <section>
   <aside
     class={cn(
-      "fixed left-0 h-[calc(100vh-5.4rem)]",
+      "fixed left-0 h-[calc(100vh-5rem)]",
       "overflow-x-hidden",
       "w-54 pr-2 pl-3",
       "flex flex-col space-y-3",
