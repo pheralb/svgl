@@ -1,17 +1,32 @@
 <script lang="ts">
+  import { onMount } from "svelte";
+  import { toggleMode } from "mode-watcher";
+
   import SunIcon from "@lucide/svelte/icons/sun";
   import MoonIcon from "@lucide/svelte/icons/moon";
-
-  import { toggleMode } from "mode-watcher";
 
   interface Props {
     className?: string;
   }
 
   let { className }: Props = $props();
+
+  const handleKeydown = (event: KeyboardEvent) => {
+    if (event.ctrlKey && event.key === "l") {
+      event.preventDefault();
+      toggleMode();
+    }
+  };
+
+  onMount(() => {
+    window.addEventListener("keydown", handleKeydown);
+    return () => {
+      window.removeEventListener("keydown", handleKeydown);
+    };
+  });
 </script>
 
-<button class={className} onclick={toggleMode} title="Mode Toggle">
+<button class={className} onclick={toggleMode} title="Mode Toggle (Cmd + l)">
   <SunIcon
     size={20}
     strokeWidth={1.5}
