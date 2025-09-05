@@ -114,7 +114,7 @@
     </Dialog.Trigger>
     <Dialog.Content>
       <Dialog.Header>
-        <Dialog.Title>Download {svgInfo.title} SVG</Dialog.Title>
+        <Dialog.Title>Download {svgInfo.title} SVGs</Dialog.Title>
         <Dialog.Description>
           This logo has multiple options to download:
         </Dialog.Description>
