@@ -1,5 +1,7 @@
 <script lang="ts">
   import { cn } from "@/utils/cn";
+  import { globals } from "@/globals";
+
   import { page } from "$app/state";
   import favoritesStore from "@/stores/favorites.store";
 
@@ -10,6 +12,8 @@
   import House from "@lucide/svelte/icons/house";
   import Heart from "@lucide/svelte/icons/heart";
   import Cloud from "@lucide/svelte/icons/cloud";
+  import Submit from "@lucide/svelte/icons/send";
+  import Github from "@/components/logos/github.svelte";
 
   let favorites = $derived($favoritesStore);
   let favoritesCount = $derived(favoritesStore.getCount(favorites));
@@ -71,4 +75,20 @@
 >
   <Box size={16} />
   <p class="truncate">Extensions</p>
+</a>
+<a
+  href={globals.submitUrl}
+  target="_blank"
+  class={cn(sidebarItemClasses.base, "flex justify-start space-x-3 md:hidden")}
+>
+  <Submit size={16} />
+  <p class="truncate">Submit SVG</p>
+</a>
+<a
+  href={globals.githubUrl}
+  target="_blank"
+  class={cn(sidebarItemClasses.base, "flex justify-start space-x-3 md:hidden")}
+>
+  <Github size={16} />
+  <p class="truncate">GitHub Repository</p>
 </a>

@@ -7,6 +7,9 @@
   import Container from "@/components/container.svelte";
   import FileText from "@lucide/svelte/icons/file-text";
 
+  // Markdown:
+  import "@/styles/markdown.css";
+
   let { data }: PageProps = $props();
   const document = $derived(data.document);
 </script>
@@ -18,7 +21,7 @@
 
 <PageCard
   containerClass="mt-0"
-  contentCardClass="max-h-[calc(100vh-5.2rem)] min-h-[calc(100vh-5.2rem)]"
+  contentCardClass="max-h-[calc(100vh-5rem)] min-h-[calc(100vh-5rem)]"
 >
   <PageHeader>
     <div
@@ -31,6 +34,6 @@
     </div>
   </PageHeader>
   <Container className="my-6">
-    <article>{@html document.html}</article>
+    <article class="markdown">{@html document.html}</article>
   </Container>
 </PageCard>

@@ -9,10 +9,10 @@
 <section>
   <aside
     class={cn(
-      "fixed left-0 h-[calc(100vh-5rem)]",
+      "md:fixed md:left-0 md:h-[calc(100vh-5rem)]",
       "overflow-x-hidden",
       "w-54 pr-2 pl-3",
-      "flex flex-col space-y-3",
+      "hidden flex-col space-y-3 md:flex",
       "bg-neutral-100 dark:bg-neutral-950",
     )}
   >
@@ -24,7 +24,7 @@
       <ShowCategories />
     </nav>
   </aside>
-  <main class={cn("mr-4 mb-4 ml-56", "overflow-hidden")}>
+  <main class={cn("mb-4 px-4 md:mr-4 md:ml-56 md:px-0", "overflow-hidden")}>
     <slot />
   </main>
 </section>
