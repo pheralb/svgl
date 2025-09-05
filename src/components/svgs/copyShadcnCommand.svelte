@@ -1,11 +1,11 @@
 <script lang="ts">
-  import { Button } from "@/components/ui/button";
+  import { buttonVariants } from "@/components/ui/button";
   import Shadcn from "@/components/logos/shadcn.svelte";
   import SelectPkgManager from "@/components/selectPkgManager.svelte";
 
   import { pkgManager, type PackageManager } from "@/stores/pkgManager.store";
   import CodeBlock from "@/components/codeBlock.svelte";
-  import SetupShadcnRegistry from "@/components/svgs/setupShadcnRegistry.svelte";
+  import ArrowUpRightIcon from "@lucide/svelte/icons/arrow-up-right";
 
   interface Props {
     svgTitle: string;
@@ -29,11 +29,17 @@
 </script>
 
 <div class="flex items-center justify-between space-x-2">
-  <SetupShadcnRegistry>
-    <Button variant="outline" size="sm">
-      <span>Setup Registry</span>
-    </Button>
-  </SetupShadcnRegistry>
+  <a
+    href="/docs/shadcn-ui"
+    target="_blank"
+    class={buttonVariants({ variant: "outline", size: "sm" })}
+  >
+    <span>Setup Registry</span>
+    <ArrowUpRightIcon
+      size={14}
+      class="text-neutral-500 dark:text-neutral-400"
+    />
+  </a>
   <SelectPkgManager />
 </div>
 <CodeBlock code={`${shadcnCommand} @svgl/${svgFormatTitle}`} Icon={Shadcn} />
