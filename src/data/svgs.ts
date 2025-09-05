@@ -2324,7 +2324,14 @@ export const svgs: iSVG[] = [
   {
     title: 'Sanity',
     category: 'CMS',
-    route: '/library/sanity.svg',
+    route: {
+      dark: '/library/sanity-dark.svg',
+      light: '/library/sanity-light.svg'
+    },
+    wordmark: {
+      dark: '/library/sanity-wordmark-dark.svg',
+      light: '/library/sanity-wordmark-light.svg'
+    },
     url: 'https://www.sanity.io'
   },
   {
