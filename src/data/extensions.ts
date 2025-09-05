@@ -25,6 +25,18 @@ export const extensions: Extension[] = [
     },
   },
   {
+    name: "SVGL for Framer",
+    description:
+      "Import colorful SVG logos, fast and easy using our plugin for Framer.",
+    url: "https://www.framer.com/marketplace/plugins/svgl/",
+    image:
+      "https://raw.githubusercontent.com/pheralb/svgl/refs/heads/main/static/library/framer.svg",
+    created_by: {
+      name: "Krishna Singh",
+      socialUrl: "https://x.com/krishnasinghdev",
+    },
+  },
+  {
     name: "SVGL for Vue",
     description: "An open-source NPM package that offers a SVGL Logos for Vue.",
     url: "https://github.com/ridemountainpig/svgl-vue",
