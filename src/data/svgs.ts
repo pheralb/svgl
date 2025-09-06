@@ -3790,6 +3790,15 @@ export const svgs: iSVG[] = [
     url: 'https://cloud.google.com/'
   },
   {
+    title: 'Zulip',
+    category: ['Software', 'Social'],
+    route: '/library/zulip.svg',
+    wordmark: '/library/zulip-wordmark.svg',
+    url: 'https://zulip.com/',
+    brandUrl:
+      'https://github.com/zulip/zulip/tree/bd29fb3e2691daef570ba5661351922a16782dd2/static/images/logo'
+  },
+  {
     title: 'Effect TS',
     category: 'Library',
     route: {
