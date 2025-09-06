@@ -14,7 +14,7 @@ import svelteConfig from "./svelte.config.js";
 // Ignore files:
 const gitignorePath = fileURLToPath(new URL("./.gitignore", import.meta.url));
 
-export default ts.config(
+export default [
   includeIgnoreFile(gitignorePath),
   js.configs.recommended,
   ...ts.configs.recommended,
@@ -24,9 +24,23 @@ export default ts.config(
   {
     languageOptions: {
       globals: { ...globals.browser, ...globals.node },
+      parserOptions: {
+        tsconfigRootDir: fileURLToPath(new URL(".", import.meta.url)),
+      },
     },
     rules: {
       "no-undef": "off",
+      "@typescript-eslint/array-type": "off",
+      "@typescript-eslint/consistent-type-definitions": "off",
+      "@typescript-eslint/consistent-type-imports": [
+        "warn",
+        { prefer: "type-imports", fixStyle: "inline-type-imports" },
+      ],
+      "@typescript-eslint/no-unused-vars": [
+        "warn",
+        { argsIgnorePattern: "^_" },
+      ],
+      "@typescript-eslint/require-await": "off",
     },
   },
   {
@@ -46,4 +60,4 @@ export default ts.config(
       "svelte/no-at-html-tags": "off",
     },
   },
-);
+];
