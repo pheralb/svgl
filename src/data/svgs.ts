@@ -247,7 +247,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Svelte',
-    category: 'Library',
+    category: 'Framework',
     route: '/library/svelte.svg',
     url: 'https://svelte.dev/'
   },
