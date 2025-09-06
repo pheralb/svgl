@@ -3813,6 +3813,17 @@ export const svgs: iSVG[] = [
     url: 'https://eslint.org/'
   },
   {
+    title: 'Apache Kafka',
+    category: 'Analytics',
+    route: '/library/apache-kafka-logo.svg',
+    wordmark: {
+      light: '/library/apache-kafka-wordmark-light.svg',
+      dark: '/library/apache-kafka-wordmark-dark.svg'
+    },
+    url: 'https://kafka.apache.org/',
+    brandUrl: 'https://kafka.apache.org/brand'
+  },
+  {
     title: 'PlainSignal',
     category: 'Analytics',
     route: '/library/plainsignal.svg',
@@ -3839,8 +3850,8 @@ export const svgs: iSVG[] = [
       dark: '/library/powersync-wordmark-dark.svg'
     },
     url: 'https://powersync.com/'
-},
-{
+  },
+  {
     title: 'n8n',
     category: ['Platform', 'Automation', 'AI'],
     route: '/library/n8n.svg',
