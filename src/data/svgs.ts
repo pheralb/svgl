@@ -85,6 +85,12 @@ export const svgs: iSVG[] = [
     url: "https://aws.amazon.com/q",
   },
   {
+    title: "Mulesoft",
+    category: "Software",
+    route: "/library/mulesoft.svg",
+    url: "https://www.mulesoft.com/",
+  },
+  {
     title: "UV",
     category: "Devtool",
     route: "/library/uv.svg",
@@ -3773,6 +3779,15 @@ export const svgs: iSVG[] = [
     url: "https://cloud.google.com/",
   },
   {
+    title: "Zulip",
+    category: ["Software", "Social"],
+    route: "/library/zulip.svg",
+    wordmark: "/library/zulip-wordmark.svg",
+    url: "https://zulip.com/",
+    brandUrl:
+      "https://github.com/zulip/zulip/tree/bd29fb3e2691daef570ba5661351922a16782dd2/static/images/logo",
+  },
+  {
     title: "Effect TS",
     category: "Library",
     route: {
@@ -3800,6 +3815,17 @@ export const svgs: iSVG[] = [
     category: "Library",
     route: "/library/eslint.svg",
     url: "https://eslint.org/",
+  },
+  {
+    title: "Apache Kafka",
+    category: "Analytics",
+    route: "/library/apache-kafka-logo.svg",
+    wordmark: {
+      light: "/library/apache-kafka-wordmark-light.svg",
+      dark: "/library/apache-kafka-wordmark-dark.svg",
+    },
+    url: "https://kafka.apache.org/",
+    brandUrl: "https://kafka.apache.org/brand",
   },
   {
     title: "PlainSignal",
