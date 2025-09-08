@@ -4,9 +4,13 @@ import { z } from "zod";
 import { compileMarkdown } from "@content-collections/markdown";
 import { defineCollection, defineConfig } from "@content-collections/core";
 
-// Shiki:
+// Plugings:
+import rehypeSlug from "rehype-slug";
+import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeShiki from "@shikijs/rehype/core";
 import { shikiHighlighter, rehypeShikiOptions } from "./src/utils/shiki";
+import { rehypeCopyBtn } from "./src/markdown/rehypeCopyBtn";
+import { rehypeExternalLinks } from "./src/markdown/rehypeExternalLinks";
 
 const docs = defineCollection({
   name: "docs",
@@ -19,7 +23,13 @@ const docs = defineCollection({
   transform: async (document, context) => {
     const highlighter = await shikiHighlighter();
     const html = await compileMarkdown(context, document, {
-      rehypePlugins: [[rehypeShiki, highlighter, rehypeShikiOptions]],
+      rehypePlugins: [
+        rehypeSlug,
+        rehypeAutolinkHeadings,
+        [rehypeShiki, highlighter, rehypeShikiOptions],
+        rehypeExternalLinks,
+        rehypeCopyBtn,
+      ],
     });
     return {
       ...document,
