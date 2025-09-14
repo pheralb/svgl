@@ -269,6 +269,10 @@ export const svgs: iSVG[] = [
     category: 'Framework',
     route: '/library/nuxt.svg',
     url: 'https://nuxt.com/',
+    wordmark: {
+      light: '/library/nuxt-wordmark-light.svg',
+      dark: '/library/nuxt-wordmark-dark.svg'
+    },
     brandUrl: 'https://nuxt.com/design-kit'
   },
   {
@@ -276,10 +280,6 @@ export const svgs: iSVG[] = [
     category: 'Library',
     url: 'https://ui.nuxt.com/',
     route: {
-      light: '/library/nuxt-ui-wordmark-light.svg',
-      dark: '/library/nuxt-ui-wordmark-dark.svg'
-    },
-    wordmark: {
       light: '/library/nuxt-ui-wordmark-light.svg',
       dark: '/library/nuxt-ui-wordmark-dark.svg'
     },
@@ -293,10 +293,6 @@ export const svgs: iSVG[] = [
       light: '/library/nuxt-content-wordmark-light.svg',
       dark: '/library/nuxt-content-wordmark-dark.svg'
     },
-    wordmark: {
-      light: '/library/nuxt-content-wordmark-light.svg',
-      dark: '/library/nuxt-content-wordmark-dark.svg'
-    },
     brandUrl: 'https://nuxt.com/design-kit'
   },
   {
@@ -304,10 +300,6 @@ export const svgs: iSVG[] = [
     category: 'Library',
     url: 'https://studio.nuxt.com/',
     route: {
-      light: '/library/nuxt-studio-wordmark-light.svg',
-      dark: '/library/nuxt-studio-wordmark-dark.svg'
-    },
-    wordmark: {
       light: '/library/nuxt-studio-wordmark-light.svg',
       dark: '/library/nuxt-studio-wordmark-dark.svg'
     },
@@ -326,7 +318,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Docus',
-    category: 'Library',
+    category: 'Software',
     url: 'https://docus.dev/',
     route: {
       light: '/library/docus-light.svg',
