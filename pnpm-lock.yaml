@@ -93,6 +93,9 @@ importers:
       eslint-plugin-svelte:
         specifier: 3.11.0
         version: 3.11.0(eslint@9.33.0(jiti@2.5.1))(svelte@5.38.2)
+      github-slugger:
+        specifier: 2.0.0
+        version: 2.0.0
       globals:
         specifier: 16.3.0
         version: 16.3.0
