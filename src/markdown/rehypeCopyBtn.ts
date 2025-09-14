@@ -7,13 +7,14 @@ export const rehypeCopyBtn = () => {
   return (tree: UnistTree) => {
     visit(tree, "element", (node: UnistNode, index, parent) => {
       if (node.tagName === "pre" && parent && typeof index === "number") {
+        const iconSize = 14;
         const copyIcon = {
           type: "element",
           tagName: "svg",
           properties: {
             xmlns: "http://www.w3.org/2000/svg",
-            width: "14",
-            height: "14",
+            width: iconSize,
+            height: iconSize,
             viewBox: "0 0 24 24",
             fill: "none",
             stroke: "currentColor",
@@ -27,8 +28,8 @@ export const rehypeCopyBtn = () => {
               type: "element",
               tagName: "rect",
               properties: {
-                width: "14",
-                height: "14",
+                width: iconSize,
+                height: iconSize,
                 x: "8",
                 y: "8",
                 rx: "2",
@@ -51,15 +52,15 @@ export const rehypeCopyBtn = () => {
           tagName: "svg",
           properties: {
             xmlns: "http://www.w3.org/2000/svg",
-            width: "14",
-            height: "14",
+            width: iconSize,
+            height: iconSize,
             viewBox: "0 0 24 24",
             fill: "none",
             stroke: "currentColor",
             strokeWidth: "2",
             strokeLinecap: "round",
             strokeLinejoin: "round",
-            style: "display: none;",
+            class: "hidden",
           },
           children: [
             {
@@ -89,9 +90,9 @@ export const rehypeCopyBtn = () => {
             type: "button",
             title: "Copy code to clipboard",
             class: cn(
-              "absolute top-2 right-2 px-1.5 py-0.5 rounded-md",
-              "bg-transparent hover:bg-neutral-200 dark:hover:bg-neutral-800",
-              "transition-colors",
+              "cursor-pointer absolute top-0 right-0 px-1.5 py-0.5 rounded-bl-md",
+              "border-b border-l border-neutral-200 dark:border-neutral-800",
+              "transition-colors hover:text-neutral-700 dark:hover:text-neutral-300",
             ),
             onclick: `
             const button = this;
