@@ -311,8 +311,8 @@ export const svgs: iSVG[] = [
     url: 'https://hub.nuxt.com/',
     route: '/library/nuxthub.svg',
     wordmark: {
-      light: '/library/nuxt-hub-wordmark-light.svg',
-      dark: '/library/nuxt-hub-wordmark-dark.svg'
+      light: '/library/nuxthub-wordmark-light.svg',
+      dark: '/library/nuxthub-wordmark-dark.svg'
     },
     brandUrl: 'https://nuxt.com/design-kit'
   },
