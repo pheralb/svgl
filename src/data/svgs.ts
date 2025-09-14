@@ -268,7 +268,74 @@ export const svgs: iSVG[] = [
     title: 'Nuxt',
     category: 'Framework',
     route: '/library/nuxt.svg',
-    url: 'https://nuxtjs.org/',
+    url: 'https://nuxt.com/',
+    brandUrl: 'https://nuxt.com/design-kit'
+  },
+  {
+    title: 'Nuxt UI',
+    category: 'Library',
+    url: 'https://ui.nuxt.com/',
+    route: {
+      light: '/library/nuxt-ui-wordmark-light.svg',
+      dark: '/library/nuxt-ui-wordmark-dark.svg'
+    },
+    wordmark: {
+      light: '/library/nuxt-ui-wordmark-light.svg',
+      dark: '/library/nuxt-ui-wordmark-dark.svg'
+    },
+    brandUrl: 'https://nuxt.com/design-kit'
+  },
+  {
+    title: 'Nuxt Content',
+    category: 'Library',
+    url: 'https://content.nuxt.com/',
+    route: {
+      light: '/library/nuxt-content-wordmark-light.svg',
+      dark: '/library/nuxt-content-wordmark-dark.svg'
+    },
+    wordmark: {
+      light: '/library/nuxt-content-wordmark-light.svg',
+      dark: '/library/nuxt-content-wordmark-dark.svg'
+    },
+    brandUrl: 'https://nuxt.com/design-kit'
+  },
+  {
+    title: 'Nuxt Studio',
+    category: 'Library',
+    url: 'https://studio.nuxt.com/',
+    route: {
+      light: '/library/nuxt-studio-wordmark-light.svg',
+      dark: '/library/nuxt-studio-wordmark-dark.svg'
+    },
+    wordmark: {
+      light: '/library/nuxt-studio-wordmark-light.svg',
+      dark: '/library/nuxt-studio-wordmark-dark.svg'
+    },
+    brandUrl: 'https://nuxt.com/design-kit'
+  },
+  {
+    title: 'NuxtHub',
+    category: 'Library',
+    url: 'https://hub.nuxt.com/',
+    route: '/library/nuxthub.svg',
+    wordmark: {
+      light: '/library/nuxt-hub-wordmark-light.svg',
+      dark: '/library/nuxt-hub-wordmark-dark.svg'
+    },
+    brandUrl: 'https://nuxt.com/design-kit'
+  },
+  {
+    title: 'Docus',
+    category: 'Library',
+    url: 'https://docus.dev/',
+    route: {
+      light: '/library/docus-light.svg',
+      dark: '/library/docus-dark.svg'
+    },
+    wordmark: {
+      light: '/library/docus-wordmark-light.svg',
+      dark: '/library/docus-wordmark-dark.svg'
+    },
     brandUrl: 'https://nuxt.com/design-kit'
   },
   {
