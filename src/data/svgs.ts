@@ -3954,5 +3954,11 @@ export const svgs: iSVG[] = [
     },
     url: 'https://ahrefs.com/',
     brandUrl: 'https://ahrefs.com/logo'
+  },
+  {
+    title: 'Google Maps',
+    category: 'Google',
+    route: '/library/googleMaps.svg',
+    url: 'https://www.google.com/maps/'
   }
 ];
