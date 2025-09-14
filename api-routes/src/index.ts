@@ -170,7 +170,7 @@ app.get("/svg/:filename", async (c) => {
   const svgLibrary = "https://svgl.app/library/";
 
   const ratelimit = c.get("ratelimit");
-  const returnRaw = c.req.query("raw");
+  const returnNoOptimized = c.req.query("no-optimize");
   const ip = c.req.raw.headers.get("CF-Connecting-IP");
   const { success } = await ratelimit.limit(ip ?? "anonymous");
 
@@ -185,7 +185,7 @@ app.get("/svg/:filename", async (c) => {
       return res.text();
     });
 
-    if (returnRaw) {
+    if (returnNoOptimized) {
       return c.body(svg, 200, {
         "Content-Type": "image/svg+xml; charset=utf-8",
       });
