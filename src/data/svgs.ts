@@ -266,7 +266,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Nuxt',
-    category: 'Framework',
+    category: ['Framework', 'Nuxt'],
     route: '/library/nuxt.svg',
     url: 'https://nuxt.com/',
     wordmark: {
@@ -277,7 +277,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Nuxt UI',
-    category: 'Library',
+    category: ['Library', 'Nuxt'],
     url: 'https://ui.nuxt.com/',
     route: {
       light: '/library/nuxt-ui-wordmark-light.svg',
@@ -287,7 +287,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Nuxt Content',
-    category: 'Library',
+    category: ['Library', 'Nuxt'],
     url: 'https://content.nuxt.com/',
     route: {
       light: '/library/nuxt-content-wordmark-light.svg',
@@ -297,7 +297,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Nuxt Studio',
-    category: 'Library',
+    category: ['Library', 'Nuxt'],
     url: 'https://studio.nuxt.com/',
     route: {
       light: '/library/nuxt-studio-wordmark-light.svg',
@@ -307,7 +307,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'NuxtHub',
-    category: 'Library',
+    category: ['Library', 'Nuxt'],
     url: 'https://hub.nuxt.com/',
     route: '/library/nuxthub.svg',
     wordmark: {
@@ -318,7 +318,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Docus',
-    category: 'Software',
+    category: ['Software', 'Nuxt'],
     url: 'https://docus.dev/',
     route: {
       light: '/library/docus-light.svg',

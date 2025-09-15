@@ -34,4 +34,5 @@ export type tCategory =
   | 'Analytics'
   | 'Sync Engine'
   | 'Platform'
-  | 'Automation';
+  | 'Automation'
+  | 'Nuxt';
