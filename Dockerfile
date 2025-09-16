@@ -16,6 +16,7 @@ FROM base AS builder
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 ENV PUBLIC_SVGL_VERSION=beta
+RUN pnpm run check:size
 RUN pnpm run build:prod
 
 # Production image
