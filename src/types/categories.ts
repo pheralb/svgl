@@ -1,5 +1,4 @@
 export type Category =
-  | "All"
   | "AI"
   | "Software"
   | "Hardware"
