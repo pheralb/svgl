@@ -37,10 +37,8 @@ jobs:
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
 
-      - name: Install utility dependencies
+      - name: Install dependencies
         run: pnpm install
-        working-directory: ./utils/check-size
 
-      - name: Check svgs size
-        run: pnpm start
-        working-directory: ./utils/check-size
+      - name: Check SVGs size
+        run: pnpm check:size
