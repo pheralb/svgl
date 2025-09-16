@@ -184,6 +184,18 @@ export const svgs: iSVG[] = [
     brandUrl: 'https://www.blender.org/about/logo/'
   },
   {
+    title: "Pulsar",
+    category: "Software",
+    route: "/library/pulsar.svg",
+    url: "https://pulsar-edit.dev/"
+  },
+  {
+    title: "Quarkus",
+    category: "Framework",
+    route: "/library/quarkus.svg",
+    url: "https://quarkus.io/"
+  },
+  {
     title: 'Lua',
     category: 'Language',
     route: '/library/lua.svg',
