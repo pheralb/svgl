@@ -20,7 +20,7 @@
       <ShowSidebarLinks />
     </nav>
     <Separator orientation="horizontal" />
-    <nav class="flex flex-col space-y-0.5 overflow-y-auto">
+    <nav class="relative flex h-auto flex-col space-y-0.5 overflow-y-auto">
       <ShowCategories />
     </nav>
   </aside>

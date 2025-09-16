@@ -22,7 +22,7 @@
 <button
   class={cn(
     "cursor-pointer transition-colors hover:animate-pulse",
-    "text-neutral-500 hover:text-red-700 dark:text-neutral-400 dark:hover:text-red-400",
+    "text-neutral-500 hover:text-red-700 dark:text-neutral-400 dark:hover:text-red-600",
     isFavorite && "text-red-500",
   )}
   onclick={toggleFavorite}
@@ -36,6 +36,6 @@
   <HeartIcon
     size={16}
     strokeWidth={1.8}
-    class={cn(isFavorite && "fill-red-500")}
+    class={cn(isFavorite && "fill-red-500 dark:fill-red-600")}
   />
 </button>

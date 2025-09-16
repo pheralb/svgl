@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { tCategory } from "@/types/categories";
+  import type { Category } from "@/types/categories";
 
   import { cn } from "@/utils/cn";
   import { svgs } from "@/data/svgs";
@@ -10,7 +10,7 @@
   import { sidebarBadgeClasses } from "./sidebarBadgeClasses";
 
   // Get category counts:
-  const categories: tCategory[] = getCategories();
+  const categories: Category[] = getCategories();
   let categoryCounts: Record<string, number> = {};
   categories.forEach((category) => {
     categoryCounts[category] = svgs.filter((svg) =>

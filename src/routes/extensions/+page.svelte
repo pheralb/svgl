@@ -103,7 +103,7 @@
   </section>
   <Container
     className={cn(
-      "max-w-3xl",
+      "max-w-4xl",
       "animate-in delay-500 duration-500 fill-mode-backwards fade-in slide-in-from-bottom-4",
     )}
   >

@@ -90,9 +90,9 @@ export const rehypeCopyBtn = () => {
             type: "button",
             title: "Copy code to clipboard",
             class: cn(
-              "cursor-pointer absolute top-0 right-0 px-1.5 py-0.5 rounded-bl-md",
+              "cursor-pointer z-40 absolute top-[1px] right-[1px] px-1.5 py-0.5 rounded-bl-md",
               "border-b border-l border-neutral-200 dark:border-neutral-800",
-              "transition-colors hover:text-neutral-700 dark:hover:text-neutral-300",
+              "transition-colors text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white",
             ),
             onclick: `
             const button = this;

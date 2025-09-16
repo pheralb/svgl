@@ -306,11 +306,15 @@
           </div>
         {/if}
       </div>
-      <Dialog.Footer class="text-xs text-neutral-600 dark:text-neutral-400">
-        <p>
-          Remember to request permission from the creators for the use of the
-          SVG. Modification is not allowed.
-        </p>
+      <Dialog.Footer>
+        <div
+          class="mt-2 flex w-full items-center justify-center text-sm text-neutral-600 dark:text-neutral-400"
+        >
+          <p class="w-full text-center text-sm">
+            Please ensure you have permission from the creators before using the
+            SVG. Modifications are not permitted.
+          </p>
+        </div>
       </Dialog.Footer>
     </Dialog.Content>
   </Dialog.Root>
