@@ -30,4 +30,9 @@ export type tCategory =
   | 'IoT'
   | 'Config'
   | 'Secrets'
-  | 'IaC';
+  | 'IaC'
+  | 'Analytics'
+  | 'Sync Engine'
+  | 'Platform'
+  | 'Automation'
+  | 'Nuxt';

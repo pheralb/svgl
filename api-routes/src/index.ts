@@ -40,9 +40,10 @@ class RedisRateLimiter {
         UPSTASH_REDIS_URL: string;
         UPSTASH_REDIS_TOKEN: string;
       }>(c);
+      const cleanRedisUrl = UPSTASH_REDIS_URL.replace(/^['"]|['"]$/g, '').trim();
       const redisClient = new Redis({
         token: UPSTASH_REDIS_TOKEN,
-        url: UPSTASH_REDIS_URL
+        url: cleanRedisUrl
       });
       const ratelimit = new Ratelimit({
         redis: redisClient,
@@ -63,7 +64,7 @@ app.use(async (c, next) => {
   await next();
 });
 
-app.use('/api/*', cors());
+app.use(cors());
 
 // 🌱 GET: "/" - Returns all the SVGs data:
 app.get('/', async (c) => {
@@ -152,6 +153,30 @@ app.get('/category/:category', async (c) => {
     return c.json({ error: 'not found' }, 404);
   }
   return c.json(categorySvgs);
+});
+
+// 🌱 GET: "/svg/:filename" - Return the SVG file by filename:
+app.get('/svg/:filename', async (c) => {
+  const fileName = c.req.param('filename') as string;
+  const svgLibrary = 'https://svgl.app/library/';
+
+  const ratelimit = c.get('ratelimit');
+  const ip = c.req.raw.headers.get('CF-Connecting-IP');
+  const { success } = await ratelimit.limit(ip ?? 'anonymous');
+
+  if (!success) {
+    return c.json({ error: '🛑 Too many request' }, 429);
+  }
+
+  try {
+    const svg = await fetch(`${svgLibrary}${fileName}`).then((res) => {
+      if (!res.ok) throw new Error('Network response was not ok');
+      return res.text();
+    });
+    return c.body(svg, 200);
+  } catch (err) {
+    return c.json({ error: 'not found' }, 404);
+  }
 });
 
 export default app;

@@ -9,6 +9,12 @@ export const svgs: iSVG[] = [
     brandUrl: 'https://developers.google.com/workspace/classroom/brand'
   },
   {
+    title: 'Kimi',
+    category: 'AI',
+    route: '/library/kimi.svg',
+    url: 'https://kimi.ai/'
+  },
+  {
     title: 'Perspective',
     category: 'Software',
     route: {
@@ -24,8 +30,16 @@ export const svgs: iSVG[] = [
   {
     title: 'Windsurf',
     category: ['Software', 'AI'],
-    route: '/library/windsurf-logo.svg',
-    url: 'https://codeium.com/windsurf'
+    route: {
+      light: '/library/windsurf-light.svg',
+      dark: '/library/windsurf-dark.svg'
+    },
+    wordmark: {
+      light: '/library/windsurf-wordmark-light.svg',
+      dark: '/library/windsurf-wordmark-dark.svg'
+    },
+    url: 'https://windsurf.com/editor',
+    brandUrl: 'https://windsurf.com/brand'
   },
   {
     title: 'Mattermost',
@@ -69,6 +83,12 @@ export const svgs: iSVG[] = [
     category: 'AI',
     route: '/library/amazon-q.svg',
     url: 'https://aws.amazon.com/q'
+  },
+  {
+    title: 'Mulesoft',
+    category: 'Software',
+    route: '/library/mulesoft.svg',
+    url: 'https://www.mulesoft.com/'
   },
   {
     title: 'UV',
@@ -246,9 +266,68 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Nuxt',
-    category: 'Framework',
+    category: ['Framework', 'Nuxt'],
     route: '/library/nuxt.svg',
-    url: 'https://nuxtjs.org/',
+    url: 'https://nuxt.com/',
+    wordmark: {
+      light: '/library/nuxt-wordmark-light.svg',
+      dark: '/library/nuxt-wordmark-dark.svg'
+    },
+    brandUrl: 'https://nuxt.com/design-kit'
+  },
+  {
+    title: 'Nuxt UI',
+    category: ['Library', 'Nuxt'],
+    url: 'https://ui.nuxt.com/',
+    route: {
+      light: '/library/nuxt-ui-wordmark-light.svg',
+      dark: '/library/nuxt-ui-wordmark-dark.svg'
+    },
+    brandUrl: 'https://nuxt.com/design-kit'
+  },
+  {
+    title: 'Nuxt Content',
+    category: ['Library', 'Nuxt'],
+    url: 'https://content.nuxt.com/',
+    route: {
+      light: '/library/nuxt-content-wordmark-light.svg',
+      dark: '/library/nuxt-content-wordmark-dark.svg'
+    },
+    brandUrl: 'https://nuxt.com/design-kit'
+  },
+  {
+    title: 'Nuxt Studio',
+    category: ['Library', 'Nuxt'],
+    url: 'https://studio.nuxt.com/',
+    route: {
+      light: '/library/nuxt-studio-wordmark-light.svg',
+      dark: '/library/nuxt-studio-wordmark-dark.svg'
+    },
+    brandUrl: 'https://nuxt.com/design-kit'
+  },
+  {
+    title: 'NuxtHub',
+    category: ['Library', 'Nuxt'],
+    url: 'https://hub.nuxt.com/',
+    route: '/library/nuxthub.svg',
+    wordmark: {
+      light: '/library/nuxthub-wordmark-light.svg',
+      dark: '/library/nuxthub-wordmark-dark.svg'
+    },
+    brandUrl: 'https://nuxt.com/design-kit'
+  },
+  {
+    title: 'Docus',
+    category: ['Software', 'Nuxt'],
+    url: 'https://docus.dev/',
+    route: {
+      light: '/library/docus-light.svg',
+      dark: '/library/docus-dark.svg'
+    },
+    wordmark: {
+      light: '/library/docus-wordmark-light.svg',
+      dark: '/library/docus-wordmark-dark.svg'
+    },
     brandUrl: 'https://nuxt.com/design-kit'
   },
   {
@@ -2310,7 +2389,14 @@ export const svgs: iSVG[] = [
   {
     title: 'Sanity',
     category: 'CMS',
-    route: '/library/sanity.svg',
+    route: {
+      dark: '/library/sanity-dark.svg',
+      light: '/library/sanity-light.svg'
+    },
+    wordmark: {
+      dark: '/library/sanity-wordmark-dark.svg',
+      light: '/library/sanity-wordmark-light.svg'
+    },
     url: 'https://www.sanity.io'
   },
   {
@@ -2861,6 +2947,13 @@ export const svgs: iSVG[] = [
     url: 'https://to-do.office.com/'
   },
   {
+    title: 'Manifest',
+    category: ['Software', 'AI', 'Database'],
+    route: '/library/manifest.svg',
+    url: 'https://manifest.build',
+    brandUrl: 'https://manifest.build/brand-assets'
+  },
+  {
     title: 'Supabase',
     category: 'Database',
     route: '/library/supabase.svg',
@@ -3212,7 +3305,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Polar',
-    category: 'Software',
+    category: ['Software', 'Payment'],
     route: {
       light: '/library/polar-sh_light.svg',
       dark: '/library/polar-sh_dark.svg'
@@ -3531,7 +3624,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'Replit',
-    category: 'Software',
+    category: 'AI',
     route: '/library/replit.svg',
     wordmark: {
       light: '/library/replit-wordmark-light.svg',
@@ -3735,6 +3828,12 @@ export const svgs: iSVG[] = [
     url: 'https://openrouter.ai/'
   },
   {
+    title: 'OpenHunts',
+    category: ['Platform', 'Community'],
+    route: '/library/openhunts.svg',
+    url: 'https://openhunts.com'
+  },
+  {
     title: 'Kokonut UI',
     category: 'Library',
     route: {
@@ -3760,6 +3859,15 @@ export const svgs: iSVG[] = [
     brandUrl: 'https://www.nvidia.com/en-us/about-nvidia/legal-info/logo-brand-usage/'
   },
   {
+    title: 'Zulip',
+    category: ['Software', 'Social'],
+    route: '/library/zulip.svg',
+    wordmark: '/library/zulip-wordmark.svg',
+    url: 'https://zulip.com/',
+    brandUrl:
+      'https://github.com/zulip/zulip/tree/bd29fb3e2691daef570ba5661351922a16782dd2/static/images/logo'
+  },
+  {
     title: 'Effect TS',
     category: 'Library',
     route: {
@@ -3775,5 +3883,92 @@ export const svgs: iSVG[] = [
     category: 'Library',
     route: '/library/ark-ui.svg',
     url: 'https://ark-ui.com/'
+  },
+  {
+    title: 'Mantine',
+    category: 'Library',
+    route: '/library/mantine.svg',
+    url: 'https://mantine.dev'
+  },
+  {
+    title: 'ESLint',
+    category: 'Library',
+    route: '/library/eslint.svg',
+    url: 'https://eslint.org/'
+  },
+  {
+    title: 'Apache Kafka',
+    category: 'Analytics',
+    route: '/library/apache-kafka-logo.svg',
+    wordmark: {
+      light: '/library/apache-kafka-wordmark-light.svg',
+      dark: '/library/apache-kafka-wordmark-dark.svg'
+    },
+    url: 'https://kafka.apache.org/',
+    brandUrl: 'https://kafka.apache.org/brand'
+  },
+  {
+    title: 'PlainSignal',
+    category: 'Analytics',
+    route: '/library/plainsignal.svg',
+    url: 'https://plainsignal.com/'
+  },
+  {
+    title: 'Heptabase',
+    category: 'Software',
+    route: '/library/heptabase.svg',
+    url: 'https://heptabase.com/'
+  },
+  {
+    title: 'UnJS',
+    category: 'Library',
+    route: '/library/unjs.svg',
+    url: 'https://unjs.io/'
+  },
+  {
+    title: 'PowerSync',
+    category: ['Sync Engine', 'Database', 'Library'],
+    route: '/library/powersync.svg',
+    wordmark: {
+      light: '/library/powersync-wordmark-light.svg',
+      dark: '/library/powersync-wordmark-dark.svg'
+    },
+    url: 'https://powersync.com/'
+  },
+  {
+    title: 'n8n',
+    category: ['Platform', 'Automation', 'AI'],
+    route: '/library/n8n.svg',
+    wordmark: {
+      dark: '/library/n8n-wordmark-dark.svg',
+      light: '/library/n8n-wordmark-light.svg'
+    },
+    url: 'https://n8n.io/'
+  },
+  {
+    title: 'Kibo UI',
+    category: 'Library',
+    route: {
+      light: '/library/kibo-ui-light.svg',
+      dark: '/library/kibo-ui-dark.svg'
+    },
+    url: 'https://kibo-ui.com/'
+  },
+  {
+    title: 'Ahrefs',
+    category: 'Platform',
+    route: '/library/ahrefs.svg',
+    wordmark: {
+      dark: '/library/ahrefs-wordmark-dark.svg',
+      light: '/library/ahrefs-wordmark-light.svg'
+    },
+    url: 'https://ahrefs.com/',
+    brandUrl: 'https://ahrefs.com/logo'
+  },
+  {
+    title: 'Google Maps',
+    category: 'Google',
+    route: '/library/googleMaps.svg',
+    url: 'https://www.google.com/maps/'
   }
 ];
