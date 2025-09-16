@@ -4,4 +4,6 @@ export const globals = {
   twitterUrl: "https://x.com/pheralb_",
   submitUrl:
     "https://github.com/pheralb/svgl?tab=readme-ov-file#-getting-started",
+  requestSvgUrl:
+    "https://github.com/pheralb/svgl/issues/new?template=request-svg.yml",
 };

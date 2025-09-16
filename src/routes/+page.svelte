@@ -20,6 +20,7 @@
   import ChevronDownIcon from "@lucide/svelte/icons/chevron-down";
   import PageHeader from "@/components/pageHeader.svelte";
   import Button from "@/components/ui/button/button.svelte";
+  import SvgNotFound from "@/components/svgs/svgNotFound.svelte";
 
   // SSR Data:
   let { data }: PageProps = $props();
@@ -44,7 +45,8 @@
       updateDisplaySvgs();
       return;
     }
-    filteredSvgs = searchSvgsWithFuse(filteredSvgs)
+    const baseData = sorted ? alphabeticallySorted : latestSorted;
+    filteredSvgs = searchSvgsWithFuse(baseData)
       .search(searchTerm)
       .map((result) => result.item);
     updateDisplaySvgs();
@@ -122,12 +124,15 @@
       <div class="mt-6 flex justify-center">
         <Button variant="outline" size="lg" onclick={() => (showAll = true)}>
           <span>Show All</span>
-          <span class="text-neutral-500 dark:text-neutral-700">
+          <span class="text-neutral-500 dark:text-neutral-500">
             (+ {filteredSvgs.length - maxDisplay} SVGs)
           </span>
           <ChevronDownIcon size={16} strokeWidth={2} />
         </Button>
       </div>
+    {/if}
+    {#if filteredSvgs.length === 0}
+      <SvgNotFound svgTitle={searchTerm} />
     {/if}
   </Container>
 </PageCard>

@@ -19,6 +19,7 @@
   import { Button, buttonVariants } from "@/components/ui/button";
   import SortSvgs from "@/components/svgs/sortSvgs.svelte";
   import { deleteParam } from "@/utils/searchParams";
+  import SvgNotFound from "@/components/svgs/svgNotFound.svelte";
 
   // SSR Data:
   let { data }: PageProps = $props();
@@ -42,7 +43,8 @@
       updateDisplaySvgs();
       return;
     }
-    filteredSvgs = searchSvgsWithFuse(filteredSvgs)
+    const baseData = sorted ? data.alphabeticallySorted : data.latestSorted;
+    filteredSvgs = searchSvgsWithFuse(baseData)
       .search(searchTerm)
       .map((result) => result.item);
     updateDisplaySvgs();
@@ -127,5 +129,8 @@
         <SvgCard svgInfo={svg} />
       {/each}
     </Grid>
+    {#if filteredSvgs.length === 0}
+      <SvgNotFound svgTitle={searchTerm} />
+    {/if}
   </Container>
 </PageCard>
