@@ -58,16 +58,13 @@ code {
 code:has(.line:nth-child(2)) .line::before {
   content: counter(step);
   counter-increment: step;
-  width: 1rem;
+  width: 0.5rem;
   margin-right: 1.5rem;
+  margin-left: 0.3rem;
   display: inline-block;
   text-align: right;
 }
 
-html.light code:has(.line:nth-child(2)) .line::before {
-  color: #a0a0a0;
-}
-
-html.dark code:has(.line:nth-child(2)) .line::before {
-  color: #525252;
+code:has(.line:nth-child(2)) .line::before {
+  @apply font-mono text-xs text-neutral-400 dark:text-neutral-600;
 }
