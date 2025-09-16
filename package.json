@@ -32,13 +32,16 @@
     "prepare": "svelte-kit sync || echo ''",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+    "check:size": "tsx ./utils/check-size.ts",
+    "check:links": " lychee --base . ./src/data/svgs.ts --cache --max-cache-age 3d . --include 'https://svgl.app'",
+    "fix:viewbox": "tsx ./utils/fix-viewbox.ts",
     "format": "prettier --write \"src/**/*.{ts,js,md,svelte}\" --cache",
     "format:check": "prettier --check \"src/**/*.{ts,js,md,svelte}\" --cache",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",
     "build:shadcn": "shadcn build --output ./static/r",
     "build:prod": "pnpm build:registry && vite build",
-    "build:registry": "tsx ./generate-registry.ts"
+    "build:registry": "tsx ./utils/generate-registry.ts"
   },
   "dependencies": {
     "@shikijs/langs": "3.12.0",

@@ -1,14 +1,14 @@
-import type { iSVG } from "./src/types/svg";
+import type { iSVG } from "../src/types/svg";
 
 import fs from "fs";
 import path from "path";
 import { exec } from "child_process";
 import { promisify } from "util";
 
-import { svgs } from "./src/data/svgs";
-import { optimizeSvg } from "./src/utils/optimizeSvg";
-import { parseSvgFilename } from "./src/utils/parseSvgFilename";
-import { parseReactSvgContent } from "./src/utils/parseReactSvgContent";
+import { svgs } from "../src/data/svgs";
+import { optimizeSvg } from "../src/utils/optimizeSvg";
+import { parseSvgFilename } from "../src/utils/parseSvgFilename";
+import { parseReactSvgContent } from "../src/utils/parseReactSvgContent";
 
 const execAsync = promisify(exec);
 
@@ -107,7 +107,7 @@ async function generateRegistryJson(): Promise<void> {
     );
   } catch (error) {
     console.error("[❌] Error generating registry.json:", error);
-    throw new Error(error);
+    throw new Error(error as string);
   }
 }
 
@@ -213,7 +213,7 @@ async function cleanupDirectory(dirPath: string) {
       console.log(`[🗑️] Folder ${dirPath} deleted successfully`);
     }
   } catch (error) {
-    console.warn(`[⚠️] Could not delete folder ${dirPath}: ${error.message}`);
+    console.warn(`[⚠️] Could not delete folder ${dirPath}: ${error}`);
   }
 }
 
@@ -233,7 +233,7 @@ async function runShadcnBuild() {
     }
   } catch (error) {
     console.error("[❌] Error running shadcn build:", error);
-    throw new Error(error);
+    throw new Error(error as string);
   }
 }
 
@@ -315,7 +315,7 @@ async function run() {
         convertedCount++;
       } catch (error) {
         console.error(`\n[❌] Error processing ${svgFile.filename}:`, error);
-        throw new Error(error);
+        throw new Error(error as string);
       }
     }
     console.log(
@@ -332,7 +332,7 @@ async function run() {
     }
   } catch (error) {
     console.error("[❌] Error:", error);
-    throw new Error(error);
+    throw new Error(error as string);
   } finally {
     await checkFinallyDirs();
     await cleanupDirectory(OUTPUT_DIR);
