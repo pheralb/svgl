@@ -266,9 +266,68 @@ export const svgs: iSVG[] = [
   },
   {
     title: "Nuxt",
-    category: "Framework",
+    category: ["Framework", "Nuxt"],
     route: "/library/nuxt.svg",
-    url: "https://nuxtjs.org/",
+    url: "https://nuxt.com/",
+    wordmark: {
+      light: "/library/nuxt-wordmark-light.svg",
+      dark: "/library/nuxt-wordmark-dark.svg",
+    },
+    brandUrl: "https://nuxt.com/design-kit",
+  },
+  {
+    title: "Nuxt UI",
+    category: ["Library", "Nuxt"],
+    url: "https://ui.nuxt.com/",
+    route: {
+      light: "/library/nuxt-ui-wordmark-light.svg",
+      dark: "/library/nuxt-ui-wordmark-dark.svg",
+    },
+    brandUrl: "https://nuxt.com/design-kit",
+  },
+  {
+    title: "Nuxt Content",
+    category: ["Library", "Nuxt"],
+    url: "https://content.nuxt.com/",
+    route: {
+      light: "/library/nuxt-content-wordmark-light.svg",
+      dark: "/library/nuxt-content-wordmark-dark.svg",
+    },
+    brandUrl: "https://nuxt.com/design-kit",
+  },
+  {
+    title: "Nuxt Studio",
+    category: ["Library", "Nuxt"],
+    url: "https://studio.nuxt.com/",
+    route: {
+      light: "/library/nuxt-studio-wordmark-light.svg",
+      dark: "/library/nuxt-studio-wordmark-dark.svg",
+    },
+    brandUrl: "https://nuxt.com/design-kit",
+  },
+  {
+    title: "NuxtHub",
+    category: ["Library", "Nuxt"],
+    url: "https://hub.nuxt.com/",
+    route: "/library/nuxthub.svg",
+    wordmark: {
+      light: "/library/nuxthub-wordmark-light.svg",
+      dark: "/library/nuxthub-wordmark-dark.svg",
+    },
+    brandUrl: "https://nuxt.com/design-kit",
+  },
+  {
+    title: "Docus",
+    category: ["Software", "Nuxt"],
+    url: "https://docus.dev/",
+    route: {
+      light: "/library/docus-light.svg",
+      dark: "/library/docus-dark.svg",
+    },
+    wordmark: {
+      light: "/library/docus-wordmark-light.svg",
+      dark: "/library/docus-wordmark-dark.svg",
+    },
     brandUrl: "https://nuxt.com/design-kit",
   },
   {
@@ -3886,16 +3945,9 @@ export const svgs: iSVG[] = [
     brandUrl: "https://ahrefs.com/logo",
   },
   {
-    title: "Sanity",
-    category: "CMS",
-    route: {
-      dark: "/library/sanity-dark.svg",
-      light: "/library/sanity-light.svg",
-    },
-    wordmark: {
-      dark: "/library/sanity-wordmark-dark.svg",
-      light: "/library/sanity-wordmark-light.svg",
-    },
-    url: "https://www.sanity.io",
+    title: "Google Maps",
+    category: "Google",
+    route: "/library/googleMaps.svg",
+    url: "https://www.google.com/maps/",
   },
 ];

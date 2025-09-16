@@ -1,4 +1,4 @@
-export type Category =
+export type tCategory =
   | "AI"
   | "Software"
   | "Hardware"
@@ -33,4 +33,5 @@ export type Category =
   | "Analytics"
   | "Sync Engine"
   | "Platform"
-  | "Automation";
+  | "Automation"
+  | "Nuxt";
