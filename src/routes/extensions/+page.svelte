@@ -69,7 +69,7 @@
     <h2
       class={cn(
         "mb-4 text-center",
-        "font-onest text-4xl font-semibold",
+        "text-4xl font-semibold",
         "animate-in delay-100 duration-500 fill-mode-backwards fade-in slide-in-from-bottom-4",
       )}
     >

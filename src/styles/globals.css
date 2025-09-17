@@ -37,9 +37,6 @@
   --font-mono:
     "GeistMono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace, "Apple Color Emoji";
-  --font-onest:
-    "OnestMedium", system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 /* Shiki light/dark mode */

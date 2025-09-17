@@ -32,7 +32,7 @@
         class="flex items-center space-x-2.5 transition-colors hover:text-neutral-700 dark:hover:text-neutral-300"
       >
         <Svgl size={28} />
-        <h2 class="font-onest text-xl font-medium tracking-tight">svgl</h2>
+        <h2 class="text-xl font-medium tracking-tight">svgl</h2>
       </a>
       <SvglVersion className="hidden md:block" />
     </div>
