@@ -77,6 +77,8 @@
       alt={svgInfo.title}
       title={svgInfo.title}
       loading="lazy"
+      width="140"
+      height="40"
     />
     <img
       class={cn("block dark:hidden", globalImageStyles)}
@@ -84,6 +86,8 @@
       alt={svgInfo.title}
       title={svgInfo.title}
       loading="lazy"
+      width="140"
+      height="40"
     />
   {:else}
     <img
@@ -92,6 +96,8 @@
       alt={svgInfo.title}
       title={svgInfo.title}
       loading="lazy"
+      width="140"
+      height="40"
     />
     <img
       class={cn("block dark:hidden", globalImageStyles)}
@@ -99,6 +105,8 @@
       alt={svgInfo.title}
       title={svgInfo.title}
       loading="lazy"
+      width="140"
+      height="40"
     />
   {/if}
   <!-- Title -->
