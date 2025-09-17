@@ -73,7 +73,7 @@
 <Search
   searchValue={searchTerm}
   onSearch={handleSearch}
-  placeholder="Search..."
+  placeholder={`Search ${directoryData.category}'s SVGs...`}
 />
 
 <PageCard>
@@ -130,7 +130,7 @@
       {/each}
     </Grid>
     {#if filteredSvgs.length === 0}
-      <SvgNotFound svgTitle={searchTerm} />
+      <SvgNotFound svgTitle={searchTerm} category={directoryData.category} />
     {/if}
   </Container>
 </PageCard>

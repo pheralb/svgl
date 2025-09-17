@@ -18,6 +18,7 @@
   import PageCard from "@/components/pageCard.svelte";
   import FolderIcon from "@lucide/svelte/icons/folder";
   import ChevronDownIcon from "@lucide/svelte/icons/chevron-down";
+  import ChevronUpIcon from "@lucide/svelte/icons/chevron-up";
   import PageHeader from "@/components/pageHeader.svelte";
   import Button from "@/components/ui/button/button.svelte";
   import SvgNotFound from "@/components/svgs/svgNotFound.svelte";
@@ -105,14 +106,26 @@
         </p>
       {/if}
     </div>
-    <SortSvgs
-      className={cn(filteredSvgs.length === 0 && "hidden")}
-      isSorted={sorted}
-      onSortedChange={(value) => {
-        sorted = value;
-        searchSvgs();
-      }}
-    />
+    <div class="flex items-center space-x-2">
+      <SortSvgs
+        className={cn(filteredSvgs.length === 0 && "hidden")}
+        isSorted={sorted}
+        onSortedChange={(value) => {
+          sorted = value;
+          searchSvgs();
+        }}
+      />
+      {#if showAll && filteredSvgs.length > maxDisplay}
+        <Button
+          variant="ghost"
+          class="px-2.5"
+          onclick={() => (showAll = false)}
+        >
+          <span>Show Less</span>
+          <ChevronUpIcon size={16} strokeWidth={2} />
+        </Button>
+      {/if}
+    </div>
   </PageHeader>
   <Container className="my-6">
     <Grid>
@@ -120,11 +133,16 @@
         <SvgCard svgInfo={svg} />
       {/each}
     </Grid>
-    {#if showAll === false && filteredSvgs.length > maxDisplay}
+    {#if !showAll && filteredSvgs.length > maxDisplay}
       <div class="mt-6 flex justify-center">
-        <Button variant="outline" size="lg" onclick={() => (showAll = true)}>
+        <Button
+          variant="outline"
+          size="lg"
+          class="px-2.5"
+          onclick={() => (showAll = true)}
+        >
           <span>Show All</span>
-          <span class="text-neutral-500 dark:text-neutral-500">
+          <span class="text-neutral-600 dark:text-neutral-400">
             (+ {filteredSvgs.length - maxDisplay} SVGs)
           </span>
           <ChevronDownIcon size={16} strokeWidth={2} />
