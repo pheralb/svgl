@@ -14,6 +14,7 @@
   import Cloud from "@lucide/svelte/icons/cloud";
   import Submit from "@lucide/svelte/icons/send";
   import Github from "@/components/logos/github.svelte";
+  import Shadcn from "@/components/logos/shadcn.svelte";
 
   let favorites = $derived($favoritesStore);
   let favoritesCount = $derived(favoritesStore.getCount(favorites));
@@ -53,7 +54,7 @@
   {/if}
 </a>
 <a
-  href="/api"
+  href="/docs/api"
   data-sveltekit-preload-data
   class={cn(
     sidebarItemClasses.base,
@@ -63,6 +64,19 @@
 >
   <Cloud size={16} />
   <p class="truncate">API</p>
+</a>
+<a
+  href="/docs/shadcn-ui"
+  data-sveltekit-preload-data
+  class={cn(
+    sidebarItemClasses.base,
+    "justify-start space-x-3",
+    String(page.url.pathname) === "/docs/shadcn-ui" &&
+      sidebarItemClasses.active,
+  )}
+>
+  <Shadcn size={14} />
+  <p class="truncate">shadcn/ui</p>
 </a>
 <a
   href="/extensions"
