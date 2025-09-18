@@ -3960,5 +3960,18 @@ export const svgs: iSVG[] = [
     category: 'Google',
     route: '/library/googleMaps.svg',
     url: 'https://www.google.com/maps/'
+  },
+  {
+    title: 'Intello',
+    category: 'Platform',
+    route: {
+      light: '/library/intello-light.svg',
+      dark: '/library/intello-dark.svg'
+    },
+    wordmark: {
+      light: '/library/intello-wordmark-light.svg',
+      dark: '/library/intello-wordmark-dark.svg'
+    },
+    url: 'https://intelloai.com/'
   }
 ];
