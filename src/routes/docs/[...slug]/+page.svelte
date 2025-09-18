@@ -5,15 +5,16 @@
   import PageCard from "@/components/pageCard.svelte";
   import Container from "@/components/container.svelte";
   import PageHeader from "@/components/pageHeader.svelte";
-  import TableOfContents from "@/components/tableOfContents/tableOfContents.svelte";
+  import { buttonVariants } from "@/components/ui/button";
   import * as Collapsible from "@/components/ui/collapsible";
+  import DocumentSettings from "@/components/documentSettings.svelte";
+  import TableOfContents from "@/components/tableOfContents/tableOfContents.svelte";
 
   import FileText from "@lucide/svelte/icons/file-text";
+  import ChevronDown from "@lucide/svelte/icons/chevron-down";
 
   // Markdown:
   import "@/styles/markdown.css";
-  import { buttonVariants } from "@/components/ui/button";
-  import ChevronDown from "@lucide/svelte/icons/chevron-down";
 
   let { data }: PageProps = $props();
   let tocOpen = $state(false);
@@ -38,6 +39,11 @@
         {document.title}
       </p>
     </div>
+    <DocumentSettings
+      rawUrl={document.rawUrl}
+      documentContent={document.content}
+      documentUrl={document.documentUrl}
+    />
   </PageHeader>
   <Collapsible.Root class="block lg:hidden" bind:open={tocOpen}>
     <Collapsible.Trigger
