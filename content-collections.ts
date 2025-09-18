@@ -48,6 +48,8 @@ const docs = defineCollection({
       createdAt: new Date(birthtimeMs),
       updatedAt: new Date(mtimeMs),
       tableOfContents,
+      rawUrl: `https://svgl.app/api/docs/${document._meta.path}`,
+      documentUrl: `https://svgl.app/docs/${document._meta.path}`,
     };
   },
 });
