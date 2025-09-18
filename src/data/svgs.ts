@@ -3970,5 +3970,18 @@ export const svgs: iSVG[] = [
     },
     url: 'https://www.khronos.org/webgl/',
     brandUrl: 'https://www.khronos.org/legal/trademarks/'
+  },
+  {
+    title: 'Intello',
+    category: 'Platform',
+    route: {
+      light: '/library/intello-light.svg',
+      dark: '/library/intello-dark.svg'
+    },
+    wordmark: {
+      light: '/library/intello-wordmark-light.svg',
+      dark: '/library/intello-wordmark-dark.svg'
+    },
+    url: 'https://intelloai.com/'
   }
 ];
