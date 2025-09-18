@@ -3962,6 +3962,16 @@ export const svgs: iSVG[] = [
     url: 'https://www.google.com/maps/'
   },
   {
+    title: 'WebGL',
+    category: 'Library',
+    route: {
+      light: '/library/webgl.svg',
+      dark: '/library/webgl_dark.svg'
+    },
+    url: 'https://www.khronos.org/webgl/',
+    brandUrl: 'https://www.khronos.org/legal/trademarks/'
+  },
+  {
     title: 'Intello',
     category: 'Platform',
     route: {
