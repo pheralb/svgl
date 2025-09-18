@@ -6,6 +6,6 @@
     $props();
 </script>
 
-<div class={cn("container mx-auto px-4", className)}>
+<div class={cn("container mx-auto px-6 lg:px-4", className)}>
   {@render children?.()}
 </div>
