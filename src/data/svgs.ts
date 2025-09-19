@@ -1273,19 +1273,19 @@ export const svgs: iSVG[] = [
     title: 'HTML5',
     category: 'Language',
     route: '/library/html5.svg',
-    url: 'https://es.wikipedia.org/wiki/HTML5'
+    url: 'https://wikipedia.org/wiki/HTML5'
   },
   {
     title: 'CSS (New)',
     category: 'Language',
     route: '/library/css.svg',
-    url: 'https://es.wikipedia.org/wiki/CSS'
+    url: 'https://wikipedia.org/wiki/CSS'
   },
   {
     title: 'CSS',
     category: 'Language',
     route: '/library/css_old.svg',
-    url: 'https://es.wikipedia.org/wiki/CSS'
+    url: 'https://wikipedia.org/wiki/CSS'
   },
   {
     title: 'midudev',
@@ -2690,7 +2690,7 @@ export const svgs: iSVG[] = [
     title: 'Meta',
     category: 'Social',
     route: '/library/meta.svg',
-    url: 'https://about.meta.com/es/',
+    url: 'https://about.meta.com/',
     brandUrl: 'https://about.meta.com/brand/resources/'
   },
   {
