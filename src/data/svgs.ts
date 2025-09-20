@@ -109,7 +109,6 @@ export const svgs: iSVG[] = [
     },
     url: 'https://milanote.com'
   },
-
   {
     title: 'Together AI',
     category: 'AI',
@@ -3728,6 +3727,12 @@ export const svgs: iSVG[] = [
     category: ['AI', 'Google'],
     route: '/library/firebase-studio.svg',
     url: 'https://firebase.studio/'
+  },
+  {
+    title: 'Dingocoin',
+    category: 'Crypto',
+    route: '/library/dingocoin.svg',
+    url: 'https://dingocoin.com/'
   },
   {
     title: 'HeroUI',
