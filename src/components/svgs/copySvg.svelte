@@ -6,6 +6,7 @@
   import { clipboard } from "@/utils/clipboard";
   import { getPrefixFromSvgUrl, prefixSvgIds } from "@/utils/prefixSvgIds";
   import { copyToClipboard as figmaCopyToClipboard } from "@/figma/copy-to-clipboard";
+  import { settingsStore } from "@/stores/settings.store";
 
   // Icons:
   import XIcon from "@lucide/svelte/icons/x";
@@ -59,6 +60,7 @@
   // States:
   let optionsOpen = $state<boolean>(false);
   let isLoading = $state<boolean>(false);
+  let optimize = $derived($settingsStore.optimizeSvgs);
 
   const getSvgUrl = () => {
     let svgUrlToCopy;
@@ -105,6 +107,7 @@
 
     let content = await getSource({
       url: svgUrlToCopy,
+      optimize,
     });
 
     if (svgUrlToCopy) {
@@ -150,6 +153,7 @@
     const title = svgInfo.title.split(" ").join("");
     let content = await getSource({
       url: svgUrlToCopy,
+      optimize,
     });
 
     if (svgUrlToCopy) {
@@ -186,6 +190,7 @@
 
       let content = await getSource({
         url: svgUrlToCopy,
+        optimize,
       });
 
       if (svgUrlToCopy) {
@@ -223,6 +228,7 @@
 
       let content = await getSource({
         url: svgUrlToCopy,
+        optimize,
       });
 
       if (svgUrlToCopy) {
@@ -260,6 +266,7 @@
     const svgUrlToCopy = getSvgUrl();
     let content = await getSource({
       url: svgUrlToCopy,
+      optimize,
     });
 
     if (svgUrlToCopy) {
@@ -297,6 +304,7 @@
     const svgUrlToCopy = getSvgUrl();
     let content = await getSource({
       url: svgUrlToCopy,
+      optimize,
     });
 
     if (svgUrlToCopy) {
@@ -333,6 +341,7 @@
     const svgUrlToCopy = getSvgUrl();
     let content = await getSource({
       url: svgUrlToCopy,
+      optimize,
     });
 
     if (svgUrlToCopy) {

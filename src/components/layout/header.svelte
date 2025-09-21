@@ -13,6 +13,7 @@
   import SvglVersion from "@/components/svglVersion.svelte";
   import SendIcon from "@/components/ui/moving-icons/send-icon.svelte";
   import SidebarMobileMenu from "@/components/layout/sidebarMobileMenu.svelte";
+  import SettingsMenu from "../settings/settingsMenu.svelte";
 
   interface HeaderProps {
     githubStars?: number;
@@ -55,6 +56,7 @@
             "hover:bg-neutral-200 dark:hover:bg-neutral-800",
           )}
         />
+        <SettingsMenu />
       </div>
       <div class="hidden h-5 items-center space-x-2 md:flex">
         <Separator orientation="vertical" />

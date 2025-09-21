@@ -1,9 +1,8 @@
 <script lang="ts">
   import { buttonVariants } from "@/components/ui/button";
   import Shadcn from "@/components/logos/shadcn.svelte";
-  import SelectPkgManager from "@/components/selectPkgManager.svelte";
 
-  import { pkgManager, type PackageManager } from "@/stores/pkgManager.store";
+  import { settingsStore, type PackageManager } from "@/stores/settings.store";
   import CodeBlock from "@/components/codeBlock.svelte";
   import ArrowUpRightIcon from "@lucide/svelte/icons/arrow-up-right";
 
@@ -20,7 +19,7 @@
     bun: "bunx shadcn@latest add",
   };
 
-  let pkg = $derived($pkgManager);
+  let pkg = $derived($settingsStore.packageManager);
   let shadcnCommand = $derived(shadcnCommands[pkg]);
   const svgFormatTitle = svgTitle
     .toLowerCase()
@@ -40,6 +39,5 @@
       class="text-neutral-500 dark:text-neutral-400"
     />
   </a>
-  <SelectPkgManager />
 </div>
 <CodeBlock code={`${shadcnCommand} @svgl/${svgFormatTitle}`} Icon={Shadcn} />
