@@ -23,13 +23,6 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: "OnestMedium";
-  src: url("/fonts/OnestMedium.woff2") format("woff2");
-  font-display: swap;
-  font-style: normal;
-}
-
 @theme {
   --font-sans:
     "Geist", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
