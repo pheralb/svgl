@@ -1,4 +1,4 @@
-import prettier from "prettier";
+import { format } from "prettier";
 
 interface ParseReactSvgOptions {
   componentName: string;
@@ -35,7 +35,7 @@ export const parseReactSvgContent = async ({
     structuredCode = `const ${componentName} = (props) => (\n  ${reactifiedSvg}\n);\n\nexport { ${componentName} };`;
   }
 
-  const formatted = await prettier.format(structuredCode, {
+  const formatted = await format(structuredCode, {
     parser: typescript ? "typescript" : "babel",
     semi: true,
     singleQuote: false,
