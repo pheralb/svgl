@@ -1,6 +1,7 @@
 <script lang="ts">
   import type { iSVG } from "@/types/svg";
   import type { PageProps } from "./$types";
+  import { browser } from "$app/environment";
 
   import { cn } from "@/utils/cn";
   import { deleteParam } from "@/utils/searchParams";
@@ -22,6 +23,7 @@
   import PageHeader from "@/components/pageHeader.svelte";
   import Button from "@/components/ui/button/button.svelte";
   import SvgNotFound from "@/components/svgs/svgNotFound.svelte";
+  import WarningMessage from "@/components/warningMessage.svelte";
 
   // SSR Data:
   let { data }: PageProps = $props();
@@ -127,6 +129,9 @@
       {/if}
     </div>
   </PageHeader>
+  {#if browser}
+    <WarningMessage />
+  {/if}
   <Container className="my-6">
     <Grid>
       {#each displaySvgs as svg (svg.id)}
