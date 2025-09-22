@@ -5,7 +5,6 @@
   import ModeToggle from "@/components/modeToggle.svelte";
 
   import Svgl from "@/components/logos/svgl.svelte";
-  import Github from "@/components/logos/github.svelte";
   import Twitter from "@/components/logos/twitter.svelte";
 
   import { Separator } from "@/components/ui/separator";
@@ -13,13 +12,8 @@
   import SvglVersion from "@/components/svglVersion.svelte";
   import SendIcon from "@/components/ui/moving-icons/send-icon.svelte";
   import SidebarMobileMenu from "@/components/layout/sidebarMobileMenu.svelte";
-  import SettingsMenu from "../settings/settingsMenu.svelte";
-
-  interface HeaderProps {
-    githubStars?: number;
-  }
-
-  let { githubStars }: HeaderProps = $props();
+  import SettingsMenu from "@/components/settings/settingsMenu.svelte";
+  import GithubLink from "@/components/githubLink.svelte";
 </script>
 
 <header
@@ -60,36 +54,7 @@
       </div>
       <div class="hidden h-5 items-center space-x-2 md:flex">
         <Separator orientation="vertical" />
-        {#if githubStars !== undefined}
-          <a
-            target="_blank"
-            title="GitHub Repository"
-            href={globals.githubUrl}
-            class={cn(
-              buttonVariants({ variant: "ghost" }),
-              "w-fit hover:bg-neutral-200 dark:hover:bg-neutral-800",
-            )}
-          >
-            <Github size={20} />
-            <span class="text-neutral-600 dark:text-neutral-400">
-              {githubStars >= 1000
-                ? `${(githubStars / 1000).toFixed(1)}k`
-                : githubStars.toLocaleString()}
-            </span>
-          </a>
-        {:else}
-          <a
-            target="_blank"
-            title="GitHub Repository"
-            href={globals.githubUrl}
-            class={cn(
-              buttonVariants({ variant: "ghost", size: "icon" }),
-              "hover:bg-neutral-200 dark:hover:bg-neutral-800",
-            )}
-          >
-            <Github size={20} />
-          </a>
-        {/if}
+        <GithubLink />
         <Separator orientation="vertical" />
         <a
           target="_blank"

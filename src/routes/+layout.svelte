@@ -12,13 +12,12 @@
   import Sidebar from "@/components/layout/sidebar.svelte";
   import Sonner from "@/components/ui/sonner/sonner.svelte";
 
-  // SSR Data:
-  let { data, children }: LayoutProps = $props();
+  let { children }: LayoutProps = $props();
 </script>
 
 <ModeWatcher />
 <Sonner />
-<Header githubStars={data?.stars} />
+<Header />
 <Sidebar>
   {@render children?.()}
 </Sidebar>
