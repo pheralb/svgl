@@ -21,7 +21,7 @@ function getInitialSettings(): Settings {
       if (stored) {
         const parsedSettings = JSON.parse(stored) as Partial<Settings>;
         return {
-          packageManager: isValidPackageManager(parsedSettings.packageManager)
+          packageManager: parsedSettings.packageManager
             ? parsedSettings.packageManager
             : defaultSettings.packageManager,
           optimizeSvgs:
@@ -35,12 +35,6 @@ function getInitialSettings(): Settings {
     }
   }
   return defaultSettings;
-}
-
-function isValidPackageManager(value: unknown): value is PackageManager {
-  return (
-    value === "npm" || value === "pnpm" || value === "yarn" || value === "bun"
-  );
 }
 
 function createSettingsStore() {
