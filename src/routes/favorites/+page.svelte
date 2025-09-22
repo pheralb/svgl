@@ -1,7 +1,6 @@
 <script lang="ts">
   import type { iSVG } from "@/types/svg";
 
-  import { cn } from "@/utils/cn";
   import { searchSvgsWithFuse } from "@/utils/searchWithFuse";
   import { deleteParam, getParamValue } from "@/utils/searchParams";
 
@@ -71,7 +70,7 @@
 <Search
   searchValue={searchTerm}
   onSearch={handleSearch}
-  placeholder={"Search..."}
+  placeholder="Search..."
 />
 
 <PageCard>
