@@ -26,7 +26,6 @@
       <img
         src={data.image}
         alt={data.name}
-        loading="lazy"
         class="h-8 w-8 rounded-md object-contain"
       />
       <a

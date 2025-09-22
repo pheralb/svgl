@@ -76,7 +76,6 @@
       src={getSvgImgUrl({ url: svgInfo.wordmark, isDark: true })}
       alt={svgInfo.title}
       title={svgInfo.title}
-      loading="lazy"
       width="140"
       height="40"
     />
@@ -85,7 +84,6 @@
       src={getSvgImgUrl({ url: svgInfo.wordmark, isDark: false })}
       alt={svgInfo.title}
       title={svgInfo.title}
-      loading="lazy"
       width="140"
       height="40"
     />
@@ -95,7 +93,6 @@
       src={getSvgImgUrl({ url: svgInfo.route, isDark: true })}
       alt={svgInfo.title}
       title={svgInfo.title}
-      loading="lazy"
       width="140"
       height="40"
     />
@@ -104,7 +101,6 @@
       src={getSvgImgUrl({ url: svgInfo.route, isDark: false })}
       alt={svgInfo.title}
       title={svgInfo.title}
-      loading="lazy"
       width="140"
       height="40"
     />

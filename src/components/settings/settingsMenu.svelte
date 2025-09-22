@@ -21,6 +21,7 @@
 
 <Dialog.Root>
   <Dialog.Trigger
+    title="Settings"
     class={cn(
       buttonVariants({ variant: "ghost", size: "icon" }),
       "hover:bg-neutral-200 dark:hover:bg-neutral-800",

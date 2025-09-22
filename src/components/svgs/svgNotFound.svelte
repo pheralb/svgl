@@ -9,12 +9,13 @@
   interface Props {
     svgTitle: string;
     category?: string;
+    searchGlobally?: boolean;
   }
 
-  let { svgTitle, category }: Props = $props();
+  let { svgTitle, category, searchGlobally }: Props = $props();
 </script>
 
-<div class="flex w-full flex-col items-center justify-center space-y-4">
+<div class="flex w-full flex-col items-center justify-center space-y-4 py-6">
   <BoxesIcon size={48} strokeWidth={1} />
   <h2 class="text-xl font-semibold">SVG not found</h2>
   {#if category}
@@ -27,7 +28,7 @@
     </p>
   {/if}
   <div class="flex items-center justify-center space-x-2">
-    {#if category}
+    {#if category || searchGlobally}
       <a
         href={`/?search=${svgTitle}`}
         class={buttonVariants({ variant: "outline" })}
