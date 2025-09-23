@@ -3988,5 +3988,14 @@ export const svgs: iSVG[] = [
       dark: '/library/intello-wordmark-dark.svg'
     },
     url: 'https://intelloai.com/'
+  },
+  {
+    title: 'Kilo Code',
+    category: ['AI', 'Devtool'],
+    route: {
+      light: '/library/kilocode-light.svg',
+      dark: '/library/kilocode-dark.svg'
+    },
+    url: 'https://kilocode.ai/'
   }
 ];
