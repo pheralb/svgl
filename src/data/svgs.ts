@@ -2,6 +2,34 @@ import type { iSVG } from '@/types/svg';
 
 export const svgs: iSVG[] = [
   {
+    title: 'Base',
+    category: 'Crypto',
+    route: {
+      light: '/library/base_light.svg',
+      dark: '/library/base_dark.svg'
+    },
+    wordmark: {
+      light: '/library/base_wordmark-logo_light.svg',
+      dark: '/library/base_wordmark-logo_dark.svg'
+    },
+    url: 'https://base.org',
+    brandUrl: 'https://github.com/base/brand-kit'
+  },
+  {
+    title: 'Farcaster',
+    category: 'Social',
+    route: {
+      light: '/library/farcaster_light.svg',
+      dark: '/library/farcaster_dark.svg'
+    },
+    wordmark: {
+      light: '/library/farcaster_wordmark-logo_light.svg',
+      dark: '/library/farcaster_wordmark-logo_dark.svg'
+    },
+    url: 'https://farcaster.xyz',
+    brandUrl: 'https://github.com/vrypan/farcaster-brand'
+  },
+  {
     title: 'Google Classroom',
     category: ['Google', 'Education'],
     route: '/library/google-classroom.svg',
