@@ -3956,12 +3956,12 @@ export const svgs: iSVG[] = [
     title: "Intello",
     category: "Platform",
     route: {
-      light: "/library/intello-light.svg",
-      dark: "/library/intello-dark.svg",
+      light: "/library/intello-dark.svg",
+      dark: "/library/intello-light.svg",
     },
     wordmark: {
-      light: "/library/intello-wordmark-light.svg",
-      dark: "/library/intello-wordmark-dark.svg",
+      light: "/library/intello_wordmark_dark.svg",
+      dark: "/library/intello_wordmark_light.svg",
     },
     url: "https://intelloai.com/",
   },
