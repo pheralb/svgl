@@ -1,10 +1,14 @@
 <script lang="ts">
-  import { buttonVariants } from "@/components/ui/button";
-  import Shadcn from "@/components/logos/shadcn.svelte";
+  import { globals } from "@/globals";
 
-  import { settingsStore, type PackageManager } from "@/stores/settings.store";
+  import { buttonVariants } from "@/components/ui/button";
   import CodeBlock from "@/components/codeBlock.svelte";
   import ArrowUpRightIcon from "@lucide/svelte/icons/arrow-up-right";
+
+  import { settingsStore, type PackageManager } from "@/stores/settings.store";
+
+  import V0 from "@/components/logos/v0.svelte";
+  import Shadcn from "@/components/logos/shadcn.svelte";
 
   interface Props {
     svgTitle: string;
@@ -27,13 +31,25 @@
     .replace(/[^a-z0-9-]/g, "");
 </script>
 
-<div class="flex items-center justify-between space-x-2">
+<div class="flex w-full items-center space-x-2">
   <a
-    href="/docs/shadcn-ui"
     target="_blank"
-    class={buttonVariants({ variant: "outline", size: "sm" })}
+    href="/docs/shadcn-ui"
+    class={buttonVariants({ variant: "outline", class: "w-full" })}
   >
     <span>Setup Registry</span>
+    <ArrowUpRightIcon
+      size={14}
+      class="text-neutral-500 dark:text-neutral-400"
+    />
+  </a>
+  <a
+    target="_blank"
+    href={`${globals.v0Url}${globals.registryUrl}${svgFormatTitle}.json`}
+    class={buttonVariants({ variant: "outline", class: "w-full" })}
+  >
+    <span>Open with</span>
+    <V0 size={20} />
     <ArrowUpRightIcon
       size={14}
       class="text-neutral-500 dark:text-neutral-400"
