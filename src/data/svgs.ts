@@ -3987,4 +3987,13 @@ export const svgs: iSVG[] = [
     },
     url: "https://www.cursor.com",
   },
+   {
+  title: "Bolt",
+  category: ["Devtool"],
+  route: {
+    light: "/library/bolt_light.svg",
+    dark: "/library/bolt_dark.svg",
+  },
+  url: "http://bolt.new",
+  }
 ];
