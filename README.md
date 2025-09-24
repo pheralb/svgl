@@ -133,7 +133,7 @@ pnpm install
 }
 ```
 
-- **Simple logo + wordmark**:
+- **Simple Logo + Wordmark**:
 
 ```ts
 {
