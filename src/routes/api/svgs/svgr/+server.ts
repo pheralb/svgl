@@ -12,14 +12,18 @@ export const POST = async ({ request }: RequestEvent) => {
   try {
     const body = await request.json();
 
-    const svgCode = body.code;
+    let svgCode = body.code;
     const typescript = body.typescript;
     const name = body.name.replace(/[^a-zA-Z0-9]/g, "");
-    const optimizedSvg = optimizeSvg({ svgCode });
+    const shouldOptimize = body.optimize !== false;
+
+    if (shouldOptimize) {
+      svgCode = optimizeSvg({ svgCode });
+    }
 
     const code = await parseReactSvgContent({
       componentName: name,
-      svgCode: optimizedSvg,
+      svgCode: svgCode,
       typescript,
     });
 
