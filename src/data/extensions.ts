@@ -6,7 +6,7 @@ export const extensions: Extension[] = [
     description: "A CLI for easily adding SVG icons to your project.",
     url: "https://github.com/sujjeee/svgls",
     image:
-      "https://raw.githubusercontent.com/pheralb/svgl/refs/heads/main/static/images/logo.svg",
+      "https://raw.githubusercontent.com/pheralb/svgl/refs/heads/main/static/images/svgl_svg.svg",
     created_by: {
       name: "sujjeee",
       socialUrl: "https://x.com/sujjeeee",
@@ -39,7 +39,7 @@ export const extensions: Extension[] = [
   {
     name: "SVGL for Vue",
     description: "An open-source NPM package that offers a SVGL Logos for Vue.",
-    url: "https://github.com/ridemountainpig/svgl-vue",
+    url: "https://github.com/selemondev/svgl-vue",
     image:
       "https://raw.githubusercontent.com/pheralb/svgl/refs/heads/main/static/library/vue.svg",
     created_by: {
@@ -51,7 +51,7 @@ export const extensions: Extension[] = [
     name: "SVGL for Svelte",
     description:
       "An open-source NPM package that offers a SVGL Logos for Svelte.",
-    url: "https://github.com/ridemountainpig/svgl-svelte",
+    url: "https://github.com/selemondev/svgl-svelte",
     image: "https://github.com/pheralb/svgl/raw/main/static/library/svelte.svg",
     created_by: {
       name: "selemondev",
