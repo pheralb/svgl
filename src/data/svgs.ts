@@ -3656,19 +3656,6 @@ export const svgs: iSVG[] = [
       "https://www.figma.com/file/YYn36CxVpcT6aPKDXIH9JG/CurseForge-Brandbook?type=design&node-id=0-1&t=dvC0gPtyP36PQdsi-0",
   },
   {
-    title: "Cursor",
-    category: ["Software"],
-    route: {
-      light: "/library/cursor_light.svg",
-      dark: "/library/cursor_dark.svg",
-    },
-    wordmark: {
-      light: "/library/cursor_wordmark_light.svg",
-      dark: "/library/cursor_wordmark_dark.svg",
-    },
-    url: "https://www.cursor.com",
-  },
-  {
     title: "Ghostty",
     category: ["Software"],
     route: "/library/ghostty.svg",
@@ -3949,5 +3936,18 @@ export const svgs: iSVG[] = [
     category: "Google",
     route: "/library/googleMaps.svg",
     url: "https://www.google.com/maps/",
+  },
+  {
+    title: "Cursor",
+    category: ["Software", "AI"],
+    route: {
+      light: "/library/cursor_light.svg",
+      dark: "/library/cursor_dark.svg",
+    },
+    wordmark: {
+      light: "/library/cursor_wordmark_light.svg",
+      dark: "/library/cursor_wordmark_dark.svg",
+    },
+    url: "https://www.cursor.com",
   },
 ];
