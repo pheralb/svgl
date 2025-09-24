@@ -3450,6 +3450,22 @@ export const svgs: iSVG[] = [
     url: 'https://dotenvx.com'
   },
   {
+    title: 'Apache Kafka',
+    category: 'Software',
+    route: '/library/apache-kafka.svg',
+    wordmark: '/library/apache-kafka-wordmark.svg',
+    url: 'https://kafka.apache.org'
+  },
+  {
+    title: 'GuusLab',
+    category: ['AI', 'Software'],
+    route: {
+      light: '/library/GuusLab.svg',
+      dark: '/library/GuusLab_dark.svg'
+    },
+    url: 'https://guuslab.com/'
+  },
+  {
     title: 'Motion',
     category: 'Library',
     route: {
