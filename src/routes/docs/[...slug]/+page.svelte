@@ -26,10 +26,7 @@
   <meta name="description" content={data.document.description} />
 </svelte:head>
 
-<PageCard
-  containerClass="mt-0"
-  contentCardClass="min-h-[calc(100vh-5.4rem)] md:min-h-[calc(100vh-5rem)]"
->
+<PageCard>
   <PageHeader>
     <div
       class="flex items-center space-x-2 font-medium text-neutral-950 dark:text-neutral-50"

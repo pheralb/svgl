@@ -76,7 +76,10 @@
   placeholder={`Search ${directoryData.category}'s SVGs...`}
 />
 
-<PageCard>
+<PageCard
+  containerClass="mt-2"
+  contentCardClass="max-h-[calc(100vh-7.6rem)] min-h-[calc(100vh-7.6rem)]"
+>
   <PageHeader>
     <div
       class="flex items-center space-x-2 font-medium text-neutral-950 dark:text-neutral-50"

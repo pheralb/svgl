@@ -17,7 +17,7 @@
 </script>
 
 <header
-  class="sticky top-0 w-full bg-neutral-100 px-4 py-4 dark:bg-neutral-950"
+  class="sticky top-0 z-50 w-full bg-neutral-100 px-2 py-3 md:px-4 md:py-4 dark:bg-neutral-950"
 >
   <nav class="flex w-full items-center justify-between">
     <div class="flex items-center space-x-3">

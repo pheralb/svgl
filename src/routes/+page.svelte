@@ -82,7 +82,10 @@
   placeholder="Search..."
 />
 
-<PageCard>
+<PageCard
+  containerClass="mt-2"
+  contentCardClass="max-h-[calc(100vh-7.6rem)] min-h-[calc(100vh-7.6rem)]"
+>
   <PageHeader>
     <div
       class="flex items-center space-x-2 text-neutral-500 dark:text-neutral-400"

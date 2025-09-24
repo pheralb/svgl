@@ -53,10 +53,7 @@
   />
 </svelte:head>
 
-<PageCard
-  containerClass="mt-0"
-  contentCardClass="max-h-[calc(100vh-5.2rem)] min-h-[calc(100vh-5.2rem)]"
->
+<PageCard>
   <PageHeader>
     <div
       class="flex items-center space-x-2 font-medium text-neutral-950 dark:text-neutral-50"

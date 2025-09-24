@@ -11,20 +11,24 @@
   let { children, contentCardClass, containerClass }: PageCardProps = $props();
 </script>
 
-<div
-  class={cn(
-    "mt-2.5 overflow-hidden",
-    "rounded-md border border-neutral-200 dark:border-neutral-800",
-    "bg-white dark:bg-neutral-900/40",
-    containerClass,
-  )}
->
+<div class="p-[1px]">
   <div
     class={cn(
-      "max-h-[calc(100vh-8.2rem)] min-h-[calc(100vh-8.2rem)] overflow-y-auto",
-      contentCardClass,
+      "overflow-hidden",
+      "rounded-md border border-neutral-200 dark:border-neutral-800",
+      "bg-white dark:bg-neutral-900/40",
+      "shadow-xs",
+      containerClass,
     )}
   >
-    {@render children?.()}
+    <div
+      class={cn(
+        "max-h-[calc(100vh-4.5rem)] min-h-[calc(100vh-4.5rem)]",
+        "overflow-hidden overflow-y-auto",
+        contentCardClass,
+      )}
+    >
+      {@render children?.()}
+    </div>
   </div>
 </div>
