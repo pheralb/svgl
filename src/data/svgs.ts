@@ -109,7 +109,6 @@ export const svgs: iSVG[] = [
     },
     url: "https://milanote.com",
   },
-
   {
     title: "Together AI",
     category: "AI",
@@ -3706,6 +3705,12 @@ export const svgs: iSVG[] = [
     url: "https://firebase.studio/",
   },
   {
+    title: "Dingocoin",
+    category: "Crypto",
+    route: "/library/dingocoin.svg",
+    url: "https://dingocoin.com/",
+  },
+  {
     title: "HeroUI",
     category: "Library",
     route: {
@@ -3938,8 +3943,40 @@ export const svgs: iSVG[] = [
     url: "https://www.google.com/maps/",
   },
   {
+    title: "WebGL",
+    category: "Library",
+    route: {
+      light: "/library/webgl.svg",
+      dark: "/library/webgl_dark.svg",
+    },
+    url: "https://www.khronos.org/webgl/",
+    brandUrl: "https://www.khronos.org/legal/trademarks/",
+  },
+  {
+    title: "Intello",
+    category: "Platform",
+    route: {
+      light: "/library/intello-light.svg",
+      dark: "/library/intello-dark.svg",
+    },
+    wordmark: {
+      light: "/library/intello-wordmark-light.svg",
+      dark: "/library/intello-wordmark-dark.svg",
+    },
+    url: "https://intelloai.com/",
+  },
+  {
+    title: "Kilo Code",
+    category: ["AI", "Devtool"],
+    route: {
+      light: "/library/kilocode-light.svg",
+      dark: "/library/kilocode-dark.svg",
+    },
+    url: "https://kilocode.ai/",
+  },
+  {
     title: "Cursor",
-    category: ["Software", "AI"],
+    category: ["Software"],
     route: {
       light: "/library/cursor_light.svg",
       dark: "/library/cursor_dark.svg",
