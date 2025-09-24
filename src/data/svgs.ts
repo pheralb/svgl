@@ -15,6 +15,12 @@ export const svgs: iSVG[] = [
     url: 'https://kimi.ai/'
   },
   {
+    title: 'Capacitor',
+    category: ['Software'],
+    route: '/library/capacitor.svg',
+    url: 'https://capacitorjs.com/'
+  },
+  {
     title: 'Perspective',
     category: 'Software',
     route: {
