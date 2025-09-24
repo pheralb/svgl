@@ -245,6 +245,16 @@ export const svgs: iSVG[] = [
     url: 'https://react.dev/'
   },
   {
+    title: 'SimpleBackups',
+    category: 'Software',
+    route: '/library/simplebackups-round.svg'
+    wordmark: {
+      light: '/library/simplebackups-text-transparent.svg',
+      dark: '/library/simplebackups-text-dark.svg'
+    }
+    url: 'https://simplebackups.com'
+  },
+  {
     title: 'Svelte',
     category: 'Library',
     route: '/library/svelte.svg',
