@@ -3854,6 +3854,16 @@ export const svgs: iSVG[] = [
     url: 'https://cloud.google.com/'
   },
   {
+    title: 'NVIDIA',
+    category: ['Hardware', 'Software', 'AI'],
+    route: {
+      light: '/library/nvidia.svg',
+      dark: '/library/nvidia_dark.svg'
+    },
+    url: 'https://www.nvidia.com/',
+    brandUrl: 'https://www.nvidia.com/en-us/about-nvidia/legal-info/logo-brand-usage/'
+  },
+  {
     title: 'Zulip',
     category: ['Software', 'Social'],
     route: '/library/zulip.svg',
