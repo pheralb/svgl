@@ -12,10 +12,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup pnpm 9
-        uses: pnpm/action-setup@v2
+      - name: Setup pnpm 10
+        uses: pnpm/action-setup@v4
         with:
-          version: 9
+          version: 10
 
       - name: Install global dependencies
         run: pnpm install
@@ -25,4 +25,4 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           packageManager: pnpm
-          workingDirectory: 'api-routes'
+          workingDirectory: "api-routes"

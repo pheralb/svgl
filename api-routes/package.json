@@ -11,10 +11,11 @@
   },
   "dependencies": {
     "@upstash/ratelimit": "2.0.6",
-    "hono": "4.8.12"
+    "@upstash/redis": "1.35.3",
+    "hono": "4.9.6"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "4.20250805.0",
-    "wrangler": "4.28.0"
+    "@cloudflare/workers-types": "4.20250906.0",
+    "wrangler": "4.34.0"
   }
 }
