@@ -16,6 +16,7 @@
 
   // UI Components:
   import { toast } from "svelte-sonner";
+  import { Separator } from "@/components/ui/separator";
   import * as Tabs from "@/components/ui/tabs";
   import { Button, buttonVariants } from "@/components/ui/button";
   import * as Popover from "@/components/ui/popover";
@@ -37,6 +38,7 @@
   import React from "@/components/logos/react.svelte";
   import Astro from "@/components/logos/astro.svelte";
   import Svelte from "@/components/logos/svelte.svelte";
+  import Shadcn from "@/components/logos/shadcn.svelte";
   import Angular from "@/components/logos/angular.svelte";
   import WebComponents from "@/components/logos/webComponents.svelte";
 
@@ -389,42 +391,43 @@
       <CopyIcon {size} strokeWidth={iconStroke} />
     {/if}
   </Popover.Trigger>
-  <Popover.Content class="flex w-fit flex-col space-y-2 p-4" sideOffset={2}>
+  <Popover.Content class="flex flex-col space-y-2 p-4" sideOffset={2}>
     <Tabs.Root value="source" class="flex w-full flex-col space-y-1">
-      <Tabs.List class="w-fit border-none bg-transparent">
-        <Tabs.Trigger value="source">Source</Tabs.Trigger>
-        <Tabs.Trigger value="shadcn">shadcn/ui</Tabs.Trigger>
-        <div
-          class="ml-3 flex flex-row space-x-1 border-l border-neutral-200 pl-3 dark:border-neutral-800"
-        >
-          <Tabs.Trigger
-            class="px-2.5"
-            value="web-component"
-            title="Web Component"
-          >
+      <Tabs.List
+        class="flex h-auto w-auto flex-col space-y-2 space-x-0 border-0 md:h-9 md:flex-row md:space-y-0 md:space-x-1"
+      >
+        <div class="flex items-center space-x-1">
+          <Tabs.Trigger value="source">Source</Tabs.Trigger>
+          <Tabs.Trigger value="shadcn" title="shadcn/ui">
+            <Shadcn size={18} />
+          </Tabs.Trigger>
+        </div>
+        <div class="flex items-center space-x-1">
+          <Tabs.Trigger value="web-component" title="Web Component">
             <WebComponents size={21} />
           </Tabs.Trigger>
-          <Tabs.Trigger class="px-2.5" value="react" title="React">
+          <Tabs.Trigger value="react" title="React">
             <React size={20} />
           </Tabs.Trigger>
-          <Tabs.Trigger class="px-2.5" value="vue" title="Vue">
+          <Tabs.Trigger value="vue" title="Vue">
             <Vue size={20} />
           </Tabs.Trigger>
-          <Tabs.Trigger class="px-2.5" value="svelte" title="Svelte">
+          <Tabs.Trigger value="svelte" title="Svelte">
             <Svelte size={20} />
           </Tabs.Trigger>
-          <Tabs.Trigger class="px-2.5" value="angular" title="Angular">
+          <Tabs.Trigger value="angular" title="Angular">
             <Angular size={20} />
           </Tabs.Trigger>
           <Tabs.Trigger
             value="astro"
             title="Astro"
-            class="px-2.5 text-black dark:text-white"
+            class="text-black dark:text-white"
           >
             <Astro size={21} />
           </Tabs.Trigger>
         </div>
       </Tabs.List>
+      <Separator class="block md:hidden" />
       <!-- Source -->
       <Tabs.Content value="source">
         <section class="flex flex-col space-y-2">

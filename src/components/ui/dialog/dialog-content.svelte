@@ -36,6 +36,7 @@
     {@render children?.()}
     {#if showCloseButton}
       <DialogPrimitive.Close
+        title="Close"
         class={cn(
           "absolute top-4 right-4 rounded-xs opacity-70 transition-opacity hover:opacity-100 focus:ring-2 focus:outline-hidden disabled:pointer-events-none  [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
           "ring-offset-white focus:ring-neutral-400 focus:ring-offset-2 data-[state=open]:bg-white data-[state=open]:text-neutral-500 dark:ring-offset-neutral-300 dark:focus:ring-neutral-700 dark:data-[state=open]:bg-neutral-900 dark:data-[state=open]:text-neutral-400",

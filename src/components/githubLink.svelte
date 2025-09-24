@@ -26,7 +26,7 @@
 
 <a
   target="_blank"
-  title="GitHub Repository"
+  title="pheralb/svgl Repository"
   href={globals.githubUrl}
   class={cn(
     buttonVariants({ variant: "ghost" }),

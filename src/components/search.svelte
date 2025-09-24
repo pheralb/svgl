@@ -60,6 +60,7 @@
     autocomplete="off"
     placeholder={placeholder || "Search..."}
     oninput={onInput}
+    name="search"
     value={searchValue}
     class={cn(
       "overflow-hidden shadow-sm",

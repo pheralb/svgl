@@ -7,7 +7,7 @@ const buttonVariants = tv({
       default:
         "bg-neutral-900 text-neutral-50 shadow hover:bg-neutral-900/90 dark:bg-neutral-800 dark:text-neutral-50 dark:hover:bg-neutral-800/70",
       radial:
-        "bg-radial-[at_52%_-52%] **:[text-shadow:0_1px_0_var(--color-neutral-950)] border-neutral-950 from-neutral-950/70 to-neutral-950/95 text-white inset-shadow-2xs inset-shadow-white/25 border text-sm shadow-md shadow-neutral-950/30 ring-0 transition-[filter] duration-200 hover:brightness-125 active:brightness-95 dark:border-0 dark:from-neutral-950/70 dark:to-neutral-900/90",
+        "bg-radial-[at_52%_-52%] **:[text-shadow:0_1px_0_var(--color-neutral-950)] border-neutral-950 from-neutral-950/70 to-neutral-950/95 text-white inset-shadow-2xs inset-shadow-white/25 border text-sm shadow-md shadow-neutral-950/30 ring-0 transition-[filter] duration-200 hover:brightness-125 active:brightness-95 dark:bg-white dark:text-neutral-50 dark:shadow-none dark:border-0",
       destructive:
         "bg-red-500 text-neutral-50 shadow-sm hover:bg-red-500/90 dark:bg-red-900 dark:text-neutral-50 dark:hover:bg-red-900/90",
       outline:

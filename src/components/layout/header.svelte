@@ -9,7 +9,6 @@
 
   import { Separator } from "@/components/ui/separator";
   import { buttonVariants } from "@/components/ui/button";
-  import SvglVersion from "@/components/svglVersion.svelte";
   import SendIcon from "@/components/ui/moving-icons/send-icon.svelte";
   import SidebarMobileMenu from "@/components/layout/sidebarMobileMenu.svelte";
   import SettingsMenu from "@/components/settings/settingsMenu.svelte";
@@ -20,16 +19,15 @@
   class="sticky top-0 z-50 w-full bg-neutral-100 px-2 py-3 md:px-4 md:py-4 dark:bg-neutral-950"
 >
   <nav class="flex w-full items-center justify-between">
-    <div class="flex items-center space-x-3">
+    <div class="flex items-center space-x-2">
       <SidebarMobileMenu className="md:hidden" />
       <a
         href="/"
-        class="flex items-center space-x-2.5 transition-colors hover:text-neutral-700 dark:hover:text-neutral-300"
+        class="flex items-center space-x-2 transition-colors hover:text-neutral-700 dark:hover:text-neutral-300"
       >
         <Svgl size={28} />
         <h2 class="text-xl font-medium tracking-tight">svgl</h2>
       </a>
-      <SvglVersion className="hidden md:block" />
     </div>
     <div class="flex h-5 items-center space-x-2.5">
       <div class="flex items-center space-x-1.5">

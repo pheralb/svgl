@@ -46,9 +46,9 @@
 
 <div
   class={cn(
-    "group flex flex-col items-center justify-center px-3.5 py-3",
+    "flex flex-col items-center justify-center px-3.5 py-3",
     "rounded-md border border-neutral-200 dark:border-neutral-800",
-    "transition-colors duration-100 hover:bg-neutral-100/80 dark:hover:bg-neutral-800/20",
+    "hover:bg-neutral-100/80 dark:hover:bg-neutral-800/20",
   )}
 >
   <!-- Image Options -->
@@ -72,6 +72,7 @@
   <!-- Image -->
   {#if wordmarkSvg && svgInfo.wordmark !== undefined}
     <img
+      loading="lazy"
       class={cn("hidden dark:block", globalImageStyles)}
       src={getSvgImgUrl({ url: svgInfo.wordmark, isDark: true })}
       alt={svgInfo.title}
@@ -80,6 +81,7 @@
       height="40"
     />
     <img
+      loading="lazy"
       class={cn("block dark:hidden", globalImageStyles)}
       src={getSvgImgUrl({ url: svgInfo.wordmark, isDark: false })}
       alt={svgInfo.title}
@@ -89,6 +91,7 @@
     />
   {:else}
     <img
+      loading="lazy"
       class={cn("hidden dark:block", globalImageStyles)}
       src={getSvgImgUrl({ url: svgInfo.route, isDark: true })}
       alt={svgInfo.title}
@@ -97,6 +100,7 @@
       height="40"
     />
     <img
+      loading="lazy"
       class={cn("block dark:hidden", globalImageStyles)}
       src={getSvgImgUrl({ url: svgInfo.route, isDark: false })}
       alt={svgInfo.title}
@@ -127,7 +131,6 @@
             {c}
           </a>
         {/each}
-
         {#if svgInfo.category.length > maxVisibleCategories}
           <Popover.Root
             open={moreTagsOptions}
@@ -148,11 +151,14 @@
               {/if}
             </Popover.Trigger>
             <Popover.Content class="flex w-auto flex-col space-y-2">
-              <p class="font-medium">More tags:</p>
+              <p class="font-medium">More tags</p>
               {#each svgInfo.category.slice(maxVisibleCategories) as c (c)}
                 <a
                   href={`/directory/${c.toLowerCase()}`}
-                  class={cn(buttonVariants({ variant: "outline" }), "w-full")}
+                  class={cn(
+                    buttonVariants({ variant: "outline" }),
+                    "w-full justify-start",
+                  )}
                 >
                   <TagIcon size={15} strokeWidth={1.5} />
                   <span>{c}</span>
