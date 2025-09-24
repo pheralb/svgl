@@ -7,7 +7,6 @@ import { browser } from "$app/environment";
 const localStorageKey = "svgl_favorites";
 
 function createFavoritesStore() {
-  // Check if the favorites exist in the SVGs array:
   const validateFavorites = (favorites: iSVG[]): iSVG[] => {
     return favorites.filter((favorite) => {
       const existsInSvgs = svgs.some((svg) => {
@@ -62,10 +61,10 @@ function createFavoritesStore() {
     // Add SVG to favorites:
     addToFavorites: (item: iSVG) =>
       update((favorites) => {
-        const exists = favorites.some((fav) =>
-          typeof item === "object" && item.id
-            ? fav.id === item.id
-            : fav === item,
+        const exists = favorites.some(
+          (fav) =>
+            fav.title === item.title &&
+            JSON.stringify(fav.route) === JSON.stringify(item.route),
         );
         if (!exists) {
           const newFavorites = [...favorites, item];
@@ -78,10 +77,12 @@ function createFavoritesStore() {
     // Delete SVG from favorites:
     removeFromFavorites: (item: iSVG) =>
       update((favorites) => {
-        const newFavorites = favorites.filter((fav) =>
-          typeof item === "object" && item.id
-            ? fav.id !== item.id
-            : fav !== item,
+        const newFavorites = favorites.filter(
+          (fav) =>
+            !(
+              fav.title === item.title &&
+              JSON.stringify(fav.route) === JSON.stringify(item.route)
+            ),
         );
         saveFavorites(newFavorites);
         return newFavorites;
@@ -90,18 +91,20 @@ function createFavoritesStore() {
     // Toggle (add/remove) SVG from favorites:
     toggleFavorite: (item: iSVG) =>
       update((favorites) => {
-        const exists = favorites.some((fav) =>
-          typeof item === "object" && item.id
-            ? fav.id === item.id
-            : fav === item,
+        const exists = favorites.some(
+          (fav) =>
+            fav.title === item.title &&
+            JSON.stringify(fav.route) === JSON.stringify(item.route),
         );
 
         let newFavorites;
         if (exists) {
-          newFavorites = favorites.filter((fav) =>
-            typeof item === "object" && item.id
-              ? fav.id !== item.id
-              : fav !== item,
+          newFavorites = favorites.filter(
+            (fav) =>
+              !(
+                fav.title === item.title &&
+                JSON.stringify(fav.route) === JSON.stringify(item.route)
+              ),
           );
         } else {
           newFavorites = [...favorites, item];
@@ -113,18 +116,19 @@ function createFavoritesStore() {
 
     // Check if SVG is in favorites:
     isFavorite: (item: iSVG, currentFavorites: iSVG[]) => {
-      return currentFavorites.some((fav) =>
-        typeof item === "object" && item.id ? fav.id === item.id : fav === item,
+      return currentFavorites.some(
+        (fav) =>
+          fav.title === item.title &&
+          JSON.stringify(fav.route) === JSON.stringify(item.route),
       );
     },
 
-    // Delete all favorites:
+    // Clear favorites:
     clearFavorites: () => {
       set([]);
       saveFavorites([]);
     },
 
-    // Get count of favorites:
     getCount: (currentFavorites: iSVG[]) => currentFavorites.length,
 
     validateAndCleanup: () => {

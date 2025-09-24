@@ -94,14 +94,16 @@
         <FolderHeart size={18} strokeWidth={1.5} />
       {/if}
       <p>Favorites</p>
-      <span>-</span>
-      {#if !searchTerm}
-        <span>{favoritesCount} SVGs</span>
-      {:else}
-        <p>
-          <span class="font-mono">{filteredFavorites.length}</span>
-          <span>search results</span>
-        </p>
+      {#if favoritesCount > 0}
+        <span>-</span>
+        {#if !searchTerm}
+          <span>{favoritesCount} SVGs</span>
+        {:else}
+          <p>
+            <span class="font-mono">{filteredFavorites.length}</span>
+            <span>search results</span>
+          </p>
+        {/if}
       {/if}
     </div>
     {#if favoritesCount > 0}
