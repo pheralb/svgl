@@ -3408,13 +3408,6 @@ export const svgs: iSVG[] = [
     url: "https://www.lottielab.com/",
   },
   {
-    title: "LottieFiles",
-    category: "Design",
-    route: "/library/lottiefiles.svg",
-    wordmark: "/library/lottiefiles-wordmark.svg",
-    url: "https://lottiefiles.com/",
-  },
-  {
     title: "TanStack",
     category: ["Software", "Library"],
     route: "/library/tanstack.svg",
@@ -3984,6 +3977,7 @@ export const svgs: iSVG[] = [
   {
     title: "Cursor",
     category: ["Software"],
+    brandUrl: "https://cursor.com/brand",
     route: {
       light: "/library/cursor_light.svg",
       dark: "/library/cursor_dark.svg",
@@ -3993,5 +3987,16 @@ export const svgs: iSVG[] = [
       dark: "/library/cursor_wordmark_dark.svg",
     },
     url: "https://www.cursor.com",
+  },
+  {
+    title: "LottieFiles",
+    category: "Design",
+    route: "/library/lottiefiles.svg",
+    brandUrl: "https://lottiefiles.com/brand-assets",
+    wordmark: {
+      light: "/library/lottiefiles-wordmark-light.svg",
+      dark: "/library/lottiefiles-wordmark-dark.svg",
+    },
+    url: "https://lottiefiles.com/",
   },
 ];
