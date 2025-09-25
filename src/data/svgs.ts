@@ -3987,4 +3987,11 @@ export const svgs: iSVG[] = [
     },
     url: "https://www.cursor.com",
   },
+  {
+    title: 'LobeHub',
+    category: ['AI', 'Software'],
+    route: '/library/lobehub.svg',
+    wordmark: '/library/lobehub_wordmark.svg',
+    url: 'https://www.lobehub.com'
+  }
 ];
