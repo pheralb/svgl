@@ -3408,6 +3408,13 @@ export const svgs: iSVG[] = [
     url: "https://www.lottielab.com/",
   },
   {
+    title: "LottieFiles",
+    category: "Design",
+    route: "/library/lottiefiles.svg",
+    wordmark: "/library/lottiefiles-wordmark.svg",
+    url: "https://lottiefiles.com/",
+  },
+  {
     title: "TanStack",
     category: ["Software", "Library"],
     route: "/library/tanstack.svg",
