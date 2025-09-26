@@ -1,6 +1,8 @@
 <script lang="ts">
+  import type { WithoutChild } from "@/types/components";
+
+  import { cn } from "@/utils/cn";
   import { ScrollArea as ScrollAreaPrimitive } from "bits-ui";
-  import { cn, type WithoutChild } from "@/utils/cn";
   import { useHasPrimaryTouch } from "@/hooks/use-has-primary-touch";
 
   let {

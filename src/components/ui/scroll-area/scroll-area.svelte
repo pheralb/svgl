@@ -1,9 +1,12 @@
 <script lang="ts">
-  import { cn, type WithoutChild } from "@/utils/cn";
-  import { ScrollArea as ScrollAreaPrimitive } from "bits-ui";
+  import type { WithoutChild } from "@/types/components";
+
+  import { cn } from "@/utils/cn";
+  import { useHasPrimaryTouch } from "@/hooks/use-has-primary-touch";
+
   import { Scrollbar } from "./index.js";
   import ScrollAreaMask from "./scroll-area-mask.svelte";
-  import { useHasPrimaryTouch } from "@/hooks/use-has-primary-touch";
+  import { ScrollArea as ScrollAreaPrimitive } from "bits-ui";
 
   type Mask = {
     top: boolean;
