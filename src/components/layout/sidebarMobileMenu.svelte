@@ -10,6 +10,7 @@
 
   import ShowCategories from "@/components/layout/showCategories.svelte";
   import ShowSidebarLinks from "@/components/layout/showSidebarLinks.svelte";
+  import ScrollArea from "@/components/ui/scroll-area/scroll-area.svelte";
 
   interface Props {
     className?: string;
@@ -33,10 +34,14 @@
         <h2 class="text-xl font-medium tracking-tight">svgl</h2>
       </Sheet.Title>
     </Sheet.Header>
-    <nav class="flex flex-col space-y-0.5 overflow-y-auto px-3 pb-3">
+    <ScrollArea
+      class="flex size-full flex-col"
+      viewportClassName="pb-3 px-3 space-y-0.5"
+      maskClassName="before:from-white after:from-white dark:before:from-neutral-900 dark:after:from-neutral-900"
+    >
       <ShowSidebarLinks />
       <Separator orientation="horizontal" class="my-3" />
       <ShowCategories />
-    </nav>
+    </ScrollArea>
   </Sheet.Content>
 </Sheet.Root>
