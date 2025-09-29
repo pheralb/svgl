@@ -1,21 +1,20 @@
-import { optimize } from 'svgo';
+import { optimize } from "svgo/browser";
 
 export const getPrefixFromSvgUrl = (svgUrl: string) => {
-  return svgUrl.split('/').pop()!.replace('.svg', '').split('-').join('_');
+  return svgUrl.split("/").pop()!.replace(".svg", "").split("-").join("_");
 };
 
 export const prefixSvgIds = (content: string, prefix: string): string => {
   const result = optimize(content, {
     plugins: [
       {
-        name: 'prefixIds',
+        name: "prefixIds",
         params: {
-          prefix
-        }
-      }
+          prefix,
+        },
+      },
     ],
-    multipass: false
+    multipass: false,
   });
-
   return (result as { data: string }).data;
 };
