@@ -1,4 +1,5 @@
 export interface Extension {
+  id?: number;
   name: string;
   description: string;
   created_by: {

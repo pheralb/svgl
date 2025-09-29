@@ -30,6 +30,34 @@ export const svgs: iSVG[] = [
     brandUrl: 'https://github.com/vrypan/farcaster-brand'
   },
   {
+    title: 'Base',
+    category: 'Crypto',
+    route: {
+      light: '/library/base_light.svg',
+      dark: '/library/base_dark.svg'
+    },
+    wordmark: {
+      light: '/library/base_wordmark-logo_light.svg',
+      dark: '/library/base_wordmark-logo_dark.svg'
+    },
+    url: 'https://base.org',
+    brandUrl: 'https://github.com/base/brand-kit'
+  },
+  {
+    title: 'Farcaster',
+    category: 'Social',
+    route: {
+      light: '/library/farcaster_light.svg',
+      dark: '/library/farcaster_dark.svg'
+    },
+    wordmark: {
+      light: '/library/farcaster_wordmark-logo_light.svg',
+      dark: '/library/farcaster_wordmark-logo_dark.svg'
+    },
+    url: 'https://farcaster.xyz',
+    brandUrl: 'https://github.com/vrypan/farcaster-brand'
+  },
+  {
     title: 'Google Classroom',
     category: ['Google', 'Education'],
     route: '/library/google-classroom.svg',
@@ -200,7 +228,7 @@ export const svgs: iSVG[] = [
   {
     title: 'Apollo.io',
     category: 'Software',
-    route: '/library/apollo.io.svg',
+    route: '/library/apollo-io.svg',
     url: 'https://www.apollo.io/'
   },
   {
@@ -506,8 +534,9 @@ export const svgs: iSVG[] = [
   {
     title: 'NPM',
     category: 'Software',
+    url: 'https://www.npmjs.com/',
     route: '/library/npm.svg',
-    url: 'https://www.npmjs.com/'
+    wordmark: '/library/npm-wordmark.svg'
   },
   {
     title: 'Nuget',
@@ -531,7 +560,8 @@ export const svgs: iSVG[] = [
     title: 'Turborepo',
     category: ['Library', 'Vercel', 'Monorepo'],
     route: '/library/turborepo.svg',
-    url: 'https://turborepo.org/'
+    url: 'https://turborepo.org/',
+    shadcnCommand: 'shadcn@canary add https://svgl.app/r/vercel.json'
   },
   {
     title: 'Tailwind CSS',
@@ -2414,19 +2444,6 @@ export const svgs: iSVG[] = [
     brandUrl: 'https://brand-at.webflow.io/resources'
   },
   {
-    title: 'Sanity',
-    category: 'CMS',
-    route: {
-      dark: '/library/sanity-dark.svg',
-      light: '/library/sanity-light.svg'
-    },
-    wordmark: {
-      dark: '/library/sanity-wordmark-dark.svg',
-      light: '/library/sanity-wordmark-light.svg'
-    },
-    url: 'https://www.sanity.io'
-  },
-  {
     title: 'sky',
     category: 'Entertainment',
     route: '/library/sky.svg',
@@ -3694,19 +3711,6 @@ export const svgs: iSVG[] = [
       'https://www.figma.com/file/YYn36CxVpcT6aPKDXIH9JG/CurseForge-Brandbook?type=design&node-id=0-1&t=dvC0gPtyP36PQdsi-0'
   },
   {
-    title: 'Cursor',
-    category: ['Software'],
-    route: {
-      light: '/library/cursor_light.svg',
-      dark: '/library/cursor_dark.svg'
-    },
-    wordmark: {
-      light: '/library/cursor_wordmark_light.svg',
-      dark: '/library/cursor_wordmark_dark.svg'
-    },
-    url: 'https://www.cursor.com'
-  },
-  {
     title: 'Ghostty',
     category: ['Software'],
     route: '/library/ghostty.svg',
@@ -3862,7 +3866,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: 'OpenHunts',
-    category: ['Platform', 'Community'],
+    category: ['Community'],
     route: '/library/openhunts.svg',
     url: 'https://openhunts.com'
   },
@@ -4008,13 +4012,47 @@ export const svgs: iSVG[] = [
     title: 'Intello',
     category: 'Platform',
     route: {
-      light: '/library/intello-light.svg',
-      dark: '/library/intello-dark.svg'
+      light: '/library/intello-dark.svg',
+      dark: '/library/intello-light.svg'
     },
     wordmark: {
-      light: '/library/intello-wordmark-light.svg',
-      dark: '/library/intello-wordmark-dark.svg'
+      light: '/library/intello_wordmark_dark.svg',
+      dark: '/library/intello_wordmark_light.svg'
     },
     url: 'https://intelloai.com/'
+  },
+  {
+    title: 'Kilo Code',
+    category: ['AI', 'Devtool'],
+    route: {
+      light: '/library/kilocode-light.svg',
+      dark: '/library/kilocode-dark.svg'
+    },
+    url: 'https://kilocode.ai/'
+  },
+  {
+    title: 'Cursor',
+    category: ['Software'],
+    brandUrl: 'https://cursor.com/brand',
+    route: {
+      light: '/library/cursor_light.svg',
+      dark: '/library/cursor_dark.svg'
+    },
+    wordmark: {
+      light: '/library/cursor_wordmark_light.svg',
+      dark: '/library/cursor_wordmark_dark.svg'
+    },
+    url: 'https://www.cursor.com'
+  },
+  {
+    title: 'LottieFiles',
+    category: 'Design',
+    route: '/library/lottiefiles.svg',
+    brandUrl: 'https://lottiefiles.com/brand-assets',
+    wordmark: {
+      light: '/library/lottiefiles-wordmark-light.svg',
+      dark: '/library/lottiefiles-wordmark-dark.svg'
+    },
+    url: 'https://lottiefiles.com/'
   }
 ];
