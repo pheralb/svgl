@@ -15,6 +15,7 @@ export const parseReactSvgContent = async ({
     .replace("<svg", "<svg {...props}")
     .replace(/class="/g, 'className="')
     .replace(/clip-rule="/g, 'clipRule="')
+    .replace(/clip-path="/g, 'clipPath="')
     .replace(/fill-rule="/g, 'fillRule="')
     .replace(/stroke-width="/g, 'strokeWidth="')
     .replace(/stroke-linecap="/g, 'strokeLinecap="')
