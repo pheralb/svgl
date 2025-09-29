@@ -29,8 +29,8 @@ export const parseReactSvgContent = async ({
   let structuredCode = "";
   if (typescript) {
     structuredCode =
-      `import * as React from 'react';\n\n` +
-      `const ${componentName} = (props: React.SVGProps<SVGSVGElement>) => (\n  ${reactifiedSvg}\n);\n\n` +
+      `import type { SVGProps } from "react";\n\n` +
+      `const ${componentName} = (props: SVGProps<SVGSVGElement>) => (\n  ${reactifiedSvg}\n);\n\n` +
       `export { ${componentName} };`;
   } else {
     structuredCode = `const ${componentName} = (props) => (\n  ${reactifiedSvg}\n);\n\nexport { ${componentName} };`;
