@@ -55,8 +55,8 @@ importers:
         specifier: 3.8.2
         version: 3.8.2
       '@lucide/svelte':
-        specifier: 0.515.0
-        version: 0.515.0(svelte@5.38.2)
+        specifier: 0.544.0
+        version: 0.544.0(svelte@5.38.2)
       '@shikijs/rehype':
         specifier: 3.12.0
         version: 3.12.0
@@ -606,8 +606,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.30':
     resolution: {integrity: sha512-GQ7Nw5G2lTu/BtHTKfXhKHok2WGetd4XYcVKGx00SjAk8GMwgJM3zr6zORiPGuOE+/vkc90KtTosSSvaCjKb2Q==}
 
-  '@lucide/svelte@0.515.0':
-    resolution: {integrity: sha512-CEAyqcZmNBfYzVgaRmK2RFJP5tnbXxekRyDk0XX/eZQRfsJmkDvmQwXNX8C869BgNeryzmrRyjHhUL6g9ZOHNA==}
+  '@lucide/svelte@0.544.0':
+    resolution: {integrity: sha512-9f9O6uxng2pLB01sxNySHduJN3HTl5p0HDu4H26VR51vhZfiMzyOMe9Mhof3XAk4l813eTtl+/DYRvGyoRR+yw==}
     peerDependencies:
       svelte: ^5
 
@@ -3656,7 +3656,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@lucide/svelte@0.515.0(svelte@5.38.2)':
+  '@lucide/svelte@0.544.0(svelte@5.38.2)':
     dependencies:
       svelte: 5.38.2
 
