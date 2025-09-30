@@ -8,27 +8,27 @@
 
 /* Fonts */
 @font-face {
-  font-family: "Geist";
-  src: url("/fonts/Geist.woff2") format("woff2");
+  font-family: "InterVariable";
+  src: url("/fonts/InterVariable.woff2") format("woff2");
   font-weight: 100 900;
   font-display: swap;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "GeistMono";
-  src: url("/fonts/GeistMono.woff2") format("woff2");
-  font-weight: 100 900;
+  font-family: "DMMono";
+  src: url("/fonts/DMMono.woff2") format("woff2");
+  font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
 
 @theme {
   --font-sans:
-    "Geist", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "InterVariable", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-mono:
-    "GeistMono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "DMMono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace, "Apple Color Emoji";
 }
 
