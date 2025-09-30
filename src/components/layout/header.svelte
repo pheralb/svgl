@@ -4,7 +4,6 @@
   import { mode } from "mode-watcher";
   import ModeToggle from "@/components/modeToggle.svelte";
 
-  import Svgl from "@/components/logos/svgl.svelte";
   import Twitter from "@/components/logos/twitter.svelte";
 
   import { Separator } from "@/components/ui/separator";
@@ -13,6 +12,7 @@
   import SidebarMobileMenu from "@/components/layout/sidebarMobileMenu.svelte";
   import SettingsMenu from "@/components/settings/settingsMenu.svelte";
   import GithubLink from "@/components/githubLink.svelte";
+  import HomeLink from "@/components/layout/homeLink.svelte";
 </script>
 
 <header
@@ -21,13 +21,7 @@
   <nav class="flex w-full items-center justify-between">
     <div class="flex items-center space-x-2">
       <SidebarMobileMenu className="md:hidden" />
-      <a
-        href="/"
-        class="flex items-center space-x-2 transition-colors hover:text-neutral-700 dark:hover:text-neutral-300"
-      >
-        <Svgl size={28} />
-        <h2 class="text-xl font-medium tracking-tight">svgl</h2>
-      </a>
+      <HomeLink />
     </div>
     <div class="flex h-5 items-center space-x-2.5">
       <div class="flex items-center space-x-1.5">
