@@ -4003,4 +4003,18 @@ export const svgs: iSVG[] = [
     },
     url: "https://mintlify.com/",
   },
+  {
+    title: "Qdrant",
+    category: ["Database", "AI"],
+    route: {
+      light: "/library/qdrant-icon-light.svg",
+      dark: "/library/qdrant-icon-dark.svg",
+    },
+    wordmark: {
+      light: "/library/qdrant-wordmark-light.svg",
+      dark: "/library/qdrant-wordmark-dark.svg",
+    },
+    url: "https://qdrant.tech/",
+    brandUrl: "https://qdrant.tech/brand-resources/",
+  },
 ];
