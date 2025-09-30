@@ -2039,12 +2039,6 @@ export const svgs: iSVG[] = [
     url: "https://calendly.com/",
   },
   {
-    title: "Mintlify",
-    category: "Software",
-    route: "/library/mintlify.svg",
-    url: "https://mintlify.com/",
-  },
-  {
     title: "Patreon",
     category: "Social",
     route: {
@@ -3998,5 +3992,15 @@ export const svgs: iSVG[] = [
       dark: "/library/lottiefiles-wordmark-dark.svg",
     },
     url: "https://lottiefiles.com/",
+  },
+  {
+    title: "Mintlify",
+    category: "Software",
+    route: "/library/mintlify.svg",
+    wordmark: {
+      light: "/library/mintlify_wordmark_light.svg",
+      dark: "/library/mintlify_wordmark_dark.svg",
+    },
+    url: "https://mintlify.com/",
   },
 ];
