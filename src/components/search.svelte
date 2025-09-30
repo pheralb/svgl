@@ -51,7 +51,7 @@
       "pointer-events-none absolute top-1/2 left-2.5 -translate-y-1/2 transition-colors",
       searchValue
         ? "text-black dark:text-white"
-        : "text-neutral-400 dark:text-neutral-600",
+        : "text-neutral-400 dark:text-neutral-500",
     )}
   />
   <input
