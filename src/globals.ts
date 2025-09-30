@@ -1,4 +1,5 @@
 export const globals = {
+  appUrl: "https://svgl.app",
   githubUrl: "https://github.com/pheralb/svgl",
   apiGithub: {
     url: "https://ungh.cc/repos/pheralb/svgl",
