@@ -2727,8 +2727,18 @@ export const svgs: iSVG[] = [
   {
     title: "TensorFlow",
     category: "Library",
-    route: "/library/tensorflow.svg",
+
+    route: {
+      light: "/library/tensorflow-icon-light.svg",
+      dark: "/library/tensorflow-icon-dark.svg",
+    },
+    wordmark: {
+      light: "/library/tensorflow-wordmark-light.svg",
+      dark: "/library/tensorflow-wordmark-dark.svg",
+    },
     url: "https://www.tensorflow.org/",
+    brandUrl:
+      "https://www.tensorflow.org/extras/tensorflow_brand_guidelines.pdf",
   },
   {
     title: "Midday",
