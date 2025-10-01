@@ -4027,17 +4027,17 @@ export const svgs: iSVG[] = [
     brandUrl: "https://qdrant.tech/brand-resources/",
   },
   {
-    title: 'TravelPerk',
-    category: 'Software',
+    title: "TravelPerk",
+    category: "Software",
     route: {
-      light: '/library/travelperk-light.svg',
-      dark: '/library/travelperk-dark.svg'
+      light: "/library/travelperk-light.svg",
+      dark: "/library/travelperk-dark.svg",
     },
     wordmark: {
-      light: '/library/travelperk-wordmark-light.svg',
-      dark: '/library/travelperk-wordmark-dark.svg'
+      light: "/library/travelperk-wordmark-light.svg",
+      dark: "/library/travelperk-wordmark-dark.svg",
     },
-    url: 'https://www.travelperk.com/',
-    brandUrl: 'https://www.travelperk.com/media/',
-  }
+    url: "https://www.travelperk.com/",
+    brandUrl: "https://www.travelperk.com/media/",
+  },
 ];
