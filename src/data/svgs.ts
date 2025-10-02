@@ -4026,4 +4026,17 @@ export const svgs: iSVG[] = [
     url: "https://qdrant.tech/",
     brandUrl: "https://qdrant.tech/brand-resources/",
   },
+  {
+    title: "Sanity",
+    category: ["CMS", "Software"],
+    route: {
+      light: "/library/sanity-light.svg",
+      dark: "/library/sanity-dark.svg",
+    },
+    wordmark: {
+      light: "/library/sanity-wordmark-light.svg",
+      dark: "/library/sanity-wordmark-dark.svg",
+    },
+    url: "https://www.sanity.io/",
+  },
 ];
