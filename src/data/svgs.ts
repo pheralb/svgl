@@ -4040,4 +4040,17 @@ export const svgs: iSVG[] = [
     url: "https://www.travelperk.com/",
     brandUrl: "https://www.travelperk.com/media/",
   },
+  {
+    title: "Sanity",
+    category: ["CMS", "Software"],
+    route: {
+      light: "/library/sanity-light.svg",
+      dark: "/library/sanity-dark.svg",
+    },
+    wordmark: {
+      light: "/library/sanity-wordmark-light.svg",
+      dark: "/library/sanity-wordmark-dark.svg",
+    },
+    url: "https://www.sanity.io/",
+  },
 ];

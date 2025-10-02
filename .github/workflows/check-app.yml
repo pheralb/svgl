@@ -28,9 +28,9 @@ jobs:
         env:
           PUBLIC_SVGL_VERSION: v5
 
-  svgs-size:
+  check-svgs:
     runs-on: ubuntu-latest
-    name: 📦 SVGs Size
+    name: 📦 Check SVGs
     steps:
       - uses: actions/checkout@v4
 
@@ -42,3 +42,6 @@ jobs:
 
       - name: Check SVGs size
         run: pnpm check:size
+
+      - name: Check unused SVGs
+        run: pnpm check:data
