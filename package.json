@@ -33,6 +33,7 @@
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "check:size": "tsx ./utils/check-size.ts",
+    "check:data": "tsx ./utils/check-data.ts",
     "check:links": " lychee --base . ./src/data/svgs.ts --cache --max-cache-age 3d . --include 'https://svgl.app'",
     "fix:viewbox": "tsx ./utils/fix-viewbox.ts",
     "format": "prettier --write \"src/**/*.{ts,js,md,svelte}\" --cache",
