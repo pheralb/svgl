@@ -4053,4 +4053,16 @@ export const svgs: iSVG[] = [
     },
     url: "https://www.sanity.io/",
   },
+  {
+    title: 'RedNote Video Downloader',
+    category: ['Software'],
+    route: '/library/xhs-download.svg',
+    url: 'https://xhs-download.org/'
+  },
+  {
+    title: 'Check Cosmetic',
+    category: ['Software'],
+    route: '/library/check-cosmetic.svg',
+    url: 'https://checkcosmetic.online/'
+  },
 ];
