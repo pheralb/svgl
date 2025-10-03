@@ -8,8 +8,8 @@
 
 /* Fonts */
 @font-face {
-  font-family: "Geist";
-  src: url("/fonts/Geist.woff2") format("woff2");
+  font-family: "InterVariable";
+  src: url("/fonts/InterVariable.woff2") format("woff2");
   font-weight: 100 900;
   font-display: swap;
   font-style: normal;
@@ -25,7 +25,7 @@
 
 @theme {
   --font-sans:
-    "Geist", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "InterVariable", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-mono:
     "GeistMono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,

@@ -15,6 +15,7 @@ export const parseReactSvgContent = async ({
     .replace("<svg", "<svg {...props}")
     .replace(/class="/g, 'className="')
     .replace(/clip-rule="/g, 'clipRule="')
+    .replace(/clip-path="/g, 'clipPath="')
     .replace(/fill-rule="/g, 'fillRule="')
     .replace(/stroke-width="/g, 'strokeWidth="')
     .replace(/stroke-linecap="/g, 'strokeLinecap="')
@@ -28,8 +29,8 @@ export const parseReactSvgContent = async ({
   let structuredCode = "";
   if (typescript) {
     structuredCode =
-      `import * as React from 'react';\n\n` +
-      `const ${componentName} = (props: React.SVGProps<SVGSVGElement>) => (\n  ${reactifiedSvg}\n);\n\n` +
+      `import type { SVGProps } from "react";\n\n` +
+      `const ${componentName} = (props: SVGProps<SVGSVGElement>) => (\n  ${reactifiedSvg}\n);\n\n` +
       `export { ${componentName} };`;
   } else {
     structuredCode = `const ${componentName} = (props) => (\n  ${reactifiedSvg}\n);\n\nexport { ${componentName} };`;

@@ -2039,12 +2039,6 @@ export const svgs: iSVG[] = [
     url: "https://calendly.com/",
   },
   {
-    title: "Mintlify",
-    category: "Software",
-    route: "/library/mintlify.svg",
-    url: "https://mintlify.com/",
-  },
-  {
     title: "Patreon",
     category: "Social",
     route: {
@@ -2733,8 +2727,17 @@ export const svgs: iSVG[] = [
   {
     title: "TensorFlow",
     category: "Library",
-    route: "/library/tensorflow.svg",
+    route: {
+      light: "/library/tensorflow-icon-light.svg",
+      dark: "/library/tensorflow-icon-dark.svg",
+    },
+    wordmark: {
+      light: "/library/tensorflow-wordmark-light.svg",
+      dark: "/library/tensorflow-wordmark-dark.svg",
+    },
     url: "https://www.tensorflow.org/",
+    brandUrl:
+      "https://www.tensorflow.org/extras/tensorflow_brand_guidelines.pdf",
   },
   {
     title: "Midday",
@@ -3977,6 +3980,7 @@ export const svgs: iSVG[] = [
   {
     title: "Cursor",
     category: ["Software"],
+    brandUrl: "https://cursor.com/brand",
     route: {
       light: "/library/cursor_light.svg",
       dark: "/library/cursor_dark.svg",
@@ -3987,13 +3991,72 @@ export const svgs: iSVG[] = [
     },
     url: "https://www.cursor.com",
   },
-   {
+  {
   title: "Bolt",
   category: ["Devtool"],
-  route: {
-    light: "/library/bolt_light.svg",
-    dark: "/library/bolt_dark.svg",
-  },
+  route: "/library/bolt_light.svg",
   url: "http://bolt.new",
-  }
+ },
+  {
+    title: "LottieFiles",
+    category: "Design",
+    route: "/library/lottiefiles.svg",
+    brandUrl: "https://lottiefiles.com/brand-assets",
+    wordmark: {
+      light: "/library/lottiefiles-wordmark-light.svg",
+      dark: "/library/lottiefiles-wordmark-dark.svg",
+    },
+    url: "https://lottiefiles.com/",
+  },
+  {
+    title: "Mintlify",
+    category: "Software",
+    route: "/library/mintlify.svg",
+    wordmark: {
+      light: "/library/mintlify_wordmark_light.svg",
+      dark: "/library/mintlify_wordmark_dark.svg",
+    },
+    url: "https://mintlify.com/",
+  },
+  {
+    title: "Qdrant",
+    category: ["Database", "AI"],
+    route: {
+      light: "/library/qdrant-icon-light.svg",
+      dark: "/library/qdrant-icon-dark.svg",
+    },
+    wordmark: {
+      light: "/library/qdrant-wordmark-light.svg",
+      dark: "/library/qdrant-wordmark-dark.svg",
+    },
+    url: "https://qdrant.tech/",
+    brandUrl: "https://qdrant.tech/brand-resources/",
+  },
+  {
+    title: "TravelPerk",
+    category: "Software",
+    route: {
+      light: "/library/travelperk-light.svg",
+      dark: "/library/travelperk-dark.svg",
+    },
+    wordmark: {
+      light: "/library/travelperk-wordmark-light.svg",
+      dark: "/library/travelperk-wordmark-dark.svg",
+    },
+    url: "https://www.travelperk.com/",
+    brandUrl: "https://www.travelperk.com/media/",
+  },
+  {
+    title: "Sanity",
+    category: ["CMS", "Software"],
+    route: {
+      light: "/library/sanity-light.svg",
+      dark: "/library/sanity-dark.svg",
+    },
+    wordmark: {
+      light: "/library/sanity-wordmark-light.svg",
+      dark: "/library/sanity-wordmark-dark.svg",
+    },
+    url: "https://www.sanity.io/",
+  },
 ];
