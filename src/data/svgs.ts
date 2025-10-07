@@ -525,6 +525,15 @@ export const svgs: iSVG[] = [
     url: "https://tailwindcss.com/",
   },
   {
+   title: 'WakaTime',
+   category: 'Devtool',
+   route: {
+     light: '/library/wakatime-dark.svg',
+     dark: '/library/wakatime-light.svg'
+   },
+   url: 'https://wakatime.com'
+  },
+  {
     title: "Styled Components",
     category: "Library",
     route: "/library/styledcomponents.svg",
