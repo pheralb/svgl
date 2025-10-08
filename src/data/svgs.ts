@@ -575,11 +575,15 @@ export const svgs: iSVG[] = [
     title: "Astro",
     category: "Framework",
     route: {
-      light: "/library/astro.svg",
-      dark: "/library/astro_dark.svg",
+      light: "/library/astro-icon-light.svg",
+      dark: "/library/astro-icon-dark.svg",
     },
-    url: "https://astro.build/",
-    brandUrl: "https://astro.build/press/",
+    wordmark: {
+      light: "/library/astro-wordmark-light.svg",
+      dark: "/library/astro-wordmark-dark.svg",
+    },
+    url: "https://astro.build",
+    brandUrl: "https://astro.build/press",
   },
   {
     title: "Google",
