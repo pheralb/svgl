@@ -4049,6 +4049,12 @@ export const svgs: iSVG[] = [
     url: "https://www.cursor.com",
   },
   {
+  title: "Bolt",
+  category: ["Devtool"],
+  route: "/library/bolt_light.svg",
+  url: "http://bolt.new",
+ },
+  {
     title: "LottieFiles",
     category: "Design",
     route: "/library/lottiefiles.svg",
