@@ -1061,6 +1061,12 @@ export const svgs: iSVG[] = [
     url: "https://auth0.com/",
   },
   {
+    title: "Auth.js",
+    category: "Authentication",
+    route: "/library/authjs.svg",
+    url: "https://authjs.dev",
+  },
+  {
     title: "Fresh",
     category: "Framework",
     route: "/library/fresh.svg",
