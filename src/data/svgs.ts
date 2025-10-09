@@ -522,10 +522,17 @@ export const svgs: iSVG[] = [
   },
   {
     title: "Turborepo",
-    category: ["Library", "Vercel", "Monorepo"],
-    route: "/library/turborepo.svg",
-    url: "https://turborepo.org/",
-    shadcnCommand: "shadcn@canary add https://svgl.app/r/vercel.json",
+    category: ["Library", "Monorepo", "Vercel"],
+    route: {
+      light: "/library/turborepo-icon-light.svg",
+      dark: "/library/turborepo-icon-dark.svg",
+    },
+    wordmark: {
+      light: "/library/turborepo-wordmark-light.svg",
+      dark: "/library/turborepo-wordmark-dark.svg",
+    },
+    url: "https://turborepo.com",
+    brandUrl: "https://vercel.com/geist/brands",
   },
   {
     title: "Tailwind CSS",
@@ -1356,9 +1363,17 @@ export const svgs: iSVG[] = [
   },
   {
     title: "Turbopack",
-    category: "Software",
-    route: "/library/turbopack.svg",
-    url: "https://turbo.build/",
+    category: ["Software", "Devtool", "Vercel"],
+    route: {
+      light: "/library/turbopack-icon-light.svg",
+      dark: "/library/turbopack-icon-dark.svg",
+    },
+    wordmark: {
+      light: "/library/turbopack-wordmark-light.svg",
+      dark: "/library/turbopack-wordmark-dark.svg",
+    },
+    url: "https://nextjs.org/docs/app/api-reference/turbopack",
+    brandUrl: "https://vercel.com/geist/brands",
   },
   {
     title: "Builder",
