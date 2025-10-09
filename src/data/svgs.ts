@@ -1302,6 +1302,14 @@ export const svgs: iSVG[] = [
     url: "https://www.eclipse.org/",
   },
   {
+    title: "NetBeans IDE",
+    category: "Software",
+    route: "/library/netbeans.svg",
+    wordmark: "/library/netbeans-wordmark.svg",
+    brandUrl: "https://www.apache.org/logos",
+    url: "https://netbeans.apache.org",
+  },
+  {
     title: "Three.js",
     category: "Library",
     route: {
@@ -4100,13 +4108,5 @@ export const svgs: iSVG[] = [
       dark: "/library/sanity-wordmark-dark.svg",
     },
     url: "https://www.sanity.io/",
-  },
-  {
-    title: "NetBeans IDE",
-    category: "Software",
-    route: "/library/netbeans.svg",
-    wordmark: "/library/netbeans-wordmark.svg",
-    brandUrl: "https://www.apache.org/logos",
-    url: "https://netbeans.apache.org",
   },
 ];
