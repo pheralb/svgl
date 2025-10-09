@@ -3906,13 +3906,15 @@ export const svgs: iSVG[] = [
   {
     title: "Apache Kafka",
     category: "Analytics",
-    route: "/library/apache-kafka-logo.svg",
+    route: {
+      light: "/library/apache-kafka-icon-light.svg",
+      dark: "/library/apache-kafka-icon-dark.svg",
+    },
     wordmark: {
       light: "/library/apache-kafka-wordmark-light.svg",
       dark: "/library/apache-kafka-wordmark-dark.svg",
     },
-    url: "https://kafka.apache.org/",
-    brandUrl: "https://kafka.apache.org/brand",
+    url: "https://kafka.apache.org",
   },
   {
     title: "PlainSignal",
