@@ -4086,4 +4086,10 @@ export const svgs: iSVG[] = [
     },
     url: "https://www.sanity.io/",
   },
+  {
+    title: "Auth.js",
+    category: "Authentication",
+    route: "/library/authjs.svg",
+    url: "https://authjs.dev",
+  },
 ];
