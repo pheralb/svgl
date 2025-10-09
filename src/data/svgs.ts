@@ -4110,4 +4110,10 @@ export const svgs: iSVG[] = [
     },
     url: "https://www.sanity.io/",
   },
+  {
+    title: "Nginx",
+    category: "Software",
+    route: "/library/nginx.svg",
+    url: "https://nginx.org/",
+  }
 ];
