@@ -546,13 +546,13 @@ export const svgs: iSVG[] = [
     url: "https://tailwindcss.com/",
   },
   {
-   title: 'WakaTime',
-   category: 'Devtool',
-   route: {
-     light: '/library/wakatime-dark.svg',
-     dark: '/library/wakatime-light.svg'
-   },
-   url: 'https://wakatime.com'
+    title: 'WakaTime',
+    category: 'Devtool',
+    route: {
+      light: '/library/wakatime-dark.svg',
+      dark: '/library/wakatime-light.svg'
+    },
+    url: 'https://wakatime.com'
   },
   {
     title: "Styled Components",
@@ -3921,7 +3921,10 @@ export const svgs: iSVG[] = [
   {
     title: "Apache Kafka",
     category: "Analytics",
-    route: "/library/apache-kafka-logo.svg",
+    route: {
+      light: '/library/apache-kafka-light.svg',
+      dark: '/library/apache-kafka-dark.svg'
+    },
     wordmark: {
       light: "/library/apache-kafka-wordmark-light.svg",
       dark: "/library/apache-kafka-wordmark-dark.svg",
