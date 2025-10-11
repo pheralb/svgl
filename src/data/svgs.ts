@@ -29,12 +29,6 @@ export const svgs: iSVG[] = [
     url: "https://kimi.ai/",
   },
   {
-    title: "OneNote",
-    category: "Software",
-    route: "/library/onenote.svg",
-    url: "https://onenote.com",
-  },
-  {
     title: "Perspective",
     category: "Software",
     route: {
