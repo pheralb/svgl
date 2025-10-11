@@ -1141,8 +1141,16 @@ export const svgs: iSVG[] = [
   {
     title: "MySQL",
     category: "Database",
-    route: "/library/mysql.svg",
-    url: "https://www.mysql.com/",
+    route: {
+      light: "/library/mysql-icon-light.svg",
+      dark: "/library/mysql-icon-dark.svg",
+    },
+    wordmark: {
+      light: "/library/mysql-wordmark-light.svg",
+      dark: "/library/mysql-wordmark-dark.svg",
+    },
+    url: "https://www.mysql.com",
+    brandUrl: "https://www.mysql.com/about/legal/logos.html",
   },
   {
     title: "Parcel",
