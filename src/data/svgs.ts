@@ -351,7 +351,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: "Visual Studio Code",
-    category: "Software",
+    category: ["Software", "Microsoft"],
     route: "/library/vscode.svg",
     url: "https://code.visualstudio.com/",
     brandUrl: "https://code.visualstudio.com/brand",
@@ -732,7 +732,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: "Visual Studio",
-    category: "Software",
+    category: ["Software", "Microsoft"],
     route: "/library/visual-studio.svg",
     url: "https://visualstudio.microsoft.com",
   },
@@ -985,7 +985,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: "Microsoft Azure",
-    category: "Software",
+    category: ["Software", "Microsoft"],
     route: "/library/azure.svg",
     url: "https://azure.microsoft.com/",
   },
@@ -1351,7 +1351,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: "Windows",
-    category: "Software",
+    category: ["Software", "Microsoft"],
     route: "/library/windows.svg",
     url: "https://www.microsoft.com/windows",
   },
@@ -1532,7 +1532,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: "Microsoft",
-    category: "Software",
+    category: ["Software", "Microsoft"],
     route: "/library/microsoft.svg",
     url: "https://www.microsoft.com/",
   },
@@ -1746,7 +1746,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: "Microsoft SQL Server ",
-    category: "Database",
+    category: ["Database", "Microsoft"],
     route: "/library/sql-server.svg",
     url: "https://www.microsoft.com/en-us/sql-server/",
   },
@@ -1997,7 +1997,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: "Edge",
-    category: "Browser",
+    category: ["Browser", "Microsoft"],
     route: "/library/edge.svg",
     url: "https://www.microsoft.com/en-us/edge",
   },
@@ -2801,7 +2801,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: "C#",
-    category: "Language",
+    category: ["Language", "Microsoft"],
     route: "/library/csharp.svg",
     url: "https://dotnet.microsoft.com/languages/csharp",
   },
@@ -2987,7 +2987,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: "Microsoft Todo",
-    category: "Software",
+    category: ["Software", "Microsoft"],
     route: "/library/microsoft-todo.svg",
     url: "https://to-do.office.com/",
   },
@@ -3448,13 +3448,13 @@ export const svgs: iSVG[] = [
   },
   {
     title: "PowerToys",
-    category: "Software",
+    category: ["Software", "Microsoft"],
     route: "/library/powertoys.svg",
     url: "https://learn.microsoft.com/en-us/windows/powertoys/",
   },
   {
     title: "PowerShell",
-    category: "Language",
+    category: ["Language", "Microsoft"],
     route: "/library/powershell.svg",
     url: "https://learn.microsoft.com/en-us/powershell/",
   },
@@ -3485,7 +3485,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: "Microsoft .NET",
-    category: ["Framework", "Library", "Devtool"],
+    category: ["Framework", "Library", "Devtool", "Microsoft"],
     route: "/library/dotnet.svg",
     url: "https://dotnet.microsoft.com",
   },
