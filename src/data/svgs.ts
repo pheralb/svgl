@@ -1002,6 +1002,12 @@ export const svgs: iSVG[] = [
     url: "https://clipchamp.com/",
   },
   {
+    title: "Microsoft Copilot",
+    category: ["AI", "Software", "Devtool", "Microsoft"],
+    route: "/library/microsoft-copilot.svg",
+    url: "https://copilot.microsoft.com/",
+  },
+  {
     title: "Heroku",
     category: "Software",
     route: "/library/heroku.svg",
