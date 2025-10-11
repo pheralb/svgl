@@ -3583,13 +3583,17 @@ export const svgs: iSVG[] = [
     url: "https://modelcontextprotocol.io/",
   },
   {
-    title: "Socket.io",
-    category: "Software",
+    title: "Socket.IO",
+    category: ["Software", "Library"],
     route: {
-      dark: "/library/socketio-dark.svg",
-      light: "/library/socketio-light.svg",
+      dark: "/library/socketio-icon-dark.svg",
+      light: "/library/socketio-icon-light.svg",
     },
-    url: "https://socket.io/",
+    wordmark: {
+      light: "/library/socketio-wordmark-light.svg",
+      dark: "/library/socketio-wordmark-dark.svg",
+    },
+    url: "https://socket.io",
   },
   {
     title: "Ant Design",
