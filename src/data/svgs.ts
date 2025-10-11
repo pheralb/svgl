@@ -1056,6 +1056,12 @@ export const svgs: iSVG[] = [
     url: "https://www.microsoft.com/microsoft-teams/group-chat-software",
   },
   {
+    title: "Microsoft Word",
+    category: ["Software", "Microsoft"],
+    route: "/library/microsoft-word.svg",
+    url: "https://www.microsoft.com/microsoft-365/word",
+  },
+  {
     title: "Heroku",
     category: "Software",
     route: "/library/heroku.svg",
