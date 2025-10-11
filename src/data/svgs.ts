@@ -990,6 +990,12 @@ export const svgs: iSVG[] = [
     url: "https://azure.microsoft.com/",
   },
   {
+    title: "Microsoft Access",
+    category: ["Database", "Microsoft"],
+    route: "/library/microsoft-access.svg",
+    url: "https://www.microsoft.com/microsoft-365/access",
+  },
+  {
     title: "Heroku",
     category: "Software",
     route: "/library/heroku.svg",
