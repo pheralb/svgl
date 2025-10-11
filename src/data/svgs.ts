@@ -1038,6 +1038,12 @@ export const svgs: iSVG[] = [
     url: "https://www.microsoft.com/microsoft-365/onedrive/online-cloud-storage",
   },
   {
+    title: "Microsoft OneNote",
+    category: ["Software", "Microsoft"],
+    route: "/library/microsoft-onenote.svg",
+    url: "https://www.microsoft.com/microsoft-365/onenote/digital-note-taking-app",
+  },
+  {
     title: "Heroku",
     category: "Software",
     route: "/library/heroku.svg",
