@@ -25,8 +25,12 @@ export const svgs: iSVG[] = [
   {
     title: "Kimi",
     category: "AI",
-    route: "/library/kimi.svg",
-    url: "https://kimi.ai/",
+    route: "/library/kimi-icon.svg",
+    wordmark: {
+      light: "/library/kimi-wordmark-light.svg",
+      dark: "/library/kimi-wordmark-dark.svg",
+    },
+    url: "https://kimi.ai",
   },
   {
     title: "OneNote",
