@@ -1008,6 +1008,12 @@ export const svgs: iSVG[] = [
     url: "https://copilot.microsoft.com/",
   },
   {
+    title: "Microsoft Defender",
+    category: ["Cybersecurity", "Software", "Microsoft"],
+    route: "/library/microsoft-defender.svg",
+    url: "https://www.microsoft.com/microsoft-365/microsoft-defender-for-individuals",
+  },
+  {
     title: "Heroku",
     category: "Software",
     route: "/library/heroku.svg",
