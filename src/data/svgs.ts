@@ -996,6 +996,12 @@ export const svgs: iSVG[] = [
     url: "https://www.microsoft.com/microsoft-365/access",
   },
   {
+    title: "Microsoft Clipchamp",
+    category: ["Software", "Design", "Entertainment", "Microsoft"],
+    route: "/library/microsoft-clipchamp.svg",
+    url: "https://clipchamp.com/",
+  },
+  {
     title: "Heroku",
     category: "Software",
     route: "/library/heroku.svg",
