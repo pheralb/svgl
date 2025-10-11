@@ -1038,6 +1038,12 @@ export const svgs: iSVG[] = [
     url: "https://www.microsoft.com/microsoft-365/onenote/digital-note-taking-app",
   },
   {
+    title: "Microsoft PowerPoint",
+    category: ["Software", "Design", "Microsoft"],
+    route: "/library/microsoft-powerpoint.svg",
+    url: "https://www.microsoft.com/microsoft-365/powerpoint",
+  },
+  {
     title: "Heroku",
     category: "Software",
     route: "/library/heroku.svg",
