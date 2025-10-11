@@ -1032,6 +1032,12 @@ export const svgs: iSVG[] = [
     url: "https://www.microsoft.com/microsoft-365/excel",
   },
   {
+    title: "Microsoft OneDrive",
+    category: ["Hosting", "Software", "Microsoft"],
+    route: "/library/microsoft-onedrive.svg",
+    url: "https://www.microsoft.com/microsoft-365/onedrive/online-cloud-storage",
+  },
+  {
     title: "Heroku",
     category: "Software",
     route: "/library/heroku.svg",
