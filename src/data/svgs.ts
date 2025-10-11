@@ -1044,6 +1044,12 @@ export const svgs: iSVG[] = [
     url: "https://www.microsoft.com/microsoft-365/powerpoint",
   },
   {
+    title: "Microsoft SharePoint",
+    category: ["Hosting", "Software", "Community", "Microsoft"],
+    route: "/library/microsoft-sharepoint.svg",
+    url: "https://www.microsoft.com/microsoft-365/sharepoint/collaboration-software",
+  },
+  {
     title: "Heroku",
     category: "Software",
     route: "/library/heroku.svg",
