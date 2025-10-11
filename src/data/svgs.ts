@@ -3484,6 +3484,12 @@ export const svgs: iSVG[] = [
     url: "https://typegpu.com",
   },
   {
+    title: "Microsoft .NET",
+    category: ["Framework", "Library", "Devtool"],
+    route: "/library/dotnet.svg",
+    url: "https://dotnet.microsoft.com",
+  },
+  {
     title: "dotenv",
     category: ["Config", "Library", "Devtool"],
     route: "/library/dotenv.svg",
