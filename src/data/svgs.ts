@@ -1731,10 +1731,8 @@ export const svgs: iSVG[] = [
   {
     title: "Instagram",
     category: "Social",
-    route: {
-      light: "/library/instagram.svg",
-      dark: "/library/instagram_dark.svg",
-    },
+    route: "/library/instagram-icon.svg",
+    wordmark: "/library/instagram-wordmark.svg",
     url: "https://www.instagram.com/",
     brandUrl: "https://about.instagram.com/brand",
   },
