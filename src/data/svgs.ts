@@ -1026,6 +1026,12 @@ export const svgs: iSVG[] = [
     url: "https://www.microsoft.com/microsoft-365/microsoft-editor",
   },
   {
+    title: "Microsoft Excel",
+    category: ["Software", "Microsoft"],
+    route: "/library/microsoft-excel.svg",
+    url: "https://www.microsoft.com/microsoft-365/excel",
+  },
+  {
     title: "Heroku",
     category: "Software",
     route: "/library/heroku.svg",
