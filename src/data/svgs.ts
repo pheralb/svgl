@@ -3800,14 +3800,14 @@ export const svgs: iSVG[] = [
     title: "Clerk",
     category: ["Software", "Authentication"],
     route: {
-      light: "/library/clerk-light.svg",
-      dark: "/library/clerk-dark.svg",
+      light: "/library/clerk-icon-light.svg",
+      dark: "/library/clerk-icon-dark.svg",
     },
     wordmark: {
       light: "/library/clerk-wordmark-light.svg",
       dark: "/library/clerk-wordmark-dark.svg",
     },
-    url: "https://clerk.com/",
+    url: "https://clerk.com",
     brandUrl: "https://clerk.com/design",
   },
   {
