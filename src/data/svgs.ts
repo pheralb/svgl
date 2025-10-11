@@ -697,9 +697,15 @@ export const svgs: iSVG[] = [
   {
     title: "MongoDB",
     category: "Database",
-    route: "/library/mongodb.svg",
-    wordmark: "/library/mongodb-wordmark.svg",
-    url: "https://www.mongodb.com/",
+    route: {
+      light: "/library/mongodb-icon-light.svg",
+      dark: "/library/mongodb-icon-dark.svg",
+    },
+    wordmark: {
+      light: "/library/mongodb-wordmark-light.svg",
+      dark: "/library/mongodb-wordmark-dark.svg",
+    },
+    url: "https://www.mongodb.com",
     brandUrl: "https://www.mongodb.com/company/newsroom/brand-resources",
   },
   {
