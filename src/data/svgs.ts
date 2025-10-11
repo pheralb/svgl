@@ -3921,8 +3921,16 @@ export const svgs: iSVG[] = [
   {
     title: "ESLint",
     category: "Library",
-    route: "/library/eslint.svg",
-    url: "https://eslint.org/",
+    route: {
+      light: "/library/eslint-icon-light.svg",
+      dark: "/library/eslint-icon-dark.svg",
+    },
+    wordmark: {
+      light: "/library/eslint-wordmark-light.svg",
+      dark: "/library/eslint-wordmark-dark.svg",
+    },
+    url: "https://eslint.org",
+    brandUrl: "https://eslint.org/branding",
   },
   {
     title: "Apache Kafka",
