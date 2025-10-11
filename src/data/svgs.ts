@@ -2519,10 +2519,10 @@ export const svgs: iSVG[] = [
     url: "https://www.gmail.com",
   },
   {
-    title: "Outlook",
-    category: "Software",
-    route: "/library/outlook.svg",
-    url: "https://www.outlook.com",
+    title: "Microsoft Outlook",
+    category: ["Software", "Microsoft"],
+    route: "/library/microsoft-outlook.svg",
+    url: "https://www.microsoft.com/microsoft-365/outlook/email-and-calendar-software-application",
   },
   {
     title: "Slack",
