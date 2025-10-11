@@ -1014,6 +1014,12 @@ export const svgs: iSVG[] = [
     url: "https://www.microsoft.com/microsoft-365/microsoft-defender-for-individuals",
   },
   {
+    title: "Microsoft Designer",
+    category: ["Design", "AI", "Software", "Microsoft"],
+    route: "/library/microsoft-designer.svg",
+    url: "https://designer.microsoft.com/",
+  },
+  {
     title: "Heroku",
     category: "Software",
     route: "/library/heroku.svg",
