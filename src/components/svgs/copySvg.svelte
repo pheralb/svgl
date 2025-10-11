@@ -162,7 +162,12 @@
       content = prefixSvgIds(content, getPrefixFromSvgUrl(svgUrlToCopy));
     }
 
-    const dataComponent = { code: content, typescript: tsx, name: title };
+    const dataComponent = {
+      code: content,
+      typescript: tsx,
+      name: title,
+      optimize,
+    };
     const { data, error } = await getReactCode(dataComponent);
 
     if (error || !data) {
