@@ -593,8 +593,12 @@ export const svgs: iSVG[] = [
     title: "YouTube",
     category: ["Google", "Social"],
     route: "/library/youtube.svg",
-    wordmark: "/library/youtube-wordmark.svg",
-    url: "https://www.youtube.com/",
+    wordmark: {
+      light: "/library/youtube-wordmark-light.svg",
+      dark: "/library/youtube-wordmark-dark.svg",
+    },
+    url: "https://www.youtube.com",
+    brandUrl: "https://brand.youtube",
   },
   {
     title: "Astro",
