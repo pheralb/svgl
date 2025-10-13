@@ -3150,6 +3150,12 @@ export const svgs: iSVG[] = [
     url: "https://www.w3.org/TR/SVG/",
   },
   {
+    title: "PDF",
+    category: ["Library", "Design", "Education"],
+    route: "/library/pdf.svg",
+    url: "https://www.adobe.com/acrobat.html",
+  },
+  {
     title: "Todoist",
     category: "Software",
     route: "/library/todoist.svg",
