@@ -669,8 +669,10 @@ export const svgs: iSVG[] = [
   {
     title: "WhatsApp",
     category: "Social",
-    route: "/library/whatsapp.svg",
-    url: "https://web.whatsapp.com/",
+    route: "/library/whatsapp-icon.svg",
+    wordmark: "/library/whatsapp-wordmark.svg",
+    url: "https://web.whatsapp.com",
+    brandUrl: "https://www.meta.com/brand/resources/whatsapp/whatsapp-brand",
   },
   {
     title: "Headless UI",
