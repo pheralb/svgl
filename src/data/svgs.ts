@@ -623,7 +623,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: "Google Play",
-    category: ["Marketplace", "Platform", "Google"],
+    category: ["Marketplace", "Platform", "Software", "Google"],
     route: "/library/googleplay.svg",
     wordmark: {
       light: "/library/googleplay-wordmark-light.svg",
