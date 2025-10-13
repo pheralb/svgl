@@ -622,6 +622,16 @@ export const svgs: iSVG[] = [
     url: "https://www.google.com/",
   },
   {
+    title: "Google Play",
+    category: ["Marketplace", "Platform", "Google"],
+    route: "/library/googleplay.svg",
+    wordmark: {
+      light: "/library/googleplay-wordmark-light.svg",
+      dark: "/library/googleplay-wordmark-dark.svg",
+    },
+    url: "https://play.google.com",
+  },
+  {
     title: "Framer",
     category: "Software",
     route: {
