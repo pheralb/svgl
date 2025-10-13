@@ -1358,6 +1358,12 @@ export const svgs: iSVG[] = [
     url: "https://www.apple.com",
   },
   {
+    title: "App Store",
+    category: ["Marketplace", "Software", "Platform"],
+    route: "/library/appstore.svg",
+    url: "https://www.apple.com/app-store/",
+  },
+  {
     title: "Windows",
     category: "Software",
     route: "/library/windows.svg",
