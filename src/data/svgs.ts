@@ -15,6 +15,12 @@ export const svgs: iSVG[] = [
     url: "https://kimi.ai/",
   },
   {
+  title: 'ReScript',
+  category: 'Language',
+  route: '/library/rescript.svg',
+  url: 'https://rescript-lang.org',
+  },
+  {
     title: 'Zyft',
     category: 'Library',
     route: '/library/zyft.svg',
