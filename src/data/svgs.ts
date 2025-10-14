@@ -457,9 +457,10 @@ export const svgs: iSVG[] = [
   {
     title: "Facebook",
     category: "Social",
-    route: "/library/facebook.svg",
-    url: "https://www.facebook.com/",
-    brandUrl: "https://about.meta.com/brand/resources/facebook/logo/",
+    route: "/library/facebook-icon.svg",
+    wordmark: "/library/facebook-wordmark.svg",
+    url: "https://www.facebook.com",
+    brandUrl: "https://about.meta.com/brand/resources/facebook/logo",
   },
   {
     title: "Twitter",
