@@ -33,12 +33,6 @@ export const svgs: iSVG[] = [
     url: "https://kimi.ai",
   },
   {
-    title: "OneNote",
-    category: "Software",
-    route: "/library/onenote.svg",
-    url: "https://onenote.com",
-  },
-  {
     title: "Perspective",
     category: "Software",
     route: {
@@ -355,7 +349,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: "Visual Studio Code",
-    category: "Software",
+    category: ["Software", "Microsoft"],
     route: "/library/vscode.svg",
     url: "https://code.visualstudio.com/",
     brandUrl: "https://code.visualstudio.com/brand",
@@ -740,7 +734,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: "Visual Studio",
-    category: "Software",
+    category: ["Software", "Microsoft"],
     route: "/library/visual-studio.svg",
     url: "https://visualstudio.microsoft.com",
   },
@@ -993,9 +987,87 @@ export const svgs: iSVG[] = [
   },
   {
     title: "Microsoft Azure",
-    category: "Software",
+    category: ["Software", "Microsoft"],
     route: "/library/azure.svg",
     url: "https://azure.microsoft.com/",
+  },
+  {
+    title: "Microsoft Access",
+    category: ["Database", "Microsoft"],
+    route: "/library/microsoft-access.svg",
+    url: "https://www.microsoft.com/microsoft-365/access",
+  },
+  {
+    title: "Microsoft Clipchamp",
+    category: ["Software", "Design", "Entertainment", "Microsoft"],
+    route: "/library/microsoft-clipchamp.svg",
+    url: "https://clipchamp.com/",
+  },
+  {
+    title: "Microsoft Copilot",
+    category: ["AI", "Software", "Devtool", "Microsoft"],
+    route: "/library/microsoft-copilot.svg",
+    url: "https://copilot.microsoft.com/",
+  },
+  {
+    title: "Microsoft Defender",
+    category: ["Cybersecurity", "Software", "Microsoft"],
+    route: "/library/microsoft-defender.svg",
+    url: "https://www.microsoft.com/microsoft-365/microsoft-defender-for-individuals",
+  },
+  {
+    title: "Microsoft Designer",
+    category: ["Design", "AI", "Software", "Microsoft"],
+    route: "/library/microsoft-designer.svg",
+    url: "https://designer.microsoft.com/",
+  },
+  {
+    title: "Microsoft Editor",
+    category: ["Software", "AI", "Microsoft"],
+    route: "/library/microsoft-editor.svg",
+    url: "https://www.microsoft.com/microsoft-365/microsoft-editor",
+  },
+  {
+    title: "Microsoft Excel",
+    category: ["Software", "Microsoft"],
+    route: "/library/microsoft-excel.svg",
+    url: "https://www.microsoft.com/microsoft-365/excel",
+  },
+  {
+    title: "Microsoft OneDrive",
+    category: ["Hosting", "Software", "Microsoft"],
+    route: "/library/microsoft-onedrive.svg",
+    url: "https://www.microsoft.com/microsoft-365/onedrive/online-cloud-storage",
+  },
+  {
+    title: "Microsoft OneNote",
+    category: ["Software", "Microsoft"],
+    route: "/library/microsoft-onenote.svg",
+    url: "https://www.microsoft.com/microsoft-365/onenote/digital-note-taking-app",
+  },
+  {
+    title: "Microsoft PowerPoint",
+    category: ["Software", "Design", "Microsoft"],
+    route: "/library/microsoft-powerpoint.svg",
+    url: "https://www.microsoft.com/microsoft-365/powerpoint",
+  },
+  {
+    title: "Microsoft SharePoint",
+    category: ["Hosting", "Software", "Community", "Microsoft"],
+    route: "/library/microsoft-sharepoint.svg",
+    url: "https://www.microsoft.com/microsoft-365/sharepoint/collaboration-software",
+  },
+  {
+    title: "Microsoft Teams",
+    category: ["Software", "Community", "Microsoft"],
+    route: "/library/microsoft-teams.svg",
+    url: "https://www.microsoft.com/microsoft-teams/group-chat-software",
+  },
+  {
+    title: "Microsoft Word",
+    category: ["Software", "Microsoft"],
+    route: "/library/microsoft-word.svg",
+    url: "https://www.microsoft.com/microsoft-365/word",
   },
   {
     title: "Heroku",
@@ -1359,7 +1431,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: "Windows",
-    category: "Software",
+    category: ["Software", "Microsoft"],
     route: "/library/windows.svg",
     url: "https://www.microsoft.com/windows",
   },
@@ -1540,7 +1612,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: "Microsoft",
-    category: "Software",
+    category: ["Software", "Microsoft"],
     route: "/library/microsoft.svg",
     url: "https://www.microsoft.com/",
   },
@@ -1754,7 +1826,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: "Microsoft SQL Server ",
-    category: "Database",
+    category: ["Database", "Microsoft"],
     route: "/library/sql-server.svg",
     url: "https://www.microsoft.com/en-us/sql-server/",
   },
@@ -2005,7 +2077,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: "Edge",
-    category: "Browser",
+    category: ["Browser", "Microsoft"],
     route: "/library/edge.svg",
     url: "https://www.microsoft.com/en-us/edge",
   },
@@ -2473,10 +2545,10 @@ export const svgs: iSVG[] = [
     url: "https://www.gmail.com",
   },
   {
-    title: "Outlook",
-    category: "Software",
-    route: "/library/outlook.svg",
-    url: "https://www.outlook.com",
+    title: "Microsoft Outlook",
+    category: ["Software", "Microsoft"],
+    route: "/library/microsoft-outlook.svg",
+    url: "https://www.microsoft.com/microsoft-365/outlook/email-and-calendar-software-application",
   },
   {
     title: "Slack",
@@ -2809,7 +2881,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: "C#",
-    category: "Language",
+    category: ["Language", "Microsoft"],
     route: "/library/csharp.svg",
     url: "https://dotnet.microsoft.com/languages/csharp",
   },
@@ -2995,7 +3067,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: "Microsoft Todo",
-    category: "Software",
+    category: ["Software", "Microsoft"],
     route: "/library/microsoft-todo.svg",
     url: "https://to-do.office.com/",
   },
@@ -3456,13 +3528,13 @@ export const svgs: iSVG[] = [
   },
   {
     title: "PowerToys",
-    category: "Software",
+    category: ["Software", "Microsoft"],
     route: "/library/powertoys.svg",
     url: "https://learn.microsoft.com/en-us/windows/powertoys/",
   },
   {
     title: "PowerShell",
-    category: "Language",
+    category: ["Language", "Microsoft"],
     route: "/library/powershell.svg",
     url: "https://learn.microsoft.com/en-us/powershell/",
   },
@@ -3493,7 +3565,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: "Microsoft .NET",
-    category: ["Framework", "Library", "Devtool"],
+    category: ["Framework", "Library", "Devtool", "Microsoft"],
     route: "/library/dotnet.svg",
     url: "https://dotnet.microsoft.com",
   },

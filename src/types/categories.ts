@@ -34,4 +34,5 @@ export type Category =
   | "Sync Engine"
   | "Platform"
   | "Automation"
-  | "Nuxt";
+  | "Nuxt"
+  | "Microsoft";
