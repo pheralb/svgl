@@ -628,8 +628,9 @@ export const svgs: iSVG[] = [
   {
     title: "Netflix",
     category: "Entertainment",
-    route: "/library/netflix.svg",
-    url: "https://www.netflix.com/",
+    route: "/library/netflix-icon.svg",
+    wordmark: "/library/netflix-wordmark.svg",
+    url: "https://www.netflix.com",
     brandUrl: "https://brand.netflix.com/en/assets/logos",
   },
   {
