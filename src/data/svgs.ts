@@ -2548,15 +2548,22 @@ export const svgs: iSVG[] = [
     wordmark: "/library/airbnb-wordmark.svg",
     url: "https://www.airbnb.com",
   },
+   {
+    title: 'Friym',
+    category: 'Social',
+    route: '/library/friym.svg',
+    wordmark: '/library/friym-wordmark.svg',
+    url: 'https://www.friym.com'
+  },
   {
-    title: "Uber",
-    category: "Software",
+    title: 'Uber',
+    category: 'Software',
     route: {
-      light: "/library/uber_light.svg",
-      dark: "/library/uber_dark.svg",
+      light: '/library/uber_light.svg',
+      dark: '/library/uber_dark.svg'
     },
-    url: "https://www.uber.com",
-    brandUrl: "https://brand.uber.com/",
+    url: 'https://www.uber.com',
+    brandUrl: 'https://brand.uber.com/'
   },
   {
     title: "Gmail",
