@@ -1,8 +1,8 @@
 ---
-name: 🚧 Bug Report
-about: Report an issue or bug in the project
-title: '[🚧 Bug]: Issue title'
-labels: bug
+name: ✨ Feature Request
+about: Suggest an idea for this project
+title: '[✨ Feature]: '
+labels: enhancement
 ---
 
 ## Description
