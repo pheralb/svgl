@@ -1262,6 +1262,10 @@ export const svgs: iSVG[] = [
     title: "PostgreSQL",
     category: "Database",
     route: "/library/postgresql.svg",
+    wordmark: {
+      light: "/library/postgresql-wordmark-light.svg",
+      dark: "/library/postgresql-wordmark-dark.svg",
+    },
     url: "https://www.postgresql.org/",
   },
   {
