@@ -213,6 +213,13 @@ export const svgs: iSVG[] = [
     url: "https://lua.org/",
   },
   {
+    "title": "Mercado Libre",
+    "category": ["Marketplace", "Platform"],
+    "route": "/library/mercado-libre.svg",
+    "wordmark": "/library/mercado-libre-wordmark.svg",
+    "url": "https://www.mercadolibre.com"
+  },
+  {
     title: "Mercado Pago",
     category: "Payment",
     route: "/library/mercado-pago.svg",
