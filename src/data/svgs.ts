@@ -4269,7 +4269,7 @@ export const svgs: iSVG[] = [
     category: "Software",
     route: "/library/nginx.svg",
     url: "https://nginx.org/",
-  }
+  },
   {
   title: 'Soldera',
   category: ['Platform', 'Analytics', 'Marketplace', 'Software'],
