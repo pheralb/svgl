@@ -4269,5 +4269,16 @@ export const svgs: iSVG[] = [
     category: "Software",
     route: "/library/nginx.svg",
     url: "https://nginx.org/",
+  },
+  {
+    title: "Maizzle",
+    category: "Framework",
+    route: {
+      light: "/library/maizzle_light.svg",
+      dark: "/library/maizzle_dark.svg",
+    },
+    wordmark: "/library/maizzle_wordmark.svg",
+    url: "https://maizzle.com/",
+    brandUrl: "https://maizzle.com/brand",
   }
 ];
