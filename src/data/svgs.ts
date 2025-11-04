@@ -4274,8 +4274,8 @@ export const svgs: iSVG[] = [
   title: 'Soldera',
   category: ['Platform', 'Analytics', 'Marketplace', 'Software'],
   route: {
-    light: '/library/soldera-icon.svg',
-    dark: '/library/soldera-icon-dark.svg'
+    light: '/library/soldera-icon-light.svg',
+    dark: '/library/soldera-icon.svg'
   },
   wordmark: {
     light: '/library/soldera-wordmark-light.svg',
