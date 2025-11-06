@@ -4275,5 +4275,14 @@ export const svgs: iSVG[] = [
     category: "Software",
     route: "/library/nginx.svg",
     url: "https://nginx.org/",
+  },
+  {
+    title: 'Magebit',
+    category: 'Software',
+    route: {
+      light: '/library/magebit_light.svg',
+      dark: '/library/magebit_dark.svg',
+    },
+    url: 'https://magebit.com/'
   }
 ];
