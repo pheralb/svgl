@@ -4278,7 +4278,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: "Dribbble",
-    category: ["Design", "Community"],
+    category: ["Design", "Community", "Platform"],
     route: "/library/dribbble.svg",
     wordmark: {
       light: "/library/dribbble-wordmark-light.svg",
