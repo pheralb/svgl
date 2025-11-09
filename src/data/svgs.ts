@@ -4275,5 +4275,15 @@ export const svgs: iSVG[] = [
     category: "Software",
     route: "/library/nginx.svg",
     url: "https://nginx.org/",
-  }
+  },
+  {
+    title: "Dribbble",
+    category: ["Design", "Community"],
+    route: "/library/dribbble.svg",
+    wordmark: {
+      light: "/library/dribbble-wordmark-light.svg",
+      dark: "/library/dribbble-wordmark-dark.svg",
+    },
+    url: "https://dribbble.com/",
+  },
 ];
