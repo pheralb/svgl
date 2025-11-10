@@ -4275,5 +4275,18 @@ export const svgs: iSVG[] = [
     category: "Software",
     route: "/library/nginx.svg",
     url: "https://nginx.org/",
+  },
+  {
+  title: 'Soldera',
+  category: ['Platform', 'Analytics', 'Marketplace', 'Software'],
+  route: {
+    light: '/library/soldera-icon-light.svg',
+    dark: '/library/soldera-icon.svg'
+  },
+  wordmark: {
+    light: '/library/soldera-wordmark-light.svg',
+    dark: '/library/soldera-wordmark-dark.svg'
+  },
+  url: 'https://www.soldera.org'
   }
 ];
