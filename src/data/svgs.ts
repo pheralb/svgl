@@ -4277,6 +4277,19 @@ export const svgs: iSVG[] = [
     url: "https://nginx.org/",
   },
   {
+    title: 'Soldera',
+    category: ['Platform', 'Analytics', 'Marketplace', 'Software'],
+    route: {
+      light: '/library/soldera-icon-light.svg',
+      dark: '/library/soldera-icon.svg'
+    },
+    wordmark: {
+      light: '/library/soldera-wordmark-light.svg',
+      dark: '/library/soldera-wordmark-dark.svg'
+    },
+    url: 'https://www.soldera.org'
+  },
+  {
     title: "Dribbble",
     category: ["Design", "Community", "Platform"],
     route: "/library/dribbble.svg",
@@ -4285,5 +4298,5 @@ export const svgs: iSVG[] = [
       dark: "/library/dribbble-wordmark-dark.svg",
     },
     url: "https://dribbble.com/",
-  },
+  }
 ];
