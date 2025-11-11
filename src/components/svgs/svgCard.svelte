@@ -52,7 +52,7 @@
   )}
 >
   <!-- Image Options -->
-  <div class="flex w-full items-center justify-end space-x-3">
+  <div class="flex w-full items-center justify-end space-x-3 pb-0.5">
     {#if svgInfo.brandUrl !== undefined}
       <a
         href={svgInfo.brandUrl}
@@ -77,7 +77,6 @@
       src={getSvgImgUrl({ url: svgInfo.wordmark, isDark: true })}
       alt={svgInfo.title}
       title={svgInfo.title}
-      width="140"
       height="40"
     />
     <img
@@ -86,7 +85,6 @@
       src={getSvgImgUrl({ url: svgInfo.wordmark, isDark: false })}
       alt={svgInfo.title}
       title={svgInfo.title}
-      width="140"
       height="40"
     />
   {:else}
@@ -96,7 +94,6 @@
       src={getSvgImgUrl({ url: svgInfo.route, isDark: true })}
       alt={svgInfo.title}
       title={svgInfo.title}
-      width="140"
       height="40"
     />
     <img
@@ -105,7 +102,6 @@
       src={getSvgImgUrl({ url: svgInfo.route, isDark: false })}
       alt={svgInfo.title}
       title={svgInfo.title}
-      width="140"
       height="40"
     />
   {/if}

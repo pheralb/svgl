@@ -36,6 +36,9 @@
   <HeartIcon
     size={16}
     strokeWidth={1.8}
-    class={cn(isFavorite && "fill-red-500 dark:fill-red-600")}
+    class={cn(
+      isFavorite &&
+        "fill-red-500 text-red-600 dark:fill-red-600 dark:text-red-400",
+    )}
   />
 </button>
