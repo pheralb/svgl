@@ -6,12 +6,29 @@ interface ParseReactSvgOptions {
   typescript: boolean;
 }
 
+const convertStyleStringToObject = (styleString: string): string => {
+  const styleObj: Record<string, string> = {};
+  styleString.split(";").forEach((style) => {
+    const [property, value] = style.split(":").map((s) => s.trim());
+    if (property && value) {
+      const camelCaseProperty = property.replace(/-([a-z])/g, (g) =>
+        g[1].toUpperCase(),
+      );
+      styleObj[camelCaseProperty] = value;
+    }
+  });
+  return JSON.stringify(styleObj);
+};
+
 export const parseReactSvgContent = async ({
   componentName,
   svgCode,
   typescript,
 }: ParseReactSvgOptions) => {
-  const reactifiedSvg = svgCode
+  const processedSvg = svgCode.replace(/style="([^"]*)"/g, (_, styleString) => {
+    return `style={${convertStyleStringToObject(styleString)}}`;
+  });
+  const reactifiedSvg = processedSvg
     .replace("<svg", "<svg {...props}")
     .replace(/class="/g, 'className="')
     .replace(/clip-rule="/g, 'clipRule="')
