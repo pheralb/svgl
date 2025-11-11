@@ -7,7 +7,9 @@ description: How to use shadcn/ui to add SVGs to your project.
 
 SVGL v5 support [shadcn/ui](https://ui.shadcn.com/) registry 🎉, so you can easily add SVGs to your project using [their CLI](https://ui.shadcn.com/docs/cli). Add the registry config once and you will be able to install any SVG in **`.tsx`** using `npm`, `yarn`, `bun` or `pnpm`.
 
-## Add registry
+## Add registry (optional)
+
+> If you have already added shadcn/ui in your project, you can skip this step.
 
 Add the SVGL registry to your `components.json` file:
 
