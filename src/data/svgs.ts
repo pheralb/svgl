@@ -13,7 +13,8 @@ export const svgs: iSVG[] = [
       dark: "/library/nvidia-wordmark-dark.svg",
     },
     url: "https://www.nvidia.com",
-    brandUrl: "https://www.nvidia.com/en-us/about-nvidia/legal-info/logo-brand-usage",
+    brandUrl:
+      "https://www.nvidia.com/en-us/about-nvidia/legal-info/logo-brand-usage",
   },
   {
     title: "Google Classroom",
@@ -33,10 +34,10 @@ export const svgs: iSVG[] = [
     url: "https://kimi.ai",
   },
   {
-    title: 'Zyft',
-    category: 'Library',
-    route: '/library/zyft.svg',
-    url: 'https://zyft.com'
+    title: "Zyft",
+    category: "Library",
+    route: "/library/zyft.svg",
+    url: "https://zyft.com",
   },
   {
     title: "Perspective",
@@ -213,11 +214,11 @@ export const svgs: iSVG[] = [
     url: "https://lua.org/",
   },
   {
-    "title": "Mercado Libre",
-    "category": ["Marketplace", "Platform"],
-    "route": "/library/mercado-libre.svg",
-    "wordmark": "/library/mercado-libre-wordmark.svg",
-    "url": "https://www.mercadolibre.com"
+    title: "Mercado Libre",
+    category: ["Marketplace", "Platform"],
+    route: "/library/mercado-libre.svg",
+    wordmark: "/library/mercado-libre-wordmark.svg",
+    url: "https://www.mercadolibre.com",
   },
   {
     title: "Mercado Pago",
@@ -558,13 +559,13 @@ export const svgs: iSVG[] = [
     url: "https://tailwindcss.com/",
   },
   {
-    title: 'WakaTime',
-    category: 'Devtool',
+    title: "WakaTime",
+    category: "Devtool",
     route: {
-      light: '/library/wakatime-dark.svg',
-      dark: '/library/wakatime-light.svg'
+      light: "/library/wakatime-dark.svg",
+      dark: "/library/wakatime-light.svg",
     },
-    url: 'https://wakatime.com'
+    url: "https://wakatime.com",
   },
   {
     title: "Styled Components",
@@ -4088,8 +4089,8 @@ export const svgs: iSVG[] = [
     title: "Apache Kafka",
     category: "Analytics",
     route: {
-      light: '/library/apache-kafka-light.svg',
-      dark: '/library/apache-kafka-dark.svg'
+      light: "/library/apache-kafka-light.svg",
+      dark: "/library/apache-kafka-dark.svg",
     },
     wordmark: {
       light: "/library/apache-kafka-wordmark-light.svg",
@@ -4277,17 +4278,17 @@ export const svgs: iSVG[] = [
     url: "https://nginx.org/",
   },
   {
-    title: 'Soldera',
-    category: ['Platform', 'Analytics', 'Marketplace', 'Software'],
+    title: "Soldera",
+    category: ["Platform", "Analytics", "Marketplace", "Software"],
     route: {
-      light: '/library/soldera-icon-light.svg',
-      dark: '/library/soldera-icon.svg'
+      light: "/library/soldera-icon-light.svg",
+      dark: "/library/soldera-icon.svg",
     },
     wordmark: {
-      light: '/library/soldera-wordmark-light.svg',
-      dark: '/library/soldera-wordmark-dark.svg'
+      light: "/library/soldera-wordmark-light.svg",
+      dark: "/library/soldera-wordmark-dark.svg",
     },
-    url: 'https://www.soldera.org'
+    url: "https://www.soldera.org",
   },
   {
     title: "Dribbble",
@@ -4298,5 +4299,5 @@ export const svgs: iSVG[] = [
       dark: "/library/dribbble-wordmark-dark.svg",
     },
     url: "https://dribbble.com/",
-  }
+  },
 ];
