@@ -15,7 +15,6 @@ export const optimizeSvg = ({ svgCode }: OptimizeSvg) => {
       "removeStyleElement",
       "cleanupAttrs",
       "cleanupEnableBackground",
-      "cleanupIds",
       "minifyStyles",
       "removeDoctype",
       "removeDesc",
@@ -29,7 +28,7 @@ export const optimizeSvg = ({ svgCode }: OptimizeSvg) => {
       "removeXMLProcInst",
       {
         name: "removeAttrs",
-        params: { attrs: "(data-name|id|class)" },
+        params: { attrs: "(data-name|class)" },
       },
     ],
   });
