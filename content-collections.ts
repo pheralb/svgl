@@ -24,6 +24,7 @@ const docs = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
+    content: z.string(),
   }),
   transform: async (document, context) => {
     const highlighter = await shikiHighlighter();
