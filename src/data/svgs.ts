@@ -4300,4 +4300,14 @@ export const svgs: iSVG[] = [
     },
     url: "https://dribbble.com/",
   },
+  {
+    title: "Paper",
+    category: ["Design", "Software", "Platform"],
+    route: "/library/paper.svg",
+    wordmark: {
+      light: "/library/paper-wordmark-light.svg",
+      dark: "/library/paper-wordmark-dark.svg",
+    },
+    url: "https://paper.design/",
+  },
 ];
