@@ -4310,4 +4310,16 @@ export const svgs: iSVG[] = [
     },
     url: "https://paper.design/",
   },
+  {
+    title: 'RedNote Video Downloader',
+    category: ['Software'],
+    route: '/library/xhs-download.svg',
+    url: 'https://xhs-download.org/'
+  },
+  {
+    title: 'Check Cosmetic',
+    category: ['Software'],
+    route: '/library/check-cosmetic.svg',
+    url: 'https://checkcosmetic.online/'
+  },
 ];
