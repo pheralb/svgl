@@ -1,4 +1,4 @@
-import type { tCategory } from './categories';
+import type { Category } from "./categories";
 
 export type ThemeOptions = {
   dark: string;
@@ -8,9 +8,10 @@ export type ThemeOptions = {
 export interface iSVG {
   id?: number;
   title: string;
-  category: tCategory | tCategory[];
+  category: Category | Category[];
   route: string | ThemeOptions;
   wordmark?: string | ThemeOptions;
   brandUrl?: string;
+  shadcnCommand?: string;
   url: string;
 }
