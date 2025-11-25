@@ -4310,4 +4310,14 @@ export const svgs: iSVG[] = [
     },
     url: "https://paper.design/",
   },
+  {
+    title: "Dodo Payments",
+    category: ["Software", "Payment"],
+    route: "/library/dodo-payments.svg",
+    wordmark: {
+      light: "/library/dodo-payments-wordmark-light.svg",
+      dark: "/library/dodo-payments-wordmark-dark.svg",
+    },
+    url: "https://dodopayments.com/",
+  },
 ];
