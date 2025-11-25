@@ -4319,5 +4319,6 @@ export const svgs: iSVG[] = [
       dark: "/library/dodo-payments-wordmark-dark.svg",
     },
     url: "https://dodopayments.com/",
+    brandUrl: "https://dodopayments.com/brand",
   },
 ];
