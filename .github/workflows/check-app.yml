@@ -4,66 +4,44 @@ on:
   push:
     branches:
       - main
-      - next
+      - dev
   pull_request:
     branches:
       - main
-      - next
+      - dev
 
 jobs:
-  vitest:
+  lint:
     runs-on: ubuntu-latest
-    name: ⚡ Testing with Vitest
+    name: ⚙️ Linting
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup pnpm 9
+      - name: Setup pnpm
         uses: pnpm/action-setup@v4
-        with:
-          version: 9
 
       - name: Install dependencies
         run: pnpm install
 
-      - name: Run Vitest
-        run: pnpm test
-
-  svgs-size:
-    runs-on: ubuntu-latest
-    name: 📦 SVGs Size
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Setup pnpm 9
-        uses: pnpm/action-setup@v4
-        with:
-          version: 9
-
-      - name: Install utility dependencies
-        run: pnpm install
-        working-directory: ./utils/check-size
-
-      - name: Check svgs size
-        run: pnpm start
-        working-directory: ./utils/check-size
-
-  build-app:
-    runs-on: ubuntu-latest
-    name: 🛠️ Build app
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Setup pnpm 9
-        uses: pnpm/action-setup@v4
-        with:
-          version: 9
-
-      - name: Install dependencies
-        run: pnpm install
-
-      - name: Build app
-        run: pnpm vite:build
+      - name: Run Eslint
+        run: pnpm lint
         env:
-          UPSTASH_REDIS_TOKEN: ${{ secrets.UPSTASH_REDIS_TOKEN }}
-          UPSTASH_REDIS_URL: ${{ secrets.UPSTASH_REDIS_URL }}
-          SVGL_API_REQUESTS: ${{ secrets.SVGL_API_REQUESTS }}
+          PUBLIC_SVGL_VERSION: v5
+
+  check-svgs:
+    runs-on: ubuntu-latest
+    name: 📦 Check SVGs
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Check SVGs size
+        run: pnpm check:size
+
+      - name: Check unused SVGs
+        run: pnpm check:data

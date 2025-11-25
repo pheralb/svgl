@@ -1,77 +1,83 @@
 <script lang="ts">
-  import { page } from '$app/stores';
-  import { inputStyles } from '@/ui/styles';
-  import { Command, SearchIcon } from 'lucide-svelte';
-  export let searchTerm: string;
-  export let placeholder: string = 'Search...';
-  export let clearSearch: () => void;
-  import { X } from 'lucide-svelte';
+  import { cn } from "@/utils/cn";
+  import { onMount } from "svelte";
 
-  let inputElement;
+  import { addParams } from "@/utils/searchParams";
+  import SearchIcon from "@lucide/svelte/icons/search";
+  import CommandIcon from "@lucide/svelte/icons/command";
 
-  function focusInput(node: HTMLElement) {
-    const handleKeydown = (event: KeyboardEvent) => {
-      if ((event.metaKey || event.ctrlKey) && event.key === 'k') {
-        event.preventDefault();
-        node.focus();
-      }
-    };
-
-    window.addEventListener('keydown', handleKeydown);
-
-    return {
-      destroy() {
-        window.removeEventListener('keydown', handleKeydown);
-      }
-    };
+  interface Props {
+    searchValue: string;
+    onSearch: (value: string) => void;
+    placeholder?: string;
+    iconSize?: number;
+    inputClass?: string;
   }
 
-  let searchParams = {} as { [key: string]: string };
+  let { searchValue, onSearch, placeholder, iconSize, inputClass }: Props =
+    $props();
+  let inputElement: HTMLInputElement;
 
-  $: {
-    if ($page) {
-      searchParams = Object.fromEntries($page.url.searchParams);
-      if (!searchParams?.search) {
-        clearSearch();
-      }
+  const onInput = (event: Event) => {
+    const value = (event.target as HTMLInputElement).value;
+    onSearch(value);
+    addParams({
+      params: {
+        search: value,
+      },
+    });
+  };
+
+  const handleKeydown = (event: KeyboardEvent) => {
+    if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "k") {
+      event.preventDefault();
+      inputElement?.focus();
     }
-  }
+  };
+
+  onMount(() => {
+    window.addEventListener("keydown", handleKeydown);
+    return () => {
+      window.removeEventListener("keydown", handleKeydown);
+    };
+  });
 </script>
 
-<div class="sticky top-[63px] z-50">
-  <div class="relative w-full text-[16px]">
-    <div class="absolute inset-y-0 left-0 flex items-center pl-3 text-neutral-500">
-      <div class="pointer-events-none">
-        <SearchIcon size={20} strokeWidth={searchTerm ? 2.5 : 1.5} />
-      </div>
+<div class="relative">
+  <SearchIcon
+    size={iconSize ? iconSize : 20}
+    strokeWidth={2}
+    class={cn(
+      "pointer-events-none absolute top-1/2 left-2.5 -translate-y-1/2 transition-colors",
+      searchValue
+        ? "text-black dark:text-white"
+        : "text-neutral-400 dark:text-neutral-500",
+    )}
+  />
+  <input
+    bind:this={inputElement}
+    type="search"
+    autocomplete="off"
+    placeholder={placeholder || "Search..."}
+    oninput={onInput}
+    name="search"
+    value={searchValue}
+    class={cn(
+      "overflow-hidden shadow-sm",
+      "w-full py-1.5 pr-3 pl-10",
+      "text-lg placeholder:text-neutral-400 dark:placeholder:text-neutral-400",
+      "bg-white dark:bg-neutral-900",
+      "rounded-md border border-neutral-200 dark:border-neutral-800",
+      "focus:border-neutral-400 focus:outline-none dark:focus:border-neutral-600",
+      inputClass,
+    )}
+  />
+  {#if !searchValue}
+    <div
+      class="absolute top-1/2 right-2 flex -translate-y-1/2 items-center space-x-1.5 rounded-md p-1 text-sm text-neutral-400 transition-colors hover:text-neutral-600"
+    >
+      <CommandIcon size={16} strokeWidth={1.5} />
+      <span class="select-none">K</span>
     </div>
-    <input
-      type="text"
-      {placeholder}
-      autocomplete="off"
-      class={inputStyles}
-      bind:value={searchTerm}
-      on:input
-      use:focusInput
-      bind:this={inputElement}
-    />
-    {#if searchTerm.length > 0}
-      <div class="absolute inset-y-0 right-0 flex items-center pr-3">
-        <button
-          type="button"
-          class="focus:outline-none focus:ring-1 focus:ring-neutral-300"
-          on:click={clearSearch}
-        >
-          <X size={18} />
-        </button>
-      </div>
-    {:else}
-      <div class="absolute inset-y-0 right-0 flex items-center pr-4 text-neutral-500">
-        <div class="flex h-full items-center pointer-events-none gap-x-1 font-mono">
-          <Command size={16} />
-          <span>K</span>
-        </div>
-      </div>
-    {/if}
-  </div>
+  {/if}
 </div>

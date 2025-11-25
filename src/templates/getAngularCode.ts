@@ -6,7 +6,7 @@ interface AngularComponentParams {
 export function getAngularCode(params: AngularComponentParams): string {
   const updatedSvgContent = params.svgContent.replace(
     /<svg([^>]*)>/,
-    `<svg$1 [attr.width]="size.width" [attr.height]="size.height">`
+    `<svg$1 [attr.width]="size.width" [attr.height]="size.height">`,
   );
 
   return `
