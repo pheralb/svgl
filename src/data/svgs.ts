@@ -4321,4 +4321,17 @@ export const svgs: iSVG[] = [
     url: "https://dodopayments.com/",
     brandUrl: "https://dodopayments.com/brand",
   },
+    {
+    title: 'Formance',
+    category: ['Software', 'Payment'],
+    route: {
+      light: '/library/formance-logo-light.svg',
+      dark: '/library/formance-logo-dark.svg'
+    },
+    wordmark: {
+      light: '/library/formance-wordmark-light.svg',
+      dark: '/library/formance-wordmark-dark.svg'
+    },
+    url: 'https://www.formance.com/'
+  }
 ];
