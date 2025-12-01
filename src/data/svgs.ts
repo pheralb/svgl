@@ -3516,6 +3516,15 @@ export const svgs: iSVG[] = [
     url: "https://json.org/",
   },
   {
+    title: "NanoSights",
+    category: ["Software", "Devtool"],
+    route: {
+      light: "/library/nanosights_logo_light.svg",
+      dark: "/library/nanosights_logo_dark.svg",
+    },
+    url: "http://nanosights.dev",
+  },
+  {
     title: "nuqs",
     category: "Library",
     route: {
