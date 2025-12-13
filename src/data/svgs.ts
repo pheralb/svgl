@@ -2713,6 +2713,7 @@ export const svgs: iSVG[] = [
     title: "Spring",
     category: "Framework",
     route: "/library/spring.svg",
+    wordmark: "/library/spring-wordmark.svg",
     url: "https://spring.io/",
   },
   {
