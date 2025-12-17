@@ -1,14 +1,13 @@
 <script lang="ts">
-  import { globals } from "@/globals";
-
   import { buttonVariants } from "@/components/ui/button";
   import CodeBlock from "@/components/codeBlock.svelte";
   import ArrowUpRightIcon from "@lucide/svelte/icons/arrow-up-right";
 
   import { settingsStore, type PackageManager } from "@/stores/settings.store";
 
-  import V0 from "@/components/logos/v0.svelte";
   import Shadcn from "@/components/logos/shadcn.svelte";
+  import OpenWithV0 from "@/components/svgs/openWithV0.svelte";
+  import ExternalLink from "@/components/ui/links/external-link.svelte";
 
   interface Props {
     svgTitle: string;
@@ -34,28 +33,16 @@
 </script>
 
 <div class="flex w-full items-center space-x-2">
-  <a
-    target="_blank"
+  <ExternalLink
     href="/docs/shadcn-ui"
-    class={buttonVariants({ variant: "outline", class: "w-full" })}
+    className={buttonVariants({ variant: "outline", class: "w-full" })}
   >
     <span>Setup Registry</span>
     <ArrowUpRightIcon
       size={14}
       class="text-neutral-500 dark:text-neutral-400"
     />
-  </a>
-  <a
-    target="_blank"
-    href={`${globals.v0Url}${globals.registryUrl}${svgFormatTitle}.json`}
-    class={buttonVariants({ variant: "outline", class: "w-full" })}
-  >
-    <span>Open with</span>
-    <V0 size={20} />
-    <ArrowUpRightIcon
-      size={14}
-      class="text-neutral-500 dark:text-neutral-400"
-    />
-  </a>
+  </ExternalLink>
+  <OpenWithV0 {svgFormatTitle} />
 </div>
 <CodeBlock code={`${shadcnCommand} @svgl/${svgFormatTitle}`} Icon={Shadcn} />
