@@ -40,6 +40,7 @@ export const parseReactSvgContent = async ({
     .replace(/stroke-dasharray="/g, 'strokeDasharray="')
     .replace(/stroke-dashoffset="/g, 'strokeDashoffset="')
     .replace(/stroke-miterlimit="/g, 'strokeMiterlimit="')
+    .replace(/xmlns:xlink="/g, 'xmlnsXlink="')
     .replace(/text-anchor="/g, 'textAnchor="')
     .replace(/xml:space="/g, 'xmlSpace="');
 
