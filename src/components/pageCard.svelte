@@ -1,8 +1,9 @@
 <script lang="ts">
   import type { Snippet } from "svelte";
   import { cn } from "@/utils/cn";
-  import ScrollArea from "./ui/scroll-area/scroll-area.svelte";
-  import { ScrollAreaScrollbar } from "./ui/scroll-area";
+
+  import { ScrollAreaScrollbar } from "@/components/ui/scroll-area";
+  import ScrollArea from "@/components/ui/scroll-area/scroll-area.svelte";
 
   interface PageCardProps {
     children: Snippet;
@@ -13,7 +14,7 @@
   let { children, contentCardClass, containerClass }: PageCardProps = $props();
 </script>
 
-<div class="p-[1px]">
+<div class="p-px">
   <div
     class={cn(
       "overflow-hidden",

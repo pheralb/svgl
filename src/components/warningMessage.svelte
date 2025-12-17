@@ -19,7 +19,7 @@
       <AlertTriangleIcon
         size={18}
         strokeWidth={2}
-        class="flex-shrink-0 animate-pulse text-yellow-600 dark:text-yellow-500"
+        class="shrink-0 animate-pulse text-yellow-600 dark:text-yellow-500"
       />
       <p>
         Each SVG includes a link to its respective product. Permission must be
