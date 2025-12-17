@@ -18,6 +18,8 @@
   import * as Popover from "@/components/ui/popover";
   import { badgeVariants } from "@/components/ui/badge";
   import { Button, buttonVariants } from "@/components/ui/button";
+  import InternalLink from "@/components/ui/links/internal-link.svelte";
+  import ExternalLink from "@/components/ui/links/external-link.svelte";
 
   // Components:
   import CopySvg from "@/components/svgs/copySvg.svelte";
@@ -115,9 +117,9 @@
     <div class="flex items-center justify-center space-x-1">
       {#if Array.isArray(svgInfo.category)}
         {#each svgInfo.category.slice(0, maxVisibleCategories) as c (c)}
-          <a
+          <InternalLink
             href={`/directory/${c.toLowerCase()}`}
-            class={badgeVariants({
+            className={badgeVariants({
               variant: "outline",
               class:
                 "cursor-pointer font-mono hover:border-neutral-400 dark:hover:border-neutral-600",
@@ -125,7 +127,7 @@
             title={`This icon is part of the ${svgInfo.category} category`}
           >
             {c}
-          </a>
+          </InternalLink>
         {/each}
         {#if svgInfo.category.length > maxVisibleCategories}
           <Popover.Root
@@ -149,31 +151,31 @@
             <Popover.Content class="flex w-auto flex-col space-y-2">
               <p class="font-medium">More tags</p>
               {#each svgInfo.category.slice(maxVisibleCategories) as c (c)}
-                <a
+                <InternalLink
                   href={`/directory/${c.toLowerCase()}`}
-                  class={cn(
+                  className={cn(
                     buttonVariants({ variant: "outline" }),
                     "w-full justify-start",
                   )}
                 >
                   <TagIcon size={15} strokeWidth={1.5} />
                   <span>{c}</span>
-                </a>
+                </InternalLink>
               {/each}
             </Popover.Content>
           </Popover.Root>
         {/if}
       {:else}
-        <a
+        <InternalLink
           href={`/directory/${svgInfo.category.toLowerCase()}`}
-          class={badgeVariants({
+          className={badgeVariants({
             variant: "outline",
             class:
               "cursor-pointer font-mono hover:border-neutral-400 dark:hover:border-neutral-600",
           })}
         >
           {svgInfo.category}
-        </a>
+        </InternalLink>
       {/if}
     </div>
   </div>
@@ -199,19 +201,17 @@
 
     <DownloadSvg {svgInfo} isDarkTheme={() => mode.current === "dark"} />
 
-    <a
+    <ExternalLink
       href={svgInfo.url}
       title="Website"
-      target="_blank"
-      rel="noopener noreferrer"
-      class={buttonVariants({
+      className={buttonVariants({
         size: "icon",
         variant: "ghost",
         class: "hover:bg-neutral-200",
       })}
     >
       <LinkIcon size={iconSize} strokeWidth={iconStroke} />
-    </a>
+    </ExternalLink>
     {#if svgInfo.wordmark !== undefined}
       <Button
         title={wordmarkSvg ? "Show logo SVG" : "Show wordmark SVG"}

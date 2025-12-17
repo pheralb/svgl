@@ -6,14 +6,16 @@
 
   import * as DropdownMenu from "@/components/ui/dropdown-menu";
   import { Button, buttonVariants } from "@/components/ui/button";
+  import ExternalLink from "@/components/ui/links/external-link.svelte";
 
-  import CopyIcon from "@lucide/svelte/icons/copy";
   import Openai from "@/components/logos/openai.svelte";
   import Claude from "@/components/logos/claude.svelte";
+  import Markdown from "@/components/logos/markdown.svelte";
+
+  import CopyIcon from "@lucide/svelte/icons/copy";
   import CheckCheck from "@lucide/svelte/icons/check-check";
   import ChevronDown from "@lucide/svelte/icons/chevron-down";
   import ArrowUpRight from "@lucide/svelte/icons/arrow-up-right";
-  import Markdown from "./logos/markdown.svelte";
 
   interface DocumentSettingsProps {
     documentContent: string;
@@ -40,9 +42,11 @@
     icon: Component;
   }
 
-  const aiPrompt = `The following is a documentation page from SVGL, a web app with SVG logos: ${documentUrl}. Help me understand how to use it. Be ready to explain concepts, give examples, or help debug based on it.`;
+  const aiPrompt = $derived(
+    `The following is a documentation page from SVGL, a web app with SVG logos: ${documentUrl}. Help me understand how to use it. Be ready to explain concepts, give examples, or help debug based on it.`,
+  );
 
-  const aiOptions: AiOption[] = [
+  const aiOptions: AiOption[] = $derived([
     {
       name: "ChatGPT",
       href: `https://chatgpt.com/?q=${encodeURIComponent(aiPrompt)}`,
@@ -53,20 +57,20 @@
       href: `https://claude.ai/new?q=${encodeURIComponent(aiPrompt)}`,
       icon: Claude,
     },
-  ];
+  ]);
 </script>
 
 {#snippet LinkItem({ href, icon, name }: AiOption)}
   <DropdownMenu.Item>
     {#snippet child({ props })}
       {@const Icon = icon}
-      <a {href} target="_blank" {...props}>
+      <ExternalLink {href} {...props}>
         <div class="flex items-center space-x-2">
           <Icon size={14} />
           <span>{name}</span>
           <ArrowUpRight size={12} class="opacity-50" />
         </div>
-      </a>
+      </ExternalLink>
     {/snippet}
   </DropdownMenu.Item>
 {/snippet}

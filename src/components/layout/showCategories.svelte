@@ -1,13 +1,14 @@
 <script lang="ts">
   import type { Category } from "@/types/categories";
+  import { page } from "$app/state";
 
   import { cn } from "@/utils/cn";
   import { svgs } from "@/data/svgs";
-  import { page } from "$app/state";
   import { getCategories } from "@/data";
 
-  import { sidebarItemClasses } from "./sidebarItemClasses";
-  import { sidebarBadgeClasses } from "./sidebarBadgeClasses";
+  import InternalLink from "@/components/ui/links/internal-link.svelte";
+  import { sidebarItemClasses } from "@/components/layout/sidebarItemClasses";
+  import { sidebarBadgeClasses } from "@/components/layout/sidebarBadgeClasses";
 
   // Get category counts:
   const categories: Category[] = getCategories();
@@ -20,10 +21,10 @@
 </script>
 
 {#each categories.sort() as category (category)}
-  <a
+  <InternalLink
     href={`/directory/${category.toLowerCase()}`}
-    data-sveltekit-preload-data
-    class={cn(
+    preloadData={true}
+    className={cn(
       sidebarItemClasses.base,
       page.url.pathname === `/directory/${category.toLowerCase()}` &&
         sidebarItemClasses.active,
@@ -36,5 +37,5 @@
     >
       {categoryCounts[category]}
     </span>
-  </a>
+  </InternalLink>
 {/each}

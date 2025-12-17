@@ -3,7 +3,6 @@
 
   import { globals } from "@/globals";
   import { toast } from "svelte-sonner";
-  import { refreshAll } from "$app/navigation";
   import { clipboard } from "@/utils/clipboard";
 
   import { getSource } from "@/templates/getSource";
@@ -11,12 +10,12 @@
   import Svgl from "@/components/logos/svgl.svelte";
   import Github from "@/components/logos/github.svelte";
   import * as ContextMenu from "@/components/ui/context-menu";
+  import InternalLink from "@/components/ui/links/internal-link.svelte";
 
-  import CopyIcon from "@lucide/svelte/icons/copy";
   import BugIcon from "@lucide/svelte/icons/bug";
-  import BoxIcon from "@lucide/svelte/icons/box";
-  import HeartHandshakeIcon from "@lucide/svelte/icons/heart-handshake";
+  import CopyIcon from "@lucide/svelte/icons/copy";
   import ArrowUpRight from "@lucide/svelte/icons/arrow-up-right";
+  import HeartHandshakeIcon from "@lucide/svelte/icons/heart-handshake";
 
   const svgInfo = {
     title: "Svgl",
@@ -49,13 +48,13 @@
 
 <ContextMenu.Root>
   <ContextMenu.Trigger>
-    <a
+    <InternalLink
       href="/"
-      class="flex items-center space-x-2 transition-colors hover:text-neutral-700 dark:hover:text-neutral-300"
+      className="flex items-center space-x-2 transition-colors hover:text-neutral-700 dark:hover:text-neutral-300"
     >
       <Svgl size={28} />
       <h2 class="text-xl font-medium tracking-tight">svgl</h2>
-    </a>
+    </InternalLink>
   </ContextMenu.Trigger>
   <ContextMenu.Content class="w-fit">
     <ContextMenu.Item onclick={() => copySvgToClipboard()}>

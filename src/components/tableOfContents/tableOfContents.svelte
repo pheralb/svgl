@@ -1,6 +1,8 @@
 <script lang="ts">
   import type { TableOfContentsProps } from "./toc.types";
+
   import { cn } from "@/utils/cn";
+  import InternalLink from "@/components/ui/links/internal-link.svelte";
 
   let { toc, className }: TableOfContentsProps = $props();
 </script>
@@ -12,9 +14,9 @@
   )}
 >
   {#each toc as tocItem (tocItem.id)}
-    <a
+    <InternalLink
       href={"#" + tocItem.slug}
-      class={cn(
+      className={cn(
         "pt-1 pb-1.5 transition-colors hover:text-neutral-900 dark:hover:text-neutral-50",
         tocItem.level === 2 && "ml-0 font-medium",
         tocItem.level === 3 &&
@@ -23,6 +25,6 @@
       )}
     >
       {tocItem.text}
-    </a>
+    </InternalLink>
   {/each}
 </div>

@@ -2,17 +2,18 @@
   import { cn } from "@/utils/cn";
   import { globals } from "@/globals";
   import { mode } from "mode-watcher";
-  import ModeToggle from "@/components/modeToggle.svelte";
 
+  import ModeToggle from "@/components/modeToggle.svelte";
+  import GithubLink from "@/components/githubLink.svelte";
   import Twitter from "@/components/logos/twitter.svelte";
+  import HomeLink from "@/components/layout/homeLink.svelte";
+  import SettingsMenu from "@/components/settings/settingsMenu.svelte";
+  import SidebarMobileMenu from "@/components/layout/sidebarMobileMenu.svelte";
 
   import { Separator } from "@/components/ui/separator";
   import { buttonVariants } from "@/components/ui/button";
   import SendIcon from "@/components/ui/moving-icons/send-icon.svelte";
-  import SidebarMobileMenu from "@/components/layout/sidebarMobileMenu.svelte";
-  import SettingsMenu from "@/components/settings/settingsMenu.svelte";
-  import GithubLink from "@/components/githubLink.svelte";
-  import HomeLink from "@/components/layout/homeLink.svelte";
+  import ExternalLink from "@/components/ui/links/external-link.svelte";
 </script>
 
 <header
@@ -25,17 +26,16 @@
     </div>
     <div class="flex h-5 items-center space-x-2.5">
       <div class="flex items-center space-x-1.5">
-        <a
-          target="_blank"
+        <ExternalLink
           title="X/Twitter"
           href={globals.twitterUrl}
-          class={cn(
+          className={cn(
             buttonVariants({ variant: "ghost", size: "icon" }),
             "hover:bg-neutral-200 dark:hover:bg-neutral-800",
           )}
         >
           <Twitter size={18} />
-        </a>
+        </ExternalLink>
         <ModeToggle
           className={cn(
             buttonVariants({ variant: "ghost", size: "icon" }),
@@ -48,10 +48,9 @@
         <Separator orientation="vertical" />
         <GithubLink />
         <Separator orientation="vertical" />
-        <a
-          target="_blank"
+        <ExternalLink
           href={globals.submitUrl}
-          class={cn(
+          className={cn(
             buttonVariants({
               variant: mode.current === "dark" ? "default" : "radial",
             }),
@@ -59,7 +58,7 @@
         >
           <SendIcon size={14} />
           <span>Submit</span>
-        </a>
+        </ExternalLink>
       </div>
     </div>
   </nav>

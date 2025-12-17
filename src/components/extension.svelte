@@ -3,6 +3,7 @@
 
   import { cn } from "@/utils/cn";
   import { buttonVariants } from "@/components/ui/button";
+  import ExternalLink from "@/components/ui/links/external-link.svelte";
   import ArrowUpRightIcon from "@lucide/svelte/icons/arrow-up-right";
 
   interface ExtensionProps {
@@ -28,11 +29,9 @@
         alt={data.name}
         class="h-8 w-8 rounded-md object-contain"
       />
-      <a
+      <ExternalLink
         href={data.url}
-        target="_blank"
-        rel="noopener noreferrer"
-        class={buttonVariants({ variant: "outline" })}
+        className={buttonVariants({ variant: "outline" })}
       >
         <span>Install</span>
         <ArrowUpRightIcon
@@ -40,7 +39,7 @@
           strokeWidth={2}
           class="text-neutral-600 dark:text-neutral-400"
         />
-      </a>
+      </ExternalLink>
     </div>
     <p class="mb-1 font-medium">{data.name}</p>
     <p
@@ -54,13 +53,11 @@
     class="absolute bottom-0 flex w-full items-center justify-end gap-1 border-t border-neutral-200 bg-neutral-100/60 px-4 py-2 text-sm dark:border-neutral-800 dark:bg-neutral-800/40"
   >
     <span>Created by</span>
-    <a
+    <ExternalLink
       href={data.created_by.socialUrl}
-      target="_blank"
-      rel="noopener noreferrer"
-      class="font-medium text-pretty decoration-neutral-400 underline-offset-2 transition-colors hover:text-neutral-600 hover:underline dark:decoration-neutral-600 dark:hover:text-neutral-400"
+      className="font-medium text-pretty decoration-neutral-400 underline-offset-2 transition-colors hover:text-neutral-600 hover:underline dark:decoration-neutral-600 dark:hover:text-neutral-400"
     >
       {data.created_by.name}
-    </a>
+    </ExternalLink>
   </div>
 </div>

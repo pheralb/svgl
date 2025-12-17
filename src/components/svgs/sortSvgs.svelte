@@ -15,7 +15,7 @@
   }
 
   let { className, isSorted, onSortedChange }: Props = $props();
-  let sorted = $state<boolean>(isSorted);
+  let sorted = $derived(isSorted);
 
   const sort = () => {
     const newSorted = !sorted;

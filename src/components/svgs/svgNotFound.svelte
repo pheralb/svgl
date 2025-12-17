@@ -4,7 +4,10 @@
   import { buttonVariants } from "@/components/ui/button";
   import SearchIcon from "@lucide/svelte/icons/search";
   import ArrowUpRight from "@lucide/svelte/icons/arrow-up-right";
+
   import BoxesIcon from "@/components/ui/moving-icons/boxes-icon.svelte";
+  import InternalLink from "@/components/ui/links/internal-link.svelte";
+  import ExternalLink from "@/components/ui/links/external-link.svelte";
 
   interface Props {
     svgTitle: string;
@@ -29,29 +32,27 @@
   {/if}
   <div class="flex items-center justify-center space-x-2">
     {#if category || searchGlobally}
-      <a
+      <InternalLink
         href={`/?search=${svgTitle}`}
-        class={buttonVariants({ variant: "outline" })}
+        className={buttonVariants({ variant: "outline" })}
       >
         <SearchIcon size={14} strokeWidth={1.5} />
         <span>Search globally</span>
-      </a>
+      </InternalLink>
     {/if}
-    <a
-      target="_blank"
+    <ExternalLink
       href={globals.requestSvgUrl}
-      class={buttonVariants({ variant: "outline" })}
+      className={buttonVariants({ variant: "outline" })}
     >
       <span>Request SVG</span>
       <ArrowUpRight size={14} strokeWidth={1.5} />
-    </a>
-    <a
-      target="_blank"
+    </ExternalLink>
+    <ExternalLink
       href={globals.submitUrl}
-      class={buttonVariants({ variant: "outline" })}
+      className={buttonVariants({ variant: "outline" })}
     >
       <span>Submit SVG</span>
       <ArrowUpRight size={14} strokeWidth={1.5} />
-    </a>
+    </ExternalLink>
   </div>
 </div>

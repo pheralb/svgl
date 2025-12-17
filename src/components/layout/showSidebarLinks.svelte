@@ -5,14 +5,18 @@
   import { page } from "$app/state";
   import favoritesStore from "@/stores/favorites.store";
 
-  import { sidebarItemClasses } from "./sidebarItemClasses";
-  import { sidebarBadgeClasses } from "./sidebarBadgeClasses";
+  import ExternalLink from "@/components/ui/links/external-link.svelte";
+  import InternalLink from "@/components/ui/links/internal-link.svelte";
+
+  import { sidebarItemClasses } from "@/components/layout/sidebarItemClasses";
+  import { sidebarBadgeClasses } from "@/components/layout/sidebarBadgeClasses";
 
   import Box from "@lucide/svelte/icons/box";
   import House from "@lucide/svelte/icons/house";
   import Heart from "@lucide/svelte/icons/heart";
   import Cloud from "@lucide/svelte/icons/cloud";
   import Submit from "@lucide/svelte/icons/send";
+
   import Github from "@/components/logos/github.svelte";
   import Shadcn from "@/components/logos/shadcn.svelte";
 
@@ -20,10 +24,10 @@
   let favoritesCount = $derived(favoritesStore.getCount(favorites));
 </script>
 
-<a
+<InternalLink
   href="/"
-  data-sveltekit-preload-data
-  class={cn(
+  preloadData={true}
+  className={cn(
     sidebarItemClasses.base,
     "justify-start space-x-3",
     page.url.pathname === "/" && sidebarItemClasses.active,
@@ -31,11 +35,11 @@
 >
   <House size={16} />
   <p class="truncate">Home</p>
-</a>
-<a
+</InternalLink>
+<InternalLink
   href="/favorites"
-  data-sveltekit-preload-data
-  class={cn(
+  preloadData={true}
+  className={cn(
     sidebarItemClasses.base,
     "justify-between",
     String(page.url.pathname) === "/favorites" && sidebarItemClasses.active,
@@ -52,11 +56,11 @@
       {favoritesCount}
     </span>
   {/if}
-</a>
-<a
+</InternalLink>
+<InternalLink
+  preloadData={true}
   href="/docs/api"
-  data-sveltekit-preload-data
-  class={cn(
+  className={cn(
     sidebarItemClasses.base,
     "justify-start space-x-3",
     String(page.url.pathname) === "/docs/api" && sidebarItemClasses.active,
@@ -64,11 +68,11 @@
 >
   <Cloud size={16} />
   <p class="truncate">API</p>
-</a>
-<a
+</InternalLink>
+<InternalLink
+  preloadData={true}
   href="/docs/shadcn-ui"
-  data-sveltekit-preload-data
-  class={cn(
+  className={cn(
     sidebarItemClasses.base,
     "justify-start space-x-3",
     String(page.url.pathname) === "/docs/shadcn-ui" &&
@@ -77,11 +81,11 @@
 >
   <Shadcn size={14} />
   <p class="truncate">shadcn/ui</p>
-</a>
-<a
+</InternalLink>
+<InternalLink
+  preloadData={true}
   href="/extensions"
-  data-sveltekit-preload-data
-  class={cn(
+  className={cn(
     sidebarItemClasses.base,
     "justify-start space-x-3",
     String(page.url.pathname) === "/extensions" && sidebarItemClasses.active,
@@ -89,20 +93,24 @@
 >
   <Box size={16} />
   <p class="truncate">Extensions</p>
-</a>
-<a
+</InternalLink>
+<ExternalLink
   href={globals.submitUrl}
-  target="_blank"
-  class={cn(sidebarItemClasses.base, "flex justify-start space-x-3 md:hidden")}
+  className={cn(
+    sidebarItemClasses.base,
+    "flex justify-start space-x-3 md:hidden",
+  )}
 >
   <Submit size={16} />
   <p class="truncate">Submit SVG</p>
-</a>
-<a
+</ExternalLink>
+<ExternalLink
   href={globals.githubUrl}
-  target="_blank"
-  class={cn(sidebarItemClasses.base, "flex justify-start space-x-3 md:hidden")}
+  className={cn(
+    sidebarItemClasses.base,
+    "flex justify-start space-x-3 md:hidden",
+  )}
 >
   <Github size={16} />
   <p class="truncate">GitHub Repository</p>
-</a>
+</ExternalLink>

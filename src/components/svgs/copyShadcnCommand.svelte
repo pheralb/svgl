@@ -25,10 +25,12 @@
 
   let pkg = $derived($settingsStore.packageManager);
   let shadcnCommand = $derived(shadcnCommands[pkg]);
-  const svgFormatTitle = svgTitle
-    .toLowerCase()
-    .replace(/\s+/g, "-")
-    .replace(/[^a-z0-9-]/g, "");
+  let svgFormatTitle = $derived(
+    svgTitle
+      .toLowerCase()
+      .replace(/\s+/g, "-")
+      .replace(/[^a-z0-9-]/g, ""),
+  );
 </script>
 
 <div class="flex w-full items-center space-x-2">

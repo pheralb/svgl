@@ -5,6 +5,7 @@
   import { globals } from "@/globals";
   import { buttonVariants } from "@/components/ui/button";
   import Github from "@/components/logos/github.svelte";
+  import ExternalLink from "@/components/ui/links/external-link.svelte";
 
   async function getGithubStarCount() {
     try {
@@ -24,11 +25,10 @@
   });
 </script>
 
-<a
-  target="_blank"
+<ExternalLink
   title="pheralb/svgl Repository"
   href={globals.githubUrl}
-  class={cn(
+  className={cn(
     buttonVariants({ variant: "ghost" }),
     "w-fit hover:bg-neutral-200 dark:hover:bg-neutral-800",
   )}
@@ -37,4 +37,4 @@
   <span class="text-neutral-600 dark:text-neutral-400">
     {stars >= 1000 ? `${(stars / 1000).toFixed(1)}k` : stars.toLocaleString()}
   </span>
-</a>
+</ExternalLink>
