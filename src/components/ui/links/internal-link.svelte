@@ -21,7 +21,7 @@
   {title}
   aria-label={label}
   class={cn(className)}
-  data-sveltekit-preload-data={preloadData}
+  data-sveltekit-preload-data={preloadData ? "" : "off"}
 >
   {#if children}
     {@render children()}
