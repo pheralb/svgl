@@ -41,6 +41,7 @@ export default [
         { argsIgnorePattern: "^_" },
       ],
       "@typescript-eslint/require-await": "off",
+      "svelte/no-navigation-without-resolve": "off",
     },
   },
   {
@@ -58,6 +59,8 @@ export default [
       "svelte/no-useless-mustaches": "warn",
       "svelte/require-each-key": "warn",
       "svelte/no-at-html-tags": "off",
+      "svelte/no-navigation-without-resolve": "off",
+      "svelte/state_referenced_locally": "off",
     },
   },
 ];
