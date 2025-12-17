@@ -1,9 +1,9 @@
-import js from "@eslint/js";
 import globals from "globals";
 import { fileURLToPath } from "node:url";
 import { includeIgnoreFile } from "@eslint/compat";
 
 // Plugins:
+import js from "@eslint/js";
 import ts from "typescript-eslint";
 import svelte from "eslint-plugin-svelte";
 import prettier from "eslint-config-prettier";
