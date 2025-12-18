@@ -2,15 +2,13 @@ import type { iSVG } from "../src/types/svg";
 
 import fs from "fs";
 import path from "path";
-import { exec } from "child_process";
-import { promisify } from "util";
+import chalk from "chalk";
+import { execSync } from "child_process";
 
 import { svgs } from "../src/data/svgs";
 import { optimizeSvg } from "../src/utils/optimizeSvg";
 import { parseSvgFilename } from "../src/utils/parseSvgFilename";
 import { parseReactSvgContent } from "../src/utils/parseReactSvgContent";
-
-const execAsync = promisify(exec);
 
 // ⚙️ Settings:
 const REGENERATE_ALL = true;
@@ -47,9 +45,24 @@ const shadcnSchema: ShadcnSchema = {
   items: [],
 };
 
+// Logging:
+const logTitle = (message: string) => {
+  return console.log(chalk.yellow(`\n|- ${message}`));
+};
+
+const logSuccess = (message: string) => {
+  return console.log(chalk.green(`${message}`));
+};
+
+const logError = (message: string) => {
+  return console.log(chalk.red(`${message}`));
+};
+
 // 🧑‍🚀 Function to prepare registry.json content:
 function prepareRegistryJson(): ShadcnSchema {
   const registryItems: RegistryItem[] = [];
+
+  logTitle("Building registry.json...");
 
   SVGS_DATA.forEach((svg) => {
     if (!REGENERATE_ALL) return;
@@ -102,11 +115,9 @@ async function generateRegistryJson(): Promise<void> {
       "utf-8",
     );
 
-    console.log(
-      `[📄] File registry.json generated with ${registryContent.items.length} TSX components`,
-    );
+    logSuccess("[✅] registry.json generated successfully");
   } catch (error) {
-    console.error("[❌] Error generating registry.json:", error);
+    logError(`[❌] Error generating registry.json: ${error}`);
     throw new Error(error as string);
   }
 }
@@ -210,45 +221,36 @@ async function cleanupDirectory(dirPath: string) {
         .catch(() => false)
     ) {
       await fs.promises.rm(dirPath, { recursive: true, force: true });
-      console.log(`[🗑️] Folder ${dirPath} deleted successfully`);
+      logSuccess(`[✅] Folder ${dirPath} deleted successfully`);
     }
   } catch (error) {
-    console.warn(`[⚠️] Could not delete folder ${dirPath}: ${error}`);
+    logError(`[❌] Could not delete folder ${dirPath}: ${error}`);
   }
 }
 
 async function runShadcnBuild() {
   try {
-    console.log("[🔨] Running shadcn build...");
-    const { stdout, stderr } = await execAsync(SHADCN_COMMAND);
-
-    if (stdout) {
-      console.log("[✅] shadcn build completed:");
-      console.log(stdout);
-    }
-
-    if (stderr && !stderr.includes("warning")) {
-      console.error("[❌] Errors in shadcn build:");
-      console.error(stderr);
-    }
+    logTitle("Running shadcn build command...");
+    execSync(SHADCN_COMMAND, { stdio: "inherit" });
   } catch (error) {
-    console.error("[❌] Error running shadcn build:", error);
+    logError(`Error running shadcn build: ${error}`);
     throw new Error(error as string);
   }
 }
 
 const checkFinallyDirs = async () => {
-  // Check if static/r directory exists
+  logTitle("Checking final directories and files...");
+
   const rDirExists = await fs.promises
     .access(`./${PUBLIC_FOLDER}/r`)
     .then(() => true)
     .catch(() => false);
 
   if (!rDirExists) {
-    console.error("[🔎] Error - Directory ./static/r does not exist");
+    logError("[❌] Error - Directory ./static/r does not exist");
     return;
   } else {
-    console.log("[🔎] Directory ./static/r exists");
+    logSuccess("[✅] Directory ./static/r exists");
   }
 
   // Check if registry.json exists
@@ -258,16 +260,18 @@ const checkFinallyDirs = async () => {
     .catch(() => false);
 
   if (!registryExists) {
-    console.error("[🔎] Error - File registry.json does not exist");
+    logError("[❌] Error - File registry.json does not exist");
     return;
   } else {
-    console.log("[🔎] File registry.json exists");
+    logSuccess("[✅] File registry.json exists");
   }
 };
 
 async function run() {
   let convertedCount = 0;
   let totalCount = 0;
+
+  console.log(chalk.blueBright("\n🚀 Generating shadcn/ui Registry"));
 
   try {
     await fs.promises.mkdir(OUTPUT_DIR, { recursive: true });
@@ -284,11 +288,11 @@ async function run() {
     totalCount = svgFiles.length;
 
     if (totalCount === 0) {
-      console.log("[❌] No SVG files found in SVGS_DATA.");
+      logError("[❌] No SVG files found in SVGS_DATA.");
       return;
     }
 
-    console.log(`[📦] Converting ${totalCount} SVGs converted to TSX...`);
+    logTitle("Converting SVGs to React components...");
 
     // Process files
     for (const svgFile of svgFiles) {
@@ -314,12 +318,12 @@ async function run() {
         await fs.promises.writeFile(outPath, tsx, "utf-8");
         convertedCount++;
       } catch (error) {
-        console.error(`\n[❌] Error processing ${svgFile.filename}:`, error);
+        logError(`\n[❌] Error processing ${svgFile.filename}: ${error}`);
         throw new Error(error as string);
       }
     }
-    console.log(
-      `\n[📦] ✨ Conversion completed: ${convertedCount}/${totalCount} SVGs processed`,
+    logSuccess(
+      `[✅] ${convertedCount}/${totalCount} SVGs converted successfully.`,
     );
 
     if (convertedCount < totalCount) {
@@ -331,12 +335,12 @@ async function run() {
       await runShadcnBuild();
     }
   } catch (error) {
-    console.error("[❌] Error:", error);
+    logError(`❌ Process failed: ${error}`);
     throw new Error(error as string);
   } finally {
     await checkFinallyDirs();
     await cleanupDirectory(OUTPUT_DIR);
-    console.log("[🎉] Process completed");
+    logSuccess("\n 🎉 Process completed.");
   }
 }
 
