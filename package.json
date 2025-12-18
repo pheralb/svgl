@@ -70,6 +70,7 @@
     "@tailwindcss/vite": "4.1.18",
     "@types/node": "24.10.4",
     "bits-ui": "2.14.4",
+    "chalk": "5.6.2",
     "clsx": "2.1.1",
     "eslint": "9.39.2",
     "eslint-config-prettier": "10.1.8",
