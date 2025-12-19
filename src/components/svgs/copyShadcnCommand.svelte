@@ -43,6 +43,6 @@
       class="text-neutral-500 dark:text-neutral-400"
     />
   </ExternalLink>
-  <OpenWithV0 {svgFormatTitle} />
+  <OpenWithV0 svgTitle={svgFormatTitle} />
 </div>
 <CodeBlock code={`${shadcnCommand} @svgl/${svgFormatTitle}`} Icon={Shadcn} />

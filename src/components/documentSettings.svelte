@@ -64,7 +64,7 @@
   <DropdownMenu.Item>
     {#snippet child({ props })}
       {@const Icon = icon}
-      <ExternalLink {href} {...props}>
+      <ExternalLink {href} className={props.class as string} {...props}>
         <div class="flex items-center space-x-2">
           <Icon size={14} />
           <span>{name}</span>
