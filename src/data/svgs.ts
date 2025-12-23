@@ -17,6 +17,14 @@ export const svgs: iSVG[] = [
       "https://www.nvidia.com/en-us/about-nvidia/legal-info/logo-brand-usage",
   },
   {
+    title: 'Proton Mail',
+    category:["Software", "Privacy", "Communications"],
+    route: '/library/protonmail.svg',
+    wordmark: '/library/protonmail-wordmark.svg',
+    url: 'https://mail.proton.me',
+    brandUrl: 'https://proton.me/media/kit'
+  }
+  {
     title: "Google Classroom",
     category: ["Google", "Education"],
     route: "/library/google-classroom.svg",

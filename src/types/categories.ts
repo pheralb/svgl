@@ -35,4 +35,6 @@ export type Category =
   | "Platform"
   | "Automation"
   | "Nuxt"
-  | "Microsoft";
+  | "Microsoft"
+  | "Privacy"
+  | "Communications";
