@@ -4346,4 +4346,10 @@ export const svgs: iSVG[] = [
     },
     url: "https://www.formance.com/",
   },
+  {
+    title: "GoGoNano",
+    category: ["Platform", "Community"],
+    route: "/logos/gogonano-brand.svg",
+    url: "https://www.gogonano.com" 
+  },
 ];
