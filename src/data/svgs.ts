@@ -4346,4 +4346,10 @@ export const svgs: iSVG[] = [
     },
     url: "https://www.formance.com/",
   },
+  {
+    title: "Edge-TTS",
+    category: "AI",
+    route: "/library/edge-tts.svg",
+    url: "https://edge-tts.com/"
+  }
 ];
