@@ -35,6 +35,13 @@ export const svgs: iSVG[] = [
     brandUrl: "https://developers.google.com/workspace/classroom/brand",
   },
   {
+    title: "Google Antigravity",
+    category: "Google",
+    route: "/library/antigravity.svg",
+    wordmark: "/library/antigravity-wordmark.svg",
+    url: "https://www.google.com/antigravity",
+  },
+  {
     title: "Kimi",
     category: "AI",
     route: "/library/kimi-icon.svg",
