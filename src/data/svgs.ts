@@ -20,10 +20,6 @@ export const svgs: iSVG[] = [
     title: "Proton Mail",
     category: ["Software", "Privacy", "Communications"],
     route: "/library/protonmail.svg",
-    wordmark: {
-      light: "/library/protonmail-wordmark-light.svg",
-      dark: "/library/protonmail-wordmark.svg",
-    },
     url: "https://mail.proton.me",
     brandUrl: "https://proton.me/media/kit",
   },
