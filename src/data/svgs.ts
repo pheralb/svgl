@@ -4346,4 +4346,14 @@ export const svgs: iSVG[] = [
     },
     url: "https://www.formance.com/",
   },
+  {
+    title: "Bklit",
+    category: ["Analytics", "Software"],
+    route: {
+      light: "/library/bklit-light.svg",
+      dark: "/library/bklit-dark.svg",
+    },
+    brandUrl: "https://bklit.com/branding",
+    url: "https://bklit.com/",
+  },
 ];
