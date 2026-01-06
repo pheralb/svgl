@@ -4360,4 +4360,14 @@ export const svgs: iSVG[] = [
     brandUrl: "https://bklit.com/branding",
     url: "https://bklit.com/",
   },
+  {
+    title: "NativePHP",
+    category: "Framework",
+    route: {
+      light: "/library/nativephp-light.svg",
+      dark: "/library/nativephp-dark.svg",
+    },
+    brandUrl: "https://nativephp.com/brand",
+    url: "https://nativephp.com/",
+  },
 ];
