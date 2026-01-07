@@ -4360,4 +4360,10 @@ export const svgs: iSVG[] = [
     brandUrl: "https://bklit.com/branding",
     url: "https://bklit.com/",
   },
+  {
+    title: "Edge-TTS",
+    category: "AI",
+    route: "/library/edge-tts.svg",
+    url: "https://edge-tts.com/"
+  }
 ];
