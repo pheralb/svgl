@@ -1,4 +1,4 @@
-import { parseSvgContent } from '@/utils/parseSvgContent';
+import { parseSvgContent } from "@/utils/parseSvgContent";
 
 interface VueComponentParams {
   lang: string;
@@ -6,8 +6,11 @@ interface VueComponentParams {
 }
 
 export const getVueCode = (params: VueComponentParams) => {
-  const { templateContent, componentStyle } = parseSvgContent(params.content, 'Vue');
-  return `<script setup${params.lang ? ` lang="${params.lang}"` : ''}></script>
+  const { templateContent, componentStyle } = parseSvgContent(
+    params.content,
+    "Vue",
+  );
+  return `<script setup${params.lang ? ` lang="${params.lang}"` : ""}></script>
 <template>
  ${templateContent}
 </template>

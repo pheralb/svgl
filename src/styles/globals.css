@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+/* Plugins */
+@import "tw-animate-css";
+
+/* Dark Mode */
+@custom-variant dark (&:is(.dark *));
+
+/* Fonts */
+@font-face {
+  font-family: "InterVariable";
+  src: url("/fonts/InterVariable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GeistMono";
+  src: url("/fonts/GeistMono.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@theme {
+  --font-sans:
+    "InterVariable", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-mono:
+    "GeistMono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace, "Apple Color Emoji";
+}
+
+/* Shiki light/dark mode */
+html.dark .shiki,
+html.dark .shiki span {
+  color: var(--shiki-dark) !important;
+  background-color: transparent !important;
+}
+
+/* Shiki Line Numbers */
+code {
+  counter-reset: step;
+  counter-increment: step 0;
+}
+
+code:has(.line:nth-child(2)) .line::before {
+  content: counter(step);
+  counter-increment: step;
+  width: 0.5rem;
+  margin-right: 1.5rem;
+  margin-left: 0.3rem;
+  display: inline-block;
+  text-align: right;
+}
+
+code:has(.line:nth-child(2)) .line::before {
+  @apply font-mono text-xs text-neutral-400 dark:text-neutral-600;
+}
