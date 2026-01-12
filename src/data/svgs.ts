@@ -4360,4 +4360,10 @@ export const svgs: iSVG[] = [
     brandUrl: "https://bklit.com/branding",
     url: "https://bklit.com/",
   },
+  {
+    title: 'Intlayer',
+    category: ["AI", "Devtool", "CMS"],
+    route: '/library/intlayer.svg',
+    url: 'https://intlayer.org'
+  }
 ];
