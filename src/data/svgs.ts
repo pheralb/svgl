@@ -4365,5 +4365,18 @@ export const svgs: iSVG[] = [
     category: ["AI", "Devtool", "CMS"],
     route: '/library/intlayer.svg',
     url: 'https://intlayer.org'
-  }
+  },
+  {
+    title: "Goil",
+    category: ["Software", "AI"],
+    route: {
+      light: "/library/goil.svg",
+      dark: "/library/goil-dark.svg",
+    },
+    wordmark: {
+      light: "/library/goil-wordmark.svg",
+      dark: "/library/goil-wordmark-dark.svg",
+    },
+    url: "https://www.goil.app/",
+  },
 ];
