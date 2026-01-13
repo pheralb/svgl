@@ -4360,4 +4360,17 @@ export const svgs: iSVG[] = [
     brandUrl: "https://bklit.com/branding",
     url: "https://bklit.com/",
   },
+  {
+    title: "Goil",
+    category: ["Software", "AI"],
+    route: {
+      light: "/library/goil.svg",
+      dark: "/library/goil-dark.svg",
+    },
+    wordmark: {
+      light: "/library/goil-wordmark-light.svg",
+      dark: "/library/goil-wordmark-dark.svg",
+    },
+    url: "https://www.goil.app/",
+  },
 ];
