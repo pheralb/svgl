@@ -4368,7 +4368,7 @@ export const svgs: iSVG[] = [
       dark: "/library/goil-dark.svg",
     },
     wordmark: {
-      light: "/library/goil-wordmark-light.svg",
+      light: "/library/goil-wordmark.svg",
       dark: "/library/goil-wordmark-dark.svg",
     },
     url: "https://www.goil.app/",
