@@ -4361,6 +4361,12 @@ export const svgs: iSVG[] = [
     url: "https://bklit.com/",
   },
   {
+    title: 'Intlayer',
+    category: ["AI", "Devtool", "CMS"],
+    route: '/library/intlayer.svg',
+    url: 'https://intlayer.org'
+  },
+  {
     title: "Goil",
     category: ["Software", "AI"],
     route: {
