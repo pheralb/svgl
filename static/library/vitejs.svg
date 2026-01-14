@@ -1,1 +1,64 @@
-<svg viewBox="0 0 256 257" width="256" height="257" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid"><defs><linearGradient x1="-.828%" y1="7.652%" x2="57.636%" y2="78.411%" id="a"><stop stop-color="#41D1FF" offset="0%"/><stop stop-color="#BD34FE" offset="100%"/></linearGradient><linearGradient x1="43.376%" y1="2.242%" x2="50.316%" y2="89.03%" id="b"><stop stop-color="#FFEA83" offset="0%"/><stop stop-color="#FFDD35" offset="8.333%"/><stop stop-color="#FFA800" offset="100%"/></linearGradient></defs><path d="M255.153 37.938 134.897 252.976c-2.483 4.44-8.862 4.466-11.382.048L.875 37.958c-2.746-4.814 1.371-10.646 6.827-9.67l120.385 21.517a6.537 6.537 0 0 0 2.322-.004l117.867-21.483c5.438-.991 9.574 4.796 6.877 9.62Z" fill="url(#a)"/><path d="M185.432.063 96.44 17.501a3.268 3.268 0 0 0-2.634 3.014l-5.474 92.456a3.268 3.268 0 0 0 3.997 3.378l24.777-5.718c2.318-.535 4.413 1.507 3.936 3.838l-7.361 36.047c-.495 2.426 1.782 4.5 4.151 3.78l15.304-4.649c2.372-.72 4.652 1.36 4.15 3.788l-11.698 56.621c-.732 3.542 3.979 5.473 5.943 2.437l1.313-2.028 72.516-144.72c1.215-2.423-.88-5.186-3.54-4.672l-25.505 4.922c-2.396.462-4.435-1.77-3.759-4.114l16.646-57.705c.677-2.35-1.37-4.583-3.769-4.113Z" fill="url(#b)"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 32 32">
+    <mask id="SVGgudELdDz">
+        <path fill="#fff" d="M40.05 45.7c-.67.85-2.02.38-2.02-.69v-10.3a2.26 2.26 0 0 0-2.27-2.26H24.4a1.13 1.13 0 0 1-.92-1.8l7.48-10.46c1.07-1.5 0-3.58-1.84-3.58H15.34a1.13 1.13 0 0 1-.92-1.79l9.7-13.57c.2-.3.55-.48.92-.48h28.89c.92 0 1.46 1.04.92 1.79l-7.48 10.47a2.26 2.26 0 0 0 1.84 3.58H60.6c.94 0 1.47 1.09.89 1.83z" stroke-width="1" stroke="#fff" />
+    </mask>
+    <g fill="none">
+        <g mask="url(#SVGgudELdDz)" transform="translate(1 6.8)scale(.393)">
+            <path fill="#9135ff" d="M0 0h62v47H0z" />
+            <g filter="url(#SVGNp06lekD)">
+                <ellipse cx="24.46" cy="37.75" fill="#eee6ff" rx="5.51" ry="14.7" transform="rotate(89.8 24.46 37.75)" />
+            </g>
+            <g filter="url(#SVGNp06lekD)">
+                <ellipse cx="4.76" cy="18.96" fill="#eee6ff" rx="10.4" ry="29.85" transform="rotate(89.8 4.76 18.96)" />
+            </g>
+            <g filter="url(#SVGQv8P6csY)">
+                <ellipse cx="4.24" cy="17.5" fill="#8900ff" rx="5.51" ry="30.49" transform="rotate(89.8 4.24 17.5)" />
+            </g>
+            <g filter="url(#SVGQv8P6csY)">
+                <ellipse cx="8.95" cy="35.5" fill="#8900ff" rx="5.51" ry="30.6" transform="rotate(89.8 8.95 35.5)" />
+            </g>
+            <g filter="url(#SVGQv8P6csY)">
+                <ellipse cx="10.48" cy="36.65" fill="#8900ff" rx="5.51" ry="30.6" transform="rotate(89.8 10.48 36.65)" />
+            </g>
+            <g filter="url(#SVGNp06lekD)">
+                <ellipse cx="67.34" cy="12.3" fill="#eee6ff" rx="14.07" ry="22.08" transform="rotate(-86.7 67.34 12.3)" />
+            </g>
+            <g filter="url(#SVGQv8P6csY)">
+                <ellipse cx="68.44" cy="15.74" fill="#8900ff" rx="3.47" ry="21.5" transform="rotate(-91 68.44 15.74)" />
+            </g>
+            <g filter="url(#SVGQv8P6csY)">
+                <ellipse cx="68.44" cy="15.74" fill="#8900ff" rx="3.47" ry="21.5" transform="rotate(-91 68.44 15.74)" />
+            </g>
+            <g filter="url(#SVGQv8P6csY)">
+                <ellipse cx="14.59" cy="9.74" fill="#8900ff" rx="4.41" ry="29.11" transform="rotate(39.5 14.6 9.74)" />
+            </g>
+            <g filter="url(#SVGQv8P6csY)">
+                <ellipse cx="61.73" cy="-5.32" fill="#8900ff" rx="4.41" ry="29.11" transform="rotate(37.9 61.73 -5.32)" />
+            </g>
+            <g filter="url(#SVGQv8P6csY)">
+                <ellipse cx="55.62" cy="7.1" fill="#00c2ff" rx="5.97" ry="9.67" transform="rotate(37.9 55.62 7.1)" />
+            </g>
+            <g filter="url(#SVGQv8P6csY)">
+                <ellipse cx="12.33" cy="39.1" fill="#8900ff" rx="4.41" ry="29.11" transform="rotate(37.9 12.33 39.1)" />
+            </g>
+            <g filter="url(#SVGQv8P6csY)">
+                <ellipse cx="12.33" cy="39.1" fill="#8900ff" rx="4.41" ry="29.11" transform="rotate(37.9 12.33 39.1)" />
+            </g>
+            <g filter="url(#SVGQv8P6csY)">
+                <ellipse cx="49.86" cy="30.68" fill="#8900ff" rx="4.41" ry="29.11" transform="rotate(37.9 49.86 30.68)" />
+            </g>
+            <g filter="url(#SVGQv8P6csY)">
+                <ellipse cx="52.62" cy="33.17" fill="#00c2ff" rx="5.97" ry="15.3" transform="rotate(37.9 52.62 33.17)" />
+            </g>
+        </g>
+        <path fill="#fff" d="M3.72 6.8C.1 11.98.08 20 3.72 25.2h2.45c-3.64-5.2-3.62-13.22 0-18.4zm24.56 0h-2.45c3.62 5.18 3.64 13.2 0 18.4h2.45c3.64-5.2 3.62-13.22 0-18.4" stroke-width="1" stroke="#fff" />
+        <defs>
+            <filter id="SVGNp06lekD" width="4" height="4" x="-2" y="-2" color-interpolation-filters="sRGB">
+                <feGaussianBlur stdDeviation="7.66" />
+            </filter>
+            <filter id="SVGQv8P6csY" width="4" height="4" x="-2" y="-2" color-interpolation-filters="sRGB">
+                <feGaussianBlur stdDeviation="4.6" />
+            </filter>
+        </defs>
+    </g>
+</svg>
