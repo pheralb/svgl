@@ -10,12 +10,12 @@
     "deploy": "wrangler deploy --minify src/index.ts"
   },
   "dependencies": {
-    "@upstash/ratelimit": "2.0.7",
-    "@upstash/redis": "1.35.6",
-    "hono": "4.10.4"
+    "@upstash/ratelimit": "2.0.8",
+    "@upstash/redis": "1.36.1",
+    "hono": "4.11.4"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "4.20251109.0",
-    "wrangler": "4.46.0"
+    "@cloudflare/workers-types": "4.20260114.0",
+    "wrangler": "4.59.1"
   }
 }
