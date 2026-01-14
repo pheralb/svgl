@@ -4339,7 +4339,10 @@ export const svgs: iSVG[] = [
   {
     title: "Intlayer",
     category: ["AI", "Devtool", "CMS"],
-    route: "/library/intlayer.svg",
+    route: {
+      light: "/library/intlayer-light.svg",
+      dark: "/library/intlayer-dark.svg",
+    },
     url: "https://intlayer.org",
   },
   {
