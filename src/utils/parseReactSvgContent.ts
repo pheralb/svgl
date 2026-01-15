@@ -6,6 +6,25 @@ interface ParseReactSvgOptions {
   typescript: boolean;
 }
 
+const Attributes: Record<string, string> = {
+  class: "className",
+  "clip-rule": "clipRule",
+  "clip-path": "clipPath",
+  "fill-rule": "fillRule",
+  "stroke-width": "strokeWidth",
+  "stroke-linecap": "strokeLinecap",
+  "stroke-linejoin": "strokeLinejoin",
+  "stroke-dasharray": "strokeDasharray",
+  "stroke-dashoffset": "strokeDashoffset",
+  "stroke-miterlimit": "strokeMiterlimit",
+  "xmlns:xlink": "xmlnsXlink",
+  "text-anchor": "textAnchor",
+  "xml:space": "xmlSpace",
+  "stop-color": "stopColor",
+  "color-interpolation-filters": "colorInterpolationFilters",
+  "xlink:href": "xlinkHref",
+};
+
 const convertStyleStringToObject = (styleString: string): string => {
   const styleObj: Record<string, string> = {};
   styleString.split(";").forEach((style) => {
@@ -28,21 +47,12 @@ export const parseReactSvgContent = async ({
   const processedSvg = svgCode.replace(/style="([^"]*)"/g, (_, styleString) => {
     return `style={${convertStyleStringToObject(styleString)}}`;
   });
-  const reactifiedSvg = processedSvg
-    .replace("<svg", "<svg {...props}")
-    .replace(/class="/g, 'className="')
-    .replace(/clip-rule="/g, 'clipRule="')
-    .replace(/clip-path="/g, 'clipPath="')
-    .replace(/fill-rule="/g, 'fillRule="')
-    .replace(/stroke-width="/g, 'strokeWidth="')
-    .replace(/stroke-linecap="/g, 'strokeLinecap="')
-    .replace(/stroke-linejoin="/g, 'strokeLinejoin="')
-    .replace(/stroke-dasharray="/g, 'strokeDasharray="')
-    .replace(/stroke-dashoffset="/g, 'strokeDashoffset="')
-    .replace(/stroke-miterlimit="/g, 'strokeMiterlimit="')
-    .replace(/xmlns:xlink="/g, 'xmlnsXlink="')
-    .replace(/text-anchor="/g, 'textAnchor="')
-    .replace(/xml:space="/g, 'xmlSpace="');
+
+  const reactifiedSvg = Object.entries(Attributes).reduce(
+    (svg, [htmlAttr, reactAttr]) =>
+      svg.replace(new RegExp(`${htmlAttr}="`, "g"), `${reactAttr}="`),
+    processedSvg.replace("<svg", "<svg {...props}"),
+  );
 
   let structuredCode = "";
   if (typescript) {
