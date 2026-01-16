@@ -2789,6 +2789,15 @@ export const svgs: iSVG[] = [
     url: "https://store.steampowered.com/",
   },
   {
+    title: "Epic Games",
+    category: ["Entertainment", "Platform", "Software", "Marketplace", "Devtool"],
+    route: {
+      light: "/library/epicgames-icon-light.svg",
+      dark: "/library/epicgames-icon-dark.svg",
+    },
+    url: "https://www.epicgames.com/",
+  },
+  {
     title: "Tabby",
     category: "Software",
     route: "/library/tabby.svg",
