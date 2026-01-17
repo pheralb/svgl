@@ -2123,6 +2123,12 @@ export const svgs: iSVG[] = [
     url: "https://www.datadoghq.com/",
   },
   {
+    title:"Databuddy",
+    category:"Analytics",
+    route: "/library/databuddy.svg",
+    url: "https://www.databuddy.cc/",
+  },
+  {
     title: "Tron",
     category: "Crypto",
     route: "/library/tron.svg",
