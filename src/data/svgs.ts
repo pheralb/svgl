@@ -3493,6 +3493,19 @@ export const svgs: iSVG[] = [
     url: "https://polar.sh/",
   },
   {
+    title: "Goldman Sachs",
+    category: ["Payment", "Platform", "Analytics", "Software"],
+    route: {
+      light: "/library/goldman-sachs-icon-light.svg",
+      dark: "/library/goldman-sachs-icon-dark.svg",
+    },
+    wordmark: {
+      light: "/library/goldman-sachs-wordmark-light.svg",
+      dark: "/library/goldman-sachs-wordmark-dark.svg",
+    },
+    url: "https://www.goldmansachs.com",
+  },
+  {
     title: "bolt",
     category: "Devtool",
     route: {
