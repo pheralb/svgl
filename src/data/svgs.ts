@@ -4388,4 +4388,10 @@ export const svgs: iSVG[] = [
     route: "/library/voidzero.svg",
     url: "https://voidzero.dev/",
   },
+  {
+    title: "Edge-TTS",
+    category: "AI",
+    route: "/library/edge-tts.svg",
+    url: "https://edge-tts.com/"
+  }
 ];
