@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="224.984" height="250" fill="none" viewBox="0 0 224.984 250">
+  <path d="M154.688 181.25 112.5 200v50l98.438-43.75z" style="clip-rule:evenodd;fill:#dd2c00;fill-opacity:1;fill-rule:evenodd"/>
+  <defs>
+    <linearGradient id="a">
+      <stop offset="0" style="stop-color:#ff9100;stop-opacity:1"/>
+      <stop offset=".999" style="stop-color:#ff9100;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient xlink:href="#a" id="c" x1="249.955" x2="362.484" y1="262.5" y2="262.5" gradientTransform="translate(-137.5 -125)" gradientUnits="userSpaceOnUse"/>
+  </defs>
+  <path d="m112.455 137.514.03-.014 112.5 50v-50l-112.5-50-.03.014z" style="clip-rule:evenodd;fill:url(#c);fill-rule:evenodd"/>
+  <path d="M112.47 137.514v-50L0 137.5v50z" style="clip-rule:evenodd;fill:#ffc400;fill-opacity:1;fill-rule:evenodd"/>
+  <path d="m112.117 50.014.03-.014 112.5 50V50l-112.5-50-.03.014z" style="clip-rule:evenodd;fill:#ff9100;fill-opacity:1;fill-rule:evenodd"/>
+  <path d="M112.47 50.014v-50L0 50v50z" style="clip-rule:evenodd;fill:#ffc400;fill-opacity:1;fill-rule:evenodd"/>
+</svg>
