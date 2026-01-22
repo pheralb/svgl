@@ -27,22 +27,22 @@
 
   // States:
   let searchTerm = $state<string>(data.searchTerm || "");
-  let filteredExtensions = $state<Extension[]>(data.initialExtensions);
 
-  const searchExtensions = () => {
-    if (!searchTerm) {
-      filteredExtensions = data.allExtensions;
-      return;
-    }
-    filteredExtensions = searchExtensionsWithFuse(data.allExtensions)
+  // Derived:
+  const filteredExtensions = $derived.by(() => {
+    if (!searchTerm) return data.allExtensions;
+    return searchExtensionsWithFuse(data.allExtensions)
       .search(searchTerm)
       .map((result) => result.item);
-  };
+  });
 
   const handleSearch = (value: string) => {
     searchTerm = value;
-    searchExtensions();
   };
+
+  $effect(() => {
+    searchTerm = data.searchTerm || "";
+  });
 </script>
 
 <svelte:head>

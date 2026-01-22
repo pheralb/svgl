@@ -820,9 +820,10 @@ export const svgs: iSVG[] = [
   {
     title: "jQuery",
     category: "Library",
-    route: {
-      light: "/library/jquery.svg",
-      dark: "/library/jquery_dark.svg",
+    route: "/library/jquery.svg",
+    wordmark: {
+      light: "/library/jquery-wordmark-light.svg",
+      dark: "/library/jquery-wordmark-dark.svg",
     },
     url: "https://jquery.com",
   },
@@ -1420,7 +1421,10 @@ export const svgs: iSVG[] = [
   {
     title: "React Router",
     category: "Library",
-    route: "/library/reactrouter.svg",
+    route: {
+      light: "/library/reactrouter-light.svg",
+      dark: "/library/reactrouter-dark.svg",
+    },
     url: "https://reactrouter.com/en/main",
   },
   {
@@ -4387,5 +4391,87 @@ export const svgs: iSVG[] = [
     category: ["VoidZero"],
     route: "/library/voidzero.svg",
     url: "https://voidzero.dev/",
+  },
+  {
+    title: "Recraft",
+    category: ["AI", "Design"],
+    route: {
+      light: "/library/recraft-light.svg",
+      dark: "/library/recraft-dark.svg",
+    },
+    url: "https://recraft.ai/",
+  },
+  {
+    title: "Trupeer",
+    category: ["Software", "AI"],
+    route: {
+      light: "/library/trupeer-light.svg",
+      dark: "/library/trupeer-dark.svg",
+    },
+    url: "https://trupeer.com/",
+  },
+  {
+    title: "Azure Blob",
+    category: ["Database"],
+    route: {
+      light: "/library/azure-blob-light.svg",
+      dark: "/library/azure-blob-dark.svg",
+    },
+    url: "https://azure.microsoft.com/en-us/products/storage/blobs",
+  },
+  {
+    title: "ChatGPT",
+    category: ["AI"],
+    route: {
+      light: "/library/chatgpt-light.svg",
+      dark: "/library/chatgpt-dark.svg",
+    },
+    url: "https://chatgpt.com/",
+  },
+  {
+    title: "CLion",
+    category: ["Devtool"],
+    route: {
+      light: "/library/clion-light.svg",
+      dark: "/library/clion-dark.svg",
+    },
+    url: "https://www.jetbrains.com/clion/",
+  },
+  {
+    title: "Firestore",
+    category: ["Database"],
+    route: "/library/firestore.svg",
+    url: "https://firebase.google.com/docs/firestore",
+  },
+  {
+    title: "HackerRank",
+    category: ["Platform", "Software"],
+    route: {
+      light: "/library/hackerRank-light.svg",
+      dark: "/library/hackerRank-dark.svg",
+    },
+    url: "https://www.hackerrank.com/",
+  },
+  {
+    title: "LeetCode",
+    category: ["Platform", "Software"],
+    route: {
+      light: "/library/leetcode-light.svg",
+      dark: "/library/leetcode-dark.svg",
+    },
+    wordmark: {
+      light: "/library/leetcode-wordmark-light.svg",
+      dark: "/library/leetcode-wordmark-dark.svg",
+    },
+    url: "https://leetcode.com/",
+  },
+  {
+    title: "Vercel Blob",
+    category: ["Database", "Vercel"],
+    route: {
+      light: "/library/vercel-blob-light.svg",
+      dark: "/library/vercel-blob-dark.svg",
+    },
+    url: "https://vercel.com/docs/storage/blob",
   },
 ];

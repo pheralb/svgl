@@ -33,42 +33,35 @@
   let showAll = $state<boolean>(false);
   let sorted = $state<boolean>(data.sorted);
   let searchTerm = $state<string>(data.searchTerm);
-  let filteredSvgs = $state<iSVG[]>(data.initialSvgs);
-  let displaySvgs = $state<iSVG[]>([]);
 
-  const { latestSorted, alphabeticallySorted } = data;
+  // Derived:
+  const latestSorted = $derived(data.latestSorted);
+  const alphabeticallySorted = $derived(data.alphabeticallySorted);
 
-  const updateDisplaySvgs = () => {
-    displaySvgs = showAll ? filteredSvgs : filteredSvgs.slice(0, maxDisplay);
-  };
-
-  const searchSvgs = () => {
-    if (!searchTerm) {
-      filteredSvgs = sorted ? alphabeticallySorted : latestSorted;
-      updateDisplaySvgs();
-      return;
-    }
+  const filteredSvgs = $derived.by(() => {
     const baseData = sorted ? alphabeticallySorted : latestSorted;
-    filteredSvgs = searchSvgsWithFuse(baseData)
+    if (!searchTerm) return baseData;
+    return searchSvgsWithFuse(baseData)
       .search(searchTerm)
       .map((result) => result.item);
-    updateDisplaySvgs();
-  };
+  });
+
+  const displaySvgs = $derived(
+    showAll ? filteredSvgs : filteredSvgs.slice(0, maxDisplay),
+  );
 
   const handleSearch = (value: string) => {
     searchTerm = value;
-    searchSvgs();
   };
 
   const handleClearSearch = () => {
     searchTerm = "";
-    filteredSvgs = sorted ? alphabeticallySorted : latestSorted;
     deleteParam("search");
-    updateDisplaySvgs();
   };
 
   $effect(() => {
-    updateDisplaySvgs();
+    sorted = data.sorted;
+    searchTerm = data.searchTerm;
   });
 </script>
 
@@ -117,7 +110,6 @@
         isSorted={sorted}
         onSortedChange={(value) => {
           sorted = value;
-          searchSvgs();
         }}
       />
       {#if showAll && filteredSvgs.length > maxDisplay}
