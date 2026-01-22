@@ -23,57 +23,49 @@
 
   // SSR Data:
   let { data }: PageProps = $props();
-  const directoryData = $derived(data);
 
   // States:
   let maxDisplay = 30;
   let searchTerm = $state<string>(data.searchTerm || "");
-  let filteredSvgs = $derived<iSVG[]>(data.initialSvgs);
   let sorted = $state<boolean>(data.sorted);
   let showAll = $state<boolean>(false);
 
-  const updateDisplaySvgs = () => {
-    const data = showAll ? filteredSvgs : filteredSvgs.slice(0, maxDisplay);
-    return data;
-  };
-
-  const searchSvgs = () => {
-    if (!searchTerm) {
-      filteredSvgs = sorted ? data.alphabeticallySorted : data.latestSorted;
-      updateDisplaySvgs();
-      return;
-    }
+  // Derived:
+  const filteredSvgs = $derived.by(() => {
     const baseData = sorted ? data.alphabeticallySorted : data.latestSorted;
-    filteredSvgs = searchSvgsWithFuse(baseData)
+    if (!searchTerm) return baseData;
+    return searchSvgsWithFuse(baseData)
       .search(searchTerm)
       .map((result) => result.item);
-    updateDisplaySvgs();
-  };
+  });
+
+  const displaySvgs = $derived(
+    showAll ? filteredSvgs : filteredSvgs.slice(0, maxDisplay),
+  );
 
   const handleSearch = (value: string) => {
     searchTerm = value;
-    searchSvgs();
   };
 
   const handleClearSearch = () => {
     searchTerm = "";
     deleteParam("search");
-    updateDisplaySvgs();
   };
 
   $effect(() => {
-    updateDisplaySvgs();
+    sorted = data.sorted;
+    searchTerm = data.searchTerm || "";
   });
 </script>
 
 <svelte:head>
-  <title>{directoryData.category} SVG logos - Svgl</title>
+  <title>{data.category} SVG logos - Svgl</title>
 </svelte:head>
 
 <Search
   searchValue={searchTerm}
   onSearch={handleSearch}
-  placeholder={`Search ${directoryData.category}'s SVGs...`}
+  placeholder={`Search ${data.category}'s SVGs...`}
 />
 
 <PageCard
@@ -103,7 +95,7 @@
         <FolderIcon class="ml-1" size={18} strokeWidth={1.5} />
       {/if}
       <p>
-        {directoryData.category}
+        {data.category}
       </p>
       <span>-</span>
       {#if !searchTerm}
@@ -122,7 +114,6 @@
       isSorted={sorted}
       onSortedChange={(value) => {
         sorted = value;
-        searchSvgs();
       }}
     />
   </PageHeader>
@@ -133,7 +124,7 @@
       {/each}
     </Grid>
     {#if filteredSvgs.length === 0}
-      <SvgNotFound svgTitle={searchTerm} category={directoryData.category} />
+      <SvgNotFound svgTitle={searchTerm} category={data.category} />
     {/if}
   </Container>
 </PageCard>
