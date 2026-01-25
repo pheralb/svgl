@@ -4388,4 +4388,17 @@ export const svgs: iSVG[] = [
     route: "/library/voidzero.svg",
     url: "https://voidzero.dev/",
   },
+  {
+    "title": "BPC Instruments AB",
+    "category": ["Hardware"],
+    "route": {
+      "light": "/library/bpci.svg",
+      "dark": "/library/bpci-dark.svg"
+    },
+    "wordmark": {
+      "light": "/library/bpci-wordmark.svg",
+      "dark": "/library/bpci-wordmark-dark.svg"
+    },
+    "url": "https://www.bpcinstruments.com"
+  },
 ];
