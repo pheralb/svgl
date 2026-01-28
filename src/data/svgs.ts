@@ -3388,30 +3388,6 @@ export const svgs: iSVG[] = [
     url: "https://www.raspberrypi.com/",
   },
   {
-    title: "Vite",
-    category: ["Devtool", "VoidZero"],
-    route: "/library/vitejs.svg",
-    url: "https://vitejs.dev",
-  },
-  {
-    title: "Vitest",
-    category: ["Framework", "VoidZero"],
-    route: "/library/vitest.svg",
-    url: "https://vitest.dev/",
-  },
-  {
-    title: "Oxc",
-    category: ["Devtool", "VoidZero"],
-    route: "/library/oxc.svg",
-    url: "https://oxc.rs/",
-  },
-  {
-    title: "Rolldown",
-    category: ["Compiler", "VoidZero"],
-    route: "/library/rolldown.svg",
-    url: "https://rolldown.rs/",
-  },
-  {
     title: "ManzDev",
     category: ["Community"],
     route: "/library/manzdev.svg",
@@ -4369,5 +4345,57 @@ export const svgs: iSVG[] = [
     },
     brandUrl: "https://nativephp.com/brand",
     url: "https://nativephp.com/",
+  },
+  {
+    title: "Intlayer",
+    category: ["AI", "Devtool", "CMS"],
+    route: {
+      light: "/library/intlayer-light.svg",
+      dark: "/library/intlayer-dark.svg",
+    },
+    url: "https://intlayer.org",
+  },
+  {
+    title: "Goil",
+    category: ["Software", "AI"],
+    route: {
+      light: "/library/goil.svg",
+      dark: "/library/goil-dark.svg",
+    },
+    wordmark: {
+      light: "/library/goil-wordmark.svg",
+      dark: "/library/goil-wordmark-dark.svg",
+    },
+    url: "https://www.goil.app/",
+  },
+  {
+    title: "Vite",
+    category: ["Devtool", "VoidZero"],
+    route: "/library/vite.svg",
+    url: "https://vitejs.dev",
+  },
+  {
+    title: "Vitest",
+    category: ["Framework", "VoidZero"],
+    route: "/library/vitest.svg",
+    url: "https://vitest.dev/",
+  },
+  {
+    title: "Oxc",
+    category: ["Devtool", "VoidZero"],
+    route: "/library/oxc.svg",
+    url: "https://oxc.rs/",
+  },
+  {
+    title: "Rolldown",
+    category: ["Compiler", "VoidZero"],
+    route: "/library/rolldown.svg",
+    url: "https://rolldown.rs/",
+  },
+  {
+    title: "VoidZero",
+    category: ["VoidZero"],
+    route: "/library/voidzero.svg",
+    url: "https://voidzero.dev/",
   },
 ];
