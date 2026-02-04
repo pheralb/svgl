@@ -4388,4 +4388,10 @@ export const svgs: iSVG[] = [
     route: "/library/voidzero.svg",
     url: "https://voidzero.dev/",
   },
+  {
+    title: "MJML",
+    category: ["Devtool"],
+    route: "/library/mjml.svg",
+    url: "https://mjml.io/",
+  },
 ];
