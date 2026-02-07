@@ -4388,4 +4388,32 @@ export const svgs: iSVG[] = [
     route: "/library/voidzero.svg",
     url: "https://voidzero.dev/",
   },
+  {
+    title: "Tembo",
+    category: ["AI", "Software"],
+    route: {
+      light: "/library/tembo.svg",
+      dark: "/library/tembo-dark.svg",
+    },
+    wordmark: {
+      light: "/library/tembo-wordmark.svg",
+      dark: "/library/tembo-wordmark-dark.svg",
+    },
+    brandUrl: "https://www.tembo.io/brand-assets",
+    url: "https://www.tembo.io/",
+  },
+  {
+    title: "Firecrawl",
+    category: ["AI", "Software"],
+    route: {
+      light: "/library/firecrawl.svg",
+      dark: "/library/firecrawl-dark.svg",
+    },
+    wordmark: {
+      light: "/library/firecrawl-wordmark.svg",
+      dark: "/library/firecrawl-dark-wordmark.svg",
+    },
+    brandUrl: "https://www.firecrawl.dev/brand",
+    url: "https://www.firecrawl.dev/",
+  },
 ];
