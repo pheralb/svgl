@@ -4337,6 +4337,16 @@ export const svgs: iSVG[] = [
     url: "https://bklit.com/",
   },
   {
+    title: "NativePHP",
+    category: "Framework",
+    route: {
+      light: "/library/nativephp-light.svg",
+      dark: "/library/nativephp-dark.svg",
+    },
+    brandUrl: "https://nativephp.com/brand",
+    url: "https://nativephp.com/",
+  },
+  {
     title: "Intlayer",
     category: ["AI", "Devtool", "CMS"],
     route: {
