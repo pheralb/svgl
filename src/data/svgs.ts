@@ -4416,4 +4416,17 @@ export const svgs: iSVG[] = [
     brandUrl: "https://www.firecrawl.dev/brand",
     url: "https://www.firecrawl.dev/",
   },
+  {
+    title: "NearSolid",
+    category: ["Design","Software"],
+      route: {
+        light: "/library/nearsolid.svg",
+        dark:"/library/nearsolid-dark.svg"
+    },
+      wordmark: {
+        light: "/library/nearsolid-wordmark.svg",
+        dark: "/library/nearsolid-dark-wordmark.svg",
+      },
+    url: "https://www.nearsolid.com"
+  }
 ];
