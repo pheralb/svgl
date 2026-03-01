@@ -776,6 +776,13 @@ export const svgs: iSVG[] = [
     brandUrl: "https://fly.io/docs/about/brand/",
   },
   {
+    title: "Flyweel",
+    category: ["AI", "Software", "Analytics", "Platform", "Automation"],
+    route: "/library/flyweel.svg",
+    wordmark: "/library/flyweel_wordmark.svg",
+    url: "https://flyweel.co",
+  },
+  {
     title: "LearnThis",
     category: "Education",
     route: "/library/learnthis.svg",
