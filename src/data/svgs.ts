@@ -4524,4 +4524,18 @@ export const svgs: iSVG[] = [
     brandUrl: "https://brand.glide.page/dl/brand-assets",
     url: "https://www.glideapps.com/",
   },
+  {
+    title: "Relay",
+    category: "Crypto",
+    route: {
+      light: "/library/relay-light.svg",
+      dark: "/library/relay-dark.svg",
+    },
+    wordmark: {
+      light: "/library/relay-wordmark-light.svg",
+      dark: "/library/relay-wordmark-dark.svg",
+    },
+    brandUrl: "https://docs.relay.link/resources/brand-assets",
+    url: "https://relay.link",
+  },
 ];
