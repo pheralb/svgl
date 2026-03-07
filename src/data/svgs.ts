@@ -4524,4 +4524,14 @@ export const svgs: iSVG[] = [
     brandUrl: "https://brand.glide.page/dl/brand-assets",
     url: "https://www.glideapps.com/",
   },
+  {
+    title: "AskVerdict AI",
+    category: "AI",
+    route: "/library/askverdict.svg",
+    wordmark: {
+      light: "/library/askverdict-wordmark-light.svg",
+      dark: "/library/askverdict-wordmark-dark.svg",
+    },
+    url: "https://askverdict.ai",
+  },
 ];
