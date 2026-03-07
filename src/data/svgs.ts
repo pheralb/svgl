@@ -4525,7 +4525,7 @@ export const svgs: iSVG[] = [
     url: "https://www.glideapps.com/",
   },
   {
-    title: "AskVerdict",
+    title: "AskVerdict AI",
     category: "AI",
     route: "/library/askverdict.svg",
     wordmark: {
