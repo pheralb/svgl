@@ -4550,6 +4550,12 @@ export const svgs: iSVG[] = [
   route: "/library/sonarqube.svg",
   wordmark: "/library/sonarqube-wordmark.svg",
   url: "https://www.sonarsource.com/products/sonarqube/"
+},
+{
+  title: "Monica",
+  category: "AI",
+  route: "/library/monica.svg",
+  url: "https://monica.im/"
 }
 ];
 
