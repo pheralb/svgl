@@ -4537,5 +4537,11 @@ export const svgs: iSVG[] = [
   route: "/library/google-tv.svg",
   wordmark: "/library/google-tv-wordmark.svg",
   url: "https://tv.google/intl/en_us/"
+},
+{
+  title: "Jetpack Compose",
+  category: "Framework",
+  route: "/library/jetpack-compose.svg",
+  url: "https://developer.android.com/compose"
 }
 ];
