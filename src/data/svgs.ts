@@ -4543,5 +4543,13 @@ export const svgs: iSVG[] = [
   category: "Framework",
   route: "/library/jetpack-compose.svg",
   url: "https://developer.android.com/compose"
+},
+{
+  title: "SonarQube",
+  category: ["Devtool", "Cybersecurity"],
+  route: "/library/sonarqube.svg",
+  wordmark: "/library/sonarqube-wordmark.svg",
+  url: "https://www.sonarsource.com/products/sonarqube/"
 }
 ];
+
