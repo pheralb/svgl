@@ -4524,4 +4524,11 @@ export const svgs: iSVG[] = [
     brandUrl: "https://brand.glide.page/dl/brand-assets",
     url: "https://www.glideapps.com/",
   },
+  {
+    title: "Wear OS",
+    category: "Software",
+    route: "/library/wear-os.svg",
+    wordmark: "/library/wear-os-wordmark.svg",
+    url: "https://wearos.google.com/intl/en_us/",
+  },
 ];
