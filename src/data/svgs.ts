@@ -4524,4 +4524,13 @@ export const svgs: iSVG[] = [
     brandUrl: "https://brand.glide.page/dl/brand-assets",
     url: "https://www.glideapps.com/",
   },
+  {
+    title: "Helipagos",
+    category: ["Payment", "Software"],
+    route: {
+      light: "/library/helipagos-light.svg",
+      dark: "/library/helipagos.svg",
+    },
+    url: "https://helipagos.com/",
+  },
 ];
