@@ -4353,3 +4353,10 @@ export const svgs: iSVG[] = [
     url: "https://www.gogonano.com" 
   },
 ];
+{
+    title: "Ghost Prompt",
+    category: ["Platform", "Software"],
+    route: "/logos/icon-ghostprompt.svg",
+    url: "https://ghostprompt.heky.shop" 
+  },
+];
