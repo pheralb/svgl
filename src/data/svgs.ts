@@ -2,6 +2,19 @@ import type { iSVG } from "@/types/svg";
 
 export const svgs: iSVG[] = [
   {
+    title: "vlt",
+    category: "Software",
+    route: {
+      light: "/library/vlt-light.svg",
+      dark: "/library/vlt-dark.svg",
+    },
+    wordmark: {
+      light: "/library/vlt-wordmark-light.svg",
+      dark: "/library/vlt-wordmark-dark.svg",
+    },
+    url: "https://www.vlt.sh",
+  },
+  {
     title: "NVIDIA",
     category: ["AI", "Hardware", "Platform"],
     route: {
