@@ -30,11 +30,13 @@
   href={globals.githubUrl}
   className={cn(
     buttonVariants({ variant: "ghost" }),
-    "w-fit hover:bg-neutral-200 dark:hover:bg-neutral-800",
+    "w-fit px-2.5 hover:bg-neutral-200 dark:hover:bg-neutral-800",
   )}
 >
   <Github size={20} />
-  <span class="text-neutral-600 dark:text-neutral-400">
+  <span
+    class="font-mono text-sm tracking-tight text-neutral-600 dark:text-neutral-400"
+  >
     {stars >= 1000 ? `${(stars / 1000).toFixed(1)}k` : stars.toLocaleString()}
   </span>
 </ExternalLink>

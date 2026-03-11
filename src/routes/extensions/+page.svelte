@@ -1,6 +1,5 @@
 <script lang="ts">
   import type { PageProps } from "./$types";
-  import type { Extension } from "@/types/extensions";
 
   // Utils:
   import { cn } from "@/utils/cn";
@@ -26,22 +25,23 @@
   let { data }: PageProps = $props();
 
   // States:
-  let searchTerm = $state<string>(data.searchTerm || "");
-  let filteredExtensions = $state<Extension[]>(data.initialExtensions);
+  let searchOverride = $state<string | null>(null);
 
-  const searchExtensions = () => {
+  const searchTerm = $derived(
+    searchOverride !== null ? searchOverride : data.searchTerm,
+  );
+
+  const filteredExtensions = $derived.by(() => {
     if (!searchTerm) {
-      filteredExtensions = data.allExtensions;
-      return;
+      return data.allExtensions;
     }
-    filteredExtensions = searchExtensionsWithFuse(data.allExtensions)
+    return searchExtensionsWithFuse(data.allExtensions)
       .search(searchTerm)
       .map((result) => result.item);
-  };
+  });
 
   const handleSearch = (value: string) => {
-    searchTerm = value;
-    searchExtensions();
+    searchOverride = value;
   };
 </script>
 
@@ -63,20 +63,9 @@
     </div>
   </PageHeader>
   <section class="flex flex-col px-4 py-12">
-    <h2
-      class={cn(
-        "mb-4 text-center",
-        "text-4xl font-semibold",
-        "animate-in delay-100 duration-500 fill-mode-backwards fade-in slide-in-from-bottom-4",
-      )}
-    >
-      Extensions
-    </h2>
+    <h2 class={cn("mb-4 text-center", "text-4xl font-semibold")}>Extensions</h2>
     <div
-      class={cn(
-        "flex w-full flex-col items-center justify-center space-y-4",
-        "animate-in delay-300 duration-500 fill-mode-backwards fade-in slide-in-from-bottom-4",
-      )}
+      class={cn("flex w-full flex-col items-center justify-center space-y-4")}
     >
       <p>
         Integrate SVGL with your favorite tools and apps to streamline your
@@ -98,12 +87,7 @@
       </div>
     </div>
   </section>
-  <Container
-    className={cn(
-      "max-w-4xl",
-      "animate-in delay-500 duration-500 fill-mode-backwards fade-in slide-in-from-bottom-4",
-    )}
-  >
+  <Container className={cn("max-w-4xl")}>
     <div
       class="sticky top-12 z-10 bg-white/80 pt-4 backdrop-blur-sm dark:bg-transparent"
     >

@@ -7,13 +7,13 @@
   import ExternalLink from "@/components/ui/links/external-link.svelte";
 
   interface OpenWithV0Props {
-    svgFormatTitle: string;
+    svgTitle: string;
   }
-  let { svgFormatTitle }: OpenWithV0Props = $props();
+  let { svgTitle }: OpenWithV0Props = $props();
 </script>
 
 <ExternalLink
-  href={`${globals.v0Url}${globals.registryUrl}${svgFormatTitle}.json`}
+  href={`${globals.v0Url}${globals.registryUrl}${svgTitle}.json`}
   className={buttonVariants({ variant: "outline", class: "w-full" })}
 >
   <span>Open with</span>

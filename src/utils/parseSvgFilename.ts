@@ -16,9 +16,7 @@ export const parseSvgFilename = (params: ParseSvgFilename): string => {
 
   if (/^\d/.test(component)) {
     if (log) {
-      console.log(
-        `\n - [⚠️] Component name starts with a number: ${component}`,
-      );
+      console.log(`[⚠️] Component name starts with a number: ${component}`);
     }
     component = "Icon" + component;
   }

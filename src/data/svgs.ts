@@ -20,10 +20,7 @@ export const svgs: iSVG[] = [
     title: "Proton Mail",
     category: ["Software", "Privacy", "Communications"],
     route: "/library/protonmail.svg",
-    wordmark: {
-      light: "/library/protonmail-wordmark-light.svg",
-      dark: "/library/protonmail-wordmark.svg",
-    },
+    wordmark: "/library/protonmail-wordmark.svg",
     url: "https://mail.proton.me",
     brandUrl: "https://proton.me/media/kit",
   },
@@ -33,6 +30,13 @@ export const svgs: iSVG[] = [
     route: "/library/google-classroom.svg",
     url: "https://edu.google.com/workspace-for-education/products/classroom/",
     brandUrl: "https://developers.google.com/workspace/classroom/brand",
+  },
+  {
+    title: "Google Antigravity",
+    category: "Google",
+    route: "/library/antigravity.svg",
+    wordmark: "/library/antigravity-wordmark.svg",
+    url: "https://www.google.com/antigravity",
   },
   {
     title: "Kimi",
@@ -2785,6 +2789,21 @@ export const svgs: iSVG[] = [
     url: "https://store.steampowered.com/",
   },
   {
+    title: "Epic Games",
+    category: [
+      "Entertainment",
+      "Platform",
+      "Software",
+      "Marketplace",
+      "Devtool",
+    ],
+    route: {
+      light: "/library/epicgames-icon-light.svg",
+      dark: "/library/epicgames-icon-dark.svg",
+    },
+    url: "https://www.epicgames.com/",
+  },
+  {
     title: "Tabby",
     category: "Software",
     route: "/library/tabby.svg",
@@ -3382,30 +3401,6 @@ export const svgs: iSVG[] = [
     category: ["Hardware", "Software"],
     route: "/library/raspberry_pi.svg",
     url: "https://www.raspberrypi.com/",
-  },
-  {
-    title: "Vite",
-    category: ["Devtool", "VoidZero"],
-    route: "/library/vitejs.svg",
-    url: "https://vitejs.dev",
-  },
-  {
-    title: "Vitest",
-    category: ["Framework", "VoidZero"],
-    route: "/library/vitest.svg",
-    url: "https://vitest.dev/",
-  },
-  {
-    title: "Oxc",
-    category: ["Devtool", "VoidZero"],
-    route: "/library/oxc.svg",
-    url: "https://oxc.rs/",
-  },
-  {
-    title: "Rolldown",
-    category: ["Compiler", "VoidZero"],
-    route: "/library/rolldown.svg",
-    url: "https://rolldown.rs/",
   },
   {
     title: "ManzDev",
@@ -4347,16 +4342,198 @@ export const svgs: iSVG[] = [
     url: "https://www.formance.com/",
   },
   {
+  {
     title: "GoGoNano",
     category: ["Platform", "Community"],
     route: "/logos/gogonano-brand.svg",
-    url: "https://www.gogonano.com" 
+    url: "https://www.gogonano.com",
   },
-];
-{
+  {
     title: "Ghost Prompt",
     category: ["Platform", "Software"],
     route: "/logos/icon-ghostprompt.svg",
-    url: "https://ghostprompt.heky.shop" 
+    url: "https://ghostprompt.heky.shop",
+  },
+  {
+    title: "Bklit",
+    category: ["Analytics", "Software"],
+    route: {
+      light: "/library/bklit-light.svg",
+      dark: "/library/bklit-dark.svg",
+    },
+    brandUrl: "https://bklit.com/branding",
+  },
+  {
+    title: "Intlayer",
+    category: ["AI", "Devtool", "CMS"],
+    route: {
+      light: "/library/intlayer-light.svg",
+      dark: "/library/intlayer-dark.svg",
+    },
+    url: "https://intlayer.org",
+  },
+  {
+    title: "Goil",
+    category: ["Software", "AI"],
+    route: {
+      light: "/library/goil.svg",
+      dark: "/library/goil-dark.svg",
+    },
+    wordmark: {
+      light: "/library/goil-wordmark.svg",
+      dark: "/library/goil-wordmark-dark.svg",
+    },
+    url: "https://www.goil.app/",
+  },
+  {
+    title: "Vite",
+    category: ["Devtool", "VoidZero"],
+    route: "/library/vite.svg",
+    url: "https://vitejs.dev",
+  },
+  {
+    title: "Vitest",
+    category: ["Framework", "VoidZero"],
+    route: "/library/vitest.svg",
+    url: "https://vitest.dev/",
+  },
+  {
+    title: "Oxc",
+    category: ["Devtool", "VoidZero"],
+    route: "/library/oxc.svg",
+    url: "https://oxc.rs/",
+  },
+  {
+    title: "Rolldown",
+    category: ["Compiler", "VoidZero"],
+    route: "/library/rolldown.svg",
+    url: "https://rolldown.rs/",
+  },
+  {
+    title: "VoidZero",
+    category: ["VoidZero"],
+    route: "/library/voidzero.svg",
+    url: "https://voidzero.dev/",
+  },
+  {
+    title: "Tembo",
+    category: ["AI", "Software"],
+    route: {
+      light: "/library/tembo.svg",
+      dark: "/library/tembo-dark.svg",
+    },
+    wordmark: {
+      light: "/library/tembo-wordmark.svg",
+      dark: "/library/tembo-wordmark-dark.svg",
+    },
+    brandUrl: "https://www.tembo.io/brand-assets",
+    url: "https://www.tembo.io/",
+  },
+  {
+    title: "Firecrawl",
+    category: ["AI", "Software"],
+    route: {
+      light: "/library/firecrawl.svg",
+      dark: "/library/firecrawl-dark.svg",
+    },
+    wordmark: {
+      light: "/library/firecrawl-wordmark.svg",
+      dark: "/library/firecrawl-dark-wordmark.svg",
+    },
+    brandUrl: "https://www.firecrawl.dev/brand",
+    url: "https://www.firecrawl.dev/",
+  },
+  {
+    title: "AbacatePay",
+    category: "Payment",
+    route: "/library/abacatepay.svg",
+    wordmark: "/library/abacatepay-wordmark.svg",
+    url: "https://abacatepay.com",
+  },
+  {
+    title: "Google Calendar",
+    category: ["Google", "Software"],
+    route: "/library/google-calendar.svg",
+    url: "https://calendar.google.com/",
+  },
+  {
+    title: "Google Meet",
+    category: ["Google", "Software"],
+    route: "/library/google-meet.svg",
+    url: "https://meet.google.com/",
+  },
+  {
+    title: "Google Sheets",
+    category: ["Google", "Software"],
+    route: "/library/google-sheets.svg",
+    url: "https://sheets.google.com/",
+  },
+  {
+    title: "Google Slides",
+    category: ["Google", "Software"],
+    route: "/library/google-slides.svg",
+    url: "https://slides.google.com/",
+  },
+  {
+    title: "Google Chat",
+    category: ["Google", "Software"],
+    route: "/library/google-chat.svg",
+    url: "https://chat.google.com/",
+  },
+  {
+    title: "Google Analytics",
+    category: ["Google", "Software"],
+    route: "/library/google-analytics.svg",
+    url: "https://analytics.google.com/",
+  },
+  {
+    title: "Hotmart",
+    category: "Marketplace",
+    route: "/library/hotmart.svg",
+    wordmark: "/library/hotmart-wordmark.svg",
+    url: "https://www.hotmart.com/",
+  },
+  {
+    title: "Microsoft Office",
+    category: ["Microsoft", "Software"],
+    route: "/library/microsoft-office.svg",
+    url: "https://www.office.com/",
+  },
+  {
+    title: "Midjourney",
+    category: ["AI", "Software"],
+    route: {
+      light: "/library/midjourney.svg",
+      dark: "/library/midjourney-dark.svg",
+    },
+    url: "https://www.midjourney.com/",
+  },
+  {
+    title: "Manus",
+    category: ["AI", "Software"],
+    route: {
+      light: "/library/manus.svg",
+      dark: "/library/manus-dark.svg",
+    },
+    wordmark: {
+      light: "/library/manus-wordmark.svg",
+      dark: "/library/manus-wordmark-dark.svg",
+    },
+    brandUrl: "https://www.manus.ai/brand",
+    url: "https://www.manus.ai/",
+  },
+  {
+    title: "Glide",
+    category: ["AI", "Software"],
+    route: {
+      light: "/library/glide_light.svg",
+      dark: "/library/glide_dark.svg",
+    },
+    wordmark: {
+      light: "/library/glide_light_wordmark.svg",
+      dark: "/library/glide_dark_wordmark.svg",
+    },
+    brandUrl: "https://brand.glide.page/dl/brand-assets",
+    url: "https://www.glideapps.com/",
   },
 ];
