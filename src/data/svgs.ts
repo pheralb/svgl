@@ -4342,6 +4342,19 @@ export const svgs: iSVG[] = [
     url: "https://www.formance.com/",
   },
   {
+  {
+    title: "GoGoNano",
+    category: ["Platform", "Community"],
+    route: "/logos/gogonano-brand.svg",
+    url: "https://www.gogonano.com",
+  },
+  {
+    title: "Ghost Prompt",
+    category: ["Platform", "Software"],
+    route: "/logos/icon-ghostprompt.svg",
+    url: "https://ghostprompt.heky.shop",
+  },
+  {
     title: "Bklit",
     category: ["Analytics", "Software"],
     route: {
@@ -4349,7 +4362,6 @@ export const svgs: iSVG[] = [
       dark: "/library/bklit-dark.svg",
     },
     brandUrl: "https://bklit.com/branding",
-    url: "https://bklit.com/",
   },
   {
     title: "Intlayer",
