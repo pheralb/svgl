@@ -4524,4 +4524,10 @@ export const svgs: iSVG[] = [
     brandUrl: "https://brand.glide.page/dl/brand-assets",
     url: "https://www.glideapps.com/",
   },
+  {
+    title: 'Windmill',
+    category: 'Devtool',
+    route: '/library/windmill.svg',
+    url: 'https://www.windmill.dev/'
+  }
 ];
