@@ -1678,6 +1678,16 @@ export const svgs: iSVG[] = [
     brandUrl: "https://wordpress.org/about/logos/",
   },
   {
+    title: "Wix",
+    category: ["Software", "CMS"],
+    route: {
+      light: "/library/wix-icon-light.svg",
+      dark: "/library/wix-icon-dark.svg",
+    },
+    url: "https://www.wix.com",
+    brandUrl: "https://www.wix.com/about/design-assets",
+  },
+  {
     title: "Microsoft",
     category: ["Software", "Microsoft"],
     route: "/library/microsoft.svg",
