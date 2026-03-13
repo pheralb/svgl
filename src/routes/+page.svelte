@@ -12,7 +12,6 @@
   import SvgCard from "@/components/svgs/svgCard.svelte";
   import SortSvgs from "@/components/svgs/sortSvgs.svelte";
   import Container from "@/components/container.svelte";
-  import SearchXIcon from "@lucide/svelte/icons/search-x";
 
   import PageCard from "@/components/pageCard.svelte";
   import PageHeader from "@/components/pageHeader.svelte";
@@ -21,8 +20,7 @@
   import WarningMessage from "@/components/warningMessage.svelte";
 
   import Files from "@lucide/svelte/icons/files";
-  import ChevronUpIcon from "@lucide/svelte/icons/chevron-up";
-  import ChevronDownIcon from "@lucide/svelte/icons/chevron-down";
+  import SearchXIcon from "@lucide/svelte/icons/search-x";
 
   // SSR Data:
   let { data }: PageProps = $props();
@@ -34,6 +32,7 @@
   let maxDisplay = $state<number>(INITIAL_DISPLAY);
   let sortOverride = $state<boolean | null>(null);
   let searchOverride = $state<string | null>(null);
+  let sentinel = $state<HTMLDivElement | null>(null);
 
   const isSorted = $derived(sortOverride !== null ? sortOverride : data.sorted);
   const searchTerm = $derived(
@@ -63,17 +62,34 @@
     deleteParam("search");
   };
 
-  const handleShowMore = () => {
-    maxDisplay += INCREMENT;
-  };
+  function getScrollParent(node: HTMLElement | null): HTMLElement | null {
+    if (!node) return null;
+    const { overflow, overflowY } = getComputedStyle(node);
+    if (
+      overflow.includes("scroll") ||
+      overflow.includes("auto") ||
+      overflowY.includes("scroll") ||
+      overflowY.includes("auto")
+    ) {
+      return node;
+    }
+    return getScrollParent(node.parentElement);
+  }
 
-  const handleShowLess = () => {
-    maxDisplay = INITIAL_DISPLAY;
-  };
-
-  const handleShowAll = () => {
-    maxDisplay = filteredSvgs.length;
-  };
+  $effect(() => {
+    if (!sentinel) return;
+    const root = getScrollParent(sentinel.parentElement);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting && maxDisplay < filteredSvgs.length) {
+          maxDisplay += INCREMENT;
+        }
+      },
+      { root, rootMargin: "200px" },
+    );
+    observer.observe(sentinel);
+    return () => observer.disconnect();
+  });
 </script>
 
 <svelte:head>
@@ -124,12 +140,6 @@
           maxDisplay = INITIAL_DISPLAY;
         }}
       />
-      {#if maxDisplay > INITIAL_DISPLAY && filteredSvgs.length > INITIAL_DISPLAY}
-        <Button variant="ghost" class="px-2.5" onclick={handleShowLess}>
-          <span>Show Less</span>
-          <ChevronUpIcon size={16} strokeWidth={2} />
-        </Button>
-      {/if}
     </div>
   </PageHeader>
   {#if browser}
@@ -141,33 +151,7 @@
         <SvgCard svgInfo={svg} />
       {/each}
     </Grid>
-    {#if filteredSvgs.length > maxDisplay}
-      <div
-        class="mt-6 flex flex-col items-center justify-center space-y-2 md:flex-row md:space-y-0 md:space-x-2"
-      >
-        <Button
-          variant="outline"
-          size="lg"
-          class="w-full px-2.5 md:w-fit"
-          onclick={handleShowMore}
-        >
-          <span>Show More</span>
-          <ChevronDownIcon size={16} strokeWidth={2} />
-        </Button>
-        <Button
-          variant="outline"
-          size="lg"
-          class="w-full px-2.5 md:w-fit"
-          onclick={handleShowAll}
-        >
-          <span>Show All</span>
-          <span class="text-neutral-600 dark:text-neutral-400">
-            (+{filteredSvgs.length - maxDisplay} more)
-          </span>
-          <ChevronDownIcon size={16} strokeWidth={2} />
-        </Button>
-      </div>
-    {/if}
+    <div bind:this={sentinel} class="h-1"></div>
     {#if filteredSvgs.length === 0}
       <SvgNotFound svgTitle={searchTerm} />
     {/if}

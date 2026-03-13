@@ -2790,7 +2790,13 @@ export const svgs: iSVG[] = [
   },
   {
     title: "Epic Games",
-    category: ["Entertainment", "Platform", "Software", "Marketplace", "Devtool"],
+    category: [
+      "Entertainment",
+      "Platform",
+      "Software",
+      "Marketplace",
+      "Devtool",
+    ],
     route: {
       light: "/library/epicgames-icon-light.svg",
       dark: "/library/epicgames-icon-dark.svg",
@@ -4434,5 +4440,139 @@ export const svgs: iSVG[] = [
     },
     brandUrl: "https://www.firecrawl.dev/brand",
     url: "https://www.firecrawl.dev/",
+  },
+  {
+    title: "AbacatePay",
+    category: "Payment",
+    route: "/library/abacatepay.svg",
+    wordmark: "/library/abacatepay-wordmark.svg",
+    url: "https://abacatepay.com",
+  },
+  {
+    title: "Google Calendar",
+    category: ["Google", "Software"],
+    route: "/library/google-calendar.svg",
+    url: "https://calendar.google.com/",
+  },
+  {
+    title: "Google Meet",
+    category: ["Google", "Software"],
+    route: "/library/google-meet.svg",
+    url: "https://meet.google.com/",
+  },
+  {
+    title: "Google Sheets",
+    category: ["Google", "Software"],
+    route: "/library/google-sheets.svg",
+    url: "https://sheets.google.com/",
+  },
+  {
+    title: "Google Slides",
+    category: ["Google", "Software"],
+    route: "/library/google-slides.svg",
+    url: "https://slides.google.com/",
+  },
+  {
+    title: "Google Chat",
+    category: ["Google", "Software"],
+    route: "/library/google-chat.svg",
+    url: "https://chat.google.com/",
+  },
+  {
+    title: "Google Analytics",
+    category: ["Google", "Software"],
+    route: "/library/google-analytics.svg",
+    url: "https://analytics.google.com/",
+  },
+  {
+    title: "Hotmart",
+    category: "Marketplace",
+    route: "/library/hotmart.svg",
+    wordmark: "/library/hotmart-wordmark.svg",
+    url: "https://www.hotmart.com/",
+  },
+  {
+    title: "Microsoft Office",
+    category: ["Microsoft", "Software"],
+    route: "/library/microsoft-office.svg",
+    url: "https://www.office.com/",
+  },
+  {
+    title: "Midjourney",
+    category: ["AI", "Software"],
+    route: {
+      light: "/library/midjourney.svg",
+      dark: "/library/midjourney-dark.svg",
+    },
+    url: "https://www.midjourney.com/",
+  },
+  {
+    title: "Manus",
+    category: ["AI", "Software"],
+    route: {
+      light: "/library/manus.svg",
+      dark: "/library/manus-dark.svg",
+    },
+    wordmark: {
+      light: "/library/manus-wordmark.svg",
+      dark: "/library/manus-wordmark-dark.svg",
+    },
+    brandUrl: "https://www.manus.ai/brand",
+    url: "https://www.manus.ai/",
+  },
+  {
+    title: "Glide",
+    category: ["AI", "Software"],
+    route: {
+      light: "/library/glide_light.svg",
+      dark: "/library/glide_dark.svg",
+    },
+    wordmark: {
+      light: "/library/glide_light_wordmark.svg",
+      dark: "/library/glide_dark_wordmark.svg",
+    },
+    brandUrl: "https://brand.glide.page/dl/brand-assets",
+    url: "https://www.glideapps.com/",
+  },
+  {
+    title: "vlt",
+    category: "Software",
+    route: {
+      light: "/library/vlt-light.svg",
+      dark: "/library/vlt-dark.svg",
+    },
+    wordmark: {
+      light: "/library/vlt-wordmark-light.svg",
+      dark: "/library/vlt-wordmark-dark.svg",
+    },
+    url: "https://www.vlt.sh",
+  },
+  {
+    title: "OpenCode",
+    category: ["AI", "Software"],
+    route: {
+      light: "/library/opencode.svg",
+      dark: "/library/opencode-dark.svg",
+    },
+    wordmark: {
+      light: "/library/opencode-wordmark.svg",
+      dark: "/library/opencode-wordmark-dark.svg",
+    },
+    url: "https://opencode.ai/",
+  },
+  {
+    title: "OpenClaw",
+    category: ["AI", "Software"],
+    route: "/library/openclaw.svg",
+    url: "https://openclaw.ai/",
+  },
+  {
+    title: "Dracula",
+    category: ["Themes"],
+    route: {
+      light: "/library/dracula-dark.svg",
+      dark: "/library/dracula.svg",
+    },
+    url: "https://draculatheme.com/",
   },
 ];
