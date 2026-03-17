@@ -4581,4 +4581,17 @@ export const svgs: iSVG[] = [
     wordmark: "/library/stripe_wordmark.svg",
     url: "https://stripe.com/",
   },
+  {
+    title: "Interfere",
+    category: "Software",
+    route: {
+      light: "/library/interfere_black.svg",
+      dark: "/library/interfere_white.svg",
+    },
+    wordmark: {
+      light: "/library/interfere_wordmark_black.svg",
+      dark: "/library/interfere_wordmark_white.svg",
+    },
+    url: "https://interfere.com/",
+  },
 ];
