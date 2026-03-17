@@ -4538,6 +4538,34 @@ export const svgs: iSVG[] = [
     url: "https://www.vlt.sh",
   },
   {
+    title: "OpenCode",
+    category: ["AI", "Software"],
+    route: {
+      light: "/library/opencode.svg",
+      dark: "/library/opencode-dark.svg",
+    },
+    wordmark: {
+      light: "/library/opencode-wordmark.svg",
+      dark: "/library/opencode-wordmark-dark.svg",
+    },
+    url: "https://opencode.ai/",
+  },
+  {
+    title: "OpenClaw",
+    category: ["AI", "Software"],
+    route: "/library/openclaw.svg",
+    url: "https://openclaw.ai/",
+  },
+  {
+    title: "Dracula",
+    category: ["Themes"],
+    route: {
+      light: "/library/dracula-dark.svg",
+      dark: "/library/dracula.svg",
+    },
+    url: "https://draculatheme.com/",
+  },
+  {
     title: "Render",
     category: ["Software", "Hosting"],
     route: {
