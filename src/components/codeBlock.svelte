@@ -47,7 +47,7 @@
   )}
 >
   <button
-    class="absolute right-2 transition-colors hover:text-neutral-600 dark:hover:text-neutral-400"
+    class="absolute right-2 cursor-pointer transition-colors hover:text-neutral-600 dark:hover:text-neutral-400"
     onclick={handleCopy}
     disabled={copied}
     title={copied ? "Copied" : "Copy code"}

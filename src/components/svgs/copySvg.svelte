@@ -404,10 +404,8 @@
         <div class="flex items-center space-x-1">
           <Tabs.Trigger value="source">Source</Tabs.Trigger>
           <Tabs.Trigger value="shadcn" title="shadcn/ui">
-            <Shadcn size={18} />
+            <Shadcn size={20} />
           </Tabs.Trigger>
-        </div>
-        <div class="flex items-center space-x-1">
           <Tabs.Trigger value="web-component" title="Web Component">
             <WebComponents size={21} />
           </Tabs.Trigger>
