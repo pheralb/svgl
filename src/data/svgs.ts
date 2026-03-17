@@ -4537,4 +4537,28 @@ export const svgs: iSVG[] = [
     },
     url: "https://www.vlt.sh",
   },
+  {
+    title: "Render",
+    category: ["Software", "Hosting"],
+    route: {
+      light: "/library/render_black.svg",
+      dark: "/library/render_white.svg",
+    },
+    wordmark: {
+      light: "/library/render_wordmark_black.svg",
+      dark: "/library/render_wordmark_white.svg",
+    },
+    url: "https://render.com/",
+  },
+  {
+    title: "Xata",
+    category: ["Software", "Hosting"],
+    route: "/library/xata.svg",
+    wordmark: {
+      light: "/library/xata_wordmark_black.svg",
+      dark: "/library/xata_wordmark_white.svg",
+    },
+    url: "https://xata.io/",
+    brandUrl: "https://xata.io/brand",
+  },
 ];
