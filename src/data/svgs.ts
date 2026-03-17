@@ -2445,12 +2445,6 @@ export const svgs: iSVG[] = [
     url: "https://reflex.dev/",
   },
   {
-    title: "Stripe",
-    category: ["Software", "Payment"],
-    route: "/library/stripe.svg",
-    url: "https://stripe.com/",
-  },
-  {
     title: "Linux",
     category: "Software",
     route: "/library/linux.svg",
@@ -3407,15 +3401,6 @@ export const svgs: iSVG[] = [
     category: ["Community"],
     route: "/library/manzdev.svg",
     url: "https://manz.dev/",
-  },
-  {
-    title: "Afordin",
-    category: ["Community"],
-    route: {
-      light: "/library/afordin-light.svg",
-      dark: "/library/afordin-dark.svg",
-    },
-    url: "https://github.com/Afordin",
   },
   {
     title: "MediaWiki",
@@ -4580,7 +4565,7 @@ export const svgs: iSVG[] = [
   },
   {
     title: "Xata",
-    category: ["Software", "Hosting"],
+    category: ["Database", "AI"],
     route: "/library/xata.svg",
     wordmark: {
       light: "/library/xata_wordmark_black.svg",
@@ -4588,5 +4573,12 @@ export const svgs: iSVG[] = [
     },
     url: "https://xata.io/",
     brandUrl: "https://xata.io/brand",
+  },
+  {
+    title: "Stripe",
+    category: ["Software", "Payment"],
+    route: "/library/stripe.svg",
+    wordmark: "/library/stripe_wordmark.svg",
+    url: "https://stripe.com/",
   },
 ];
