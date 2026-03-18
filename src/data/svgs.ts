@@ -2445,12 +2445,6 @@ export const svgs: iSVG[] = [
     url: "https://reflex.dev/",
   },
   {
-    title: "Stripe",
-    category: ["Software", "Payment"],
-    route: "/library/stripe.svg",
-    url: "https://stripe.com/",
-  },
-  {
     title: "Linux",
     category: "Software",
     route: "/library/linux.svg",
@@ -3407,15 +3401,6 @@ export const svgs: iSVG[] = [
     category: ["Community"],
     route: "/library/manzdev.svg",
     url: "https://manz.dev/",
-  },
-  {
-    title: "Afordin",
-    category: ["Community"],
-    route: {
-      light: "/library/afordin-light.svg",
-      dark: "/library/afordin-dark.svg",
-    },
-    url: "https://github.com/Afordin",
   },
   {
     title: "MediaWiki",
@@ -4574,5 +4559,49 @@ export const svgs: iSVG[] = [
       dark: "/library/dracula.svg",
     },
     url: "https://draculatheme.com/",
+  },
+  {
+    title: "Render",
+    category: ["Software", "Hosting"],
+    route: {
+      light: "/library/render_black.svg",
+      dark: "/library/render_white.svg",
+    },
+    wordmark: {
+      light: "/library/render_wordmark_black.svg",
+      dark: "/library/render_wordmark_white.svg",
+    },
+    url: "https://render.com/",
+  },
+  {
+    title: "Xata",
+    category: ["Database", "AI"],
+    route: "/library/xata.svg",
+    wordmark: {
+      light: "/library/xata_wordmark_black.svg",
+      dark: "/library/xata_wordmark_white.svg",
+    },
+    url: "https://xata.io/",
+    brandUrl: "https://xata.io/brand",
+  },
+  {
+    title: "Stripe",
+    category: ["Software", "Payment"],
+    route: "/library/stripe.svg",
+    wordmark: "/library/stripe_wordmark.svg",
+    url: "https://stripe.com/",
+  },
+  {
+    title: "Interfere",
+    category: "Software",
+    route: {
+      light: "/library/interfere_black.svg",
+      dark: "/library/interfere_white.svg",
+    },
+    wordmark: {
+      light: "/library/interfere_wordmark_black.svg",
+      dark: "/library/interfere_wordmark_white.svg",
+    },
+    url: "https://interfere.com/",
   },
 ];
