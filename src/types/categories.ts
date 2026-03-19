@@ -37,4 +37,5 @@ export type Category =
   | "Nuxt"
   | "Microsoft"
   | "Privacy"
-  | "Communications";
+  | "Communications"
+  | "Themes";

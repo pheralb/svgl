@@ -2445,12 +2445,6 @@ export const svgs: iSVG[] = [
     url: "https://reflex.dev/",
   },
   {
-    title: "Stripe",
-    category: ["Software", "Payment"],
-    route: "/library/stripe.svg",
-    url: "https://stripe.com/",
-  },
-  {
     title: "Linux",
     category: "Software",
     route: "/library/linux.svg",
@@ -3407,15 +3401,6 @@ export const svgs: iSVG[] = [
     category: ["Community"],
     route: "/library/manzdev.svg",
     url: "https://manz.dev/",
-  },
-  {
-    title: "Afordin",
-    category: ["Community"],
-    route: {
-      light: "/library/afordin-light.svg",
-      dark: "/library/afordin-dark.svg",
-    },
-    url: "https://github.com/Afordin",
   },
   {
     title: "MediaWiki",
@@ -4529,5 +4514,90 @@ export const svgs: iSVG[] = [
     category: 'Devtool',
     route: '/library/windmill.svg',
     url: 'https://www.windmill.dev/'
-  }
+  },
+  {
+    title: "vlt",
+    category: "Software",
+    route: {
+      light: "/library/vlt-light.svg",
+      dark: "/library/vlt-dark.svg",
+    },
+    wordmark: {
+      light: "/library/vlt-wordmark-light.svg",
+      dark: "/library/vlt-wordmark-dark.svg",
+    },
+    url: "https://www.vlt.sh",
+  },
+  {
+    title: "OpenCode",
+    category: ["AI", "Software"],
+    route: {
+      light: "/library/opencode.svg",
+      dark: "/library/opencode-dark.svg",
+    },
+    wordmark: {
+      light: "/library/opencode-wordmark.svg",
+      dark: "/library/opencode-wordmark-dark.svg",
+    },
+    url: "https://opencode.ai/",
+  },
+  {
+    title: "OpenClaw",
+    category: ["AI", "Software"],
+    route: "/library/openclaw.svg",
+    url: "https://openclaw.ai/",
+  },
+  {
+    title: "Dracula",
+    category: ["Themes"],
+    route: {
+      light: "/library/dracula-dark.svg",
+      dark: "/library/dracula.svg",
+    },
+    url: "https://draculatheme.com/",
+  },
+  {
+    title: "Render",
+    category: ["Software", "Hosting"],
+    route: {
+      light: "/library/render_black.svg",
+      dark: "/library/render_white.svg",
+    },
+    wordmark: {
+      light: "/library/render_wordmark_black.svg",
+      dark: "/library/render_wordmark_white.svg",
+    },
+    url: "https://render.com/",
+  },
+  {
+    title: "Xata",
+    category: ["Database", "AI"],
+    route: "/library/xata.svg",
+    wordmark: {
+      light: "/library/xata_wordmark_black.svg",
+      dark: "/library/xata_wordmark_white.svg",
+    },
+    url: "https://xata.io/",
+    brandUrl: "https://xata.io/brand",
+  },
+  {
+    title: "Stripe",
+    category: ["Software", "Payment"],
+    route: "/library/stripe.svg",
+    wordmark: "/library/stripe_wordmark.svg",
+    url: "https://stripe.com/",
+  },
+  {
+    title: "Interfere",
+    category: "Software",
+    route: {
+      light: "/library/interfere_black.svg",
+      dark: "/library/interfere_white.svg",
+    },
+    wordmark: {
+      light: "/library/interfere_wordmark_black.svg",
+      dark: "/library/interfere_wordmark_white.svg",
+    },
+    url: "https://interfere.com/",
+  },
 ];
