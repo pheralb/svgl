@@ -4594,4 +4594,15 @@ export const svgs: iSVG[] = [
     },
     url: "https://interfere.com/",
   },
+  {
+  title: 'Orshot',
+  category: ["Platform", "Design", "Automation", "AI"],
+  route: "/library/orshot.svg",
+  wordmark: {
+    light: "/library/orshot_wordmark_light.svg",
+    dark: "/library/orshot_wordmark_dark.svg",
+  },
+  url: 'https://orshot.com',
+  brandUrl: "https://orshot.com/brand",
+  }
 ];
