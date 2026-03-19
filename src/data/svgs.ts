@@ -4598,7 +4598,10 @@ export const svgs: iSVG[] = [
   title: 'Orshot',
   category: ["Platform", "Design", "Automation", "AI"],
   route: "/library/orshot.svg",
-  wordmark: "/library/orshot_wordmark.svg",
+  wordmark: {
+    light: "/library/orshot_wordmark_light.svg",
+    dark: "/library/orshot_wordmark_dark.svg",
+  },
   url: 'https://orshot.com',
   brandUrl: "https://orshot.com/brand",
   }
