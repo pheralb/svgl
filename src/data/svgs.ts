@@ -2,6 +2,16 @@ import type { iSVG } from "@/types/svg";
 
 export const svgs: iSVG[] = [
   {
+    title: "AT Protocol",
+    category: ["Protocol"],
+    route: "/library/atproto-icon.svg",
+    wordmark: {
+      light: "/library/atproto-wordmark-light.svg",
+      dark: "/library/atproto-wordmark-dark.svg",
+    },
+    url: "https://atproto.com",
+  },
+  {
     title: "NVIDIA",
     category: ["AI", "Hardware", "Platform"],
     route: {
