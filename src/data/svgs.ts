@@ -2,17 +2,17 @@ import type { iSVG } from "@/types/svg";
 
 export const svgs: iSVG[] = [
   {
-    title: 'Granola',
-    category: 'AI',
+    title: "Granola",
+    category: "AI",
     route: {
-      light: '/library/granola-light.svg',
-      dark: '/library/granola-dark.svg'
+      light: "/library/granola-light.svg",
+      dark: "/library/granola-dark.svg",
     },
     wordmark: {
-      light: '/library/granola-wordmark-light.svg',
-      dark: '/library/granola-wordmark-dark.svg'
+      light: "/library/granola-wordmark-light.svg",
+      dark: "/library/granola-wordmark-dark.svg",
     },
-    url: 'https://www.granola.ai/'
+    url: "https://www.granola.ai/",
   },
   {
     title: "NVIDIA",
@@ -4608,14 +4608,27 @@ export const svgs: iSVG[] = [
     url: "https://interfere.com/",
   },
   {
-  title: 'Orshot',
-  category: ["Platform", "Design", "Automation", "AI"],
-  route: "/library/orshot.svg",
-  wordmark: {
-    light: "/library/orshot_wordmark_light.svg",
-    dark: "/library/orshot_wordmark_dark.svg",
+    title: "Orshot",
+    category: ["Platform", "Design", "Automation", "AI"],
+    route: "/library/orshot.svg",
+    wordmark: {
+      light: "/library/orshot_wordmark_light.svg",
+      dark: "/library/orshot_wordmark_dark.svg",
+    },
+    url: "https://orshot.com",
+    brandUrl: "https://orshot.com/brand",
   },
-  url: 'https://orshot.com',
-  brandUrl: "https://orshot.com/brand",
-  }
+  {
+    title: "Codex",
+    category: ["AI", "Software"],
+    route: {
+      light: "/library/codex_light.svg",
+      dark: "/library/codex_dark.svg",
+    },
+    wordmark: {
+      light: "/library/codex_wordmark_light.svg",
+      dark: "/library/codex_wordmark_dark.svg",
+    },
+    url: "https://openai.com/codex/",
+  },
 ];
