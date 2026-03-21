@@ -2,6 +2,19 @@ import type { iSVG } from "@/types/svg";
 
 export const svgs: iSVG[] = [
   {
+    title: 'Granola',
+    category: 'AI',
+    route: {
+      light: '/library/granola-light.svg',
+      dark: '/library/granola-dark.svg'
+    },
+    wordmark: {
+      light: '/library/granola-wordmark-light.svg',
+      dark: '/library/granola-wordmark-dark.svg'
+    },
+    url: 'https://www.granola.ai/'
+  },
+  {
     title: "NVIDIA",
     category: ["AI", "Hardware", "Platform"],
     route: {
