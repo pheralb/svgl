@@ -4631,4 +4631,10 @@ export const svgs: iSVG[] = [
     },
     url: "https://openai.com/codex/",
   },
+  {
+    title: "Leedlime",
+    category: ["AI", "Software", "Marketing", "Automation"],
+    route: "/library/leedlime.svg",
+    url: "https://leedlime.com",
+  }
 ];
