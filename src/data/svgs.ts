@@ -4633,8 +4633,8 @@ export const svgs: iSVG[] = [
   },
   {
     title: "Leedlime",
-    category: ["AI", "Software", "Marketing", "Automation"],
+    category: ["AI", "Software", "Automation"],
     route: "/library/leedlime.svg",
     url: "https://leedlime.com",
-  }
+  },
 ];
