@@ -4637,4 +4637,10 @@ export const svgs: iSVG[] = [
     route: "/library/leedlime.svg",
     url: "https://leedlime.com",
   },
+  {
+    title: "Edge-TTS",
+    category: "AI",
+    route: "/library/edge-tts.svg",
+    url: "https://edge-tts.com/"
+  }
 ];
