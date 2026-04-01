@@ -4637,4 +4637,16 @@ export const svgs: iSVG[] = [
     route: "/library/leedlime.svg",
     url: "https://leedlime.com",
   },
+  {
+    "title": "Nexty.dev",
+    "category": "SaaS Template",
+    "route": "/library/nexxty.svg",
+    "url": "Website"
+  },
+  {
+    "title": "Free OG Image",
+    "category": "Design Tool",
+    "route": "/library/ogimage.svg",
+    "url": "Website"
+  }
 ];
