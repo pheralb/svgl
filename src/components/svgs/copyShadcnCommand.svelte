@@ -3,11 +3,8 @@
   import CodeBlock from "@/components/codeBlock.svelte";
   import ArrowUpRightIcon from "@lucide/svelte/icons/arrow-up-right";
 
-  import { settingsStore, type PackageManager } from "@/stores/settings.store";
-
-  import Shadcn from "@/components/logos/shadcn.svelte";
-  import OpenWithV0 from "@/components/svgs/openWithV0.svelte";
   import ExternalLink from "@/components/ui/links/external-link.svelte";
+  import { settingsStore, type PackageManager } from "@/stores/settings.store";
 
   interface Props {
     svgTitle: string;
@@ -20,6 +17,7 @@
     pnpm: "pnpm dlx shadcn@latest add",
     yarn: "yarn dlx shadcn@latest add",
     bun: "bunx shadcn@latest add",
+    vlt: "vlx shadcn@latest add",
   };
 
   let pkg = $derived($settingsStore.packageManager);
@@ -32,10 +30,17 @@
   );
 </script>
 
-<div class="flex w-full items-center space-x-2">
+<div class="flex items-center justify-between">
+  <p class="text-sm text-neutral-700 dark:text-neutral-300">
+    shadcn/ui Command
+  </p>
   <ExternalLink
     href="/docs/shadcn-ui"
-    className={buttonVariants({ variant: "outline", class: "w-full" })}
+    className={buttonVariants({
+      variant: "outline",
+      size: "sm",
+      class: "w-auto",
+    })}
   >
     <span>Setup Registry</span>
     <ArrowUpRightIcon
@@ -43,6 +48,5 @@
       class="text-neutral-500 dark:text-neutral-400"
     />
   </ExternalLink>
-  <OpenWithV0 svgTitle={svgFormatTitle} />
 </div>
-<CodeBlock code={`${shadcnCommand} @svgl/${svgFormatTitle}`} Icon={Shadcn} />
+<CodeBlock code={`${shadcnCommand} @svgl/${svgFormatTitle}`} />

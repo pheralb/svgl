@@ -74,7 +74,7 @@
   />
   {#if !searchValue}
     <div
-      class="absolute top-1/2 right-2 flex -translate-y-1/2 items-center space-x-1.5 rounded-md p-1 text-sm text-neutral-400 transition-colors hover:text-neutral-600"
+      class="absolute top-1/2 right-2 flex -translate-y-1/2 items-center space-x-1.5 rounded-md p-1 text-sm text-neutral-400 transition-colors hover:text-neutral-600 dark:text-neutral-400 dark:hover:text-neutral-300"
     >
       <CommandIcon size={16} strokeWidth={1.5} />
       <span class="select-none">K</span>

@@ -1,79 +1,87 @@
 <script lang="ts">
-  import type { iSVG } from "@/types/svg";
   import type { PageProps } from "./$types";
 
   import { cn } from "@/utils/cn";
+  import { deleteParam } from "@/utils/searchParams";
   import { searchSvgsWithFuse } from "@/utils/searchWithFuse";
 
   // Components:
   import Grid from "@/components/grid.svelte";
   import Search from "@/components/search.svelte";
+  import PageCard from "@/components/pageCard.svelte";
   import SvgCard from "@/components/svgs/svgCard.svelte";
   import Container from "@/components/container.svelte";
-  import SearchXIcon from "@lucide/svelte/icons/search-x";
-
-  import PageCard from "@/components/pageCard.svelte";
   import PageHeader from "@/components/pageHeader.svelte";
+  import SortSvgs from "@/components/svgs/sortSvgs.svelte";
+  import SvgNotFound from "@/components/svgs/svgNotFound.svelte";
+  import { Button, buttonVariants } from "@/components/ui/button";
+
+  import SearchXIcon from "@lucide/svelte/icons/search-x";
   import FolderIcon from "@lucide/svelte/icons/folder-open";
   import ArrowLeftIcon from "@lucide/svelte/icons/arrow-left";
-  import { Button, buttonVariants } from "@/components/ui/button";
-  import SortSvgs from "@/components/svgs/sortSvgs.svelte";
-  import { deleteParam } from "@/utils/searchParams";
-  import SvgNotFound from "@/components/svgs/svgNotFound.svelte";
+  import ChevronDownIcon from "@lucide/svelte/icons/chevron-down";
+  import ChevronUpIcon from "@lucide/svelte/icons/chevron-up";
 
   // SSR Data:
   let { data }: PageProps = $props();
-  const directoryData = $derived(data);
 
   // States:
-  let maxDisplay = 30;
-  let searchTerm = $state<string>(data.searchTerm || "");
-  let filteredSvgs = $derived<iSVG[]>(data.initialSvgs);
-  let sorted = $state<boolean>(data.sorted);
-  let showAll = $state<boolean>(false);
+  const INITIAL_DISPLAY = 30;
+  const INCREMENT = 10;
 
-  const updateDisplaySvgs = () => {
-    const data = showAll ? filteredSvgs : filteredSvgs.slice(0, maxDisplay);
-    return data;
-  };
+  let maxDisplay = $state<number>(INITIAL_DISPLAY);
+  let sortOverride = $state<boolean | null>(null);
+  let searchOverride = $state<string | null>(null);
 
-  const searchSvgs = () => {
+  const isSorted = $derived(sortOverride !== null ? sortOverride : data.sorted);
+  const searchTerm = $derived(
+    searchOverride !== null ? searchOverride : data.searchTerm,
+  );
+
+  const filteredSvgs = $derived.by(() => {
     if (!searchTerm) {
-      filteredSvgs = sorted ? data.alphabeticallySorted : data.latestSorted;
-      updateDisplaySvgs();
-      return;
+      return isSorted ? data.alphabeticallySorted : data.latestSorted;
     }
-    const baseData = sorted ? data.alphabeticallySorted : data.latestSorted;
-    filteredSvgs = searchSvgsWithFuse(baseData)
+    const baseData = isSorted ? data.alphabeticallySorted : data.latestSorted;
+    return searchSvgsWithFuse(baseData)
       .search(searchTerm)
       .map((result) => result.item);
-    updateDisplaySvgs();
-  };
+  });
+
+  const displaySvgs = $derived(filteredSvgs.slice(0, maxDisplay));
 
   const handleSearch = (value: string) => {
-    searchTerm = value;
-    searchSvgs();
+    searchOverride = value;
+    maxDisplay = INITIAL_DISPLAY;
   };
 
   const handleClearSearch = () => {
-    searchTerm = "";
+    searchOverride = "";
+    maxDisplay = INITIAL_DISPLAY;
     deleteParam("search");
-    updateDisplaySvgs();
   };
 
-  $effect(() => {
-    updateDisplaySvgs();
-  });
+  const handleShowMore = () => {
+    maxDisplay += INCREMENT;
+  };
+
+  const handleShowLess = () => {
+    maxDisplay = INITIAL_DISPLAY;
+  };
+
+  const handleShowAll = () => {
+    maxDisplay = filteredSvgs.length;
+  };
 </script>
 
 <svelte:head>
-  <title>{directoryData.category} SVG logos - Svgl</title>
+  <title>{data.category} SVG logos - Svgl</title>
 </svelte:head>
 
 <Search
   searchValue={searchTerm}
   onSearch={handleSearch}
-  placeholder={`Search ${directoryData.category}'s SVGs...`}
+  placeholder={`Search ${data.category}'s SVGs...`}
 />
 
 <PageCard
@@ -103,7 +111,7 @@
         <FolderIcon class="ml-1" size={18} strokeWidth={1.5} />
       {/if}
       <p>
-        {directoryData.category}
+        {data.category}
       </p>
       <span>-</span>
       {#if !searchTerm}
@@ -117,23 +125,52 @@
         </p>
       {/if}
     </div>
-    <SortSvgs
-      className={cn(filteredSvgs.length === 0 && "hidden")}
-      isSorted={sorted}
-      onSortedChange={(value) => {
-        sorted = value;
-        searchSvgs();
-      }}
-    />
+    <div class="flex items-center space-x-2">
+      <SortSvgs
+        className={cn(filteredSvgs.length === 0 && "hidden")}
+        {isSorted}
+        onSortedChange={(value) => {
+          sortOverride = value;
+          maxDisplay = INITIAL_DISPLAY;
+        }}
+      />
+      {#if filteredSvgs.length > maxDisplay}
+        <Button variant="ghost" class="px-2.5" onclick={handleShowAll}>
+          <span>Show All</span>
+        </Button>
+      {/if}
+      {#if maxDisplay > INITIAL_DISPLAY && filteredSvgs.length > INITIAL_DISPLAY}
+        <Button variant="ghost" class="px-2.5" onclick={handleShowLess}>
+          <span>Show Less</span>
+          <ChevronUpIcon size={16} strokeWidth={2} />
+        </Button>
+      {/if}
+    </div>
   </PageHeader>
   <Container className="my-6">
     <Grid>
-      {#each filteredSvgs as svg (svg.id)}
+      {#each displaySvgs as svg (svg.id)}
         <SvgCard svgInfo={svg} />
       {/each}
     </Grid>
+    {#if filteredSvgs.length > maxDisplay}
+      <div class="mt-6 flex justify-center">
+        <Button
+          variant="outline"
+          size="lg"
+          class="px-2.5"
+          onclick={handleShowMore}
+        >
+          <span>Show More</span>
+          <span class="text-neutral-600 dark:text-neutral-400">
+            (+ {Math.min(INCREMENT, filteredSvgs.length - maxDisplay)} SVGs)
+          </span>
+          <ChevronDownIcon size={16} strokeWidth={2} />
+        </Button>
+      </div>
+    {/if}
     {#if filteredSvgs.length === 0}
-      <SvgNotFound svgTitle={searchTerm} category={directoryData.category} />
+      <SvgNotFound svgTitle={searchTerm} category={data.category} />
     {/if}
   </Container>
 </PageCard>
