@@ -409,6 +409,12 @@ export const svgs: iSVG[] = [
     url: "https://www.locofy.ai/",
   },
   {
+    title: "Runframe",
+    category: "Software",
+    route: "/library/runframe.svg",
+    url: "https://runframe.io/",
+  },
+  {
     title: "Runway",
     category: "AI",
     route: "/library/runway.svg",
