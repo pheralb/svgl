@@ -4637,4 +4637,17 @@ export const svgs: iSVG[] = [
     route: "/library/leedlime.svg",
     url: "https://leedlime.com",
   },
+  {
+    title: "Cerebras",
+    category: ["AI"],
+    route: {
+      light: "/library/cerebras-dark.svg",
+      dark: "/library/cerebras.svg",
+    },
+    wordmark: {
+      light: "/library/cerebras-wordmark.svg",
+      dark: "/library/cerebras-wordmark-dark.svg",
+    },
+    url: "https://www.cerebras.ai/",
+  },
 ];
