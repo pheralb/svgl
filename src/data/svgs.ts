@@ -4204,6 +4204,7 @@ export const svgs: iSVG[] = [
     title: "Cursor",
     category: ["Software"],
     brandUrl: "https://cursor.com/brand",
+    loftlyyUrl: "https://www.loftlyy.com/en/cursor",
     route: {
       light: "/library/cursor_light.svg",
       dark: "/library/cursor_dark.svg",

@@ -12,6 +12,7 @@ export interface iSVG {
   route: string | ThemeOptions;
   wordmark?: string | ThemeOptions;
   brandUrl?: string;
+  loftlyyUrl?: string;
   shadcnCommand?: string;
   url: string;
 }

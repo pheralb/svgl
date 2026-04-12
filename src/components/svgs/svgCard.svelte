@@ -13,9 +13,11 @@
   import SparklesIcon from "@lucide/svelte/icons/sparkles";
   import BaselineIcon from "@lucide/svelte/icons/baseline";
   import EllipsisIcon from "@lucide/svelte/icons/ellipsis";
+  import SwatchBookIcon from "@lucide/svelte/icons/swatch-book";
 
   // UI Components:
   import * as Popover from "@/components/ui/popover";
+  import * as DropdownMenu from "@/components/ui/dropdown-menu";
   import { badgeVariants } from "@/components/ui/badge";
   import { Button, buttonVariants } from "@/components/ui/button";
   import InternalLink from "@/components/ui/links/internal-link.svelte";
@@ -25,6 +27,8 @@
   import CopySvg from "@/components/svgs/copySvg.svelte";
   import DownloadSvg from "@/components/svgs/downloadSvg.svelte";
   import AddToFavorite from "@/components/svgs/addToFavorite.svelte";
+  import ArrowUpRight from "@lucide/svelte/icons/arrow-up-right";
+  import Flower from "@lucide/svelte/icons/flower";
 
   // Props:
   interface Props {
@@ -36,6 +40,7 @@
   // States:
   let wordmarkSvg = $state<boolean>(false);
   let moreTagsOptions = $state<boolean>(false);
+  let brandResourcesOpen = $state<boolean>(false);
 
   // Icon Stroke & Size:
   let iconStroke = 1.8;
@@ -55,19 +60,53 @@
 >
   <!-- Image Options -->
   <div class="flex w-full items-center justify-end space-x-3 pb-0.5">
-    {#if svgInfo.brandUrl !== undefined}
-      <a
-        href={svgInfo.brandUrl}
-        title="Brand Assets"
-        target="_blank"
-        rel="noopener noreferrer"
-        class={cn(
-          "cursor-pointer transition-colors",
-          "text-neutral-500 hover:text-black dark:text-neutral-400 dark:hover:text-white",
-        )}
+    {#if svgInfo.brandUrl !== undefined || svgInfo.loftlyyUrl !== undefined}
+      <DropdownMenu.Root
+        open={brandResourcesOpen}
+        onOpenChange={(isOpen) => (brandResourcesOpen = isOpen)}
       >
-        <PaletteIcon size={iconSize} strokeWidth={iconStroke} />
-      </a>
+        <DropdownMenu.Trigger
+          title="Brand Resources"
+          class={cn(
+            "cursor-pointer transition-colors",
+            "text-neutral-500 hover:text-black dark:text-neutral-400 dark:hover:text-white",
+          )}
+        >
+          {#if brandResourcesOpen}
+            <XIcon size={iconSize} strokeWidth={iconStroke} />
+          {:else}
+            <SwatchBookIcon size={iconSize} strokeWidth={iconStroke} />
+          {/if}
+        </DropdownMenu.Trigger>
+        <DropdownMenu.Content align="start">
+          {#if svgInfo.brandUrl !== undefined}
+            <DropdownMenu.Item>
+              <ExternalLink
+                href={svgInfo.brandUrl}
+                title="Brand Assets"
+                className="flex w-full items-center gap-2"
+              >
+                <PaletteIcon size={14} strokeWidth={iconStroke} />
+                <span>Brand Assets</span>
+                <ArrowUpRight size={12} class="ml-auto opacity-50" />
+              </ExternalLink>
+            </DropdownMenu.Item>
+          {/if}
+          {#if svgInfo.loftlyyUrl !== undefined}
+            <DropdownMenu.Item>
+              <ExternalLink
+                href={svgInfo.loftlyyUrl}
+                title="Loftlyy"
+                className="flex w-full items-center gap-2"
+              >
+                <Flower size={14} strokeWidth={iconStroke} />
+                <span>Loftlyy</span>
+                <ArrowUpRight size={12} class="ml-auto opacity-50" />
+              </ExternalLink>
+            </DropdownMenu.Item>
+          {/if}
+        </DropdownMenu.Content>
+      </DropdownMenu.Root>
     {/if}
     <AddToFavorite svg={svgInfo} />
   </div>
