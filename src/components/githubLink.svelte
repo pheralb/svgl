@@ -26,7 +26,7 @@
 </script>
 
 <ExternalLink
-  title="pheralb/svgl Repository"
+  title={`View on GitHub (${stars.toLocaleString()} stars)`}
   href={globals.githubUrl}
   className={cn(
     buttonVariants({ variant: "ghost" }),

@@ -5,7 +5,6 @@
 
   import ModeToggle from "@/components/modeToggle.svelte";
   import GithubLink from "@/components/githubLink.svelte";
-  import Twitter from "@/components/logos/twitter.svelte";
   import HomeLink from "@/components/layout/homeLink.svelte";
   import SettingsMenu from "@/components/settings/settingsMenu.svelte";
   import SidebarMobileMenu from "@/components/layout/sidebarMobileMenu.svelte";
@@ -14,6 +13,7 @@
   import { buttonVariants } from "@/components/ui/button";
   import SendIcon from "@/components/ui/moving-icons/send-icon.svelte";
   import ExternalLink from "@/components/ui/links/external-link.svelte";
+  import HeartHandshake from "@lucide/svelte/icons/heart-handshake";
 </script>
 
 <header
@@ -27,14 +27,14 @@
     <div class="flex h-5 items-center space-x-2.5">
       <div class="flex items-center space-x-1.5">
         <ExternalLink
-          title="X/Twitter"
-          href={globals.twitterUrl}
+          title="Sponsor me on GitHub"
+          href={globals.sponsorLink}
           className={cn(
             buttonVariants({ variant: "ghost", size: "icon" }),
             "hover:bg-neutral-200 dark:hover:bg-neutral-800",
           )}
         >
-          <Twitter size={18} />
+          <HeartHandshake size={20} strokeWidth={1.5} />
         </ExternalLink>
         <ModeToggle
           className={cn(
