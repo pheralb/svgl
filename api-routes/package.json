@@ -1,7 +1,7 @@
 {
   "name": "@svgl/api",
   "author": "@pheralb_",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "SVGL API built with Hono & Cloudflare",
   "private": true,
   "license": "MIT",
@@ -12,10 +12,10 @@
   "dependencies": {
     "@upstash/ratelimit": "2.0.8",
     "@upstash/redis": "1.37.0",
-    "hono": "4.12.7"
+    "hono": "4.12.12"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "4.20260312.1",
-    "wrangler": "4.72.0"
+    "@cloudflare/workers-types": "4.20260412.1",
+    "wrangler": "4.81.1"
   }
 }
