@@ -4651,4 +4651,17 @@ export const svgs: iSVG[] = [
     },
     url: "https://www.cerebras.ai/",
   },
+  {
+    title: "FeedBoss",
+    category: ["Software", "AI", "Automation", "Analytics", 'Social'],
+    route: {
+      light: "/library/feedboss_light.svg",
+      dark: "/library/feedboss_dark.svg",
+    },
+    wordmark: {
+      light: "/library/feedboss_wordmark_light.svg",
+      dark: "/library/feedboss_wordmark_dark.svg",
+    },
+    url: "https://feedboss.ai",
+  },
 ];
