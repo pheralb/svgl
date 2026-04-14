@@ -4556,6 +4556,12 @@ export const svgs: iSVG[] = [
     url: "https://openclaw.ai/",
   },
   {
+    title: "OpenHook",
+    category: ["Devtool", "Platform"],
+    route: "/library/openhook.svg",
+    url: "https://openhook.dev/",
+  },
+  {
     title: "Dracula",
     category: ["Themes"],
     route: {
