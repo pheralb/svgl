@@ -4651,4 +4651,10 @@ export const svgs: iSVG[] = [
     },
     url: "https://www.cerebras.ai/",
   },
+  {
+    title: "Runframe",
+    category: ["Software", "DevOps", "Tools"],
+    route: "/library/runframe.svg",
+    url: "https://runframe.io",
+  },
 ];
