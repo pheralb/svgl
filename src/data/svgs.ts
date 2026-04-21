@@ -1114,6 +1114,16 @@ export const svgs: iSVG[] = [
     url: "https://www.microsoft.com/microsoft-365/powerpoint",
   },
   {
+    title: "Microsoft Power BI",
+    category: ["Software", "Analytics", "Microsoft"],
+    route: "/library/microsoft-powerpi.svg",
+    wordmark: {
+      light: "/library/microsoft-powerpi-wordmark.svg",
+      dark: "/library/microsoft-powerpi-wordmark-dark.svg",
+    },
+    url: "https://app.powerbi.com/",
+  },
+  {
     title: "Microsoft SharePoint",
     category: ["Hosting", "Software", "Community", "Microsoft"],
     route: "/library/microsoft-sharepoint.svg",
@@ -4650,5 +4660,12 @@ export const svgs: iSVG[] = [
       dark: "/library/cerebras-wordmark-dark.svg",
     },
     url: "https://www.cerebras.ai/",
+  },
+  {
+    title: "DBeaver",
+    category: "Database",
+    route: "/library/dbeaver.svg",
+    wordmark: "/library/dbeaver-wordmark.svg",
+    url: "https://dbeaver.io",
   },
 ];

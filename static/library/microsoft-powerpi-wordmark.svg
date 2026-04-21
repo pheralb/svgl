@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="244" height="64" viewBox="0 0 244 64" fill="none">
+  <title>Microsoft Power BI wordmark</title>
+  <defs>
+    <linearGradient id="powerbi-wordmark-a" x1="50%" x2="50%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#EBBB14"/>
+      <stop offset="100%" stop-color="#B25400"/>
+    </linearGradient>
+    <linearGradient id="powerbi-wordmark-d" x1="50%" x2="50%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#F9E583"/>
+      <stop offset="100%" stop-color="#DE9800"/>
+    </linearGradient>
+    <linearGradient id="powerbi-wordmark-e" x1="50%" x2="50%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#F9E68B"/>
+      <stop offset="100%" stop-color="#F3CD32"/>
+    </linearGradient>
+    <filter id="powerbi-wordmark-b" width="136.5%" height="116.9%" x="-9.1%" y="-6.3%" filterUnits="objectBoundingBox">
+      <feOffset dx="20" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="10"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0530211976 0"/>
+    </filter>
+    <path id="powerbi-wordmark-c" d="M346 604v26H153c-14.36 0-26-11.64-26-26V183c0-14.36 11.64-26 26-26h167c14.36 0 26 11.64 26 26z"/>
+  </defs>
+  <g transform="translate(4 4) scale(.086)">
+    <g fill="none" fill-rule="evenodd" transform="translate(77.5)">
+      <rect width="219" height="630" x="256" fill="url(#powerbi-wordmark-a)" rx="26"/>
+      <use xlink:href="#powerbi-wordmark-c" fill="#000" filter="url(#powerbi-wordmark-b)"/>
+      <use xlink:href="#powerbi-wordmark-c" fill="url(#powerbi-wordmark-d)"/>
+      <path fill="url(#powerbi-wordmark-e)" d="M219 604v26H26c-14.36 0-26-11.64-26-26V341c0-14.36 11.64-26 26-26h167c14.36 0 26 11.64 26 26z"/>
+    </g>
+  </g>
+  <text x="74" y="33" fill="#111827" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="300" dominant-baseline="middle">Power BI</text>
+</svg>
