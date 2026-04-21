@@ -4668,4 +4668,10 @@ export const svgs: iSVG[] = [
     wordmark: "/library/dbeaver-wordmark.svg",
     url: "https://dbeaver.io",
   },
+  {
+    title: "Runframe",
+    category: ["Software", "DevOps", "Tools"],
+    route: "/library/runframe.svg",
+    url: "https://runframe.io",
+  },
 ];
