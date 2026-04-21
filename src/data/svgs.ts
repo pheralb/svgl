@@ -4657,4 +4657,10 @@ export const svgs: iSVG[] = [
     route: "/library/runframe.svg",
     url: "https://runframe.io",
   },
+  {
+    title: "BLEN",
+    category: "Software",
+    route: "/library/blen.svg",
+    url: "https://blencorp.com",
+  },
 ];
