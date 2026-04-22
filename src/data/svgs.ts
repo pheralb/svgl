@@ -2,6 +2,16 @@ import type { iSVG } from "@/types/svg";
 
 export const svgs: iSVG[] = [
   {
+    title: "MonoDesk",
+    category: "Software",
+    route: "/library/monodesk.svg",
+    wordmark: {
+      light: "/library/monodesk-wordmark-light.svg",
+      dark: "/library/monodesk-wordmark-dark.svg",
+    },
+    url: "https://monodesk.com",
+  },
+  {
     title: "Granola",
     category: "AI",
     route: {
