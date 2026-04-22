@@ -4657,4 +4657,18 @@ export const svgs: iSVG[] = [
     route: "/library/runframe.svg",
     url: "https://runframe.io",
   },
+  {
+    title: "Databuddy",
+    category: "Analytics",
+    route: {
+      light: "/library/databuddy-light.svg",
+      dark: "/library/databuddy-dark.svg"
+    },
+    wordmark: {
+      light: "/library/databuddy-wordmark-light.svg",
+      dark: "/library/databuddy-wordmark-dark.svg"
+    },
+    brandUrl: "https://databuddy.cc/branding",
+    url: "https://databuddy.cc",
+  },
 ];
