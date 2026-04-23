@@ -4663,4 +4663,10 @@ export const svgs: iSVG[] = [
     route: "/library/runframe.svg",
     url: "https://runframe.io",
   },
+  {
+    title: "Bluebarry",
+    category: "Software",
+    route: "/library/bluebarry.svg",
+    url: "https://bluebarry.ai",
+  },
 ];
