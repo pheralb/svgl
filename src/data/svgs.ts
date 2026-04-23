@@ -4672,7 +4672,7 @@ export const svgs: iSVG[] = [
     url: "https://databuddy.cc",
   },
   {
-    title: "Databuddy",
+    title: "Databuddy Secondary",
     category: "Analytics",
     route: {
       light: "/library/databuddy-secondary-light.svg",
