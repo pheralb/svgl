@@ -4663,4 +4663,10 @@ export const svgs: iSVG[] = [
     route: "/library/runframe.svg",
     url: "https://runframe.io",
   },
+  {
+    title: "Edge-TTS",
+    category: "AI",
+    route: "/library/edge-tts.svg",
+    url: "https://edge-tts.com/"
+  }
 ];
