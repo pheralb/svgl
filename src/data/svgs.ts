@@ -4661,12 +4661,22 @@ export const svgs: iSVG[] = [
     title: "Databuddy",
     category: "Analytics",
     route: {
-      light: "/library/databuddy-light.svg",
-      dark: "/library/databuddy-dark.svg"
+      light: "/library/databuddy-primary-light.svg",
+      dark: "/library/databuddy--primary-dark.svg"
     },
     wordmark: {
       light: "/library/databuddy-wordmark-light.svg",
       dark: "/library/databuddy-wordmark-dark.svg"
+    },
+    brandUrl: "https://databuddy.cc/branding",
+    url: "https://databuddy.cc",
+  },
+  {
+    title: "Databuddy",
+    category: "Analytics",
+    route: {
+      light: "/library/databuddy-secondary-light.svg",
+      dark: "/library/databuddy-secondary-dark.svg"
     },
     brandUrl: "https://databuddy.cc/branding",
     url: "https://databuddy.cc",
