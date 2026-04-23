@@ -1,5 +1,6 @@
 export type Category =
   | "AI"
+  | "Adobe"
   | "Software"
   | "Hardware"
   | "Library"
