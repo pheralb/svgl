@@ -4663,4 +4663,10 @@ export const svgs: iSVG[] = [
     route: "/library/runframe.svg",
     url: "https://runframe.io",
   },
+  {
+    title: "EmerusLabs",
+    category: "Software",
+    route: "/library/EmerusLabs.svg",
+    url: "https://EmerusLabs.com",
+  },
 ];
