@@ -4677,4 +4677,16 @@ export const svgs: iSVG[] = [
     url: "https://nano.org",
     brandUrl: "https://assets.nano.org/",
   },
+  {
+    title: "Bruno",
+    category: ["Software", "Devtool"],
+    route: "/library/bruno.svg",
+    url: "https://www.usebruno.com/",
+  },
+  {
+    title: "Beekeeper Studio",
+    category: ["Software", "Database"],
+    route: "/library/beekeeper-studio.svg",
+    url: "https://www.beekeeperstudio.io/",
+  },
 ];
