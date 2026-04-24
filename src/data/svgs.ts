@@ -4677,4 +4677,10 @@ export const svgs: iSVG[] = [
     url: "https://nano.org",
     brandUrl: "https://assets.nano.org/",
   },
+  {
+    title: "LangChain",
+    category: ["AI", "Library"],
+    route: "/library/langchain.svg",
+    url: "https://www.langchain.com/",
+  },
 ];
