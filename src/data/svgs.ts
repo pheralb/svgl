@@ -4663,4 +4663,18 @@ export const svgs: iSVG[] = [
     route: "/library/runframe.svg",
     url: "https://runframe.io",
   },
+  {
+    title: "Nano",
+    category: ["Crypto"],
+    route: {
+      light: "/library/nano.svg",
+      dark: "/library/nano-white.svg",
+    },
+    wordmark: {
+      light: "/library/nano-wordmark.svg",
+      dark: "/library/nano-wordmark-white.svg",
+    },
+    url: "https://nano.org",
+    brandUrl: "https://assets.nano.org/",
+  },
 ];
