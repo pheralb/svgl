@@ -4677,4 +4677,10 @@ export const svgs: iSVG[] = [
     url: "https://nano.org",
     brandUrl: "https://assets.nano.org/",
   },
+  {
+    title: "NotebookLM",
+    category: ["AI", "Google"],
+    route: "/library/notebooklm.svg",
+    url: "https://notebooklm.google.com/",
+  },
 ];
