@@ -4677,4 +4677,15 @@ export const svgs: iSVG[] = [
     url: "https://nano.org",
     brandUrl: "https://assets.nano.org/",
   },
+  {
+    title: "Trello",
+    category: ["Software", "Platform"],
+    route: "/library/trello.svg",
+    wordmark: {
+      light: "/library/trello-wordmark.svg",
+      dark: "/library/trello-wordmark-dark.svg",
+    },
+    url: "https://trello.com/",
+    brandUrl: "https://trello.com/brand",
+  },
 ];
