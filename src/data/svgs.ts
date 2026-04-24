@@ -4677,4 +4677,10 @@ export const svgs: iSVG[] = [
     url: "https://nano.org",
     brandUrl: "https://assets.nano.org/",
   },
+  {
+    title: "Databricks",
+    category: ["AI", "Database", "Platform"],
+    route: "/library/databricks.svg",
+    url: "https://www.databricks.com/",
+  },
 ];
