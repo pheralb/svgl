@@ -4677,4 +4677,10 @@ export const svgs: iSVG[] = [
     url: "https://nano.org",
     brandUrl: "https://assets.nano.org/",
   },
+  {
+    title: "Photopea",
+    category: ["Design", "Software"],
+    route: "/library/photopea.svg",
+    url: "https://www.photopea.com/",
+  },
 ];
