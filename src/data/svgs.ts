@@ -2,6 +2,12 @@ import type { iSVG } from "@/types/svg";
 
 export const svgs: iSVG[] = [
   {
+    title: "Intel",
+    category: ["Hardware", "AI", "Platform"],
+    route: "/library/intel.svg",
+    url: "https://www.intel.com",
+  },
+  {
     title: "Zaia Endless",
     category: ["Software", "AI", "Platform", "Automation"],
     route: "/library/zaia-endless.svg",
