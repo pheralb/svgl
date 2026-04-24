@@ -4677,4 +4677,15 @@ export const svgs: iSVG[] = [
     url: "https://nano.org",
     brandUrl: "https://assets.nano.org/",
   },
+  {
+    title: "ClickUp",
+    category: ["Software", "Platform"],
+    route: "/library/clickup.svg",
+    wordmark: {
+      light: "/library/clickup-wordmark.svg",
+      dark: "/library/clickup-wordmark-dark.svg",
+    },
+    url: "https://clickup.com/",
+    brandUrl: "https://clickup.com/brand",
+  },
 ];
