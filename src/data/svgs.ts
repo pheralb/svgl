@@ -5002,4 +5002,18 @@ export const svgs: iSVG[] = [
     url: "https://www.adobe.com/products/technicalcommunicationsuite",
     brandUrl: "https://www.adobe.com/legal/permissions.html",
   },
+  {, 
+    title: "Nano",
+    category: ["Crypto"],
+    route: {
+      light: "/library/nano.svg",
+      dark: "/library/nano-white.svg",
+    },
+    wordmark: {
+      light: "/library/nano-wordmark.svg",
+      dark: "/library/nano-wordmark-white.svg",
+    },
+    url: "https://nano.org",
+    brandUrl: "https://assets.nano.org/",
+  },
 ];
