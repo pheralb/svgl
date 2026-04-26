@@ -5002,7 +5002,7 @@ export const svgs: iSVG[] = [
     url: "https://www.adobe.com/products/technicalcommunicationsuite",
     brandUrl: "https://www.adobe.com/legal/permissions.html",
   },
-  {, 
+  {
     title: "Nano",
     category: ["Crypto"],
     route: {
