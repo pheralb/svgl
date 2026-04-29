@@ -5017,6 +5017,12 @@ export const svgs: iSVG[] = [
     brandUrl: "https://assets.nano.org/",
   },
   {
+    title: "Photopea",
+    category: ["Design", "Software"],
+    route: "/library/photopea.svg",
+    url: "https://www.photopea.com/",
+  },
+  {
     title: "Trello",
     category: ["Software", "Platform"],
     route: "/library/trello.svg",
