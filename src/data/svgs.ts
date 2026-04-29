@@ -5044,4 +5044,10 @@ export const svgs: iSVG[] = [
     url: "https://clickup.com/",
     brandUrl: "https://clickup.com/brand",
   },
+  {
+    title: "Bluebarry",
+    category: "Software",
+    route: "/library/bluebarry.svg",
+    url: "https://bluebarry.ai",
+  },
 ];
