@@ -4540,6 +4540,12 @@ export const svgs: iSVG[] = [
     url: "https://www.glideapps.com/",
   },
   {
+    title: 'Windmill',
+    category: 'Devtool',
+    route: '/library/windmill.svg',
+    url: 'https://www.windmill.dev/'
+  },
+  {
     title: "vlt",
     category: "Software",
     route: {
