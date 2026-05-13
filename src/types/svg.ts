@@ -8,6 +8,7 @@ export type ThemeOptions = {
 export interface iSVG {
   id?: number;
   title: string;
+  subTitle?: string;
   category: Category | Category[];
   route: string | ThemeOptions;
   wordmark?: string | ThemeOptions;
