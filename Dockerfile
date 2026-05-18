@@ -9,7 +9,7 @@ WORKDIR /app
 # Install dependencies with cache
 FROM base AS deps
 COPY package.json pnpm-lock.yaml .npmrc ./
-RUN pnpm install --frozen-lockfile
+RUN pnpm install
 
 # Build the application
 FROM base AS builder
