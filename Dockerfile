@@ -1,7 +1,7 @@
-FROM node:22.17.0-alpine AS base
+FROM node:24-alpine AS base
 
 # Install pnpm
-RUN npm install -g pnpm@10.13.1
+RUN npm install -g pnpm@11.1.0
 
 # Set working directory
 WORKDIR /app
@@ -19,7 +19,7 @@ RUN pnpm run check:size
 RUN pnpm run build:prod
 
 # Production image
-FROM node:22.17.0-alpine AS runner
+FROM node:24-alpine AS runner
 WORKDIR /app
 
 # Copy necessary files from builder

@@ -22,7 +22,8 @@
   },
   "pnpm": {
     "onlyBuiltDependencies": [
-      "esbuild"
+      "esbuild",
+      "msw"
     ]
   },
   "scripts": {
