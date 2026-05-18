@@ -8,6 +8,16 @@ export const svgs: iSVG[] = [
     url: "https://zaia.app/",
   },
   {
+    title: "LangChain",
+    category: ["AI", "Framework", "Library"],
+    route: "/library/langchain-logo.svg",
+    wordmark: {
+      light: "/library/langchain-wordmark-light.svg",
+      dark: "/library/langchain-wordmark-dark.svg",
+    },
+    url: "https://www.langchain.com/",
+  },
+  {
     title: "Granola",
     category: "AI",
     route: {
@@ -5036,8 +5046,8 @@ export const svgs: iSVG[] = [
     },
     url: "https://trello.com/",
     brandUrl: "https://trello.com/brand",
-   },
-   {
+  },
+  {
     title: "ClickUp",
     category: ["Software", "Platform"],
     route: "/library/clickup.svg",
