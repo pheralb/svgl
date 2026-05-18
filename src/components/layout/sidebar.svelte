@@ -35,7 +35,7 @@
     </nav>
   </aside>
   <main
-    aria-label="Contenido principal"
+    aria-label="Main content"
     class={cn("px-2 md:mr-4 md:ml-56 md:px-0", "overflow-hidden")}
   >
     <slot />
