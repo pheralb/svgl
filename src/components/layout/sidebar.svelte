@@ -34,7 +34,10 @@
       </ScrollArea>
     </nav>
   </aside>
-  <main class={cn("px-2 md:mr-4 md:ml-56 md:px-0", "overflow-hidden")}>
+  <main
+    aria-label="Contenido principal"
+    class={cn("px-2 md:mr-4 md:ml-56 md:px-0", "overflow-hidden")}
+  >
     <slot />
   </main>
 </section>
