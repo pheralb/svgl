@@ -8,7 +8,8 @@ WORKDIR /app
 
 # Install dependencies with cache
 FROM base AS deps
-COPY package.json pnpm-lock.yaml .npmrc ./
+COPY package.json pnpm-lock.yaml ./
+RUN echo "engine-strict=true\nsave-exact=true\napprove-builds=esbuild,msw" > .npmrc
 RUN pnpm install --frozen-lockfile
 
 # Build the application
