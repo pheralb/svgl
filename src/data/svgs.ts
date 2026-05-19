@@ -2,6 +2,19 @@ import type { iSVG } from "@/types/svg";
 
 export const svgs: iSVG[] = [
   {
+    title: 'Rocket.Chat',
+    category: ['Software', 'Communications'],
+    route: {
+      light: '/library/rocketchat-light.svg',
+      dark: '/library/rocketchat-dark.svg',
+    },
+    wordmark: {
+      light: '/library/rocketchat-wordmark-light.svg',
+      dark: '/library/rocketchat-wordmark-dark.svg',
+    },
+    url: 'https://www.rocket.chat',
+  },
+  {
     title: "Zaia Endless",
     category: ["Software", "AI", "Platform", "Automation"],
     route: "/library/zaia-endless.svg",
