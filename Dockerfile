@@ -1,12 +1,9 @@
 FROM node:24-alpine AS base
 
-# Install pnpm
-RUN npm install -g pnpm@11.1.0
+RUN corepack enable && corepack prepare pnpm@11.1.0 --activate
 
-# Set working directory
 WORKDIR /app
 
-# Install dependencies with cache
 FROM base AS deps
 COPY package.json pnpm-lock.yaml .npmrc ./
 RUN pnpm install --frozen-lockfile
@@ -20,6 +17,7 @@ RUN pnpm run build:prod
 
 # Production image
 FROM node:24-alpine AS runner
+RUN corepack enable && corepack prepare pnpm@11.1.0 --activate
 WORKDIR /app
 
 # Copy necessary files from builder
