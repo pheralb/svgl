@@ -1,13 +1,13 @@
 FROM node:24-alpine AS base
 
-RUN corepack enable && corepack prepare pnpm@11.1.0 --activate
+RUN corepack enable
 
 WORKDIR /app
 
 FROM base AS deps
-COPY package.json pnpm-lock.yaml .npmrc ./
-RUN pnpm approve-builds esbuild msw && \
-    pnpm install --frozen-lockfile
+COPY package.json pnpm-workspace.yaml pnpm-lock.yaml .npmrc ./
+RUN --mount=type=cache,id=pnpm,target=/pnpm/store \
+    pnpm i --frozen-lockfile --store-dir=/pnpm/store
 
 # Build the application
 FROM base AS builder
@@ -16,9 +16,9 @@ COPY . .
 RUN pnpm run check:size
 RUN pnpm run build:prod
 
-# Production image
+# Production imagew
 FROM node:24-alpine AS runner
-RUN corepack enable && corepack prepare pnpm@11.1.0 --activate
+RUN corepack enable
 WORKDIR /app
 
 # Copy necessary files from builder

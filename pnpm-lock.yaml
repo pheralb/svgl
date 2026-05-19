@@ -936,8 +936,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@rolldown/pluginutils@1.0.0':
-    resolution: {integrity: sha512-aKs/3GSWyV0mrhNmt/96/Z3yczC3yvrzYATCiCXQebBsGyYzjNdUphRVLeJQ67ySKVXRfMxt2lm12pmXvbPFQQ==}
+  '@rolldown/pluginutils@1.0.1':
+    resolution: {integrity: sha512-2j9bGt5Jh8hj+vPtgzPtl72j0yRxHAyumoo6TNfAjsLB04UtpSvPbPcDcBMxz7n+9CYB0c1GxQFxYRg2jimqGw==}
 
   '@rollup/plugin-commonjs@29.0.2':
     resolution: {integrity: sha512-S/ggWH1LU7jTyi9DxZOKyxpVd4hF/OZ0JrEbeLjXk/DFXwRny0tjD2c992zOUYQobLrVkRVMDdmHP16HKP7GRg==}
@@ -4269,7 +4269,7 @@ snapshots:
   '@rolldown/binding-win32-x64-msvc@1.0.1':
     optional: true
 
-  '@rolldown/pluginutils@1.0.0': {}
+  '@rolldown/pluginutils@1.0.1': {}
 
   '@rollup/plugin-commonjs@29.0.2(rollup@4.60.4)':
     dependencies:
@@ -6362,7 +6362,7 @@ snapshots:
   rolldown@1.0.1:
     dependencies:
       '@oxc-project/types': 0.130.0
-      '@rolldown/pluginutils': 1.0.0
+      '@rolldown/pluginutils': 1.0.1
     optionalDependencies:
       '@rolldown/binding-android-arm64': 1.0.1
       '@rolldown/binding-darwin-arm64': 1.0.1
