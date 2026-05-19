@@ -6,7 +6,8 @@ WORKDIR /app
 
 FROM base AS deps
 COPY package.json pnpm-lock.yaml .npmrc ./
-RUN pnpm install --frozen-lockfile
+RUN pnpm approve-builds esbuild msw && \
+    pnpm install --frozen-lockfile
 
 # Build the application
 FROM base AS builder
