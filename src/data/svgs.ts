@@ -5041,11 +5041,12 @@ export const svgs: iSVG[] = [
     category: ["Software", "Database"],
     route: "/library/beekeeper-studio.svg",
     url: "https://www.beekeeperstudio.io/",
+  },
+  {
     title: "Photopea",
     category: ["Design", "Software"],
     route: "/library/photopea.svg",
     url: "https://www.photopea.com/",
-  },
   {
     title: "Trello",
     category: ["Software", "Platform"],
