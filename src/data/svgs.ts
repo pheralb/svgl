@@ -5047,6 +5047,7 @@ export const svgs: iSVG[] = [
     category: ["Design", "Software"],
     route: "/library/photopea.svg",
     url: "https://www.photopea.com/",
+  },
   {
     title: "Trello",
     category: ["Software", "Platform"],
