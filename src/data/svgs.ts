@@ -5,7 +5,7 @@ export const svgs: iSVG[] = [
     title: "Ivy Framework",
     category: "Framework",
     route: "/library/ivy-framework.svg",
-    url: "https://ivy.run",
+    url: "https://github.com/Ivy-Interactive/Ivy-Framework",
   },
   {
     title: "Zaia Endless",
