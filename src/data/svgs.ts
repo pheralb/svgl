@@ -54,6 +54,14 @@ export const svgs: iSVG[] = [
     brandUrl: "https://proton.me/media/kit",
   },
   {
+    title: "Proton VPN",
+    category: ["Software", "Privacy"],
+    route: "/library/protonvpn.svg",
+    wordmark: "/library/protonvpn-wordmark.svg",
+    url: "https://protonvpn.com/",
+    brandUrl: "https://proton.me/media/kit",
+  },
+  {
     title: "Google Classroom",
     category: ["Google", "Education"],
     route: "/library/google-classroom.svg",
