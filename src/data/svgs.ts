@@ -1815,7 +1815,11 @@ export const svgs: iSVG[] = [
     title: "Neon",
     category: "Database",
     route: "/library/neon.svg",
-    url: "https://neon.tech/",
+    wordmark: {
+      light: "/library/neon-wordmark-light.svg",
+      dark: "/library/neon-wordmark-dark.svg",
+    },
+    url: "https://neon.com/",
   },
   {
     title: "Infojobs",
