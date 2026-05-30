@@ -5076,4 +5076,10 @@ export const svgs: iSVG[] = [
     url: "https://clickup.com/",
     brandUrl: "https://clickup.com/brand",
   },
+  {
+    title: 'Postion',
+    category: 'Software',
+    route: '/library/postion.svg',
+    url: 'https://postion.app/'
+  },
 ];
