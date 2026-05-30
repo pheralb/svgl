@@ -5076,4 +5076,10 @@ export const svgs: iSVG[] = [
     url: "https://clickup.com/",
     brandUrl: "https://clickup.com/brand",
   },
+  {
+    title: "Edge-TTS",
+    category: "AI",
+    route: "/library/edge-tts.svg",
+    url: "https://edge-tts.com/"
+  }
 ];
