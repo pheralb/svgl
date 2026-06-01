@@ -4995,6 +4995,19 @@ export const svgs: iSVG[] = [
     url: "https://openai.com/codex/",
   },
   {
+    title: "Conductor",
+    category: ["AI", "Software", "Devtool"],
+    route: {
+      light: "/library/conductor_light.svg",
+      dark: "/library/conductor_dark.svg",
+    },
+    wordmark: {
+      light: "/library/conductor-wordmark_light.svg",
+      dark: "/library/conductor-wordmark_dark.svg",
+    },
+    url: "https://www.conductor.build/",
+  },
+  {
     title: "Leedlime",
     category: ["AI", "Software", "Automation"],
     route: "/library/leedlime.svg",
