@@ -5005,6 +5005,7 @@ export const svgs: iSVG[] = [
       light: "/library/conductor-wordmark_light.svg",
       dark: "/library/conductor-wordmark_dark.svg",
     },
+    brandUrl: "https://www.conductor.build/brandkit",
     url: "https://www.conductor.build/",
   },
   {
