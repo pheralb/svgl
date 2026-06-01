@@ -2,6 +2,15 @@ import type { iSVG } from "@/types/svg";
 
 export const svgs: iSVG[] = [
   {
+    title: "Boltdocs Framework",
+    category: "Framework",
+    route: {
+      light: "/library/boltdocs-light.svg",
+      dark: "/library/boltdocs-dark.svg",
+    },
+    url: "https://boltdocs.vercel.app/",
+  },
+  {
     title: "Ivy Framework",
     category: "Framework",
     route: "/library/ivy-framework.svg",
