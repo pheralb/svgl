@@ -1,5 +1,6 @@
 export type Category =
   | "AI"
+  | "Adobe"
   | "Software"
   | "Hardware"
   | "Library"
@@ -37,4 +38,5 @@ export type Category =
   | "Nuxt"
   | "Microsoft"
   | "Privacy"
-  | "Communications";
+  | "Communications"
+  | "Themes";

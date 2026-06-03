@@ -21,8 +21,11 @@ const Attributes: Record<string, string> = {
   "text-anchor": "textAnchor",
   "xml:space": "xmlSpace",
   "stop-color": "stopColor",
+  "stop-opacity": "stopOpacity",
   "color-interpolation-filters": "colorInterpolationFilters",
   "xlink:href": "xlinkHref",
+  "flood-opacity": "floodOpacity",
+  "flood-color": "floodColor",
 };
 
 const convertStyleStringToObject = (styleString: string): string => {

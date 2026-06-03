@@ -1,6 +1,5 @@
 <script lang="ts">
   import type { PageProps } from "./$types";
-  import type { Extension } from "@/types/extensions";
 
   // Utils:
   import { cn } from "@/utils/cn";
@@ -26,22 +25,23 @@
   let { data }: PageProps = $props();
 
   // States:
-  let searchTerm = $state<string>(data.searchTerm || "");
-  let filteredExtensions = $state<Extension[]>(data.initialExtensions);
+  let searchOverride = $state<string | null>(null);
 
-  const searchExtensions = () => {
+  const searchTerm = $derived(
+    searchOverride !== null ? searchOverride : data.searchTerm,
+  );
+
+  const filteredExtensions = $derived.by(() => {
     if (!searchTerm) {
-      filteredExtensions = data.allExtensions;
-      return;
+      return data.allExtensions;
     }
-    filteredExtensions = searchExtensionsWithFuse(data.allExtensions)
+    return searchExtensionsWithFuse(data.allExtensions)
       .search(searchTerm)
       .map((result) => result.item);
-  };
+  });
 
   const handleSearch = (value: string) => {
-    searchTerm = value;
-    searchExtensions();
+    searchOverride = value;
   };
 </script>
 

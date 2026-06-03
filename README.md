@@ -204,6 +204,21 @@ pnpm install
 }
 ```
 
+- **Add Loftlyy brand URL**:
+
+[Loftlyy](https://www.loftlyy.com) is a brand identity reference site — discover and explore brand colors, typography, logos, and design systems. Created by [preetsuthar17](https://x.com/preetsuthar17).
+
+```ts
+{
+  title: 'Title',
+  category: 'Category',
+  route: '/library/your_logo.svg',
+  wordmark: '/library/your_logo_wordmark.svg',
+  loftlyyUrl: 'https://www.loftlyy.com/en/brand-name',
+  url: 'Website'
+}
+```
+
 > [!NOTE]
 >
 > - The list of categories is here: [`src/types/categories.ts`](https://github.com/pheralb/svgl/blob/main/src/types/categories.ts). You can add a new category if you need it.

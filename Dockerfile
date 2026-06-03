@@ -1,15 +1,13 @@
-FROM node:22.17.0-alpine AS base
+FROM node:24-alpine AS base
 
-# Install pnpm
-RUN npm install -g pnpm@10.13.1
+RUN corepack enable
 
-# Set working directory
 WORKDIR /app
 
-# Install dependencies with cache
 FROM base AS deps
-COPY package.json pnpm-lock.yaml ./
-RUN pnpm install --frozen-lockfile
+COPY package.json pnpm-workspace.yaml pnpm-lock.yaml .npmrc ./
+RUN --mount=type=cache,id=pnpm,target=/pnpm/store \
+    pnpm i --frozen-lockfile --store-dir=/pnpm/store
 
 # Build the application
 FROM base AS builder
@@ -18,8 +16,9 @@ COPY . .
 RUN pnpm run check:size
 RUN pnpm run build:prod
 
-# Production image
-FROM node:22.17.0-alpine AS runner
+# Production imagew
+FROM node:24-alpine AS runner
+RUN corepack enable
 WORKDIR /app
 
 # Copy necessary files from builder

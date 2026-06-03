@@ -9,6 +9,7 @@
   import Pnpm from "@/components/logos/pnpm.svelte";
   import Yarn from "@/components/logos/yarn.svelte";
   import Bun from "@/components/logos/bun.svelte";
+  import Vlt from "@/components/logos/vlt.svelte";
 
   let pkg = $derived($settingsStore.packageManager);
 
@@ -17,6 +18,7 @@
     pnpm: { label: "pnpm", Icon: Pnpm },
     yarn: { label: "yarn", Icon: Yarn },
     bun: { label: "bun", Icon: Bun },
+    vlt: { label: "vlt", Icon: Vlt },
   };
 </script>
 

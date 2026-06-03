@@ -1,7 +1,7 @@
 import { writable } from "svelte/store";
 import { browser } from "$app/environment";
 
-type PackageManager = "npm" | "pnpm" | "yarn" | "bun";
+type PackageManager = "npm" | "pnpm" | "yarn" | "bun" | "vlt";
 
 interface Settings {
   packageManager: PackageManager;

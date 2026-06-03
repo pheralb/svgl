@@ -6,6 +6,7 @@ export const globals = {
     fallback: 5000,
   },
   twitterUrl: "https://x.com/pheralb_",
+  sponsorLink: "https://github.com/sponsors/pheralb",
   submitUrl:
     "https://github.com/pheralb/svgl?tab=readme-ov-file#-getting-started",
   requestSvgUrl:
