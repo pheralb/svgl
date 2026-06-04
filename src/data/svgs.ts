@@ -52,7 +52,7 @@ export const svgs: iSVG[] = [
       "https://www.nvidia.com/en-us/about-nvidia/legal-info/logo-brand-usage",
   },
   {
-    title: "Proton Authentication",
+    title: "Proton Authenticator",
     category: ["Software", "Authentication", "Privacy"],
     route: "/library/proton-authenticator.svg",
     wordmark: {
