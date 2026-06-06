@@ -2,6 +2,12 @@ import type { iSVG } from "@/types/svg";
 
 export const svgs: iSVG[] = [
   {
+    title: "Sequence Tool",
+    category: "Software",
+    route: "/library/sequence-tool.svg",
+    url: "https://sequencetool.com",
+  },
+  {
     title: "Ivy Framework",
     category: "Framework",
     route: "/library/ivy-framework.svg",
