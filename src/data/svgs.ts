@@ -5090,4 +5090,13 @@ export const svgs: iSVG[] = [
     url: "https://clickup.com/",
     brandUrl: "https://clickup.com/brand",
   },
+  {
+    title: "Postqued",
+    category: "Software",
+    route: {
+      light: "/library/postqued-light.svg",
+      dark: "/library/postqued-dark.svg",
+    },
+    url: "https://postqued.com",
+  },
 ];
