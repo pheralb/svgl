@@ -5099,4 +5099,18 @@ export const svgs: iSVG[] = [
     },
     url: "https://postqued.com",
   },
+  {
+    title: "Grida",
+    category: "Design",
+    route: {
+      light: "/library/grida-light.svg",
+      dark: "/library/grida-dark.svg",
+    },
+    wordmark: {
+      light: "/library/grida-wordmark-light.svg",
+      dark: "/library/grida-wordmark-dark.svg",
+    },
+    url: "https://grida.co",
+    brandUrl: "https://grida.co/brand",
+  },
 ];
