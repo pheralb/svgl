@@ -5112,4 +5112,27 @@ export const svgs: iSVG[] = [
     url: "https://clickup.com/",
     brandUrl: "https://clickup.com/brand",
   },
+  {
+    title: "Postqued",
+    category: "Software",
+    route: {
+      light: "/library/postqued-light.svg",
+      dark: "/library/postqued-dark.svg",
+    },
+    url: "https://postqued.com",
+  },
+  {
+    title: "Grida",
+    category: "Design",
+    route: {
+      light: "/library/grida-light.svg",
+      dark: "/library/grida-dark.svg",
+    },
+    wordmark: {
+      light: "/library/grida-wordmark-light.svg",
+      dark: "/library/grida-wordmark-dark.svg",
+    },
+    url: "https://grida.co",
+    brandUrl: "https://grida.co/brand",
+  },
 ];
