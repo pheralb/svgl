@@ -19,7 +19,7 @@
 <a
   {href}
   {title}
-  aria-label={label}
+  aria-label={label ?? title}
   class={cn(className)}
   data-sveltekit-preload-data={preloadData ? "" : "off"}
 >
