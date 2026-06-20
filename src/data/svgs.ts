@@ -3709,6 +3709,16 @@ export const svgs: iSVG[] = [
     url: "https://json-schema.org/",
   },
   {
+    title: "eve",
+    category: ["AI", "Framework", "Vercel"],
+    route: {
+      light: "/library/eve-light.svg",
+      dark: "/library/eve-dark.svg",
+    },
+    url: "https://vercel.com/eve",
+    brandUrl: "https://vercel.com/eve",
+  },
+  {
     title: "v0",
     category: "Vercel",
     route: {
