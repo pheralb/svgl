@@ -5038,6 +5038,11 @@ export const svgs: iSVG[] = [
     url: "https://www.cerebras.ai/",
   },
   {
+    title: "Quarkus",
+    category: ["Framework", "Library"],
+    route: "/library/quarkus.svg",
+    wordmark: "/library/quarkus.svg",
+    url: "https://quarkus.io/",
     title: "Runframe",
     category: ["Software", "Devtool", "Platform"],
     route: "/library/runframe.svg",
