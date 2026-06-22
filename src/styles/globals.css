@@ -58,3 +58,12 @@ code:has(.line:nth-child(2)) .line::before {
 code:has(.line:nth-child(2)) .line::before {
   @apply font-mono text-xs text-neutral-400 dark:text-neutral-600;
 }
+
+html,
+body {
+  background-color: #f8fafc;
+}
+
+html.dark body {
+  background-color: #0f172a;
+}
