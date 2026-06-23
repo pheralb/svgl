@@ -5073,6 +5073,18 @@ export const svgs: iSVG[] = [
     brandUrl: "https://assets.nano.org/",
   },
   {
+    title: "Bruno",
+    category: ["Software", "Devtool"],
+    route: "/library/bruno.svg",
+    url: "https://www.usebruno.com/",
+  },
+  {
+    title: "Beekeeper Studio",
+    category: ["Software", "Database"],
+    route: "/library/beekeeper-studio.svg",
+    url: "https://www.beekeeperstudio.io/",
+  },
+  {
     title: "Photopea",
     category: ["Design", "Software"],
     route: "/library/photopea.svg",
