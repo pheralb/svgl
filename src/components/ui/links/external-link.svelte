@@ -9,7 +9,7 @@
   {href}
   {title}
   target="_blank"
-  aria-label={label}
+  aria-label={label ?? title}
   rel="noopener noreferrer"
   class={cn(className)}
 >
