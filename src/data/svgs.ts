@@ -60,12 +60,12 @@ export const svgs: iSVG[] = [
     brandUrl: "https://proton.me/media/kit",
   },
   {
-    title: "Proton VPN",
-    category: ["Software", "Privacy"],
-    route: "/library/protonvpn.svg",
-    wordmark: "/library/protonvpn-wordmark.svg",
-    url: "https://protonvpn.com/",
-    brandUrl: "https://proton.me/media/kit",
+    title: 'Friym',
+    category: 'Social',
+    route: '/library/friym.svg',
+    wordmark: '/library/friym-wordmark.svg',
+    url: 'https://www.friym.com',
+    brandUrl: 'https://brand.friym.com/'
   },
   {
     title: "Google Classroom",
