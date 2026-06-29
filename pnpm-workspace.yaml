@@ -1,3 +1,13 @@
+packages:
+  - "api-routes"
+
 allowBuilds:
   esbuild: true
   msw: true
+  sharp: true
+  workerd: true
+
+minimumReleaseAgeExclude:
+  - '@cloudflare/workers-types@4.20260629.1'
+  - '@lucide/svelte@1.22.0'
+  - prettier@3.9.3
