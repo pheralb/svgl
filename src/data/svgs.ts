@@ -2,6 +2,12 @@ import type { iSVG } from "@/types/svg";
 
 export const svgs: iSVG[] = [
   {
+    title: "Ivy Framework",
+    category: "Framework",
+    route: "/library/ivy-framework.svg",
+    url: "https://github.com/Ivy-Interactive/Ivy-Framework",
+  },
+  {
     title: "Zaia Endless",
     category: ["Software", "AI", "Platform", "Automation"],
     route: "/library/zaia-endless.svg",
@@ -51,6 +57,14 @@ export const svgs: iSVG[] = [
     route: "/library/protonmail.svg",
     wordmark: "/library/protonmail-wordmark.svg",
     url: "https://mail.proton.me",
+    brandUrl: "https://proton.me/media/kit",
+  },
+  {
+    title: "Proton VPN",
+    category: ["Software", "Privacy"],
+    route: "/library/protonvpn.svg",
+    wordmark: "/library/protonvpn-wordmark.svg",
+    url: "https://protonvpn.com/",
     brandUrl: "https://proton.me/media/kit",
   },
   {
@@ -1801,7 +1815,11 @@ export const svgs: iSVG[] = [
     title: "Neon",
     category: "Database",
     route: "/library/neon.svg",
-    url: "https://neon.tech/",
+    wordmark: {
+      light: "/library/neon-wordmark-light.svg",
+      dark: "/library/neon-wordmark-dark.svg",
+    },
+    url: "https://neon.com/",
   },
   {
     title: "Infojobs",
@@ -3691,6 +3709,16 @@ export const svgs: iSVG[] = [
     url: "https://json-schema.org/",
   },
   {
+    title: "eve",
+    category: ["AI", "Framework", "Vercel"],
+    route: {
+      light: "/library/eve-light.svg",
+      dark: "/library/eve-dark.svg",
+    },
+    url: "https://vercel.com/eve",
+    brandUrl: "https://vercel.com/eve",
+  },
+  {
     title: "v0",
     category: "Vercel",
     route: {
@@ -4977,6 +5005,20 @@ export const svgs: iSVG[] = [
     url: "https://openai.com/codex/",
   },
   {
+    title: "Conductor",
+    category: ["AI", "Software", "Devtool"],
+    route: {
+      light: "/library/conductor_light.svg",
+      dark: "/library/conductor_dark.svg",
+    },
+    wordmark: {
+      light: "/library/conductor-wordmark_light.svg",
+      dark: "/library/conductor-wordmark_dark.svg",
+    },
+    brandUrl: "https://www.conductor.build/brandkit",
+    url: "https://www.conductor.build/",
+  },
+  {
     title: "Leedlime",
     category: ["AI", "Software", "Automation"],
     route: "/library/leedlime.svg",
@@ -5057,5 +5099,28 @@ export const svgs: iSVG[] = [
     },
     url: "https://clickup.com/",
     brandUrl: "https://clickup.com/brand",
+  },
+  {
+    title: "Postqued",
+    category: "Software",
+    route: {
+      light: "/library/postqued-light.svg",
+      dark: "/library/postqued-dark.svg",
+    },
+    url: "https://postqued.com",
+  },
+  {
+    title: "Grida",
+    category: "Design",
+    route: {
+      light: "/library/grida-light.svg",
+      dark: "/library/grida-dark.svg",
+    },
+    wordmark: {
+      light: "/library/grida-wordmark-light.svg",
+      dark: "/library/grida-wordmark-dark.svg",
+    },
+    url: "https://grida.co",
+    brandUrl: "https://grida.co/brand",
   },
 ];
