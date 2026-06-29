@@ -13,7 +13,7 @@ simple = { limit = 5, period = 10 }
 # generated id below to enable the 5-minute lockout after a 429.
 [[kv_namespaces]]
 binding = "SVGL_RATE_LIMIT_LOCKS"
-id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+id = "2a79b39e7262456e8ebaf08dcef5342f"
 
 # [vars]
 # MY_VAR = "my-variable"

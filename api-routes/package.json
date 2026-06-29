@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "wrangler dev src/index.ts",
-    "deploy": "wrangler deploy --minify src/index.ts"
+    "deploy": "wrangler deploy --minify src/index.ts",
+    "create:kv": "npx wrangler kv namespace create SVGL_RATE_LIMIT_LOCKS"
   },
   "dependencies": {
     "hono": "4.12.27"
