@@ -41,7 +41,6 @@
 
 ![Svelte Badge](https://img.shields.io/badge/Sveltekit-FF3E00?logo=svelte&logoColor=fff&style=flat)
 ![Hono Badge](https://img.shields.io/badge/Hono-E36002?logo=hono&logoColor=fff&style=flat)
-![Svelte Badge](https://img.shields.io/badge/Upstash-121212?logo=upstash&logoColor=#00C786&style=flat)
 [![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fpheralb%2Fsvgl%2Fbadge%3Fref%3Dmain&style=flat)](https://actions-badge.atrox.dev/pheralb/svgl/goto?ref=main)
 ![GitHub stars](https://img.shields.io/github/stars/pheralb/svgl)
 ![GitHub forks](https://img.shields.io/github/forks/pheralb/svgl)
@@ -84,7 +83,6 @@ A list of extensions that use the [**SVGL API**](https://svgl.app/docs/api), cre
   consistent icons.
 - [**svelte-sonner**](https://github.com/wobsoriano/svelte-sonner) - An opinionated toast component for Svelte.
 - [**Hono**](https://hono.dev/) - Fast, lightweight, built on Web Standards. Support for any JavaScript runtime.
-- [**@upstash/redis** + **@upstash/ratelimit**](https://upstash.com/) - Serverless Redis for developers.
 
 ## 🚀 Getting Started
 
@@ -231,26 +229,14 @@ And create a pull request with your logo ✨.
 > [!WARNING]
 > This section is how to run API locally. For all API endpoints, check the [**API documentation**](https://svgl.app/api).
 
-1. Go to the [**`api-routes`**](https://github.com/pheralb/svgl/tree/main/api-routes) folder and install the dependencies with [pnpm](https://pnpm.io/):
+Go to the [**`api-routes`**](https://github.com/pheralb/svgl/tree/main/api-routes) folder and install the dependencies with [pnpm](https://pnpm.io/):
 
 ```bash
 cd api-routes
 pnpm install
 ```
 
-2. Create a `.dev.vars` env file in the `api-routes` folder with the following variables:
-
-```bash
-# .dev.vars
-SVGL_API_REQUESTS = 1
-UPSTASH_REDIS_URL = ""
-UPSTASH_REDIS_TOKEN = ""
-```
-
-- [Create a Upstash account](https://console.upstash.com/).
-- [Create a Upstash Redis Database](https://upstash.com/docs/redis/overall/getstarted).
-
-3. Run the development server:
+And run the development server:
 
 ```bash
 pnpm dev
