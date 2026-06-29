@@ -1,27 +1,16 @@
-import type { Context } from "hono";
-import type { BlankInput, Env } from "hono/types";
-
 import type { iSVG } from "../../src/types/svg";
 import type { Category } from "../../src/types/categories";
 
 import { Hono } from "hono";
-import { env } from "hono/adapter";
 import { cors } from "hono/cors";
-import { Ratelimit } from "@upstash/ratelimit";
-import { Redis } from "@upstash/redis/cloudflare";
 
-// 🌿 Import utils:
+// 🌿 Utils:
 import { addFullUrl } from "./utils";
 import { optimizeSvg } from "../../src/utils/optimizeSvg";
+import { apiRateLimiter, type Bindings } from "./ratelimit";
 
 // 📦 Import data from SVGL src:
 import { svgsData } from "../../src/data";
-
-declare module "hono" {
-  interface ContextVariableMap {
-    ratelimit: Ratelimit;
-  }
-}
 
 // ✨ Return the full route for each SVG:
 const fullRouteSvgsData = svgsData.map((svg) => {
@@ -32,44 +21,10 @@ const fullRouteSvgsData = svgsData.map((svg) => {
   };
 }) as iSVG[];
 
-// ⚙️ Create a new Hono & Cache instance:
-const app = new Hono();
-const cache = new Map();
+// ⚙️ Create a new Hono instance:
+const app = new Hono<{ Bindings: Bindings }>();
 
-class RedisRateLimiter {
-  static instance: Ratelimit;
-  static getInstance(c: Context<Env, "/api/*", BlankInput>) {
-    if (!this.instance) {
-      const { UPSTASH_REDIS_URL, UPSTASH_REDIS_TOKEN } = env<{
-        UPSTASH_REDIS_URL: string;
-        UPSTASH_REDIS_TOKEN: string;
-      }>(c);
-      const cleanRedisUrl = UPSTASH_REDIS_URL.replace(
-        /^['"]|['"]$/g,
-        "",
-      ).trim();
-      const redisClient = new Redis({
-        token: UPSTASH_REDIS_TOKEN,
-        url: cleanRedisUrl,
-      });
-      const ratelimit = new Ratelimit({
-        redis: redisClient,
-        limiter: Ratelimit.slidingWindow(5, "5 s"),
-        ephemeralCache: cache,
-      });
-      this.instance = ratelimit;
-      return this.instance;
-    } else {
-      return this.instance;
-    }
-  }
-}
-
-app.use(async (c, next) => {
-  const ratelimit = RedisRateLimiter.getInstance(c);
-  c.set("ratelimit", ratelimit);
-  await next();
-});
+app.use(apiRateLimiter);
 
 app.use(cors());
 
@@ -77,13 +32,6 @@ app.use(cors());
 app.get("/", async (c) => {
   const limit = c.req.query("limit");
   const search = c.req.query("search");
-  const ratelimit = c.get("ratelimit");
-  const ip = c.req.raw.headers.get("CF-Connecting-IP");
-  const { success } = await ratelimit.limit(ip ?? "anonymous");
-
-  if (!success) {
-    return c.json({ error: "🛑 (SVGL - API) Too many request" }, 429);
-  }
 
   if (limit) {
     const limitNumber = parseInt(limit);
@@ -107,14 +55,6 @@ app.get("/", async (c) => {
 
 // 🌱 GET: "/categories" - Return an array with categories:
 app.get("/categories", async (c) => {
-  const ratelimit = c.get("ratelimit");
-  const ip = c.req.raw.headers.get("CF-Connecting-IP");
-  const { success } = await ratelimit.limit(ip ?? "anonymous");
-
-  if (!success) {
-    return c.json({ error: "❌ (SVGL - API) Too many request" }, 429);
-  }
-
   const categoryTotals: Record<string, number> = {};
 
   fullRouteSvgsData.forEach((svg) => {
@@ -141,13 +81,6 @@ app.get("/categories", async (c) => {
 app.get("/category/:category", async (c) => {
   const category = c.req.param("category") as string;
   const targeCategory = category.charAt(0).toUpperCase() + category.slice(1);
-  const ratelimit = c.get("ratelimit");
-  const ip = c.req.raw.headers.get("CF-Connecting-IP");
-  const { success } = await ratelimit.limit(ip ?? "anonymous");
-
-  if (!success) {
-    return c.json({ error: "🛑 (SVGL - API) Too many request" }, 429);
-  }
 
   const categorySvgs = fullRouteSvgsData.filter((svg) => {
     if (typeof svg.category === "string") {
@@ -169,14 +102,7 @@ app.get("/svg/:filename", async (c) => {
   const fileName = c.req.param("filename") as string;
   const svgLibrary = "https://svgl.app/library/";
 
-  const ratelimit = c.get("ratelimit");
   const returnNoOptimized = c.req.query("no-optimize");
-  const ip = c.req.raw.headers.get("CF-Connecting-IP");
-  const { success } = await ratelimit.limit(ip ?? "anonymous");
-
-  if (!success) {
-    return c.json({ error: "🛑 (SVGL - API) Too many request" }, 429);
-  }
 
   try {
     const svg = await fetch(`${svgLibrary}${fileName}`).then((res) => {
