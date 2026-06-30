@@ -212,6 +212,12 @@ export const svgs: iSVG[] = [
     url: "https://suno.com/",
   },
   {
+    title: "Groot Studio",
+    category: ["Design", "Library"],
+    route: "/library/groot-studio.svg",
+    url: "https://grootstudio.dev",
+  },
+  {
     title: "Groq",
     category: "AI",
     route: "/library/groq.svg",
