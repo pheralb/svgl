@@ -12,6 +12,7 @@ RUN --mount=type=cache,id=pnpm,target=/pnpm/store \
 
 # Build
 FROM base AS builder
+COPY --from=deps /app/package.json /app/pnpm-workspace.yaml /app/pnpm-lock.yaml ./
 COPY --from=deps /app/node_modules ./node_modules
 COPY --from=deps /app/api-routes/node_modules ./api-routes/node_modules
 COPY api-routes/ ./api-routes/
