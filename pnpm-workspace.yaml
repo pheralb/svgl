@@ -8,6 +8,13 @@ allowBuilds:
   workerd: true
 
 minimumReleaseAgeExclude:
-  - '@cloudflare/workers-types@4.20260629.1'
-  - '@lucide/svelte@1.22.0'
+  - "@cloudflare/workers-types@4.20260629.1"
+  - "@lucide/svelte@1.22.0"
   - prettier@3.9.3
+
+catalog:
+  "typescript": "6.0.3"
+  "@types/node": "24.13.2"
+  "svgo": "4.0.1"
+  "zod": "4.4.3"
+  "tsx": "4.22.4"
