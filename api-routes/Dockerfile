@@ -25,8 +25,10 @@ RUN node generate-data.mjs && pnpm run build
 FROM node:24-alpine AS runner
 ENV NODE_ENV=production
 WORKDIR /app
-COPY --from=builder /app/api-routes/dist ./dist
-COPY --from=builder /app/api-routes/node_modules ./node_modules
-COPY --from=builder /app/api-routes/package.json ./
+COPY --from=builder /app/node_modules ./node_modules
+COPY --from=builder /app/api-routes/node_modules ./api-routes/node_modules
+COPY --from=builder /app/api-routes/dist ./api-routes/dist
+COPY --from=builder /app/api-routes/package.json ./api-routes/package.json
+WORKDIR /app/api-routes
 EXPOSE 3000
 CMD ["node", "dist/index.mjs"]
