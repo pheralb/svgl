@@ -40,7 +40,8 @@
 <div align="center">
 
 ![Svelte Badge](https://img.shields.io/badge/Sveltekit-FF3E00?logo=svelte&logoColor=fff&style=flat)
-![Hono Badge](https://img.shields.io/badge/Hono-E36002?logo=hono&logoColor=fff&style=flat)
+![Redis Badge](https://img.shields.io/badge/Redis-FF4438?logo=redis&logoColor=fff&style=flat)
+![Express Badge](https://img.shields.io/badge/Express-000?logo=express&logoColor=fff&style=flat)
 [![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fpheralb%2Fsvgl%2Fbadge%3Fref%3Dmain&style=flat)](https://actions-badge.atrox.dev/pheralb/svgl/goto?ref=main)
 ![GitHub stars](https://img.shields.io/github/stars/pheralb/svgl)
 ![GitHub forks](https://img.shields.io/github/forks/pheralb/svgl)
@@ -82,7 +83,7 @@ A list of extensions that use the [**SVGL API**](https://svgl.app/docs/api), cre
 - [**Lucide Icons**](https://lucide.dev/) - Beautiful &
   consistent icons.
 - [**svelte-sonner**](https://github.com/wobsoriano/svelte-sonner) - An opinionated toast component for Svelte.
-- [**Hono**](https://hono.dev/) - Fast, lightweight, built on Web Standards. Support for any JavaScript runtime.
+- [**Express**](https://expressjs.com/) with [**Redis**](https://redis.io/) - A fast, unopinionated, minimalist web framework for Node.js with a powerful in-memory data structure store.
 
 ## 🚀 Getting Started
 
@@ -229,18 +230,35 @@ And create a pull request with your logo ✨.
 > [!WARNING]
 > This section is how to run API locally. For all API endpoints, check the [**API documentation**](https://svgl.app/api).
 
-Go to the [**`api-routes`**](https://github.com/pheralb/svgl/tree/main/api-routes) folder and install the dependencies with [pnpm](https://pnpm.io/):
+1. Install the dependencies (optional if you run the web app previously):
 
 ```bash
-cd api-routes
 pnpm install
 ```
 
-And run the development server:
+2. Go to the `api-routes` folder and generate SVGs data using [`generate-data.mjs`](https://github.com/pheralb/svgl/blob/main/api-routes/generate-data.mjs) script:
+
+```bash
+cd api-routes
+pnpm build:data
+```
+
+3. Create a `.env` file inside the `api-routes` folder and add the following environment variables:
+
+```bash
+CORS_ORIGIN= # use your local development URL, e.g., http://localhost:5173
+REDIS_URL= # use your Redis URL, e.g., rediss://:password@hostname:port
+```
+
+You can create a Redis server using: [Railway](https://docs.railway.com/databases/redis) - [Coolify](https://coolify.io/docs/databases/redis) - [Koyeb](https://www.koyeb.com/deploy/redis) - [Local with Docker](https://hub.docker.com/_/redis).
+
+4. Run the API server:
 
 ```bash
 pnpm dev
 ```
+
+Ready 🚀
 
 ## ✌️ Contributing
 
