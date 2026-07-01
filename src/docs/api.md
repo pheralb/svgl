@@ -5,11 +5,13 @@ description: The API reference is a detailed documentation of all the endpoints 
 
 ## Introduction
 
-SVGL API is a RESTFul API that allows you to get all the information of the SVGs that are in the repository.
+SVGL API is a free RESTFul API that allows you to get all the information of the SVGs that are in the repository.
 
 ## Limitations
 
 The API is currently open to everyone and does not require any authentication. However, to prevent abusive use of the API, there is a limit to the number of requests.
+
+To avoid hitting the rate limit, it's recommended to cache the API responses on your side (e.g. for a few minutes) instead of requesting the same data on every call.
 
 > Don't use the API for create the same product as SVGL. The API is intended to be used for extensions, plugins, or other tools that can help the community.
 
