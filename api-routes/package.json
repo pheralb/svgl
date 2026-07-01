@@ -1,20 +1,34 @@
 {
-  "name": "@svgl/api",
+  "name": "@pheralb/svgl-api",
+  "type": "module",
+  "version": "2.0.0",
+  "description": "SVGL API built with Express and Redis.",
   "author": "@pheralb_",
-  "version": "1.4.0",
-  "description": "SVGL API built with Hono & Cloudflare",
-  "private": true,
   "license": "MIT",
+  "main": "src/index.ts",
+  "private": true,
   "scripts": {
-    "dev": "wrangler dev src/index.ts",
-    "deploy": "wrangler deploy --minify src/index.ts",
-    "create:kv": "npx wrangler kv namespace create SVGL_RATE_LIMIT_LOCKS"
+    "build": "node generate-data.mjs && tsdown",
+    "check:types": "tsc --noEmit",
+    "dev": "tsdown && node dist/index.mjs",
+    "start": "node dist/index.mjs",
+    "build:data": "node generate-data.mjs"
   },
   "dependencies": {
-    "hono": "4.12.27"
+    "cors": "2.8.6",
+    "dotenv": "17.4.2",
+    "express": "5.2.1",
+    "redis": "^6.0.1",
+    "svgo": "catalog:",
+    "zod": "catalog:"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "4.20260629.1",
-    "wrangler": "4.105.0"
+    "@t3-oss/env-core": "0.13.11",
+    "@types/cors": "2.8.19",
+    "@types/express": "5.0.6",
+    "@types/node": "catalog:",
+    "tsdown": "0.22.3",
+    "tsx": "catalog:",
+    "typescript": "catalog:"
   }
 }

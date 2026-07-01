@@ -55,3 +55,23 @@ jobs:
 
       - name: Check unused SVGs
         run: pnpm check:data
+
+  api:
+    runs-on: ubuntu-latest
+    name: 🌱 Check API
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Use Node.js 24
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v6
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build API
+        run: pnpm build:api

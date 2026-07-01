@@ -1,132 +1,127 @@
-import type { iSVG } from "../../src/types/svg";
-import type { Category } from "../../src/types/categories";
+import "dotenv/config";
 
-import { Hono } from "hono";
-import { cors } from "hono/cors";
+import cors from "cors";
+import express from "express";
+import { createClient } from "redis";
 
-// 🌿 Utils:
-import { addFullUrl } from "./utils";
-import { optimizeSvg } from "../../src/utils/optimizeSvg";
-import { apiRateLimiter, type Bindings } from "./ratelimit";
+// Data Generated:
+// Use `pnpm run build:data` to regenerate the /data files.
+import { svgsData } from "@/data";
+import type { iSVG } from "@/data/types/svg";
+import type { Category } from "@/data/types/categories";
 
-// 📦 Import data from SVGL src:
-import { svgsData } from "../../src/data";
+// Utils
+import { addFullUrl } from "@/utils/addFullUrl";
+import { optimizeSvg } from "@/utils/optimizeSvg";
+import { logger } from "@/utils/logger";
 
-// ✨ Return the full route for each SVG:
-const fullRouteSvgsData = svgsData.map((svg) => {
-  return {
-    ...svg,
-    route: addFullUrl(svg.route),
-    wordmark: svg.wordmark ? addFullUrl(svg.wordmark) : undefined,
-  };
-}) as iSVG[];
+import { env } from "./env";
+import { createRateLimiter } from "./ratelimit";
 
-// ⚙️ Create a new Hono instance:
-const app = new Hono<{ Bindings: Bindings }>();
+const fullRouteSvgsData = svgsData.map((svg) => ({
+  ...svg,
+  route: addFullUrl(svg.route),
+  wordmark: svg.wordmark ? addFullUrl(svg.wordmark) : undefined,
+})) as iSVG[];
 
-app.use(apiRateLimiter);
+const redis = createClient({
+  url: env.REDIS_URL,
+  socket: { tls: true, rejectUnauthorized: false },
+});
+redis.on("error", (err) => logger.error("Redis error:", err));
+await redis.connect();
+logger.info("Redis connected");
 
-app.use(cors());
+const app = express();
 
-// 🌱 GET: "/" - Returns all the SVGs data:
-app.get("/", async (c) => {
-  const limit = c.req.query("limit");
-  const search = c.req.query("search");
+app.set("trust proxy", 1);
+app.use(cors({ origin: env.CORS_ORIGIN, methods: ["GET", "OPTIONS"] }));
+app.use(express.json());
+app.use(createRateLimiter(redis));
+
+// 🌱 GET / — all SVGs with optional limit and search
+app.get("/", (req, res) => {
+  const limit = req.query["limit"] as string | undefined;
+  const search = req.query["search"] as string | undefined;
 
   if (limit) {
-    const limitNumber = parseInt(limit);
-    if (limitNumber) {
-      return c.json(fullRouteSvgsData.slice(0, limitNumber));
+    const n = parseInt(limit);
+    if (!isNaN(n)) {
+      res.json(fullRouteSvgsData.slice(0, n));
+      return;
     }
   }
 
   if (search) {
-    const searchResults = fullRouteSvgsData.filter((svg) =>
+    const results = fullRouteSvgsData.filter((svg) =>
       svg.title.toLowerCase().includes(search.toLowerCase()),
     );
-    if (searchResults.length === 0) {
-      return c.json({ error: "❌ (SVGL - API) SVG not found" }, 404);
+    if (results.length === 0) {
+      res.status(404).json({ error: "❌ (SVGL - API) SVG not found" });
+      return;
     }
-    return c.json(searchResults);
+    res.json(results);
+    return;
   }
 
-  return c.json(fullRouteSvgsData);
+  res.json(fullRouteSvgsData);
 });
 
-// 🌱 GET: "/categories" - Return an array with categories:
-app.get("/categories", async (c) => {
-  const categoryTotals: Record<string, number> = {};
+// 🌱 GET /categories — category list with totals
+app.get("/categories", (_req, res) => {
+  const totals: Record<string, number> = {};
 
-  fullRouteSvgsData.forEach((svg) => {
-    if (typeof svg.category === "string") {
-      categoryTotals[svg.category] = (categoryTotals[svg.category] || 0) + 1;
-    } else if (Array.isArray(svg.category)) {
-      svg.category.forEach((category) => {
-        categoryTotals[category] = (categoryTotals[category] || 0) + 1;
-      });
+  for (const svg of fullRouteSvgsData) {
+    const cats = Array.isArray(svg.category) ? svg.category : [svg.category];
+    for (const cat of cats) {
+      totals[cat] = (totals[cat] ?? 0) + 1;
     }
-  });
+  }
 
-  const categories = Object.entries(categoryTotals).map(
-    ([category, total]) => ({
-      category,
-      total,
-    }),
+  res.json(
+    Object.entries(totals).map(([category, total]) => ({ category, total })),
   );
-
-  return c.json(categories);
 });
 
-// 🌱 GET: /category/:category - Return an list of svgs by specific category:
-app.get("/category/:category", async (c) => {
-  const category = c.req.param("category") as string;
-  const targeCategory = category.charAt(0).toUpperCase() + category.slice(1);
+// 🌱 GET /category/:category — SVGs filtered by category
+app.get("/category/:category", (req, res) => {
+  const raw = req.params["category"] as string;
+  const target = raw.charAt(0).toUpperCase() + raw.slice(1);
 
-  const categorySvgs = fullRouteSvgsData.filter((svg) => {
-    if (typeof svg.category === "string") {
-      return svg.category === targeCategory;
-    }
-    if (Array.isArray(svg.category)) {
-      return svg.category.includes(targeCategory as Category);
-    }
+  const results = fullRouteSvgsData.filter((svg) => {
+    if (typeof svg.category === "string") return svg.category === target;
+    if (Array.isArray(svg.category))
+      return svg.category.includes(target as Category);
     return false;
   });
-  if (categorySvgs.length === 0) {
-    return c.json({ error: "❌ (SVGL - API) Category not found" }, 404);
+
+  if (results.length === 0) {
+    res.status(404).json({ error: "❌ (SVGL - API) Category not found" });
+    return;
   }
-  return c.json(categorySvgs);
+  res.json(results);
 });
 
-// 🌱 GET: "/svg/:filename" - Return the SVG code file by filename:
-app.get("/svg/:filename", async (c) => {
-  const fileName = c.req.param("filename") as string;
-  const svgLibrary = "https://svgl.app/library/";
-
-  const returnNoOptimized = c.req.query("no-optimize");
+// 🌱 GET /svg/:filename — fetch SVG file with optional optimization
+app.get("/svg/:filename", async (req, res) => {
+  const fileName = req.params["filename"] as string;
+  const noOptimize = req.query["no-optimize"];
 
   try {
-    const svg = await fetch(`${svgLibrary}${fileName}`).then((res) => {
-      if (!res.ok)
-        throw new Error("❌ (SVGL - API) Network response was not ok");
-      return res.text();
-    });
+    const response = await fetch(`https://svgl.app/library/${fileName}`);
+    if (!response.ok) throw new Error("Network response was not ok");
+    const svg = await response.text();
 
-    if (returnNoOptimized) {
-      return c.body(svg, 200, {
-        "Content-Type": "image/svg+xml; charset=utf-8",
-      });
-    }
-
-    const optimizedSvg = optimizeSvg({ svgCode: svg });
-    return c.body(optimizedSvg, 200, {
-      "Content-Type": "image/svg+xml; charset=utf-8",
-    });
-  } catch (err) {
-    return c.json(
-      { error: `❌ (SVGL - API) SVG file not found - ${err}` },
-      404,
-    );
+    res.setHeader("Content-Type", "image/svg+xml; charset=utf-8");
+    res.send(noOptimize !== undefined ? svg : optimizeSvg(svg));
+  } catch (err: unknown) {
+    res
+      .status(404)
+      .json({ error: `❌ (SVGL - API) SVG file not found - ${err}` });
   }
 });
 
-export default app;
+const port = env.PORT ?? 3000;
+app.listen(port, () => {
+  logger.ready(`Server running on ${env.CORS_ORIGIN}:${port}`);
+});

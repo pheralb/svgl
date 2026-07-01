@@ -1,6 +1,6 @@
 import globals from "globals";
 import { fileURLToPath } from "node:url";
-import { includeIgnoreFile } from "@eslint/compat";
+import { includeIgnoreFile } from "eslint/config";
 
 // Plugins:
 import js from "@eslint/js";
