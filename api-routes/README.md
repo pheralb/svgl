@@ -1,0 +1,1 @@
+All documentation can be found in the [API documentation](https://svgl.app/docs/api).
