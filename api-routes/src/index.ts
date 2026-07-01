@@ -37,6 +37,10 @@ const app = express();
 app.set("trust proxy", 1);
 app.use(cors({ origin: env.CORS_ORIGIN, methods: ["GET", "OPTIONS"] }));
 app.use(express.json());
+app.use((_req, res, next) => {
+  res.setHeader("Cache-Control", "no-store");
+  next();
+});
 app.use(createRateLimiter(redis));
 
 // 🌱 GET / — all SVGs with optional limit and search
