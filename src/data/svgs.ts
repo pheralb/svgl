@@ -2,6 +2,13 @@ import type { iSVG } from "@/types/svg";
 
 export const svgs: iSVG[] = [
   {
+    title: "Plausible Analytics",
+    category: "Analytics",
+    route: "/library/plausible.svg",
+    brandUrl: "https://plausible.io/trademark",
+    url: "https://plausible.io/",
+  },
+  {
     title: "Ivy Framework",
     category: "Framework",
     route: "/library/ivy-framework.svg",
