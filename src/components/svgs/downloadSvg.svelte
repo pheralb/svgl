@@ -123,7 +123,7 @@
         {#if typeof svgInfo.route === "string"}
           <div class={cardDownloadStyles}>
             <img
-              src={isDarkTheme() ? svgInfo.route : svgInfo.route}
+              src={svgInfo.route}
               alt={svgInfo.title}
               class={imgStyles}
             />
@@ -213,7 +213,7 @@
         {#if typeof svgInfo.wordmark === "string" && svgInfo.wordmark !== undefined}
           <div class={cardDownloadStyles}>
             <img
-              src={isDarkTheme() ? svgInfo.wordmark : svgInfo.wordmark}
+              src={svgInfo.wordmark}
               alt={svgInfo.title}
               class={imgStyles}
             />
