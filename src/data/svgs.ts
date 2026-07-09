@@ -5130,4 +5130,16 @@ export const svgs: iSVG[] = [
     url: "https://grida.co",
     brandUrl: "https://grida.co/brand",
   },
+  {
+    "title": "Nexty.dev",
+    "category": "SaaS Template",
+    "route": "/library/nexxty.svg",
+    "url": "Website"
+  },
+  {
+    "title": "Free OG Image",
+    "category": "Design Tool",
+    "route": "/library/ogimage.svg",
+    "url": "Website"
+  }
 ];
