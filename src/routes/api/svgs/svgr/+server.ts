@@ -13,7 +13,10 @@ export const POST = async ({ request }: RequestEvent) => {
     const body = await request.json();
 
     if (!body.code || !body.name) {
-      return json({ error: "Missing required fields: code and name" }, { status: 400 });
+      return json(
+        { error: "Missing required fields: code and name" },
+        { status: 400 },
+      );
     }
 
     let svgCode = body.code;

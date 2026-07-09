@@ -122,11 +122,7 @@
       <div class={cn("flex flex-col gap-4 md:flex-row")}>
         {#if typeof svgInfo.route === "string"}
           <div class={cardDownloadStyles}>
-            <img
-              src={svgInfo.route}
-              alt={svgInfo.title}
-              class={imgStyles}
-            />
+            <img src={svgInfo.route} alt={svgInfo.title} class={imgStyles} />
             <Button
               class="justify-between"
               title="Download logo"
@@ -212,11 +208,7 @@
 
         {#if typeof svgInfo.wordmark === "string" && svgInfo.wordmark !== undefined}
           <div class={cardDownloadStyles}>
-            <img
-              src={svgInfo.wordmark}
-              alt={svgInfo.title}
-              class={imgStyles}
-            />
+            <img src={svgInfo.wordmark} alt={svgInfo.title} class={imgStyles} />
             <Button
               class="justify-between"
               title="Download Wordmark logo"
