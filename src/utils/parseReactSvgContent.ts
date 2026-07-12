@@ -26,6 +26,7 @@ const Attributes: Record<string, string> = {
   "xlink:href": "xlinkHref",
   "flood-opacity": "floodOpacity",
   "flood-color": "floodColor",
+  "fill-opacity": "fillOpacity",
 };
 
 const convertStyleStringToObject = (styleString: string): string => {
