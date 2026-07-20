@@ -4,7 +4,10 @@ export const svgs: iSVG[] = [
   {
     title: "AccountantOS",
     category: "Software",
-    route: "/library/accountantos.svg",
+    route: {
+      light: "/library/accountantos.svg",
+      dark: "/library/accountantos-dark.svg",
+    },
     brandUrl: "https://accountantos.com.au/brand",
     url: "https://accountantos.com.au/",
   },
