@@ -2,6 +2,16 @@ import type { iSVG } from "@/types/svg";
 
 export const svgs: iSVG[] = [
   {
+    title: "AccountantOS",
+    category: "Software",
+    route: {
+      light: "/library/accountantos.svg",
+      dark: "/library/accountantos-dark.svg",
+    },
+    brandUrl: "https://accountantos.com.au/brand",
+    url: "https://accountantos.com.au/",
+  },
+  {
     title: "Plausible Analytics",
     category: "Analytics",
     route: "/library/plausible.svg",
