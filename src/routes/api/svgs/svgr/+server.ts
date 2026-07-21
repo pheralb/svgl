@@ -12,6 +12,13 @@ export const POST = async ({ request }: RequestEvent) => {
   try {
     const body = await request.json();
 
+    if (!body.code || !body.name) {
+      return json(
+        { error: "Missing required fields: code and name" },
+        { status: 400 },
+      );
+    }
+
     let svgCode = body.code;
     const typescript = body.typescript;
     const name = body.name.replace(/[^a-zA-Z0-9]/g, "");
