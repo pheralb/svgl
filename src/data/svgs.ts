@@ -58,6 +58,17 @@ export const svgs: iSVG[] = [
     brandUrl:
       "https://www.nvidia.com/en-us/about-nvidia/legal-info/logo-brand-usage",
   },
+    {
+    title: "Proton Authenticator",
+    category: ["Software", "Authentication", "Privacy"],
+    route: "/library/proton-authenticator.svg",
+    wordmark: {
+      light: "/library/proton-authenticator-wordmark-light.svg",
+      dark: "/library/proton-authenticator-wordmark-dark.svg",
+    },
+    url: "https://proton.me/authenticator",
+    brandUrl: "https://proton.me/media/kit",
+  },
   {
     title: "Proton Mail",
     category: ["Software", "Privacy", "Communications"],
@@ -73,6 +84,17 @@ export const svgs: iSVG[] = [
     wordmark: "/library/protonvpn-wordmark.svg",
     url: "https://protonvpn.com/",
     brandUrl: "https://proton.me/media/kit",
+  },
+    {
+    title: "Mullvad VPN",
+   category: ["Software", "Privacy"],
+    route: "/library/mullvad-vpn.svg",
+    wordmark: {
+      light: "/library/mullvad-vpn-wordmark-light.svg",
+      dark: "/library/mullvad-vpn-wordmark-dark.svg",
+    },
+    url: "https://mullvad.net/",
+    brandUrl: "https://mullvad.net/en/press/",
   },
   {
     title: "Google Classroom",
