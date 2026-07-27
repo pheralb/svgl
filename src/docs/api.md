@@ -3,66 +3,62 @@ title: API Reference
 description: The API reference is a detailed documentation of all the endpoints available in the SVGL API.
 ---
 
-<script>
-  import Endpoint from '../components/endpoints.svelte';
-</script>
-
 ## Introduction
 
-SVGL API is a RESTFul API that allows you to get all the information of the SVGs that are in the repository.
+SVGL API is a free RESTFul API that allows you to get all the information of the SVGs that are in the repository.
 
 ## Limitations
 
 The API is currently open to everyone and does not require any authentication. However, to prevent abusive use of the API, there is a limit to the number of requests.
 
-## Base URL
+To avoid hitting the rate limit, it's recommended to cache the API responses on your side (e.g. for a few minutes) instead of requesting the same data on every call.
 
-The base URL for the API is:
+> Don't use the API for create the same product as SVGL. The API is intended to be used for extensions, plugins, or other tools that can help the community.
+
+## Base URLs
+
+SVGs URL:
 
 ```bash
-https://svgl.app/api/svgs
-# or
-https://svgl.app/api/categories
+https://api.svgl.app
 ```
 
-## Typescript usage
+Categories URL:
 
-- For categories:
-
-```ts
-export interface Category {
-  category: string;
-  total: number;
-}
+```bash
+https://api.svgl.app/categories
 ```
 
-- For SVGs:
+## Typescript
+
+You can use the following types for the SVG responses:
 
 ```ts
-type ThemeOptions = {
-  light: string;
+export type ThemeOptions = {
   dark: string;
+  light: string;
 };
 
-export interface iSVG {
+export interface SVG {
   id: number;
   title: string;
   category: string | string[];
   route: string | ThemeOptions;
-  wordmark?: string | ThemeOptions;
   url: string;
+  wordmark?: string | ThemeOptions;
+  brandUrl?: string;
 }
 ```
 
+> If you need types for the `category`, you can find them [here](https://github.com/pheralb/svgl/blob/main/src/types/categories.ts). Change the type of `category` to `Category | Category[]`.
+
 ## Endpoints
 
-<Endpoint title="Get all SVGs" method="GET" description="Returns all the SVGs in the repository.">
+### Get all SVGs
 
 ```bash
-/api/svgs
+https://api.svgl.app
 ```
-
-<p></p>
 
 ```json
 // Returns:
@@ -78,15 +74,11 @@ export interface iSVG {
 ]
 ```
 
-</Endpoint>
-
-<Endpoint title="Get a limited number of SVGs" method="GET" description="Returns a limited number of SVGs in the repository. Start from the first SVG.">
+### Get all SVGs with limit
 
 ```bash
-/api/svgs?limit=10
+https://api.svgl.app?limit=10
 ```
-
-<p></p>
 
 ```json
 // Returns:
@@ -102,15 +94,11 @@ export interface iSVG {
 ]
 ```
 
-</Endpoint>
-
-<Endpoint title="Filter SVGs by category" method="GET" description="Returns all the SVGs in the repository that match the category.">
+### Get SVGs by category
 
 ```bash
-/api/svgs?category=software
+https://api.svgl.app/category/software
 ```
-
-<p></p>
 
 ```json
 // Returns:
@@ -126,42 +114,52 @@ export interface iSVG {
 ]
 ```
 
-The list of categories is available [here](https://github.com/pheralb/svgl/blob/main/src/types/categories.ts) (except for the _all_ category).
+> The list of categories is available [here](https://github.com/pheralb/svgl/blob/main/src/types/categories.ts).
 
-</Endpoint>
+### Get the SVG code
 
-<Endpoint title="Get only categories" method="GET" description="Returns only categories with the number of SVGs in each category.">
-
-```bash
-/api/categories
-```
-
-<p></p>
-
-```json
-// Returns:
-[
-  {
-    "category": "Software",
-    "total": 97
-  },
-  {
-    "category": "Library",
-    "total": 25
-  },
-  ...
-]
-```
-
-</Endpoint>
-
-<Endpoint title="Search SVGs by name" method="GET" description="Returns all the SVGs in the repository that match the name.">
+Optimized SVG using [svgo](https://github.com/svg/svgo):
 
 ```bash
-/api/svgs?search=axiom
+https://api.svgl.app/svg/adobe.svg
 ```
 
-<p></p>
+No optimized SVG:
+
+```bash
+https://api.svgl.app/svg/adobe.svg?no-optimize
+```
+
+```html
+<!-- Returns: -->
+<svg
+  width="91"
+  height="80"
+  viewBox="0 0 91 80"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <g clip-path="url(#clip0_906_1839)">
+    <path d="M56.9686 0H90.4318V80L56.9686 0Z" fill="#EB1000" />
+    <path d="M33.4632 0H0V80L33.4632 0Z" fill="#EB1000" />
+    <path
+      d="M45.1821 29.4668L66.5199 80.0002H52.5657L46.1982 63.9461H30.6182L45.1821 29.4668Z"
+      fill="#EB1000"
+    />
+  </g>
+  <defs>
+    <clipPath id="clip0_906_1839">
+      <rect width="90.4318" height="80" fill="white" />
+    </clipPath>
+  </defs>
+</svg>
+```
+
+### Search SVG by title
+
+```bash
+https://api.svgl.app?search=axiom
+```
 
 ```json
 // Returns:
@@ -179,4 +177,23 @@ The list of categories is available [here](https://github.com/pheralb/svgl/blob/
 ]
 ```
 
-</Endpoint>
+### Get the list of categories
+
+```bash
+https://api.svgl.app/categories
+```
+
+```json
+// Returns:
+[
+  {
+    "category": "Software",
+    "total": 97
+  },
+  {
+    "category": "Library",
+    "total": 25
+  }
+  //...
+]
+```

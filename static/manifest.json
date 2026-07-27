@@ -1,11 +1,11 @@
 {
-  "theme_color": "#161616",
-  "background_color": "#161616",
+  "theme_color": "#232323",
+  "background_color": "#232323",
   "display": "standalone",
   "scope": "/",
   "start_url": "/",
-  "name": "Svgl",
-  "short_name": "Svgl",
+  "name": "SVGL",
+  "short_name": "SVGL",
   "description": "A beautiful library with SVG logos",
   "icons": [
     {

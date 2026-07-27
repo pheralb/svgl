@@ -1,0 +1,77 @@
+@import "./globals.css";
+
+.markdown {
+  @apply max-w-full text-neutral-950 dark:text-neutral-50;
+
+  /* Headings */
+
+  & h1:not(.not-markdown h1) {
+    @apply scroll-m-20 text-center text-3xl font-semibold text-balance;
+  }
+
+  & h2:not(.not-markdown h2) {
+    @apply mt-10 mb-3 scroll-m-20 border-b border-neutral-200 pb-1.5 text-2xl font-semibold first:mt-0 dark:border-neutral-800;
+  }
+
+  & h3:not(.not-markdown h3) {
+    @apply scroll-m-20 text-xl font-semibold [&:not(:first-child)]:mt-8 [&:not(:first-child)]:mb-3;
+  }
+
+  & h4:not(.not-markdown h4) {
+    @apply scroll-m-20 text-lg font-medium;
+  }
+
+  /* Paragraphs */
+
+  & p:not(.not-markdown p) {
+    @apply mb-1.5 leading-7 [&:not(:first-child)]:mt-4;
+  }
+
+  /* Links */
+
+  & a:not(.not-markdown a) {
+    @apply font-medium underline underline-offset-4 transition-opacity hover:opacity-80;
+  }
+
+  /* Blockquotes */
+
+  & blockquote:not(.not-markdown blockquote) {
+    @apply mt-6 border-l-2 border-neutral-300 bg-neutral-200/50 pl-4 text-neutral-700 dark:border-neutral-700 dark:bg-neutral-800/50 dark:text-neutral-300;
+  }
+
+  /* Tables */
+
+  & table:not(.not-markdown table) {
+    @apply w-full;
+  }
+
+  & tr:not(.not-markdown tr) {
+    @apply m-0 border-t p-0 even:bg-neutral-200 dark:even:bg-neutral-800;
+  }
+
+  & th:not(.not-markdown th) {
+    @apply border px-4 py-2 text-left font-bold [&[align=center]]:text-center [&[align=right]]:text-right;
+  }
+
+  & td:not(.not-markdown td) {
+    @apply border px-4 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right;
+  }
+
+  /* Lists */
+
+  & list:not(.not-markdown list) {
+    @apply my-6 ml-6 list-disc [&>li]:mt-2;
+  }
+
+  /* Inline Code */
+
+  & code:not(pre > code):not(.not-markdown code) {
+    @apply relative rounded bg-neutral-200/50 px-[0.3rem] py-[0.2rem] font-mono text-sm dark:bg-neutral-800/50;
+  }
+
+  /* Code block */
+
+  & pre:not(.not-markdown pre) {
+    @apply mt-2 overflow-y-auto rounded-md border border-neutral-200 bg-white p-2 text-sm drop-shadow-xs dark:border-neutral-800 dark:bg-neutral-950;
+  }
+}

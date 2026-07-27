@@ -1,45 +1,77 @@
-name: ⚙️ Check app
+name: 🧑‍🚀 Check
 
 on:
   push:
     branches:
       - main
-      - next
+      - dev
   pull_request:
     branches:
       - main
-      - next
+      - dev
 
 jobs:
-  vitest:
+  lint:
     runs-on: ubuntu-latest
+    name: ⚙️ Linting
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v6
 
-      - name: Setup pnpm 8
-        uses: pnpm/action-setup@v2
+      - name: Use Node.js 24
+        uses: actions/setup-node@v6
         with:
-          version: 8
+          node-version: 24
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v6
 
       - name: Install dependencies
         run: pnpm install
 
-      - name: Run Vitest
-        run: pnpm test
-  svgs-size:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
+      - name: Run Eslint
+        run: pnpm lint
+        env:
+          PUBLIC_SVGL_VERSION: v5
 
-      - name: Setup pnpm 8
-        uses: pnpm/action-setup@v2
+  check-svgs:
+    runs-on: ubuntu-latest
+    name: 📦 Check SVGs
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Use Node.js 24
+        uses: actions/setup-node@v6
         with:
-          version: 8
+          node-version: 24
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v6
 
       - name: Install dependencies
         run: pnpm install
-        working-directory: ./utils/check-size
 
-      - name: Check svgs size
-        run: pnpm start
-        working-directory: ./utils/check-size
+      - name: Check SVGs size
+        run: pnpm check:size
+
+      - name: Check unused SVGs
+        run: pnpm check:data
+
+  api:
+    runs-on: ubuntu-latest
+    name: 🌱 Check API
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Use Node.js 24
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v6
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build API
+        run: pnpm build:api

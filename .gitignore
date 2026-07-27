@@ -1,31 +1,29 @@
 # Dependencies
 node_modules
-package-lock.json
-yarn.lock
 
-# Folders
-/.svelte-kit
-/build
-dist
-/package
-.idea/
+# Content Collections
+.content-collections
 
-# Hono
+# Output
+api-routes/src/data
+.output
+.vercel
+.netlify
 .wrangler
-.dev.vars
+/.svelte-kit
+build
+dist
 
-# Logs
+# OS
 .DS_Store
+Thumbs.db
 
-# Environment variables
+# Env
 .env
 .env.*
 !.env.example
+!.env.test
 
-# Vite files
+# Vite
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
-src/figma/dist
-
-# Lychee files
-.lycheecache

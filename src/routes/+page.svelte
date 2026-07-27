@@ -1,95 +1,95 @@
 <script lang="ts">
-  import type { iSVG } from '@/types/svg';
-  import { cn } from '@/utils/cn';
-  import { queryParam } from 'sveltekit-search-params';
+  import type { PageProps } from "./$types";
+  import { browser } from "$app/environment";
 
-  // Get all svgs:
-  import { svgsData } from '@/data';
-  const allSvgs = JSON.parse(JSON.stringify(svgsData));
+  import { cn } from "@/utils/cn";
+  import { svgsData } from "@/data";
+  import { deleteParam } from "@/utils/searchParams";
+  import { searchSvgsWithFuse } from "@/utils/searchWithFuse";
 
-  // Components:
-  import Search from '@/components/search.svelte';
-  import Container from '@/components/container.svelte';
-  import SvgCard from '@/components/svgCard.svelte';
-  import Grid from '@/components/grid.svelte';
-  import NotFound from '@/components/notFound.svelte';
+  import Grid from "@/components/grid.svelte";
+  import Search from "@/components/search.svelte";
+  import SvgCard from "@/components/svgs/svgCard.svelte";
+  import SortSvgs from "@/components/svgs/sortSvgs.svelte";
+  import Container from "@/components/container.svelte";
 
-  // URL params
-  const searchParam = queryParam('search');
+  import PageCard from "@/components/pageCard.svelte";
+  import PageHeader from "@/components/pageHeader.svelte";
+  import Button from "@/components/ui/button/button.svelte";
+  import SvgNotFound from "@/components/svgs/svgNotFound.svelte";
+  import WarningMessage from "@/components/warningMessage.svelte";
 
-  // Icons:
-  import { ArrowDown, ArrowDownUpIcon, ArrowUpDownIcon } from 'lucide-svelte';
-  import { buttonStyles } from '@/ui/styles';
+  import Files from "@lucide/svelte/icons/files";
+  import SearchXIcon from "@lucide/svelte/icons/search-x";
 
-  let sorted: boolean = false;
-  let isFirstLoad: boolean = true;
-  let showAll: boolean = false;
+  // SSR Data:
+  let { data }: PageProps = $props();
 
-  // Search:
-  let searchTerm = $searchParam || '';
-  let filteredSvgs: iSVG[] = [];
+  // States:
+  const INITIAL_DISPLAY = 30;
+  const INCREMENT = 10;
 
-  // Order by last added:
-  if (searchTerm.length === 0) {
-    filteredSvgs = allSvgs.sort((a: iSVG, b: iSVG) => {
-      return b.id! - a.id!;
-    });
+  let maxDisplay = $state<number>(INITIAL_DISPLAY);
+  let sortOverride = $state<boolean | null>(null);
+  let searchOverride = $state<string | null>(null);
+  let sentinel = $state<HTMLDivElement | null>(null);
+
+  const isSorted = $derived(sortOverride !== null ? sortOverride : data.sorted);
+  const searchTerm = $derived(
+    searchOverride !== null ? searchOverride : data.searchTerm,
+  );
+
+  const filteredSvgs = $derived.by(() => {
+    if (!searchTerm) {
+      return isSorted ? data.alphabeticallySorted : data.latestSorted;
+    }
+    const baseData = isSorted ? data.alphabeticallySorted : data.latestSorted;
+    return searchSvgsWithFuse(baseData)
+      .search(searchTerm)
+      .map((result) => result.item);
+  });
+
+  const displaySvgs = $derived(filteredSvgs.slice(0, maxDisplay));
+
+  const handleSearch = (value: string) => {
+    searchOverride = value;
+    maxDisplay = INITIAL_DISPLAY;
+  };
+
+  const handleClearSearch = () => {
+    searchOverride = "";
+    maxDisplay = INITIAL_DISPLAY;
+    deleteParam("search");
+  };
+
+  function getScrollParent(node: HTMLElement | null): HTMLElement | null {
+    if (!node) return null;
+    const { overflow, overflowY } = getComputedStyle(node);
+    if (
+      overflow.includes("scroll") ||
+      overflow.includes("auto") ||
+      overflowY.includes("scroll") ||
+      overflowY.includes("auto")
+    ) {
+      return node;
+    }
+    return getScrollParent(node.parentElement);
   }
 
-  const loadSvgs = () => {
-    if (isFirstLoad || showAll) {
-      filteredSvgs = allSvgs;
-      isFirstLoad = false;
-    } else {
-      filteredSvgs = allSvgs.slice(0, 30);
-    }
-  };
-
-  // Search svgs:
-  const searchSvgs = () => {
-    $searchParam = searchTerm || null;
-    loadSvgs();
-    filteredSvgs = allSvgs.filter((svg: iSVG) => {
-      let svgTitle = svg.title.toLowerCase();
-      return svgTitle.includes(searchTerm.toLowerCase());
-    });
-  };
-
-  // Clear search:
-  const clearSearch = () => {
-    searchTerm = '';
-    searchSvgs();
-  };
-
-  // Sort:
-  const sort = () => {
-    if (sorted) {
-      sortByLatest();
-    } else {
-      sortAlphabetically();
-    }
-    sorted = !sorted;
-  };
-
-  // Sort alphabetically:
-  const sortAlphabetically = () => {
-    filteredSvgs = allSvgs.sort((a: iSVG, b: iSVG) => {
-      return a.title.localeCompare(b.title);
-    });
-  };
-
-  // Sort by latest:
-  const sortByLatest = () => {
-    filteredSvgs = filteredSvgs.sort((a: iSVG, b: iSVG) => {
-      return b.id! - a.id!;
-    });
-  };
-
-  if ($searchParam) {
-    searchSvgs();
-  } else {
-    loadSvgs();
-  }
+  $effect(() => {
+    if (!sentinel) return;
+    const root = getScrollParent(sentinel.parentElement);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting && maxDisplay < filteredSvgs.length) {
+          maxDisplay += INCREMENT;
+        }
+      },
+      { root, rootMargin: "200px" },
+    );
+    observer.observe(sentinel);
+    return () => observer.disconnect();
+  });
 </script>
 
 <svelte:head>
@@ -97,48 +97,63 @@
 </svelte:head>
 
 <Search
-  bind:searchTerm
-  on:input={searchSvgs}
-  clearSearch={() => clearSearch()}
-  placeholder={`Search ${filteredSvgs.length} logos...`}
+  searchValue={searchTerm}
+  onSearch={handleSearch}
+  placeholder="Search..."
 />
 
-<Container>
-  <div class="flex items-center justify-end mb-4">
-    <button
-      class={cn(
-        'flex items-center justify-center space-x-1 rounded-md px-3 py-1.5 text-sm font-medium opacity-80 hover:opacity-100 transition-opacity',
-        filteredSvgs.length === 0 && 'hidden'
-      )}
-      on:click={() => sort()}
+<PageCard
+  containerClass="mt-2"
+  contentCardClass="max-h-[calc(100vh-7.6rem)] min-h-[calc(100vh-7.6rem)]"
+>
+  <PageHeader>
+    <div
+      class="flex items-center space-x-2 text-neutral-500 dark:text-neutral-400"
     >
-      {#if sorted}
-        <ArrowDownUpIcon size={16} strokeWidth={2} class="mr-1" />
+      {#if !searchTerm}
+        <Files size={18} strokeWidth={1.5} />
+        <p>
+          <span class="font-mono">{svgsData.length}</span>
+          <span>logos</span>
+        </p>
       {:else}
-        <ArrowUpDownIcon size={16} strokeWidth={2} class="mr-1" />
+        <Button
+          title="Clear Search"
+          onclick={handleClearSearch}
+          variant="ghost"
+          size="icon"
+        >
+          <SearchXIcon size={18} strokeWidth={1.5} />
+        </Button>
+        <p>
+          <span class="font-mono">{filteredSvgs.length}</span>
+          <span>logos</span>
+        </p>
       {/if}
-      <span>{sorted ? 'Sort by latest' : 'Sort alphabetically'}</span>
-    </button>
-  </div>
-  <Grid>
-    {#each filteredSvgs.slice(0, showAll ? undefined : 30) as svg}
-      <SvgCard svgInfo={svg} />
-    {/each}
-  </Grid>
-  {#if filteredSvgs.length > 30 && !showAll}
-    <div class="flex items-center justify-center mt-4">
-      <button class={buttonStyles} on:click={() => (showAll = true)}>
-        <div class="flex items-center space-x-2 relative">
-          <ArrowDown size={16} strokeWidth={2} />
-          <span>Load All SVGs</span>
-          <span class="opacity-70">
-            ({filteredSvgs.length - 30} more)
-          </span>
-        </div>
-      </button>
     </div>
+    <div class="flex items-center space-x-2">
+      <SortSvgs
+        className={cn(filteredSvgs.length === 0 && "hidden")}
+        {isSorted}
+        onSortedChange={(value) => {
+          sortOverride = value;
+          maxDisplay = INITIAL_DISPLAY;
+        }}
+      />
+    </div>
+  </PageHeader>
+  {#if browser}
+    <WarningMessage />
   {/if}
-  {#if filteredSvgs.length === 0}
-    <NotFound notFoundTerm={searchTerm} />
-  {/if}
-</Container>
+  <Container className="my-6">
+    <Grid>
+      {#each displaySvgs as svg (svg.id)}
+        <SvgCard svgInfo={svg} />
+      {/each}
+    </Grid>
+    <div bind:this={sentinel} class="h-1"></div>
+    {#if filteredSvgs.length === 0}
+      <SvgNotFound svgTitle={searchTerm} />
+    {/if}
+  </Container>
+</PageCard>

@@ -9,6 +9,6 @@
     "skipLibCheck": true,
     "sourceMap": true,
     "strict": true,
-    "types": ["@figma/plugin-typings"]
+    "moduleResolution": "bundler"
   }
 }
