@@ -3405,6 +3405,21 @@ export const svgs: iSVG[] = [
     brandUrl: "https://www.adobe.com/legal/permissions.html",
   },
   {
+    title: 'v0',
+    category: 'Vercel',
+    route: {
+      light: '/library/v0_light.svg',
+      dark: '/library/v0_dark.svg'
+    },
+    url: 'https://v0.dev/'
+  },
+  {
+    title: 'Snipcart',
+    category: 'Library',
+    route: '/library/snipcart.svg',
+    url: 'https://snipcart.com/'
+  },
+  {
     title: "Captivate Prime",
     category: [
       "Adobe",
