@@ -5130,4 +5130,10 @@ export const svgs: iSVG[] = [
     url: "https://grida.co",
     brandUrl: "https://grida.co/brand",
   },
+  {
+    title: "HubSpot",
+    category: ["Software"],
+    route: "/library/hubspot.svg",
+    url: "https://www.hubspot.com/",
+  },
 ];
