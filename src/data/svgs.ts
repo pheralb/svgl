@@ -2,6 +2,15 @@ import type { iSVG } from "@/types/svg";
 
 export const svgs: iSVG[] = [
   {
+    title: "Flowly",
+    category: ["AI", "Software"],
+    route: {
+      light: "/library/flowly-light.svg",
+      dark: "/library/flowly-dark.svg",
+    },
+    url: "https://useflowlyapp.com/",
+  },
+  {
     title: "Plausible Analytics",
     category: "Analytics",
     route: "/library/plausible.svg",
