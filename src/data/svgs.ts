@@ -535,7 +535,7 @@ export const svgs: iSVG[] = [
     brandUrl: "https://getbootstrap.com/docs/4.0/about/brand/",
   },
   {
-    title: "Facebook",
+    title: "FaceboK",
     category: "Social",
     route: "/library/facebook-icon.svg",
     wordmark: "/library/facebook-wordmark.svg",
