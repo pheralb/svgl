@@ -149,7 +149,7 @@
   <!-- Title -->
   <div class="mb-3 flex flex-col items-center justify-center space-y-1">
     <p
-      class="truncate text-center text-[15px] font-medium text-balance select-all"
+      class="truncate text-center text-[20px] font-medium text-balance select-all"
     >
       {svgInfo.title}
     </p>
