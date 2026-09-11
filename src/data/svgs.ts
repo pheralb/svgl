@@ -5184,4 +5184,14 @@ export const svgs: iSVG[] = [
     },
     url: "https://retain.so/",
   },
+  {
+    title: "Amazon Music",
+    category: ["Music", "Software"],
+    route: "/library/amazon-music.svg",
+    wordmark: {
+      light: "/library/amazon-music-wordmark-light.svg",
+      dark: "/library/amazon-music-wordmark-dark.svg",
+    },
+    url: "https://music.amazon.com/",
+  },
 ];
