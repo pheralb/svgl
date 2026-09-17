@@ -5188,4 +5188,18 @@ export const svgs: iSVG[] = [
     },
     url: "https://retain.so/",
   },
+  {
+    title: "Ghosting",
+    category: ["Software", "Platform"],
+    route: {
+      light: "/library/ghosting-light.svg",
+      dark: "/library/ghosting-dark.svg",
+    },
+    wordmark: {
+      light: "/library/ghosting-wordmark-light.svg",
+      dark: "/library/ghosting-wordmark-dark.svg",
+    },
+    url: "https://www.ghosting.fun",
+  },
 ];
+
