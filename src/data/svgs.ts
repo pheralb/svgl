@@ -5188,4 +5188,17 @@ export const svgs: iSVG[] = [
     },
     url: "https://retain.so/",
   },
+  {
+    title: "TypeSafe AI",
+    category: ["AI", "Platform"],
+    route: {
+      light: "/library/typesafe-ai-light.svg",
+      dark: "/library/typesafe-ai-dark.svg",
+    },
+    wordmark: {
+      light: "/library/typesafe-ai-wordmark-light.svg",
+      dark: "/library/typesafe-ai-wordmark-dark.svg",
+    },
+    url: "https://typesafe.ai/",
+  },
 ];
