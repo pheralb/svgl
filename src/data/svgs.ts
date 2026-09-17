@@ -2572,8 +2572,12 @@ export const svgs: iSVG[] = [
   },
   {
     title: "Reddit",
-    category: "Social",
+    category: ["Social", "Software"],
     route: "/library/reddit.svg",
+    wordmark: {
+      light: "/library/reddit-wordmark-orange.svg",
+      dark: "/library/reddit-wordmark-white.svg",
+    },
     url: "https://www.reddit.com/",
     brandUrl: "https://redditinc.com/brand",
   },
