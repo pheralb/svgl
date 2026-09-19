@@ -2572,8 +2572,12 @@ export const svgs: iSVG[] = [
   },
   {
     title: "Reddit",
-    category: "Social",
+    category: ["Social", "Software"],
     route: "/library/reddit.svg",
+    wordmark: {
+      light: "/library/reddit-wordmark-orange.svg",
+      dark: "/library/reddit-wordmark-white.svg",
+    },
     url: "https://www.reddit.com/",
     brandUrl: "https://redditinc.com/brand",
   },
@@ -5193,5 +5197,18 @@ export const svgs: iSVG[] = [
       dark: "/library/amazon-music-wordmark-dark.svg",
     },
     url: "https://music.amazon.com/",
+  },
+  {
+    title: "TypeSafe AI",
+    category: ["AI", "Platform"],
+    route: {
+      light: "/library/typesafe-ai-light.svg",
+      dark: "/library/typesafe-ai-dark.svg",
+    },
+    wordmark: {
+      light: "/library/typesafe-ai-wordmark-light.svg",
+      dark: "/library/typesafe-ai-wordmark-dark.svg",
+    },
+    url: "https://typesafe.ai/",
   },
 ];
