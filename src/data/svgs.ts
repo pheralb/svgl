@@ -5201,4 +5201,13 @@ export const svgs: iSVG[] = [
     },
     url: "https://typesafe.ai/",
   },
+  {
+    title: "Sealed Rose",
+    category: ["AI", "Cybersecurity", "Software"],
+    route: {
+      light: "/library/sealed-rose-light.svg",
+      dark: "/library/sealed-rose-dark.svg",
+    },
+    url: "https://sealedrose.com/verify-video",
+  },
 ];
