@@ -97,6 +97,7 @@
     >
       <a
         href="/"
+        aria-label="Back to the SVGL home page"
         class={cn(buttonVariants({ variant: "ghost", size: "icon" }))}
       >
         <ArrowLeftIcon size={18} strokeWidth={1.5} />
