@@ -2,6 +2,12 @@ import type { iSVG } from "@/types/svg";
 
 export const svgs: iSVG[] = [
   {
+    title: "LibreDB Studio",
+    category: "Database",
+    route: "/library/libredb-studio.svg",
+    url: "https://libredb.org/",
+  },
+  {
     title: 'Ossium',
     category: 'Software',
     route: '/library/ossium_logo.svg',
