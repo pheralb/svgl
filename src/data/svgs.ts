@@ -5201,4 +5201,17 @@ export const svgs: iSVG[] = [
     },
     url: "https://typesafe.ai/",
   },
+  {
+    title: "Curio",
+    category: ["Design", "AI", "Devtool"],
+    route: {
+      light: "/library/curio-light.svg",
+      dark: "/library/curio-dark.svg",
+    },
+    wordmark: {
+      light: "/library/curio-wordmark-light.svg",
+      dark: "/library/curio-wordmark-dark.svg",
+    },
+    url: "https://designbycurio.com/",
+  },
 ];
