@@ -5201,4 +5201,14 @@ export const svgs: iSVG[] = [
     },
     url: "https://typesafe.ai/",
   },
+  {
+    title: "VRAMGlass",
+    category: ["Software", "Hardware"],
+    route: "/library/vramglass.svg",
+    wordmark: {
+      light: "/library/vramglass-wordmark-light.svg",
+      dark: "/library/vramglass-wordmark-dark.svg",
+    },
+    url: "https://vramglass.com/",
+  },
 ];
