@@ -2,6 +2,12 @@ import type { iSVG } from "@/types/svg";
 
 export const svgs: iSVG[] = [
   {
+    title: "Nereo",
+    category: ["AI", "Software"],
+    route: "/library/nereo.svg",
+    url: "https://www.nereo.io/",
+  },
+  {
     title: 'Ossium',
     category: 'Software',
     route: '/library/ossium_logo.svg',
