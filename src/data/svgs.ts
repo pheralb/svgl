@@ -5201,4 +5201,14 @@ export const svgs: iSVG[] = [
     },
     url: "https://typesafe.ai/",
   },
+  {
+    title: "Easy AI",
+    category: ["AI", "Software"],
+    route: "/library/easy-ai.svg",
+    wordmark: {
+      light: "/library/easy-ai-wordmark-light.svg",
+      dark: "/library/easy-ai-wordmark-dark.svg",
+    },
+    url: "https://geteasy.ai/",
+  },
 ];
