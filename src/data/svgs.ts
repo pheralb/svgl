@@ -5201,4 +5201,17 @@ export const svgs: iSVG[] = [
     },
     url: "https://typesafe.ai/",
   },
+  {
+    title: "Cockroach Labs",
+    category: "Database",
+    route: {
+      light: "/library/cockroachlabs-light.svg",
+      dark: "/library/cockroachlabs-dark.svg",
+    },
+    wordmark: {
+      light: "/library/cockroachlabs-wordmark-light.svg",
+      dark: "/library/cockroachlabs-wordmark-dark.svg",
+    },
+    url: "https://www.cockroachlabs.com/",
+  },
 ];
