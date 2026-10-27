@@ -2,6 +2,44 @@ import type { iSVG } from "@/types/svg";
 
 export const svgs: iSVG[] = [
   {
+    title: "Pi",
+    category: ["AI", "Devtool"],
+    route: "/library/pi.svg",
+    url: "https://pi.dev",
+    brandUrl: "https://pi.dev/press-kit",
+  },
+  {
+    title: "Pi",
+    subTitle: "Monochrome",
+    category: ["AI", "Devtool"],
+    route: {
+      light: "/library/pi-light.svg",
+      dark: "/library/pi-dark.svg",
+    },
+    url: "https://pi.dev",
+    brandUrl: "https://pi.dev/press-kit",
+  },
+  {
+    title: "Radius",
+    category: ["AI", "Devtool"],
+    route: "/library/radius.svg",
+    wordmark: {
+      light: "/library/radius-wordmark-light.svg",
+      dark: "/library/radius-wordmark-dark.svg",
+    },
+    url: "https://radius.earendil.com",
+  },
+  {
+    title: "Radius",
+    subTitle: "Monochrome",
+    category: ["AI", "Devtool"],
+    route: {
+      light: "/library/radius-light.svg",
+      dark: "/library/radius-dark.svg",
+    },
+    url: "https://radius.earendil.com",
+  },
+  {
     title: 'Ossium',
     category: 'Software',
     route: '/library/ossium_logo.svg',
