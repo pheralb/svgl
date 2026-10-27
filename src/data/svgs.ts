@@ -5252,4 +5252,14 @@ export const svgs: iSVG[] = [
     },
     url: "https://www.cockroachlabs.com/",
   },
+  {
+    title: "LogBrew",
+    category: ["Devtool", "Software"],
+    route: "/library/logbrew.svg",
+    wordmark: {
+      light: "/library/logbrew-wordmark-light.svg",
+      dark: "/library/logbrew-wordmark-dark.svg",
+    },
+    url: "https://logbrew.co/",
+  },
 ];
