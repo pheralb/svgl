@@ -5262,4 +5262,14 @@ export const svgs: iSVG[] = [
     },
     url: "https://logbrew.co/",
   },
+  {
+    title: "Xquik",
+    category: ["Devtool", "Software"],
+    route: "/library/xquik.svg",
+    wordmark: {
+      light: "/library/xquik-wordmark-light.svg",
+      dark: "/library/xquik-wordmark-dark.svg",
+    },
+    url: "https://xquik.com",
+  },
 ];
