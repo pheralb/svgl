@@ -3748,8 +3748,12 @@ export const svgs: iSVG[] = [
   },
   {
     title: "Taskade",
-    category: ["Software", "AI"],
+    category: ["Software", "AI", "Platform", "Automation"],
     route: "/library/taskade.svg",
+    wordmark: {
+      light: "/library/taskade-wordmark-light.svg",
+      dark: "/library/taskade-wordmark-dark.svg",
+    },
     url: "https://www.taskade.com/",
     brandUrl: "https://www.taskade.com/press",
   },
