@@ -5262,4 +5262,60 @@ export const svgs: iSVG[] = [
     },
     url: "https://logbrew.co/",
   },
+  {
+    title: "JFrog",
+    category: "Devtool",
+    route: "/library/jfrog.svg",
+    wordmark: "/library/jfrog-wordmark.svg",
+    url: "https://jfrog.com/",
+  },
+  {
+    title: "Twingate",
+    category: "Cybersecurity",
+    route: {
+      light: "/library/twingate-light.svg",
+      dark: "/library/twingate-dark.svg",
+    },
+    wordmark: {
+      light: "/library/twingate-wordmark-light.svg",
+      dark: "/library/twingate-wordmark-dark.svg",
+    },
+    url: "https://www.twingate.com/",
+  },
+  {
+    title: "Coralogix",
+    category: "Analytics",
+    route: {
+      light: "/library/coralogix-light.svg",
+      dark: "/library/coralogix-dark.svg",
+    },
+    wordmark: {
+      light: "/library/coralogix-wordmark-light.svg",
+      dark: "/library/coralogix-wordmark-dark.svg",
+    },
+    url: "https://coralogix.com/",
+  },
+  {
+    title: "Zendesk",
+    category: "Software",
+    route: {
+      light: "/library/zendesk-light.svg",
+      dark: "/library/zendesk-dark.svg",
+    },
+    wordmark: {
+      light: "/library/zendesk-wordmark-light.svg",
+      dark: "/library/zendesk-wordmark-dark.svg",
+    },
+    url: "https://www.zendesk.com/",
+  },
+  {
+    title: "Snyk",
+    category: "Cybersecurity",
+    route: "/library/snyk.svg",
+    wordmark: {
+      light: "/library/snyk-wordmark-light.svg",
+      dark: "/library/snyk-wordmark-dark.svg",
+    },
+    url: "https://snyk.io/",
+  },
 ];
