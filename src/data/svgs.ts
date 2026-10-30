@@ -3747,6 +3747,17 @@ export const svgs: iSVG[] = [
     url: "https://todoist.com/",
   },
   {
+    title: "Taskade",
+    category: ["Software", "AI", "Platform", "Automation"],
+    route: "/library/taskade.svg",
+    wordmark: {
+      light: "/library/taskade-wordmark-light.svg",
+      dark: "/library/taskade-wordmark-dark.svg",
+    },
+    url: "https://www.taskade.com/",
+    brandUrl: "https://www.taskade.com/press",
+  },
+  {
     title: "Apidog",
     category: "Software",
     route: "/library/apidog.svg",
