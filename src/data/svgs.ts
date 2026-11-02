@@ -5262,4 +5262,12 @@ export const svgs: iSVG[] = [
     },
     url: "https://logbrew.co/",
   },
+  {
+    title: "Box",
+    category: ["Hosting", "Software"],
+    route: "/library/box.svg",
+    url: "https://www.box.com/",
+    brandUrl:
+      "https://support.box.com/hc/en-us/articles/360052362674-Box-Branding-101-Guidelines-and-Assets",
+  },
 ];
