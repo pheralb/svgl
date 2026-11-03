@@ -5262,4 +5262,14 @@ export const svgs: iSVG[] = [
     },
     url: "https://logbrew.co/",
   },
+  {
+    title: 'Composio', 
+    category: ['Devtool', 'Software'],
+    route: "/library/composio.svg",
+    wordmark: {
+      light: "/library/composio-light.svg",
+      dark: "/library/composio-dark.svg",
+    },
+    url: "https://composio.dev/"
+  }
 ];
