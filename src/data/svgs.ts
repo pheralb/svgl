@@ -2,6 +2,20 @@ import type { iSVG } from "@/types/svg";
 
 export const svgs: iSVG[] = [
   {
+    title: "Layerwise",
+    category: ["AI", "Devtool", "Software"],
+    route: {
+      light: "/library/layerwise-light.svg",
+      dark: "/library/layerwise-dark.svg",
+    },
+    wordmark: {
+      light: "/library/layerwise-wordmark-light.svg",
+      dark: "/library/layerwise-wordmark-dark.svg",
+    },
+    url: "https://layerwise.app/",
+    brandUrl: "https://layerwise.app/assets/brand/logo-black.svg",
+  },
+  {
     title: "Pi",
     category: ["AI", "Devtool"],
     route: "/library/pi.svg",
