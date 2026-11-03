@@ -1,3 +1,25 @@
+packages:
+  - "api-routes"
+
 allowBuilds:
   esbuild: true
   msw: true
+  sharp: true
+  workerd: true
+
+minimumReleaseAgeExclude:
+  - "@cloudflare/workers-types@4.20260629.1"
+  - '@lucide/svelte@1.22.0 || 1.40.0'
+  - prettier@3.9.3
+  - '@eslint/compat@2.1.1'
+  - rolldown-plugin-dts@0.28.5
+  - shadcn@4.21.0
+  - tinyexec@1.3.1
+  - tsdown@0.23.0
+
+catalog:
+  "typescript": "6.0.3"
+  "@types/node": "24.13.3"
+  "svgo": "4.1.0"
+  "zod": "4.5.4"
+  "tsx": "4.23.13"

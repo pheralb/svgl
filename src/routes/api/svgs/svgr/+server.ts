@@ -14,7 +14,10 @@ export const POST = async ({ request }: RequestEvent) => {
 
     let svgCode = body.code;
     const typescript = body.typescript;
-    const name = body.name.replace(/[^a-zA-Z0-9]/g, "");
+    let name = body.name.replace(/[^a-zA-Z0-9]/g, "");
+    if (/^\d/.test(name)) {
+      name = `Icon${name}`;
+    }
     const shouldOptimize = body.optimize !== false;
 
     if (shouldOptimize) {

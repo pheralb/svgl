@@ -4,6 +4,7 @@
   import { cn } from "@/utils/cn";
   import { deleteParam } from "@/utils/searchParams";
   import { searchSvgsWithFuse } from "@/utils/searchWithFuse";
+  import { getScrollParent } from "@/utils/getScrollParent";
 
   // Components:
   import Grid from "@/components/grid.svelte";
@@ -19,8 +20,6 @@
   import SearchXIcon from "@lucide/svelte/icons/search-x";
   import FolderIcon from "@lucide/svelte/icons/folder-open";
   import ArrowLeftIcon from "@lucide/svelte/icons/arrow-left";
-  import ChevronDownIcon from "@lucide/svelte/icons/chevron-down";
-  import ChevronUpIcon from "@lucide/svelte/icons/chevron-up";
 
   // SSR Data:
   let { data }: PageProps = $props();
@@ -32,6 +31,7 @@
   let maxDisplay = $state<number>(INITIAL_DISPLAY);
   let sortOverride = $state<boolean | null>(null);
   let searchOverride = $state<string | null>(null);
+  let sentinel = $state<HTMLDivElement | null>(null);
 
   const isSorted = $derived(sortOverride !== null ? sortOverride : data.sorted);
   const searchTerm = $derived(
@@ -61,17 +61,20 @@
     deleteParam("search");
   };
 
-  const handleShowMore = () => {
-    maxDisplay += INCREMENT;
-  };
-
-  const handleShowLess = () => {
-    maxDisplay = INITIAL_DISPLAY;
-  };
-
-  const handleShowAll = () => {
-    maxDisplay = filteredSvgs.length;
-  };
+  $effect(() => {
+    if (!sentinel) return;
+    const root = getScrollParent(sentinel.parentElement);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting && maxDisplay < filteredSvgs.length) {
+          maxDisplay += INCREMENT;
+        }
+      },
+      { root, rootMargin: "200px" },
+    );
+    observer.observe(sentinel);
+    return () => observer.disconnect();
+  });
 </script>
 
 <svelte:head>
@@ -94,6 +97,7 @@
     >
       <a
         href="/"
+        aria-label="Back to the SVGL home page"
         class={cn(buttonVariants({ variant: "ghost", size: "icon" }))}
       >
         <ArrowLeftIcon size={18} strokeWidth={1.5} />
@@ -134,17 +138,6 @@
           maxDisplay = INITIAL_DISPLAY;
         }}
       />
-      {#if filteredSvgs.length > maxDisplay}
-        <Button variant="ghost" class="px-2.5" onclick={handleShowAll}>
-          <span>Show All</span>
-        </Button>
-      {/if}
-      {#if maxDisplay > INITIAL_DISPLAY && filteredSvgs.length > INITIAL_DISPLAY}
-        <Button variant="ghost" class="px-2.5" onclick={handleShowLess}>
-          <span>Show Less</span>
-          <ChevronUpIcon size={16} strokeWidth={2} />
-        </Button>
-      {/if}
     </div>
   </PageHeader>
   <Container className="my-6">
@@ -153,22 +146,7 @@
         <SvgCard svgInfo={svg} />
       {/each}
     </Grid>
-    {#if filteredSvgs.length > maxDisplay}
-      <div class="mt-6 flex justify-center">
-        <Button
-          variant="outline"
-          size="lg"
-          class="px-2.5"
-          onclick={handleShowMore}
-        >
-          <span>Show More</span>
-          <span class="text-neutral-600 dark:text-neutral-400">
-            (+ {Math.min(INCREMENT, filteredSvgs.length - maxDisplay)} SVGs)
-          </span>
-          <ChevronDownIcon size={16} strokeWidth={2} />
-        </Button>
-      </div>
-    {/if}
+    <div bind:this={sentinel} class="h-1"></div>
     {#if filteredSvgs.length === 0}
       <SvgNotFound svgTitle={searchTerm} category={data.category} />
     {/if}

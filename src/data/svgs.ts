@@ -2,6 +2,58 @@ import type { iSVG } from "@/types/svg";
 
 export const svgs: iSVG[] = [
   {
+    title: "Pi",
+    category: ["AI", "Devtool"],
+    route: "/library/pi.svg",
+    url: "https://pi.dev",
+    brandUrl: "https://pi.dev/press-kit",
+  },
+  {
+    title: "Pi",
+    subTitle: "Monochrome",
+    category: ["AI", "Devtool"],
+    route: {
+      light: "/library/pi-light.svg",
+      dark: "/library/pi-dark.svg",
+    },
+    url: "https://pi.dev",
+    brandUrl: "https://pi.dev/press-kit",
+  },
+  {
+    title: "Radius",
+    category: ["AI", "Devtool"],
+    route: "/library/radius.svg",
+    wordmark: {
+      light: "/library/radius-wordmark-light.svg",
+      dark: "/library/radius-wordmark-dark.svg",
+    },
+    url: "https://radius.earendil.com",
+  },
+  {
+    title: "Radius",
+    subTitle: "Monochrome",
+    category: ["AI", "Devtool"],
+    route: {
+      light: "/library/radius-light.svg",
+      dark: "/library/radius-dark.svg",
+    },
+    url: "https://radius.earendil.com",
+  },
+  {
+    title: 'Ossium',
+    category: 'Software',
+    route: '/library/ossium_logo.svg',
+    url: 'https://ossium.in/',
+    brandUrl: 'https://ossium.in/brand',
+  },
+  {
+    title: "Plausible Analytics",
+    category: "Analytics",
+    route: "/library/plausible.svg",
+    brandUrl: "https://plausible.io/trademark",
+    url: "https://plausible.io/",
+  },
+  {
     title: "Ivy Framework",
     category: "Framework",
     route: "/library/ivy-framework.svg",
@@ -2580,8 +2632,12 @@ export const svgs: iSVG[] = [
   },
   {
     title: "Reddit",
-    category: "Social",
+    category: ["Social", "Software"],
     route: "/library/reddit.svg",
+    wordmark: {
+      light: "/library/reddit-wordmark-orange.svg",
+      dark: "/library/reddit-wordmark-white.svg",
+    },
     url: "https://www.reddit.com/",
     brandUrl: "https://redditinc.com/brand",
   },
@@ -3731,6 +3787,16 @@ export const svgs: iSVG[] = [
     url: "https://json-schema.org/",
   },
   {
+    title: "eve",
+    category: ["AI", "Framework", "Vercel"],
+    route: {
+      light: "/library/eve-light.svg",
+      dark: "/library/eve-dark.svg",
+    },
+    url: "https://vercel.com/eve",
+    brandUrl: "https://vercel.com/eve",
+  },
+  {
     title: "v0",
     category: "Vercel",
     route: {
@@ -3994,12 +4060,6 @@ export const svgs: iSVG[] = [
     category: "Design",
     route: "/library/lottielab.svg",
     url: "https://www.lottielab.com/",
-  },
-  {
-    title: "TanStack",
-    category: ["Software", "Library"],
-    route: "/library/tanstack.svg",
-    url: "https://tanstack.com/",
   },
   {
     title: "TypeGPU",
@@ -5134,5 +5194,94 @@ export const svgs: iSVG[] = [
     },
     url: "https://grida.co",
     brandUrl: "https://grida.co/brand",
+  },
+  {
+    title: "Depot",
+    category: ["Devtool", "Software", "Platform"],
+    route: {
+      light: "/library/depot-light.svg",
+      dark: "/library/depot-dark.svg",
+    },
+    wordmark: {
+      light: "/library/depot-wordmark-light.svg",
+      dark: "/library/depot-wordmark-dark.svg",
+    },
+    url: "https://depot.dev/",
+    brandUrl: "https://depot.dev/about/brand-assets",
+  },
+  {
+    title: "TanStack",
+    category: ["Software", "Library"],
+    route: {
+      light: "/library/tanstack_light.svg",
+      dark: "/library/tanstack_dark.svg",
+    },
+    wordmark: {
+      light: "/library/tanstack_wordmark_light.svg",
+      dark: "/library/tanstack_wordmark_dark.svg",
+    },
+    url: "https://tanstack.com/",
+  },
+  {
+    title: "Mastra",
+    category: ["AI", "Framework"],
+    route: {
+      light: "/library/mastra-icon-light.svg",
+      dark: "/library/mastra-icon-dark.svg",
+    },
+    wordmark: {
+      light: "/library/mastra-wordmark-light.svg",
+      dark: "/library/mastra-wordmark-dark.svg",
+    },
+    url: "https://mastra.ai/",
+  },
+  {
+    title: "Retain",
+    category: ["Analytics", "Software"],
+    route: {
+      light: "/library/retain-light.svg",
+      dark: "/library/retain-dark.svg",
+    },
+    wordmark: {
+      light: "/library/retain-wordmark-light.svg",
+      dark: "/library/retain-wordmark-dark.svg",
+    },
+    url: "https://retain.so/",
+  },
+  {
+    title: "TypeSafe AI",
+    category: ["AI", "Platform"],
+    route: {
+      light: "/library/typesafe-ai-light.svg",
+      dark: "/library/typesafe-ai-dark.svg",
+    },
+    wordmark: {
+      light: "/library/typesafe-ai-wordmark-light.svg",
+      dark: "/library/typesafe-ai-wordmark-dark.svg",
+    },
+    url: "https://typesafe.ai/",
+  },
+  {
+    title: "Cockroach Labs",
+    category: "Database",
+    route: {
+      light: "/library/cockroachlabs-light.svg",
+      dark: "/library/cockroachlabs-dark.svg",
+    },
+    wordmark: {
+      light: "/library/cockroachlabs-wordmark-light.svg",
+      dark: "/library/cockroachlabs-wordmark-dark.svg",
+    },
+    url: "https://www.cockroachlabs.com/",
+  },
+  {
+    title: "LogBrew",
+    category: ["Devtool", "Software"],
+    route: "/library/logbrew.svg",
+    wordmark: {
+      light: "/library/logbrew-wordmark-light.svg",
+      dark: "/library/logbrew-wordmark-dark.svg",
+    },
+    url: "https://logbrew.co/",
   },
 ];

@@ -1,5 +1,6 @@
 FROM node:24-alpine AS base
 
+ENV CI=true
 RUN corepack enable
 
 WORKDIR /app

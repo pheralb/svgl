@@ -5,12 +5,14 @@ node_modules
 .content-collections
 
 # Output
+api-routes/src/data
 .output
 .vercel
 .netlify
 .wrangler
 /.svelte-kit
-/build
+build
+dist
 
 # OS
 .DS_Store
