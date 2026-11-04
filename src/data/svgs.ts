@@ -5262,4 +5262,22 @@ export const svgs: iSVG[] = [
     },
     url: "https://logbrew.co/",
   },
+  {
+    title: "Tapetide",
+    category: ["AI", "Software"],
+    route: "/library/tapetide.svg",
+    url: "https://tapetide.com",
+    brandUrl: "https://tapetide.com/brand",
+  },
+  {
+    title: "Tapetide",
+    subTitle: "Monochrome",
+    category: ["AI", "Software"],
+    route: {
+      light: "/library/tapetide-light.svg",
+      dark: "/library/tapetide-dark.svg",
+    },
+    url: "https://tapetide.com",
+    brandUrl: "https://tapetide.com/brand",
+  },
 ];
