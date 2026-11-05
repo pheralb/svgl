@@ -1593,9 +1593,9 @@ export const svgs: iSVG[] = [
     url: "https://www.apple.com/app-store/",
   },
   {
-    title: "Windows",
+    title: "Windows 10",
     category: ["Software", "Microsoft"],
-    route: "/library/windows.svg",
+    route: "/library/windows-10.svg",
     url: "https://www.microsoft.com/windows",
   },
   {
@@ -5261,5 +5261,12 @@ export const svgs: iSVG[] = [
       dark: "/library/logbrew-wordmark-dark.svg",
     },
     url: "https://logbrew.co/",
+  },
+    {
+    title: "Windows 11",
+    category: ["Software", "Microsoft"],
+    route: "/library/windows-11.svg",
+    wordmark: "/library/windows-11_wordmark.svg",
+    url: "https://www.microsoft.com/windows",
   },
 ];
