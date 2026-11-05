@@ -5262,4 +5262,17 @@ export const svgs: iSVG[] = [
     },
     url: "https://logbrew.co/",
   },
+  {
+    title: "Warden",
+    category: ["Crypto", "AI"],
+    route: {
+      light: "/library/warden.svg",
+      dark: "/library/warden_dark.svg",
+    },
+    wordmark: {
+      light: "/library/warden_wordmark.svg",
+      dark: "/library/warden_wordmark_dark.svg",
+    },
+    url: "https://wardenprotocol.org/",
+  },
 ];
