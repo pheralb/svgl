@@ -5262,4 +5262,26 @@ export const svgs: iSVG[] = [
     },
     url: "https://logbrew.co/",
   },
+  {
+    title: "KubeArmor",
+    category: ["Cybersecurity", "Software"],
+    route: "/library/kubearmor.svg",
+    url: "https://kubearmor.io/",
+  },
+  {
+    title: "AgentZ",
+    category: ["AI", "Cybersecurity"],
+    route: "/library/agentz.svg",
+    url: "https://accuknox.com/platform/agentz/",
+  },
+  {
+    title: "AccuKnox",
+    category: ["Cybersecurity", "AI"],
+    route: "/library/accuknox.svg",
+    wordmark: {
+      light: "/library/accuknox-wordmark-light.svg",
+      dark: "/library/accuknox-wordmark-dark.svg",
+    },
+    url: "https://accuknox.com/",
+  },
 ];
