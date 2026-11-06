@@ -5274,4 +5274,14 @@ export const svgs: iSVG[] = [
     route: "/library/agentz.svg",
     url: "https://accuknox.com/platform/agentz/",
   },
+  {
+    title: "AccuKnox",
+    category: ["Cybersecurity", "AI"],
+    route: "/library/accuknox.svg",
+    wordmark: {
+      light: "/library/accuknox-wordmark-light.svg",
+      dark: "/library/accuknox-wordmark-dark.svg",
+    },
+    url: "https://accuknox.com/",
+  },
 ];
