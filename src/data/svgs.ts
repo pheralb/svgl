@@ -2,6 +2,12 @@ import type { iSVG } from "@/types/svg";
 
 export const svgs: iSVG[] = [
   {
+    title: "Fabbo",
+    category: ["AI", "Software"],
+    route: "/library/fabbo.svg",
+    url: "https://fabbo.ai",
+  },
+  {
     title: "Pi",
     category: ["AI", "Devtool"],
     route: "/library/pi.svg",

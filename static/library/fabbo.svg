@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <!-- Single unified gradient for the F -->
+    <linearGradient id="fGrad" x1="0.2" y1="0" x2="0.8" y2="1">
+      <stop offset="0%" stop-color="#F5B84C"/>
+      <stop offset="50%" stop-color="#E8962E"/>
+      <stop offset="100%" stop-color="#D4820E"/>
+    </linearGradient>
+    <!-- Subtle warm glow behind the F -->
+    <filter id="fGlow" x="-12%" y="-12%" width="124%" height="124%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8" result="blur"/>
+      <feFlood flood-color="#E8962E" flood-opacity="0.12" result="color"/>
+      <feComposite in="color" in2="blur" operator="in" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Dark background -->
+  <rect width="512" height="512" rx="80" ry="80" fill="#0C0F1A"/>
+
+  <!-- Camera viewfinder corner brackets -->
+  <!-- Top-left -->
+  <path d="M 68 138 L 68 88 Q 68 68 88 68 L 138 68" fill="none" stroke="#E8962E" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Top-right -->
+  <path d="M 374 68 L 424 68 Q 444 68 444 88 L 444 138" fill="none" stroke="#E8962E" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Bottom-left -->
+  <path d="M 68 374 L 68 424 Q 68 444 88 444 L 138 444" fill="none" stroke="#E8962E" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Bottom-right — teal accent -->
+  <path d="M 374 444 L 424 444 Q 444 444 444 424 L 444 374" fill="none" stroke="#2DD4BF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Letter F as a single unified path — no seams -->
+  <g filter="url(#fGlow)">
+    <path d="
+      M 174 120
+      L 350 120
+      Q 358 120 358 128
+      L 358 164
+      Q 358 172 350 172
+      L 234 172
+      L 234 228
+      L 318 228
+      Q 326 228 326 236
+      L 326 268
+      Q 326 276 318 276
+      L 234 276
+      L 234 384
+      Q 234 392 226 392
+      L 182 392
+      Q 174 392 174 384
+      L 174 128
+      Q 174 120 182 120
+      Z
+    " fill="url(#fGrad)"/>
+  </g>
+</svg>
