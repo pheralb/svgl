@@ -5262,4 +5262,18 @@ export const svgs: iSVG[] = [
     },
     url: "https://logbrew.co/",
   },
+  {
+    title: "FromKai",
+    category: ["AI", "Communications"],
+    route: {
+      light: "/library/fromkai-light.svg",
+      dark: "/library/fromkai-dark.svg",
+    },
+    wordmark: {
+      light: "/library/fromkai-wordmark-light.svg",
+      dark: "/library/fromkai-wordmark-dark.svg",
+    },
+    brandUrl: "https://brandfetch.com/fromk.ai",
+    url: "https://fromk.ai/",
+  },
 ];
