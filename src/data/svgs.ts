@@ -2,6 +2,31 @@ import type { iSVG } from "@/types/svg";
 
 export const svgs: iSVG[] = [
   {
+    title: "Affinity",
+    category: ["Design", "Software"],
+    route: "/library/affinity.svg",
+    url: "https://www.affinity.studio/",
+  },
+  {
+    title: "Claude Code",
+    category: ["AI", "Devtool"],
+    route: "/library/claude-code.svg",
+    url: "https://claude.com/product/claude-code",
+  },
+  {
+    title: "Attio",
+    category: ["Software", "Platform"],
+    route: {
+      light: "/library/attio-light.svg",
+      dark: "/library/attio-dark.svg",
+    },
+    wordmark: {
+      light: "/library/attio-wordmark-light.svg",
+      dark: "/library/attio-wordmark-dark.svg",
+    },
+    url: "https://attio.com/",
+  },
+  {
     title: "Pi",
     category: ["AI", "Devtool"],
     route: "/library/pi.svg",
