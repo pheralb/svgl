@@ -5287,4 +5287,12 @@ export const svgs: iSVG[] = [
     },
     url: "https://logbrew.co/",
   },
+  {
+    title: "Conduyt",
+    category: ["Software", "AI"],
+    route: "/library/conduyt.svg",
+    wordmark: "/library/conduyt-wordmark.svg",
+    brandUrl: "https://brandfetch.com/conduyt.com",
+    url: "https://conduyt.com/",
+  },
 ];
