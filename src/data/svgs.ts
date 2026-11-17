@@ -2,6 +2,10 @@ import type { iSVG } from "@/types/svg";
 
 export const svgs: iSVG[] = [
   {
+    title: "Spectr",
+    category: ["AI", "Software", "Automation"],
+    route: "/library/spectr.svg",
+    url: "https://spectr.pm",
     title: "Affinity",
     category: ["Design", "Software"],
     route: "/library/affinity.svg",
