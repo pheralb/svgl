@@ -5287,4 +5287,10 @@ export const svgs: iSVG[] = [
     },
     url: "https://logbrew.co/",
   },
+  {
+    title: "Edge-TTS",
+    category: "AI",
+    route: "/library/edge-tts.svg",
+    url: "https://edge-tts.com/"
+  }
 ];
