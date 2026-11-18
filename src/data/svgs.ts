@@ -2,6 +2,19 @@ import type { iSVG } from "@/types/svg";
 
 export const svgs: iSVG[] = [
   {
+    title: "General Translation",
+    category: ["Devtool", "Library"],
+    route: {
+      light: "/library/generaltranslation_light.svg",
+      dark: "/library/generaltranslation_dark.svg",
+    },
+    wordmark: {
+      light: "/library/generaltranslation_wordmark_light.svg",
+      dark: "/library/generaltranslation_wordmark_dark.svg",
+    },
+    url: "https://generaltranslation.com/",
+  },
+  {
     title: "Affinity",
     category: ["Design", "Software"],
     route: "/library/affinity.svg",
