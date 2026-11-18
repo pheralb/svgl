@@ -11,8 +11,22 @@
 
   let { className }: Props = $props();
 
+  const isTyping = (target: EventTarget | null) =>
+    target instanceof HTMLInputElement ||
+    target instanceof HTMLTextAreaElement ||
+    target instanceof HTMLSelectElement ||
+    (target instanceof HTMLElement &&
+      (target.isContentEditable || target.closest('[role="menu"]') !== null));
+
   const handleKeydown = (event: KeyboardEvent) => {
-    if (event.ctrlKey && event.key === "l") {
+    if (
+      (event.key === "d" || event.key === "D") &&
+      !event.metaKey &&
+      !event.ctrlKey &&
+      !event.altKey &&
+      !event.repeat &&
+      !isTyping(event.target)
+    ) {
       event.preventDefault();
       toggleMode();
     }
@@ -26,7 +40,7 @@
   });
 </script>
 
-<button class={className} onclick={toggleMode} title="Mode Toggle (Cmd + l)">
+<button class={className} onclick={toggleMode} title="Mode Toggle (D)">
   <SunIcon
     size={20}
     strokeWidth={1.5}
