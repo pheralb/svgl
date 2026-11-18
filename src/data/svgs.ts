@@ -2,6 +2,15 @@ import type { iSVG } from "@/types/svg";
 
 export const svgs: iSVG[] = [
   {
+    title: "Claude of Tanks",
+    category: "Entertainment",
+    route: {
+      light: "/library/claudeoftanks_light.svg",
+      dark: "/library/claudeoftanks_dark.svg",
+    },
+    url: "https://cot.kevinliu.studio/",
+  },
+  {
     title: "Affinity",
     category: ["Design", "Software"],
     route: "/library/affinity.svg",
