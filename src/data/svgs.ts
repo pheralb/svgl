@@ -3848,6 +3848,7 @@ export const svgs: iSVG[] = [
       dark: "/library/nx_dark.svg",
     },
     url: "https://nx.dev",
+    brandUrl: "https://nx.dev/brands",
   },
   {
     title: "Google Colaboratory",
