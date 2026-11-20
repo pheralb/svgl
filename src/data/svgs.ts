@@ -5292,5 +5292,6 @@ export const svgs: iSVG[] = [
     category: "Library",
     route: "/library/virastack.svg",
     url: "https://virastack.com/",
+    brandUrl: "https://virastack.com/brand",
   },
 ];
