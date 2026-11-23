@@ -1147,6 +1147,20 @@ export const svgs: iSVG[] = [
     brandUrl: "https://www.docker.com/company/newsroom/media-resources/",
   },
   {
+    title: "Docker (New)",
+    category: "Software",
+    route: {
+      light: "/library/docker-new-light.svg",
+      dark: "/library/docker-new-dark.svg",
+    },
+    wordmark: {
+      light: "/library/docker-new-wordmark-light.svg",
+      dark: "/library/docker-new-wordmark-dark.svg",
+    },
+    url: "https://www.docker.com/",
+    brandUrl: "https://www.docker.com/company/newsroom/media-resources/",
+  },
+  {
     title: "Amazon Web Services",
     category: "Software",
     route: {
