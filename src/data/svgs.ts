@@ -2,6 +2,47 @@ import type { iSVG } from "@/types/svg";
 
 export const svgs: iSVG[] = [
   {
+    title: "Devin",
+    category: ["AI", "Devtool"],
+    route: "/library/devin.svg",
+    url: "https://devin.ai/",
+  },
+  {
+    title: "fx",
+    category: ["AI", "Devtool"],
+    route: "/library/fx.svg",
+    wordmark: {
+      light: "/library/fx-wordmark-light.svg",
+      dark: "/library/fx-wordmark-dark.svg",
+    },
+    url: "https://fx.sh/",
+  },
+  {
+    title: "jcode",
+    category: ["AI", "Devtool"],
+    route: {
+      light: "/library/jcode-light.svg",
+      dark: "/library/jcode-dark.svg",
+    },
+    url: "https://jcode.sh/",
+  },
+  {
+    title: "Kiro",
+    category: ["AI", "Devtool"],
+    route: "/library/kiro.svg",
+    wordmark: {
+      light: "/library/kiro-wordmark-light.svg",
+      dark: "/library/kiro-wordmark-dark.svg",
+    },
+    url: "https://kiro.dev/",
+  },
+  {
+    title: "Muse",
+    category: ["AI", "Platform"],
+    route: "/library/muse.svg",
+    url: "https://ai.meta.com/muse/",
+  },
+  {
     title: "Affinity",
     category: ["Design", "Software"],
     route: "/library/affinity.svg",
