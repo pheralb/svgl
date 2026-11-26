@@ -5343,4 +5343,11 @@ export const svgs: iSVG[] = [
     },
     url: "https://logbrew.co/",
   },
+  {
+    title: "ViraStack",
+    category: "Library",
+    route: "/library/virastack.svg",
+    url: "https://virastack.com/",
+    brandUrl: "https://virastack.com/brand",
+  },
 ];
