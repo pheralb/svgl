@@ -147,45 +147,51 @@
 
   // Convert SVG as React component:
   const convertSvgReactComponent = async (tsx: boolean) => {
-    const svgUrlToCopy = getSvgUrl();
-    optionsOpen = false;
+    try {
+      const svgUrlToCopy = getSvgUrl();
+      optionsOpen = false;
 
-    isLoading = true;
+      isLoading = true;
 
-    const title = svgInfo.title.split(" ").join("");
-    let content = await getSource({
-      url: svgUrlToCopy,
-      optimize,
-    });
-
-    if (svgUrlToCopy) {
-      content = prefixSvgIds(content, getPrefixFromSvgUrl(svgUrlToCopy));
-    }
-
-    const dataComponent = {
-      code: content,
-      typescript: tsx,
-      name: title,
-      optimize,
-    };
-    const { data, error } = await getReactCode(dataComponent);
-
-    if (error || !data) {
-      toast.error("Failed to fetch React component", {
-        description: `${error ?? ""}`,
-        duration: 5000,
+      const title = svgInfo.title.split(" ").join("");
+      let content = await getSource({
+        url: svgUrlToCopy,
+        optimize,
       });
+
+      if (svgUrlToCopy) {
+        content = prefixSvgIds(content, getPrefixFromSvgUrl(svgUrlToCopy));
+      }
+
+      const dataComponent = {
+        code: content,
+        typescript: tsx,
+        name: title,
+        optimize,
+      };
+      const { data, error } = await getReactCode(dataComponent);
+
+      if (error || !data) {
+        toast.error("Failed to fetch React component", {
+          description: `${error ?? ""}`,
+          duration: 5000,
+        });
+        isLoading = false;
+        return;
+      }
+
+      await clipboard(data);
+
+      toast.success(`Copied as React ${tsx ? "TSX" : "JSX"} component`, {
+        description: `${svgInfo.title} - ${svgInfo.category}`,
+      });
+
       isLoading = false;
-      return;
+    } catch (err) {
+      console.error("Error converting to React component:", err);
+      toast.error("Failed to convert React component");
+      isLoading = false;
     }
-
-    await clipboard(data);
-
-    toast.success(`Copied as React ${tsx ? "TSX" : "JSX"} component`, {
-      description: `${svgInfo.title} - ${svgInfo.category}`,
-    });
-
-    isLoading = false;
   };
 
   // Copy SVG as Vue Component:
@@ -266,114 +272,132 @@
 
   // Copy SVG as Standalone Angular component:
   const convertSvgAngularComponent = async () => {
-    isLoading = true;
-    optionsOpen = false;
+    try {
+      isLoading = true;
+      optionsOpen = false;
 
-    const title = svgInfo.title.split(" ").join("");
-    const svgUrlToCopy = getSvgUrl();
-    let content = await getSource({
-      url: svgUrlToCopy,
-      optimize,
-    });
-
-    if (svgUrlToCopy) {
-      content = prefixSvgIds(content, getPrefixFromSvgUrl(svgUrlToCopy));
-    }
-
-    if (!content) {
-      toast.error("Failed to fetch the SVG content", {
-        duration: 5000,
+      const title = svgInfo.title.split(" ").join("");
+      const svgUrlToCopy = getSvgUrl();
+      let content = await getSource({
+        url: svgUrlToCopy,
+        optimize,
       });
+
+      if (svgUrlToCopy) {
+        content = prefixSvgIds(content, getPrefixFromSvgUrl(svgUrlToCopy));
+      }
+
+      if (!content) {
+        toast.error("Failed to fetch the SVG content", {
+          duration: 5000,
+        });
+        isLoading = false;
+        return;
+      }
+
+      const angularComponent = getAngularCode({
+        componentName: title,
+        svgContent: content,
+      });
+
+      await clipboard(angularComponent);
+
+      toast.success(`Copied as Standalone Angular component`, {
+        description: `${svgInfo.title} - ${svgInfo.category}`,
+      });
+
       isLoading = false;
-      return;
+    } catch (err) {
+      console.error("Error converting to Angular component:", err);
+      toast.error("Failed to convert Angular component");
+      isLoading = false;
     }
-
-    const angularComponent = getAngularCode({
-      componentName: title,
-      svgContent: content,
-    });
-
-    await clipboard(angularComponent);
-
-    toast.success(`Copied as Standalone Angular component`, {
-      description: `${svgInfo.title} - ${svgInfo.category}`,
-    });
-
-    isLoading = false;
   };
 
   // Copy SVG as Web Component:
   const convertSvgWebComponent = async () => {
-    isLoading = true;
-    optionsOpen = false;
+    try {
+      isLoading = true;
+      optionsOpen = false;
 
-    const title = svgInfo.title.split(" ").join("");
-    const svgUrlToCopy = getSvgUrl();
-    let content = await getSource({
-      url: svgUrlToCopy,
-      optimize,
-    });
-
-    if (svgUrlToCopy) {
-      content = prefixSvgIds(content, getPrefixFromSvgUrl(svgUrlToCopy));
-    }
-
-    if (!content) {
-      toast.error("Failed to fetch the SVG content", {
-        duration: 5000,
+      const title = svgInfo.title.split(" ").join("");
+      const svgUrlToCopy = getSvgUrl();
+      let content = await getSource({
+        url: svgUrlToCopy,
+        optimize,
       });
+
+      if (svgUrlToCopy) {
+        content = prefixSvgIds(content, getPrefixFromSvgUrl(svgUrlToCopy));
+      }
+
+      if (!content) {
+        toast.error("Failed to fetch the SVG content", {
+          duration: 5000,
+        });
+        isLoading = false;
+        return;
+      }
+
+      const webComponentCode = getWebComponent({
+        name: title,
+        content: content,
+      });
+
+      await clipboard(webComponentCode);
+
+      toast.success(`Copied as Web Component`, {
+        description: `${svgInfo.title} - ${svgInfo.category}`,
+      });
+
       isLoading = false;
-      return;
+    } catch (err) {
+      console.error("Error converting to Web Component:", err);
+      toast.error("Failed to convert Web Component");
+      isLoading = false;
     }
-
-    const webComponentCode = getWebComponent({
-      name: title,
-      content: content,
-    });
-
-    await clipboard(webComponentCode);
-
-    toast.success(`Copied as Web Component`, {
-      description: `${svgInfo.title} - ${svgInfo.category}`,
-    });
-
-    isLoading = false;
   };
 
   // Copy SVG as Astro component:
   const convertSvgAstroComponent = async () => {
-    isLoading = true;
-    optionsOpen = false;
+    try {
+      isLoading = true;
+      optionsOpen = false;
 
-    const svgUrlToCopy = getSvgUrl();
-    let content = await getSource({
-      url: svgUrlToCopy,
-      optimize,
-    });
-
-    if (svgUrlToCopy) {
-      content = prefixSvgIds(content, getPrefixFromSvgUrl(svgUrlToCopy));
-    }
-
-    if (!content) {
-      toast.error("Failed to fetch the SVG content", {
-        duration: 5000,
+      const svgUrlToCopy = getSvgUrl();
+      let content = await getSource({
+        url: svgUrlToCopy,
+        optimize,
       });
+
+      if (svgUrlToCopy) {
+        content = prefixSvgIds(content, getPrefixFromSvgUrl(svgUrlToCopy));
+      }
+
+      if (!content) {
+        toast.error("Failed to fetch the SVG content", {
+          duration: 5000,
+        });
+        isLoading = false;
+        return;
+      }
+
+      const astroComponentCode = getAstroCode({
+        svgContent: content,
+      });
+
+      await clipboard(astroComponentCode);
+
+      toast.success(`Copied as Astro Component`, {
+        description: `${svgInfo.title} - ${svgInfo.category}`,
+      });
+
       isLoading = false;
-      return;
+    } catch (err) {
+      console.error("Error converting to Astro Component:", err);
+      toast.error("Failed to convert Astro Component");
+      isLoading = false;
     }
-
-    const astroComponentCode = getAstroCode({
-      svgContent: content,
-    });
-
-    await clipboard(astroComponentCode);
-
-    toast.success(`Copied as Astro Component`, {
-      description: `${svgInfo.title} - ${svgInfo.category}`,
-    });
-
-    isLoading = false;
   };
 </script>
 
