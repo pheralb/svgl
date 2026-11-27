@@ -16,6 +16,47 @@ export const svgs: iSVG[] = [
     brandUrl: "https://layerwise.app/assets/brand/logo-black.svg",
   },
   {
+    title: "Devin",
+    category: ["AI", "Devtool"],
+    route: "/library/devin.svg",
+    url: "https://devin.ai/",
+  },
+  {
+    title: "fx",
+    category: ["AI", "Devtool"],
+    route: "/library/fx.svg",
+    wordmark: {
+      light: "/library/fx-wordmark-light.svg",
+      dark: "/library/fx-wordmark-dark.svg",
+    },
+    url: "https://fx.sh/",
+  },
+  {
+    title: "jcode",
+    category: ["AI", "Devtool"],
+    route: {
+      light: "/library/jcode-light.svg",
+      dark: "/library/jcode-dark.svg",
+    },
+    url: "https://jcode.sh/",
+  },
+  {
+    title: "Kiro",
+    category: ["AI", "Devtool"],
+    route: "/library/kiro.svg",
+    wordmark: {
+      light: "/library/kiro-wordmark-light.svg",
+      dark: "/library/kiro-wordmark-dark.svg",
+    },
+    url: "https://kiro.dev/",
+  },
+  {
+    title: "Muse",
+    category: ["AI", "Platform"],
+    route: "/library/muse.svg",
+    url: "https://ai.meta.com/muse/",
+  },
+  {
     title: "Affinity",
     category: ["Design", "Software"],
     route: "/library/affinity.svg",
@@ -1157,6 +1198,20 @@ export const svgs: iSVG[] = [
     title: "Docker",
     category: "Software",
     route: "/library/docker.svg",
+    url: "https://www.docker.com/",
+    brandUrl: "https://www.docker.com/company/newsroom/media-resources/",
+  },
+  {
+    title: "Docker (New)",
+    category: "Software",
+    route: {
+      light: "/library/docker-new-light.svg",
+      dark: "/library/docker-new-dark.svg",
+    },
+    wordmark: {
+      light: "/library/docker-new-wordmark-light.svg",
+      dark: "/library/docker-new-wordmark-dark.svg",
+    },
     url: "https://www.docker.com/",
     brandUrl: "https://www.docker.com/company/newsroom/media-resources/",
   },
@@ -3862,6 +3917,7 @@ export const svgs: iSVG[] = [
       dark: "/library/nx_dark.svg",
     },
     url: "https://nx.dev",
+    brandUrl: "https://nx.dev/brands",
   },
   {
     title: "Google Colaboratory",
